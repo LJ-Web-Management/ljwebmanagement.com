@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en-US" data-website-id="1" data-main-object="website.page(18,)" data-tracking-enabled="True" dir="ltr">
+<html lang="en-US" dir="ltr">
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta name="generator" content="Odoo"/>
         <meta name="description" content="Explore LJ Web Management's automations: done-for-you business automation built around your industry and role. Book a free consultation for a custom quote."/>
 
         <meta property="og:type" content="website"/>
@@ -462,6 +461,24 @@
   .lj-auto-pricing-card p { color: var(--body); font-size: 14px; line-height: 1.6; margin: 0; }
   @media (max-width: 820px) { .lj-auto-pricing-row { grid-template-columns: 1fr; } }
 
+  /* ============ ALL AUTOMATIONS MENU ============ */
+  .lj-all-list { background: var(--mist); border-top: 1px solid var(--line); }
+  .lj-all-list-head { text-align: center; max-width: 640px; margin: 0 auto 40px; }
+  .lj-all-list-head h2 { font-size: clamp(1.5rem, 2.6vw, 1.9rem); }
+  .lj-all-list ul {
+    list-style: none; margin: 0; padding: 0;
+    column-count: 4; column-gap: 32px;
+  }
+  .lj-all-list li { break-inside: avoid; margin-bottom: 10px; }
+  .lj-all-list a {
+    color: var(--body); font-size: 14.5px; text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .lj-all-list a:hover { color: var(--cyan); }
+  @media (max-width: 900px) { .lj-all-list ul { column-count: 3; } }
+  @media (max-width: 640px) { .lj-all-list ul { column-count: 2; } }
+  @media (max-width: 420px) { .lj-all-list ul { column-count: 1; } }
+
   /* ============ CLOSING CTA ============ */
   .lj-auto-cta {
     position: relative; overflow: hidden;
@@ -483,7 +500,7 @@
 <section class="lj-section lj-auto-hero" style="padding-bottom:0;">
   <div class="lj-auto-hero-inner">
     <span class="lj-eyebrow">Automations</span>
-    <h1>900+ Automations, Built by Industry &amp; Role</h1>
+    <h1>1000+ Automations, Built by Industry &amp; Role</h1>
     <p>Every automation is done-for-you and scoped to a specific job, from a real estate agent's listing syndication to a bookkeeper's expense reconciliation. Choose your industry below to see the full list, then book a consultation and we'll tailor it to your exact tools.</p>
     <div class="lj-auto-hero-actions">
       <a href="../appointment" class="lj-btn lj-btn-primary">Book a Consultation</a>
@@ -500,6 +517,10 @@
       <input type="text" id="ljIndustrySearch" placeholder="Search industries..." autocomplete="off"/>
     </div>
     <div class="lj-industry-grid" id="ljIndustryGrid">
+      <a class="lj-industry-card" href="general-business">
+        <div class="lj-industry-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.2"></circle><circle cx="5" cy="19" r="2.2"></circle><circle cx="19" cy="19" r="2.2"></circle><path d="M12 7.2V12"></path><path d="M12 12L6.3 17.3"></path><path d="M12 12l5.7 5.3"></path></svg></div>
+        <h3>General Business</h3>
+      </a>
       <a class="lj-industry-card" href="addiction-treatment-behavioral-health">
         <div class="lj-industry-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"></path><path d="M10 22h4"></path><path d="M12 2a7 7 0 0 0-4 12.7V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.3A7 7 0 0 0 12 2z"></path></svg></div>
         <h3>Addiction Treatment &amp; Behavioral Health</h3>
@@ -567,10 +588,6 @@
       <a class="lj-industry-card" href="fitness-wellness">
         <div class="lj-industry-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6"></path><path d="M2 10v4"></path><path d="M20 9v6"></path><path d="M22 10v4"></path><path d="M6 12h12"></path><path d="M6 8v8"></path><path d="M18 8v8"></path></svg></div>
         <h3>Fitness &amp; Wellness</h3>
-      </a>
-      <a class="lj-industry-card" href="general-business">
-        <div class="lj-industry-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.2"></circle><circle cx="5" cy="19" r="2.2"></circle><circle cx="19" cy="19" r="2.2"></circle><path d="M12 7.2V12"></path><path d="M12 12L6.3 17.3"></path><path d="M12 12l5.7 5.3"></path></svg></div>
-        <h3>General Business</h3>
       </a>
       <a class="lj-industry-card" href="government-public-sector">
         <div class="lj-industry-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V10"></path><path d="M19 21V10"></path><path d="M3 10l9-6 9 6"></path><path d="M9 21v-7h6v7"></path></svg></div>
@@ -800,6 +817,75 @@
       <a href="../appointment" class="lj-btn lj-btn-cyan">Book a Consultation</a>
       <a href="../contactus" class="lj-btn lj-btn-outline-light">Contact Us</a>
     </div>
+  </div>
+</section>
+
+<!-- ALL AUTOMATIONS MENU -->
+<section class="lj-section lj-all-list">
+  <div class="lj-inner">
+    <div class="lj-all-list-head">
+      <span class="lj-eyebrow">Full Index</span>
+      <h2>All Automations by Industry</h2>
+    </div>
+    <ul>
+          <li><a href="general-business">General Business</a></li>
+          <li><a href="addiction-treatment-behavioral-health">Addiction Treatment &amp; Behavioral Health</a></li>
+          <li><a href="agriculture-farming">Agriculture &amp; Farming</a></li>
+          <li><a href="architecture-engineering">Architecture &amp; Engineering</a></li>
+          <li><a href="automotive">Automotive</a></li>
+          <li><a href="cannabis-hemp">Cannabis &amp; Hemp</a></li>
+          <li><a href="car-wash-auto-detailing">Car Wash &amp; Auto Detailing</a></li>
+          <li><a href="catering">Catering Companies</a></li>
+          <li><a href="commercial-real-estate">Commercial Real Estate</a></li>
+          <li><a href="construction-contracting">Construction &amp; Contracting</a></li>
+          <li><a href="cybersecurity">Cybersecurity</a></li>
+          <li><a href="dental-practices">Dental Practices</a></li>
+          <li><a href="driving-schools">Driving Schools</a></li>
+          <li><a href="ecommerce-retail">E-Commerce &amp; Retail</a></li>
+          <li><a href="education">Education &amp; Training</a></li>
+          <li><a href="faith-based-organizations">Faith-Based Organizations</a></li>
+          <li><a href="financial-services">Financial Services</a></li>
+          <li><a href="fitness-wellness">Fitness &amp; Wellness</a></li>
+          <li><a href="government-public-sector">Government &amp; Public Sector</a></li>
+          <li><a href="healthcare">Healthcare</a></li>
+          <li><a href="home-services">Home Services</a></li>
+          <li><a href="hospitality-hotels">Hospitality &amp; Hotels</a></li>
+          <li><a href="human-resources">Human Resources</a></li>
+          <li><a href="insurance">Insurance</a></li>
+          <li><a href="interior-design-home-staging">Interior Design &amp; Home Staging</a></li>
+          <li><a href="junk-removal">Junk Removal</a></li>
+          <li><a href="landscaping-lawn-care">Landscaping &amp; Lawn Care</a></li>
+          <li><a href="laundry-dry-cleaning">Laundry &amp; Dry Cleaning</a></li>
+          <li><a href="legal">Legal</a></li>
+          <li><a href="locksmith-security">Locksmith &amp; Security Services</a></li>
+          <li><a href="logistics-supply-chain">Logistics &amp; Supply Chain</a></li>
+          <li><a href="manufacturing">Manufacturing</a></li>
+          <li><a href="marketing-agencies">Marketing Agencies</a></li>
+          <li><a href="media-publishing">Media &amp; Publishing</a></li>
+          <li><a href="moving-storage">Moving &amp; Storage</a></li>
+          <li><a href="nonprofit">Nonprofit</a></li>
+          <li><a href="oil-gas">Oil &amp; Gas</a></li>
+          <li><a href="pest-control">Pest Control</a></li>
+          <li><a href="pharmaceutical-biotech">Pharmaceutical &amp; Biotech</a></li>
+          <li><a href="photography-videography">Photography &amp; Videography</a></li>
+          <li><a href="pool-service">Pool Service &amp; Maintenance</a></li>
+          <li><a href="professional-services">Professional Services</a></li>
+          <li><a href="property-management">Property Management</a></li>
+          <li><a href="property-restoration">Property &amp; Fire Restoration</a></li>
+          <li><a href="real-estate">Real Estate</a></li>
+          <li><a href="renewable-energy-solar">Renewable Energy &amp; Solar</a></li>
+          <li><a href="restaurants-food-service">Restaurants &amp; Food Service</a></li>
+          <li><a href="salons-spas-barbershops">Salons, Spas &amp; Barbershops</a></li>
+          <li><a href="senior-living-childcare">Senior Living &amp; Childcare</a></li>
+          <li><a href="sports-recreation">Sports &amp; Recreation</a></li>
+          <li><a href="staffing-recruiting">Staffing &amp; Recruiting Agencies</a></li>
+          <li><a href="technology-saas">Technology &amp; SaaS</a></li>
+          <li><a href="telecommunications">Telecommunications</a></li>
+          <li><a href="vacation-rentals">Vacation Rentals &amp; Short-Term Rentals</a></li>
+          <li><a href="veterinary-practices">Veterinary Practices</a></li>
+          <li><a href="warehousing-distribution">Warehousing &amp; Distribution</a></li>
+          <li><a href="wedding-event-planning">Wedding &amp; Event Planning</a></li>
+    </ul>
   </div>
 </section>
 
