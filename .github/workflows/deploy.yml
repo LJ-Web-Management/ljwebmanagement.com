@@ -34,7 +34,12 @@ jobs:
 
     - name: Sync files to S3
       run: |
-        aws s3 sync ./ s3://ljwebmanagement-website --delete --exclude ".git/*" --exclude ".github/*"
+        # Long-lived, immutable cache for everything except HTML: these assets are
+        # only ever updated under a new filename or invalidated via CloudFront below,
+        # so browsers/CDN can cache them for a year without re-checking.
+        aws s3 sync ./ s3://ljwebmanagement-website --delete --exclude ".git/*" --exclude ".github/*" --exclude "*.html" --cache-control "public, max-age=31536000, immutable"
+        # HTML must-revalidate on every request so page edits go live immediately.
+        aws s3 sync ./ s3://ljwebmanagement-website --delete --exclude ".git/*" --exclude ".github/*" --exclude "*" --include "*.html" --cache-control "public, max-age=0, must-revalidate"
         # If deploying a build folder (e.g. dist/ or build/), change `./` to `./dist`
 
     - name: Invalidate CloudFront Cache

@@ -348,6 +348,18 @@
   .lj-hero-card:hover { transform: translateY(-6px); box-shadow: 0 26px 54px rgba(15, 37, 68, 0.14); }
   .lj-hero-video-card { line-height: 0; }
   .lj-hero-video { display: block; width: 100%; height: auto; background: var(--navy); }
+  .lj-video-trigger {
+    position: relative; display: block; width: 100%; padding: 0; margin: 0; border: 0;
+    background: none; cursor: pointer; line-height: 0;
+  }
+  .lj-video-play {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 72px; height: 72px; border-radius: 50%; background: var(--white);
+    display: flex; align-items: center; justify-content: center; color: var(--navy);
+    box-shadow: 0 12px 30px rgba(15, 37, 68, 0.28); transition: transform 0.2s ease, background 0.2s ease;
+  }
+  .lj-video-play svg { width: 26px; height: 26px; margin-left: 3px; }
+  .lj-video-trigger:hover .lj-video-play { transform: translate(-50%, -50%) scale(1.08); background: var(--cyan); color: #fff; }
 
   @media (max-width: 940px) {
     .lj-hero-grid { grid-template-columns: 1fr; }
@@ -468,13 +480,38 @@
     </div>
     <div class="lj-hero-media">
       <div class="lj-hero-card lj-hero-video-card">
-        <video class="lj-hero-video" src="assets/homepage-video.mp4" width="1920" height="1080" controls playsinline preload="metadata">
-          Your browser does not support the video tag.
-        </video>
+        <button type="button" class="lj-video-trigger" id="lj-hero-video-trigger" aria-label="Play video">
+          <picture>
+            <source srcset="assets/homepage-video-poster.webp" type="image/webp">
+            <img class="lj-hero-video" src="assets/homepage-video-poster.jpg" width="1920" height="1080" alt="LJ Web Management automation walkthrough video preview" loading="eager" fetchpriority="high">
+          </picture>
+          <span class="lj-video-play"><svg viewbox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
+        </button>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+(function () {
+  var trigger = document.getElementById('lj-hero-video-trigger');
+  if (!trigger) return;
+  trigger.addEventListener('click', function () {
+    var card = trigger.closest('.lj-hero-video-card');
+    var video = document.createElement('video');
+    video.className = 'lj-hero-video';
+    video.src = 'assets/homepage-video.mp4';
+    video.width = 1920;
+    video.height = 1080;
+    video.controls = true;
+    video.autoplay = true;
+    video.playsInline = true;
+    card.innerHTML = '';
+    card.appendChild(video);
+    video.play().catch(function () {});
+  }, { once: true });
+})();
+</script>
 
 <!-- PROCESS -->
 <section class="lj-section lj-process">
@@ -611,7 +648,7 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="offset-lg-0 col-8 offset-2 o_colored_level pt0 pb0 col-lg-2">
-                            <a href="./" class="o_footer_logo logo">
+                            <a href="./" class="o_footer_logo logo" aria-label="LJ Web Management home">
                                 <img src="assets/lj-logo.webp" alt="" width="320" height="321" data-attachment-id="725" class="img-fluid d-block mx-auto img o_we_custom_image" data-format-mimetype="image/webp" data-resize-width="690" data-original-id="725" data-original-src="web/image/725-4c77f3ef/no-bg.png" data-mimetype-before-conversion="image/png" data-mimetype="image/webp" loading="lazy"/>
                             </a>
                         </div>
@@ -637,7 +674,7 @@
                         <div class="container py-3">
                             <div class="row row-gap-2">
                                 <div class="col-md text-center text-muted d-flex flex-column-reverse gap-2 text-md-start">
-                                    <span class="o_footer_copyright_name me-2 small" style="text-align: start;">© 2026 LJ Web Management - All Rights Reserved</span>
+                                    <span class="o_footer_copyright_name me-2 small" style="text-align: start;">2026 © LJ Web Management, LLC. All Rights Reserved</span>
                                 </div>
                                 <div class="col-md text-center o_not_editable small mt-auto mb-0 text-md-end">
 </div>
