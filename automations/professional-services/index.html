@@ -1120,12 +1120,22 @@ Tawk_API.onChatMaximized = function(){
 };
 })();
 (function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6a5c3cb0940f101d5323afce/1jts4q4bq';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
+var loaded = false;
+function loadTawk(){
+    if (loaded) return;
+    loaded = true;
+    clearTimeout(fallback);
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6a5c3cb0940f101d5323afce/1jts4q4bq';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+}
+['mousemove','scroll','touchstart','keydown','click'].forEach(function(evt){
+    window.addEventListener(evt, loadTawk, {passive: true, once: true});
+});
+var fallback = setTimeout(loadTawk, 5000);
 })();
 </script>
 <!--End of Tawk.to Script-->
