@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Customer Retention Manager</span><h3>Churn Prediction &amp; Proactive Save Campaign System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Each week, this automation scores every active subscriber account on a churn risk index built from usage trends, billing history, support ticket volume, and contract tenure, and any account crossing the risk threshold is automatically enrolled in a targeted save campaign before the customer has even considered calling to cancel. High-risk consumer accounts receive a loyalty offer via text; high-risk business accounts trigger a personal outreach call from the retention team with a retention toolkit pre-populated with the account's tenure, products, and eligible upgrade offers. The retention manager works a prioritized list of at-risk accounts rather than reactively handling cancellation calls that have already been decided.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Each week, this automation scores every active subscriber account on a churn risk index built from usage trends, billing history, support ticket volume, and contract tenure, and any account crossing the risk threshold is automatically enrolled in a targeted save campaign before the customer has even considered calling to cancel. High-risk consumer accounts receive a loyalty offer via text; high-risk business accounts trigger a personal outreach call from the retention team with a retention toolkit pre-populated with the account's tenure, products, and eligible upgrade offers. The retention manager works a prioritized list of at-risk accounts rather than reactively handling cancellation calls that have already been decided.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a customer retention manager remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM or BSS platform (e.g., Salesforce or Amdocs)</span><span>Zapier or Make.com</span><span>Twilio (targeted save SMS)</span><span>Mailchimp or ActiveCampaign (save campaign sequences)</span><span>Google Sheets or BI tool (churn risk dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a new service order is created, this automation checks technician availability by geographic zone, books the installation appointment in the scheduling system, sends the customer a confirmation text with the technician's name and arrival window, and dispatches the job details to the assigned technician's mobile device. The day before the appointment, both the customer and the technician receive a reminder. When the technician is en route, the customer receives an automatic "on the way" update with a real-time ETA link. Rescheduled appointments are automatically re-offered to the next available technician rather than falling into a manual rebooking queue.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a new service order is created, this automation checks technician availability by geographic zone, books the installation appointment in the scheduling system, sends the customer a confirmation text with the technician's name and arrival window, and dispatches the job details to the assigned technician's mobile device. The day before the appointment, both the customer and the technician receive a reminder. When the technician is en route, the customer receives an automatic "on the way" update with a real-time ETA link. Rescheduled appointments are automatically re-offered to the next available technician rather than falling into a manual rebooking queue.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a field technician coordinator manually pieces together information from different places, then has to relay it to everyone who needs it. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Field service management platform (e.g., ServicePower or TOA Technologies)</span><span>Zapier or Make.com</span><span>Twilio (customer and technician SMS)</span><span>Google Maps API (real-time ETA)</span><span>Slack (same-day scheduling change alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a network monitoring alert fires indicating a service-affecting outage, this automation identifies which customer accounts are in the impacted area, sends proactive service disruption notifications via text and email before customers call in, updates the IVR message on the support line to acknowledge the outage, and posts a status update on the company's service status page, all within minutes of the alert firing. As the restoration progresses, customers in the affected area receive staged updates, and a final "service restored" message goes out the moment the NOC confirms resolution. Inbound call volume during outages drops significantly because customers are informed before they reach for the phone.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a network monitoring alert fires indicating a service-affecting outage, this automation identifies which customer accounts are in the impacted area, sends proactive service disruption notifications via text and email before customers call in, updates the IVR message on the support line to acknowledge the outage, and posts a status update on the company's service status page, all within minutes of the alert firing. As the restoration progresses, customers in the affected area receive staged updates, and a final "service restored" message goes out the moment the NOC confirms resolution. Inbound call volume during outages drops significantly because customers are informed before they reach for the phone.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a network operations center manager, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Network monitoring system (e.g., Nagios, SolarWinds, or PagerDuty)</span><span>Zapier or Make.com</span><span>Twilio (mass customer SMS alerts)</span><span>Statuspage.io (service status updates)</span><span>Mailchimp or email (outage and restoration notices)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Six months before a business customer's contract expires, the account manager receives a renewal preparation alert with the account's current services, usage data, and any upsell opportunities identified from the account's growth pattern. The customer receives a proactive "we're already preparing your renewal" email from their account manager that opens the conversation on the telecom's terms rather than waiting for the customer to shop the competition. Accounts that grow beyond their current bandwidth tier trigger an automatic upgrade conversation prompt, because a customer who has outgrown their plan is a retention risk that looks like a satisfied customer until their renewal comes up.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Six months before a business customer's contract expires, the account manager receives a renewal preparation alert with the account's current services, usage data, and any upsell opportunities identified from the account's growth pattern. The customer receives a proactive "we're already preparing your renewal" email from their account manager that opens the conversation on the telecom's terms rather than waiting for the customer to shop the competition. Accounts that grow beyond their current bandwidth tier trigger an automatic upgrade conversation prompt, because a customer who has outgrown their plan is a retention risk that looks like a satisfied customer until their renewal comes up.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a b2b account manager remembering to check in, update records, and follow up, with no safety net if something slips. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., Salesforce or Microsoft Dynamics)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign (renewal sequence)</span><span>Twilio (account manager SMS outreach prompt)</span><span>Google Sheets (renewal pipeline and upsell tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a payment fails, this automation immediately attempts a retry after 24 hours, sends the customer a payment failure notice with an update link, and tries a second retry at 72 hours if the payment method hasn't been updated. Accounts still unpaid after seven days move into a structured collections workflow: a service interruption warning at day 10, a courtesy hold at day 15, and escalation to the collections team with the full payment history on day 21. The billing manager sees a live aging dashboard by delinquency bucket rather than working from a static report, and each stage of the collections workflow runs automatically without a billing agent manually managing each account through the sequence.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a payment fails, this automation immediately attempts a retry after 24 hours, sends the customer a payment failure notice with an update link, and tries a second retry at 72 hours if the payment method hasn't been updated. Accounts still unpaid after seven days move into a structured collections workflow: a service interruption warning at day 10, a courtesy hold at day 15, and escalation to the collections team with the full payment history on day 21. The billing manager sees a live aging dashboard by delinquency bucket rather than working from a static report, and each stage of the collections workflow runs automatically without a billing agent manually managing each account through the sequence.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a billing manager handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>BSS billing platform or Stripe (payment processing)</span><span>Zapier or Make.com</span><span>Twilio (payment failure and collections SMS)</span><span>Email (payment update and warning notices)</span><span>Airtable or Google Sheets (collections aging dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment the network monitoring platform flags an outage in a specific service area, this automation cross-references the affected node or circuit against the customer address database and instantly identifies every account inside the impacted radius. Within minutes, affected customers receive a text and email notification acknowledging the outage and giving an estimated restoration time pulled directly from the NOC's ticket. As field crews update the ticket with a revised estimate, every notified customer automatically receives an updated message rather than being left on the original estimate. Once the ticket is closed and service is confirmed restored, a final all-clear message goes out to the same list. The customer experience manager no longer fields hundreds of "when will this be fixed" calls during an outage, because customers already know before they pick up the phone.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment the network monitoring platform flags an outage in a specific service area, this automation cross-references the affected node or circuit against the customer address database and instantly identifies every account inside the impacted radius. Within minutes, affected customers receive a text and email notification acknowledging the outage and giving an estimated restoration time pulled directly from the NOC's ticket. As field crews update the ticket with a revised estimate, every notified customer automatically receives an updated message rather than being left on the original estimate. Once the ticket is closed and service is confirmed restored, a final all-clear message goes out to the same list. The customer experience manager no longer fields hundreds of "when will this be fixed" calls during an outage, because customers already know before they pick up the phone.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a customer experience manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Network monitoring platform (e.g., SolarWinds or Nagios)</span><span>Zapier or Make.com</span><span>Twilio (mass SMS notification)</span><span>Mailchimp (email notifications)</span><span>Google Sheets or BSS platform (affected address lookup)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -514,9 +551,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Sixty days before a customer's contract term ends, this automation automatically flags the account and pulls the last six months of usage and payment history to score the account's renewal risk. Accounts with declining usage, a recent support escalation, or a late payment in the last 90 days are marked at-risk and automatically triggered into a personalized retention offer sequence, a discounted upgrade or a loyalty credit delivered by text and email. Accounts that show stable usage and clean payment history are routed into a simpler auto-renewal confirmation instead, so the retention budget isn't spent on customers who were never going to leave. The renewals specialist works from a prioritized list of the 60-day window rather than discovering a churn risk the week the contract already lapsed, and every offer's redemption is tracked automatically back to the account.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Sixty days before a customer's contract term ends, this automation automatically flags the account and pulls the last six months of usage and payment history to score the account's renewal risk. Accounts with declining usage, a recent support escalation, or a late payment in the last 90 days are marked at-risk and automatically triggered into a personalized retention offer sequence, a discounted upgrade or a loyalty credit delivered by text and email. Accounts that show stable usage and clean payment history are routed into a simpler auto-renewal confirmation instead, so the retention budget isn't spent on customers who were never going to leave. The renewals specialist works from a prioritized list of the 60-day window rather than discovering a churn risk the week the contract already lapsed, and every offer's redemption is tracked automatically back to the account.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a renewals specialist, who has to track every step by hand across emails, spreadsheets, and sticky notes.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM or BSS platform (e.g., Salesforce or Amdocs)</span><span>Zapier or Make.com</span><span>Twilio (retention offer SMS)</span><span>Mailchimp or ActiveCampaign (offer sequence)</span><span>Google Sheets or BI tool (renewal risk dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -525,9 +565,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a customer cancels service, this automation immediately emails and texts equipment return instructions along with a prepaid shipping label generated through the carrier's API. The system tracks the shipment using the label's tracking number and automatically updates the account the moment the equipment is scanned as received at the warehouse. If the return window, typically 14 or 21 days, passes without a tracked return, the automation applies the unreturned equipment fee to the final bill and sends the customer a notice explaining the charge and how to dispute it if the equipment was already shipped. The logistics coordinator sees a live dashboard of every pending return by days remaining, rather than manually chasing down modems and set-top boxes that were never sent back.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a customer cancels service, this automation immediately emails and texts equipment return instructions along with a prepaid shipping label generated through the carrier's API. The system tracks the shipment using the label's tracking number and automatically updates the account the moment the equipment is scanned as received at the warehouse. If the return window, typically 14 or 21 days, passes without a tracked return, the automation applies the unreturned equipment fee to the final bill and sends the customer a notice explaining the charge and how to dispute it if the equipment was already shipped. The logistics coordinator sees a live dashboard of every pending return by days remaining, rather than manually chasing down modems and set-top boxes that were never sent back.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a logistics coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>BSS billing platform</span><span>Zapier or Make.com</span><span>Shipping carrier API (e.g., UPS or USPS label generation)</span><span>Twilio (return instructions and reminders)</span><span>Airtable or Google Sheets (return tracking dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -536,9 +579,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As soon as a new service installation is scheduled, this automation sends the customer an immediate confirmation with the date, the assigned technician's name, and what to have ready for the visit. The day before the appointment, a reminder goes out with the technician's arrival window and a reschedule link, cutting down on missed appointments caused by a customer simply forgetting the date. When the technician is dispatched and en route, the customer automatically receives an "on the way" text with a live ETA, the same experience customers now expect from other home service providers. The customer care coordinator no longer manually calls every customer the day before installation, and no-show installation appointments have dropped because the reminder sequence catches conflicts early enough for the customer to reschedule instead of no-showing.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As soon as a new service installation is scheduled, this automation sends the customer an immediate confirmation with the date, the assigned technician's name, and what to have ready for the visit. The day before the appointment, a reminder goes out with the technician's arrival window and a reschedule link, cutting down on missed appointments caused by a customer simply forgetting the date. When the technician is dispatched and en route, the customer automatically receives an "on the way" text with a live ETA, the same experience customers now expect from other home service providers. The customer care coordinator no longer manually calls every customer the day before installation, and no-show installation appointments have dropped because the reminder sequence catches conflicts early enough for the customer to reschedule instead of no-showing.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a customer care coordinator handles each case reactively, after someone has already noticed something went wrong.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Field service management platform (e.g., ServicePower)</span><span>Zapier or Make.com</span><span>Twilio (confirmation, reminder, and on-the-way SMS)</span><span>Google Calendar or scheduling system</span><span>Email (installation confirmation)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -547,9 +593,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation continuously monitors every customer's data or usage against their plan's allotment in near real time, checking usage totals against plan thresholds throughout the billing cycle. The moment a customer crosses 80% of their allotment, an automatic text goes out letting them know how much they have left and how to add more before they run out. If usage reaches 100%, a second warning fires immediately with clear options to upgrade the plan or purchase a data add-on, before the customer is hit with a surprise overage charge on their next bill. Customers who upgrade or add data through the warning message have that change applied to their account automatically without a call to customer service. The usage analytics manager sees overage warning volume and upgrade conversion by plan tier, turning what used to be a source of billing complaints into a self-service upsell opportunity.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation continuously monitors every customer's data or usage against their plan's allotment in near real time, checking usage totals against plan thresholds throughout the billing cycle. The moment a customer crosses 80% of their allotment, an automatic text goes out letting them know how much they have left and how to add more before they run out. If usage reaches 100%, a second warning fires immediately with clear options to upgrade the plan or purchase a data add-on, before the customer is hit with a surprise overage charge on their next bill. Customers who upgrade or add data through the warning message have that change applied to their account automatically without a call to customer service. The usage analytics manager sees overage warning volume and upgrade conversion by plan tier, turning what used to be a source of billing complaints into a self-service upsell opportunity.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, an usage analytics manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>BSS/OSS usage monitoring platform</span><span>Zapier or Make.com</span><span>Twilio (usage warning SMS)</span><span>Billing platform (plan upgrade processing)</span><span>Google Sheets or BI tool (overage and upgrade dashboard)</span></div>
+          </div>
         </div>
       </details>
 

@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Customer Success Manager</span><h3>Churn Risk Detection &amp; Intervention Playbook System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Each week, this automation calculates a health score for every account based on login frequency, feature adoption, support ticket volume, and NPS response, and any account that drops below the risk threshold triggers a structured intervention playbook, a CSM task to reach out within 24 hours, a check-in email from the account executive, and an executive sponsor alert for high-value accounts. Churn is identified and addressed weeks before the renewal conversation, not the day before the contract expires.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Each week, this automation calculates a health score for every account based on login frequency, feature adoption, support ticket volume, and NPS response, and any account that drops below the risk threshold triggers a structured intervention playbook, a CSM task to reach out within 24 hours, a check-in email from the account executive, and an executive sponsor alert for high-value accounts. Churn is identified and addressed weeks before the renewal conversation, not the day before the contract expires.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a customer success manager remembering to check in, update records, and follow up, with no safety net if something slips. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM or CS platform (e.g., HubSpot, Gainsight, or ChurnZero)</span><span>Zapier or Make.com</span><span>Product analytics platform (e.g., Mixpanel or Amplitude API)</span><span>Slack (churn risk alerts)</span><span>OpenAI API (account summary for CSM)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Feature requests submitted through in-app widgets, support tickets, sales calls, and NPS follow-ups are all routed into a single product feedback repository, where they are automatically deduplicated, tagged by theme, and linked to the customer accounts that submitted them. When a request on the roadmap ships, every customer who submitted it automatically receives a "this feature is live" email, closing the loop that typically never gets closed, and turning product feedback into a customer retention tool.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Feature requests submitted through in-app widgets, support tickets, sales calls, and NPS follow-ups are all routed into a single product feedback repository, where they are automatically deduplicated, tagged by theme, and linked to the customer accounts that submitted them. When a request on the roadmap ships, every customer who submitted it automatically receives a "this feature is live" email, closing the loop that typically never gets closed, and turning product feedback into a customer retention tool.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a product manager, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Product feedback tool (e.g., Canny or ProductBoard)</span><span>Zapier or Make.com</span><span>CRM (for customer linking)</span><span>Jira or Linear (roadmap)</span><span>Mailchimp or email (ship notifications)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a new trial account is created, the user is enrolled in a behavior-driven nurture sequence: welcome email on day one, a setup checklist prompt on day two, a "have you tried this key feature?" email on day four, a use-case webinar invite on day seven, and a conversion offer on day twelve. Users who complete the key activation event (the "aha moment") move to a fast-track conversion sequence, while users who haven't logged in within five days get a re-engagement push, all without the sales rep manually monitoring each trial account.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a new trial account is created, the user is enrolled in a behavior-driven nurture sequence: welcome email on day one, a setup checklist prompt on day two, a "have you tried this key feature?" email on day four, a use-case webinar invite on day seven, and a conversion offer on day twelve. Users who complete the key activation event (the "aha moment") move to a fast-track conversion sequence, while users who haven't logged in within five days get a re-engagement push, all without the sales rep manually monitoring each trial account.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a saas sales representative remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., HubSpot or Salesforce)</span><span>Product analytics (e.g., Mixpanel or Segment)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign (email sequence)</span><span>Calendly (demo scheduling for warm trials)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Incoming support tickets from email, Slack, or the ticketing portal are automatically classified by category and severity, assigned to the correct technician or tier based on skill tags, and given an SLA clock that triggers escalation alerts if the ticket isn't acknowledged or resolved within the agreed window. The help desk manager sees a real-time board of all open tickets with SLA status rather than finding out about a missed commitment from an angry VP, fixing the operational blind spot that exists in every manual ticketing process.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Incoming support tickets from email, Slack, or the ticketing portal are automatically classified by category and severity, assigned to the correct technician or tier based on skill tags, and given an SLA clock that triggers escalation alerts if the ticket isn't acknowledged or resolved within the agreed window. The help desk manager sees a real-time board of all open tickets with SLA status rather than finding out about a missed commitment from an angry VP, fixing the operational blind spot that exists in every manual ticketing process.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means an it help desk manager handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>IT ticketing system (e.g., Jira Service Management, Freshservice, or Zendesk)</span><span>Zapier or Make.com</span><span>Slack (escalation alerts and technician assignments)</span><span>Google Sheets or dashboard (SLA compliance tracking)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a monitoring alert fires, this automation classifies the incident severity, pages the on-call engineer via the escalation policy, creates a war room channel in Slack, posts the current system status to the status page, and begins logging the timeline automatically so the postmortem document starts building itself from the first alert. Once the incident is resolved, a postmortem template is auto-populated with the timeline, alerting chain, and initial impact data, turning the most stressful part of the job into a more structured, less chaotic response.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a monitoring alert fires, this automation classifies the incident severity, pages the on-call engineer via the escalation policy, creates a war room channel in Slack, posts the current system status to the status page, and begins logging the timeline automatically so the postmortem document starts building itself from the first alert. Once the incident is resolved, a postmortem template is auto-populated with the timeline, alerting chain, and initial impact data, turning the most stressful part of the job into a more structured, less chaotic response.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a devops engineer re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Monitoring platform (e.g., Datadog, PagerDuty, or OpsGenie)</span><span>Zapier or Make.com</span><span>Slack (war room channel creation)</span><span>Statuspage.io (public status updates)</span><span>Notion or Confluence (auto-populated postmortem template)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>From the moment someone signs up for a free trial, this automation tracks their in-app activity and automatically sends a tailored email sequence: a getting-started tip on day one, a check-in nudge if they haven't logged back in by day three, and personal outreach from a sales rep if they've used a key feature but haven't upgraded by day 10. Trial users get exactly the nudge that fits where they actually are in the product instead of one generic drip campaign sent to everyone regardless of behavior, turning passive signups into a guided path toward conversion.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">From the moment someone signs up for a free trial, this automation tracks their in-app activity and automatically sends a tailored email sequence: a getting-started tip on day one, a check-in nudge if they haven't logged back in by day three, and personal outreach from a sales rep if they've used a key feature but haven't upgraded by day 10. Trial users get exactly the nudge that fits where they actually are in the product instead of one generic drip campaign sent to everyone regardless of behavior, turning passive signups into a guided path toward conversion.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a growth marketing manager manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Intercom or Customer.io</span><span>Mixpanel or Amplitude</span><span>Zapier or Make.com</span><span>Stripe (upgrade tracking)</span></div>
+          </div>
         </div>
       </details>
 
@@ -515,9 +552,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation continuously monitors usage data for signs a customer is disengaging: login frequency dropping below their normal baseline, key features going unused, or support tickets sitting unanswered. The moment an account crosses the risk threshold, it automatically notifies the customer success manager with the specific warning signs that triggered the flag and fires off a \"we noticed\" outreach email to the customer. Accounts that used to quietly let their subscription lapse get a save attempt while there's still time to turn it around.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation continuously monitors usage data for signs a customer is disengaging: login frequency dropping below their normal baseline, key features going unused, or support tickets sitting unanswered. The moment an account crosses the risk threshold, it automatically notifies the customer success manager with the specific warning signs that triggered the flag and fires off a \"we noticed\" outreach email to the customer. Accounts that used to quietly let their subscription lapse get a save attempt while there's still time to turn it around.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a customer success manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Mixpanel or Amplitude</span><span>Intercom</span><span>Zapier or Make.com</span><span>A CRM (HubSpot or similar)</span></div>
+          </div>
         </div>
       </details>
 
@@ -527,9 +567,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a subscription payment fails, this automation automatically retries the charge on a set schedule, typically at 1, 3, and 7 days, and emails the customer a direct link to update their card each time. Account access is only paused after multiple failed attempts and clear advance warning, not on the first declined charge. Revenue that used to quietly disappear to an expired card no one noticed gets recovered automatically instead of requiring a manual dunning process.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a subscription payment fails, this automation automatically retries the charge on a set schedule, typically at 1, 3, and 7 days, and emails the customer a direct link to update their card each time. Account access is only paused after multiple failed attempts and clear advance warning, not on the first declined charge. Revenue that used to quietly disappear to an expired card no one noticed gets recovered automatically instead of requiring a manual dunning process.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a billing operations manager handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Stripe</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>A CRM for at-risk account tracking</span></div>
+          </div>
         </div>
       </details>
 
@@ -539,9 +582,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When customers submit feature requests through support tickets, in-app feedback widgets, or sales calls, this automation automatically extracts and tags the request by theme, adds it to a shared product roadmap board, and tallies how many distinct customers have asked for the same thing. Product teams get real prioritization data, ranked by actual customer demand, instead of whoever complained loudest in the last team meeting driving the roadmap.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When customers submit feature requests through support tickets, in-app feedback widgets, or sales calls, this automation automatically extracts and tags the request by theme, adds it to a shared product roadmap board, and tallies how many distinct customers have asked for the same thing. Product teams get real prioritization data, ranked by actual customer demand, instead of whoever complained loudest in the last team meeting driving the roadmap.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a product manager handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Productboard or Canny</span><span>Zendesk or Intercom</span><span>Zapier or Make.com</span><span>OpenAI API (request tagging)</span></div>
+          </div>
         </div>
       </details>
 
@@ -551,9 +597,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a monitoring tool detects a service outage or degraded performance, this automation automatically updates the public status page with the incident details, posts an update to the company's status account on social media, and pages the on-call engineer. Customers find out about an issue from the company's own channels within minutes instead of flooding support with \"is this down\" tickets while the team is still investigating.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a monitoring tool detects a service outage or degraded performance, this automation automatically updates the public status page with the incident details, posts an update to the company's status account on social media, and pages the on-call engineer. Customers find out about an issue from the company's own channels within minutes instead of flooding support with \"is this down\" tickets while the team is still investigating.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a site reliability engineer spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Datadog or PagerDuty</span><span>Statuspage or a similar status page tool</span><span>Zapier or Make.com</span><span>Slack</span></div>
+          </div>
         </div>
       </details>
 

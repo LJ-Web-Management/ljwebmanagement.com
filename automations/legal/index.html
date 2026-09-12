@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Attorney</span><h3>Matter Profitability &amp; Unbilled Time Alert System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>At the end of each week, this automation pulls every open matter the attorney has billed time to, compares total time captured against the retainer balance or budget estimate, and delivers a per-matter profitability summary. Matters where time captured is tracking to exceed the budget by more than 20% receive an immediate flag so the attorney can have a scope conversation with the client before the overage becomes an invoice dispute. Unbilled time sitting more than 10 days without being applied to an invoice triggers a reminder, because time that isn't captured quickly is time that disappears permanently.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">At the end of each week, this automation pulls every open matter the attorney has billed time to, compares total time captured against the retainer balance or budget estimate, and delivers a per-matter profitability summary. Matters where time captured is tracking to exceed the budget by more than 20% receive an immediate flag so the attorney can have a scope conversation with the client before the overage becomes an invoice dispute. Unbilled time sitting more than 10 days without being applied to an invoice triggers a reminder, because time that isn't captured quickly is time that disappears permanently.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on an attorney remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management/billing software (e.g., Clio or TimeSolv)</span><span>Zapier or Make.com</span><span>Google Sheets or Airtable (profitability summary)</span><span>Slack or email (weekly alert delivery)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a discovery request is received and logged, this automation calculates the response deadline based on the applicable rules (federal, state, or local) creates a series of internal preparation deadlines working backward from that date, and assigns tasks to the responsible attorney and paralegal with escalating reminders. Any task that misses its internal deadline triggers an immediate flag to the supervising attorney. Litigation is managed to a calendar, not to whoever remembered to check their inbox that morning.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a discovery request is received and logged, this automation calculates the response deadline based on the applicable rules (federal, state, or local) creates a series of internal preparation deadlines working backward from that date, and assigns tasks to the responsible attorney and paralegal with escalating reminders. Any task that misses its internal deadline triggers an immediate flag to the supervising attorney. Litigation is managed to a calendar, not to whoever remembered to check their inbox that morning.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a paralegal has to notice problems after they've already happened, then scramble to fix them manually one at a time. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Google Calendar or Outlook (deadline entries)</span><span>Airtable (discovery tracker)</span><span>Slack (internal deadline alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every vendor invoice received by the firm (court reporter, process server, expert witness, office supplies) is automatically routed to the appropriate matter or overhead code, sent to the office manager for one-click approval, and queued for payment on the next scheduled payment run. Invoices that sit unapproved for more than five business days trigger an escalation. At month end, an expense summary by matter and by vendor category is generated automatically, giving the office manager the data needed for budget reviews without exporting anything manually from any system.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every vendor invoice received by the firm (court reporter, process server, expert witness, office supplies) is automatically routed to the appropriate matter or overhead code, sent to the office manager for one-click approval, and queued for payment on the next scheduled payment run. Invoices that sit unapproved for more than five business days trigger an escalation. At month end, an expense summary by matter and by vendor category is generated automatically, giving the office manager the data needed for budget reviews without exporting anything manually from any system.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a law firm office manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>QuickBooks Online or a legal billing platform</span><span>Zapier or Make.com</span><span>Jotform or email (invoice intake and approval flow)</span><span>Google Sheets (expense summary)</span><span>Slack (unapproved invoice escalations)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every missed call to the firm's main line triggers an automatic text back to the caller within two minutes, acknowledging the call and asking what they're calling about, converting a missed call into a text conversation the intake specialist can respond to when available. Calls and web form submissions that come in after hours are logged, auto-acknowledged with a clear response time expectation, and added to the intake specialist's morning queue with full context. Firms that adopt this system stop losing prospective clients to competitors who answered first, because the firm's first response now goes out in seconds regardless of the hour.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every missed call to the firm's main line triggers an automatic text back to the caller within two minutes, acknowledging the call and asking what they're calling about, converting a missed call into a text conversation the intake specialist can respond to when available. Calls and web form submissions that come in after hours are logged, auto-acknowledged with a clear response time expectation, and added to the intake specialist's morning queue with full context. Firms that adopt this system stop losing prospective clients to competitors who answered first, because the firm's first response now goes out in seconds regardless of the hour.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a legal intake specialist re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Phone system with missed call webhook (e.g., RingCentral or Grasshopper)</span><span>Zapier or Make.com</span><span>Twilio (automatic text-back)</span><span>CRM (e.g., Lawmatics or Clio Grow)</span><span>Slack (morning queue summary)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every time a new client lists a referral source during intake, the system logs the referring attorney, accountant, or business contact, updates their referral count in the CRM, and automatically triggers a personalized thank-you email from the firm. Referral partners who haven't sent a case in 90 days receive a gentle check-in from the marketing manager, turning the referral network from a mental note into a systematically managed revenue channel.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every time a new client lists a referral source during intake, the system logs the referring attorney, accountant, or business contact, updates their referral count in the CRM, and automatically triggers a personalized thank-you email from the firm. Referral partners who haven't sent a case in 90 days receive a gentle check-in from the marketing manager, turning the referral network from a mental note into a systematically managed revenue channel.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a legal marketing manager remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., Clio Grow or HubSpot)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Jotform (intake source tracking)</span><span>Google Sheets (referral dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a prospective client fills out the contact form or texts the firm's main number, this automation runs them through a short qualifying sequence: practice area, case type, jurisdiction, and rough timeline. Inquiries that fall outside the firm's practice areas or licensed jurisdictions are automatically filtered out with a polite referral message instead of landing in an attorney's inbox. Qualified leads are routed to the correct attorney's calendar based on practice area and booked directly into an open consultation slot, with a confirmation text and calendar invite sent within seconds. The managing partner gets a daily summary of every inquiry, qualified or not, so nothing falls through the cracks and no attorney wastes a 30-minute slot on a case the firm was never going to take.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a prospective client fills out the contact form or texts the firm's main number, this automation runs them through a short qualifying sequence: practice area, case type, jurisdiction, and rough timeline. Inquiries that fall outside the firm's practice areas or licensed jurisdictions are automatically filtered out with a polite referral message instead of landing in an attorney's inbox. Qualified leads are routed to the correct attorney's calendar based on practice area and booked directly into an open consultation slot, with a confirmation text and calendar invite sent within seconds. The managing partner gets a daily summary of every inquiry, qualified or not, so nothing falls through the cracks and no attorney wastes a 30-minute slot on a case the firm was never going to take.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a managing partner has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., Clio Grow or Lawmatics)</span><span>Zapier or Make.com</span><span>Twilio (SMS qualification)</span><span>Calendly (synced to attorney calendars)</span><span>Jotform (web intake quiz)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -514,9 +551,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As a matter moves through its key stages, filing, discovery, mediation, settlement, or a trial date being set, this automation fires a plain-language status update text to the client the moment the matter's status field changes in the practice management system. Each update is pulled from a pre-approved template library so the language stays consistent and nothing client-facing goes out without review. Clients can reply with a quick question that gets routed straight to the client relations coordinator instead of leaving a voicemail that takes two days to return. Firms running this typically see "any updates?" calls drop by more than half, because clients stop feeling like they have to call just to find out their case still exists.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As a matter moves through its key stages, filing, discovery, mediation, settlement, or a trial date being set, this automation fires a plain-language status update text to the client the moment the matter's status field changes in the practice management system. Each update is pulled from a pre-approved template library so the language stays consistent and nothing client-facing goes out without review. Clients can reply with a quick question that gets routed straight to the client relations coordinator instead of leaving a voicemail that takes two days to return. Firms running this typically see "any updates?" calls drop by more than half, because clients stop feeling like they have to call just to find out their case still exists.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a client relations coordinator handles each case reactively, after someone has already noticed something went wrong.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Twilio (status update texts)</span><span>Airtable (template library)</span><span>Slack (client reply routing)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -525,9 +565,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a client is asked for documents, whether it's financial records for a divorce, medical bills for a personal injury claim, or signed affidavits, this automation logs the outstanding request and starts a follow-up sequence: a reminder text at 72 hours, a second reminder with a direct secure upload link at 5 days, and an escalation to the litigation support specialist for a personal call at 8 days if nothing has arrived. Every uploaded document is automatically matched to the open request and marked complete, so staff spend no time cross-checking what's been received against what's still owed. Firms typically cut the average time to collect a full document set by several days simply by removing the guesswork of who's still waiting on what.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a client is asked for documents, whether it's financial records for a divorce, medical bills for a personal injury claim, or signed affidavits, this automation logs the outstanding request and starts a follow-up sequence: a reminder text at 72 hours, a second reminder with a direct secure upload link at 5 days, and an escalation to the litigation support specialist for a personal call at 8 days if nothing has arrived. Every uploaded document is automatically matched to the open request and marked complete, so staff spend no time cross-checking what's been received against what's still owed. Firms typically cut the average time to collect a full document set by several days simply by removing the guesswork of who's still waiting on what.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a litigation support specialist spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Twilio (reminder texts)</span><span>Secure client portal (e.g., Clio's client portal or NetDocuments)</span><span>Email (reminder delivery)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -536,9 +579,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once an engagement letter or other document is sent out for signature, this automation tracks its status in real time and automatically sends a reminder email at 48 hours and a reminder text at 96 hours if it's still unsigned. Documents that remain unsigned after 7 days trigger a task for the client onboarding coordinator to reach out personally, since a matter can't officially open, and billing can't officially start, until the engagement letter is signed. Every reminder pulls the client's name and document title automatically, so nothing goes out generic or gets sent to the wrong person. Engagement letters that used to sit unsigned for a week or more now typically close out within a day or two of the first reminder.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once an engagement letter or other document is sent out for signature, this automation tracks its status in real time and automatically sends a reminder email at 48 hours and a reminder text at 96 hours if it's still unsigned. Documents that remain unsigned after 7 days trigger a task for the client onboarding coordinator to reach out personally, since a matter can't officially open, and billing can't officially start, until the engagement letter is signed. Every reminder pulls the client's name and document title automatically, so nothing goes out generic or gets sent to the wrong person. Engagement letters that used to sit unsigned for a week or more now typically close out within a day or two of the first reminder.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a client onboarding coordinator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>E-signature platform (e.g., DocuSign or PandaDoc)</span><span>Zapier or Make.com</span><span>Twilio (SMS reminders)</span><span>Email (reminder delivery)</span><span>Practice management software (matter status sync)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -547,9 +593,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every call that rings through to voicemail, whether the attorney is in court, in a deposition, or simply on another line, triggers an automatic text within 60 seconds thanking the caller and asking two quick questions: what kind of legal matter it's regarding and the best time to reach them back. The caller's reply is captured automatically as a new lead card with their answers already filled in, so the attorney opens a ready-to-call list instead of a string of unlabeled voicemails at the end of the day. For a solo or small practice without a receptionist covering every line, this alone recovers callers who would otherwise hang up and call the next firm on their search results. Practices using this typically convert a meaningfully higher share of missed calls into booked consultations simply because someone, or something, answered within a minute.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every call that rings through to voicemail, whether the attorney is in court, in a deposition, or simply on another line, triggers an automatic text within 60 seconds thanking the caller and asking two quick questions: what kind of legal matter it's regarding and the best time to reach them back. The caller's reply is captured automatically as a new lead card with their answers already filled in, so the attorney opens a ready-to-call list instead of a string of unlabeled voicemails at the end of the day. For a solo or small practice without a receptionist covering every line, this alone recovers callers who would otherwise hang up and call the next firm on their search results. Practices using this typically convert a meaningfully higher share of missed calls into booked consultations simply because someone, or something, answered within a minute.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a solo practice attorney has to notice problems after they've already happened, then scramble to fix them manually one at a time. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Phone system with missed call webhook (e.g., RingCentral or Grasshopper)</span><span>Zapier or Make.com</span><span>Twilio (automatic text-back)</span><span>CRM (e.g., Clio Grow or Lawmatics)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -558,9 +607,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a new client submits the firm's web intake form, this automation instantly creates a matching record in the CRM with their contact information, case type, referral source, and a preliminary conflict-check flag based on opposing party names entered on the form. The new client coordinator receives a notification the moment a submission needs manual conflict review, while clean submissions move straight into the assigned attorney's queue with no re-typing required. Every field maps automatically from the web form to the CRM, so what a prospective client types once is the same data the firm works from through the entire matter. Firms using this eliminate the lag, and the transcription errors, that come from an intake specialist retyping form submissions into the CRM by hand.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a new client submits the firm's web intake form, this automation instantly creates a matching record in the CRM with their contact information, case type, referral source, and a preliminary conflict-check flag based on opposing party names entered on the form. The new client coordinator receives a notification the moment a submission needs manual conflict review, while clean submissions move straight into the assigned attorney's queue with no re-typing required. Every field maps automatically from the web form to the CRM, so what a prospective client types once is the same data the firm works from through the entire matter. Firms using this eliminate the lag, and the transcription errors, that come from an intake specialist retyping form submissions into the CRM by hand.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a new client coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Web form tool (e.g., Jotform or Gravity Forms)</span><span>CRM (e.g., Clio Grow or Lawmatics)</span><span>Zapier or Make.com</span><span>Email or Slack (conflict-check alerts)</span><span>Google Sheets (submission log)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -569,9 +621,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation checks the practice management system daily for matters that have moved to closed status, and once a matter closes, it waits 10 days before sending the client a review request, timed specifically to avoid soliciting feedback on a matter that's still pending, which several state bar advertising rules treat as a compliance risk. The request avoids referencing any case specifics or outcome details and instead asks the client to speak generally to their experience working with the firm. Positive responses are routed to a public review link for Google or Avvo, while any lower-rated response is routed privately to the client success manager for direct follow-up instead of appearing publicly. Firms using this build a steady stream of public reviews without ever risking a bar complaint over premature or case-specific solicitation.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation checks the practice management system daily for matters that have moved to closed status, and once a matter closes, it waits 10 days before sending the client a review request, timed specifically to avoid soliciting feedback on a matter that's still pending, which several state bar advertising rules treat as a compliance risk. The request avoids referencing any case specifics or outcome details and instead asks the client to speak generally to their experience working with the firm. Positive responses are routed to a public review link for Google or Avvo, while any lower-rated response is routed privately to the client success manager for direct follow-up instead of appearing publicly. Firms using this build a steady stream of public reviews without ever risking a bar complaint over premature or case-specific solicitation.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a client success manager remembering to check in, update records, and follow up, with no safety net if something slips. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Email or Twilio (review request delivery)</span><span>Podium or BirdEye (review routing and publishing)</span><span>Google Sheets (closed-matter tracking)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -580,9 +635,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a prospective client submits a consultation request through the firm's website form in Jotform, the automation reads the practice area field and instantly routes the request to the correct attorney or paralegal queue in Clio Grow, tagging urgent matters like an eviction with a hearing date or an upcoming arraignment for same-day callback. A Zapier workflow starts an internal countdown the moment the request lands, and if no one has logged a response within the firm's target window, it automatically escalates with a Slack alert to the intake coordinator and, if still unanswered, to the managing partner. Every request and response time logs to a running Google Sheets dashboard so leadership can see exactly where bottlenecks happen. Firms running this catch same-day, high-urgency matters that used to sit in a shared inbox until someone happened to check it, and average response time typically drops from hours to minutes.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a prospective client submits a consultation request through the firm's website form in Jotform, the automation reads the practice area field and instantly routes the request to the correct attorney or paralegal queue in Clio Grow, tagging urgent matters like an eviction with a hearing date or an upcoming arraignment for same-day callback. A Zapier workflow starts an internal countdown the moment the request lands, and if no one has logged a response within the firm's target window, it automatically escalates with a Slack alert to the intake coordinator and, if still unanswered, to the managing partner. Every request and response time logs to a running Google Sheets dashboard so leadership can see exactly where bottlenecks happen. Firms running this catch same-day, high-urgency matters that used to sit in a shared inbox until someone happened to check it, and average response time typically drops from hours to minutes.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, an intake coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (consultation request form)</span><span>CRM (e.g., Clio Grow or Lawmatics)</span><span>Zapier or Make.com</span><span>Slack (escalation alerts)</span><span>Google Sheets (response time dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -591,9 +649,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a consultation is booked on Calendly, a Zapier workflow automatically sends the client a secure intake questionnaire through Jotform along with a personalized checklist of required documents, from photo ID to insurance declarations pages, based on the practice area selected at booking. Completed responses and uploaded files sync directly into the client's matter file in Clio, so the case manager can confirm everything is in before the first meeting instead of chasing paperwork afterward. Clients who haven't completed the questionnaire 48 hours before their appointment automatically receive a reminder text through Twilio, and anything still outstanding the morning of triggers an internal Slack alert to the case manager. Attorneys walk into first meetings with signed intake forms, ID copies, and supporting documents already reviewed, cutting roughly 20 minutes of paperwork chasing out of every new matter.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a consultation is booked on Calendly, a Zapier workflow automatically sends the client a secure intake questionnaire through Jotform along with a personalized checklist of required documents, from photo ID to insurance declarations pages, based on the practice area selected at booking. Completed responses and uploaded files sync directly into the client's matter file in Clio, so the case manager can confirm everything is in before the first meeting instead of chasing paperwork afterward. Clients who haven't completed the questionnaire 48 hours before their appointment automatically receive a reminder text through Twilio, and anything still outstanding the morning of triggers an internal Slack alert to the case manager. Attorneys walk into first meetings with signed intake forms, ID copies, and supporting documents already reviewed, cutting roughly 20 minutes of paperwork chasing out of every new matter.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a case manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Calendly</span><span>Jotform (intake questionnaire)</span><span>Practice management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Twilio (reminder texts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -602,9 +663,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every time a case's status field changes inside the practice management system, whether it moves from "filed" to "discovery" or "in negotiation" to "settled," the automation automatically translates the internal status code into a plain-language update and pushes it to the client through the Clio client portal and a follow-up email. A Zapier integration watches for status-field changes in MyCase and fires the notification within minutes rather than waiting for a staff member to remember to update the client, and clients can opt into SMS delivery through Twilio for faster visibility on their phone. Because clients can see progress in real time instead of wondering, the client services associate's inbound "what's happening with my case" calls typically drop by more than half, freeing several hours a week that used to go to status-check phone calls.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every time a case's status field changes inside the practice management system, whether it moves from "filed" to "discovery" or "in negotiation" to "settled," the automation automatically translates the internal status code into a plain-language update and pushes it to the client through the Clio client portal and a follow-up email. A Zapier integration watches for status-field changes in MyCase and fires the notification within minutes rather than waiting for a staff member to remember to update the client, and clients can opt into SMS delivery through Twilio for faster visibility on their phone. Because clients can see progress in real time instead of wondering, the client services associate's inbound "what's happening with my case" calls typically drop by more than half, freeing several hours a week that used to go to status-check phone calls.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a client services associate re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Twilio (SMS updates)</span><span>Secure client portal (e.g., Clio's client portal)</span><span>Email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -613,9 +677,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once an engagement letter or other document is sent for signature through DocuSign, the automation automatically starts a reminder countdown: any document still unsigned by day 1 triggers a friendly email nudge, day 3 adds a text reminder through Twilio, and day 7 escalates to a phone call task assigned directly to the legal assistant in Clio. Each reminder pulls the client's name and document title automatically so nothing reads as a generic template, and the moment the document is signed, the sequence cancels itself and the matter automatically moves to the next intake stage in the practice management system. Legal assistants who used to track pending signatures in a spreadsheet and manually follow up now recover documents days faster on average, and engagement letters rarely sit unsigned for more than a week.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once an engagement letter or other document is sent for signature through DocuSign, the automation automatically starts a reminder countdown: any document still unsigned by day 1 triggers a friendly email nudge, day 3 adds a text reminder through Twilio, and day 7 escalates to a phone call task assigned directly to the legal assistant in Clio. Each reminder pulls the client's name and document title automatically so nothing reads as a generic template, and the moment the document is signed, the sequence cancels itself and the matter automatically moves to the next intake stage in the practice management system. Legal assistants who used to track pending signatures in a spreadsheet and manually follow up now recover documents days faster on average, and engagement letters rarely sit unsigned for more than a week.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a legal assistant is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>E-signature platform (e.g., DocuSign or PandaDoc)</span><span>Zapier or Make.com</span><span>Twilio (SMS reminders)</span><span>Practice management software (matter status sync)</span><span>Email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -624,9 +691,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As soon as a key date, whether a statute of limitations, a filing deadline, or a response due date, is entered into the case management system for a matter, the automation automatically cross-references it against the firm's docketing calendar in Clio and schedules a chain of advance warnings at 30, 14, 7, and 1 day out. Alerts go simultaneously to the assigned attorney and the docketing clerk through both email and a shared Google Calendar entry, and any deadline within 48 hours that hasn't been marked complete triggers an urgent Slack alert to the managing partner as a backstop. Because the system never forgets a date the way an overloaded calendar sometimes does, firms running this build a second layer of protection against the single costliest mistake a firm can make: missing a filing deadline or letting a statute run.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As soon as a key date, whether a statute of limitations, a filing deadline, or a response due date, is entered into the case management system for a matter, the automation automatically cross-references it against the firm's docketing calendar in Clio and schedules a chain of advance warnings at 30, 14, 7, and 1 day out. Alerts go simultaneously to the assigned attorney and the docketing clerk through both email and a shared Google Calendar entry, and any deadline within 48 hours that hasn't been marked complete triggers an urgent Slack alert to the managing partner as a backstop. Because the system never forgets a date the way an overloaded calendar sometimes does, firms running this build a second layer of protection against the single costliest mistake a firm can make: missing a filing deadline or letting a statute run.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a docketing clerk re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Google Calendar or Outlook (deadline entries)</span><span>Slack (urgent escalation)</span><span>Email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -635,9 +705,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When an inbound call to the firm goes unanswered because every line is busy or it's after hours, the phone system automatically fires a webhook that triggers a Zapier workflow to send the caller a text message within seconds through Twilio, apologizing for missing the call and offering a Calendly link to book a consultation directly. The text also gives callers the option to reply with their legal issue in a few words, which automatically creates a lead record in Clio Grow tagged by practice area for the intake team to review first thing. The receptionist gets a morning Slack digest of every missed call and how each one was handled overnight. Firms running this recover leads that would otherwise call a competitor while waiting on hold, and it's common to convert 15 to 20 percent of missed calls into booked consultations that never would have called back.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When an inbound call to the firm goes unanswered because every line is busy or it's after hours, the phone system automatically fires a webhook that triggers a Zapier workflow to send the caller a text message within seconds through Twilio, apologizing for missing the call and offering a Calendly link to book a consultation directly. The text also gives callers the option to reply with their legal issue in a few words, which automatically creates a lead record in Clio Grow tagged by practice area for the intake team to review first thing. The receptionist gets a morning Slack digest of every missed call and how each one was handled overnight. Firms running this recover leads that would otherwise call a competitor while waiting on hold, and it's common to convert 15 to 20 percent of missed calls into booked consultations that never would have called back.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a receptionist is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Phone system with missed call webhook (e.g., RingCentral or Grasshopper)</span><span>Zapier or Make.com</span><span>Twilio (automatic text-back)</span><span>CRM (e.g., Clio Grow or Lawmatics)</span><span>Slack (morning queue summary)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -646,9 +719,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a matter is marked closed and successfully resolved in Clio, the automation automatically waits a set number of days, timed to when client satisfaction is highest, before sending a review request by email and text through Twilio. The request links directly to the firm's Google or Avvo review page and avoids referencing any case-specific outcome details to stay within bar advertising guidelines. Responses are automatically filtered: clients who indicate a positive experience get routed straight to the public review link, while anyone who signals frustration is routed privately to the marketing coordinator for a follow-up call instead of a public post. Every request and outcome logs to a Google Sheets tracker so the firm can measure response rates over time. Firms running this consistently see review volume roughly triple compared to relying on staff to remember to ask.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a matter is marked closed and successfully resolved in Clio, the automation automatically waits a set number of days, timed to when client satisfaction is highest, before sending a review request by email and text through Twilio. The request links directly to the firm's Google or Avvo review page and avoids referencing any case-specific outcome details to stay within bar advertising guidelines. Responses are automatically filtered: clients who indicate a positive experience get routed straight to the public review link, while anyone who signals frustration is routed privately to the marketing coordinator for a follow-up call instead of a public post. Every request and outcome logs to a Google Sheets tracker so the firm can measure response rates over time. Firms running this consistently see review volume roughly triple compared to relying on staff to remember to ask.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a marketing coordinator has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Twilio (review request delivery)</span><span>Google or Avvo review link</span><span>Google Sheets (response tracking)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -657,9 +733,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a new client signs an engagement letter, the automation automatically tags their matter in Clio Grow with the originating marketing channel or referral source, whether that's a Google Ads campaign, a referring attorney, or a past client, pulled from the original intake form data captured in Jotform. A Zapier workflow feeds every tagged signing into a live Google Sheets or Airtable dashboard that calculates signed-client volume and revenue by source automatically, updating in real time rather than requiring someone to compile numbers at month end. The business development director receives a weekly Slack summary showing which referral sources and marketing channels are actually converting into paying clients versus which ones just generate consultations that go nowhere. With real signed-revenue attribution instead of a gut feeling, firms typically redirect marketing spend within a quarter toward the two or three sources actually producing business.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a new client signs an engagement letter, the automation automatically tags their matter in Clio Grow with the originating marketing channel or referral source, whether that's a Google Ads campaign, a referring attorney, or a past client, pulled from the original intake form data captured in Jotform. A Zapier workflow feeds every tagged signing into a live Google Sheets or Airtable dashboard that calculates signed-client volume and revenue by source automatically, updating in real time rather than requiring someone to compile numbers at month end. The business development director receives a weekly Slack summary showing which referral sources and marketing channels are actually converting into paying clients versus which ones just generate consultations that go nowhere. With real signed-revenue attribution instead of a gut feeling, firms typically redirect marketing spend within a quarter toward the two or three sources actually producing business.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a business development director manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., Clio Grow or HubSpot)</span><span>Zapier or Make.com</span><span>Jotform (intake source tracking)</span><span>Google Sheets or Airtable (referral dashboard)</span><span>Slack (weekly summary)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -668,9 +747,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation continuously monitors each client's trust or retainer balance inside the billing platform, and the moment a balance drops below a firm-defined threshold, it automatically notifies both the billing coordinator and the client simultaneously: the client through a plain-language email explaining the balance and a secure link to replenish it, and the billing coordinator through a Slack alert flagging the account for follow-up if the client hasn't responded within a few days. Because the notification is automatic and consistent for every client, no one on staff has to initiate the sometimes-awkward conversation about needing more money, and clients get advance notice before their balance hits zero and work has to pause. Firms running this see far fewer stalled matters caused by a depleted retainer, and billing staff report the low-balance conversation becoming a non-issue instead of a recurring friction point.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation continuously monitors each client's trust or retainer balance inside the billing platform, and the moment a balance drops below a firm-defined threshold, it automatically notifies both the billing coordinator and the client simultaneously: the client through a plain-language email explaining the balance and a secure link to replenish it, and the billing coordinator through a Slack alert flagging the account for follow-up if the client hasn't responded within a few days. Because the notification is automatic and consistent for every client, no one on staff has to initiate the sometimes-awkward conversation about needing more money, and clients get advance notice before their balance hits zero and work has to pause. Firms running this see far fewer stalled matters caused by a depleted retainer, and billing staff report the low-balance conversation becoming a non-issue instead of a recurring friction point.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a billing coordinator remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Billing platform (e.g., LawPay or Clio)</span><span>Zapier or Make.com</span><span>Email (client notice)</span><span>Slack (billing team alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -679,9 +761,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Anyone who registers for a free legal webinar or seminar through the firm's registration page in Jotform is automatically added to a topic-specific nurture sequence in ActiveCampaign the moment they sign up, no manual list-building required. Attendees who actually show up receive a different follow-up track than no-shows, including a replay link and a related case-study email, while no-shows get a shorter re-engagement sequence with a lighter offer to book a consultation. A Zapier workflow syncs every registrant into Clio Grow as a tagged lead so the events and marketing coordinator can see webinar-sourced leads separately from other channels. Prospects who aren't ready to hire an attorney the day of the webinar stay warm through months of relevant content instead of falling off the radar, and firms typically see a meaningful share of webinar attendees convert to consultations weeks or months later.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Anyone who registers for a free legal webinar or seminar through the firm's registration page in Jotform is automatically added to a topic-specific nurture sequence in ActiveCampaign the moment they sign up, no manual list-building required. Attendees who actually show up receive a different follow-up track than no-shows, including a replay link and a related case-study email, while no-shows get a shorter re-engagement sequence with a lighter offer to book a consultation. A Zapier workflow syncs every registrant into Clio Grow as a tagged lead so the events and marketing coordinator can see webinar-sourced leads separately from other channels. Prospects who aren't ready to hire an attorney the day of the webinar stay warm through months of relevant content instead of falling off the radar, and firms typically see a meaningful share of webinar attendees convert to consultations weeks or months later.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means an events & marketing coordinator handles each case reactively, after someone has already noticed something went wrong. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (webinar registration)</span><span>Mailchimp or ActiveCampaign</span><span>Zapier or Make.com</span><span>CRM (e.g., Clio Grow or HubSpot)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -690,9 +775,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As soon as a hearing or court date is entered into the case management system, the automation automatically schedules a reminder sequence to both the client and the assigned trial paralegal at two weeks, three days, and the morning of the appearance, delivered by email and text through Twilio. Each reminder automatically pulls in the specific logistics for that hearing, courtroom number, judge's name, parking instructions, and a note on what documents or evidence to bring, so nothing has to be typed manually every time. If a court date changes in Clio, the entire reminder chain automatically reschedules itself rather than requiring staff to catch and manually update it. Clients show up prepared and on time far more consistently, and the trial paralegal is freed from manually tracking and re-sending reminders for every hearing on the firm's docket each week.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As soon as a hearing or court date is entered into the case management system, the automation automatically schedules a reminder sequence to both the client and the assigned trial paralegal at two weeks, three days, and the morning of the appearance, delivered by email and text through Twilio. Each reminder automatically pulls in the specific logistics for that hearing, courtroom number, judge's name, parking instructions, and a note on what documents or evidence to bring, so nothing has to be typed manually every time. If a court date changes in Clio, the entire reminder chain automatically reschedules itself rather than requiring staff to catch and manually update it. Clients show up prepared and on time far more consistently, and the trial paralegal is freed from manually tracking and re-sending reminders for every hearing on the firm's docket each week.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a trial paralegal has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Twilio (reminder texts)</span><span>Google Calendar or Outlook</span><span>Email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -701,9 +789,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Key documents with hard expiration dates, powers of attorney, business licenses, professional permits, and similar filings, are automatically logged into a tracking system the moment they're entered into Clio, and the automation calculates renewal deadlines and schedules advance alerts at 90, 30, and 7 days out. Both the client and the compliance paralegal receive the alerts: the client through email with plain-language renewal instructions, and the paralegal through a Slack notification tied to a task in the practice management system. A running Airtable dashboard shows every tracked document across the firm's entire client base sorted by days remaining, so nothing depends on one person's memory. Because renewals surface automatically well ahead of the deadline instead of when a client suddenly realizes their permit lapsed, firms catch expirations weeks in advance and avoid the scramble that comes with a document lapsing unnoticed.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Key documents with hard expiration dates, powers of attorney, business licenses, professional permits, and similar filings, are automatically logged into a tracking system the moment they're entered into Clio, and the automation calculates renewal deadlines and schedules advance alerts at 90, 30, and 7 days out. Both the client and the compliance paralegal receive the alerts: the client through email with plain-language renewal instructions, and the paralegal through a Slack notification tied to a task in the practice management system. A running Airtable dashboard shows every tracked document across the firm's entire client base sorted by days remaining, so nothing depends on one person's memory. Because renewals surface automatically well ahead of the deadline instead of when a client suddenly realizes their permit lapsed, firms catch expirations weeks in advance and avoid the scramble that comes with a document lapsing unnoticed.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a compliance paralegal, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Airtable (expiration dashboard)</span><span>Slack (staff alerts)</span><span>Email (client renewal notices)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -712,9 +803,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Throughout the month, as attorneys log billable time entries directly in Clio or TimeSolv, the automation automatically compiles every entry tied to a matter into a draft invoice on a set billing cycle rather than waiting for someone to manually pull time records at month end. Draft invoices route automatically to the billing manager in QuickBooks Online for a final review, with any entry missing a description or exceeding a flagged hourly threshold highlighted for a second look before it goes out. Once approved, invoices send automatically to clients by email with a secure payment link, and unpaid invoices past 15 days automatically trigger a polite follow-up reminder. What used to take the billing manager a day and a half of manual compiling each month now takes under an hour of review, and invoices consistently go out on the same date every cycle instead of drifting later each month.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Throughout the month, as attorneys log billable time entries directly in Clio or TimeSolv, the automation automatically compiles every entry tied to a matter into a draft invoice on a set billing cycle rather than waiting for someone to manually pull time records at month end. Draft invoices route automatically to the billing manager in QuickBooks Online for a final review, with any entry missing a description or exceeding a flagged hourly threshold highlighted for a second look before it goes out. Once approved, invoices send automatically to clients by email with a secure payment link, and unpaid invoices past 15 days automatically trigger a polite follow-up reminder. What used to take the billing manager a day and a half of manual compiling each month now takes under an hour of review, and invoices consistently go out on the same date every cycle instead of drifting later each month.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a billing manager has to notice problems after they've already happened, then scramble to fix them manually one at a time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management/billing software (e.g., Clio or TimeSolv)</span><span>QuickBooks Online</span><span>Zapier or Make.com</span><span>Email (invoice delivery)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -723,9 +817,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The instant a new matter is entered into the intake system through a Jotform submission or directly in Clio Grow, the automation automatically cross-references every party name, opposing party, and related entity against the firm's existing and former client database before the matter can move forward to formal acceptance. Any potential match automatically routes to conflicts counsel through a Slack alert with the matching records attached for manual review, and the new matter is held in a "pending conflict check" status in the practice management system until it's cleared. Clean checks automatically clear the matter to proceed to engagement letter generation without any manual gatekeeping step. Running a conflict check on every single matter automatically, instead of relying on someone to remember to run it before accepting a new client, closes off one of the more common and costly compliance gaps at growing firms.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The instant a new matter is entered into the intake system through a Jotform submission or directly in Clio Grow, the automation automatically cross-references every party name, opposing party, and related entity against the firm's existing and former client database before the matter can move forward to formal acceptance. Any potential match automatically routes to conflicts counsel through a Slack alert with the matching records attached for manual review, and the new matter is held in a "pending conflict check" status in the practice management system until it's cleared. Clean checks automatically clear the matter to proceed to engagement letter generation without any manual gatekeeping step. Running a conflict check on every single matter automatically, instead of relying on someone to remember to run it before accepting a new client, closes off one of the more common and costly compliance gaps at growing firms.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a conflicts counsel, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Web form tool (e.g., Jotform or Gravity Forms)</span><span>CRM (e.g., Clio Grow or Lawmatics)</span><span>Zapier or Make.com</span><span>Slack (conflict-check alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -734,9 +831,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a client uploads a document or sends a message through the firm's secure client portal in Clio or NetDocuments, the automation automatically notifies the assigned attorney and the practice administrator through Slack, tagging the alert with the client's name and matter number so it's immediately clear which file needs attention. Messages left unread for more than four business hours automatically escalate with a second reminder, and any upload flagged as urgent by the client triggers an immediate text through Twilio rather than waiting for the next email check. A running Google Sheets log tracks response times across the whole team so the practice administrator can spot which matters are falling behind on portal responsiveness. Nothing a client submits through the portal sits unread overnight anymore, and firms running this typically cut portal response time from the better part of a day down to a few hours.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a client uploads a document or sends a message through the firm's secure client portal in Clio or NetDocuments, the automation automatically notifies the assigned attorney and the practice administrator through Slack, tagging the alert with the client's name and matter number so it's immediately clear which file needs attention. Messages left unread for more than four business hours automatically escalate with a second reminder, and any upload flagged as urgent by the client triggers an immediate text through Twilio rather than waiting for the next email check. A running Google Sheets log tracks response times across the whole team so the practice administrator can spot which matters are falling behind on portal responsiveness. Nothing a client submits through the portal sits unread overnight anymore, and firms running this typically cut portal response time from the better part of a day down to a few hours.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a practice administrator has to notice problems after they've already happened, then scramble to fix them manually one at a time. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Secure client portal (e.g., Clio's client portal or NetDocuments)</span><span>Zapier or Make.com</span><span>Slack (attorney alerts)</span><span>Twilio (urgent alerts)</span><span>Google Sheets (response log)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -745,9 +845,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a settlement is marked approved in Clio, the automation automatically generates a disbursement checklist specific to that matter type, covering attorney fees, outstanding case costs, medical liens, and the client's net proceeds, and assigns each line item as a task to the settlement coordinator and accounting. A Zapier workflow notifies the accounting team in QuickBooks Online immediately so funds can be processed against a documented checklist instead of someone reconstructing the disbursement from scratch for each settlement. The client automatically receives a plain-language disbursement summary once every line item is marked complete, along with an estimated timeline for their check. Because every settlement follows the same automated checklist, disbursement errors, a missed lien or a miscalculated fee, drop sharply, and settlements that used to take a week to fully process often clear within two or three business days.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a settlement is marked approved in Clio, the automation automatically generates a disbursement checklist specific to that matter type, covering attorney fees, outstanding case costs, medical liens, and the client's net proceeds, and assigns each line item as a task to the settlement coordinator and accounting. A Zapier workflow notifies the accounting team in QuickBooks Online immediately so funds can be processed against a documented checklist instead of someone reconstructing the disbursement from scratch for each settlement. The client automatically receives a plain-language disbursement summary once every line item is marked complete, along with an estimated timeline for their check. Because every settlement follows the same automated checklist, disbursement errors, a missed lien or a miscalculated fee, drop sharply, and settlements that used to take a week to fully process often clear within two or three business days.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a settlement coordinator remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>QuickBooks Online</span><span>Zapier or Make.com</span><span>Email (client disbursement summary)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -756,9 +859,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a prospect completes a paid or free consultation in Clio Grow but doesn't sign an engagement letter within a set window, the automation automatically enrolls them in a long-term nurture sequence in ActiveCampaign built around their specific practice area rather than letting the lead go cold. The sequence mixes educational content, relevant case results, and periodic soft check-in emails spaced out over several months, and any prospect who clicks back into pricing or scheduling content automatically gets flagged to the business development coordinator for a personal follow-up call. Leads that re-engage are automatically re-tagged as active in the CRM so they don't fall back into the general nurture pool. Firms running this convert a meaningful share of "not now" consultations into signed clients months later, capturing revenue that used to disappear the moment a prospect said they needed to think about it.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a prospect completes a paid or free consultation in Clio Grow but doesn't sign an engagement letter within a set window, the automation automatically enrolls them in a long-term nurture sequence in ActiveCampaign built around their specific practice area rather than letting the lead go cold. The sequence mixes educational content, relevant case results, and periodic soft check-in emails spaced out over several months, and any prospect who clicks back into pricing or scheduling content automatically gets flagged to the business development coordinator for a personal follow-up call. Leads that re-engage are automatically re-tagged as active in the CRM so they don't fall back into the general nurture pool. Firms running this convert a meaningful share of "not now" consultations into signed clients months later, capturing revenue that used to disappear the moment a prospect said they needed to think about it.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a business development coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., Clio Grow or Lawmatics)</span><span>Mailchimp or ActiveCampaign</span><span>Zapier or Make.com</span><span>Slack (re-engagement flags)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -767,9 +873,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation runs a daily reconciliation check comparing trust account activity in the firm's accounting software against the ledger balances tracked in Clio, and the moment a discrepancy appears, whether it's a mismatched deposit or a disbursement that doesn't tie back to a client ledger, it automatically flags the account and alerts the trust accounting manager through Slack rather than waiting for the scheduled monthly reconciliation to catch it. Each alert includes the specific matter, the amount involved, and the date of the discrepancy so it can be investigated immediately instead of requiring a manual line-by-line audit. Resolved discrepancies are logged automatically in a Google Sheets audit trail for compliance records. Catching trust accounting errors within a day instead of a month materially reduces the firm's exposure to a bar compliance violation, one of the most serious risks a firm can carry.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation runs a daily reconciliation check comparing trust account activity in the firm's accounting software against the ledger balances tracked in Clio, and the moment a discrepancy appears, whether it's a mismatched deposit or a disbursement that doesn't tie back to a client ledger, it automatically flags the account and alerts the trust accounting manager through Slack rather than waiting for the scheduled monthly reconciliation to catch it. Each alert includes the specific matter, the amount involved, and the date of the discrepancy so it can be investigated immediately instead of requiring a manual line-by-line audit. Resolved discrepancies are logged automatically in a Google Sheets audit trail for compliance records. Catching trust accounting errors within a day instead of a month materially reduces the firm's exposure to a bar compliance violation, one of the most serious risks a firm can carry.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a trust accounting manager manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>QuickBooks Online or CosmoLex</span><span>Practice management software (e.g., Clio, trust ledger)</span><span>Zapier or Make.com</span><span>Slack (discrepancy alerts)</span><span>Google Sheets (audit trail)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -778,9 +887,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Former clients whose matters closed more than six months earlier are automatically enrolled in a periodic check-in sequence in Mailchimp, receiving a brief, genuinely useful email every quarter: a plain-language update on a relevant law change, a seasonal legal checklist, or a simple "how's everything going" note that isn't a sales pitch. A Zapier workflow pulls the closed-matter list from Clio automatically so the client retention specialist never has to manually build or maintain the list. Clients who reply or click into content are automatically flagged in the CRM for a personal follow-up rather than staying in the automated sequence. Staying visible in a past client's inbox for years after their case closes, instead of disappearing the moment the invoice is paid, measurably increases referral volume and repeat business, since most people simply forget a firm exists until reminded.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Former clients whose matters closed more than six months earlier are automatically enrolled in a periodic check-in sequence in Mailchimp, receiving a brief, genuinely useful email every quarter: a plain-language update on a relevant law change, a seasonal legal checklist, or a simple "how's everything going" note that isn't a sales pitch. A Zapier workflow pulls the closed-matter list from Clio automatically so the client retention specialist never has to manually build or maintain the list. Clients who reply or click into content are automatically flagged in the CRM for a personal follow-up rather than staying in the automated sequence. Staying visible in a past client's inbox for years after their case closes, instead of disappearing the moment the invoice is paid, measurably increases referral volume and repeat business, since most people simply forget a firm exists until reminded.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a client retention specialist spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>Mailchimp or ActiveCampaign</span><span>Zapier or Make.com</span><span>CRM (e.g., Clio Grow or HubSpot)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -789,9 +901,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a new client completes an intake form in Jotform, the automation automatically generates a full checklist of internal setup tasks, opening the matter file in Clio, requesting the case file from any prior counsel, ordering records, and scheduling the first client call, and assigns each task to the appropriate paralegal or staff member based on practice area. The office administrator receives a summary in Slack showing every new matter's task list and who owns each item, with overdue tasks automatically escalating after 48 hours. Because file setup starts within minutes of intake instead of whenever someone gets around to it, new matters move from signed to fully staffed and underway noticeably faster, and nothing about a new file setup depends on one person remembering every step.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a new client completes an intake form in Jotform, the automation automatically generates a full checklist of internal setup tasks, opening the matter file in Clio, requesting the case file from any prior counsel, ordering records, and scheduling the first client call, and assigns each task to the appropriate paralegal or staff member based on practice area. The office administrator receives a summary in Slack showing every new matter's task list and who owns each item, with overdue tasks automatically escalating after 48 hours. Because file setup starts within minutes of intake instead of whenever someone gets around to it, new matters move from signed to fully staffed and underway noticeably faster, and nothing about a new file setup depends on one person remembering every step.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on an office administrator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (intake form)</span><span>Practice management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Slack (task summary)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -800,9 +915,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a deposition needs to be scheduled, the automation automatically checks availability across every party's calendar, opposing counsel, the witness, and the court reporter, using Calendly synced to Google Calendar, and proposes a shortlist of dates instead of the litigation paralegal trading emails back and forth with three or four different offices. Once all parties confirm a date, the automation automatically sends formal confirmations, books the court reporter and any videographer needed, and reserves a conference room if the deposition is in-office. Reminder texts through Twilio go out to the client and attorney the day before, and any last-minute reschedule automatically notifies every party and re-triggers the confirmation chain. What used to take days of back-and-forth email now typically resolves within a single afternoon, and depositions rarely get rescheduled due to a calendar mix-up.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a deposition needs to be scheduled, the automation automatically checks availability across every party's calendar, opposing counsel, the witness, and the court reporter, using Calendly synced to Google Calendar, and proposes a shortlist of dates instead of the litigation paralegal trading emails back and forth with three or four different offices. Once all parties confirm a date, the automation automatically sends formal confirmations, books the court reporter and any videographer needed, and reserves a conference room if the deposition is in-office. Reminder texts through Twilio go out to the client and attorney the day before, and any last-minute reschedule automatically notifies every party and re-triggers the confirmation chain. What used to take days of back-and-forth email now typically resolves within a single afternoon, and depositions rarely get rescheduled due to a calendar mix-up.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a litigation paralegal is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Calendly</span><span>Google Calendar or Outlook</span><span>Zapier or Make.com</span><span>Twilio (reminder texts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -811,9 +929,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every cost the firm advances on a client's behalf, filing fees, expert witness retainers, medical record requests, is automatically logged against the matter the moment it's entered into the billing system in Clio or TimeSolv, tagged by category and date so nothing gets buried in a general expense account. The automation maintains a running advanced-costs total per matter and automatically flags it for reimbursement the moment the matter is marked settled or resolved, notifying the costs and disbursements clerk through Slack rather than requiring someone to dig back through months of expense entries. A monthly Google Sheets report shows total costs currently advanced across all open matters, giving the firm visibility into outstanding exposure. Firms running this reliably recover advanced costs at settlement instead of writing off forgotten expenses, which on caseloads with dozens of active matters can add up to real money left on the table.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every cost the firm advances on a client's behalf, filing fees, expert witness retainers, medical record requests, is automatically logged against the matter the moment it's entered into the billing system in Clio or TimeSolv, tagged by category and date so nothing gets buried in a general expense account. The automation maintains a running advanced-costs total per matter and automatically flags it for reimbursement the moment the matter is marked settled or resolved, notifying the costs and disbursements clerk through Slack rather than requiring someone to dig back through months of expense entries. A monthly Google Sheets report shows total costs currently advanced across all open matters, giving the firm visibility into outstanding exposure. Firms running this reliably recover advanced costs at settlement instead of writing off forgotten expenses, which on caseloads with dozens of active matters can add up to real money left on the table.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a costs & disbursements clerk is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management/billing software (e.g., Clio or TimeSolv)</span><span>Zapier or Make.com</span><span>Slack (reimbursement flags)</span><span>Google Sheets (cost report)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -822,9 +943,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a trial date is entered into Clio, the automation automatically generates a full trial-preparation checklist working backward from the trial date: exhibit lists due at 60 days, witness prep scheduled at 30 days, motions in limine at 21 days, and jury instructions drafted at 14 days, with each task assigned directly to the trial attorney and supporting paralegal. As deadlines approach, reminders escalate from a routine Slack notification at one week out to a daily alert in the final 72 hours before trial. Completed tasks automatically check off in a shared Airtable trial board so the entire team can see prep status at a glance instead of asking around. With a system automatically holding every deadline instead of a mental checklist under trial pressure, nothing gets missed in the final chaotic weeks before a courtroom date.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a trial date is entered into Clio, the automation automatically generates a full trial-preparation checklist working backward from the trial date: exhibit lists due at 60 days, witness prep scheduled at 30 days, motions in limine at 21 days, and jury instructions drafted at 14 days, with each task assigned directly to the trial attorney and supporting paralegal. As deadlines approach, reminders escalate from a routine Slack notification at one week out to a daily alert in the final 72 hours before trial. Completed tasks automatically check off in a shared Airtable trial board so the entire team can see prep status at a glance instead of asking around. With a system automatically holding every deadline instead of a mental checklist under trial pressure, nothing gets missed in the final chaotic weeks before a courtroom date.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a trial attorney spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Slack (deadline escalation)</span><span>Airtable (trial prep board)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -833,9 +957,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation tracks each attorney's continuing legal education credits internally throughout the reporting period, logging completed courses as attorneys report them through a simple Jotform submission and automatically calculating remaining credit requirements against each attorney's specific bar renewal deadline. As the deadline approaches, attorneys who are short on required credits automatically receive an email alert 90 and 30 days out listing exactly how many credits they still need and in which categories, such as ethics-specific hours many states require separately. The bar compliance coordinator gets a firm-wide dashboard in Google Sheets showing every attorney's credit status at a glance instead of following up individually. Because shortfalls surface months ahead of the deadline instead of the week before, attorneys reliably complete their requirements in time and the firm avoids the compliance risk of a lapsed bar license.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation tracks each attorney's continuing legal education credits internally throughout the reporting period, logging completed courses as attorneys report them through a simple Jotform submission and automatically calculating remaining credit requirements against each attorney's specific bar renewal deadline. As the deadline approaches, attorneys who are short on required credits automatically receive an email alert 90 and 30 days out listing exactly how many credits they still need and in which categories, such as ethics-specific hours many states require separately. The bar compliance coordinator gets a firm-wide dashboard in Google Sheets showing every attorney's credit status at a glance instead of following up individually. Because shortfalls surface months ahead of the deadline instead of the week before, attorneys reliably complete their requirements in time and the firm avoids the compliance risk of a lapsed bar license.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a bar compliance coordinator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (CLE course reporting)</span><span>Zapier or Make.com</span><span>Email (renewal alerts)</span><span>Google Sheets (CLE dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -844,9 +971,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation monitors legal and regulatory updates relevant to the firm's practice areas through a legal research alert service, and when a meaningful change is identified, it automatically drafts a plain-language summary explaining what changed and flags it for the regulatory affairs attorney to review and approve before it goes out. Once approved, the automation automatically identifies which clients in Clio are affected based on industry or matter type and sends each one a tailored email through Mailchimp explaining exactly how the change impacts their business, along with a suggested next step or a prompt to schedule a call. Every alert and its recipient list logs automatically for compliance records. Clients get advance notice of regulatory changes that affect them directly instead of finding out after the fact, positioning the firm as the source that caught it first.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation monitors legal and regulatory updates relevant to the firm's practice areas through a legal research alert service, and when a meaningful change is identified, it automatically drafts a plain-language summary explaining what changed and flags it for the regulatory affairs attorney to review and approve before it goes out. Once approved, the automation automatically identifies which clients in Clio are affected based on industry or matter type and sends each one a tailored email through Mailchimp explaining exactly how the change impacts their business, along with a suggested next step or a prompt to schedule a call. Every alert and its recipient list logs automatically for compliance records. Clients get advance notice of regulatory changes that affect them directly instead of finding out after the fact, positioning the firm as the source that caught it first.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a regulatory affairs attorney, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>Mailchimp or ActiveCampaign</span><span>Zapier or Make.com</span><span>Slack (internal review routing)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -855,9 +985,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For matters that have been open longer than a set threshold, typically 90 days, the automation automatically sends the client a short two-question pulse survey through Jotform asking how communication and progress feel so far, rather than waiting until the case closes to hear any feedback at all. Responses feed directly into a live Google Sheets dashboard, and any answer below a set satisfaction threshold automatically triggers an immediate Slack alert to the client experience coordinator for a same-day personal check-in call before frustration has a chance to build. Positive responses are logged quietly for later use in review requests and testimonials. Because problems surface midway through a long case instead of at the very end when it's too late to fix anything, firms catch and resolve friction early, which measurably improves both client satisfaction scores and referral rates on long-running matters.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For matters that have been open longer than a set threshold, typically 90 days, the automation automatically sends the client a short two-question pulse survey through Jotform asking how communication and progress feel so far, rather than waiting until the case closes to hear any feedback at all. Responses feed directly into a live Google Sheets dashboard, and any answer below a set satisfaction threshold automatically triggers an immediate Slack alert to the client experience coordinator for a same-day personal check-in call before frustration has a chance to build. Positive responses are logged quietly for later use in review requests and testimonials. Because problems surface midway through a long case instead of at the very end when it's too late to fix anything, firms catch and resolve friction early, which measurably improves both client satisfaction scores and referral rates on long-running matters.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a client experience coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (pulse survey)</span><span>Zapier or Make.com</span><span>Google Sheets (satisfaction dashboard)</span><span>Slack (low-score alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -866,9 +999,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>On matters shared with co-counsel or outside counsel firms, the automation automatically logs every key update, a filing, a settlement offer, a scheduling change, entered into Clio and shares it in real time with every attorney and paralegal on the case across both firms through a shared Slack channel or a synced Google Sheets log, rather than relying on someone remembering to loop in the other office by email. Each entry timestamps automatically and tags who made the update, creating a running record that any attorney on either team can review to get caught up in minutes instead of digging through scattered email threads. The of counsel attorney overseeing the joint representation gets a weekly summary of all activity across the shared matter. Every team stays aligned on a co-counseled case in real time, and the firm avoids the miscommunication risk of two offices working the same file through separate inboxes.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">On matters shared with co-counsel or outside counsel firms, the automation automatically logs every key update, a filing, a settlement offer, a scheduling change, entered into Clio and shares it in real time with every attorney and paralegal on the case across both firms through a shared Slack channel or a synced Google Sheets log, rather than relying on someone remembering to loop in the other office by email. Each entry timestamps automatically and tags who made the update, creating a running record that any attorney on either team can review to get caught up in minutes instead of digging through scattered email threads. The of counsel attorney overseeing the joint representation gets a weekly summary of all activity across the shared matter. Every team stays aligned on a co-counseled case in real time, and the firm avoids the miscommunication risk of two offices working the same file through separate inboxes.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, an of counsel attorney spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Slack (shared communication channel)</span><span>Google Sheets (communication log)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -877,9 +1013,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>In litigation matters, the automation automatically tracks every document production deadline tied to discovery requests entered into Clio, calculating response windows the moment a request is logged and scheduling advance alerts at 14, 7, and 2 days before each deadline. Alerts go to both the responsible attorney and the discovery paralegal through Slack, and any deadline still open the morning it's due triggers an urgent escalation to the litigation supervisor rather than quietly passing unnoticed. A shared Airtable board shows every open discovery obligation across all active litigation matters sorted by due date, giving the team a single view instead of checking each file individually. Discovery deadlines, one of the easiest things to lose track of across a busy litigation caseload, get caught consistently well ahead of time instead of triggering a last-minute scramble or a motion to compel from opposing counsel.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">In litigation matters, the automation automatically tracks every document production deadline tied to discovery requests entered into Clio, calculating response windows the moment a request is logged and scheduling advance alerts at 14, 7, and 2 days before each deadline. Alerts go to both the responsible attorney and the discovery paralegal through Slack, and any deadline still open the morning it's due triggers an urgent escalation to the litigation supervisor rather than quietly passing unnoticed. A shared Airtable board shows every open discovery obligation across all active litigation matters sorted by due date, giving the team a single view instead of checking each file individually. Discovery deadlines, one of the easiest things to lose track of across a busy litigation caseload, get caught consistently well ahead of time instead of triggering a last-minute scramble or a motion to compel from opposing counsel.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a discovery paralegal handles each case reactively, after someone has already noticed something went wrong. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Slack (deadline alerts)</span><span>Airtable (discovery tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -888,9 +1027,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For clients on an ongoing general counsel retainer, the automation automatically tracks each retainer's term end date in Clio and, 60 days ahead of expiration, generates a renewal notice along with an updated fee agreement reflecting any rate changes for the general counsel services coordinator to review before it goes to the client. The renewal notice sends automatically through DocuSign for e-signature, with the same escalating reminder chain used for engagement letters if it goes unsigned. Clients who don't respond within 30 days of the term end automatically trigger a personal outreach task assigned to the managing attorney rather than letting the retainer silently lapse. Because renewals surface well ahead of the deadline instead of being noticed only when a client stops paying, the firm protects recurring general counsel revenue and rarely loses a retainer relationship to simple oversight.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For clients on an ongoing general counsel retainer, the automation automatically tracks each retainer's term end date in Clio and, 60 days ahead of expiration, generates a renewal notice along with an updated fee agreement reflecting any rate changes for the general counsel services coordinator to review before it goes to the client. The renewal notice sends automatically through DocuSign for e-signature, with the same escalating reminder chain used for engagement letters if it goes unsigned. Clients who don't respond within 30 days of the term end automatically trigger a personal outreach task assigned to the managing attorney rather than letting the retainer silently lapse. Because renewals surface well ahead of the deadline instead of being noticed only when a client stops paying, the firm protects recurring general counsel revenue and rarely loses a retainer relationship to simple oversight.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a general counsel services coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Practice management software (e.g., Clio or MyCase)</span><span>E-signature platform (e.g., DocuSign or PandaDoc)</span><span>Zapier or Make.com</span><span>Email (renewal notices)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -899,9 +1041,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a visitor submits the firm's website contact form in Jotform or Gravity Forms, the automation automatically walks them through a short series of qualifying questions, case type, rough timeline, whether they're already represented by another attorney, before the submission ever reaches a staff member, using a conversational form flow rather than a flat contact form. Based on the answers, the lead is automatically scored and tagged by practice area and urgency in Clio Grow, and high-priority matters, like an approaching statute of limitations or an active emergency, route straight to the digital intake specialist with a Slack alert instead of sitting in a general queue. Lower-priority or non-matching leads are automatically routed to the appropriate nurture sequence instead of consuming staff time. Intake staff know the case type and urgency before they ever pick up the phone, and the firm spends less time on unqualified inquiries.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a visitor submits the firm's website contact form in Jotform or Gravity Forms, the automation automatically walks them through a short series of qualifying questions, case type, rough timeline, whether they're already represented by another attorney, before the submission ever reaches a staff member, using a conversational form flow rather than a flat contact form. Based on the answers, the lead is automatically scored and tagged by practice area and urgency in Clio Grow, and high-priority matters, like an approaching statute of limitations or an active emergency, route straight to the digital intake specialist with a Slack alert instead of sitting in a general queue. Lower-priority or non-matching leads are automatically routed to the appropriate nurture sequence instead of consuming staff time. Intake staff know the case type and urgency before they ever pick up the phone, and the firm spends less time on unqualified inquiries.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a digital intake specialist is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Web form tool (e.g., Jotform or Gravity Forms)</span><span>CRM (e.g., Clio Grow or Lawmatics)</span><span>Zapier or Make.com</span><span>Slack (priority lead alerts)</span></div>
+          </div>
         </div>
       </details>
 
@@ -911,9 +1056,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a matter is marked complete, the automation automatically triggers the file closure checklist and schedules the physical or digital file for archiving according to the firm's retention policy, instead of the records manager relying on someone remembering to close out a file weeks or months after the actual work wrapped up. Every closed file follows the exact same checklist regardless of who worked it, and the firm always knows precisely how many years of retention remain on any given file without pulling it to check a sticky note stuck inside the folder.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a matter is marked complete, the automation automatically triggers the file closure checklist and schedules the physical or digital file for archiving according to the firm's retention policy, instead of the records manager relying on someone remembering to close out a file weeks or months after the actual work wrapped up. Every closed file follows the exact same checklist regardless of who worked it, and the firm always knows precisely how many years of retention remain on any given file without pulling it to check a sticky note stuck inside the folder.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a records manager handles each case reactively, after someone has already noticed something went wrong.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Case management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Google Drive or SharePoint (archive storage)</span><span>Slack (internal deadline alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -922,9 +1070,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every email and call log with opposing counsel is automatically captured and timestamped directly into the case file, creating a reliable, contemporaneous record without the litigation paralegal manually copying emails over or reconstructing a call log from memory after the fact. Having a complete, automatically maintained communication history becomes invaluable the moment a dispute arises over what was actually said or agreed to, and attorneys stop having to dig through their own inbox trying to piece together a timeline that the system already kept for them.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every email and call log with opposing counsel is automatically captured and timestamped directly into the case file, creating a reliable, contemporaneous record without the litigation paralegal manually copying emails over or reconstructing a call log from memory after the fact. Having a complete, automatically maintained communication history becomes invaluable the moment a dispute arises over what was actually said or agreed to, and attorneys stop having to dig through their own inbox trying to piece together a timeline that the system already kept for them.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a litigation paralegal re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Case management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Gmail or Outlook (email capture)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -933,9 +1084,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation automatically coordinates and confirms an expert witness's availability against upcoming case deadlines and the firm's own calendar, reducing the scheduling conflicts that used to surface only after a trial date was already locked in and an expert's calendar suddenly didn't cooperate. The trial paralegal gets a single view showing every expert's confirmed availability across every active matter, instead of tracking each one separately by email, and depositions and trial testimony get scheduled with real confidence instead of a tentative date that falls apart two weeks before it matters.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation automatically coordinates and confirms an expert witness's availability against upcoming case deadlines and the firm's own calendar, reducing the scheduling conflicts that used to surface only after a trial date was already locked in and an expert's calendar suddenly didn't cooperate. The trial paralegal gets a single view showing every expert's confirmed availability across every active matter, instead of tracking each one separately by email, and depositions and trial testimony get scheduled with real confidence instead of a tentative date that falls apart two weeks before it matters.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a trial paralegal spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Case management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Calendly (expert availability)</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -944,9 +1098,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a prospective matter is declined during the conflict check or initial evaluation, the automation automatically sends a polite decline notice along with alternative referral suggestions to the prospect, instead of a declined inquiry simply going unanswered, which reflects poorly on the firm even when taking the case genuinely wasn't possible. The intake coordinator no longer has to draft the same decline email from scratch for every rejected inquiry, and prospects who receive a helpful referral instead of silence often remember the firm favorably enough to refer someone else down the road.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a prospective matter is declined during the conflict check or initial evaluation, the automation automatically sends a polite decline notice along with alternative referral suggestions to the prospect, instead of a declined inquiry simply going unanswered, which reflects poorly on the firm even when taking the case genuinely wasn't possible. The intake coordinator no longer has to draft the same decline email from scratch for every rejected inquiry, and prospects who receive a helpful referral instead of silence often remember the firm favorably enough to refer someone else down the road.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means an intake coordinator handles each case reactively, after someone has already noticed something went wrong.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Case management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -955,9 +1112,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a new matter is entered as a specific case type, the automation automatically applies a pre-built bundle of the relevant statutory deadlines directly to the case calendar, rather than the docketing clerk manually researching and entering each applicable deadline one at a time for every new matter that comes in. Every case of a given type starts with the exact same complete, correct set of deadlines already calendared from day one, removing the single most dangerous failure point in litigation practice, a deadline that was simply never entered in the first place.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a new matter is entered as a specific case type, the automation automatically applies a pre-built bundle of the relevant statutory deadlines directly to the case calendar, rather than the docketing clerk manually researching and entering each applicable deadline one at a time for every new matter that comes in. Every case of a given type starts with the exact same complete, correct set of deadlines already calendared from day one, removing the single most dangerous failure point in litigation practice, a deadline that was simply never entered in the first place.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a docketing clerk, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Case management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Google Calendar or Outlook Calendar</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -966,9 +1126,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Clients who forget their portal password can automatically reset it themselves through a secure automated flow, cutting down on support calls that used to require a client services associate to manually verify identity and reset access every single time someone got locked out. The self-service flow follows the same identity verification standard every time, keeping the process secure without adding staff workload, and clients get back into their portal in minutes instead of waiting for office hours and a callback just to view a document they need right now.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Clients who forget their portal password can automatically reset it themselves through a secure automated flow, cutting down on support calls that used to require a client services associate to manually verify identity and reset access every single time someone got locked out. The self-service flow follows the same identity verification standard every time, keeping the process secure without adding staff workload, and clients get back into their portal in minutes instead of waiting for office hours and a callback just to view a document they need right now.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a client services associate spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Client portal (e.g., Clio for Clients)</span><span>Zapier or Make.com</span><span>Twilio (SMS verification)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -977,9 +1140,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Late or partially disputed invoice payments automatically flag the account for a proactive conversation with the client before the situation grows into a larger, harder-to-resolve fee dispute, instead of a billing manager only noticing a pattern of pushback after several invoices have already gone unpaid. Catching the first sign of friction early, while it's still one confused line item rather than an entire relationship gone sour, resolves the vast majority of disputes with a short clarifying call instead of an awkward, drawn-out collections conversation months later.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Late or partially disputed invoice payments automatically flag the account for a proactive conversation with the client before the situation grows into a larger, harder-to-resolve fee dispute, instead of a billing manager only noticing a pattern of pushback after several invoices have already gone unpaid. Catching the first sign of friction early, while it's still one confused line item rather than an entire relationship gone sour, resolves the vast majority of disputes with a short clarifying call instead of an awkward, drawn-out collections conversation months later.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a billing manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Case management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>QuickBooks Online</span><span>Slack (internal deadline alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -988,9 +1154,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Existing clients automatically receive information about a newly added practice area that's genuinely relevant to their profile, estate planning clients being told about a new business law offering, for example, instead of a firm's newest service expansion going unnoticed by the very client base most likely to need it. The legal marketing manager can target the message by client type rather than blasting every client with every announcement, and a firm's most reliable source of new-practice-area business is consistently existing clients who simply didn't know the firm now handled that kind of matter.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Existing clients automatically receive information about a newly added practice area that's genuinely relevant to their profile, estate planning clients being told about a new business law offering, for example, instead of a firm's newest service expansion going unnoticed by the very client base most likely to need it. The legal marketing manager can target the message by client type rather than blasting every client with every announcement, and a firm's most reliable source of new-practice-area business is consistently existing clients who simply didn't know the firm now handled that kind of matter.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a legal marketing manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Case management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -999,9 +1168,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation internally flags when a paralegal's assigned task load exceeds a healthy capacity threshold, prompting the case manager to reassign work before deadlines are put at risk, rather than an overloaded paralegal quietly falling behind until a missed task surfaces the problem for everyone at once. Workload is calculated automatically from every open task and its due date across every active matter, giving a far more accurate picture than a manager's general impression of who seems swamped, and reassignments happen calmly with days of lead time instead of in a last-minute scramble.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation internally flags when a paralegal's assigned task load exceeds a healthy capacity threshold, prompting the case manager to reassign work before deadlines are put at risk, rather than an overloaded paralegal quietly falling behind until a missed task surfaces the problem for everyone at once. Workload is calculated automatically from every open task and its due date across every active matter, giving a far more accurate picture than a manager's general impression of who seems swamped, and reassignments happen calmly with days of lead time instead of in a last-minute scramble.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a case manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Case management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Slack (internal deadline alerts)</span><span>Google Sheets or Airtable (workload dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -1010,9 +1182,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>At case closure, original documents that need to be returned to the client automatically trigger a return or pickup notification, ensuring nothing is left sitting forgotten in a file cabinet for years after a matter has closed. The client services associate gets a checklist confirming every original document has actually been returned before the file is fully closed out, and clients get their original wills, contracts, and titles back in hand promptly instead of having to call the firm months later wondering where an important original document ended up.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">At case closure, original documents that need to be returned to the client automatically trigger a return or pickup notification, ensuring nothing is left sitting forgotten in a file cabinet for years after a matter has closed. The client services associate gets a checklist confirming every original document has actually been returned before the file is fully closed out, and clients get their original wills, contracts, and titles back in hand promptly instead of having to call the firm months later wondering where an important original document ended up.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a client services associate is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Case management software (e.g., Clio or MyCase)</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
 

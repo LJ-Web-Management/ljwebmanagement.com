@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Practice Manager</span><h3>Vaccination &amp; Wellness Reminder System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every patient in the practice management system is tracked against their vaccination schedule and wellness exam due dates, and automated reminders go out to the pet owner at 30 and 7 days before each due date, via text if a mobile number is on file, email if not. Overdue reminders continue on a monthly basis until the appointment is scheduled, and the practice manager sees a live overdue list filtered by species, due service, and months overdue. Preventive care that used to be left to the owner to initiate is now proactively driven by the practice, increasing compliance rates and the annual revenue per patient that comes with consistent preventive care visits.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every patient in the practice management system is tracked against their vaccination schedule and wellness exam due dates, and automated reminders go out to the pet owner at 30 and 7 days before each due date, via text if a mobile number is on file, email if not. Overdue reminders continue on a monthly basis until the appointment is scheduled, and the practice manager sees a live overdue list filtered by species, due service, and months overdue. Preventive care that used to be left to the owner to initiate is now proactively driven by the practice, increasing compliance rates and the annual revenue per patient that comes with consistent preventive care visits.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a practice manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Veterinary practice management software (e.g., Avimark, Cornerstone, or ezyVet)</span><span>Zapier or Make.com</span><span>Twilio (wellness reminder SMS)</span><span>Mailchimp or email (reminder sequences)</span><span>Google Sheets (overdue care dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>After every appointment, the veterinarian's discharge instructions are automatically formatted and texted to the pet owner as a clean, readable summary, including medications prescribed, dosing instructions, follow-up care reminders, and a direct link to call the clinic with questions. For surgical patients, a post-operative check-in message goes out automatically at 24 hours, 72 hours, and 7 days asking how the patient is recovering and flagging any owner-reported concerns for the veterinarian to review. Patients on long-term medications receive automatic refill reminders, and those on prescription diets receive check-in messages at 30 and 60 days to assess compliance and outcomes.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">After every appointment, the veterinarian's discharge instructions are automatically formatted and texted to the pet owner as a clean, readable summary, including medications prescribed, dosing instructions, follow-up care reminders, and a direct link to call the clinic with questions. For surgical patients, a post-operative check-in message goes out automatically at 24 hours, 72 hours, and 7 days asking how the patient is recovering and flagging any owner-reported concerns for the veterinarian to review. Patients on long-term medications receive automatic refill reminders, and those on prescription diets receive check-in messages at 30 and 60 days to assess compliance and outcomes.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a veterinarian re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Veterinary practice management software</span><span>Zapier or Make.com</span><span>Twilio (discharge summary and post-op check-in SMS)</span><span>Jotform (post-op recovery check-in form)</span><span>Email (refill and diet compliance reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Appointment requests submitted via the practice website are automatically screened against the schedule for the correct provider, visit type, and patient species, and the pet owner receives an immediate confirmation with the scheduled date, time, and pre-visit instructions, including any fasting requirements, what to bring, and a link to complete the new patient form if it's the first visit. No-shows receive an automatic follow-up the same day offering to reschedule, and clients who regularly no-show are flagged for the front desk to call rather than continue receiving automated booking access, protecting appointment slot availability for clients who reliably show up.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Appointment requests submitted via the practice website are automatically screened against the schedule for the correct provider, visit type, and patient species, and the pet owner receives an immediate confirmation with the scheduled date, time, and pre-visit instructions, including any fasting requirements, what to bring, and a link to complete the new patient form if it's the first visit. No-shows receive an automatic follow-up the same day offering to reschedule, and clients who regularly no-show are flagged for the front desk to call rather than continue receiving automated booking access, protecting appointment slot availability for clients who reliably show up.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a client service representative spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Veterinary practice management software with online booking</span><span>Zapier or Make.com</span><span>Twilio (booking confirmation and no-show follow-up SMS)</span><span>Jotform (new patient intake form)</span><span>Airtable (no-show frequency tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As medications are dispensed or administered, inventory counts update automatically in the practice management system, and any item that falls below its reorder threshold generates a purchase order suggestion for the inventory manager to approve with one click. Controlled substances require a separate log entry per administration, and this automation prompts the administering team member to complete the DEA log entry at the time of use, with the inventory manager receiving a daily reconciliation report comparing administered quantities against log entries and flagging any discrepancy that requires investigation before it becomes a DEA compliance issue.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As medications are dispensed or administered, inventory counts update automatically in the practice management system, and any item that falls below its reorder threshold generates a purchase order suggestion for the inventory manager to approve with one click. Controlled substances require a separate log entry per administration, and this automation prompts the administering team member to complete the DEA log entry at the time of use, with the inventory manager receiving a daily reconciliation report comparing administered quantities against log entries and flagging any discrepancy that requires investigation before it becomes a DEA compliance issue.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on an inventory manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Veterinary practice management software (inventory module)</span><span>Jotform (controlled substance log form)</span><span>Zapier or Make.com</span><span>Google Sheets (controlled substance reconciliation log)</span><span>Slack or email (discrepancy alerts and reorder notifications)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every pet's birthday on file triggers a personalized birthday email from the practice, with the pet's name, a cute graphic, and a special birthday exam or grooming discount that expires within the birthday month. Pet owners who haven't visited in 12 months receive their pet's birthday message with a particularly compelling win-back offer attached. Clients who refer a new patient receive an automatic thank-you and a loyalty credit to their account, and the marketing coordinator sees a monthly referral leaderboard showing which clients are the practice's top ambassadors, so the team knows exactly who to recognize and appreciate.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every pet's birthday on file triggers a personalized birthday email from the practice, with the pet's name, a cute graphic, and a special birthday exam or grooming discount that expires within the birthday month. Pet owners who haven't visited in 12 months receive their pet's birthday message with a particularly compelling win-back offer attached. Clients who refer a new patient receive an automatic thank-you and a loyalty credit to their account, and the marketing coordinator sees a monthly referral leaderboard showing which clients are the practice's top ambassadors, so the team knows exactly who to recognize and appreciate.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a marketing coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Veterinary practice management software</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign (birthday and referral sequences)</span><span>Twilio (birthday SMS)</span><span>Airtable (referral tracking and loyalty credit log)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Patients who haven't been seen in 12, 18, or 24 months are automatically segmented into a lapsed-patient list pulled nightly from the practice management system, and each tier receives a different outreach: a friendly reminder email at 12 months, a text with a reactivation offer at 18 months, and a note added to the front desk's outbound call list at 24 months so a team member can personally check in. The veterinary technician assigned to recall outreach sees a single dashboard of exactly which patients are overdue and by how much, rather than relying on staff to notice gaps during a busy day of appointments. Practices running this system consistently bring back 10 to 15 percent of patients who would otherwise have quietly switched clinics or stopped seeking preventive care altogether.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Patients who haven't been seen in 12, 18, or 24 months are automatically segmented into a lapsed-patient list pulled nightly from the practice management system, and each tier receives a different outreach: a friendly reminder email at 12 months, a text with a reactivation offer at 18 months, and a note added to the front desk's outbound call list at 24 months so a team member can personally check in. The veterinary technician assigned to recall outreach sees a single dashboard of exactly which patients are overdue and by how much, rather than relying on staff to notice gaps during a busy day of appointments. Practices running this system consistently bring back 10 to 15 percent of patients who would otherwise have quietly switched clinics or stopped seeking preventive care altogether.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a veterinary technician remembering to check in, update records, and follow up, with no safety net if something slips.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>Provet Cloud or ezyVet</span><span>VetSuccess (lapsed patient analytics)</span><span>Twilio (reactivation SMS)</span><span>Mailchimp or email (recall sequence)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -514,9 +551,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every confirmed appointment automatically triggers a reminder sequence: an email 72 hours out, a text 24 hours out, and a final text 2 hours before the visit, each including a one-tap link the owner can use to confirm or reschedule without calling the front desk. Owners who reschedule are automatically slotted into the next available opening for that provider and visit type, and the vacated slot is immediately released back into the online booking calendar so it doesn't sit empty. The front desk coordinator's no-show report updates automatically every week, and clinics running this reminder cadence typically cut no-shows by 20 to 30 percent within the first two months, recovering appointment slots that used to go unused.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every confirmed appointment automatically triggers a reminder sequence: an email 72 hours out, a text 24 hours out, and a final text 2 hours before the visit, each including a one-tap link the owner can use to confirm or reschedule without calling the front desk. Owners who reschedule are automatically slotted into the next available opening for that provider and visit type, and the vacated slot is immediately released back into the online booking calendar so it doesn't sit empty. The front desk coordinator's no-show report updates automatically every week, and clinics running this reminder cadence typically cut no-shows by 20 to 30 percent within the first two months, recovering appointment slots that used to go unused.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a front desk coordinator handles each case reactively, after someone has already noticed something went wrong. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>ezyVet or Provet Cloud</span><span>Twilio (SMS reminders)</span><span>Calendly or built-in booking calendar</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -525,9 +565,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every prescription filled through the practice is logged with its expected refill date based on dosing instructions, and 5 days before that date the pet owner automatically receives a text with a one-click reorder link that routes the request straight to the pharmacy coordinator's queue for approval. Approved refills that require curbside or in-store pickup trigger an automatic ready-for-pickup text once filled, and medications tied to a required recheck exam prompt the owner to book that exam before the refill can be released. The pharmacy coordinator no longer has to track refill dates manually across hundreds of active patients, and owners refill on time far more consistently once the reorder process takes one tap instead of a phone call during business hours.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every prescription filled through the practice is logged with its expected refill date based on dosing instructions, and 5 days before that date the pet owner automatically receives a text with a one-click reorder link that routes the request straight to the pharmacy coordinator's queue for approval. Approved refills that require curbside or in-store pickup trigger an automatic ready-for-pickup text once filled, and medications tied to a required recheck exam prompt the owner to book that exam before the refill can be released. The pharmacy coordinator no longer has to track refill dates manually across hundreds of active patients, and owners refill on time far more consistently once the reorder process takes one tap instead of a phone call during business hours.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a pharmacy coordinator handles each case reactively, after someone has already noticed something went wrong. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>ezyVet or Provet Cloud</span><span>Twilio (refill reminder and pickup SMS)</span><span>Jotform (reorder request form)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -536,9 +579,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Each pet's grooming or boarding history is used to calculate its typical rebooking cadence, whether that's every 6 weeks for a groom or every few months for boarding around known travel patterns, and a rebooking reminder automatically goes out to the owner 5 to 7 days before that cadence is due to repeat. Owners can rebook directly from the reminder text without calling in, and the grooming coordinator sees a forward-looking calendar showing how many rebooking slots are likely to fill each week based on historical response rates. Grooming and boarding revenue, which used to depend entirely on owners remembering to call back in, becomes a predictable recurring stream once the rebooking prompt does the remembering for them.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Each pet's grooming or boarding history is used to calculate its typical rebooking cadence, whether that's every 6 weeks for a groom or every few months for boarding around known travel patterns, and a rebooking reminder automatically goes out to the owner 5 to 7 days before that cadence is due to repeat. Owners can rebook directly from the reminder text without calling in, and the grooming coordinator sees a forward-looking calendar showing how many rebooking slots are likely to fill each week based on historical response rates. Grooming and boarding revenue, which used to depend entirely on owners remembering to call back in, becomes a predictable recurring stream once the rebooking prompt does the remembering for them.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a grooming coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>ezyVet or Provet Cloud</span><span>VetSuccess (rebooking cadence analytics)</span><span>Twilio (rebooking SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -547,9 +593,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a new patient's first appointment is booked, the owner automatically enters a welcome series that sends a pre-visit email covering what to bring, parking and check-in instructions, and a link to complete new patient paperwork online ahead of time. After the first visit, the series continues with a message introducing the practice's wellness plan options, a summary of the clinic's after-hours and emergency policies, and an invitation to download the client portal app for records and scheduling. The client care specialist no longer has to repeat the same onboarding explanation to every new client in person, and new owners arrive for their first visit already prepared, which measurably shortens check-in time and first-visit no-show rates.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a new patient's first appointment is booked, the owner automatically enters a welcome series that sends a pre-visit email covering what to bring, parking and check-in instructions, and a link to complete new patient paperwork online ahead of time. After the first visit, the series continues with a message introducing the practice's wellness plan options, a summary of the clinic's after-hours and emergency policies, and an invitation to download the client portal app for records and scheduling. The client care specialist no longer has to repeat the same onboarding explanation to every new client in person, and new owners arrive for their first visit already prepared, which measurably shortens check-in time and first-visit no-show rates.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a client care specialist has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>ezyVet or Provet Cloud</span><span>Mailchimp or ActiveCampaign (welcome series)</span><span>Jotform (new patient paperwork)</span></div>
+          </div>
         </div>
       </details>
 

@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Front Desk Coordinator</span><h3>Appointment Confirmation &amp; No-Show Reduction System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a client books online or by phone, this automation immediately sends a confirmation text and schedules two more touchpoints automatically: a reminder 48 hours out and a second one 3 hours before the appointment, each with a one-tap link to confirm, reschedule, or cancel. Clients who cancel inside the 24-hour window are prompted to pick a new slot from the stylist's live calendar instead of just canceling outright, and any slot that opens up is fed straight into the waitlist system. Front desk staff stop spending mornings dialing down a no-show list, and chairs stop sitting empty when a same-day reminder could have filled them.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a client books online or by phone, this automation immediately sends a confirmation text and schedules two more touchpoints automatically: a reminder 48 hours out and a second one 3 hours before the appointment, each with a one-tap link to confirm, reschedule, or cancel. Clients who cancel inside the 24-hour window are prompted to pick a new slot from the stylist's live calendar instead of just canceling outright, and any slot that opens up is fed straight into the waitlist system. Front desk staff stop spending mornings dialing down a no-show list, and chairs stop sitting empty when a same-day reminder could have filled them.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a front desk coordinator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Vagaro, Mindbody, or Boulevard (booking/POS)</span><span>Twilio (SMS)</span><span>Zapier or Make.com</span><span>Google Calendar (stylist sync)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a client's service is marked complete at checkout, this automation checks their service history to calculate their typical rebooking cadence (every 5 weeks for a color client, every 3 weeks for a fade) and immediately texts a personalized rebooking link with the exact date range they should return. Clients who don't book within 48 hours get one gentle follow-up text before the sequence stops, so it never reads as nagging. Because the prompt goes out while the client is still admiring their new look, rebooking rates run well ahead of hoping someone remembers to call in six weeks.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a client's service is marked complete at checkout, this automation checks their service history to calculate their typical rebooking cadence (every 5 weeks for a color client, every 3 weeks for a fade) and immediately texts a personalized rebooking link with the exact date range they should return. Clients who don't book within 48 hours get one gentle follow-up text before the sequence stops, so it never reads as nagging. Because the prompt goes out while the client is still admiring their new look, rebooking rates run well ahead of hoping someone remembers to call in six weeks.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a salon manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Vagaro, Mindbody, or Boulevard</span><span>Twilio (SMS)</span><span>Zapier or Make.com</span><span>Google Sheets (cadence tracking)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Client birthdays and first-visit dates are pulled automatically from the booking platform each morning, and anyone with a birthday or first-visit anniversary in the coming week receives a personalized offer, such as a complimentary add-on or a percentage off their next service, valid for a 30-day window. Redemptions are tracked automatically so the spa can see exactly how much return business the campaign drives, without anyone building a spreadsheet of dates by hand. Clients feel remembered without staff having to keep a mental list of a few hundred birthdays.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Client birthdays and first-visit dates are pulled automatically from the booking platform each morning, and anyone with a birthday or first-visit anniversary in the coming week receives a personalized offer, such as a complimentary add-on or a percentage off their next service, valid for a 30-day window. Redemptions are tracked automatically so the spa can see exactly how much return business the campaign drives, without anyone building a spreadsheet of dates by hand. Clients feel remembered without staff having to keep a mental list of a few hundred birthdays.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a spa director remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Mindbody or Vagaro</span><span>Mailchimp or Klaviyo</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every morning, this automation scans each stylist's or provider's calendar for the next 48 hours and flags any gap longer than 45 minutes. Those open slots are packaged into a same-day deal, typically 15-20% off, and pushed to a segmented list of clients who have booked that specific service before and live nearby, with a one-tap booking link. The first client to respond claims the slot and everyone else's offer expires automatically, so there's no double-booking risk. Chairs that used to sit empty on a slow Tuesday afternoon get filled without a manager scrambling to post on social media.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every morning, this automation scans each stylist's or provider's calendar for the next 48 hours and flags any gap longer than 45 minutes. Those open slots are packaged into a same-day deal, typically 15-20% off, and pushed to a segmented list of clients who have booked that specific service before and live nearby, with a one-tap booking link. The first client to respond claims the slot and everyone else's offer expires automatically, so there's no double-booking risk. Chairs that used to sit empty on a slow Tuesday afternoon get filled without a manager scrambling to post on social media.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a booking coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Vagaro or Mindbody</span><span>Twilio (SMS)</span><span>Mailchimp</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Based on the size of the product a client purchased and its average days-to-empty (a 2-ounce serum lasts about 60 days, a shampoo bottle about 45), this automation calculates the date the client is likely running low and sends a friendly text about a week beforehand with a one-click reorder or in-store pickup option. Clients who reorder are automatically re-enrolled in the next cycle, and the system tracks which products drive the most repeat retail revenue. Instead of retail sales depending on a stylist remembering to ask how the shampoo is working out, the reminder does the asking right when the client is about to need it.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Based on the size of the product a client purchased and its average days-to-empty (a 2-ounce serum lasts about 60 days, a shampoo bottle about 45), this automation calculates the date the client is likely running low and sends a friendly text about a week beforehand with a one-click reorder or in-store pickup option. Clients who reorder are automatically re-enrolled in the next cycle, and the system tracks which products drive the most repeat retail revenue. Instead of retail sales depending on a stylist remembering to ask how the shampoo is working out, the reminder does the asking right when the client is about to need it.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a retail sales associate manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Vagaro or Mindbody (retail/POS)</span><span>Shopify (online store)</span><span>Twilio (SMS)</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a client cancels or reschedules, this automation immediately texts the next person on that time slot's waitlist with a 15-minute window to claim it before it moves to the next person in line. Clients can join the waitlist for a specific stylist or service directly from their booking confirmation text, so the list builds itself without front desk staff keeping a notepad of who wanted in. A slot that used to sit empty for the rest of the day is typically refilled within minutes of the cancellation coming in.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a client cancels or reschedules, this automation immediately texts the next person on that time slot's waitlist with a 15-minute window to claim it before it moves to the next person in line. Clients can join the waitlist for a specific stylist or service directly from their booking confirmation text, so the list builds itself without front desk staff keeping a notepad of who wanted in. A slot that used to sit empty for the rest of the day is typically refilled within minutes of the cancellation coming in.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a front desk coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Vagaro or Boulevard</span><span>Twilio (SMS)</span><span>Zapier or Make.com</span><span>Google Sheets (waitlist queue)</span></div>
+          </div>
         </div>
       </details>
 

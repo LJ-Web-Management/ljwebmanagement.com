@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Executive Pastor</span><h3>Ministry Team Volunteer Scheduling &amp; Communication System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Ministry team leaders submit their volunteer needs for each weekend service through a simple form, and the system automatically matches open roles to volunteers based on their team, availability, and frequency limits, then sends each volunteer their assignment via text and email the week before. Volunteers who don't confirm their assignment by Wednesday receive an automatic reminder. Last-minute cancellations trigger an immediate text to the next qualified volunteer on the waitlist so every role is covered before Sunday morning. The executive pastor sees a complete weekend readiness dashboard on Thursday rather than fielding a cascade of calls from team leaders on Saturday night.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Ministry team leaders submit their volunteer needs for each weekend service through a simple form, and the system automatically matches open roles to volunteers based on their team, availability, and frequency limits, then sends each volunteer their assignment via text and email the week before. Volunteers who don't confirm their assignment by Wednesday receive an automatic reminder. Last-minute cancellations trigger an immediate text to the next qualified volunteer on the waitlist so every role is covered before Sunday morning. The executive pastor sees a complete weekend readiness dashboard on Thursday rather than fielding a cascade of calls from team leaders on Saturday night.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, an executive pastor has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Planning Center Services or a church management system (ChMS)</span><span>Zapier or Make.com</span><span>Twilio (volunteer assignment and reminder SMS)</span><span>Email (scheduling confirmation)</span><span>Airtable (team capacity and availability tracking)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Throughout the year, first-time givers receive an automatic thank-you acknowledgment with a summary of how their gift is being used. At year end, every donor automatically receives their complete annual giving statement as a PDF by email (formatted to meet IRS requirements for charitable contribution acknowledgment) with a personal note from the senior pastor. Donors who gave their largest gift in the current year are flagged for a personal call from the executive pastor or development team before year end, turning a compliance requirement into a meaningful touchpoint that deepens the donor's relationship with the organization before they decide their next year's giving.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Throughout the year, first-time givers receive an automatic thank-you acknowledgment with a summary of how their gift is being used. At year end, every donor automatically receives their complete annual giving statement as a PDF by email (formatted to meet IRS requirements for charitable contribution acknowledgment) with a personal note from the senior pastor. Donors who gave their largest gift in the current year are flagged for a personal call from the executive pastor or development team before year end, turning a compliance requirement into a meaningful touchpoint that deepens the donor's relationship with the organization before they decide their next year's giving.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a church administrator remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>ChMS with giving module (e.g., Planning Center Giving, Breeze, or Pushpay)</span><span>Zapier or Make.com</span><span>Mailchimp or email (giving statement and thank-you delivery)</span><span>OpenAI API (personalized pastor note generation)</span><span>Google Sheets (major donor flagging dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Community events, conferences, and weekend service registrations are handled through a branded registration form that captures attendance preference, meal choices, childcare needs, and volunteer interest. Confirmed registrants receive an immediate confirmation with event details, a calendar invite, and a reminder 48 hours before the event. Registrants who expressed volunteer interest are automatically routed to a volunteer coordinator for role assignment, and all assigned volunteers receive their instructions and check-in location automatically the day before. Post-event, all attendees receive a digital follow-up with a recap, next steps for connection, and a giving opportunity, turning a one-time event into a relationship continuation.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Community events, conferences, and weekend service registrations are handled through a branded registration form that captures attendance preference, meal choices, childcare needs, and volunteer interest. Confirmed registrants receive an immediate confirmation with event details, a calendar invite, and a reminder 48 hours before the event. Registrants who expressed volunteer interest are automatically routed to a volunteer coordinator for role assignment, and all assigned volunteers receive their instructions and check-in location automatically the day before. Post-event, all attendees receive a digital follow-up with a recap, next steps for connection, and a giving opportunity, turning a one-time event into a relationship continuation.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, an events coordinator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Planning Center Registrations or Jotform</span><span>Zapier or Make.com</span><span>Mailchimp or email (confirmation and follow-up sequences)</span><span>Twilio (event day reminder SMS)</span><span>Google Sheets (volunteer assignment roster)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When someone expresses interest in joining a small group (through a weekend service card, the app, or the website) this automation captures their availability, neighborhood, life stage, and interest areas and matches them to up to three recommended groups. The prospective member receives a personal introduction to each group leader, who is simultaneously notified of the new interested attendee with a prompt to reach out within 48 hours. Groups that haven't logged attendance in two consecutive weeks receive a check-in from the small groups director, and groups that exceed their target attendance size are automatically prompted to consider launching a new group or adding a co-leader.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When someone expresses interest in joining a small group (through a weekend service card, the app, or the website) this automation captures their availability, neighborhood, life stage, and interest areas and matches them to up to three recommended groups. The prospective member receives a personal introduction to each group leader, who is simultaneously notified of the new interested attendee with a prompt to reach out within 48 hours. Groups that haven't logged attendance in two consecutive weeks receive a check-in from the small groups director, and groups that exceed their target attendance size are automatically prompted to consider launching a new group or adding a co-leader.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a small groups director, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>ChMS (e.g., Planning Center Groups, Breeze, or Rock RMS)</span><span>Jotform (interest form)</span><span>Zapier or Make.com</span><span>Twilio (leader connection prompt SMS)</span><span>Email (prospective member matching notification)</span><span>Airtable (group health and attendance dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Community service events are posted with a signup form that captures volunteer name, contact, and any applicable skills or background checks required. As volunteers sign up, the outreach director sees a real-time capacity tracker and receives an alert when an event reaches its minimum viable volunteer count. After each event, volunteers receive a thank-you message with a summary of what was accomplished (meals served, families helped, supplies distributed) and are invited to sign up for the next event. Quarterly, a community impact report is auto-assembled from all logged service events and distributed to the congregation and community partners, giving the organization documented evidence of its community investment without anyone manually compiling statistics from a notebook.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Community service events are posted with a signup form that captures volunteer name, contact, and any applicable skills or background checks required. As volunteers sign up, the outreach director sees a real-time capacity tracker and receives an alert when an event reaches its minimum viable volunteer count. After each event, volunteers receive a thank-you message with a summary of what was accomplished (meals served, families helped, supplies distributed) and are invited to sign up for the next event. Quarterly, a community impact report is auto-assembled from all logged service events and distributed to the congregation and community partners, giving the organization documented evidence of its community investment without anyone manually compiling statistics from a notebook.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, an outreach director manually pieces together information from different places, then has to relay it to everyone who needs it. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (volunteer signup and event report form)</span><span>Zapier or Make.com</span><span>Mailchimp or email (thank-you and impact report distribution)</span><span>Airtable (volunteer and event tracker)</span><span>OpenAI API (quarterly impact report narrative generator)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a first-time visitor fills out a connect card, physical or digital, this automation automatically sends a warm welcome text and email within a day, and creates a personal follow-up task assigned to a staff member or volunteer for a call within the week. No new visitor's first Sunday goes unfollowed simply because the connect card sat in a basket until Wednesday.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a first-time visitor fills out a connect card, physical or digital, this automation automatically sends a warm welcome text and email within a day, and creates a personal follow-up task assigned to a staff member or volunteer for a call within the week. No new visitor's first Sunday goes unfollowed simply because the connect card sat in a basket until Wednesday.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a guest services coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Planning Center or Church Community Builder</span><span>Twilio (SMS)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
 
@@ -515,9 +552,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For recurring volunteer roles, greeters, childcare, the tech team, this automation automatically fills the schedule based on each volunteer's stated availability, sends confirmation and reminder texts before every shift, and automatically reaches out to a backup list if someone can't make their assigned time. Sunday mornings stop starting with a scramble to figure out who's actually showing up to serve.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For recurring volunteer roles, greeters, childcare, the tech team, this automation automatically fills the schedule based on each volunteer's stated availability, sends confirmation and reminder texts before every shift, and automatically reaches out to a backup list if someone can't make their assigned time. Sunday mornings stop starting with a scramble to figure out who's actually showing up to serve.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a volunteer coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Planning Center</span><span>Twilio (SMS)</span><span>Zapier or Make.com</span><span>Google Calendar</span></div>
+          </div>
         </div>
       </details>
 
@@ -527,9 +567,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>At year-end, or whenever requested, this automation automatically compiles each donor's full giving history into a properly formatted tax statement and sends it directly to them. What's often a manual, error-prone spreadsheet process handled by one overworked volunteer every January becomes an automatic, accurate process that runs itself.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">At year-end, or whenever requested, this automation automatically compiles each donor's full giving history into a properly formatted tax statement and sends it directly to them. What's often a manual, error-prone spreadsheet process handled by one overworked volunteer every January becomes an automatic, accurate process that runs itself.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a finance administrator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Planning Center Giving or Pushpay</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
 
@@ -539,9 +582,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When someone signs up for a small group through the church's website, this automation automatically matches them to a group based on their stated preferences, day, location, life stage, notifies the group leader of the new member, and sends the new member the group's meeting details. A staff member no longer has to manually sort through sign-up forms trying to fit people into the right group by hand.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When someone signs up for a small group through the church's website, this automation automatically matches them to a group based on their stated preferences, day, location, life stage, notifies the group leader of the new member, and sends the new member the group's meeting details. A staff member no longer has to manually sort through sign-up forms trying to fit people into the right group by hand.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a small groups pastor has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Planning Center</span><span>Zapier or Make.com</span><span>Google Sheets</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 
@@ -551,9 +597,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a prayer request is submitted online, this automation automatically routes it to the appropriate prayer team or pastor based on the category selected, health, family, urgent, while keeping sensitive requests private and entirely separate from any request shared on a public prayer list. Urgent requests reach a pastor within minutes instead of sitting in a shared inbox alongside routine church business.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a prayer request is submitted online, this automation automatically routes it to the appropriate prayer team or pastor based on the category selected, health, family, urgent, while keeping sensitive requests private and entirely separate from any request shared on a public prayer list. Urgent requests reach a pastor within minutes instead of sitting in a shared inbox alongside routine church business.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a pastoral care coordinator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Planning Center or a form tool (Jotform)</span><span>Zapier or Make.com</span><span>Slack or email</span></div>
+          </div>
         </div>
       </details>
 

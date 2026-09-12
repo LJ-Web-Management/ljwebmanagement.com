@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Lead Planner</span><h3>Inquiry-to-Proposal Automation System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a couple submits an inquiry through the website form, this automation checks the requested date against the studio's live calendar and immediately sends a warm response with available dates and a starter package overview, typically within minutes instead of the next business day. If the couple confirms interest in a specific date, it pulls their guest count and selected services into a proposal template and generates a customized, branded quote automatically, ready for the planner to review and send. What used to take a planner 45 minutes of manual quote-building between client calls now lands in the couple's inbox before they've even closed the tab.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a couple submits an inquiry through the website form, this automation checks the requested date against the studio's live calendar and immediately sends a warm response with available dates and a starter package overview, typically within minutes instead of the next business day. If the couple confirms interest in a specific date, it pulls their guest count and selected services into a proposal template and generates a customized, branded quote automatically, ready for the planner to review and send. What used to take a planner 45 minutes of manual quote-building between client calls now lands in the couple's inbox before they've even closed the tab.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a lead planner re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>HoneyBook or Dubsado</span><span>Zapier or Make.com</span><span>Google Calendar</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For every booked event, this automation builds a checklist of every vendor involved, caterer, florist, DJ, rental company, and tracks each one's confirmation status against the event date. Thirty days out, any vendor who hasn't confirmed final headcount, arrival time, and setup details automatically receives a follow-up email, and if a vendor is still unconfirmed 10 days before the event, the coordinator gets an internal alert to call them directly. Instead of the planner manually re-reading a dozen email threads the week of the wedding, the checklist flags exactly who needs a nudge and when.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For every booked event, this automation builds a checklist of every vendor involved, caterer, florist, DJ, rental company, and tracks each one's confirmation status against the event date. Thirty days out, any vendor who hasn't confirmed final headcount, arrival time, and setup details automatically receives a follow-up email, and if a vendor is still unconfirmed 10 days before the event, the coordinator gets an internal alert to call them directly. Instead of the planner manually re-reading a dozen email threads the week of the wedding, the checklist flags exactly who needs a nudge and when.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a client services coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>HoneyBook or Aisle Planner</span><span>Zapier or Make.com</span><span>Twilio or email</span><span>Google Sheets (vendor tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Based on the payment schedule written into the contract, typically a deposit at booking, 50% at 90 days out, and the final balance at 30 days out, this automation automatically generates and sends the client an invoice ahead of each milestone date. A reminder goes out three days before each due date, and if a payment is still outstanding as the event gets within 14 days, the planner receives an internal flag to follow up personally before it becomes an awkward conversation on-site. Payment schedules that used to live in a spreadsheet someone had to remember to check now run themselves.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Based on the payment schedule written into the contract, typically a deposit at booking, 50% at 90 days out, and the final balance at 30 days out, this automation automatically generates and sends the client an invoice ahead of each milestone date. A reminder goes out three days before each due date, and if a payment is still outstanding as the event gets within 14 days, the planner receives an internal flag to follow up personally before it becomes an awkward conversation on-site. Payment schedules that used to live in a spreadsheet someone had to remember to check now run themselves.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a studio owner, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>HoneyBook or QuickBooks</span><span>Zapier or Make.com</span><span>Stripe</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Seven days before the event, this automation automatically compiles the finalized day-of timeline, pulling confirmed arrival times, vendor contacts, and specific responsibilities for each key person, and sends a personalized version to every vendor and wedding party member with their own tasks highlighted. Anyone who hasn't opened their timeline within 48 hours gets an automatic reminder text. Instead of the coordinator fielding a dozen "what time do I need to be there" texts in the final week, everyone shows up already knowing exactly what to do and when.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Seven days before the event, this automation automatically compiles the finalized day-of timeline, pulling confirmed arrival times, vendor contacts, and specific responsibilities for each key person, and sends a personalized version to every vendor and wedding party member with their own tasks highlighted. Anyone who hasn't opened their timeline within 48 hours gets an automatic reminder text. Instead of the coordinator fielding a dozen "what time do I need to be there" texts in the final week, everyone shows up already knowing exactly what to do and when.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a day-of coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Aisle Planner or HoneyBook</span><span>Twilio (SMS)</span><span>Zapier or Make.com</span><span>Google Docs (timeline template)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>One week after the event, this automation automatically sends the couple a thank-you message along with a review request routed to Google and The Knot, plus a referral incentive, typically a discount for any friend they refer who books a consultation. Couples who leave a review are automatically tagged in the CRM so the studio can track which reviews convert into referral leads over time. Instead of relying on a happy couple to think to leave a review weeks after their wedding is a distant memory, the ask goes out while the excitement is still fresh.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">One week after the event, this automation automatically sends the couple a thank-you message along with a review request routed to Google and The Knot, plus a referral incentive, typically a discount for any friend they refer who books a consultation. Couples who leave a review are automatically tagged in the CRM so the studio can track which reviews convert into referral leads over time. Instead of relying on a happy couple to think to leave a review weeks after their wedding is a distant memory, the ask goes out while the excitement is still fresh.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a planner has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>HoneyBook</span><span>Mailchimp or email</span><span>Zapier or Make.com</span><span>Google Business Profile</span></div>
+          </div>
         </div>
       </details>
 

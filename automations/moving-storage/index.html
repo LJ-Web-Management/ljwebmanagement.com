@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Sales Coordinator</span><h3>Instant Quote from Inventory List System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a customer fills out an online inventory of items to be moved, this automation automatically calculates an estimated quote based on total cubic footage, distance, and requested move date, and emails it to the customer within minutes instead of waiting on a callback from a sales rep. Quotes above a certain size automatically flag a coordinator to follow up personally within the hour, since larger moves convert better with a human touch. Customers get a real number to compare against competitors immediately, instead of bouncing to the next moving company's website while waiting for a callback.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a customer fills out an online inventory of items to be moved, this automation automatically calculates an estimated quote based on total cubic footage, distance, and requested move date, and emails it to the customer within minutes instead of waiting on a callback from a sales rep. Quotes above a certain size automatically flag a coordinator to follow up personally within the hour, since larger moves convert better with a human touch. Customers get a real number to compare against competitors immediately, instead of bouncing to the next moving company's website while waiting for a callback.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a sales coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>MoveitPro or SmartMoving</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>Google Sheets (rate calculator)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a move is booked, this automation automatically assigns available crew members and a truck based on the job's estimated size and location, cross-checking crew certifications (piano moves, long-carry equipment) against what the job requires. For days with multiple moves, it calculates the most efficient route between stops and sends the finalized schedule, including drive times and arrival windows, to the crew the night before. What used to be an hour of manual scheduling and guesswork on a whiteboard now assembles itself as soon as a job is confirmed.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a move is booked, this automation automatically assigns available crew members and a truck based on the job's estimated size and location, cross-checking crew certifications (piano moves, long-carry equipment) against what the job requires. For days with multiple moves, it calculates the most efficient route between stops and sends the finalized schedule, including drive times and arrival windows, to the crew the night before. What used to be an hour of manual scheduling and guesswork on a whiteboard now assembles itself as soon as a job is confirmed.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a dispatcher, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>SmartMoving or MoveitPro</span><span>Google Maps API (route optimization)</span><span>Zapier or Make.com</span><span>Twilio (crew notifications)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>On move day, this automation automatically sends the customer status texts at key points, crew en route, loading started, loading complete, en route to destination, and unloading started, pulled directly from the crew's check-ins on their mobile app. Customers who used to call the office every hour asking where their truck is now get the answer before they think to ask. The office phone stops ringing with status-check calls during the busiest part of the day, freeing dispatch to actually manage the day's moves.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">On move day, this automation automatically sends the customer status texts at key points, crew en route, loading started, loading complete, en route to destination, and unloading started, pulled directly from the crew's check-ins on their mobile app. Customers who used to call the office every hour asking where their truck is now get the answer before they think to ask. The office phone stops ringing with status-check calls during the busiest part of the day, freeing dispatch to actually manage the day's moves.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on an operations manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>SmartMoving</span><span>Twilio (SMS)</span><span>Zapier or Make.com</span><span>A crew mobile check-in app</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For storage facilities, this automation automatically sends a payment reminder five days before each unit's due date, and if payment is missed, escalates through a state-compliant notice sequence, a late notice at 10 days past due, then a formal lien notice at the legally required interval for that state, each generated and mailed or emailed automatically with the correct legal language. The facility manager gets a dashboard of every account currently in the notice pipeline instead of manually tracking dozens of accounts on dozens of different timelines in a spreadsheet, and the facility stays compliant with state self-storage lien laws without anyone having to memorize the deadlines.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For storage facilities, this automation automatically sends a payment reminder five days before each unit's due date, and if payment is missed, escalates through a state-compliant notice sequence, a late notice at 10 days past due, then a formal lien notice at the legally required interval for that state, each generated and mailed or emailed automatically with the correct legal language. The facility manager gets a dashboard of every account currently in the notice pipeline instead of manually tracking dozens of accounts on dozens of different timelines in a spreadsheet, and the facility stays compliant with state self-storage lien laws without anyone having to memorize the deadlines.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a facility manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>SiteLink or storEDGE</span><span>Zapier or Make.com</span><span>Stripe or a payment processor</span><span>Certified mail/email service for legal notices</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a customer reports a damaged or lost item after a move, this automation automatically opens a claim file, sends the customer a simple form requesting photos and a description of the item and the damage, and routes the completed submission to the claims adjuster with the original move's date, crew, and inventory list already attached. Claims that used to start as a scattered email thread with photos attached three messages deep now arrive as one structured file, and the adjuster can start the assessment immediately instead of chasing down move details from dispatch first.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a customer reports a damaged or lost item after a move, this automation automatically opens a claim file, sends the customer a simple form requesting photos and a description of the item and the damage, and routes the completed submission to the claims adjuster with the original move's date, crew, and inventory list already attached. Claims that used to start as a scattered email thread with photos attached three messages deep now arrive as one structured file, and the adjuster can start the assessment immediately instead of chasing down move details from dispatch first.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a claims coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>SmartMoving</span><span>Jotform (claims intake form)</span><span>Zapier or Make.com</span><span>Google Drive (claims file storage)</span></div>
+          </div>
         </div>
       </details>
 

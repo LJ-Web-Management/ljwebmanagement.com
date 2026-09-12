@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Insurance Agent</span><h3>New Prospect Intake &amp; Instant Quote Request System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Prospects who reach the agency through ads, referrals, or the website fill out a dynamic intake form that captures coverage type, risk details, and contact information, and the system immediately sends that data to the relevant carriers for a quote, notifies the agent with a complete prospect summary, and schedules a follow-up call on the agent's calendar. The time between "I need insurance" and "I have a quote in hand" drops from days to hours, and no lead falls through the cracks while the agent is with another client.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Prospects who reach the agency through ads, referrals, or the website fill out a dynamic intake form that captures coverage type, risk details, and contact information, and the system immediately sends that data to the relevant carriers for a quote, notifies the agent with a complete prospect summary, and schedules a follow-up call on the agent's calendar. The time between "I need insurance" and "I have a quote in hand" drops from days to hours, and no lead falls through the cracks while the agent is with another client.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, an insurance agent manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform or agency intake tool</span><span>Zapier or Make.com</span><span>Agency management system (e.g., HawkSoft or Applied Epic)</span><span>Calendly (follow-up call scheduling)</span><span>Twilio (immediate prospect text confirmation)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>New claims submitted through the portal are automatically assigned to the correct adjuster based on coverage type and workload, and the claimant immediately receives a confirmation with their claim number, their adjuster's name, and a document upload link for photos, estimates, and supporting materials. The adjuster receives a pre-built claim file with everything collected to date, and the claimant automatically receives a status update every 72 hours until the claim is closed, eliminating the "where is my claim?" calls that consume a disproportionate amount of an adjuster's day.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">New claims submitted through the portal are automatically assigned to the correct adjuster based on coverage type and workload, and the claimant immediately receives a confirmation with their claim number, their adjuster's name, and a document upload link for photos, estimates, and supporting materials. The adjuster receives a pre-built claim file with everything collected to date, and the claimant automatically receives a status update every 72 hours until the claim is closed, eliminating the "where is my claim?" calls that consume a disproportionate amount of an adjuster's day.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a claims adjuster manually pieces together information from different places, then has to relay it to everyone who needs it. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Claims management system (e.g., Guidewire or Duck Creek)</span><span>Zapier or Make.com</span><span>Jotform (document upload portal)</span><span>Twilio or email (status updates)</span><span>Slack (internal adjuster alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Thirty days before each policy anniversary, the account manager receives a prompt to reach out to the client with a coverage review, and the client receives an email highlighting the value of their current coverage and any recent claims-free discount they've earned. Life events tracked in the CRM (a home purchase, a new vehicle, a business expansion) trigger an immediate cross-sell alert with a suggested product and a pre-written outreach message the account manager can personalize and send in minutes rather than drafting from scratch.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Thirty days before each policy anniversary, the account manager receives a prompt to reach out to the client with a coverage review, and the client receives an email highlighting the value of their current coverage and any recent claims-free discount they've earned. Life events tracked in the CRM (a home purchase, a new vehicle, a business expansion) trigger an immediate cross-sell alert with a suggested product and a pre-written outreach message the account manager can personalize and send in minutes rather than drafting from scratch.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, an insurance account manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Agency management system or CRM</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign (anniversary emails)</span><span>Slack (cross-sell opportunity alerts)</span><span>Twilio (SMS outreach)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Incoming applications are automatically checked against underwriting guidelines (coverage limits, geographic risk, loss history, required documentation) and any application that meets all criteria is flagged as clean for fast-track review, while applications with one or more flags are routed to the appropriate underwriter with a highlighted exception report already generated. The underwriter starts every application review knowing exactly what needs scrutiny, rather than reading through the whole submission to find the issue buried on page six.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Incoming applications are automatically checked against underwriting guidelines (coverage limits, geographic risk, loss history, required documentation) and any application that meets all criteria is flagged as clean for fast-track review, while applications with one or more flags are routed to the appropriate underwriter with a highlighted exception report already generated. The underwriter starts every application review knowing exactly what needs scrutiny, rather than reading through the whole submission to find the issue buried on page six.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means an insurance underwriter handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Underwriting platform or AMS</span><span>Zapier or Make.com</span><span>Google Sheets or Airtable (submission tracker)</span><span>OpenAI API (risk flag summary report)</span><span>Email or Slack (routing and exception alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Each week, this automation pulls production data for every agent (new policies written, premium volume, retention rate, cross-sell ratio) and updates a live scorecard that the agency owner can see at a glance. Agents who are tracking below their monthly goal receive a proactive coaching prompt from the owner's calendar, and top performers are automatically recognized in the team communication channel. The agency owner manages the team by data rather than instinct, and every producer knows exactly where they stand at all times.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Each week, this automation pulls production data for every agent (new policies written, premium volume, retention rate, cross-sell ratio) and updates a live scorecard that the agency owner can see at a glance. Agents who are tracking below their monthly goal receive a proactive coaching prompt from the owner's calendar, and top performers are automatically recognized in the team communication channel. The agency owner manages the team by data rather than instinct, and every producer knows exactly where they stand at all times.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, an insurance agency owner has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Agency management system (e.g., Applied Epic or HawkSoft)</span><span>Zapier or Make.com</span><span>Google Sheets or a BI tool (producer scorecard)</span><span>Slack (weekly scorecard and recognition posts)</span><span>Google Calendar (coaching call prompts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Sixty days before any policy on the book is set to renew, this automation pulls the renewal date directly from the agency management system (AMS360 or EZLynx) and sends the client a reminder email summarizing their current coverage and premium. A second reminder goes out 30 days out, and if the policy is still unrenewed 10 days before expiration, the renewal specialist receives an internal alert to call the client directly before coverage lapses. Clients who need a rate re-shop or have had a change in circumstances are flagged automatically instead of being renewed on autopilot, and the agency stops losing policies to silent non-renewals that were never actually declined, just never followed up on.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Sixty days before any policy on the book is set to renew, this automation pulls the renewal date directly from the agency management system (AMS360 or EZLynx) and sends the client a reminder email summarizing their current coverage and premium. A second reminder goes out 30 days out, and if the policy is still unrenewed 10 days before expiration, the renewal specialist receives an internal alert to call the client directly before coverage lapses. Clients who need a rate re-shop or have had a change in circumstances are flagged automatically instead of being renewed on autopilot, and the agency stops losing policies to silent non-renewals that were never actually declined, just never followed up on.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a renewal specialist spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>AMS360 or EZLynx</span><span>Twilio (SMS reminders)</span><span>Mailchimp or email (renewal notices)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -514,9 +551,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Clients are invited to share upcoming milestones (a marriage, a new home purchase, a new baby, a teen driver) directly through a short update form linked in every renewal and service email. The moment a client logs one of these life events, the automation matches it against a library of relevant coverage triggers (umbrella liability for a new home, an added driver for a teen, life insurance for a new baby) and immediately sends the client an educational message along with a prompt for the producer to schedule a coverage review call. The producer's task list updates automatically with the specific gap to address, turning a client's good news into a timely, relevant conversation instead of a missed cross-sell opportunity that surfaces only at the next renewal, if at all.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Clients are invited to share upcoming milestones (a marriage, a new home purchase, a new baby, a teen driver) directly through a short update form linked in every renewal and service email. The moment a client logs one of these life events, the automation matches it against a library of relevant coverage triggers (umbrella liability for a new home, an added driver for a teen, life insurance for a new baby) and immediately sends the client an educational message along with a prompt for the producer to schedule a coverage review call. The producer's task list updates automatically with the specific gap to address, turning a client's good news into a timely, relevant conversation instead of a missed cross-sell opportunity that surfaces only at the next renewal, if at all.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a personal lines producer has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>AMS360 or EZLynx</span><span>Jotform (life-event update form)</span><span>Twilio or email (outreach messages)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -525,9 +565,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Sixty, thirty, and seven days before a policy is set to renew, this automation checks the CRM for any noted change in the client's circumstances, a new vehicle, a new address, a recent life event, and sends a renewal reminder that reflects those specifics rather than a generic notice. Any client whose premium is increasing by more than a set percentage is automatically flagged so the agent calls before the renewal notice arrives cold. Renewal season stops being one mass mailing and becomes a set of targeted, relevant conversations.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Sixty, thirty, and seven days before a policy is set to renew, this automation checks the CRM for any noted change in the client's circumstances, a new vehicle, a new address, a recent life event, and sends a renewal reminder that reflects those specifics rather than a generic notice. Any client whose premium is increasing by more than a set percentage is automatically flagged so the agent calls before the renewal notice arrives cold. Renewal season stops being one mass mailing and becomes a set of targeted, relevant conversations.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a renewal coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>AMS360 or EZLynx</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
 
@@ -537,9 +580,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As a claim moves through each stage, filed, under review, adjuster assigned, approved, paid, this automation automatically texts and emails the policyholder a plain-language update the moment the status changes in the claims system. The volume of \"what's happening with my claim\" calls to the office drops sharply because the customer already knows before they think to call.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As a claim moves through each stage, filed, under review, adjuster assigned, approved, paid, this automation automatically texts and emails the policyholder a plain-language update the moment the status changes in the claims system. The volume of \"what's happening with my claim\" calls to the office drops sharply because the customer already knows before they think to call.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a claims coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>AMS360 or a claims management system</span><span>Twilio (SMS)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
 
@@ -549,9 +595,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation reviews every client's current policies against a library of common coverage gaps, a homeowner's policy with no umbrella coverage, an auto policy with no renters coverage on file for a renting driver, and automatically flags the cross-sell opportunity to the agent along with a suggested talking point for the next conversation. The agent stops relying on memory to catch these gaps across hundreds of accounts.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation reviews every client's current policies against a library of common coverage gaps, a homeowner's policy with no umbrella coverage, an auto policy with no renters coverage on file for a renting driver, and automatically flags the cross-sell opportunity to the agent along with a suggested talking point for the next conversation. The agent stops relying on memory to catch these gaps across hundreds of accounts.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a personal lines agent has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>AMS360 or EZLynx</span><span>Zapier or Make.com</span><span>Google Sheets or CRM</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 
@@ -561,9 +610,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a commercial client requests a certificate of insurance, a routine ask from vendors and landlords, this automation automatically pulls the current policy data from the agency management system, generates the certificate in the correct standard ACORD format, and emails it directly to whoever requested it. What used to be a multi-day request sitting in an account manager's inbox turns into a same-day, often same-hour, turnaround.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a commercial client requests a certificate of insurance, a routine ask from vendors and landlords, this automation automatically pulls the current policy data from the agency management system, generates the certificate in the correct standard ACORD format, and emails it directly to whoever requested it. What used to be a multi-day request sitting in an account manager's inbox turns into a same-day, often same-hour, turnaround.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a commercial lines account manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>AMS360</span><span>Zapier or Make.com</span><span>A certificate-generation tool (Certificates Now or similar)</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 
@@ -573,9 +625,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a policy lapses due to non-payment or non-renewal, this automation automatically enrolls the former client in a 90-day win-back sequence that offers a fresh rate re-quote and highlights whatever coverage gap they now have without a policy in force. Revenue that would otherwise simply disappear from the books gets a structured, timed attempt at recovery instead of being written off the moment the policy lapses.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a policy lapses due to non-payment or non-renewal, this automation automatically enrolls the former client in a 90-day win-back sequence that offers a fresh rate re-quote and highlights whatever coverage gap they now have without a policy in force. Revenue that would otherwise simply disappear from the books gets a structured, timed attempt at recovery instead of being written off the moment the policy lapses.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a retention specialist has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>AMS360 or EZLynx</span><span>Mailchimp or email</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
 

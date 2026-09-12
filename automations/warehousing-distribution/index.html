@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Warehouse Director</span><h3>Labor Productivity Tracker &amp; Shift Performance Dashboard</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Each shift, pick rates, pack rates, receiving throughput, and order accuracy metrics are automatically compiled from the WMS and presented in a real-time dashboard that the warehouse director can check from anywhere. Shifts that fall below productivity targets trigger an alert during the shift (not in a report the next morning) so the director can intervene while there is still time to course-correct. At week end, a performance summary is automatically distributed to shift supervisors comparing actual versus target across every key metric, building a culture of accountability without manual report-building from the director's team.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Each shift, pick rates, pack rates, receiving throughput, and order accuracy metrics are automatically compiled from the WMS and presented in a real-time dashboard that the warehouse director can check from anywhere. Shifts that fall below productivity targets trigger an alert during the shift (not in a report the next morning) so the director can intervene while there is still time to course-correct. At week end, a performance summary is automatically distributed to shift supervisors comparing actual versus target across every key metric, building a culture of accountability without manual report-building from the director's team.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a warehouse director handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>WMS (e.g., ShipHero, Deposco, or Manhattan Associates)</span><span>Zapier or Make.com</span><span>Google Sheets or a BI tool (performance dashboard)</span><span>Slack (real-time productivity alerts)</span><span>Email (weekly shift summary distribution)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a supplier ships an order, this automation receives the ASN (Advanced Shipment Notice), cross-references it against the open PO, flags any quantity or item discrepancies before the truck arrives, and schedules a dock door and receiving crew window on the facility's dock management calendar. Drivers receive a confirmation text with their scheduled arrival window and dock assignment, eliminating the unplanned arrivals that stack trucks in the parking lot and blow up the receiving team's day. Any shipment arriving without a pre-scheduled appointment is flagged automatically for the receiving manager to route or reschedule.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a supplier ships an order, this automation receives the ASN (Advanced Shipment Notice), cross-references it against the open PO, flags any quantity or item discrepancies before the truck arrives, and schedules a dock door and receiving crew window on the facility's dock management calendar. Drivers receive a confirmation text with their scheduled arrival window and dock assignment, eliminating the unplanned arrivals that stack trucks in the parking lot and blow up the receiving team's day. Any shipment arriving without a pre-scheduled appointment is flagged automatically for the receiving manager to route or reschedule.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a receiving manager handles each case reactively, after someone has already noticed something went wrong. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>WMS or ERP with ASN integration</span><span>Zapier or Make.com</span><span>Google Calendar or dock scheduling tool</span><span>Twilio (driver dock appointment confirmation)</span><span>Slack (discrepancy and unscheduled arrival alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Two hours before each pick wave is released, this automation analyzes open orders by carrier cutoff time, order priority, pick zone, and available labor, and builds an optimized wave plan that maximizes throughput and ensures on-time carrier departures. The wave plan is automatically pushed to the WMS and pick task assignments are distributed to available pickers by zone, no supervisor manually building the plan or radio-ing assignments across the floor. If an order is at risk of missing its carrier cutoff due to a staffing gap or pick exception, the DC manager receives an alert with enough lead time to reassign resources or expedite.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Two hours before each pick wave is released, this automation analyzes open orders by carrier cutoff time, order priority, pick zone, and available labor, and builds an optimized wave plan that maximizes throughput and ensures on-time carrier departures. The wave plan is automatically pushed to the WMS and pick task assignments are distributed to available pickers by zone, no supervisor manually building the plan or radio-ing assignments across the floor. If an order is at risk of missing its carrier cutoff due to a staffing gap or pick exception, the DC manager receives an alert with enough lead time to reassign resources or expedite.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a distribution center manager handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>WMS (e.g., Deposco, HighJump, or 3PL Central)</span><span>Zapier or Make.com</span><span>Google Sheets (wave planning model)</span><span>Slack (cutoff risk alerts)</span><span>Email (wave plan distribution to supervisors)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The inventory control manager sets a cycle count schedule by location zone, and this automation assigns count tasks to the designated counters each morning, collects count results via mobile scan or a simple form, and immediately calculates variances against the system-on-hand quantity. Any variance above the threshold triggers an investigation task assigned to the inventory control team, and the manager receives a daily variance summary showing total shrink, potential causes by zone, and the status of open investigations. Inventory accuracy is monitored continuously rather than discovered annually during a physical count.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The inventory control manager sets a cycle count schedule by location zone, and this automation assigns count tasks to the designated counters each morning, collects count results via mobile scan or a simple form, and immediately calculates variances against the system-on-hand quantity. Any variance above the threshold triggers an investigation task assigned to the inventory control team, and the manager receives a daily variance summary showing total shrink, potential causes by zone, and the status of open investigations. Inventory accuracy is monitored continuously rather than discovered annually during a physical count.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, an inventory control manager manually pieces together information from different places, then has to relay it to everyone who needs it.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>WMS or inventory management platform</span><span>Jotform or mobile scan app (count data collection)</span><span>Zapier or Make.com</span><span>Airtable or Google Sheets (variance tracker and investigation log)</span><span>Slack or email (daily variance summary)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a return authorization is issued, this automation generates an RMA number, sends the customer a pre-paid label, and creates a pending receipt record in the system. When the return arrives and is scanned in at the returns dock, the supervisor receives a prompt to complete a condition inspection via a mobile form. Based on the inspection result (sellable, refurbish, vendor credit, or destroy) the system automatically routes the unit to the correct disposition queue, initiates the appropriate credit or replacement, and notifies the customer that their return has been processed. Returns that have been received but not inspected for more than 48 hours are flagged for immediate resolution.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a return authorization is issued, this automation generates an RMA number, sends the customer a pre-paid label, and creates a pending receipt record in the system. When the return arrives and is scanned in at the returns dock, the supervisor receives a prompt to complete a condition inspection via a mobile form. Based on the inspection result (sellable, refurbish, vendor credit, or destroy) the system automatically routes the unit to the correct disposition queue, initiates the appropriate credit or replacement, and notifies the customer that their return has been processed. Returns that have been received but not inspected for more than 48 hours are flagged for immediate resolution.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a returns processing supervisor re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>ERP or WMS (returns module)</span><span>Jotform (RMA inspection form)</span><span>Zapier or Make.com</span><span>EasyPost or ShipStation (return label generation)</span><span>Twilio (customer return status notification)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As orders move through the fulfillment process, this automation continuously flags any order that's been sitting in the picked or packed stage longer than the normal time threshold for that order type. The warehouse supervisor is automatically notified the moment an order crosses that threshold, giving enough time to resolve whatever's stuck before it misses its shipping cutoff instead of finding out at the end of the day that a batch of orders didn't ship.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As orders move through the fulfillment process, this automation continuously flags any order that's been sitting in the picked or packed stage longer than the normal time threshold for that order type. The warehouse supervisor is automatically notified the moment an order crosses that threshold, giving enough time to resolve whatever's stuck before it misses its shipping cutoff instead of finding out at the end of the day that a batch of orders didn't ship.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a warehouse supervisor, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A WMS (Fishbowl or NetSuite)</span><span>Zapier or Make.com</span><span>Slack or email</span><span>A barcode scanning app</span></div>
+          </div>
         </div>
       </details>
 
@@ -515,9 +552,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a scheduled cycle count finds a mismatch between the system's recorded inventory and the physical count on the shelf, this automation automatically creates a discrepancy ticket and assigns it to the inventory team for investigation. Any SKU that shows up with recurring discrepancies across multiple counts is automatically flagged for a deeper audit instead of each mismatch being treated as an isolated, one-off event.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a scheduled cycle count finds a mismatch between the system's recorded inventory and the physical count on the shelf, this automation automatically creates a discrepancy ticket and assigns it to the inventory team for investigation. Any SKU that shows up with recurring discrepancies across multiple counts is automatically flagged for a deeper audit instead of each mismatch being treated as an isolated, one-off event.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, an inventory control manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A WMS</span><span>Zapier or Make.com</span><span>Google Sheets</span><span>Slack or email</span></div>
+          </div>
         </div>
       </details>
 
@@ -527,9 +567,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Carriers arriving to pick up or drop off freight can self-schedule a dock appointment through an automated booking link that checks real-time dock availability and automatically confirms the slot or suggests the next open one. The phone-tag that used to eat up hours of a dispatcher's day manually scheduling every truck disappears, and the dock schedule stays accurate without anyone updating a shared spreadsheet by hand.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Carriers arriving to pick up or drop off freight can self-schedule a dock appointment through an automated booking link that checks real-time dock availability and automatically confirms the slot or suggests the next open one. The phone-tag that used to eat up hours of a dispatcher's day manually scheduling every truck disappears, and the dock schedule stays accurate without anyone updating a shared spreadsheet by hand.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a dock operations coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A dock scheduling tool (Opendock or C3 Reservations)</span><span>Zapier or Make.com</span><span>Email or SMS confirmation</span><span>Google Calendar</span></div>
+          </div>
         </div>
       </details>
 
@@ -539,9 +582,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a returned item arrives at the warehouse, this automation automatically logs the return against the original order, routes it through a quality check step, and automatically restocks the item to sellable inventory if it passes inspection, or flags it for disposal or refurbishment if it doesn't. The gap between \"return received\" and \"back in stock and sellable\" closes from days to hours.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a returned item arrives at the warehouse, this automation automatically logs the return against the original order, routes it through a quality check step, and automatically restocks the item to sellable inventory if it passes inspection, or flags it for disposal or refurbishment if it doesn't. The gap between \"return received\" and \"back in stock and sellable\" closes from days to hours.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a returns processing lead spends time each day re-checking the same information across disconnected tools instead of doing higher-value work.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A WMS or ERP</span><span>Zapier or Make.com</span><span>A barcode scanner app</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
 
@@ -551,9 +597,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>By comparing tomorrow's expected order volume against current confirmed staffing levels, this automation automatically alerts the warehouse manager if the forecast suggests the shift is understaffed for the volume coming in. That alert lands with enough lead time to call in extra help before the volume actually hits, instead of the shortfall only becoming obvious once orders are already backing up on the floor.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">By comparing tomorrow's expected order volume against current confirmed staffing levels, this automation automatically alerts the warehouse manager if the forecast suggests the shift is understaffed for the volume coming in. That alert lands with enough lead time to call in extra help before the volume actually hits, instead of the shortfall only becoming obvious once orders are already backing up on the floor.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a warehouse manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A WMS</span><span>Zapier or Make.com</span><span>Google Sheets (staffing model)</span><span>Slack or email</span></div>
+          </div>
         </div>
       </details>
 

@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Gym / Studio Owner</span><h3>Member Check-In &amp; Retention Alert System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Each day, this automation flags any active member who hasn't checked in for 14 days, adds them to a win-back sequence that starts with a "we miss you" text, escalates to a personal outreach from a staff member, and offers a complimentary session or class if they return within a set window. Members who hit streak milestones (30, 60, 90 days of consistent attendance) automatically receive a congratulations message and a referral incentive, turning the gym's most consistent members into its best recruiters.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Each day, this automation flags any active member who hasn't checked in for 14 days, adds them to a win-back sequence that starts with a "we miss you" text, escalates to a personal outreach from a staff member, and offers a complimentary session or class if they return within a set window. Members who hit streak milestones (30, 60, 90 days of consistent attendance) automatically receive a congratulations message and a referral incentive, turning the gym's most consistent members into its best recruiters.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a gym / studio owner handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Twilio (SMS re-engagement)</span><span>Mailchimp or ActiveCampaign</span><span>Slack (staff outreach prompts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Each week, active training clients receive an automated check-in form asking about sleep, energy, soreness, and how last week's workouts felt, and their responses feed directly into a training log the trainer reviews before programming the next week's sessions. Completed workouts are logged via the client app, and any client who skips more than two workouts in a row triggers a personal outreach from the trainer. The trainer spends their time coaching, not chasing clients for updates or manually tracking adherence in a notebook.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Each week, active training clients receive an automated check-in form asking about sleep, energy, soreness, and how last week's workouts felt, and their responses feed directly into a training log the trainer reviews before programming the next week's sessions. Completed workouts are logged via the client app, and any client who skips more than two workouts in a row triggers a personal outreach from the trainer. The trainer spends their time coaching, not chasing clients for updates or manually tracking adherence in a notebook.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a personal trainer remembering to check in, update records, and follow up, with no safety net if something slips.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Training app (e.g., Trainerize or TrueCoach)</span><span>Jotform or Typeform (weekly check-in)</span><span>Zapier or Make.com</span><span>Twilio (adherence check-in nudges)</span><span>Google Sheets (progress tracking dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a class reaches capacity, additional sign-ups automatically land on the waitlist and receive a confirmation with their position. The moment a registered student cancels, the next person on the waitlist is immediately texted with a booking link that expires in 30 minutes, keeping classes full without the studio owner or front desk manually managing the list throughout the day. Students who cancel after the deadline receive an automatic late-cancel fee notification per the studio policy, removing the awkward conversation from the staff's plate.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a class reaches capacity, additional sign-ups automatically land on the waitlist and receive a confirmation with their position. The moment a registered student cancels, the next person on the waitlist is immediately texted with a booking link that expires in 30 minutes, keeping classes full without the studio owner or front desk manually managing the list throughout the day. Students who cancel after the deadline receive an automatic late-cancel fee notification per the studio policy, removing the awkward conversation from the staff's plate.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a yoga studio owner remembering to check in, update records, and follow up, with no safety net if something slips. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio management software (e.g., Mindbody or Pike13)</span><span>Zapier or Make.com</span><span>Twilio (waitlist SMS notifications)</span><span>Stripe (late cancel fee processing)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>New coaching clients are automatically onboarded into a structured program: a welcome sequence with program expectations and the intake questionnaire, followed by weekly educational content drops tied to their program phase, daily habit tracking reminders, and a Friday accountability check-in form that routes their responses to the coach before their Monday call. Clients who don't submit their check-in receive an automatic nudge, and coaches arrive at every call having already reviewed the week's data, making every session more productive from the first minute.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">New coaching clients are automatically onboarded into a structured program: a welcome sequence with program expectations and the intake questionnaire, followed by weekly educational content drops tied to their program phase, daily habit tracking reminders, and a Friday accountability check-in form that routes their responses to the coach before their Monday call. Clients who don't submit their check-in receive an automatic nudge, and coaches arrive at every call having already reviewed the week's data, making every session more productive from the first minute.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a health coach, who has to track every step by hand across emails, spreadsheets, and sticky notes. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Coaching platform (e.g., Practice or Paperbell)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign (content drip)</span><span>Jotform (accountability check-in form)</span><span>Twilio (daily habit reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>New clients complete a digital health intake form as part of the online booking process, so the therapist has a complete picture of the client's concerns and contraindications before they walk in. Immediately after each session, the client receives an automated follow-up text asking how they feel and including a one-tap rebooking link for their next appointment at their preferred interval. Clients who haven't rebooked within 30 days receive a gentle reminder, keeping the appointment book full without the therapist making phone calls between sessions.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">New clients complete a digital health intake form as part of the online booking process, so the therapist has a complete picture of the client's concerns and contraindications before they walk in. Immediately after each session, the client receives an automated follow-up text asking how they feel and including a one-tap rebooking link for their next appointment at their preferred interval. Clients who haven't rebooked within 30 days receive a gentle reminder, keeping the appointment book full without the therapist making phone calls between sessions.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a massage therapist, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Booking software (e.g., Jane App, Square Appointments, or Vagaro)</span><span>Jotform (health intake form)</span><span>Zapier or Make.com</span><span>Twilio (post-session rebooking SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every member who books a class automatically receives a reminder text 24 hours before the session and a second reminder 2 hours out, each one including the studio's cancellation cutoff so members know exactly how much time they have to free up their spot for someone else. Members who cancel after the cutoff are automatically flagged for the studio's late-cancel policy instead of the front desk having to track it manually. Classes that used to run with 3 or 4 empty seats from last-minute no-shows fill back up because the waitlist gets notified the second a spot opens, keeping instructor-to-student ratios where they should be.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every member who books a class automatically receives a reminder text 24 hours before the session and a second reminder 2 hours out, each one including the studio's cancellation cutoff so members know exactly how much time they have to free up their spot for someone else. Members who cancel after the cutoff are automatically flagged for the studio's late-cancel policy instead of the front desk having to track it manually. Classes that used to run with 3 or 4 empty seats from last-minute no-shows fill back up because the waitlist gets notified the second a spot opens, keeping instructor-to-student ratios where they should be.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a studio manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Twilio (SMS reminders)</span><span>Mailchimp (email reminder backup)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -514,9 +551,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Seven days before a membership auto-renews, the member receives a clear email showing the exact charge amount and date, along with an easy upgrade path to a higher tier if their usage over the past month suggests they'd get more value from it. This single notification eliminates the "surprise charge" complaints and chargeback disputes that come from members who forgot they were on an annual plan, and it gives the gym a natural, low-pressure moment to offer an upgrade instead of waiting for the member to ask. Members who see the charge coming and understand what it's for are far less likely to cancel out of frustration.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Seven days before a membership auto-renews, the member receives a clear email showing the exact charge amount and date, along with an easy upgrade path to a higher tier if their usage over the past month suggests they'd get more value from it. This single notification eliminates the "surprise charge" complaints and chargeback disputes that come from members who forgot they were on an annual plan, and it gives the gym a natural, low-pressure moment to offer an upgrade instead of waiting for the member to ask. Members who see the charge coming and understand what it's for are far less likely to cancel out of frustration.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a gym owner has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Klaviyo or Mailchimp (renewal notice email)</span><span>Stripe (billing data)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -525,9 +565,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When an active member goes 2 full weeks without a check-in, this automation triggers a "come back" text with a genuinely useful incentive, a free guest pass, a complimentary session with a trainer, or a discounted month, rather than a generic guilt-trip reminder. If the member still hasn't returned after 7 more days, a second message goes out with a stronger offer, and members who reactivate are automatically pulled out of the sequence. Catching disengagement at 2 weeks instead of waiting for the eventual cancellation request means the gym is reaching members while they're still emotionally invested, not after they've already mentally checked out.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When an active member goes 2 full weeks without a check-in, this automation triggers a "come back" text with a genuinely useful incentive, a free guest pass, a complimentary session with a trainer, or a discounted month, rather than a generic guilt-trip reminder. If the member still hasn't returned after 7 more days, a second message goes out with a stronger offer, and members who reactivate are automatically pulled out of the sequence. Catching disengagement at 2 weeks instead of waiting for the eventual cancellation request means the gym is reaching members while they're still emotionally invested, not after they've already mentally checked out.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a gym / studio owner has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Twilio (SMS win-back)</span><span>Mailchimp or ActiveCampaign</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -536,9 +579,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a new sign-up completes their first payment, this automation kicks off a structured onboarding sequence: a welcome email with facility hours and app setup instructions on day 1, a nudge to book their first class or orientation session on day 2 if they haven't already, an app walkthrough on day 4, and a check-in message on day 10 asking how the first two weeks have gone. New members who complete an orientation session and book a class within their first week stick around far longer than members who are left to figure things out on their own, so this sequence directly targets the highest-risk cancellation window.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a new sign-up completes their first payment, this automation kicks off a structured onboarding sequence: a welcome email with facility hours and app setup instructions on day 1, a nudge to book their first class or orientation session on day 2 if they haven't already, an app walkthrough on day 4, and a check-in message on day 10 asking how the first two weeks have gone. New members who complete an orientation session and book a class within their first week stick around far longer than members who are left to figure things out on their own, so this sequence directly targets the highest-risk cancellation window.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a gym owner remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign (drip sequence)</span><span>Twilio (app setup and check-in texts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -547,9 +593,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Three days before a free trial expires, the prospect automatically receives a limited-time join offer, priced and timed to create genuine urgency rather than a generic "don't forget to subscribe" reminder. If they haven't converted by the last day of the trial, a final message goes out with a reminder of the offer's expiration and a direct signup link, and anyone who converts is instantly removed from the sequence. Trials that end without any nudge convert at a noticeably lower rate than trials paired with a well-timed offer in the final days, since most people simply forget the trial is ending until it already has.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Three days before a free trial expires, the prospect automatically receives a limited-time join offer, priced and timed to create genuine urgency rather than a generic "don't forget to subscribe" reminder. If they haven't converted by the last day of the trial, a final message goes out with a reminder of the offer's expiration and a direct signup link, and anyone who converts is instantly removed from the sequence. Trials that end without any nudge convert at a noticeably lower rate than trials paired with a well-timed offer in the final days, since most people simply forget the trial is ending until it already has.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a studio owner has to notice problems after they've already happened, then scramble to fix them manually one at a time. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio management software (e.g., Mindbody or Pike13)</span><span>Zapier or Make.com</span><span>Twilio (SMS offer reminder)</span><span>Mailchimp or Klaviyo (email offer)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -558,9 +607,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Each member gets a unique referral link they can text or share directly, and when a referred friend signs up and completes their first month, both the referring member and the new member automatically receive a credit toward their next billing cycle, no manual tracking on a spreadsheet, no front desk staff remembering who referred whom. The referring member gets an instant confirmation text the moment their friend joins, which reinforces the behavior and tends to prompt more referrals from the same member. Automating the reward removes the single biggest reason referral programs quietly die: rewards that get forgotten or delayed long enough that members stop bothering to refer.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Each member gets a unique referral link they can text or share directly, and when a referred friend signs up and completes their first month, both the referring member and the new member automatically receive a credit toward their next billing cycle, no manual tracking on a spreadsheet, no front desk staff remembering who referred whom. The referring member gets an instant confirmation text the moment their friend joins, which reinforces the behavior and tends to prompt more referrals from the same member. Automating the reward removes the single biggest reason referral programs quietly die: rewards that get forgotten or delayed long enough that members stop bothering to refer.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a gym owner remembering to check in, update records, and follow up, with no safety net if something slips. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Referral platform (e.g., ReferralCandy) or Zapier custom build</span><span>Zapier or Make.com</span><span>Twilio (referral confirmation texts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -569,9 +621,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As check-in data and workout logs come in, this automation watches for milestones, a 25th check-in, a 90-day attendance streak, a personal best on a tracked lift, and automatically sends a congratulations message the same day the milestone hits, along with a small reward like a branded shirt, a free session, or a shoutout in the studio's newsletter. Recognizing progress in the moment it happens, rather than whenever someone gets around to noticing, keeps members emotionally invested in a program that can otherwise feel repetitive week to week. Trainers get a running feed of member wins they can reference in sessions, making every "congratulations" feel personal instead of automated, even though the detection itself runs entirely on its own.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As check-in data and workout logs come in, this automation watches for milestones, a 25th check-in, a 90-day attendance streak, a personal best on a tracked lift, and automatically sends a congratulations message the same day the milestone hits, along with a small reward like a branded shirt, a free session, or a shoutout in the studio's newsletter. Recognizing progress in the moment it happens, rather than whenever someone gets around to noticing, keeps members emotionally invested in a program that can otherwise feel repetitive week to week. Trainers get a running feed of member wins they can reference in sessions, making every "congratulations" feel personal instead of automated, even though the detection itself runs entirely on its own.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a personal trainer manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Training app (e.g., Trainerize or TrueCoach)</span><span>Zapier or Make.com</span><span>Twilio (milestone congratulations text)</span><span>Google Sheets (milestone tracking log)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -580,9 +635,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Members automatically receive a reminder 24 hours and again 2 hours before a booked class or appointment, reducing the empty spots caused by simple forgetfulness instead of a front desk lead manually calling down a list of no-shows after the fact. Reminders include a one-tap link to cancel or reschedule, so a genuine conflict frees the spot for someone on the waitlist instead of it just sitting empty, and class attendance rates climb noticeably once every booking gets a consistent two-step reminder instead of relying on members to remember on their own.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Members automatically receive a reminder 24 hours and again 2 hours before a booked class or appointment, reducing the empty spots caused by simple forgetfulness instead of a front desk lead manually calling down a list of no-shows after the fact. Reminders include a one-tap link to cancel or reschedule, so a genuine conflict frees the spot for someone on the waitlist instead of it just sitting empty, and class attendance rates climb noticeably once every booking gets a consistent two-step reminder instead of relying on members to remember on their own.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a front desk lead, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -591,9 +649,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Members are automatically notified before their renewal date with a one-click renew option, and staff are automatically flagged the moment a membership actually lapses so the membership coordinator can reach out personally before the member drifts away entirely. Catching a lapse the same day it happens, rather than discovering it weeks later in a monthly report, gives a real chance to win the member back with a personal call instead of a generic reactivation email sent long after they've already found another gym.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Members are automatically notified before their renewal date with a one-click renew option, and staff are automatically flagged the moment a membership actually lapses so the membership coordinator can reach out personally before the member drifts away entirely. Catching a lapse the same day it happens, rather than discovering it weeks later in a monthly report, gives a real chance to win the member back with a personal call instead of a generic reactivation email sent long after they've already found another gym.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a membership coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Klaviyo or Mailchimp (renewal notice email)</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -602,9 +663,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Anyone who signs up for a trial on the website automatically receives a welcome sequence with the class schedule, what to bring, and a reminder before their first visit, instead of the sales coordinator manually emailing each new trial signup the same basic information one at a time. Trial members show up to their first visit already knowing what to expect instead of arriving unsure and self-conscious, and conversion from trial to paid membership improves once the entire first-visit experience feels prepared rather than improvised.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Anyone who signs up for a trial on the website automatically receives a welcome sequence with the class schedule, what to bring, and a reminder before their first visit, instead of the sales coordinator manually emailing each new trial signup the same basic information one at a time. Trial members show up to their first visit already knowing what to expect instead of arriving unsure and self-conscious, and conversion from trial to paid membership improves once the entire first-visit experience feels prepared rather than improvised.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a sales coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio management software (e.g., Mindbody or Pike13)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -613,9 +677,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A member who hasn't checked in for a defined number of days automatically receives a friendly re-engagement message, catching attrition before it becomes a cancellation instead of the retention specialist only noticing a disengaged member once they've already decided to quit and are calling to cancel. Members who respond to an early check-in message return to their normal routine far more often than members left alone until the pattern is already entrenched, turning what used to be a purely reactive save attempt into a proactive one that actually works.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A member who hasn't checked in for a defined number of days automatically receives a friendly re-engagement message, catching attrition before it becomes a cancellation instead of the retention specialist only noticing a disengaged member once they've already decided to quit and are calling to cancel. Members who respond to an early check-in message return to their normal routine far more often than members left alone until the pattern is already entrenched, turning what used to be a purely reactive save attempt into a proactive one that actually works.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a retention specialist, who has to track every step by hand across emails, spreadsheets, and sticky notes. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Twilio (SMS re-engagement)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -624,9 +691,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a spot opens up in a fully booked class due to a cancellation, the next person on the waitlist is automatically notified and booked into the open slot, instead of the class scheduling coordinator manually working down a waitlist by phone every time a spot frees up. The promotion happens within seconds of the cancellation, so a popular class never runs under capacity purely because nobody got around to filling the gap in time, and members on a waitlist trust it actually works instead of feeling like their name just disappears into a list nobody checks.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a spot opens up in a fully booked class due to a cancellation, the next person on the waitlist is automatically notified and booked into the open slot, instead of the class scheduling coordinator manually working down a waitlist by phone every time a spot frees up. The promotion happens within seconds of the cancellation, so a popular class never runs under capacity purely because nobody got around to filling the gap in time, and members on a waitlist trust it actually works instead of feeling like their name just disappears into a list nobody checks.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a class scheduling coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Twilio (waitlist SMS notifications)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -635,9 +705,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>After a salon or spa appointment, the client automatically receives a review request along with a "book your next visit" link timed to the typical rebooking cycle for that specific service, instead of the spa manager relying on the client to remember to rebook on their own weeks later once the relaxation has worn off. Clients who get a well-timed rebooking prompt convert to a repeat visit far more often than clients left to book whenever they happen to think of it, and the practice's calendar stays fuller with far less manual outreach.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">After a salon or spa appointment, the client automatically receives a review request along with a "book your next visit" link timed to the typical rebooking cycle for that specific service, instead of the spa manager relying on the client to remember to rebook on their own weeks later once the relaxation has worn off. Clients who get a well-timed rebooking prompt convert to a repeat visit far more often than clients left to book whenever they happen to think of it, and the practice's calendar stays fuller with far less manual outreach.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a spa manager manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Booking software (e.g., Jane App, Square Appointments, or Vagaro)</span><span>Zapier or Make.com</span><span>Twilio (post-session rebooking SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -646,9 +719,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Members and clients automatically receive a personalized discount or offer during the week of their birthday, pulled directly from their profile data, instead of the salon owner building a manual birthday list and remembering to send offers out every single month. The offer arrives with enough lead time to actually plan a visit around it, and birthday campaigns consistently drive a noticeable spike in bookings during what would otherwise be an ordinary week, since the personal touch of being remembered genuinely moves clients to book.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Members and clients automatically receive a personalized discount or offer during the week of their birthday, pulled directly from their profile data, instead of the salon owner building a manual birthday list and remembering to send offers out every single month. The offer arrives with enough lead time to actually plan a visit around it, and birthday campaigns consistently drive a noticeable spike in bookings during what would otherwise be an ordinary week, since the personal touch of being remembered genuinely moves clients to book.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a salon owner, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Booking software (e.g., Jane App, Square Appointments, or Vagaro)</span><span>Zapier or Make.com</span><span>Mailchimp or Klaviyo (email offer)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -657,9 +733,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a referred friend signs up, the system automatically detects the connection and triggers the promised reward, a free class or a discount, to the referring member without the loyalty coordinator manually tracking referrals in a spreadsheet and remembering who's owed what. Members who get their reward promptly and without having to ask for it are far more likely to refer again, and referral volume climbs measurably once the reward is reliable and automatic instead of an informal perk that quietly stops working once follow-through gets inconsistent.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a referred friend signs up, the system automatically detects the connection and triggers the promised reward, a free class or a discount, to the referring member without the loyalty coordinator manually tracking referrals in a spreadsheet and remembering who's owed what. Members who get their reward promptly and without having to ask for it are far more likely to refer again, and referral volume climbs measurably once the reward is reliable and automatic instead of an informal perk that quietly stops working once follow-through gets inconsistent.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a loyalty coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Referral platform (e.g., ReferralCandy) or Zapier custom build</span><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Twilio (referral confirmation texts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -668,9 +747,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A declined membership payment automatically triggers a retry along with a notification to the member with a direct link to update their card, before the account is suspended, instead of the billing coordinator manually chasing down every failed charge and calling members whose cards simply expired. Most failed payments recover on their own once the member gets a clear, easy way to fix it, and the billing coordinator's time goes toward the small number of accounts that genuinely need a personal follow-up instead of every single declined charge in the batch.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A declined membership payment automatically triggers a retry along with a notification to the member with a direct link to update their card, before the account is suspended, instead of the billing coordinator manually chasing down every failed charge and calling members whose cards simply expired. Most failed payments recover on their own once the member gets a clear, easy way to fix it, and the billing coordinator's time goes toward the small number of accounts that genuinely need a personal follow-up instead of every single declined charge in the batch.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a billing coordinator has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Stripe (billing data)</span><span>Zapier or Make.com</span><span>Twilio (SMS reminders)</span><span>Mailchimp (email reminder backup)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -679,9 +761,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>If an instructor or stylist's schedule changes, every client with a booking on that schedule is automatically notified with options to rebook, instead of a client finding out only when they arrive and discover their usual person isn't in. The scheduling manager no longer has to manually cross-reference every affected booking against the schedule change and call each client individually, and clients consistently appreciate the heads-up even when the news itself, a swapped instructor, isn't what they were hoping for.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">If an instructor or stylist's schedule changes, every client with a booking on that schedule is automatically notified with options to rebook, instead of a client finding out only when they arrive and discover their usual person isn't in. The scheduling manager no longer has to manually cross-reference every affected booking against the schedule change and call each client individually, and clients consistently appreciate the heads-up even when the news itself, a swapped instructor, isn't what they were hoping for.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a scheduling manager remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio management software (e.g., Mindbody or Pike13)</span><span>Zapier or Make.com</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -690,9 +775,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>New members are automatically prompted within their first week to schedule an initial fitness assessment or consultation, increasing the odds they stick with their membership instead of paying for a gym they never quite figure out how to use. The onboarding coordinator gets a list of new members who haven't yet scheduled their assessment past the first week, flagging them for a personal nudge, and members who complete an early assessment show meaningfully better long-term retention than members who join and are simply left to figure it out on their own.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">New members are automatically prompted within their first week to schedule an initial fitness assessment or consultation, increasing the odds they stick with their membership instead of paying for a gym they never quite figure out how to use. The onboarding coordinator gets a list of new members who haven't yet scheduled their assessment past the first week, flagging them for a personal nudge, and members who complete an early assessment show meaningfully better long-term retention than members who join and are simply left to figure it out on their own.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on an onboarding coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -701,9 +789,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a popular class nears full capacity, staff are automatically alerted to consider adding another session, and members on a related interest list are notified of the option, instead of the group fitness director only realizing a class needs a second time slot after weeks of members complaining they can never get a spot. Popular classes stop turning away eager members simply because nobody was tracking capacity trends closely enough to catch it, and adding a second session becomes a proactive, data-backed decision instead of a reactive scramble after losing members to frustration.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a popular class nears full capacity, staff are automatically alerted to consider adding another session, and members on a related interest list are notified of the option, instead of the group fitness director only realizing a class needs a second time slot after weeks of members complaining they can never get a spot. Popular classes stop turning away eager members simply because nobody was tracking capacity trends closely enough to catch it, and adding a second session becomes a proactive, data-backed decision instead of a reactive scramble after losing members to frustration.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a group fitness director, who has to track every step by hand across emails, spreadsheets, and sticky notes.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Slack (staff outreach prompts)</span><span>Mailchimp or ActiveCampaign</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -712,9 +803,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Clients nearing the end of a purchased personal training package automatically receive a renewal offer before their sessions run out, instead of the client success coordinator only realizing a package expired once the client stops showing up because they assumed training had simply ended. Renewal offers timed to land a few sessions before the package runs dry catch the client while training is still an active part of their routine, converting far more renewals than an offer sent cold after weeks of no contact.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Clients nearing the end of a purchased personal training package automatically receive a renewal offer before their sessions run out, instead of the client success coordinator only realizing a package expired once the client stops showing up because they assumed training had simply ended. Renewal offers timed to land a few sessions before the package runs dry catch the client while training is still an active part of their routine, converting far more renewals than an offer sent cold after weeks of no contact.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a client success coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Training app (e.g., Trainerize or TrueCoach)</span><span>Zapier or Make.com</span><span>Mailchimp or Klaviyo (email offer)</span><span>Stripe (billing data)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -723,9 +817,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Members who asked about an out-of-stock retail item, supplements, apparel, equipment, automatically receive a notification the moment it's back in stock, instead of the retail manager relying on the member to happen to check back on their own. Interest captured at the point of the original ask converts into an actual sale once the item is available again, recovering revenue that would otherwise simply be lost the moment a member walked away from an empty shelf and never thought about it again.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Members who asked about an out-of-stock retail item, supplements, apparel, equipment, automatically receive a notification the moment it's back in stock, instead of the retail manager relying on the member to happen to check back on their own. Interest captured at the point of the original ask converts into an actual sale once the item is available again, recovering revenue that would otherwise simply be lost the moment a member walked away from an empty shelf and never thought about it again.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a retail manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -734,9 +831,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation automatically detects member milestones, a 100th check-in, a one-year anniversary, and sends a congratulatory message, sometimes paired with a small reward, instead of the member experience manager relying on staff to happen to notice and mention a milestone in passing. Recognizing progress consistently, regardless of who's working the front desk that day, keeps members feeling genuinely seen at a gym or studio rather than treated as just another account, and milestone recognition consistently ranks as one of the most appreciated small touches members mention when asked what keeps them coming back.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation automatically detects member milestones, a 100th check-in, a one-year anniversary, and sends a congratulatory message, sometimes paired with a small reward, instead of the member experience manager relying on staff to happen to notice and mention a milestone in passing. Recognizing progress consistently, regardless of who's working the front desk that day, keeps members feeling genuinely seen at a gym or studio rather than treated as just another account, and milestone recognition consistently ranks as one of the most appreciated small touches members mention when asked what keeps them coming back.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a member experience manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Google Sheets (milestone tracking log)</span><span>Twilio (milestone congratulations text)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -745,9 +845,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For businesses with a corporate wellness partnership, usage reports showing employee engagement are automatically compiled and sent to the partner company on a set schedule, instead of the corporate wellness manager manually pulling attendance data and building a report by hand every reporting period. Partner companies get consistent, professional visibility into whether their wellness benefit is actually being used, which matters directly to whether they renew the partnership, and the studio's own team spends that time on member experience instead of spreadsheet work.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For businesses with a corporate wellness partnership, usage reports showing employee engagement are automatically compiled and sent to the partner company on a set schedule, instead of the corporate wellness manager manually pulling attendance data and building a report by hand every reporting period. Partner companies get consistent, professional visibility into whether their wellness benefit is actually being used, which matters directly to whether they renew the partnership, and the studio's own team spends that time on member experience instead of spreadsheet work.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a corporate wellness manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Google Sheets (progress tracking dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -756,9 +859,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a member submits an online cancellation request, an automatic retention offer, a pause option or a discount, is presented before the cancellation is finalized, giving the cancellation specialist a real chance to save the membership instead of the request simply processing straight through with no opportunity to intervene. A meaningful share of members canceling for temporary reasons, a busy season, a tight month, take the pause option once it's actually offered, and membership churn drops once every cancellation request runs through a genuine save attempt instead of a same-click confirmation.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a member submits an online cancellation request, an automatic retention offer, a pause option or a discount, is presented before the cancellation is finalized, giving the cancellation specialist a real chance to save the membership instead of the request simply processing straight through with no opportunity to intervene. A meaningful share of members canceling for temporary reasons, a busy season, a tight month, take the pause option once it's actually offered, and membership churn drops once every cancellation request runs through a genuine save attempt instead of a same-click confirmation.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a cancellation specialist handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Stripe (billing data)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -767,9 +873,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a new class or program is added to the schedule, members whose profile matches the relevant interest tags automatically receive an email or text announcement, instead of the program director sending a single generic blast to the entire member list regardless of whether a given member has ever shown interest in that type of class. A new yoga program reaches members who've actually favorited yoga classes before rather than getting lost in a general newsletter, and new program launches fill faster once the announcement lands specifically with the members most likely to actually show up.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a new class or program is added to the schedule, members whose profile matches the relevant interest tags automatically receive an email or text announcement, instead of the program director sending a single generic blast to the entire member list regardless of whether a given member has ever shown interest in that type of class. A new yoga program reaches members who've actually favorited yoga classes before rather than getting lost in a general newsletter, and new program launches fill faster once the announcement lands specifically with the members most likely to actually show up.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a program director handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -778,9 +887,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Clients with a health or medical intake form on file are automatically reminded on an annual basis to review and update it before their next session, instead of the compliance coordinator relying on a client to remember to mention a new medication or injury on their own. Keeping intake data current genuinely matters for client safety, especially in a training or spa setting where a new condition can change what's appropriate, and this simple annual reminder closes a gap that used to depend entirely on the client happening to think of it.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Clients with a health or medical intake form on file are automatically reminded on an annual basis to review and update it before their next session, instead of the compliance coordinator relying on a client to remember to mention a new medication or injury on their own. Keeping intake data current genuinely matters for client safety, especially in a training or spa setting where a new condition can change what's appropriate, and this simple annual reminder closes a gap that used to depend entirely on the client happening to think of it.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a compliance coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (health intake form)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -789,9 +901,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation internally tracks instructor and trainer certification expiration dates and alerts management well ahead of each renewal deadline, instead of the HR and certification manager discovering a lapsed certification only when a liability question comes up or an insurance audit asks for proof. Every instructor's certification status is visible on a single dashboard rather than scattered across individual personnel files, and the studio avoids the real liability exposure of an instructor unknowingly teaching on an expired credential.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation internally tracks instructor and trainer certification expiration dates and alerts management well ahead of each renewal deadline, instead of the HR and certification manager discovering a lapsed certification only when a liability question comes up or an insurance audit asks for proof. Every instructor's certification status is visible on a single dashboard rather than scattered across individual personnel files, and the studio avoids the real liability exposure of an instructor unknowingly teaching on an expired credential.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a hr & certification manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Google Sheets (progress tracking dashboard)</span><span>Slack (staff outreach prompts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -800,9 +915,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Clients enrolled in nutrition coaching automatically receive scheduled check-in prompts asking them to log meals or progress, keeping them engaged between sessions instead of a nutrition coach only hearing from a client once every couple of weeks at the scheduled appointment. Consistent between-session engagement gives the nutrition coach far more data to actually work with, and clients who check in regularly show better adherence to their plan than clients whose only touchpoint is the session itself, exactly the kind of accountability nutrition coaching is supposed to provide.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Clients enrolled in nutrition coaching automatically receive scheduled check-in prompts asking them to log meals or progress, keeping them engaged between sessions instead of a nutrition coach only hearing from a client once every couple of weeks at the scheduled appointment. Consistent between-session engagement gives the nutrition coach far more data to actually work with, and clients who check in regularly show better adherence to their plan than clients whose only touchpoint is the session itself, exactly the kind of accountability nutrition coaching is supposed to provide.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a nutrition coach has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Coaching platform (e.g., Practice or Paperbell)</span><span>Zapier or Make.com</span><span>Jotform or Typeform (weekly check-in)</span><span>Twilio (adherence check-in nudges)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -811,9 +929,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Someone who uses a guest pass automatically receives a follow-up offer a few days later inviting them to join as a full member, timed while their experience is still fresh, instead of the sales manager relying on the guest to walk back in on their own initiative. A guest who had a genuinely good first visit is far more receptive to a join offer within the week than months later once the experience has faded, and guest pass conversion rates climb meaningfully once the follow-up happens automatically and on time every single time.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Someone who uses a guest pass automatically receives a follow-up offer a few days later inviting them to join as a full member, timed while their experience is still fresh, instead of the sales manager relying on the guest to walk back in on their own initiative. A guest who had a genuinely good first visit is far more receptive to a join offer within the week than months later once the experience has faded, and guest pass conversion rates climb meaningfully once the follow-up happens automatically and on time every single time.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a sales manager handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Mailchimp or Klaviyo (email offer)</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -822,9 +943,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>After a scheduled body composition scan, the results are automatically compiled into a simple, easy-to-read progress report and emailed to the member, showing change over time instead of the health coach manually building a comparison report for every scanned member. Members can see their own trend line building visit after visit rather than a single disconnected number each time, and visible progress delivered automatically and consistently is one of the strongest drivers of continued engagement a program like this has.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">After a scheduled body composition scan, the results are automatically compiled into a simple, easy-to-read progress report and emailed to the member, showing change over time instead of the health coach manually building a comparison report for every scanned member. Members can see their own trend line building visit after visit rather than a single disconnected number each time, and visible progress delivered automatically and consistently is one of the strongest drivers of continued engagement a program like this has.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a health coach re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Body composition scanner integration (e.g., InBody)</span><span>Zapier or Make.com</span><span>Google Sheets (progress tracking dashboard)</span><span>Mailchimp or ActiveCampaign</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -833,9 +957,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>If the regularly scheduled instructor for a class is swapped for a substitute, every member booked into that class automatically receives a heads-up notification ahead of time, instead of members finding out only when they arrive and discover someone unfamiliar teaching. The instructor coordinator no longer has to manually track down and notify every affected booking by hand, and members consistently appreciate the advance notice, even when it doesn't change their decision to attend, simply because nobody likes an unexplained surprise at the front of the room.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">If the regularly scheduled instructor for a class is swapped for a substitute, every member booked into that class automatically receives a heads-up notification ahead of time, instead of members finding out only when they arrive and discover someone unfamiliar teaching. The instructor coordinator no longer has to manually track down and notify every affected booking by hand, and members consistently appreciate the advance notice, even when it doesn't change their decision to attend, simply because nobody likes an unexplained surprise at the front of the room.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, an instructor coordinator manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio management software (e.g., Mindbody or Pike13)</span><span>Zapier or Make.com</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -844,9 +971,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Members who placed their membership on a temporary freeze automatically receive a reminder before the freeze period ends and billing is set to resume, instead of a member being surprised by a charge they'd forgotten was coming back. The membership coordinator no longer has to manually track every active freeze and its end date, and members who get a clear heads-up before billing resumes are far less likely to call in confused or upset about a charge that was actually agreed to months earlier.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Members who placed their membership on a temporary freeze automatically receive a reminder before the freeze period ends and billing is set to resume, instead of a member being surprised by a charge they'd forgotten was coming back. The membership coordinator no longer has to manually track every active freeze and its end date, and members who get a clear heads-up before billing resumes are far less likely to call in confused or upset about a charge that was actually agreed to months earlier.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a membership coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Twilio (SMS reminders)</span><span>Stripe (billing data)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -855,9 +985,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Members enrolled in a fitness challenge automatically receive periodic updates on their progress and where they stand on the leaderboard, keeping motivation and engagement high instead of a challenge quietly losing steam once the initial excitement of signing up fades. The group fitness director no longer has to manually calculate and post leaderboard standings, and challenges that used to see participation drop off sharply after the first week hold engagement much better once members get regular, automatic visibility into how close they are to the top.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Members enrolled in a fitness challenge automatically receive periodic updates on their progress and where they stand on the leaderboard, keeping motivation and engagement high instead of a challenge quietly losing steam once the initial excitement of signing up fades. The group fitness director no longer has to manually calculate and post leaderboard standings, and challenges that used to see participation drop off sharply after the first week hold engagement much better once members get regular, automatic visibility into how close they are to the top.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a group fitness director re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Google Sheets (progress tracking dashboard)</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -866,9 +999,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Based on the specific service a client received, they automatically get a follow-up email recommending relevant retail products to help maintain the results at home, instead of the retail manager relying on the service provider to remember to mention products during a rushed appointment. Recommendations are tailored to the actual service performed, a specific shampoo for a color treatment or a particular recovery product for a deep tissue massage, and retail attach rates climb once the recommendation reaches the client at exactly the moment they're thinking about maintaining their results.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Based on the specific service a client received, they automatically get a follow-up email recommending relevant retail products to help maintain the results at home, instead of the retail manager relying on the service provider to remember to mention products during a rushed appointment. Recommendations are tailored to the actual service performed, a specific shampoo for a color treatment or a particular recovery product for a deep tissue massage, and retail attach rates climb once the recommendation reaches the client at exactly the moment they're thinking about maintaining their results.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a retail manager handles each case reactively, after someone has already noticed something went wrong. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Booking software (e.g., Jane App, Square Appointments, or Vagaro)</span><span>Zapier or Make.com</span><span>Mailchimp or Klaviyo (email offer)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -877,9 +1013,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>After a prospect tours the facility but doesn't sign up on the spot, they automatically receive a follow-up sequence over the following week addressing common hesitations, price, schedule flexibility, whether the classes are actually beginner-friendly, instead of the sales coordinator only following up once with a single generic email before giving up on the lead. A tour that didn't convert immediately isn't necessarily a lost prospect, and a well-paced follow-up sequence consistently recovers a meaningful share of tours that would otherwise have simply gone cold.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">After a prospect tours the facility but doesn't sign up on the spot, they automatically receive a follow-up sequence over the following week addressing common hesitations, price, schedule flexibility, whether the classes are actually beginner-friendly, instead of the sales coordinator only following up once with a single generic email before giving up on the lead. A tour that didn't convert immediately isn't necessarily a lost prospect, and a well-paced follow-up sequence consistently recovers a meaningful share of tours that would otherwise have simply gone cold.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a sales coordinator handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -888,9 +1027,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Gym equipment is automatically flagged for scheduled maintenance based on usage hours or elapsed time since the last service, preventing breakdowns from being caught only after a member reports a machine that's already broken. The facilities manager gets a proactive maintenance schedule instead of a purely reactive one, and equipment downtime drops noticeably once servicing happens on a predictable schedule tied to actual usage rather than whenever someone happens to notice something's making an odd noise.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Gym equipment is automatically flagged for scheduled maintenance based on usage hours or elapsed time since the last service, preventing breakdowns from being caught only after a member reports a machine that's already broken. The facilities manager gets a proactive maintenance schedule instead of a purely reactive one, and equipment downtime drops noticeably once servicing happens on a predictable schedule tied to actual usage rather than whenever someone happens to notice something's making an odd noise.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a facilities manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Slack (staff outreach prompts)</span><span>Google Sheets (progress tracking dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -899,9 +1041,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Members who cancel automatically receive a short survey asking why, with the responses feeding directly into a report management uses to improve retention, instead of a cancellation simply closing out with no insight into what actually drove the decision. The retention specialist can spot real patterns, a specific class getting cut, a pricing complaint that keeps coming up, that a handful of individual cancellations would never reveal on their own, and those patterns turn into concrete fixes instead of the same churn reasons quietly repeating month after month unnoticed.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Members who cancel automatically receive a short survey asking why, with the responses feeding directly into a report management uses to improve retention, instead of a cancellation simply closing out with no insight into what actually drove the decision. The retention specialist can spot real patterns, a specific class getting cut, a pricing complaint that keeps coming up, that a handful of individual cancellations would never reveal on their own, and those patterns turn into concrete fixes instead of the same churn reasons quietly repeating month after month unnoticed.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a retention specialist re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform or Typeform (weekly check-in)</span><span>Zapier or Make.com</span><span>Google Sheets (progress tracking dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -910,9 +1055,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a member finishes a multi-week program, such as a couch-to-5K series, they automatically receive a completion certificate along with a suggestion for their next program, instead of a member finishing a genuinely meaningful milestone with nothing but silence to mark it. The member experience manager can see completion rates by program, and members who receive real recognition at the finish line, plus a clear next step to keep the momentum going, are far more likely to enroll in whatever comes next instead of quietly drifting away once the original goal is reached.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a member finishes a multi-week program, such as a couch-to-5K series, they automatically receive a completion certificate along with a suggestion for their next program, instead of a member finishing a genuinely meaningful milestone with nothing but silence to mark it. The member experience manager can see completion rates by program, and members who receive real recognition at the finish line, plus a clear next step to keep the momentum going, are far more likely to enroll in whatever comes next instead of quietly drifting away once the original goal is reached.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a member experience manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -921,9 +1069,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>New members interested in personal training are automatically matched and introduced to a trainer based on their stated goals and schedule availability, instead of a manual front-desk handoff that often depends entirely on which trainer happens to be standing around when the interested member walks up. Matches based on actual goal alignment and real schedule overlap lead to a stronger first session and a better shot at a long-term training relationship than a match made purely on who was available in the moment.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">New members interested in personal training are automatically matched and introduced to a trainer based on their stated goals and schedule availability, instead of a manual front-desk handoff that often depends entirely on which trainer happens to be standing around when the interested member walks up. Matches based on actual goal alignment and real schedule overlap lead to a stronger first session and a better shot at a long-term training relationship than a match made purely on who was available in the moment.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a sales manager handles each case reactively, after someone has already noticed something went wrong.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Jotform (accountability check-in form)</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -932,9 +1083,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation automatically compiles room and studio usage data to identify underused time slots, giving management data-backed opportunities for adding new classes instead of scheduling decisions being made purely on instinct about which times "feel" slow. A studio manager can see exactly which rooms sit empty at which hours across the week, turning a vague sense that "mornings feel quiet" into a specific, actionable opportunity to test a new class in a slot that's actually available and underused.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation automatically compiles room and studio usage data to identify underused time slots, giving management data-backed opportunities for adding new classes instead of scheduling decisions being made purely on instinct about which times "feel" slow. A studio manager can see exactly which rooms sit empty at which hours across the week, turning a vague sense that "mornings feel quiet" into a specific, actionable opportunity to test a new class in a slot that's actually available and underused.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a studio manager remembering to check in, update records, and follow up, with no safety net if something slips. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Google Sheets (progress tracking dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -943,9 +1097,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Members who haven't logged into the booking app in a while automatically receive a re-engagement message highlighting new classes or features they may have missed, catching a quietly disengaging member through their app behavior before it shows up as a missed check-in at the front door. Reminding a member what's new, rather than a generic "we miss you" message, gives them an actual reason to open the app again, and this kind of early, specific nudge consistently recovers engagement that a later, blunter win-back message would have missed entirely.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Members who haven't logged into the booking app in a while automatically receive a re-engagement message highlighting new classes or features they may have missed, catching a quietly disengaging member through their app behavior before it shows up as a missed check-in at the front door. Reminding a member what's new, rather than a generic "we miss you" message, gives them an actual reason to open the app again, and this kind of early, specific nudge consistently recovers engagement that a later, blunter win-back message would have missed entirely.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a retention specialist re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -954,9 +1111,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Ahead of a specific spa treatment, clients automatically receive relevant prep instructions, arriving early, avoiding sun exposure, skipping certain products, tailored to that particular service, instead of the spa manager relying on the client to remember verbal instructions given weeks earlier at booking. Clients who arrive properly prepped get a noticeably better treatment result and experience, and the spa avoids the awkward situation of a client showing up unprepared for a service that genuinely needed prep to go well.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Ahead of a specific spa treatment, clients automatically receive relevant prep instructions, arriving early, avoiding sun exposure, skipping certain products, tailored to that particular service, instead of the spa manager relying on the client to remember verbal instructions given weeks earlier at booking. Clients who arrive properly prepped get a noticeably better treatment result and experience, and the spa avoids the awkward situation of a client showing up unprepared for a service that genuinely needed prep to go well.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a spa manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Booking software (e.g., Jane App, Square Appointments, or Vagaro)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -965,9 +1125,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Members due for a routine annual health screening automatically receive a referral reminder pointing them to a partnered health provider, instead of the wellness director's outreach depending entirely on remembering which members are due and when. Members appreciate a wellness-minded reminder that goes beyond just fitness, and a partnership referral program like this deepens the relationship between the studio and its health provider partners while genuinely helping members stay on top of care they might otherwise put off indefinitely.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Members due for a routine annual health screening automatically receive a referral reminder pointing them to a partnered health provider, instead of the wellness director's outreach depending entirely on remembering which members are due and when. Members appreciate a wellness-minded reminder that goes beyond just fitness, and a partnership referral program like this deepens the relationship between the studio and its health provider partners while genuinely helping members stay on top of care they might otherwise put off indefinitely.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a wellness director spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -976,9 +1139,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Members using a punch card or class pack automatically get notified as their remaining balance runs low, prompting a timely repurchase before it hits zero, instead of the billing coordinator only learning a pack is empty when the member is turned away at check-in with no credits left. Members who get an early low-balance warning repurchase at a far higher rate than members who discover they're out mid-checkout, and revenue from pack renewals becomes far more predictable once the reminder happens automatically at the same threshold every time.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Members using a punch card or class pack automatically get notified as their remaining balance runs low, prompting a timely repurchase before it hits zero, instead of the billing coordinator only learning a pack is empty when the member is turned away at check-in with no credits left. Members who get an early low-balance warning repurchase at a far higher rate than members who discover they're out mid-checkout, and revenue from pack renewals becomes far more predictable once the reminder happens automatically at the same threshold every time.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a billing coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -987,9 +1153,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation tracks a new member's check-in frequency during their critical first 30 days and automatically triggers extra outreach if engagement is low, since early inactivity is one of the strongest predictors of an eventual cancellation. The onboarding coordinator gets a live list of new members trending toward disengagement while there's still real time to intervene, and catching a slow start in week two instead of discovering it in month three's cancellation report saves memberships that would otherwise quietly lapse without anyone noticing until it's too late.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation tracks a new member's check-in frequency during their critical first 30 days and automatically triggers extra outreach if engagement is low, since early inactivity is one of the strongest predictors of an eventual cancellation. The onboarding coordinator gets a live list of new members trending toward disengagement while there's still real time to intervene, and catching a slow start in week two instead of discovering it in month three's cancellation report saves memberships that would otherwise quietly lapse without anyone noticing until it's too late.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, an onboarding coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Twilio (SMS re-engagement)</span><span>Google Sheets (progress tracking dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -998,9 +1167,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Ahead of a holiday closure or reduced-hours schedule, every member automatically receives a mass notification so no one shows up to a locked door, instead of the front desk lead posting a sign on the entrance that only reaches whoever happens to physically walk up and read it. The notification goes out with enough lead time for members to actually plan around it, and complaints about showing up to a closed facility drop to essentially zero once every member gets the same clear notice well ahead of the actual closure.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Ahead of a holiday closure or reduced-hours schedule, every member automatically receives a mass notification so no one shows up to a locked door, instead of the front desk lead posting a sign on the entrance that only reaches whoever happens to physically walk up and read it. The notification goes out with enough lead time for members to actually plan around it, and complaints about showing up to a closed facility drop to essentially zero once every member gets the same clear notice well ahead of the actual closure.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a front desk lead handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Twilio (SMS reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -1009,9 +1181,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Separate from license renewal itself, the automation reminds trainers of required continuing education hours ahead of their recertification deadline, giving the HR and certification manager a second layer of tracking beyond just the certification expiration date. Trainers who fall behind on CE hours get flagged with enough lead time to actually catch up before the deadline arrives, instead of a last-minute scramble to cram in required hours, and the studio avoids the operational disruption of a trainer suddenly unable to teach because their CE requirement quietly lapsed unnoticed.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Separate from license renewal itself, the automation reminds trainers of required continuing education hours ahead of their recertification deadline, giving the HR and certification manager a second layer of tracking beyond just the certification expiration date. Trainers who fall behind on CE hours get flagged with enough lead time to actually catch up before the deadline arrives, instead of a last-minute scramble to cram in required hours, and the studio avoids the operational disruption of a trainer suddenly unable to teach because their CE requirement quietly lapsed unnoticed.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a hr & certification manager remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Gym management software (e.g., Mindbody or Glofox)</span><span>Zapier or Make.com</span><span>Google Sheets (progress tracking dashboard)</span><span>Slack (staff outreach prompts)</span></div>
+          </div>
         </div>
       </details>
 

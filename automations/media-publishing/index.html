@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Editor-in-Chief</span><h3>Editorial Calendar &amp; Contributor Deadline Management System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The editorial calendar lives in a shared project management tool, and every assigned story automatically generates a task for the contributor with the due date, word count, style guide link, and editor contact. As deadlines approach, contributors receive automated reminders at one week, three days, and the morning of their submission deadline. Stories that miss their deadline trigger an immediate alert to the managing editor along with the contributor's history of on-time performance, so the editor can decide in seconds whether to chase the story or assign a replacement, rather than discovering the gap on the day the issue needs to close.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The editorial calendar lives in a shared project management tool, and every assigned story automatically generates a task for the contributor with the due date, word count, style guide link, and editor contact. As deadlines approach, contributors receive automated reminders at one week, three days, and the morning of their submission deadline. Stories that miss their deadline trigger an immediate alert to the managing editor along with the contributor's history of on-time performance, so the editor can decide in seconds whether to chase the story or assign a replacement, rather than discovering the gap on the day the issue needs to close.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, an editor-in-chief has to notice problems after they've already happened, then scramble to fix them manually one at a time. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Airtable or Notion (editorial calendar)</span><span>Zapier or Make.com</span><span>Email or Slack (contributor reminders and editor alerts)</span><span>Google Drive (submission portal)</span><span>OpenAI API (headline and lede suggestion for editor review)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Thirty days before a subscriber's renewal date, this automation sends a personalized renewal confirmation with a summary of what the subscription includes and any new content added in the past year. Subscribers who don't renew by the expiration date receive a three-part win-back sequence over 30 days, a reminder, a testimonial-driven value email, and a final limited-time discount offer. Subscribers who have not opened any content in 90 days are identified as at-risk before their renewal and receive a re-engagement campaign highlighting the content most similar to what they engaged with historically, rather than a generic blast that lands in the same inbox they've been ignoring.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Thirty days before a subscriber's renewal date, this automation sends a personalized renewal confirmation with a summary of what the subscription includes and any new content added in the past year. Subscribers who don't renew by the expiration date receive a three-part win-back sequence over 30 days, a reminder, a testimonial-driven value email, and a final limited-time discount offer. Subscribers who have not opened any content in 90 days are identified as at-risk before their renewal and receive a re-engagement campaign highlighting the content most similar to what they engaged with historically, rather than a generic blast that lands in the same inbox they've been ignoring.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a digital publisher spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Subscription platform (e.g., Substack, Ghost, or Memberful)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign (renewal and win-back sequences)</span><span>Stripe (renewal payment processing)</span><span>OpenAI API (personalized re-engagement content suggestions)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a guest is confirmed for the podcast, this automation sends them an automated prep packet (the recording link, technical requirements, topic outline, and pre-interview questionnaire) and adds a calendar event to both the host and guest simultaneously. After the episode records, the audio file triggers a production workflow: transcription is initiated, show notes are drafted from the transcript via AI, the episode is uploaded to the hosting platform, and a social media teaser asset is generated, all before the producer has to manually touch the file. The week the episode airs, cross-promotion emails to the guest's audience and the pod's subscriber list go out automatically.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a guest is confirmed for the podcast, this automation sends them an automated prep packet (the recording link, technical requirements, topic outline, and pre-interview questionnaire) and adds a calendar event to both the host and guest simultaneously. After the episode records, the audio file triggers a production workflow: transcription is initiated, show notes are drafted from the transcript via AI, the episode is uploaded to the hosting platform, and a social media teaser asset is generated, all before the producer has to manually touch the file. The week the episode airs, cross-promotion emails to the guest's audience and the pod's subscriber list go out automatically.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a podcast producer has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Calendly (guest booking)</span><span>Zapier or Make.com</span><span>Descript or Riverside.fm (recording and transcription)</span><span>OpenAI API (show notes and social copy generation)</span><span>Mailchimp or Kit (episode announcement email)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When an advertising insertion order is signed, this automation creates a campaign record with all flight dates, placements, and creative specifications, sends the client a creative asset upload request with a deadline, and alerts the ad operations team to traffic the campaign on the launch date. Mid-campaign, a performance snapshot is automatically delivered to the client at the halfway point. When the campaign ends, a complete proof of performance report (impressions, clicks, engagement, and delivery against contracted inventory) is generated automatically and sent within 24 hours of the campaign end date, rather than becoming a two-week manual data-pull project for the ad ops team.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When an advertising insertion order is signed, this automation creates a campaign record with all flight dates, placements, and creative specifications, sends the client a creative asset upload request with a deadline, and alerts the ad operations team to traffic the campaign on the launch date. Mid-campaign, a performance snapshot is automatically delivered to the client at the halfway point. When the campaign ends, a complete proof of performance report (impressions, clicks, engagement, and delivery against contracted inventory) is generated automatically and sent within 24 hours of the campaign end date, rather than becoming a two-week manual data-pull project for the ad ops team.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, an ad sales manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Ad server or campaign management platform (e.g., Google Ad Manager or DFP)</span><span>Zapier or Make.com</span><span>Jotform (creative asset upload form)</span><span>Google Sheets or Looker Studio (PoP report template)</span><span>Email (automated mid-flight and end-of-campaign delivery)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every 24 hours, this automation checks performance data across the content library (page views, time on page, backlinks acquired, and social shares) and flags any piece of content that has surpassed the top-performer threshold. High-performing articles trigger a repurposing workflow: a prompt to the content team to adapt the piece into a LinkedIn carousel, a short-form video script, a newsletter feature, and a lead magnet PDF. Content that was high-performing six months ago but has seen traffic drop is flagged for a refresh review, because a well-ranking article that gets updated and re-promoted often outperforms a brand-new piece of content at a fraction of the production cost.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every 24 hours, this automation checks performance data across the content library (page views, time on page, backlinks acquired, and social shares) and flags any piece of content that has surpassed the top-performer threshold. High-performing articles trigger a repurposing workflow: a prompt to the content team to adapt the piece into a LinkedIn carousel, a short-form video script, a newsletter feature, and a lead magnet PDF. Content that was high-performing six months ago but has seen traffic drop is flagged for a refresh review, because a well-ranking article that gets updated and re-promoted often outperforms a brand-new piece of content at a fraction of the production cost.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a content marketing director remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Google Analytics API (performance data)</span><span>Zapier or Make.com</span><span>Airtable (content performance library)</span><span>OpenAI API (repurposing brief generator)</span><span>Slack (performance alert to content team)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a piece of content is marked approved in the editorial calendar, this automation automatically formats and schedules it for publishing across the website, social channels, and the email newsletter, each at its own individually optimized time. What used to require manually copy-pasting the same piece of content across five different platforms with five different formatting quirks now happens with one approval click.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a piece of content is marked approved in the editorial calendar, this automation automatically formats and schedules it for publishing across the website, social channels, and the email newsletter, each at its own individually optimized time. What used to require manually copy-pasting the same piece of content across five different platforms with five different formatting quirks now happens with one approval click.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a content manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>WordPress or a CMS</span><span>Buffer or Hootsuite</span><span>Mailchimp</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
 
@@ -515,9 +552,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation periodically scans every published article for broken outbound links and flags any article that hasn't been meaningfully updated in over a set number of months, especially ones still pulling meaningful search traffic. A task is automatically created for the editorial team to review and refresh flagged articles, instead of stale, link-broken content quietly sitting on the site degrading both user experience and search rankings.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation periodically scans every published article for broken outbound links and flags any article that hasn't been meaningfully updated in over a set number of months, especially ones still pulling meaningful search traffic. A task is automatically created for the editorial team to review and refresh flagged articles, instead of stale, link-broken content quietly sitting on the site degrading both user experience and search rankings.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on an editorial manager remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>WordPress or a CMS</span><span>Screaming Frog or a link-checking tool</span><span>Zapier or Make.com</span><span>Google Analytics or Search Console</span></div>
+          </div>
         </div>
       </details>
 
@@ -527,9 +567,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a subscriber's engagement, opens, clicks, site visits, drops to zero for a set period, this automation automatically enrolls them in a win-back email sequence highlighting recent standout content. Subscribers who still don't re-engage after the sequence are automatically removed from the active list, protecting sender reputation instead of letting a growing pool of dead addresses drag down deliverability for everyone else.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a subscriber's engagement, opens, clicks, site visits, drops to zero for a set period, this automation automatically enrolls them in a win-back email sequence highlighting recent standout content. Subscribers who still don't re-engage after the sequence are automatically removed from the active list, protecting sender reputation instead of letting a growing pool of dead addresses drag down deliverability for everyone else.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a newsletter editor, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Mailchimp or a similar ESP</span><span>Zapier or Make.com</span><span>Google Analytics</span><span>A CMS</span></div>
+          </div>
         </div>
       </details>
 
@@ -539,9 +582,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a freelance contributor submits an invoice for a completed piece, this automation automatically checks it against the agreed rate and word count on file, routes it for editorial approval, and automatically schedules the payment once approved. The manual back-and-forth that used to happen over freelancer payments, and the late payments that damage relationships with good contributors, both disappear.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a freelance contributor submits an invoice for a completed piece, this automation automatically checks it against the agreed rate and word count on file, routes it for editorial approval, and automatically schedules the payment once approved. The manual back-and-forth that used to happen over freelancer payments, and the late payments that damage relationships with good contributors, both disappear.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a managing editor spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>QuickBooks Online</span><span>Zapier or Make.com</span><span>Google Sheets (rate/word count reference)</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 
@@ -551,9 +597,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation continuously monitors ad placements across the site and automatically alerts the ad ops team the moment fill rate for any placement drops below a set threshold. An underperforming placement gets caught and addressed within a day or two instead of an entire week going by with unsold, revenue-losing ad space that no one noticed because no one was checking the dashboard.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation continuously monitors ad placements across the site and automatically alerts the ad ops team the moment fill rate for any placement drops below a set threshold. An underperforming placement gets caught and addressed within a day or two instead of an entire week going by with unsold, revenue-losing ad space that no one noticed because no one was checking the dashboard.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, an ad operations manager manually pieces together information from different places, then has to relay it to everyone who needs it.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Google Ad Manager</span><span>Zapier or Make.com</span><span>Slack or email</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
 

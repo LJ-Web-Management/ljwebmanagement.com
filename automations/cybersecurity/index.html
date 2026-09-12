@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">CISO</span><h3>Security Awareness Training &amp; Phishing Simulation Tracker</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every new employee is automatically enrolled in the security awareness training curriculum the moment they are provisioned in the HR system, and completion is tracked against a 30-day onboarding deadline. Monthly phishing simulation campaigns are automatically launched to all staff on a randomized schedule, and employees who click a simulated phishing link are immediately enrolled in a targeted micro-training without requiring the CISO to manually identify and enroll them. The CISO receives a monthly organization-wide security posture report showing training completion rates, phishing click rates by department, and trend lines, making the human risk layer of the security program measurable and manageable rather than anecdotal.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every new employee is automatically enrolled in the security awareness training curriculum the moment they are provisioned in the HR system, and completion is tracked against a 30-day onboarding deadline. Monthly phishing simulation campaigns are automatically launched to all staff on a randomized schedule, and employees who click a simulated phishing link are immediately enrolled in a targeted micro-training without requiring the CISO to manually identify and enroll them. The CISO receives a monthly organization-wide security posture report showing training completion rates, phishing click rates by department, and trend lines, making the human risk layer of the security program measurable and manageable rather than anecdotal.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a ciso handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Security awareness platform (e.g., KnowBe4, Proofpoint Security Awareness, or Cofense)</span><span>Zapier or Make.com</span><span>HRIS integration (new employee auto-enrollment)</span><span>Slack or email (monthly security posture report)</span><span>Airtable (training completion and click rate tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When the SIEM fires an alert, this automation immediately queries threat intelligence feeds to enrich the indicator with context (known malicious IP, related threat actor, prior incident history) and assigns the enriched alert to the on-duty analyst with a priority level based on asset criticality and threat severity. Alerts that meet the escalation threshold are automatically converted into incidents, a war room channel is created in Slack, and the on-call engineer is paged. The SOC manager receives a real-time dashboard showing alert volume, analyst workload, mean time to respond, and open incident count, managing the security operations function by metrics rather than by walking the floor and asking analysts what they're working on.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When the SIEM fires an alert, this automation immediately queries threat intelligence feeds to enrich the indicator with context (known malicious IP, related threat actor, prior incident history) and assigns the enriched alert to the on-duty analyst with a priority level based on asset criticality and threat severity. Alerts that meet the escalation threshold are automatically converted into incidents, a war room channel is created in Slack, and the on-call engineer is paged. The SOC manager receives a real-time dashboard showing alert volume, analyst workload, mean time to respond, and open incident count, managing the security operations function by metrics rather than by walking the floor and asking analysts what they're working on.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a soc manager remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>SIEM (e.g., Splunk, Microsoft Sentinel, or IBM QRadar)</span><span>Threat intelligence feed (e.g., VirusTotal API or Recorded Future)</span><span>Zapier or Make.com</span><span>PagerDuty (on-call escalation)</span><span>Slack (incident war room and SOC dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Information security policies are tracked with annual review dates, and the assigned policy owner receives a review reminder 60 days before the policy expires along with the current version for markup. Once the updated policy is approved, it is automatically distributed to all required attestors (employees, contractors, or role-specific groups) with a digital acknowledgment link and a completion deadline. The compliance officer tracks attestation completion rates in real time, and any employee who has not attested by the deadline triggers an escalation to their manager. The compliance program maintains a complete, auditable record of every policy version and every attestation without anyone maintaining a manual spreadsheet.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Information security policies are tracked with annual review dates, and the assigned policy owner receives a review reminder 60 days before the policy expires along with the current version for markup. Once the updated policy is approved, it is automatically distributed to all required attestors (employees, contractors, or role-specific groups) with a digital acknowledgment link and a completion deadline. The compliance officer tracks attestation completion rates in real time, and any employee who has not attested by the deadline triggers an escalation to their manager. The compliance program maintains a complete, auditable record of every policy version and every attestation without anyone maintaining a manual spreadsheet.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a compliance officer has to notice problems after they've already happened, then scramble to fix them manually one at a time. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>GRC platform (e.g., OneTrust, Drata, or Vanta) or Jotform</span><span>Zapier or Make.com</span><span>DocuSign or HelloSign (digital attestation)</span><span>Airtable (policy version control and attestation tracker)</span><span>Slack or email (manager escalation for overdue attestations)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a new penetration testing engagement is scoped and signed, this automation generates the Rules of Engagement document pre-populated with the agreed scope, excluded systems, testing window, and emergency contact chain, and sends it for e-signature before any testing begins. During the engagement, daily status updates are automatically sent to the client stakeholder at the agreed communication frequency. When testing concludes, the report template is pre-built with the engagement metadata, timeline, and scope, so the pen tester fills in findings rather than reformatting a document from scratch. Final report delivery triggers a remediation tracking workflow that sends each finding to the responsible technical owner with a risk-prioritized remediation timeline.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a new penetration testing engagement is scoped and signed, this automation generates the Rules of Engagement document pre-populated with the agreed scope, excluded systems, testing window, and emergency contact chain, and sends it for e-signature before any testing begins. During the engagement, daily status updates are automatically sent to the client stakeholder at the agreed communication frequency. When testing concludes, the report template is pre-built with the engagement metadata, timeline, and scope, so the pen tester fills in findings rather than reformatting a document from scratch. Final report delivery triggers a remediation tracking workflow that sends each finding to the responsible technical owner with a risk-prioritized remediation timeline.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a penetration tester handles each case reactively, after someone has already noticed something went wrong.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform or DocuSign (ROE and engagement agreements)</span><span>Zapier or Make.com</span><span>Google Docs or a reporting template (pre-populated report framework)</span><span>Airtable (finding and remediation tracker)</span><span>Email (daily status updates and final report delivery)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a prospect completes a free vulnerability assessment or security posture review, this automation assembles a personalized findings brief highlighting the three most critical risks identified, sends it to the prospect within 24 hours of the assessment completion, and follows up at three days and seven days with educational content addressing each risk category. Prospects who engage with the findings brief receive a prioritized outreach from the sales rep with a customized proposal already built from the assessment data, so the rep arrives at the proposal conversation with a solution in hand, not a questionnaire. Prospects who go cold after 21 days enter a long-nurture educational sequence rather than being abandoned.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a prospect completes a free vulnerability assessment or security posture review, this automation assembles a personalized findings brief highlighting the three most critical risks identified, sends it to the prospect within 24 hours of the assessment completion, and follows up at three days and seven days with educational content addressing each risk category. Prospects who engage with the findings brief receive a prioritized outreach from the sales rep with a customized proposal already built from the assessment data, so the rep arrives at the proposal conversation with a solution in hand, not a questionnaire. Prospects who go cold after 21 days enter a long-nurture educational sequence rather than being abandoned.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a cybersecurity sales representative has to notice problems after they've already happened, then scramble to fix them manually one at a time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., HubSpot or Salesforce)</span><span>Assessment tool or Jotform (vulnerability assessment data collection)</span><span>Zapier or Make.com</span><span>OpenAI API (personalized findings brief generator)</span><span>PandaDoc (customized proposal)</span><span>Mailchimp or ActiveCampaign (nurture sequence)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>On a recurring monthly schedule, this automation automatically sends simulated phishing emails to employees, and anyone who clicks is automatically enrolled in a short remedial training module due within a week. Security awareness turns from an annual lecture no one remembers into an ongoing, measurable habit tracked at the individual level.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">On a recurring monthly schedule, this automation automatically sends simulated phishing emails to employees, and anyone who clicks is automatically enrolled in a short remedial training module due within a week. Security awareness turns from an annual lecture no one remembers into an ongoing, measurable habit tracked at the individual level.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a security awareness manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>KnowBe4 or Proofpoint</span><span>Zapier or Make.com</span><span>Slack or email</span><span>A learning management system</span></div>
+          </div>
         </div>
       </details>
 
@@ -515,9 +552,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a scheduled vulnerability scan identifies a new critical or high-severity finding, this automation automatically creates a ticket in the IT team's task system with the finding's details and remediation guidance already attached. A scan report that used to sit unread in someone's inbox now becomes an assigned, tracked ticket the moment the scan completes.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a scheduled vulnerability scan identifies a new critical or high-severity finding, this automation automatically creates a ticket in the IT team's task system with the finding's details and remediation guidance already attached. A scan report that used to sit unread in someone's inbox now becomes an assigned, tracked ticket the moment the scan completes.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a security analyst has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Tenable or Qualys</span><span>Jira or a similar ticketing system</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
 
@@ -527,9 +567,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation cross-checks the active employee list from HR against system access logs on a recurring weekly basis and automatically flags any account still active for someone who's no longer employed. A common and dangerous gap in offboarding, an ex-employee's access lingering for weeks, gets closed automatically instead of relying on IT to remember every departure.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation cross-checks the active employee list from HR against system access logs on a recurring weekly basis and automatically flags any account still active for someone who's no longer employed. A common and dangerous gap in offboarding, an ex-employee's access lingering for weeks, gets closed automatically instead of relying on IT to remember every departure.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on an it security administrator, who has to track every step by hand across emails, spreadsheets, and sticky notes. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>An identity/access management tool (Okta or JumpCloud)</span><span>BambooHR or a similar HRIS</span><span>Zapier or Make.com</span><span>Slack or email</span></div>
+          </div>
         </div>
       </details>
 
@@ -539,9 +582,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a security incident affecting client data is confirmed, this automation automatically drafts the notification communication using the pre-approved template and the timeline requirements for the relevant compliance framework. The response team gets a head start with a compliant draft ready for review instead of writing one from scratch while already under pressure.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a security incident affecting client data is confirmed, this automation automatically drafts the notification communication using the pre-approved template and the timeline requirements for the relevant compliance framework. The response team gets a head start with a compliant draft ready for review instead of writing one from scratch while already under pressure.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, an incident response lead has to notice problems after they've already happened, then scramble to fix them manually one at a time. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A document template tool (Google Docs)</span><span>Zapier or Make.com</span><span>Slack or email</span></div>
+          </div>
         </div>
       </details>
 
@@ -551,9 +597,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation continuously checks the expiration dates of SSL certificates and domain registrations across every client's environment and automatically alerts the team 30 days ahead of each expiration. The entirely avoidable \"certificate expired\" outage, the kind that's embarrassing precisely because it was so preventable, stops happening.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation continuously checks the expiration dates of SSL certificates and domain registrations across every client's environment and automatically alerts the team 30 days ahead of each expiration. The entirely avoidable \"certificate expired\" outage, the kind that's embarrassing precisely because it was so preventable, stops happening.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means an it operations manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>UptimeRobot or a certificate monitoring tool</span><span>Zapier or Make.com</span><span>Slack or email</span></div>
+          </div>
         </div>
       </details>
 

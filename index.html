@@ -426,6 +426,26 @@
   @media (max-width: 900px) { .lj-catalog-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 560px) { .lj-catalog-grid { grid-template-columns: 1fr; } }
 
+  /* ============ TOOLS ============ */
+  .lj-tools-head { text-align: center; max-width: 640px; margin: 0 auto 52px; }
+  .lj-tools-head h2 { font-size: clamp(1.9rem, 3.2vw, 2.5rem); line-height: 1.2; margin-top: 4px; }
+  .lj-tools-head p { color: var(--body); font-size: 15.5px; line-height: 1.6; margin: 12px 0 0; }
+  .lj-tools-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .lj-tool-card {
+    background: var(--white); border: 1px solid var(--line); border-radius: 18px;
+    padding: 36px; box-shadow: var(--shadow); transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .lj-tool-card:hover { transform: translateY(-4px); box-shadow: 0 26px 54px rgba(15, 37, 68, 0.14); }
+  .lj-tool-icon {
+    width: 52px; height: 52px; border-radius: 13px; background: var(--mist);
+    display: flex; align-items: center; justify-content: center; color: var(--cyan);
+    margin-bottom: 20px;
+  }
+  .lj-tool-icon svg { width: 24px; height: 24px; }
+  .lj-tool-card h3 { font-size: 19px; margin-bottom: 10px; }
+  .lj-tool-card p { color: var(--body); font-size: 14.5px; line-height: 1.6; margin: 0 0 22px; }
+  @media (max-width: 760px) { .lj-tools-grid { grid-template-columns: 1fr; } }
+
   /* ============ CTA ============ */
   .lj-cta {
     position: relative; overflow: hidden;
@@ -607,6 +627,31 @@
     <div class="lj-catalog-cta">
       <a href="automations" class="lj-btn lj-btn-primary">View All Automations</a>
       <a href="solutions" class="lj-btn lj-btn-outline">See Platform Solutions</a>
+    </div>
+  </div>
+</section>
+
+<!-- Tools -->
+<section class="lj-section lj-tools">
+  <div class="lj-inner">
+    <div class="lj-tools-head">
+      <span class="lj-eyebrow">Free Tools</span>
+      <h2>Not Sure Where to Start?</h2>
+      <p>Run the numbers on your own manual work, or answer a few questions to find the solution built for your bottleneck.</p>
+    </div>
+    <div class="lj-tools-grid">
+      <div class="lj-tool-card">
+        <div class="lj-tool-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H7"></path></svg></div>
+        <h3>ROI Calculator</h3>
+        <p>See how many hours and dollars your team's manual work is costing every month, and what automation could give back.</p>
+        <a href="roi-calculator" class="lj-btn lj-btn-outline">Calculate My Savings</a>
+      </div>
+      <div class="lj-tool-card">
+        <div class="lj-tool-icon"><svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9a2.5 2.5 0 0 1 4.9.8c0 1.7-2.4 2-2.4 3.7"></path><path d="M12 17h.01"></path></svg></div>
+        <h3>Find Your Match Quiz</h3>
+        <p>Answer three quick questions about your biggest bottleneck and get matched to the right solution for your business.</p>
+        <a href="quiz" class="lj-btn lj-btn-outline">Take the Quiz</a>
+      </div>
     </div>
   </div>
 </section>

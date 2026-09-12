@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Dealership Sales Manager</span><h3>Lead Follow-Up &amp; Test Drive Scheduling System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every new internet lead (from the website, third-party listing sites, or ad campaigns) is immediately acknowledged with a personalized text and email, entered into the CRM with a lead score, and assigned to the first available salesperson. If the salesperson hasn't made contact within two hours, the manager receives an escalation alert. Leads who engage are guided straight to a self-scheduling link for a test drive appointment, cutting the average time from inquiry to appointment and dramatically increasing the percentage of leads that ever reach the lot.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every new internet lead (from the website, third-party listing sites, or ad campaigns) is immediately acknowledged with a personalized text and email, entered into the CRM with a lead score, and assigned to the first available salesperson. If the salesperson hasn't made contact within two hours, the manager receives an escalation alert. Leads who engage are guided straight to a self-scheduling link for a test drive appointment, cutting the average time from inquiry to appointment and dramatically increasing the percentage of leads that ever reach the lot.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a dealership sales manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., VinSolutions or DealerSocket)</span><span>Zapier or Make.com</span><span>Twilio (immediate lead text)</span><span>Calendly (test drive scheduling)</span><span>Slack (escalation alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>From the moment a vehicle is dropped off, the customer receives automated status updates at each stage of the repair process (vehicle received, inspection complete with recommended services, repair in progress, and vehicle ready for pickup) all via text without the service advisor having to make a single phone call. Vehicles that have been ready for more than four hours but haven't been picked up trigger a reminder text to the customer and a flag to the service advisor, keeping the service bay from becoming a parking lot.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">From the moment a vehicle is dropped off, the customer receives automated status updates at each stage of the repair process (vehicle received, inspection complete with recommended services, repair in progress, and vehicle ready for pickup) all via text without the service advisor having to make a single phone call. Vehicles that have been ready for more than four hours but haven't been picked up trigger a reminder text to the customer and a flag to the service advisor, keeping the service bay from becoming a parking lot.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a service advisor, who has to track every step by hand across emails, spreadsheets, and sticky notes.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or Reynolds &amp; Reynolds)</span><span>Zapier or Make.com</span><span>Twilio (SMS status updates)</span><span>Slack (internal flags for long-sitting vehicles)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Based on the mileage and service interval recorded at each visit, this automation calculates when each customer is due for their next oil change, tire rotation, or recommended service and sends a reminder text two weeks before that estimated date. Customers who haven't returned in six months receive a win-back offer automatically, and any customer who leaves a negative review online is immediately flagged for a personal call from the owner. The shop's relationship with every customer is actively managed even when the shop is buried in cars.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Based on the mileage and service interval recorded at each visit, this automation calculates when each customer is due for their next oil change, tire rotation, or recommended service and sends a reminder text two weeks before that estimated date. Customers who haven't returned in six months receive a win-back offer automatically, and any customer who leaves a negative review online is immediately flagged for a personal call from the owner. The shop's relationship with every customer is actively managed even when the shop is buried in cars.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means an auto repair shop owner re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Shop-Ware or Tekmetric)</span><span>Zapier or Make.com</span><span>Twilio (maintenance reminder SMS)</span><span>Mailchimp (email campaigns)</span><span>Google Business Profile API (review monitoring)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a deal is desked, the system generates a complete checklist of every document required for that specific deal (based on the lender, product mix, and customer type) and sends it to the F&amp;I manager's deal queue. As documents are received and uploaded, the checklist updates in real time, and the F&amp;I manager knows exactly what's missing before they sit down with the customer. After signing, the system tracks funding status with each lender and alerts the accounting office the moment a deal is funded and ready to post.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a deal is desked, the system generates a complete checklist of every document required for that specific deal (based on the lender, product mix, and customer type) and sends it to the F&amp;I manager's deal queue. As documents are received and uploaded, the checklist updates in real time, and the F&amp;I manager knows exactly what's missing before they sit down with the customer. After signing, the system tracks funding status with each lender and alerts the accounting office the moment a deal is funded and ready to post.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a finance & insurance manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or RouteOne)</span><span>Zapier or Make.com</span><span>Airtable or Google Sheets (deal checklist tracker)</span><span>Email or Slack (funding status alerts)</span><span>DocuSign (digital document collection)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Twelve months before the end of a fleet account's vehicle replacement cycle, the system automatically triggers an outreach sequence from the fleet rep, a summary of the account's current vehicles, a preview of upcoming model changes, and a link to schedule a renewal consultation. Fleet managers who engage receive a custom proposal generated from their account data; those who don't respond are re-queued for a phone call. Between cycles, the fleet rep receives alerts when a tracked account adds employees, expands locations, or posts about growth, signals that a fleet expansion conversation is timely.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Twelve months before the end of a fleet account's vehicle replacement cycle, the system automatically triggers an outreach sequence from the fleet rep, a summary of the account's current vehicles, a preview of upcoming model changes, and a link to schedule a renewal consultation. Fleet managers who engage receive a custom proposal generated from their account data; those who don't respond are re-queued for a phone call. Between cycles, the fleet rep receives alerts when a tracked account adds employees, expands locations, or posts about growth, signals that a fleet expansion conversation is timely.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a fleet sales representative has to notice problems after they've already happened, then scramble to fix them manually one at a time. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., Salesforce or VinSolutions Fleet)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign (renewal sequence)</span><span>LinkedIn Sales Navigator or a news monitoring tool (expansion signals)</span><span>PandaDoc (custom fleet proposal)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Using the mileage and date logged at each visit, this automation calculates when every customer is due for their next oil change, tire rotation, or manufacturer-recommended service interval, and sends a reminder text two to three weeks ahead of that date, timed off actual mileage patterns rather than a flat calendar interval. Customers who don't respond within a week get a follow-up with a direct online booking link, cutting out the phone tag that eats up a service advisor's morning. Shops that used to rely on customers remembering to call back in for their 5,000-mile service now see a steady, predictable stream of return visits instead of hoping people show up on their own.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Using the mileage and date logged at each visit, this automation calculates when every customer is due for their next oil change, tire rotation, or manufacturer-recommended service interval, and sends a reminder text two to three weeks ahead of that date, timed off actual mileage patterns rather than a flat calendar interval. Customers who don't respond within a week get a follow-up with a direct online booking link, cutting out the phone tag that eats up a service advisor's morning. Shops that used to rely on customers remembering to call back in for their 5,000-mile service now see a steady, predictable stream of return visits instead of hoping people show up on their own.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a service scheduler re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or Shop-Ware)</span><span>Twilio</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Google Sheets (mileage tracking dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -514,9 +551,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a technician finishes the diagnostic scan, this automation texts the customer a link to a digital estimate broken down by recommended, required, and deferred repairs, letting them tap to approve or decline each line item from their phone instead of waiting on a callback from the service advisor. Approved work is pushed straight back into the shop's work order automatically, and the moment the last approved item is signed off by the technician, the customer gets a ready-for-pickup text with the final invoice attached. Estimate approval time drops from hours of phone tag to minutes, and the service advisor's desk phone stops ringing every ten minutes with "is it done yet" calls.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a technician finishes the diagnostic scan, this automation texts the customer a link to a digital estimate broken down by recommended, required, and deferred repairs, letting them tap to approve or decline each line item from their phone instead of waiting on a callback from the service advisor. Approved work is pushed straight back into the shop's work order automatically, and the moment the last approved item is signed off by the technician, the customer gets a ready-for-pickup text with the final invoice attached. Estimate approval time drops from hours of phone tag to minutes, and the service advisor's desk phone stops ringing every ten minutes with "is it done yet" calls.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on an assistant service manager remembering to check in, update records, and follow up, with no safety net if something slips.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or Shop-Ware)</span><span>Twilio</span><span>Zapier or Make.com</span><span>DocuSign (digital estimate approval)</span><span>Stripe (final invoice payment link)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -525,9 +565,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a week, this automation runs every customer VIN in the shop's database against the NHTSA recall API and manufacturer recall feeds, flagging any vehicle with an open, unaddressed recall. Affected customers are automatically sent a text and email explaining the specific recall in plain language, along with a link to book the repair, which for many recalls is performed at no cost to the customer. What used to require someone manually checking VINs one at a time, or customers finding out about a recall only after an incident, now runs as a standing weekly check that keeps the shop ahead of safety issues and turns recall traffic into an opportunity to build trust instead of just processing a mandatory fix.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a week, this automation runs every customer VIN in the shop's database against the NHTSA recall API and manufacturer recall feeds, flagging any vehicle with an open, unaddressed recall. Affected customers are automatically sent a text and email explaining the specific recall in plain language, along with a link to book the repair, which for many recalls is performed at no cost to the customer. What used to require someone manually checking VINs one at a time, or customers finding out about a recall only after an incident, now runs as a standing weekly check that keeps the shop ahead of safety issues and turns recall traffic into an opportunity to build trust instead of just processing a mandatory fix.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a warranty administrator manually pieces together information from different places, then has to relay it to everyone who needs it.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>NHTSA recall API</span><span>Zapier or Make.com</span><span>Twilio</span><span>Shop management software (e.g., Tekmetric or CDK Global)</span><span>Mailchimp (recall notice email)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -536,9 +579,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Using current market data (auction results, regional listing prices, and the dealership's own acquisition needs), this automation runs a monthly scan of past customers' vehicles on file and identifies anyone whose trade-in value has risen meaningfully since their last visit or purchase. Those customers receive a personalized text or email with an actual estimated trade-in offer for their specific vehicle, not a generic "we want your car" message, along with a link to schedule an appraisal. Customers sitting on a vehicle worth more than they realize get a concrete reason to come back in, and the dealership fills its used inventory pipeline with qualified trade-in leads instead of relying only on walk-ins.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Using current market data (auction results, regional listing prices, and the dealership's own acquisition needs), this automation runs a monthly scan of past customers' vehicles on file and identifies anyone whose trade-in value has risen meaningfully since their last visit or purchase. Those customers receive a personalized text or email with an actual estimated trade-in offer for their specific vehicle, not a generic "we want your car" message, along with a link to schedule an appraisal. Customers sitting on a vehicle worth more than they realize get a concrete reason to come back in, and the dealership fills its used inventory pipeline with qualified trade-in leads instead of relying only on walk-ins.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, an used car manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>vAuto or Black Book (market valuation data)</span><span>CRM (e.g., VinSolutions or DealerSocket)</span><span>Zapier or Make.com</span><span>Twilio</span><span>Mailchimp or ActiveCampaign</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -547,9 +593,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As soon as a technician completes a multi-point inspection using a tablet-based digital inspection tool, photos and short video clips of any flagged issues (worn brake pads, a cracked belt, low tread depth) are automatically compiled with the technician's written notes into a single report and texted to the customer while the vehicle is still on the lift. Customers see exactly what the technician saw instead of taking a stranger's word for it over the phone, and they can approve or decline each recommended repair directly from the report. Approval rates on recommended work climb because customers are looking at their own worn brake pads instead of a verbal description, and the service advisor spends less time explaining and more time closing.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As soon as a technician completes a multi-point inspection using a tablet-based digital inspection tool, photos and short video clips of any flagged issues (worn brake pads, a cracked belt, low tread depth) are automatically compiled with the technician's written notes into a single report and texted to the customer while the vehicle is still on the lift. Customers see exactly what the technician saw instead of taking a stranger's word for it over the phone, and they can approve or decline each recommended repair directly from the report. Approval rates on recommended work climb because customers are looking at their own worn brake pads instead of a verbal description, and the service advisor spends less time explaining and more time closing.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a shop foreman handles each case reactively, after someone has already noticed something went wrong.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or Shop-Ware)</span><span>AutoVitals or Bolt On (digital inspection app)</span><span>Twilio</span><span>Zapier or Make.com</span><span>DocuSign (digital repair approval)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -558,9 +607,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a repair invoice is marked paid in the shop management system, this automation waits roughly two hours (enough time for the customer to drive away and settle in, not so long the visit feels distant) before sending a text asking for a quick Google review, with a direct link that drops the customer straight into the review form. Customers who report a low satisfaction score in the initial quick-rating question are routed privately to the shop owner instead of being pushed toward a public review, catching problems before they turn into a bad post. Review volume grows on a predictable weekly cadence instead of depending on the rare customer who thinks to leave one unprompted, and the shop builds a public track record it can point to when competing for new customers.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a repair invoice is marked paid in the shop management system, this automation waits roughly two hours (enough time for the customer to drive away and settle in, not so long the visit feels distant) before sending a text asking for a quick Google review, with a direct link that drops the customer straight into the review form. Customers who report a low satisfaction score in the initial quick-rating question are routed privately to the shop owner instead of being pushed toward a public review, catching problems before they turn into a bad post. Review volume grows on a predictable weekly cadence instead of depending on the rare customer who thinks to leave one unprompted, and the shop builds a public track record it can point to when competing for new customers.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a customer experience coordinator handles each case reactively, after someone has already noticed something went wrong.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or Shop-Ware)</span><span>Twilio</span><span>Zapier or Make.com</span><span>Google Business Profile API</span><span>NiceJob or Podium (review routing)</span></div>
+          </div>
         </div>
       </details>
 
@@ -570,9 +622,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Customers automatically receive a reminder text or email the day before their scheduled service appointment and again the morning of, including drop-off instructions, the estimated service time, and a link to reschedule if the timing no longer works. Appointments that go unconfirmed after the second reminder are automatically flagged to the service coordinator so a quick phone call can catch a no-show before the bay sits empty. Shops running this sequence consistently see fewer missed appointments and a smoother morning drop-off line, since customers arrive already knowing what to expect instead of showing up unsure why they're there.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Customers automatically receive a reminder text or email the day before their scheduled service appointment and again the morning of, including drop-off instructions, the estimated service time, and a link to reschedule if the timing no longer works. Appointments that go unconfirmed after the second reminder are automatically flagged to the service coordinator so a quick phone call can catch a no-show before the bay sits empty. Shops running this sequence consistently see fewer missed appointments and a smoother morning drop-off line, since customers arrive already knowing what to expect instead of showing up unsure why they're there.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a service coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or Shop-Ware)</span><span>Zapier or Make.com</span><span>Twilio (SMS status updates)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -581,9 +636,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The system cross-references each customer's vehicle service history and estimated current mileage against manufacturer maintenance schedules and the NHTSA recall database, automatically notifying the customer when they're due for service or when an open recall applies to their specific VIN. The fixed ops director gets a weekly count of vehicles due that haven't yet booked, giving the service department a ready list to call instead of waiting for customers to remember on their own. Open recalls in particular get caught and resolved faster, closing a safety and liability gap that used to depend entirely on a customer noticing a mailed notice.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The system cross-references each customer's vehicle service history and estimated current mileage against manufacturer maintenance schedules and the NHTSA recall database, automatically notifying the customer when they're due for service or when an open recall applies to their specific VIN. The fixed ops director gets a weekly count of vehicles due that haven't yet booked, giving the service department a ready list to call instead of waiting for customers to remember on their own. Open recalls in particular get caught and resolved faster, closing a safety and liability gap that used to depend entirely on a customer noticing a mailed notice.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a fixed ops director is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or Reynolds &amp; Reynolds)</span><span>NHTSA recall API</span><span>Zapier or Make.com</span><span>Mailchimp (recall notice email)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -592,9 +650,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Customers are automatically texted at each stage of their vehicle's visit, the moment the initial inspection is complete, whenever additional recommended work needs approval with a direct link to approve or decline, and again the instant the vehicle is ready for pickup. Approvals captured by text flow straight back into the repair order, so the technician can start additional work within minutes instead of the car sitting untouched while a service advisor tries to reach the customer by phone. The service drive's phone lines get noticeably quieter once customers stop needing to call in just to check status.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Customers are automatically texted at each stage of their vehicle's visit, the moment the initial inspection is complete, whenever additional recommended work needs approval with a direct link to approve or decline, and again the instant the vehicle is ready for pickup. Approvals captured by text flow straight back into the repair order, so the technician can start additional work within minutes instead of the car sitting untouched while a service advisor tries to reach the customer by phone. The service drive's phone lines get noticeably quieter once customers stop needing to call in just to check status.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a service advisor is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or CDK Global)</span><span>Zapier or Make.com</span><span>Twilio (SMS status updates)</span><span>DocuSign (digital repair approval)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -603,9 +664,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Any inbound call to sales or service that goes unanswered automatically triggers a text to the caller within seconds, apologizing for missing them and offering a direct scheduling link, so a service inquiry or sales lead doesn't simply hang up and call the next dealership on the list. The BDC representative gets a same-day report of every missed call and whether it converted into a booked appointment, giving hard visibility into a category of lost business that used to disappear without a trace the moment the phone stopped ringing.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Any inbound call to sales or service that goes unanswered automatically triggers a text to the caller within seconds, apologizing for missing them and offering a direct scheduling link, so a service inquiry or sales lead doesn't simply hang up and call the next dealership on the list. The BDC representative gets a same-day report of every missed call and whether it converted into a booked appointment, giving hard visibility into a category of lost business that used to disappear without a trace the moment the phone stopped ringing.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a bdc representative spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or RouteOne)</span><span>Zapier or Make.com</span><span>Twilio (immediate lead text)</span><span>Calendly (test drive scheduling)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -614,9 +678,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A website visitor who requests a trade-in value automatically receives their estimate within minutes, pulled from live market valuation data, along with a clear next step to schedule an in-person appraisal, instead of the lead sitting untouched until someone gets around to calling. Leads who open the estimate but don't book an appointment automatically get a follow-up call task assigned to the used car manager two days later. Trade leads handled this quickly convert to an actual appraisal appointment at a far higher rate than leads left to follow up on their own.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A website visitor who requests a trade-in value automatically receives their estimate within minutes, pulled from live market valuation data, along with a clear next step to schedule an in-person appraisal, instead of the lead sitting untouched until someone gets around to calling. Leads who open the estimate but don't book an appointment automatically get a follow-up call task assigned to the used car manager two days later. Trade leads handled this quickly convert to an actual appraisal appointment at a far higher rate than leads left to follow up on their own.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, an used car manager manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>vAuto or Black Book (market valuation data)</span><span>Zapier or Make.com</span><span>Mailchimp (email campaigns)</span><span>Twilio (immediate lead text)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -625,9 +692,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Leads who saved a specific vehicle search are automatically emailed and texted the moment a matching unit arrives on the lot, often before it's even fully listed on the website, giving serious shoppers first crack at a vehicle instead of finding out once it's already sold. The inventory manager gets a report of which saved searches are generating the most matches, useful signal for what to prioritize on the next buy, and a meaningful share of these alerts convert into a same-week visit since the customer is contacted at the exact moment their specific vehicle becomes available.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Leads who saved a specific vehicle search are automatically emailed and texted the moment a matching unit arrives on the lot, often before it's even fully listed on the website, giving serious shoppers first crack at a vehicle instead of finding out once it's already sold. The inventory manager gets a report of which saved searches are generating the most matches, useful signal for what to prioritize on the next buy, and a meaningful share of these alerts convert into a same-week visit since the customer is contacted at the exact moment their specific vehicle becomes available.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means an inventory manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or RouteOne)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Twilio (immediate lead text)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -636,9 +706,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A review request goes out automatically a few hours after the repair order is marked picked up, timed to when the customer's experience with the service department is still fresh rather than a generic monthly blast sent to everyone regardless of when they were actually in. Customers who indicate a poor experience are routed privately to the customer experience coordinator instead of straight to a public review, while satisfied customers are routed directly to a one-click Google review link, keeping the public rating climbing while problems get caught and resolved before they go public.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A review request goes out automatically a few hours after the repair order is marked picked up, timed to when the customer's experience with the service department is still fresh rather than a generic monthly blast sent to everyone regardless of when they were actually in. Customers who indicate a poor experience are routed privately to the customer experience coordinator instead of straight to a public review, while satisfied customers are routed directly to a one-click Google review link, keeping the public rating climbing while problems get caught and resolved before they go public.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a customer experience coordinator manually pieces together information from different places, then has to relay it to everyone who needs it.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or Shop-Ware)</span><span>Zapier or Make.com</span><span>NiceJob or Podium (review routing)</span><span>Google Business Profile API</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -647,9 +720,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Customers driving a loaner or rental vehicle automatically receive a reminder text as the scheduled return date approaches, and a second reminder if the vehicle hasn't been returned by the due date, instead of the loaner fleet slowly shrinking as vehicles quietly go overdue and untracked. The rental coordinator gets a live dashboard of every loaner out, who has it, and when it's due back, replacing a paper log or spreadsheet that only ever reflected reality if someone remembered to update it, and overdue loaner days drop sharply once the reminder is automatic instead of dependent on someone noticing.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Customers driving a loaner or rental vehicle automatically receive a reminder text as the scheduled return date approaches, and a second reminder if the vehicle hasn't been returned by the due date, instead of the loaner fleet slowly shrinking as vehicles quietly go overdue and untracked. The rental coordinator gets a live dashboard of every loaner out, who has it, and when it's due back, replacing a paper log or spreadsheet that only ever reflected reality if someone remembered to update it, and overdue loaner days drop sharply once the reminder is automatic instead of dependent on someone noticing.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a rental coordinator handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or Shop-Ware)</span><span>Zapier or Make.com</span><span>Twilio (SMS status updates)</span><span>Google Sheets (mileage tracking dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -658,9 +734,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A customer who starts but doesn't finish an online credit application automatically triggers a follow-up within the hour offering help completing it, either by text with a direct link back to the saved form or a call from a credit analyst, instead of the abandoned application simply vanishing into an analytics report nobody checks. Abandonment points are tracked automatically, so if customers consistently stall on the same field, income verification, for example, that friction point gets flagged for the finance team to fix. Recovering even a portion of these stalled applications turns a soft lead into a closed deal that would otherwise have gone nowhere.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A customer who starts but doesn't finish an online credit application automatically triggers a follow-up within the hour offering help completing it, either by text with a direct link back to the saved form or a call from a credit analyst, instead of the abandoned application simply vanishing into an analytics report nobody checks. Abandonment points are tracked automatically, so if customers consistently stall on the same field, income verification, for example, that friction point gets flagged for the finance team to fix. Recovering even a portion of these stalled applications turns a soft lead into a closed deal that would otherwise have gone nowhere.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a credit analyst has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or RouteOne)</span><span>Zapier or Make.com</span><span>Twilio (immediate lead text)</span><span>Email or Slack (funding status alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -669,9 +748,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As a factory or extended warranty approaches its expiration date, the affected customer automatically receives a notice explaining exactly what coverage is ending and when, paired with an offer to purchase extended coverage before it lapses, instead of a warranty quietly expiring with the customer finding out the hard way at their next repair. The warranty administrator gets a rolling 90-day list of upcoming expirations to prioritize for personal outreach on higher-value vehicles, and extended warranty attachment rates climb meaningfully once the offer reaches customers while the decision still feels timely instead of after coverage has already run out.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As a factory or extended warranty approaches its expiration date, the affected customer automatically receives a notice explaining exactly what coverage is ending and when, paired with an offer to purchase extended coverage before it lapses, instead of a warranty quietly expiring with the customer finding out the hard way at their next repair. The warranty administrator gets a rolling 90-day list of upcoming expirations to prioritize for personal outreach on higher-value vehicles, and extended warranty attachment rates climb meaningfully once the offer reaches customers while the decision still feels timely instead of after coverage has already run out.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a warranty administrator has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or Reynolds &amp; Reynolds)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Twilio (maintenance reminder SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -680,9 +762,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a scheduled test drive is marked complete, the customer automatically receives a follow-up sequence over the next few days with details on the specific vehicle they drove, comparable inventory, and available financing options tailored to what a sales consultant learned during the drive. Customers who engage with the follow-up but haven't returned to the lot within a week are automatically flagged for a personal check-in call, keeping momentum going during the exact window when a test drive's initial excitement is most likely to translate into an actual purchase decision rather than fading into "we'll think about it."</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a scheduled test drive is marked complete, the customer automatically receives a follow-up sequence over the next few days with details on the specific vehicle they drove, comparable inventory, and available financing options tailored to what a sales consultant learned during the drive. Customers who engage with the follow-up but haven't returned to the lot within a week are automatically flagged for a personal check-in call, keeping momentum going during the exact window when a test drive's initial excitement is most likely to translate into an actual purchase decision rather than fading into "we'll think about it."</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a sales consultant remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Calendly (test drive scheduling)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Twilio (immediate lead text)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -691,9 +776,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a customer submits an online credit pre-qualification form, the result is automatically routed to both the customer, with a clear next step to schedule a visit, and the assigned sales rep, with the pre-qualified terms attached so the conversation on the lot can start from financing already understood instead of from scratch. The finance and insurance manager gets a live queue of every pre-qualified customer who hasn't yet come in, sorted by how strong the approval is, letting the strongest deals get prioritized for personal follow-up while the pre-qualification is still fresh.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a customer submits an online credit pre-qualification form, the result is automatically routed to both the customer, with a clear next step to schedule a visit, and the assigned sales rep, with the pre-qualified terms attached so the conversation on the lot can start from financing already understood instead of from scratch. The finance and insurance manager gets a live queue of every pre-qualified customer who hasn't yet come in, sorted by how strong the approval is, letting the strongest deals get prioritized for personal follow-up while the pre-qualification is still fresh.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a finance & insurance manager manually pieces together information from different places, then has to relay it to everyone who needs it. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or RouteOne)</span><span>Zapier or Make.com</span><span>DocuSign (digital document collection)</span><span>Email or Slack (funding status alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -702,9 +790,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Customers who ordered a special-order part automatically receive a text the moment it arrives at the parts counter, along with a direct link to schedule the installation, instead of the part sitting on a shelf while the customer has no idea it's already in. The parts manager gets a weekly report of parts that arrived but haven't been claimed or scheduled after a set number of days, catching stalled orders before they turn into wasted inventory sitting in the back room. Customers consistently comment that being told the moment a part lands, rather than having to call and check, is one of the most noticeable service improvements.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Customers who ordered a special-order part automatically receive a text the moment it arrives at the parts counter, along with a direct link to schedule the installation, instead of the part sitting on a shelf while the customer has no idea it's already in. The parts manager gets a weekly report of parts that arrived but haven't been claimed or scheduled after a set number of days, catching stalled orders before they turn into wasted inventory sitting in the back room. Customers consistently comment that being told the moment a part lands, rather than having to call and check, is one of the most noticeable service improvements.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a parts manager, who has to track every step by hand across emails, spreadsheets, and sticky notes.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or Shop-Ware)</span><span>Zapier or Make.com</span><span>Twilio (SMS status updates)</span><span>Calendly (test drive scheduling)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -713,9 +804,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The day before a scheduled vehicle delivery or pickup, the customer automatically receives a reminder along with a checklist of exactly what to bring, driver's license, proof of insurance, the trade-in title if applicable, so the delivery coordinator isn't scrambling to track down a missing document while the customer waits in the finance office. Deliveries with a pre-sent checklist consistently close faster than deliveries where the paperwork gap is discovered on the spot, and the customer walks away with a smoother, more professional final impression of the exact moment that shapes most of their loyalty going forward.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The day before a scheduled vehicle delivery or pickup, the customer automatically receives a reminder along with a checklist of exactly what to bring, driver's license, proof of insurance, the trade-in title if applicable, so the delivery coordinator isn't scrambling to track down a missing document while the customer waits in the finance office. Deliveries with a pre-sent checklist consistently close faster than deliveries where the paperwork gap is discovered on the spot, and the customer walks away with a smoother, more professional final impression of the exact moment that shapes most of their loyalty going forward.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a delivery coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or Reynolds &amp; Reynolds)</span><span>Zapier or Make.com</span><span>Twilio (immediate lead text)</span><span>DocuSign (digital document collection)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -724,9 +818,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>During checkout, the system automatically cross-references the vehicle's current mileage and service history against the manufacturer's maintenance schedule and flags any eligible upsell, a service package, a wear item due soon, an extended warranty, directly on the advisor's screen so the offer comes from real data instead of a generic script every advisor recites regardless of what the vehicle actually needs. Suggested upsells the customer declines are automatically logged with a note to revisit at the next visit, and shops report a meaningful lift in average repair order value once every advisor is working from the same data-driven prompt instead of memory alone.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">During checkout, the system automatically cross-references the vehicle's current mileage and service history against the manufacturer's maintenance schedule and flags any eligible upsell, a service package, a wear item due soon, an extended warranty, directly on the advisor's screen so the offer comes from real data instead of a generic script every advisor recites regardless of what the vehicle actually needs. Suggested upsells the customer declines are automatically logged with a note to revisit at the next visit, and shops report a meaningful lift in average repair order value once every advisor is working from the same data-driven prompt instead of memory alone.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means an assistant service manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or CDK Global)</span><span>Zapier or Make.com</span><span>Google Sheets (mileage tracking dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -735,9 +832,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The manufacturer-required Customer Satisfaction Index survey is automatically sent after a purchase or service visit, timed to the specific window that historically produces the highest response rate and the fairest reflection of the actual experience, rather than firing off immediately or getting delayed until it's irrelevant. Any response indicating a problem is automatically routed to the CSI coordinator for same-day resolution before the survey is finalized, since a dissatisfied customer who gets a fast, personal fix often ends up submitting a far better score than the one they would have given in the moment of frustration.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The manufacturer-required Customer Satisfaction Index survey is automatically sent after a purchase or service visit, timed to the specific window that historically produces the highest response rate and the fairest reflection of the actual experience, rather than firing off immediately or getting delayed until it's irrelevant. Any response indicating a problem is automatically routed to the CSI coordinator for same-day resolution before the survey is finalized, since a dissatisfied customer who gets a fast, personal fix often ends up submitting a far better score than the one they would have given in the moment of frustration.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a csi coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or Reynolds &amp; Reynolds)</span><span>Zapier or Make.com</span><span>Mailchimp (email campaigns)</span><span>Slack (escalation alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -746,9 +846,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When multiple vehicles belonging to the same business fleet account are coming due for service around the same time, the system automatically batches them into a single scheduling outreach to the fleet's point of contact instead of sending a dozen separate reminders for a dozen separate vehicles. The fleet sales representative can see at a glance which accounts have vehicles clustering toward service, letting the shop plan bay capacity around a fleet visit instead of being surprised by it, and fleet customers appreciate getting one coordinated message rather than a flood of individual vehicle alerts.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When multiple vehicles belonging to the same business fleet account are coming due for service around the same time, the system automatically batches them into a single scheduling outreach to the fleet's point of contact instead of sending a dozen separate reminders for a dozen separate vehicles. The fleet sales representative can see at a glance which accounts have vehicles clustering toward service, letting the shop plan bay capacity around a fleet visit instead of being surprised by it, and fleet customers appreciate getting one coordinated message rather than a flood of individual vehicle alerts.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a fleet sales representative spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or Reynolds &amp; Reynolds)</span><span>Zapier or Make.com</span><span>PandaDoc (custom fleet proposal)</span><span>Mailchimp (email campaigns)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -757,9 +860,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A completed multi-point inspection, including time-stamped photos of anything flagged, is automatically compiled and sent directly to the customer's phone for review, with each recommended item broken out so the customer can approve or decline them individually rather than getting a single vague verbal summary over the phone. Approved items flow straight back into the repair order without the shop foreman needing to call and re-explain each one, and approval rates on recommended work climb noticeably once customers can see the actual photo of a worn brake pad instead of just being told to trust the shop's word for it.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A completed multi-point inspection, including time-stamped photos of anything flagged, is automatically compiled and sent directly to the customer's phone for review, with each recommended item broken out so the customer can approve or decline them individually rather than getting a single vague verbal summary over the phone. Approved items flow straight back into the repair order without the shop foreman needing to call and re-explain each one, and approval rates on recommended work climb noticeably once customers can see the actual photo of a worn brake pad instead of just being told to trust the shop's word for it.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a shop foreman manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>AutoVitals or Bolt On (digital inspection app)</span><span>Zapier or Make.com</span><span>Twilio (SMS status updates)</span><span>DocuSign (digital repair approval)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -768,9 +874,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A few weeks after taking delivery of a new vehicle, the customer automatically receives a follow-up offer for accessories or add-ons that complement what they bought, all-weather mats, a roof rack, remote start, timed to when the initial purchase excitement has settled into daily use and the customer has a clearer sense of what they'd actually want to add. Accessory sales generated through this follow-up are tracked back to the original delivery, giving the sales team real data on which vehicle types and trims drive the most add-on revenue instead of accessories being sold purely on the spot at delivery or not at all.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A few weeks after taking delivery of a new vehicle, the customer automatically receives a follow-up offer for accessories or add-ons that complement what they bought, all-weather mats, a roof rack, remote start, timed to when the initial purchase excitement has settled into daily use and the customer has a clearer sense of what they'd actually want to add. Accessory sales generated through this follow-up are tracked back to the original delivery, giving the sales team real data on which vehicle types and trims drive the most add-on revenue instead of accessories being sold purely on the spot at delivery or not at all.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a sales consultant is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or RouteOne)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -779,9 +888,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The instant a vehicle is added to or sold off the lot in the DMS, the website's inventory listings automatically update in real time, so a customer never drives in for a vehicle that sold two days ago or gets frustrated finding a "new" listing that's actually been on the lot for a month. The inventory manager no longer has to manually sync listings across the website and third-party marketplaces like Cars.com or Autotrader, since every platform pulls from the same live feed, and lost showroom visits caused by stale online listings drop close to zero.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The instant a vehicle is added to or sold off the lot in the DMS, the website's inventory listings automatically update in real time, so a customer never drives in for a vehicle that sold two days ago or gets frustrated finding a "new" listing that's actually been on the lot for a month. The inventory manager no longer has to manually sync listings across the website and third-party marketplaces like Cars.com or Autotrader, since every platform pulls from the same live feed, and lost showroom visits caused by stale online listings drop close to zero.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, an inventory manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or RouteOne)</span><span>Zapier or Make.com</span><span>vAuto or Black Book (market valuation data)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -790,9 +902,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A new internet lead automatically alerts the assigned sales rep and the internet sales coordinator the instant it arrives, with an internal countdown timer that escalates to a manager if the lead hasn't been contacted within the dealership's target response window, typically inside the first few minutes. Dealerships running this countdown consistently close a meaningfully higher share of internet leads than dealerships without one, since online shoppers are almost always contacting several dealers at once, and the first one to respond with real information wins the majority of test drives booked.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A new internet lead automatically alerts the assigned sales rep and the internet sales coordinator the instant it arrives, with an internal countdown timer that escalates to a manager if the lead hasn't been contacted within the dealership's target response window, typically inside the first few minutes. Dealerships running this countdown consistently close a meaningfully higher share of internet leads than dealerships without one, since online shoppers are almost always contacting several dealers at once, and the first one to respond with real information wins the majority of test drives booked.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, an internet sales coordinator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or RouteOne)</span><span>Zapier or Make.com</span><span>Twilio (immediate lead text)</span><span>Slack (escalation alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -801,9 +916,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A scheduled vehicle appraisal appointment automatically triggers a confirmation and reminder to the customer, including a clear list of documents to bring, the title, registration, and a spare key if available, so the used car manager doesn't lose a slot to a customer who shows up without what's needed to actually complete an appraisal. No-shows on appraisal appointments drop once the reminder includes the practical checklist, and appraisals that do happen move faster since the paperwork is already in hand instead of requiring a second visit to finish.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A scheduled vehicle appraisal appointment automatically triggers a confirmation and reminder to the customer, including a clear list of documents to bring, the title, registration, and a spare key if available, so the used car manager doesn't lose a slot to a customer who shows up without what's needed to actually complete an appraisal. No-shows on appraisal appointments drop once the reminder includes the practical checklist, and appraisals that do happen move faster since the paperwork is already in hand instead of requiring a second visit to finish.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, an used car manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or RouteOne)</span><span>Zapier or Make.com</span><span>Twilio (immediate lead text)</span><span>Calendly (test drive scheduling)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -812,9 +930,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Customers approaching a repeat purchase milestone, buying their third vehicle from the dealership for example, are automatically identified from purchase history and sent a personalized loyalty offer recognizing their continued business, rather than being treated exactly like a first-time shopper walking in cold. The customer retention specialist gets a running list of loyal customers likely to be back in market soon based on typical trade-in cycles, letting outreach happen proactively instead of waiting for the customer to show up on their own, and repeat buyers who feel recognized report noticeably higher satisfaction than those treated as a brand-new lead every time.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Customers approaching a repeat purchase milestone, buying their third vehicle from the dealership for example, are automatically identified from purchase history and sent a personalized loyalty offer recognizing their continued business, rather than being treated exactly like a first-time shopper walking in cold. The customer retention specialist gets a running list of loyal customers likely to be back in market soon based on typical trade-in cycles, letting outreach happen proactively instead of waiting for the customer to show up on their own, and repeat buyers who feel recognized report noticeably higher satisfaction than those treated as a brand-new lead every time.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a customer retention specialist has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or Reynolds &amp; Reynolds)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Twilio (immediate lead text)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -823,9 +944,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For connected vehicles reporting live telematics data, the system uses actual mileage and driving patterns rather than just elapsed calendar time to trigger service reminders, catching a high-mileage commuter who needs an oil change sooner than the standard six-month mark and holding off on a reminder for a vehicle that's barely been driven. The service scheduler sees a far more accurate due list than one built purely on time-based rules, and customers get reminders that actually match how they use their vehicle instead of a generic date that either arrives too early or, worse, too late.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For connected vehicles reporting live telematics data, the system uses actual mileage and driving patterns rather than just elapsed calendar time to trigger service reminders, catching a high-mileage commuter who needs an oil change sooner than the standard six-month mark and holding off on a reminder for a vehicle that's barely been driven. The service scheduler sees a far more accurate due list than one built purely on time-based rules, and customers get reminders that actually match how they use their vehicle instead of a generic date that either arrives too early or, worse, too late.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a service scheduler is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or Reynolds &amp; Reynolds)</span><span>Zapier or Make.com</span><span>Twilio (maintenance reminder SMS)</span><span>Google Sheets (mileage tracking dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -834,9 +958,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a repair estimate is prepared in the body shop, it's automatically sent to the customer for review and, at the same time, submitted directly to their insurance claims adjuster, cutting out the delay that used to come from a body shop manager manually faxing or emailing the same estimate to two separate parties on two separate timelines. Adjuster approvals and any requested revisions flow back into the same estimate automatically, so a supplement doesn't sit waiting in an inbox, and the whole approval cycle that used to take several days routinely closes within one.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a repair estimate is prepared in the body shop, it's automatically sent to the customer for review and, at the same time, submitted directly to their insurance claims adjuster, cutting out the delay that used to come from a body shop manager manually faxing or emailing the same estimate to two separate parties on two separate timelines. Adjuster approvals and any requested revisions flow back into the same estimate automatically, so a supplement doesn't sit waiting in an inbox, and the whole approval cycle that used to take several days routinely closes within one.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a body shop manager manually pieces together information from different places, then has to relay it to everyone who needs it. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or Shop-Ware)</span><span>Zapier or Make.com</span><span>DocuSign (digital estimate approval)</span><span>Email or Slack (funding status alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -845,9 +972,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When the new model year of a vehicle a past customer already owns is unveiled, that customer automatically receives an announcement highlighting what's new, paired with a trade-in incentive designed to bring them back in before the current model year's residual value starts to slide. The dealership sales manager gets a report of which past customers responded and booked a visit, sharpening which model refreshes are actually worth a dedicated campaign versus a generic mass email, and this single automated trigger consistently surfaces upgrade-ready customers who weren't actively shopping until the message reminded them the new version existed.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When the new model year of a vehicle a past customer already owns is unveiled, that customer automatically receives an announcement highlighting what's new, paired with a trade-in incentive designed to bring them back in before the current model year's residual value starts to slide. The dealership sales manager gets a report of which past customers responded and booked a visit, sharpening which model refreshes are actually worth a dedicated campaign versus a generic mass email, and this single automated trigger consistently surfaces upgrade-ready customers who weren't actively shopping until the message reminded them the new version existed.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a dealership sales manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or Reynolds &amp; Reynolds)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Twilio (immediate lead text)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -856,9 +986,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a repair estimate indicates a turnaround long enough to require a rental, the automation automatically flags the job and coordinates a rental car arrangement with the customer ahead of drop-off, confirming pickup timing and coverage details before the customer arrives without a way home. The rental coordinator no longer has to manually cross-reference every open repair order against expected completion time to catch which customers will need a rental, since the system flags it automatically the moment an estimate crosses the threshold, and customers show up already knowing a rental is arranged instead of being surprised by the news at the counter.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a repair estimate indicates a turnaround long enough to require a rental, the automation automatically flags the job and coordinates a rental car arrangement with the customer ahead of drop-off, confirming pickup timing and coverage details before the customer arrives without a way home. The rental coordinator no longer has to manually cross-reference every open repair order against expected completion time to catch which customers will need a rental, since the system flags it automatically the moment an estimate crosses the threshold, and customers show up already knowing a rental is arranged instead of being surprised by the news at the counter.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a rental coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or Shop-Ware)</span><span>Zapier or Make.com</span><span>Twilio (SMS status updates)</span><span>Email or Slack (funding status alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -867,9 +1000,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Right after a vehicle purchase closes, the new owner is automatically introduced to the service department by name, with their first maintenance visit pre-scheduled at the standard interval, smoothing the handoff between the sales floor and the service drive that too often leaves a new owner without a single point of contact once the deal is signed. The service advisor assigned to that customer gets advance notice of the new relationship before the customer ever calls in, and dealerships tracking this handoff see meaningfully higher service retention among new owners compared to customers left to find the service department on their own.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Right after a vehicle purchase closes, the new owner is automatically introduced to the service department by name, with their first maintenance visit pre-scheduled at the standard interval, smoothing the handoff between the sales floor and the service drive that too often leaves a new owner without a single point of contact once the deal is signed. The service advisor assigned to that customer gets advance notice of the new relationship before the customer ever calls in, and dealerships tracking this handoff see meaningfully higher service retention among new owners compared to customers left to find the service department on their own.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a service advisor has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or Reynolds &amp; Reynolds)</span><span>Zapier or Make.com</span><span>Mailchimp (email campaigns)</span><span>Calendly (test drive scheduling)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -878,9 +1014,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Customers who saved a specific vehicle listing on the dealership website automatically get notified the moment its price is reduced, prompting a second look from a shopper who may have passed on it purely over budget the first time around. The internet sales coordinator can see which price-dropped vehicles generate the most re-engagement, useful signal for pricing strategy on similar inventory going forward, and a vehicle that's been sitting on the lot longer than the average turn time often finds its buyer through exactly this kind of automatic second chance rather than a fresh round of paid advertising.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Customers who saved a specific vehicle listing on the dealership website automatically get notified the moment its price is reduced, prompting a second look from a shopper who may have passed on it purely over budget the first time around. The internet sales coordinator can see which price-dropped vehicles generate the most re-engagement, useful signal for pricing strategy on similar inventory going forward, and a vehicle that's been sitting on the lot longer than the average turn time often finds its buyer through exactly this kind of automatic second chance rather than a fresh round of paid advertising.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, an internet sales coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or RouteOne)</span><span>Zapier or Make.com</span><span>Twilio (immediate lead text)</span><span>Mailchimp or ActiveCampaign</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -889,9 +1028,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a trade-in or used vehicle in inventory becomes eligible for certified pre-owned status after passing the required inspection, the automation automatically updates the vehicle's listing to reflect CPO status and alerts sales staff to the added value and financing benefits now available on that unit. Vehicles used to sit listed as standard used inventory for days after actually qualifying for CPO simply because no one manually rechecked eligibility after inspection results came back, and closing that gap means the vehicle is marketed at its true, higher value from the moment it's earned rather than an arbitrary point later.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a trade-in or used vehicle in inventory becomes eligible for certified pre-owned status after passing the required inspection, the automation automatically updates the vehicle's listing to reflect CPO status and alerts sales staff to the added value and financing benefits now available on that unit. Vehicles used to sit listed as standard used inventory for days after actually qualifying for CPO simply because no one manually rechecked eligibility after inspection results came back, and closing that gap means the vehicle is marketed at its true, higher value from the moment it's earned rather than an arbitrary point later.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, an used car manager manually pieces together information from different places, then has to relay it to everyone who needs it. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or RouteOne)</span><span>Zapier or Make.com</span><span>vAuto or Black Book (market valuation data)</span><span>Slack (internal flags for long-sitting vehicles)</span></div>
+          </div>
         </div>
       </details>
 
@@ -901,9 +1043,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation automatically tracks each service advisor's upsell conversion rate and surfaces a weekly leaderboard-style report to the fixed ops director, identifying coaching opportunities instead of upsell performance living only anecdotally in whoever happens to be watching the floor that week. Advisors can see how their own numbers stack up, and a director walks into a coaching conversation with actual data on which specific service, which specific advisor, is underperforming, turning a vague sense that "upsells feel low lately" into a targeted, effective coaching plan.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation automatically tracks each service advisor's upsell conversion rate and surfaces a weekly leaderboard-style report to the fixed ops director, identifying coaching opportunities instead of upsell performance living only anecdotally in whoever happens to be watching the floor that week. Advisors can see how their own numbers stack up, and a director walks into a coaching conversation with actual data on which specific service, which specific advisor, is underperforming, turning a vague sense that "upsells feel low lately" into a targeted, effective coaching plan.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a fixed ops director spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or CDK Global)</span><span>Zapier or Make.com</span><span>Google Sheets or Airtable (aggregated dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -912,9 +1057,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Customers automatically receive a milestone thank-you or offer when they reach an ownership anniversary with their vehicle, one year, three years since purchase, instead of the relationship going entirely quiet between the original sale and whenever the customer eventually comes back in for service or a trade. The customer retention specialist gets a steady, low-effort touchpoint that keeps the dealership's name in front of owners at a meaningful moment, and anniversary outreach consistently generates service visits and trade-in conversations that wouldn't have happened without the prompt.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Customers automatically receive a milestone thank-you or offer when they reach an ownership anniversary with their vehicle, one year, three years since purchase, instead of the relationship going entirely quiet between the original sale and whenever the customer eventually comes back in for service or a trade. The customer retention specialist gets a steady, low-effort touchpoint that keeps the dealership's name in front of owners at a meaningful moment, and anniversary outreach consistently generates service visits and trade-in conversations that wouldn't have happened without the prompt.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a customer retention specialist, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or Reynolds &amp; Reynolds)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Twilio (immediate lead text)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -923,9 +1071,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a customer declines a recommended repair during an inspection, the automation automatically follows up after a set interval to remind them of the deferred item before it becomes urgent, instead of a service advisor's recommendation simply disappearing from the conversation the moment the customer says not today. Customers who get a well-timed reminder before a deferred repair turns into a breakdown are far more likely to come back and complete the work on their own schedule instead of an emergency one, and the shop recovers a meaningful share of revenue that used to be declined and forgotten permanently.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a customer declines a recommended repair during an inspection, the automation automatically follows up after a set interval to remind them of the deferred item before it becomes urgent, instead of a service advisor's recommendation simply disappearing from the conversation the moment the customer says not today. Customers who get a well-timed reminder before a deferred repair turns into a breakdown are far more likely to come back and complete the work on their own schedule instead of an emergency one, and the shop recovers a meaningful share of revenue that used to be declined and forgotten permanently.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a service advisor, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or CDK Global)</span><span>Zapier or Make.com</span><span>Twilio (SMS status updates)</span><span>Mailchimp or ActiveCampaign</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -934,9 +1085,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation tracks how quickly the dealership responds to online reviews and alerts management whenever response time falls behind the target, protecting the online reputation instead of reviews sitting unanswered for days simply because nobody was specifically watching the clock on response time. A fast, thoughtful response to both positive and negative reviews is one of the strongest signals shoppers use to judge a dealership before ever walking in, and consistent response time, not just eventual response, is what separates dealerships that manage their reputation actively from ones that only react.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation tracks how quickly the dealership responds to online reviews and alerts management whenever response time falls behind the target, protecting the online reputation instead of reviews sitting unanswered for days simply because nobody was specifically watching the clock on response time. A fast, thoughtful response to both positive and negative reviews is one of the strongest signals shoppers use to judge a dealership before ever walking in, and consistent response time, not just eventual response, is what separates dealerships that manage their reputation actively from ones that only react.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a reputation specialist remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Google Business Profile API</span><span>Zapier or Make.com</span><span>Slack (escalation alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -945,9 +1099,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation automatically identifies customers who now have positive equity in their current loan and are strong trade-in candidates, alerting the used car manager to reach out with a specific, well-timed offer instead of a genuinely good trade-in opportunity sitting invisible in loan data nobody's actively monitoring. Customers who didn't realize they had equity to work with are often receptive to a trade-up conversation they weren't expecting, and this kind of proactive, data-driven outreach consistently surfaces deals that a purely inbound sales process would never have found on its own.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation automatically identifies customers who now have positive equity in their current loan and are strong trade-in candidates, alerting the used car manager to reach out with a specific, well-timed offer instead of a genuinely good trade-in opportunity sitting invisible in loan data nobody's actively monitoring. Customers who didn't realize they had equity to work with are often receptive to a trade-up conversation they weren't expecting, and this kind of proactive, data-driven outreach consistently surfaces deals that a purely inbound sales process would never have found on its own.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, an used car manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or RouteOne)</span><span>Zapier or Make.com</span><span>vAuto or Black Book (market valuation data)</span><span>Twilio (immediate lead text)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -956,9 +1113,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a needed recall part becomes available for a customer who was previously placed on a waitlist, they're automatically notified and offered a scheduling link, instead of the parts manager manually cross-referencing incoming inventory against a waitlist and calling each customer by hand. Customers waiting on a safety recall get resolved faster once the moment a part lands is what triggers outreach rather than a periodic manual check of the waitlist, and closing open recalls faster meaningfully reduces the dealership's own liability exposure on vehicles known to have an unresolved safety issue.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a needed recall part becomes available for a customer who was previously placed on a waitlist, they're automatically notified and offered a scheduling link, instead of the parts manager manually cross-referencing incoming inventory against a waitlist and calling each customer by hand. Customers waiting on a safety recall get resolved faster once the moment a part lands is what triggers outreach rather than a periodic manual check of the waitlist, and closing open recalls faster meaningfully reduces the dealership's own liability exposure on vehicles known to have an unresolved safety issue.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a parts manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or Shop-Ware)</span><span>Zapier or Make.com</span><span>Twilio (SMS status updates)</span><span>NHTSA recall API</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -967,9 +1127,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Visitors who check in at a showroom kiosk are automatically logged into the CRM with their visit reason, triggering an automatic follow-up if they leave without making a purchase, instead of a walk-in visitor's information staying trapped on a paper sign-in sheet with no connection to the sales process at all. The internet sales coordinator gets a same-day follow-up task for every visitor who didn't buy, capturing showroom traffic with the same discipline the dealership already applies to online leads, and walk-in visits that used to just evaporate if they didn't convert on the spot now feed directly into an actual follow-up pipeline.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Visitors who check in at a showroom kiosk are automatically logged into the CRM with their visit reason, triggering an automatic follow-up if they leave without making a purchase, instead of a walk-in visitor's information staying trapped on a paper sign-in sheet with no connection to the sales process at all. The internet sales coordinator gets a same-day follow-up task for every visitor who didn't buy, capturing showroom traffic with the same discipline the dealership already applies to online leads, and walk-in visits that used to just evaporate if they didn't convert on the spot now feed directly into an actual follow-up pipeline.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, an internet sales coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or RouteOne)</span><span>Zapier or Make.com</span><span>Twilio (immediate lead text)</span><span>Slack (escalation alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -978,9 +1141,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Customers given an extended, overnight test drive vehicle automatically receive a return reminder before the loaner is due back at the dealership, instead of the sales consultant relying on the customer to remember an appointment time given verbally a full day earlier. Extended test drives are a powerful sales tool precisely because customers get to live with a vehicle before deciding, and a simple automatic reminder keeps that valuable inventory cycling back on schedule instead of quietly running late and cutting into the next customer's chance to try the same vehicle.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Customers given an extended, overnight test drive vehicle automatically receive a return reminder before the loaner is due back at the dealership, instead of the sales consultant relying on the customer to remember an appointment time given verbally a full day earlier. Extended test drives are a powerful sales tool precisely because customers get to live with a vehicle before deciding, and a simple automatic reminder keeps that valuable inventory cycling back on schedule instead of quietly running late and cutting into the next customer's chance to try the same vehicle.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a sales consultant, who has to track every step by hand across emails, spreadsheets, and sticky notes.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DMS (e.g., CDK Global or RouteOne)</span><span>Zapier or Make.com</span><span>Twilio (immediate lead text)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -989,9 +1155,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A completed website chat conversation with a qualifying lead automatically converts into a scheduled appointment, with a confirmation sent to both the customer and the sales team, instead of a promising chat conversation ending with "great, someone will follow up" and then actually requiring a BDC representative to manually book the appointment afterward. Turning interest into a locked-in appointment before the chat window even closes captures far more of that momentum than a delayed manual follow-up ever could, since online shoppers who have to wait for a callback frequently move on to the next dealership's chat window instead.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A completed website chat conversation with a qualifying lead automatically converts into a scheduled appointment, with a confirmation sent to both the customer and the sales team, instead of a promising chat conversation ending with "great, someone will follow up" and then actually requiring a BDC representative to manually book the appointment afterward. Turning interest into a locked-in appointment before the chat window even closes captures far more of that momentum than a delayed manual follow-up ever could, since online shoppers who have to wait for a callback frequently move on to the next dealership's chat window instead.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a bdc representative spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Website chat platform (e.g., Podium or Gubagoo)</span><span>Zapier or Make.com</span><span>Calendly (test drive scheduling)</span><span>Twilio (immediate lead text)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -1000,9 +1169,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Photos taken of the vehicle at service drop-off are automatically attached to the repair order, creating documentation that protects both the shop and the customer from later disputes over pre-existing damage, instead of the shop foreman relying on a written note that's easy to dispute after the fact. Every vehicle now has a timestamped visual record from the moment it arrived, and disagreements about whether a scratch or dent was already there before service dropped sharply once the photo, not a memory or a note, is what settles the question.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Photos taken of the vehicle at service drop-off are automatically attached to the repair order, creating documentation that protects both the shop and the customer from later disputes over pre-existing damage, instead of the shop foreman relying on a written note that's easy to dispute after the fact. Every vehicle now has a timestamped visual record from the moment it arrived, and disagreements about whether a scratch or dent was already there before service dropped sharply once the photo, not a memory or a note, is what settles the question.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a shop foreman has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Shop management software (e.g., Tekmetric or Shop-Ware)</span><span>Zapier or Make.com</span><span>AutoVitals or Bolt On (digital inspection app)</span></div>
+          </div>
         </div>
       </details>
 

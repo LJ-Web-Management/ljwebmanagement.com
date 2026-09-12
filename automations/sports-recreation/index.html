@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Youth Sports League Director</span><h3>Team Registration, Payment &amp; Schedule Distribution System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When registration opens, the online form captures team information, roster details, division preference, and payment, and the system automatically places the team in the correct division based on age and skill level, sends a registration confirmation with what to expect next, and issues the registration invoice. Once all registrations close, the schedule is built based on team counts and field availability, and each team's coach receives their complete season schedule via email with calendar links for every game. Reminder texts go to coaches and registered contacts 48 hours before each game, and game cancellations due to weather trigger automatic rescheduling notifications to all affected teams simultaneously.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When registration opens, the online form captures team information, roster details, division preference, and payment, and the system automatically places the team in the correct division based on age and skill level, sends a registration confirmation with what to expect next, and issues the registration invoice. Once all registrations close, the schedule is built based on team counts and field availability, and each team's coach receives their complete season schedule via email with calendar links for every game. Reminder texts go to coaches and registered contacts 48 hours before each game, and game cancellations due to weather trigger automatic rescheduling notifications to all affected teams simultaneously.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a youth sports league director has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Sports registration platform (e.g., LeagueApps or TeamSnap)</span><span>Zapier or Make.com</span><span>Stripe (registration payment)</span><span>Twilio (game reminders and cancellation alerts)</span><span>Google Calendar (season schedule with calendar links)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Teams and individual players book facility time through an online portal that shows real-time availability across all courts, fields, and training spaces, and confirmed bookings immediately block the calendar and send a confirmation with access codes or check-in instructions. When a court is vacated, a quick-inspection prompt goes to the on-duty staff via text to confirm the space is clean and equipment is in place before the next booking. Any facility damage or maintenance need reported by a user or staff member automatically creates a work order with priority level, assigned maintenance staff, and an estimated resolution timeline, keeping the facility's condition from degrading silently between scheduled maintenance cycles.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Teams and individual players book facility time through an online portal that shows real-time availability across all courts, fields, and training spaces, and confirmed bookings immediately block the calendar and send a confirmation with access codes or check-in instructions. When a court is vacated, a quick-inspection prompt goes to the on-duty staff via text to confirm the space is clean and equipment is in place before the next booking. Any facility damage or maintenance need reported by a user or staff member automatically creates a work order with priority level, assigned maintenance staff, and an estimated resolution timeline, keeping the facility's condition from degrading silently between scheduled maintenance cycles.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a sports facility manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Facility booking platform (e.g., EZFacility or CourtReserve)</span><span>Zapier or Make.com</span><span>Twilio (booking confirmation and inspection prompt)</span><span>Airtable or CMMS (maintenance work order tracker)</span><span>Jotform (damage report form)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Before each season, this automation sends every athlete and parent a checklist of required eligibility documents (physical form, concussion training completion, emergency contact form, and signed code of conduct) with a secure upload portal and a deadline keyed to the first day of tryouts. The athletic director sees a real-time eligibility dashboard showing which athletes are cleared, which are missing specific documents, and which have not yet initiated their submission. Any athlete attempting to participate with incomplete eligibility documentation triggers an automatic hold notification to the head coach before the athlete steps on the field, protecting the school's compliance and the athlete from participating with an undisclosed health risk.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Before each season, this automation sends every athlete and parent a checklist of required eligibility documents (physical form, concussion training completion, emergency contact form, and signed code of conduct) with a secure upload portal and a deadline keyed to the first day of tryouts. The athletic director sees a real-time eligibility dashboard showing which athletes are cleared, which are missing specific documents, and which have not yet initiated their submission. Any athlete attempting to participate with incomplete eligibility documentation triggers an automatic hold notification to the head coach before the athlete steps on the field, protecting the school's compliance and the athlete from participating with an undisclosed health risk.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, an athletic director is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Athletic management platform (e.g., FinalForms or Dragonfly Athletics) or Jotform</span><span>Zapier or Make.com</span><span>Airtable (eligibility compliance tracker)</span><span>Email or Twilio (parent and athlete document reminders)</span><span>Slack (coach eligibility status alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When program registration opens (swim lessons, adult fitness classes, youth basketball) enrollment is captured through the online portal and capacity is tracked in real time. When a class fills, additional sign-ups are added to the waitlist automatically and the registrant is notified of their waitlist position. The moment a spot opens due to a cancellation or withdrawal, the first person on the waitlist is automatically texted with a 24-hour window to claim the spot before it moves to the next person. The recreation center director sees current enrollment across all programs versus capacity targets in a single dashboard, making it easy to identify underpopulated programs that need a promotional push and overpopulated programs that need a second section.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When program registration opens (swim lessons, adult fitness classes, youth basketball) enrollment is captured through the online portal and capacity is tracked in real time. When a class fills, additional sign-ups are added to the waitlist automatically and the registrant is notified of their waitlist position. The moment a spot opens due to a cancellation or withdrawal, the first person on the waitlist is automatically texted with a 24-hour window to claim the spot before it moves to the next person. The recreation center director sees current enrollment across all programs versus capacity targets in a single dashboard, making it easy to identify underpopulated programs that need a promotional push and overpopulated programs that need a second section.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a recreation center director manually pieces together information from different places, then has to relay it to everyone who needs it. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Recreation management software (e.g., ActiveNet, Rec1, or CivicRec)</span><span>Zapier or Make.com</span><span>Twilio (waitlist spot notification SMS)</span><span>Stripe (enrollment payment)</span><span>Google Sheets (enrollment dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>After each practice or game, the coach submits a brief performance log for each athlete using a simple mobile form (effort, technical execution, areas to address) and the system compiles individual athlete reports that are automatically shared with parents on a weekly basis. Parents see their child's progress over time in a format that is informative without being overwhelming, and the coach builds a documented performance record without spending hours writing individual parent emails. Athletes who miss practices without communication receive an automatic check-in to the parent within 24 hours, and those who hit a milestone (a personal best, a skills certification, a leadership recognition) receive a personalized congratulations message from the coach automatically.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">After each practice or game, the coach submits a brief performance log for each athlete using a simple mobile form (effort, technical execution, areas to address) and the system compiles individual athlete reports that are automatically shared with parents on a weekly basis. Parents see their child's progress over time in a format that is informative without being overwhelming, and the coach builds a documented performance record without spending hours writing individual parent emails. Athletes who miss practices without communication receive an automatic check-in to the parent within 24 hours, and those who hit a milestone (a personal best, a skills certification, a leadership recognition) receive a personalized congratulations message from the coach automatically.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a sports coach has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (coach performance log form)</span><span>Zapier or Make.com</span><span>Mailchimp or email (weekly athlete report to parents)</span><span>Airtable (athlete performance database)</span><span>Twilio (milestone congratulations SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a player registers for a league, this automation automatically collects their info and stated preferences, places them onto a team roster based on the league's own rules for age, skill level, and requested teammates, and sends the player their team assignment, schedule, and coach's contact info. What used to be a manual draft-and-assign process handled over a long evening with spreadsheets now runs itself as registrations come in.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a player registers for a league, this automation automatically collects their info and stated preferences, places them onto a team roster based on the league's own rules for age, skill level, and requested teammates, and sends the player their team assignment, schedule, and coach's contact info. What used to be a manual draft-and-assign process handled over a long evening with spreadsheets now runs itself as registrations come in.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a league coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>LeagueApps or TeamSnap</span><span>Zapier or Make.com</span><span>Google Sheets</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
 
@@ -515,9 +552,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When weather conditions meet the facility's own cancellation criteria, checked automatically against a live forecast, this automation automatically notifies every affected team and family via text before anyone heads to the field. Families stop finding out a game is cancelled only after they've already driven to an empty, rained-out field.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When weather conditions meet the facility's own cancellation criteria, checked automatically against a live forecast, this automation automatically notifies every affected team and family via text before anyone heads to the field. Families stop finding out a game is cancelled only after they've already driven to an empty, rained-out field.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a facility director spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A weather API</span><span>Twilio (SMS)</span><span>Zapier or Make.com</span><span>TeamSnap or LeagueApps</span></div>
+          </div>
         </div>
       </details>
 
@@ -527,9 +567,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As internal staff and outside groups request to book fields, courts, or rooms, this automation automatically checks each request against the master facility calendar and instantly confirms or rejects it based on real-time availability. The double-booking that happens when scheduling is spread across multiple spreadsheets and a shared inbox stops happening entirely.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As internal staff and outside groups request to book fields, courts, or rooms, this automation automatically checks each request against the master facility calendar and instantly confirms or rejects it based on real-time availability. The double-booking that happens when scheduling is spread across multiple spreadsheets and a shared inbox stops happening entirely.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, an operations manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A booking system (Skedda or similar)</span><span>Zapier or Make.com</span><span>Google Calendar</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 
@@ -539,9 +582,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Before a membership auto-renews, this automation automatically notifies the member of the upcoming charge, and if the payment fails, automatically retries it and sends the member a card-update link before access is suspended. Renewals that would otherwise silently lapse the moment a card expires get recovered instead of quietly dropping off the books.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Before a membership auto-renews, this automation automatically notifies the member of the upcoming charge, and if the payment fails, automatically retries it and sends the member a card-update link before access is suspended. Renewals that would otherwise silently lapse the moment a card expires get recovered instead of quietly dropping off the books.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a membership director, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A membership management platform</span><span>Stripe</span><span>Zapier or Make.com</span><span>Twilio or email</span></div>
+          </div>
         </div>
       </details>
 
@@ -551,9 +597,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As game results are entered by staff or referees, this automation automatically updates the tournament bracket in real time and publishes the results to the facility's website and social channels. Someone no longer has to manually update a printed bracket taped to a wall while parents crowd around asking who plays next.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As game results are entered by staff or referees, this automation automatically updates the tournament bracket in real time and publishes the results to the facility's website and social channels. Someone no longer has to manually update a printed bracket taped to a wall while parents crowd around asking who plays next.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a tournament director remembering to check in, update records, and follow up, with no safety net if something slips.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A bracket management tool (Tourney Machine or similar)</span><span>Zapier or Make.com</span><span>A website CMS</span><span>Buffer or social scheduling tool</span></div>
+          </div>
         </div>
       </details>
 

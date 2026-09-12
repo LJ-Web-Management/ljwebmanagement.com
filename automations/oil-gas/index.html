@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Field Operations Manager</span><h3>Permit to Work &amp; Daily Safety Check-In System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Before any hazardous work begins on a well site, this automation issues the digital Permit to Work form to the requesting crew, routes it for approval through the operations manager and safety officer, and logs the approved permit with a timestamp and expiration window. At the start of every shift, field personnel submit a brief digital check-in confirming site conditions, hazard controls in place, and crew headcount, and any crew that hasn't checked in within 30 minutes of shift start triggers an immediate alert. The operations manager knows the status of every active work site without making a single phone call.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Before any hazardous work begins on a well site, this automation issues the digital Permit to Work form to the requesting crew, routes it for approval through the operations manager and safety officer, and logs the approved permit with a timestamp and expiration window. At the start of every shift, field personnel submit a brief digital check-in confirming site conditions, hazard controls in place, and crew headcount, and any crew that hasn't checked in within 30 minutes of shift start triggers an immediate alert. The operations manager knows the status of every active work site without making a single phone call.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a field operations manager, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (PTW form and daily check-in)</span><span>Zapier or Make.com</span><span>Airtable (permit log and approval workflow)</span><span>Twilio (crew check-in SMS and manager alerts)</span><span>Slack (escalation for missed check-ins)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>At the end of each tour, the driller submits a standardized digital daily drilling report (footage drilled, bit hours, mud weight, NPT events, and cost codes) and the system automatically compiles it into a formatted summary, calculates daily and cumulative KPIs against the AFE budget, and emails it to the drilling superintendent, company man, and finance team. Cost overruns against the authorized AFE trigger an immediate flag before the well reaches the point where a budget conversation can no longer change the outcome.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">At the end of each tour, the driller submits a standardized digital daily drilling report (footage drilled, bit hours, mud weight, NPT events, and cost codes) and the system automatically compiles it into a formatted summary, calculates daily and cumulative KPIs against the AFE budget, and emails it to the drilling superintendent, company man, and finance team. Cost overruns against the authorized AFE trigger an immediate flag before the well reaches the point where a budget conversation can no longer change the outcome.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a drilling supervisor remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform or a drilling report app</span><span>Zapier or Make.com</span><span>Google Sheets (KPI calculator and AFE tracker)</span><span>OpenAI API (daily narrative summary)</span><span>Email (stakeholder distribution)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every active lease in the land department's database is tracked against its primary term expiration date, continuous development obligation, and delay rental due dates, with automated reminders sent to the responsible landman at 180, 90, 30, and 7 days before each critical date. Missed delay rental payments can void a lease worth millions, this automation ensures that no payment deadline is discovered after it has already passed. When a lease is approaching expiration without a drilling commitment in the queue, the land manager receives a decision-point alert to evaluate whether to pay, negotiate an extension, or release the acreage.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every active lease in the land department's database is tracked against its primary term expiration date, continuous development obligation, and delay rental due dates, with automated reminders sent to the responsible landman at 180, 90, 30, and 7 days before each critical date. Missed delay rental payments can void a lease worth millions, this automation ensures that no payment deadline is discovered after it has already passed. When a lease is approaching expiration without a drilling commitment in the queue, the land manager receives a decision-point alert to evaluate whether to pay, negotiate an extension, or release the acreage.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a land manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Land management software (e.g., Quorum Land or WolfePak) or Airtable</span><span>Zapier or Make.com</span><span>Google Calendar (critical date entries)</span><span>Email or Slack (escalating deadline alerts)</span><span>QuickBooks (delay rental payment scheduling)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a field employee submits an incident or near miss report via mobile form, the system timestamps it, notifies the HSE manager and site supervisor immediately, assigns a root cause investigation task with a 24-hour deadline, and (based on the incident type and severity) automatically determines whether OSHA or state regulatory notification is required and populates the appropriate form pre-filled with available data. The HSE manager's monthly compliance report is generated automatically from all logged incidents, turning a reactive documentation process into a proactive, always-current compliance record.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a field employee submits an incident or near miss report via mobile form, the system timestamps it, notifies the HSE manager and site supervisor immediately, assigns a root cause investigation task with a 24-hour deadline, and (based on the incident type and severity) automatically determines whether OSHA or state regulatory notification is required and populates the appropriate form pre-filled with available data. The HSE manager's monthly compliance report is generated automatically from all logged incidents, turning a reactive documentation process into a proactive, always-current compliance record.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a hse manager handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (incident and near miss form)</span><span>Zapier or Make.com</span><span>Airtable (incident log and CAPA tracker)</span><span>Twilio (immediate supervisor and HSE manager alerts)</span><span>OpenAI API (root cause investigation draft)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>At the close of each production month, this automation pulls lease operating expenses by cost code and working interest owner from the accounting system, calculates each partner's proportionate share of costs and revenue per the JOA, and generates formatted joint interest billing statements for each non-operator. Partners who are past due on their JIB payment receive automated reminder notices on a set schedule, and the accountant sees a live aging dashboard showing which partners are current and which are in default, replacing the manual Excel process that typically occupies the first two weeks of every month.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">At the close of each production month, this automation pulls lease operating expenses by cost code and working interest owner from the accounting system, calculates each partner's proportionate share of costs and revenue per the JOA, and generates formatted joint interest billing statements for each non-operator. Partners who are past due on their JIB payment receive automated reminder notices on a set schedule, and the accountant sees a live aging dashboard showing which partners are current and which are in default, replacing the manual Excel process that typically occupies the first two weeks of every month.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, an oil & gas accountant has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Oil and gas accounting software (e.g., WolfePak, Enertia, or Quorum)</span><span>Zapier or Make.com</span><span>Google Sheets or Airtable (JIB aging dashboard)</span><span>Email (automated JIB statements and past-due notices)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation continuously compares real-time production data from each well against its expected output curve and automatically alerts the field operator the moment a well's output drops outside the normal range. Equipment issues or downhole problems get caught days earlier than a manual daily check would ever catch them.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation continuously compares real-time production data from each well against its expected output curve and automatically alerts the field operator the moment a well's output drops outside the normal range. Equipment issues or downhole problems get caught days earlier than a manual daily check would ever catch them.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a field operations supervisor has to notice problems after they've already happened, then scramble to fix them manually one at a time. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A SCADA system</span><span>Zapier or Make.com</span><span>Twilio or email</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
 
@@ -515,9 +552,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For every well and facility, this automation tracks state and federal filing deadlines, production reports, environmental filings, permit renewals, and automatically alerts the compliance team with escalating urgency as each deadline approaches. A missed regulatory filing, which can carry real financial and legal consequences, gets caught with weeks of runway instead of days.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For every well and facility, this automation tracks state and federal filing deadlines, production reports, environmental filings, permit renewals, and automatically alerts the compliance team with escalating urgency as each deadline approaches. A missed regulatory filing, which can carry real financial and legal consequences, gets caught with weeks of runway instead of days.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a compliance manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A compliance tracking tool or Google Sheets</span><span>Zapier or Make.com</span><span>Email or Slack</span></div>
+          </div>
         </div>
       </details>
 
@@ -527,9 +567,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Based on regulatory requirements and manufacturer intervals, this automation automatically schedules required inspections for pressure vessels, tanks, and safety equipment, assigns them to the field crew, and flags any inspection that's gone overdue as a compliance risk. Inspections stop slipping quietly past their required date.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Based on regulatory requirements and manufacturer intervals, this automation automatically schedules required inspections for pressure vessels, tanks, and safety equipment, assigns them to the field crew, and flags any inspection that's gone overdue as a compliance risk. Inspections stop slipping quietly past their required date.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a maintenance supervisor spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A CMMS (computerized maintenance management system)</span><span>Zapier or Make.com</span><span>Google Calendar</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 
@@ -539,9 +582,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Based on production volumes and the ownership interests on file, this automation automatically calculates each royalty owner's payment for the period and generates their statement. What's often a manually maintained spreadsheet prone to costly calculation errors becomes an automated, auditable process.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Based on production volumes and the ownership interests on file, this automation automatically calculates each royalty owner's payment for the period and generates their statement. What's often a manually maintained spreadsheet prone to costly calculation errors becomes an automated, auditable process.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a land & royalty administrator, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A land management system (Enverus or P2 Energy Solutions)</span><span>Zapier or Make.com</span><span>Google Sheets</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 
@@ -551,9 +597,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a field incident or near-miss is reported through a mobile form, this automation immediately notifies the safety manager, starts the required documentation, and sets follow-up reminders for any regulatory reporting deadlines tied to the incident. Nothing about the reporting process depends on someone remembering to file the paperwork after a stressful moment in the field.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a field incident or near-miss is reported through a mobile form, this automation immediately notifies the safety manager, starts the required documentation, and sets follow-up reminders for any regulatory reporting deadlines tied to the incident. Nothing about the reporting process depends on someone remembering to file the paperwork after a stressful moment in the field.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a hse coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A mobile safety reporting app (SafetyCulture)</span><span>Zapier or Make.com</span><span>Email or Slack</span></div>
+          </div>
         </div>
       </details>
 

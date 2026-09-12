@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">General Contractor</span><h3>Subcontractor Bid Collection &amp; Comparison System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a new project goes out for bids, this automation sends a formatted bid request to the right subcontractors from a categorized vendor database, tracks who has and hasn't responded, follows up with a reminder at the deadline, and compiles all received bids into a side-by-side comparison sheet for the GC to review. What used to be a week of email chasing becomes an organized, documented bid process that runs mostly on its own.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a new project goes out for bids, this automation sends a formatted bid request to the right subcontractors from a categorized vendor database, tracks who has and hasn't responded, follows up with a reminder at the deadline, and compiles all received bids into a side-by-side comparison sheet for the GC to review. What used to be a week of email chasing becomes an organized, documented bid process that runs mostly on its own.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a general contractor spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Airtable or Google Sheets (vendor database and bid tracker)</span><span>Zapier or Make.com</span><span>Jotform (bid submission form)</span><span>Gmail or Outlook (bid request emails)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Field supervisors submit a simple daily report form from the job site, and the system automatically formats it into a branded progress report, appends any uploaded photos, and emails it to the owner, architect, and project manager, keeping all stakeholders informed without anyone having to manually format a report or remember to send it. At project end, the punch list is built automatically from flagged items in those daily reports, with trades assigned to each item.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Field supervisors submit a simple daily report form from the job site, and the system automatically formats it into a branded progress report, appends any uploaded photos, and emails it to the owner, architect, and project manager, keeping all stakeholders informed without anyone having to manually format a report or remember to send it. At project end, the punch list is built automatically from flagged items in those daily reports, with trades assigned to each item.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a project manager manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform or Typeform (daily report form)</span><span>Zapier or Make.com</span><span>Google Drive (photo storage)</span><span>Airtable (punch list tracker)</span><span>Gmail or Outlook (stakeholder distribution)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When an estimator finalizes a takeoff, the system checks current supplier pricing via API or a regularly updated price sheet, calculates material costs automatically, applies the configured labor and overhead markup, and generates a formatted proposal document ready to send. Any material that has spiked significantly in price since the last update is flagged in red so the estimator knows before a proposal goes out the door at the wrong number.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When an estimator finalizes a takeoff, the system checks current supplier pricing via API or a regularly updated price sheet, calculates material costs automatically, applies the configured labor and overhead markup, and generates a formatted proposal document ready to send. Any material that has spiked significantly in price since the last update is flagged in red so the estimator knows before a proposal goes out the door at the wrong number.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a construction estimator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Estimating software (e.g., Buildxact or ProEst)</span><span>Zapier or Make.com</span><span>Google Sheets or Airtable (current pricing database)</span><span>PandaDoc or Proposify (proposal generation)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As soon as a project hits the permitting stage, this automation generates the correct permit application forms pre-filled with project details, sends reminders to the responsible party to submit them by the target date, and (once permits are in hand) schedules required inspections based on the project timeline. The office manager gets an alert any time an inspection is coming up in the next 72 hours, so nothing gets missed in the middle of a busy job calendar.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As soon as a project hits the permitting stage, this automation generates the correct permit application forms pre-filled with project details, sends reminders to the responsible party to submit them by the target date, and (once permits are in hand) schedules required inspections based on the project timeline. The office manager gets an alert any time an inspection is coming up in the next 72 hours, so nothing gets missed in the middle of a busy job calendar.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a construction office manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Project management software (e.g., Procore or Buildertrend)</span><span>Zapier or Make.com</span><span>Google Calendar (inspection scheduling)</span><span>Jotform or Google Forms (permit checklist)</span><span>Email or Slack (alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a field supervisor submits an incident report from the job site, this automation timestamps and logs it into the OSHA 300 log in the correct format, notifies the safety manager immediately, schedules a 24-hour follow-up for a root cause investigation form, and (if the severity meets the threshold) drafts the OSHA 301 form pre-filled with the available information. Recordkeeping that used to lag by days is now complete within minutes of an incident occurring.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a field supervisor submits an incident report from the job site, this automation timestamps and logs it into the OSHA 300 log in the correct format, notifies the safety manager immediately, schedules a 24-hour follow-up for a root cause investigation form, and (if the severity meets the threshold) drafts the OSHA 301 form pre-filled with the available information. Recordkeeping that used to lag by days is now complete within minutes of an incident occurring.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a safety manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (incident report form)</span><span>Zapier or Make.com</span><span>Google Sheets or Airtable (OSHA 300 log)</span><span>Slack or email (safety manager alerts)</span><span>OpenAI API (root cause draft assistant)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>At each major project milestone (foundation poured, framing complete, drywall up, final walkthrough scheduled) the field team snaps a few photos and marks the milestone complete in the project management system, and the client automatically receives a text with those photos and a short status update within minutes. The message includes the percentage of the project now complete and the next milestone to expect, so clients aren't left guessing about progress between site visits or biweekly calls. The client relations coordinator can see exactly which milestone messages have gone out for every active job from a single dashboard, and callback volume from anxious clients checking on progress drops noticeably once photo updates start arriving on their own.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">At each major project milestone (foundation poured, framing complete, drywall up, final walkthrough scheduled) the field team snaps a few photos and marks the milestone complete in the project management system, and the client automatically receives a text with those photos and a short status update within minutes. The message includes the percentage of the project now complete and the next milestone to expect, so clients aren't left guessing about progress between site visits or biweekly calls. The client relations coordinator can see exactly which milestone messages have gone out for every active job from a single dashboard, and callback volume from anxious clients checking on progress drops noticeably once photo updates start arriving on their own.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a client relations coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>Procore or Buildertrend</span><span>Twilio (milestone photo texts)</span><span>Google Drive (photo storage)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -514,9 +551,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every open permit across every active job is tracked against its expiration date and required inspection windows in one central log, and the compliance coordinator receives an automatic alert 14 days, 7 days, and 2 days before any permit is set to lapse or any inspection deadline is about to pass. If a required inspection hasn't been scheduled within the alert window, the system automatically emails the responsible superintendent and copies the office so the gap doesn't sit unnoticed inside a single person's inbox. Permits that do lapse trigger an immediate escalation to leadership rather than being discovered weeks later when a closing inspector rejects the paperwork, and chasing down expired permits after the fact is replaced by a compliance calendar the whole office can see at a glance.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every open permit across every active job is tracked against its expiration date and required inspection windows in one central log, and the compliance coordinator receives an automatic alert 14 days, 7 days, and 2 days before any permit is set to lapse or any inspection deadline is about to pass. If a required inspection hasn't been scheduled within the alert window, the system automatically emails the responsible superintendent and copies the office so the gap doesn't sit unnoticed inside a single person's inbox. Permits that do lapse trigger an immediate escalation to leadership rather than being discovered weeks later when a closing inspector rejects the paperwork, and chasing down expired permits after the fact is replaced by a compliance calendar the whole office can see at a glance.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a compliance coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>Procore or Buildertrend</span><span>Google Sheets or Airtable (permit tracking log)</span><span>Slack or email (escalation alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -525,9 +565,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once an estimate or bid is sent to a prospective client, this automation starts a follow-up clock, and if the estimate hasn't been signed within 3 days, the prospect automatically receives a friendly check-in email asking if they have any questions. A second follow-up goes out at 7 days with a direct link back to the proposal, and at 14 days the business development manager receives an internal alert to make a personal call before the lead goes cold. Estimates that remain unsigned after 30 days are automatically moved to a nurture sequence rather than falling out of the pipeline entirely, and close rates improve simply because no signed-but-forgotten estimate is ever left to expire in silence.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once an estimate or bid is sent to a prospective client, this automation starts a follow-up clock, and if the estimate hasn't been signed within 3 days, the prospect automatically receives a friendly check-in email asking if they have any questions. A second follow-up goes out at 7 days with a direct link back to the proposal, and at 14 days the business development manager receives an internal alert to make a personal call before the lead goes cold. Estimates that remain unsigned after 30 days are automatically moved to a nurture sequence rather than falling out of the pipeline entirely, and close rates improve simply because no signed-but-forgotten estimate is ever left to expire in silence.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a business development manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>PandaDoc or Proposify</span><span>Twilio or email (follow-up sequence)</span><span>Procore or Buildertrend (pipeline tracking)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -536,9 +579,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As soon as a subcontractor's start date is confirmed for a job, this automation sends them an immediate text confirming the date, the site address, and the scope expected on-site, and logs the confirmation in the project schedule. A reminder text goes out automatically 48 hours before the confirmed date, and a second same-day reminder goes out the morning of, cutting down on the no-shows and last-minute reschedules that throw off an entire week's sequencing. The field superintendent receives a daily digest showing exactly which subs are confirmed for the next three days and which haven't yet responded, so schedule gaps get caught and fixed days before they become a delay instead of hours before an empty job site.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As soon as a subcontractor's start date is confirmed for a job, this automation sends them an immediate text confirming the date, the site address, and the scope expected on-site, and logs the confirmation in the project schedule. A reminder text goes out automatically 48 hours before the confirmed date, and a second same-day reminder goes out the morning of, cutting down on the no-shows and last-minute reschedules that throw off an entire week's sequencing. The field superintendent receives a daily digest showing exactly which subs are confirmed for the next three days and which haven't yet responded, so schedule gaps get caught and fixed days before they become a delay instead of hours before an empty job site.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a field superintendent, who has to track every step by hand across emails, spreadsheets, and sticky notes. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>Procore or Buildertrend</span><span>Twilio (subcontractor SMS confirmations and reminders)</span><span>Google Calendar (schedule sync)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -547,9 +593,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every completed project is logged with its warranty start date, and as each project approaches the end of its one-year (or manufacturer-specified) warranty window, the client automatically receives an outreach email offering a complimentary inspection before coverage runs out. Clients who book the inspection are automatically scheduled, and those who don't respond receive a second reminder 30 days before expiration along with information on paid renewal or maintenance service plans available after the warranty ends. The customer care manager sees a rolling 90-day view of every warranty expiring across the client base, turning what used to be a forgotten obligation into a reliable source of repeat inspection revenue and referral goodwill.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every completed project is logged with its warranty start date, and as each project approaches the end of its one-year (or manufacturer-specified) warranty window, the client automatically receives an outreach email offering a complimentary inspection before coverage runs out. Clients who book the inspection are automatically scheduled, and those who don't respond receive a second reminder 30 days before expiration along with information on paid renewal or maintenance service plans available after the warranty ends. The customer care manager sees a rolling 90-day view of every warranty expiring across the client base, turning what used to be a forgotten obligation into a reliable source of repeat inspection revenue and referral goodwill.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a customer care manager handles each case reactively, after someone has already noticed something went wrong. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>Procore or Buildertrend</span><span>Mailchimp or ActiveCampaign (warranty outreach sequence)</span><span>Google Sheets (warranty expiration tracker)</span></div>
+          </div>
         </div>
       </details>
 

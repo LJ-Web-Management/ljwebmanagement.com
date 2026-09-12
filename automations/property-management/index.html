@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Maintenance Coordinator</span><h3>Maintenance Request Triage &amp; Vendor Dispatch System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A tenant-submitted maintenance request is automatically categorized by urgency and repair type, then routed to the appropriate vendor with the tenant's photos and description attached, instead of the maintenance coordinator manually reading every ticket and deciding who to call. Plumbing goes to the plumber, electrical to the electrician, and anything flagged urgent jumps straight to the front of the queue with an internal alert, cutting the time between a tenant reporting a problem and a vendor actually being dispatched from days down to minutes.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A tenant-submitted maintenance request is automatically categorized by urgency and repair type, then routed to the appropriate vendor with the tenant's photos and description attached, instead of the maintenance coordinator manually reading every ticket and deciding who to call. Plumbing goes to the plumber, electrical to the electrician, and anything flagged urgent jumps straight to the front of the queue with an internal alert, cutting the time between a tenant reporting a problem and a vendor actually being dispatched from days down to minutes.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a maintenance coordinator has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span><span>Jotform (maintenance request form)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Tenants automatically receive a reminder a few days before rent is due, and if payment hasn't posted after the grace period, an automatic late notice with the calculated fee is generated and sent, without the accounts receivable coordinator manually running a delinquency report and drafting notices one at a time. Every notice is logged with a timestamp, giving a clean record if the matter ever needs to escalate further, and on-time payment rates climb noticeably once tenants know a reminder, not silence, is what follows a missed due date.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Tenants automatically receive a reminder a few days before rent is due, and if payment hasn't posted after the grace period, an automatic late notice with the calculated fee is generated and sent, without the accounts receivable coordinator manually running a delinquency report and drafting notices one at a time. Every notice is logged with a timestamp, giving a clean record if the matter ever needs to escalate further, and on-time payment rates climb noticeably once tenants know a reminder, not silence, is what follows a missed due date.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means an accounts receivable coordinator handles each case reactively, after someone has already noticed something went wrong.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Both the tenant and the leasing manager are automatically notified on a fixed schedule, 90, 60, and 30 days out, before a lease expires, so a renewal offer or move-out plan is set in motion with real time to spare instead of the deadline sneaking up on everyone. Tenants who haven't responded to the 60-day notice get a personal follow-up call flagged automatically, and the leasing manager's dashboard shows every unit's renewal status at a glance, replacing a spreadsheet that only ever reflected reality if someone remembered to update it that week.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Both the tenant and the leasing manager are automatically notified on a fixed schedule, 90, 60, and 30 days out, before a lease expires, so a renewal offer or move-out plan is set in motion with real time to spare instead of the deadline sneaking up on everyone. Tenants who haven't responded to the 60-day notice get a personal follow-up call flagged automatically, and the leasing manager's dashboard shows every unit's renewal status at a glance, replacing a spreadsheet that only ever reflected reality if someone remembered to update it that week.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a leasing manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Based on the move-in or move-out date already on file, tenants automatically receive a digital checklist covering exactly what's expected of them, along with a direct link to schedule the required inspection, instead of the move coordinator emailing each tenant individually and hoping they read it. Inspections that aren't scheduled within a set window automatically trigger a reminder, and both move-ins and move-outs run through the same consistent, documented process every time, which matters most when a deposit dispute later depends on exactly what condition a unit was in on a specific day.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Based on the move-in or move-out date already on file, tenants automatically receive a digital checklist covering exactly what's expected of them, along with a direct link to schedule the required inspection, instead of the move coordinator emailing each tenant individually and hoping they read it. Inspections that aren't scheduled within a set window automatically trigger a reminder, and both move-ins and move-outs run through the same consistent, documented process every time, which matters most when a deposit dispute later depends on exactly what condition a unit was in on a specific day.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a move coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Calendly (inspection scheduling)</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a unit is marked available in the property management platform, its listing, photos, price, and availability date included, is automatically pushed out to Zillow, Apartments.com, and every other connected rental portal simultaneously, instead of the marketing coordinator logging into each site one by one to post the same listing manually. Listings that go live across every channel within minutes of a unit turning vacant get more views and more qualified inquiries in the first critical days than listings posted piecemeal over a week, directly shrinking the number of days a unit sits empty and earning nothing.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a unit is marked available in the property management platform, its listing, photos, price, and availability date included, is automatically pushed out to Zillow, Apartments.com, and every other connected rental portal simultaneously, instead of the marketing coordinator logging into each site one by one to post the same listing manually. Listings that go live across every channel within minutes of a unit turning vacant get more views and more qualified inquiries in the first critical days than listings posted piecemeal over a week, directly shrinking the number of days a unit sits empty and earning nothing.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a marketing coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Zillow Rental Manager or listing syndication tool</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Prospective tenants automatically receive an update at each stage of the application process, received, screening in progress, approved, or denied, without the leasing agent having to personally call or email every applicant to relay the same news. Applicants left wondering what's happening tend to keep looking elsewhere, so closing that communication gap measurably improves the rate of approved applicants actually signing the lease instead of taking a different unit that responded faster, and the leasing agent's day is freed from a steady stream of "any update" calls.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Prospective tenants automatically receive an update at each stage of the application process, received, screening in progress, approved, or denied, without the leasing agent having to personally call or email every applicant to relay the same news. Applicants left wondering what's happening tend to keep looking elsewhere, so closing that communication gap measurably improves the rate of approved applicants actually signing the lease instead of taking a different unit that responded faster, and the leasing agent's day is freed from a steady stream of "any update" calls.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a leasing agent is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -514,9 +551,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A vendor assigned to a work order automatically receives the full job details by text and is asked to confirm availability, with an automatic follow-up if they haven't responded within a set number of hours, instead of the vendor relations coordinator calling around to confirm every single dispatched job by phone. Vendors who don't confirm within the follow-up window are automatically flagged so the job can be reassigned before a tenant is left waiting on a no-show, and a documented confirmation trail exists for every job the moment it's assigned rather than only existing in someone's memory of a phone call.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A vendor assigned to a work order automatically receives the full job details by text and is asked to confirm availability, with an automatic follow-up if they haven't responded within a set number of hours, instead of the vendor relations coordinator calling around to confirm every single dispatched job by phone. Vendors who don't confirm within the follow-up window are automatically flagged so the job can be reassigned before a tenant is left waiting on a no-show, and a documented confirmation trail exists for every job the moment it's assigned rather than only existing in someone's memory of a phone call.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a vendor relations coordinator has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -525,9 +565,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Tenants whose renters insurance policy is expiring soon or missing entirely from their file are automatically flagged and sent a reminder to upload updated proof of coverage, closing a liability gap that a compliance coordinator would otherwise only catch during an occasional manual file audit. Tenants who don't respond to the first reminder automatically receive a second, firmer notice referencing the lease requirement, and the property's overall coverage compliance rate becomes something management can see on a dashboard in real time instead of discovering a lapse only after an incident makes it urgent.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Tenants whose renters insurance policy is expiring soon or missing entirely from their file are automatically flagged and sent a reminder to upload updated proof of coverage, closing a liability gap that a compliance coordinator would otherwise only catch during an occasional manual file audit. Tenants who don't respond to the first reminder automatically receive a second, firmer notice referencing the lease requirement, and the property's overall coverage compliance rate becomes something management can see on a dashboard in real time instead of discovering a lapse only after an incident makes it urgent.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a compliance coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -536,9 +579,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Required periodic unit inspections are automatically scheduled and reminders sent based on the local compliance calendar, so inspections don't get missed or crammed in at the last minute when a compliance coordinator suddenly realizes a deadline is close. Tenants automatically receive advance notice of the scheduled inspection date as required by law, and any unit that falls behind its inspection cycle is flagged before it becomes a compliance violation, replacing a paper calendar or a memory-dependent tracking system with one that never forgets a date.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Required periodic unit inspections are automatically scheduled and reminders sent based on the local compliance calendar, so inspections don't get missed or crammed in at the last minute when a compliance coordinator suddenly realizes a deadline is close. Tenants automatically receive advance notice of the scheduled inspection date as required by law, and any unit that falls behind its inspection cycle is flagged before it becomes a compliance violation, replacing a paper calendar or a memory-dependent tracking system with one that never forgets a date.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a compliance coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Calendly (inspection scheduling)</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -547,9 +593,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>After a maintenance ticket is closed, the tenant automatically receives a short satisfaction survey asking how the repair went, and any low score is automatically flagged and routed to the resident services manager for a personal follow-up rather than sitting quietly in a report nobody reviews until the next resident satisfaction survey rolls around months later. Catching a bad maintenance experience within a day of it happening, while there's still time to make it right, consistently prevents small frustrations from compounding into a lease that doesn't get renewed.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">After a maintenance ticket is closed, the tenant automatically receives a short satisfaction survey asking how the repair went, and any low score is automatically flagged and routed to the resident services manager for a personal follow-up rather than sitting quietly in a report nobody reviews until the next resident satisfaction survey rolls around months later. Catching a bad maintenance experience within a day of it happening, while there's still time to make it right, consistently prevents small frustrations from compounding into a lease that doesn't get renewed.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a resident services manager remembering to check in, update records, and follow up, with no safety net if something slips.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Jotform (satisfaction survey)</span><span>Slack (escalation alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -558,9 +607,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>An online tour request automatically checks the unit's live availability calendar and books a confirmed showing time on the spot, sending a confirmation with directions to both the prospect and the leasing agent, instead of a round of back-and-forth texts trying to find a time that actually works for both sides. Tour no-shows automatically trigger a follow-up text offering to reschedule rather than the lead simply going cold, and the leasing agent's calendar fills up with confirmed, motivated prospects instead of tentative slots that half the time never get confirmed at all.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">An online tour request automatically checks the unit's live availability calendar and books a confirmed showing time on the spot, sending a confirmation with directions to both the prospect and the leasing agent, instead of a round of back-and-forth texts trying to find a time that actually works for both sides. Tour no-shows automatically trigger a follow-up text offering to reschedule rather than the lead simply going cold, and the leasing agent's calendar fills up with confirmed, motivated prospects instead of tentative slots that half the time never get confirmed at all.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a leasing agent, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Calendly (inspection scheduling)</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -569,9 +621,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Tenants automatically receive a reminder ahead of their move-in or move-out date to set up or transfer their utilities, reducing the service gaps and confused calls to the office that happen when a new resident arrives to a unit with no power on, or a departing tenant leaves utilities running in their name past move-out. The reminder includes the local utility providers' contact information pre-filled for that specific property, turning what used to be a source of first-week frustration for new residents into a smooth, uneventful handoff.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Tenants automatically receive a reminder ahead of their move-in or move-out date to set up or transfer their utilities, reducing the service gaps and confused calls to the office that happen when a new resident arrives to a unit with no power on, or a departing tenant leaves utilities running in their name past move-out. The reminder includes the local utility providers' contact information pre-filled for that specific property, turning what used to be a source of first-week frustration for new residents into a smooth, uneventful handoff.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a move coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -580,9 +635,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Overdue accounts automatically move through a defined escalation sequence, an initial reminder, a formal late notice, and finally a referral to legal, based on exactly how many days past due the balance is, instead of the accounts receivable coordinator manually deciding when each account is "bad enough" to escalate. Every step is timestamped and logged, giving a clean, defensible paper trail if a matter ever proceeds to eviction, and consistent, predictable escalation timing means delinquent tenants can no longer count on inconsistent enforcement to buy extra time.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Overdue accounts automatically move through a defined escalation sequence, an initial reminder, a formal late notice, and finally a referral to legal, based on exactly how many days past due the balance is, instead of the accounts receivable coordinator manually deciding when each account is "bad enough" to escalate. Every step is timestamped and logged, giving a clean, defensible paper trail if a matter ever proceeds to eviction, and consistent, predictable escalation timing means delinquent tenants can no longer count on inconsistent enforcement to buy extra time.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on an accounts receivable coordinator remembering to check in, update records, and follow up, with no safety net if something slips. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -591,9 +649,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Monthly financial statements for each property owner are automatically compiled from rent collected and expenses paid, then delivered on a consistent schedule, instead of the portfolio accountant building each report by hand from raw transaction data every single month. Owners with questions can see a clear, standardized statement rather than waiting on a manager's availability to explain a spreadsheet, and closing the books each month, which used to take days across a large portfolio, now happens automatically as transactions are recorded throughout the month.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Monthly financial statements for each property owner are automatically compiled from rent collected and expenses paid, then delivered on a consistent schedule, instead of the portfolio accountant building each report by hand from raw transaction data every single month. Owners with questions can see a clear, standardized statement rather than waiting on a manager's availability to explain a spreadsheet, and closing the books each month, which used to take days across a large portfolio, now happens automatically as transactions are recorded throughout the month.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a portfolio accountant has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>QuickBooks Online</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -602,9 +663,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a resident books a shared amenity, a clubhouse, a pool area, a rooftop deck, the reservation is automatically confirmed and added to a shared calendar visible to management, preventing the double-bookings that happen when two residents both think they've claimed the same Saturday afternoon. The amenities coordinator no longer has to manually cross-check a paper sign-up sheet against a separate booking request inbox, and residents get instant confirmation instead of waiting to hear back about whether their requested date actually worked.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a resident books a shared amenity, a clubhouse, a pool area, a rooftop deck, the reservation is automatically confirmed and added to a shared calendar visible to management, preventing the double-bookings that happen when two residents both think they've claimed the same Saturday afternoon. The amenities coordinator no longer has to manually cross-check a paper sign-up sheet against a separate booking request inbox, and residents get instant confirmation instead of waiting to hear back about whether their requested date actually worked.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, an amenities coordinator manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Calendly (inspection scheduling)</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -613,9 +677,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Tenants identified as having an unregistered pet, whether flagged during an inspection or reported by a neighbor, are automatically sent a reminder to complete pet registration and pay any applicable pet fees, closing a revenue and liability gap that a compliance coordinator would otherwise only catch by chance. Tenants who don't respond within a set window are automatically flagged for a formal notice referencing the lease terms, and unregistered pets that used to slip through unnoticed for months become a routine, low-friction paperwork item instead.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Tenants identified as having an unregistered pet, whether flagged during an inspection or reported by a neighbor, are automatically sent a reminder to complete pet registration and pay any applicable pet fees, closing a revenue and liability gap that a compliance coordinator would otherwise only catch by chance. Tenants who don't respond within a set window are automatically flagged for a formal notice referencing the lease terms, and unregistered pets that used to slip through unnoticed for months become a routine, low-friction paperwork item instead.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a compliance coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>Jotform (pet registration form)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -624,9 +691,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Maintenance requests submitted after normal business hours and marked urgent, a burst pipe, no heat in winter, are automatically routed directly to the on-call emergency vendor instead of sitting in a queue until the office opens the next morning. The emergency dispatch coordinator gets a same-time notification confirming the routing happened correctly, and tenants facing an actual emergency get a real response within the hour rather than a voicemail box, meaningfully reducing both property damage from delayed repairs and the liability exposure that comes with an ignored emergency request.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Maintenance requests submitted after normal business hours and marked urgent, a burst pipe, no heat in winter, are automatically routed directly to the on-call emergency vendor instead of sitting in a queue until the office opens the next morning. The emergency dispatch coordinator gets a same-time notification confirming the routing happened correctly, and tenants facing an actual emergency get a real response within the hour rather than a voicemail box, meaningfully reducing both property damage from delayed repairs and the liability exposure that comes with an ignored emergency request.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, an emergency dispatch coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -635,9 +705,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Property-wide notices, a scheduled water shutoff, elevator maintenance, a parking lot closure, are automatically sent to every affected unit at once by text and email, instead of the community manager posting a paper flyer in the lobby that half the building never sees. Residents can confirm receipt with a single tap, giving management a clear record of who was actually notified if a dispute ever comes up, and complaints about "nobody told me" drop close to zero once every notice reaches every resident's phone the moment it's sent rather than depending on someone walking past a bulletin board.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Property-wide notices, a scheduled water shutoff, elevator maintenance, a parking lot closure, are automatically sent to every affected unit at once by text and email, instead of the community manager posting a paper flyer in the lobby that half the building never sees. Residents can confirm receipt with a single tap, giving management a clear record of who was actually notified if a dispute ever comes up, and complaints about "nobody told me" drop close to zero once every notice reaches every resident's phone the moment it's sent rather than depending on someone walking past a bulletin board.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a community manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -646,9 +719,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>At move-out, the automation calculates deposit deductions directly from the move-out inspection data already on file and generates the itemized return letter within the legally required timeline, instead of the move coordinator manually itemizing damages against a paper move-in checklist that may or may not still be on file. Every deduction is backed by a specific inspection note or photo, giving tenants a transparent, defensible breakdown rather than a vague lump-sum deduction, and disputes over deposit returns drop significantly once the calculation itself is standardized and documented.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">At move-out, the automation calculates deposit deductions directly from the move-out inspection data already on file and generates the itemized return letter within the legally required timeline, instead of the move coordinator manually itemizing damages against a paper move-in checklist that may or may not still be on file. Every deduction is backed by a specific inspection note or photo, giving tenants a transparent, defensible breakdown rather than a vague lump-sum deduction, and disputes over deposit returns drop significantly once the calculation itself is standardized and documented.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a move coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>Google Sheets or Airtable (deduction tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -657,9 +733,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As soon as a lease is signed, the new resident automatically receives a digital welcome packet covering move-in logistics, community rules, and key contact information, so a resident services manager doesn't have to personally walk every new signee through the same set of basics on move-in day. The packet includes direct links to set up the resident portal, register a vehicle, and submit a maintenance request, reducing the wave of basic "how do I" questions that otherwise floods the front office during the first week of every new tenancy.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As soon as a lease is signed, the new resident automatically receives a digital welcome packet covering move-in logistics, community rules, and key contact information, so a resident services manager doesn't have to personally walk every new signee through the same set of basics on move-in day. The packet includes direct links to set up the resident portal, register a vehicle, and submit a maintenance request, reducing the wave of basic "how do I" questions that otherwise floods the front office during the first week of every new tenancy.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a resident services manager remembering to check in, update records, and follow up, with no safety net if something slips.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -668,9 +747,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation continuously analyzes booking data across shared amenities and flags when something is consistently underused or overbooked, giving the portfolio analyst hard data to guide decisions instead of management going purely on impressions of which amenities "seem" popular. An overbooked amenity might justify adding a second reservation slot or extended hours, while a chronically empty one might not be worth the maintenance cost at renewal, and both calls get made with actual usage numbers behind them rather than a guess based on who happened to complain loudest at the last resident meeting.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation continuously analyzes booking data across shared amenities and flags when something is consistently underused or overbooked, giving the portfolio analyst hard data to guide decisions instead of management going purely on impressions of which amenities "seem" popular. An overbooked amenity might justify adding a second reservation slot or extended hours, while a chronically empty one might not be worth the maintenance cost at renewal, and both calls get made with actual usage numbers behind them rather than a guess based on who happened to complain loudest at the last resident meeting.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a portfolio analyst, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Google Sheets or Airtable (usage dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -679,9 +761,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As a lease renewal approaches, the automation automatically generates a personalized renewal offer based on the tenant's actual payment history and length of tenancy, rewarding a long-tenured, always-on-time resident with a smaller increase than a flat rate applied to everyone regardless of track record. The leasing manager can see exactly why each offer was calculated the way it was, and tenants who receive an offer that visibly reflects their good history renew at a noticeably higher rate than tenants handed the same generic increase as every other unit in the building.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As a lease renewal approaches, the automation automatically generates a personalized renewal offer based on the tenant's actual payment history and length of tenancy, rewarding a long-tenured, always-on-time resident with a smaller increase than a flat rate applied to everyone regardless of track record. The leasing manager can see exactly why each offer was calculated the way it was, and tenants who receive an offer that visibly reflects their good history renew at a noticeably higher rate than tenants handed the same generic increase as every other unit in the building.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a leasing manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>Google Sheets or Airtable (deduction tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -690,9 +775,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>After each showing of a vacant unit, the prospect automatically receives a quick feedback request asking what they liked and what gave them pause, helping the leasing agent understand real objections, price, condition, layout, instead of a unit simply staying unrented for weeks with no clear explanation why. Feedback is aggregated automatically across every showing for a unit, surfacing a pattern, three prospects in a row mentioning the same outdated kitchen, that management can act on directly instead of continuing to run the same unsuccessful showings on repeat.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">After each showing of a vacant unit, the prospect automatically receives a quick feedback request asking what they liked and what gave them pause, helping the leasing agent understand real objections, price, condition, layout, instead of a unit simply staying unrented for weeks with no clear explanation why. Feedback is aggregated automatically across every showing for a unit, surfacing a pattern, three prospects in a row mentioning the same outdated kitchen, that management can act on directly instead of continuing to run the same unsuccessful showings on repeat.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a leasing agent remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Jotform (feedback form)</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -701,9 +789,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a smart water sensor detects usage patterns consistent with a leak, the automation immediately escalates an alert to the maintenance coordinator and the on-call vendor, often catching a slow leak behind a wall or under a sink well before it turns into major water damage a tenant would only notice once the ceiling below is already stained. Response happens within minutes of the sensor triggering rather than whenever a tenant happens to notice a puddle, and the difference between catching a leak same-day versus a week later is routinely the difference between a small repair bill and a full unit remediation.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a smart water sensor detects usage patterns consistent with a leak, the automation immediately escalates an alert to the maintenance coordinator and the on-call vendor, often catching a slow leak behind a wall or under a sink well before it turns into major water damage a tenant would only notice once the ceiling below is already stained. Response happens within minutes of the sensor triggering rather than whenever a tenant happens to notice a puddle, and the difference between catching a leak same-day versus a week later is routinely the difference between a small repair bill and a full unit remediation.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a maintenance coordinator has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Smart water sensor (e.g., Flo by Moen or Phyn)</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span><span>Property management platform (e.g., AppFolio or Buildium)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -712,9 +803,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a current resident refers a new tenant who ends up signing a lease, the referral is automatically tracked from the moment the new applicant names their referrer, and the promised reward, a rent credit or gift card, is issued automatically once the lease is signed, without the marketing coordinator needing to remember to follow up on a referral made weeks earlier. Residents who get their reward promptly and without having to chase it down are far more likely to refer again, turning word of mouth into a genuinely reliable, low-cost leasing channel instead of an informal perk that quietly stops working once follow-through gets inconsistent.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a current resident refers a new tenant who ends up signing a lease, the referral is automatically tracked from the moment the new applicant names their referrer, and the promised reward, a rent credit or gift card, is issued automatically once the lease is signed, without the marketing coordinator needing to remember to follow up on a referral made weeks earlier. Residents who get their reward promptly and without having to chase it down are far more likely to refer again, turning word of mouth into a genuinely reliable, low-cost leasing channel instead of an informal perk that quietly stops working once follow-through gets inconsistent.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a marketing coordinator remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -723,9 +817,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>State-compliant rent increase notices are automatically generated and sent to tenants with the legally required advance notice period built directly into the timing, so a compliance coordinator never has to manually cross-reference which state's specific notice period applies to which property in a multi-state portfolio. Every notice is generated from an approved template mapped to the correct jurisdiction, removing the risk of an increase notice being challenged or invalidated purely on a procedural technicality, a costly and entirely avoidable mistake that used to happen more often than management liked to admit.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">State-compliant rent increase notices are automatically generated and sent to tenants with the legally required advance notice period built directly into the timing, so a compliance coordinator never has to manually cross-reference which state's specific notice period applies to which property in a multi-state portfolio. Every notice is generated from an approved template mapped to the correct jurisdiction, removing the risk of an increase notice being challenged or invalidated purely on a procedural technicality, a costly and entirely avoidable mistake that used to happen more often than management liked to admit.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a compliance coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>Google Sheets or Airtable (deduction tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -734,9 +831,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Vendors' certificates of insurance on file are automatically tracked for their expiration dates, and any vendor whose coverage has lapsed is automatically flagged or outright blocked from being assigned a new work order until an updated certificate is uploaded, closing a liability gap a vendor relations coordinator would otherwise only catch by chance. Vendors get an automatic reminder as their coverage nears expiration, keeping most renewals current before they ever become a scheduling problem, and the portfolio never has an uninsured vendor working on a property without someone actually knowing it.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Vendors' certificates of insurance on file are automatically tracked for their expiration dates, and any vendor whose coverage has lapsed is automatically flagged or outright blocked from being assigned a new work order until an updated certificate is uploaded, closing a liability gap a vendor relations coordinator would otherwise only catch by chance. Vendors get an automatic reminder as their coverage nears expiration, keeping most renewals current before they ever become a scheduling problem, and the portfolio never has an uninsured vendor working on a property without someone actually knowing it.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a vendor relations coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>Google Sheets or Airtable (usage dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -745,9 +845,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a package arrives at the front desk or a smart locker, the resident automatically receives a notification letting them know it's ready for pickup, instead of packages piling up because nobody told the resident it had even arrived. The front desk coordinator no longer fields a stream of "has my package come yet" calls, and packages that used to sit for days cluttering the lobby, sometimes going missing in the pile, get claimed within hours once residents know the moment something's waiting for them.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a package arrives at the front desk or a smart locker, the resident automatically receives a notification letting them know it's ready for pickup, instead of packages piling up because nobody told the resident it had even arrived. The front desk coordinator no longer fields a stream of "has my package come yet" calls, and packages that used to sit for days cluttering the lobby, sometimes going missing in the pile, get claimed within hours once residents know the moment something's waiting for them.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a front desk coordinator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Smart locker system (e.g., Luxer One or Package Concierge)</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -756,9 +859,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once an overdue account reaches the final stage of the collections process, the automation automatically compiles the required documentation packet needed for legal filing, payment history, prior notices sent, lease terms, instead of the accounts receivable coordinator manually assembling the same packet from scratch under time pressure every time a case reaches this point. Every document is already timestamped and organized from the earlier stages of the escalation workflow, so what used to take hours of digging through records now takes minutes, letting the legal process move forward without an avoidable administrative delay.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once an overdue account reaches the final stage of the collections process, the automation automatically compiles the required documentation packet needed for legal filing, payment history, prior notices sent, lease terms, instead of the accounts receivable coordinator manually assembling the same packet from scratch under time pressure every time a case reaches this point. Every document is already timestamped and organized from the earlier stages of the escalation workflow, so what used to take hours of digging through records now takes minutes, letting the legal process move forward without an avoidable administrative delay.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, an accounts receivable coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Google Sheets or Airtable (deduction tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -767,9 +873,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Management automatically receives an alert whenever portfolio-wide occupancy drops below a defined target threshold, prompting an immediate review of vacant units and marketing efforts rather than a slipping occupancy rate only becoming visible during the next scheduled monthly report. The portfolio manager can drill into which specific properties are dragging the average down, letting leasing resources get redirected to the properties that need it most instead of every property receiving the same generic marketing push regardless of how it's actually performing.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Management automatically receives an alert whenever portfolio-wide occupancy drops below a defined target threshold, prompting an immediate review of vacant units and marketing efforts rather than a slipping occupancy rate only becoming visible during the next scheduled monthly report. The portfolio manager can drill into which specific properties are dragging the average down, letting leasing resources get redirected to the properties that need it most instead of every property receiving the same generic marketing push regardless of how it's actually performing.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a portfolio manager handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Google Sheets or Airtable (usage dashboard)</span><span>Slack (escalation alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -778,9 +887,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Recurring common-area tasks such as landscaping and pool service are automatically scheduled on their expected cadence, and vendor completion is automatically tracked and confirmed, instead of the grounds and facilities manager relying on a vendor's word that a service actually happened. Any scheduled service that isn't confirmed completed within the expected window is automatically flagged for a follow-up call, closing the gap between what's on the service contract and what's actually happening on the property, a gap that used to only surface when a resident complained about overgrown grass or a green pool.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Recurring common-area tasks such as landscaping and pool service are automatically scheduled on their expected cadence, and vendor completion is automatically tracked and confirmed, instead of the grounds and facilities manager relying on a vendor's word that a service actually happened. Any scheduled service that isn't confirmed completed within the expected window is automatically flagged for a follow-up call, closing the gap between what's on the service contract and what's actually happening on the property, a gap that used to only surface when a resident complained about overgrown grass or a green pool.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a grounds & facilities manager manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -789,9 +901,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>New residents who haven't yet activated their online resident portal account automatically receive setup reminders with a direct activation link, increasing adoption of self-service tools like online rent payment and maintenance requests instead of a resident services manager continuing to field paper checks and phone-in maintenance calls indefinitely. Higher portal adoption directly reduces manual work across the front office, since every resident who pays online and submits requests digitally is one fewer person calling in for something the portal already handles.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">New residents who haven't yet activated their online resident portal account automatically receive setup reminders with a direct activation link, increasing adoption of self-service tools like online rent payment and maintenance requests instead of a resident services manager continuing to field paper checks and phone-in maintenance calls indefinitely. Higher portal adoption directly reduces manual work across the front office, since every resident who pays online and submits requests digitally is one fewer person calling in for something the portal already handles.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a resident services manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -800,9 +915,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Owners with multiple properties automatically receive one consolidated performance report covering their entire portfolio instead of a separate report per property that they have to manually add together to see the full picture. The portfolio accountant builds the reporting logic once, and it scales automatically as an owner adds properties, saving hours of manual report assembly every single reporting cycle, and owners consistently rate this single most valuable change when asked what improved about how the management company communicates with them.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Owners with multiple properties automatically receive one consolidated performance report covering their entire portfolio instead of a separate report per property that they have to manually add together to see the full picture. The portfolio accountant builds the reporting logic once, and it scales automatically as an owner adds properties, saving hours of manual report assembly every single reporting cycle, and owners consistently rate this single most valuable change when asked what improved about how the management company communicates with them.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a portfolio accountant spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>QuickBooks Online</span><span>Google Sheets or Airtable (usage dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -811,9 +929,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation automatically tracks and totals turnover costs, cleaning, repairs, marketing, per unit, and flags any unit with unusually high turnover expense for review, giving the portfolio analyst hard numbers instead of a vague sense that a particular unit "always seems to cost more" between tenants. A unit that consistently runs above-average turnover cost often points to a deeper issue, poor tenant screening, an aging unit needing a bigger investment, that only becomes visible once the cost is actually tracked and compared unit by unit rather than absorbed anonymously into the portfolio's overall expense line.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation automatically tracks and totals turnover costs, cleaning, repairs, marketing, per unit, and flags any unit with unusually high turnover expense for review, giving the portfolio analyst hard numbers instead of a vague sense that a particular unit "always seems to cost more" between tenants. A unit that consistently runs above-average turnover cost often points to a deeper issue, poor tenant screening, an aging unit needing a bigger investment, that only becomes visible once the cost is actually tracked and compared unit by unit rather than absorbed anonymously into the portfolio's overall expense line.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a portfolio analyst handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>QuickBooks Online</span><span>Google Sheets or Airtable (usage dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -822,9 +943,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A documented lease violation automatically generates the legally compliant notice and creates the tracking record required before any further escalation can happen, instead of a compliance coordinator drafting a violation notice from scratch each time and hoping it holds up if the matter is ever contested. Every notice is pulled from an approved template matched to the specific violation type and jurisdiction, and the automatic tracking record means a pattern of repeated violations by the same tenant is visible immediately rather than requiring someone to remember and manually connect separate incidents months apart.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A documented lease violation automatically generates the legally compliant notice and creates the tracking record required before any further escalation can happen, instead of a compliance coordinator drafting a violation notice from scratch each time and hoping it holds up if the matter is ever contested. Every notice is pulled from an approved template matched to the specific violation type and jurisdiction, and the automatic tracking record means a pattern of repeated violations by the same tenant is visible immediately rather than requiring someone to remember and manually connect separate incidents months apart.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a compliance coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>Google Sheets or Airtable (deduction tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -833,9 +957,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a move-out date is confirmed, the automation automatically schedules the cleaning and turn vendor for that unit well ahead of time, keeping the turnaround timeline on track instead of the move coordinator scrambling to line up a vendor only after the unit is already sitting empty and losing rent. The vendor receives the confirmed date automatically with the unit's specific turn requirements attached, and units consistently turn faster and get back on the market sooner once vendor scheduling happens the moment a move-out is confirmed rather than days afterward.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a move-out date is confirmed, the automation automatically schedules the cleaning and turn vendor for that unit well ahead of time, keeping the turnaround timeline on track instead of the move coordinator scrambling to line up a vendor only after the unit is already sitting empty and losing rent. The vendor receives the confirmed date automatically with the unit's specific turn requirements attached, and units consistently turn faster and get back on the market sooner once vendor scheduling happens the moment a move-out is confirmed rather than days afterward.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a move coordinator manually pieces together information from different places, then has to relay it to everyone who needs it.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -844,9 +971,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The automation tracks satisfaction survey results over time at the property level and automatically alerts the resident services manager the moment scores start trending downward, catching a property-wide problem, a maintenance backlog, a difficult new policy, while there's still time to address it instead of only discovering it during the next lease renewal season when residents are already choosing not to stay. A single bad survey response is noise, but a sustained downward trend is signal, and this automation is what actually separates the two instead of leaving management to guess which is which.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The automation tracks satisfaction survey results over time at the property level and automatically alerts the resident services manager the moment scores start trending downward, catching a property-wide problem, a maintenance backlog, a difficult new policy, while there's still time to address it instead of only discovering it during the next lease renewal season when residents are already choosing not to stay. A single bad survey response is noise, but a sustained downward trend is signal, and this automation is what actually separates the two instead of leaving management to guess which is which.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a resident services manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Jotform (satisfaction survey)</span><span>Google Sheets or Airtable (usage dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -855,9 +985,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Unit owners automatically receive a reminder ahead of HOA or condo assessment due dates, tracked and sent separately from any regular monthly rent reminder so the two obligations never get confused by an owner managing multiple payment types. The association manager no longer has to manually cross-reference a separate assessment schedule against each owner's file, and late assessment payments, which can affect an entire association's budget and reserve funding, drop meaningfully once every owner gets a clear, timely reminder instead of relying on memory alone.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Unit owners automatically receive a reminder ahead of HOA or condo assessment due dates, tracked and sent separately from any regular monthly rent reminder so the two obligations never get confused by an owner managing multiple payment types. The association manager no longer has to manually cross-reference a separate assessment schedule against each owner's file, and late assessment payments, which can affect an entire association's budget and reserve funding, drop meaningfully once every owner gets a clear, timely reminder instead of relying on memory alone.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, an association manager manually pieces together information from different places, then has to relay it to everyone who needs it. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>Twilio (SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -866,9 +999,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a unit is marked as upcoming-vacant, the automation automatically requests that updated photos or a video walkthrough be scheduled before the unit needs to go live on listing sites, instead of the marketing coordinator discovering on posting day that the only photos on file are years old and no longer represent the unit's actual condition. The request is timed to land with enough lead time for photography to actually happen before the vacancy date, meaning the listing goes live with accurate, current media from day one rather than outdated photos that quietly cost the property qualified inquiries.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a unit is marked as upcoming-vacant, the automation automatically requests that updated photos or a video walkthrough be scheduled before the unit needs to go live on listing sites, instead of the marketing coordinator discovering on posting day that the only photos on file are years old and no longer represent the unit's actual condition. The request is timed to land with enough lead time for photography to actually happen before the vacancy date, meaning the listing goes live with accurate, current media from day one rather than outdated photos that quietly cost the property qualified inquiries.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a marketing coordinator has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Slack (escalation alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -877,9 +1013,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For companies with maintenance staff serving multiple properties, the automation balances and routes work orders based on each technician's current location and workload, instead of the maintenance coordinator dispatching by gut feel and accidentally sending the same tech across town twice in one afternoon while another sits idle nearby. Jobs get assigned to whichever available technician can actually reach the unit fastest, and average response time across the whole portfolio improves noticeably once dispatch decisions are based on real-time location and workload data instead of a fixed rotation that ignores where everyone actually is.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For companies with maintenance staff serving multiple properties, the automation balances and routes work orders based on each technician's current location and workload, instead of the maintenance coordinator dispatching by gut feel and accidentally sending the same tech across town twice in one afternoon while another sits idle nearby. Jobs get assigned to whichever available technician can actually reach the unit fastest, and average response time across the whole portfolio improves noticeably once dispatch decisions are based on real-time location and workload data instead of a fixed rotation that ignores where everyone actually is.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a maintenance coordinator has to notice problems after they've already happened, then scramble to fix them manually one at a time. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Property management platform (e.g., AppFolio or Buildium)</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span><span>Google Sheets or Airtable (usage dashboard)</span></div>
+          </div>
         </div>
       </details>
 

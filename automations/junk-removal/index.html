@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Customer Service Rep</span><h3>Instant Quote from Photo Upload</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a customer uploads photos of the items they need removed through the website, this automation automatically generates a preliminary quote range based on volume and item type. Customers get pricing without waiting for a callback, and the crew shows up with a realistic expectation of what the job involves instead of a blind guess.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a customer uploads photos of the items they need removed through the website, this automation automatically generates a preliminary quote range based on volume and item type. Customers get pricing without waiting for a callback, and the crew shows up with a realistic expectation of what the job involves instead of a blind guess.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a customer service rep remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>OpenAI API (image-based estimation)</span><span>A booking form</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Based on each day's booked jobs, this automation automatically sequences the route to minimize drive time and dump run trips, and adjusts in real time if a job runs long or a same-day request comes in nearby. A day's schedule stays efficient even as it changes throughout the morning instead of falling apart after the first delay.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Based on each day's booked jobs, this automation automatically sequences the route to minimize drive time and dump run trips, and adjusts in real time if a job runs long or a same-day request comes in nearby. A day's schedule stays efficient even as it changes throughout the morning instead of falling apart after the first delay.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a dispatcher spends time each day re-checking the same information across disconnected tools instead of doing higher-value work.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A field service platform (Housecall Pro)</span><span>Google Maps API</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As items are sorted during removal, this automation automatically logs what's donated versus landfilled, and generates a donation receipt for the customer for tax purposes. Eco-conscious customers get a differentiator and useful documentation without any extra paperwork burden on the crew doing the physical work.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As items are sorted during removal, this automation automatically logs what's donated versus landfilled, and generates a donation receipt for the customer for tax purposes. Eco-conscious customers get a differentiator and useful documentation without any extra paperwork burden on the crew doing the physical work.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a crew leader is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A field service app</span><span>Zapier or Make.com</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation monitors the day's remaining truck capacity and automatically closes off same-day booking on the website once trucks are full. A crew that's already maxed out for the day never gets overbooked on top of a schedule it can't actually deliver.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation monitors the day's remaining truck capacity and automatically closes off same-day booking on the website once trucks are full. A crew that's already maxed out for the day never gets overbooked on top of a schedule it can't actually deliver.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, an operations manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A booking platform</span><span>Zapier or Make.com</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a job is marked complete, this automation automatically pairs the before and after photos and sends a review request highlighting the transformation. This tends to perform far better than a generic review ask, since the visual contrast does most of the persuading on its own.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a job is marked complete, this automation automatically pairs the before and after photos and sends a review request highlighting the transformation. This tends to perform far better than a generic review ask, since the visual contrast does most of the persuading on its own.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a marketing coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A field service app</span><span>Mailchimp or email</span><span>Zapier or Make.com</span><span>Google Business Profile</span></div>
+          </div>
         </div>
       </details>
     </div>

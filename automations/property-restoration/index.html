@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Dispatch Manager</span><h3>First Notice of Loss Response Automation</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a new loss is reported, by phone, web form, or insurance referral, this automation automatically dispatches the on-call crew, opens a job file, and sends the customer a confirmation with the crew's estimated arrival time. Response speed within the first hours affects both the extent of the damage and whether the job gets won over a competitor, and this automation removes the manual steps that eat into that window.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a new loss is reported, by phone, web form, or insurance referral, this automation automatically dispatches the on-call crew, opens a job file, and sends the customer a confirmation with the crew's estimated arrival time. Response speed within the first hours affects both the extent of the damage and whether the job gets won over a competitor, and this automation removes the manual steps that eat into that window.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a dispatch manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DASH or Encircle</span><span>Twilio (SMS)</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As technicians log moisture readings, photos, and scope of work in the field, this automation automatically compiles it into the documentation package required by insurance adjusters. The time between job completion and claim approval shrinks because the paperwork is already assembled instead of pieced together after the fact.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As technicians log moisture readings, photos, and scope of work in the field, this automation automatically compiles it into the documentation package required by insurance adjusters. The time between job completion and claim approval shrinks because the paperwork is already assembled instead of pieced together after the fact.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a claims coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Encircle or DASH</span><span>Zapier or Make.com</span><span>Google Drive</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For water damage jobs, this automation automatically tracks daily moisture readings against drying targets and flags any room not progressing on schedule. Equipment doesn't get left running, and billed, longer than the job actually requires simply because no one was watching the readings closely enough.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For water damage jobs, this automation automatically tracks daily moisture readings against drying targets and flags any room not progressing on schedule. Equipment doesn't get left running, and billed, longer than the job actually requires simply because no one was watching the readings closely enough.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a project manager handles each case reactively, after someone has already noticed something went wrong. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Encircle</span><span>Zapier or Make.com</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As a restoration job moves through its stages, mitigation, demolition, reconstruction, this automation automatically sends the homeowner a status update at each milestone. The anxious \"what's happening with my house\" calls that pile up during a stressful time drop off because the homeowner already has the answer.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As a restoration job moves through its stages, mitigation, demolition, reconstruction, this automation automatically sends the homeowner a status update at each milestone. The anxious \"what's happening with my house\" calls that pile up during a stressful time drop off because the homeowner already has the answer.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a customer service coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DASH or Encircle</span><span>Twilio or email</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As subcontractor invoices come in for a restoration job, this automation automatically checks them against the original scope of work and flags any charges outside that scope for review before they're rolled into the final insurance billing. Charges that don't belong in the claim get caught before they become a dispute with the insurer later.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As subcontractor invoices come in for a restoration job, this automation automatically checks them against the original scope of work and flags any charges outside that scope for review before they're rolled into the final insurance billing. Charges that don't belong in the claim get caught before they become a dispute with the insurer later.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a project accountant re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>DASH or a job costing system</span><span>Zapier or Make.com</span><span>QuickBooks Online</span></div>
+          </div>
         </div>
       </details>
     </div>

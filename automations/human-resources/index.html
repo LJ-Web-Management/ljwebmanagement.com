@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">HR Manager</span><h3>Job Posting &amp; Multi-Platform Applicant Tracker</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a new position is approved, the job description is automatically posted to LinkedIn, Indeed, and the company careers page simultaneously, and all incoming applications are routed into a single ATS pipeline regardless of which platform they came from. Applicants receive an immediate confirmation email with a timeline, and any applicant who hasn't received an update in 14 days is flagged for the HR manager, so no candidate is left waiting in silence while the hiring team deliberates.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a new position is approved, the job description is automatically posted to LinkedIn, Indeed, and the company careers page simultaneously, and all incoming applications are routed into a single ATS pipeline regardless of which platform they came from. Applicants receive an immediate confirmation email with a timeline, and any applicant who hasn't received an update in 14 days is flagged for the HR manager, so no candidate is left waiting in silence while the hiring team deliberates.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a hr manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>ATS (e.g., Greenhouse or Lever)</span><span>Zapier or Make.com</span><span>LinkedIn and Indeed APIs or job board integrations</span><span>Gmail or Outlook (automated applicant communications)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a candidate advances to the interview stage, this automation sends them a self-scheduling link, confirms the interview time automatically, sends a calendar invite to both the candidate and the hiring manager, and delivers a preparation email with the interview format and who they'll be meeting. Post-interview, the hiring team is prompted to submit their feedback within 24 hours, and the candidate receives a status update before they have to follow up asking, keeping the best candidates engaged and the process moving.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a candidate advances to the interview stage, this automation sends them a self-scheduling link, confirms the interview time automatically, sends a calendar invite to both the candidate and the hiring manager, and delivers a preparation email with the interview format and who they'll be meeting. Post-interview, the hiring team is prompted to submit their feedback within 24 hours, and the candidate receives a status update before they have to follow up asking, keeping the best candidates engaged and the process moving.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a recruiter, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>ATS (e.g., Greenhouse or Lever)</span><span>Calendly (self-scheduling)</span><span>Zapier or Make.com</span><span>Gmail or Outlook</span><span>Slack (hiring team feedback reminder)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a new hire accepts an offer, they automatically receive a welcome email with a link to complete their I-9, direct deposit form, benefits enrollment, and equipment request, with reminders sent until everything is finished. On their first day, their accounts are pre-provisioned, their manager receives a day-one checklist, and the new hire receives a structured 30-60-90 day onboarding plan dripped over their first three months, so the onboarding experience is consistent regardless of who is managing it.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a new hire accepts an offer, they automatically receive a welcome email with a link to complete their I-9, direct deposit form, benefits enrollment, and equipment request, with reminders sent until everything is finished. On their first day, their accounts are pre-provisioned, their manager receives a day-one checklist, and the new hire receives a structured 30-60-90 day onboarding plan dripped over their first three months, so the onboarding experience is consistent regardless of who is managing it.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, an onboarding specialist is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>HRIS (e.g., BambooHR or Rippling)</span><span>Zapier or Make.com</span><span>DocuSign or HelloSign (offer and I-9)</span><span>Google Workspace or Microsoft 365 (account provisioning)</span><span>Slack (new hire welcome + team announcements)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A weekly reminder goes to every hourly employee on Monday morning to submit their timesheet, and a follow-up goes to anyone who hasn't submitted by the Wednesday deadline. The payroll manager receives a consolidated exceptions report (missing timesheets, overtime flags, unusual punch patterns) rather than having to audit every submission manually. Payroll processes on time every cycle because the data collection process is automated rather than dependent on employees and managers remembering on their own.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A weekly reminder goes to every hourly employee on Monday morning to submit their timesheet, and a follow-up goes to anyone who hasn't submitted by the Wednesday deadline. The payroll manager receives a consolidated exceptions report (missing timesheets, overtime flags, unusual punch patterns) rather than having to audit every submission manually. Payroll processes on time every cycle because the data collection process is automated rather than dependent on employees and managers remembering on their own.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a payroll manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Time-tracking software (e.g., Deputy or TSheets)</span><span>Zapier or Make.com</span><span>Payroll platform (e.g., Gusto or ADP)</span><span>Slack or email (reminder and exceptions report)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Ninety days before the annual review cycle, this automation sends managers a schedule of their direct reports' review dates with self-evaluation forms pre-attached. Reminders escalate for overdue self-evaluations and manager reviews, and completed reviews are automatically compiled into a calibration-ready format for the HR business partner to use in talent planning sessions. No one misses their window, and the HRBP doesn't spend two weeks chasing down forms from every department head.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Ninety days before the annual review cycle, this automation sends managers a schedule of their direct reports' review dates with self-evaluation forms pre-attached. Reminders escalate for overdue self-evaluations and manager reviews, and completed reviews are automatically compiled into a calibration-ready format for the HR business partner to use in talent planning sessions. No one misses their window, and the HRBP doesn't spend two weeks chasing down forms from every department head.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a hr business partner spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>HRIS (e.g., BambooHR, Lattice, or 15Five)</span><span>Zapier or Make.com</span><span>Google Forms or Jotform (self-evaluation)</span><span>Google Sheets (calibration rollup)</span><span>Email or Slack (escalating reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The instant a candidate accepts an offer inside the ATS, this automation triggers I-9, W-4, and benefits enrollment forms for e-signature, sent directly to the new hire's personal email so they can complete everything before day one. At the same time, IT receives an automatic ticket to provision a laptop and set up accounts, and the new hire's first-week schedule (orientation, system training, meet-the-team sessions) is added to their calendar without anyone building it by hand. What used to take an HR coordinator a full day of separate emails and follow-up calls now fires automatically the moment the offer is accepted, so new hires show up on day one with a working laptop and a filled-out benefits form instead of a stack of paperwork still to complete.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The instant a candidate accepts an offer inside the ATS, this automation triggers I-9, W-4, and benefits enrollment forms for e-signature, sent directly to the new hire's personal email so they can complete everything before day one. At the same time, IT receives an automatic ticket to provision a laptop and set up accounts, and the new hire's first-week schedule (orientation, system training, meet-the-team sessions) is added to their calendar without anyone building it by hand. What used to take an HR coordinator a full day of separate emails and follow-up calls now fires automatically the moment the offer is accepted, so new hires show up on day one with a working laptop and a filled-out benefits form instead of a stack of paperwork still to complete.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a hr coordinator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>Greenhouse</span><span>BambooHR</span><span>DocuSign</span><span>Slack</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -514,9 +551,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When an employee submits a time-off request, this automation immediately checks their current PTO balance in the HR system, cross-references the team calendar to see if anyone else on their team is already scheduled to be out that week, and routes the request straight to their manager with a one-click approve or deny button. Conflicts, someone requesting time off when two teammates are already approved for the same week, are flagged automatically instead of surfacing three days later when someone notices the schedule doesn't work. A process that used to require a people operations specialist to manually check a shared spreadsheet for every request now resolves in minutes, and managers get the full picture before they approve anything.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When an employee submits a time-off request, this automation immediately checks their current PTO balance in the HR system, cross-references the team calendar to see if anyone else on their team is already scheduled to be out that week, and routes the request straight to their manager with a one-click approve or deny button. Conflicts, someone requesting time off when two teammates are already approved for the same week, are flagged automatically instead of surfacing three days later when someone notices the schedule doesn't work. A process that used to require a people operations specialist to manually check a shared spreadsheet for every request now resolves in minutes, and managers get the full picture before they approve anything.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a people operations specialist manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>BambooHR</span><span>Gusto</span><span>Google Calendar</span><span>Slack</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -525,9 +565,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Ninety, thirty, and seven days before each employee's scheduled review date, this automation reminds the manager to get it on the calendar, and sends the employee a self-assessment form to complete beforehand so the conversation starts with real input instead of a blank page. If a review is still sitting incomplete seven days past its due date, the system automatically escalates to HR leadership with the employee's name, manager, and how overdue it is. Review cycles that used to slip by weeks or months, quietly, until an employee asked why they hadn't had one, now stay on schedule because someone always gets a reminder before the deadline passes, not after.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Ninety, thirty, and seven days before each employee's scheduled review date, this automation reminds the manager to get it on the calendar, and sends the employee a self-assessment form to complete beforehand so the conversation starts with real input instead of a blank page. If a review is still sitting incomplete seven days past its due date, the system automatically escalates to HR leadership with the employee's name, manager, and how overdue it is. Review cycles that used to slip by weeks or months, quietly, until an employee asked why they hadn't had one, now stay on schedule because someone always gets a reminder before the deadline passes, not after.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a performance management coordinator has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>BambooHR</span><span>Google Forms or Jotform</span><span>Slack</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -536,9 +579,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a termination date is entered into the HR system, this automation schedules an exit interview on the departing employee's calendar, sends IT and facilities a checklist to disable system access and collect keys, badges, and equipment on the last day, and notifies payroll to process the final paycheck according to state requirements. Nothing depends on the offboarding coordinator remembering to loop in three different departments by email. Accounts that used to stay active for days or weeks after an employee's last day, a real security exposure, now get disabled on schedule every time, and the final paycheck goes out without a scramble.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a termination date is entered into the HR system, this automation schedules an exit interview on the departing employee's calendar, sends IT and facilities a checklist to disable system access and collect keys, badges, and equipment on the last day, and notifies payroll to process the final paycheck according to state requirements. Nothing depends on the offboarding coordinator remembering to loop in three different departments by email. Accounts that used to stay active for days or weeks after an employee's last day, a real security exposure, now get disabled on schedule every time, and the final paycheck goes out without a scramble.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means an offboarding coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>BambooHR</span><span>Slack</span><span>Gusto</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -547,9 +593,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every morning, this automation checks employee start dates against today's date, and the moment someone hits a work anniversary, it automatically notifies their manager and posts a personalized shoutout in the team's Slack channel, tagging the milestone (one year, five years, ten years) so the recognition feels specific rather than generic. Anniversaries tied to a reward, an extra PTO day, a gift card, or a bonus, trigger that reward request automatically instead of relying on a manager to remember and submit it. Milestones that used to get missed entirely or celebrated late with an apologetic "sorry this is a few weeks overdue" now get recognized on the exact day, every time, without HR maintaining a manual spreadsheet of dates.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every morning, this automation checks employee start dates against today's date, and the moment someone hits a work anniversary, it automatically notifies their manager and posts a personalized shoutout in the team's Slack channel, tagging the milestone (one year, five years, ten years) so the recognition feels specific rather than generic. Anniversaries tied to a reward, an extra PTO day, a gift card, or a bonus, trigger that reward request automatically instead of relying on a manager to remember and submit it. Milestones that used to get missed entirely or celebrated late with an apologetic "sorry this is a few weeks overdue" now get recognized on the exact day, every time, without HR maintaining a manual spreadsheet of dates.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a culture and engagement manager, who has to track every step by hand across emails, spreadsheets, and sticky notes.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>BambooHR</span><span>Slack</span><span>Google Calendar</span></div>
+          </div>
         </div>
       </details>
 

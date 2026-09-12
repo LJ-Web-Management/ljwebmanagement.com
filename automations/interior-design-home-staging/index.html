@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Interior Designer</span><h3>Client Project Milestone &amp; Approval Workflow System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a new design project is onboarded, this automation generates a project timeline with milestones (concept presentation, design development, procurement, installation, and reveal) and sends the client a link to their personal project portal where they can track progress in real time. At each milestone, the client receives a notification with what to expect, what decisions are needed, and any approvals required before the project can advance. Client approvals are captured digitally with a timestamp, and any milestone where approval is delayed triggers an alert to the designer so the project timeline can be adjusted before the delay compounds into a procurement problem.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a new design project is onboarded, this automation generates a project timeline with milestones (concept presentation, design development, procurement, installation, and reveal) and sends the client a link to their personal project portal where they can track progress in real time. At each milestone, the client receives a notification with what to expect, what decisions are needed, and any approvals required before the project can advance. Client approvals are captured digitally with a timestamp, and any milestone where approval is delayed triggers an alert to the designer so the project timeline can be adjusted before the delay compounds into a procurement problem.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means an interior designer re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Project management platform (e.g., Studio Designer, Ivy, or Asana)</span><span>Zapier or Make.com</span><span>Jotform or DocuSign (digital client approvals)</span><span>Email or Twilio (milestone notifications)</span><span>Google Drive (project portal)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a real estate agent or homeowner requests a staging consultation, this automation books the consultation on the stager's calendar, sends a pre-consultation questionnaire capturing the home's size, listing timeline, and style preference, and confirms the appointment with directions and what to expect. When staging is confirmed, the system cross-references the project's room list against the furniture inventory database to identify available pieces, flags any items that need to be sourced or rented, and generates a pick list for the installation crew. Available inventory is never double-booked for overlapping projects because the system tracks what is deployed, where, and when it returns.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a real estate agent or homeowner requests a staging consultation, this automation books the consultation on the stager's calendar, sends a pre-consultation questionnaire capturing the home's size, listing timeline, and style preference, and confirms the appointment with directions and what to expect. When staging is confirmed, the system cross-references the project's room list against the furniture inventory database to identify available pieces, flags any items that need to be sourced or rented, and generates a pick list for the installation crew. Available inventory is never double-booked for overlapping projects because the system tracks what is deployed, where, and when it returns.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a home stager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Calendly (consultation booking)</span><span>Jotform (pre-consultation questionnaire)</span><span>Zapier or Make.com</span><span>Airtable (furniture inventory tracker)</span><span>Google Sheets (installation pick list generator)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a product is specified and approved by the client, this automation generates a purchase order to the vendor, logs the item in the project's procurement tracker with the expected lead time, and sets a follow-up alert for the week the item is due to ship. If an item hasn't shipped by its expected date, the principal is notified immediately so they can contact the vendor before a delayed sofa becomes a delayed installation reveal. When an item arrives at the receiving warehouse, a confirmation is logged automatically, and the designer sees a real-time procurement board showing what has been ordered, what is in transit, what has been received, and what is still on back order across every active project.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a product is specified and approved by the client, this automation generates a purchase order to the vendor, logs the item in the project's procurement tracker with the expected lead time, and sets a follow-up alert for the week the item is due to ship. If an item hasn't shipped by its expected date, the principal is notified immediately so they can contact the vendor before a delayed sofa becomes a delayed installation reveal. When an item arrives at the receiving warehouse, a confirmation is logged automatically, and the designer sees a real-time procurement board showing what has been ordered, what is in transit, what has been received, and what is still on back order across every active project.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a design firm principal has to notice problems after they've already happened, then scramble to fix them manually one at a time. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio design software (e.g., Studio Designer or Ivy)</span><span>Zapier or Make.com</span><span>Jotform (receiving confirmation form)</span><span>Airtable or Google Sheets (procurement tracker)</span><span>Email (automated PO generation to vendors)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The week before an installation, this automation sends a coordination email to every trade (furniture delivery crew, art installer, electrician, window treatment installer) with their scheduled arrival window, site address, access instructions, and the project manager's mobile number. On installation day, trades check in via a quick text when they arrive, giving the project manager a live arrival status without standing at the door monitoring every delivery. After installation, a digital punch list is completed via mobile form on site, and each incomplete item is automatically assigned to the responsible trade with a resolution deadline, so the reveal happens on time and every punch list item has an owner and a due date.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The week before an installation, this automation sends a coordination email to every trade (furniture delivery crew, art installer, electrician, window treatment installer) with their scheduled arrival window, site address, access instructions, and the project manager's mobile number. On installation day, trades check in via a quick text when they arrive, giving the project manager a live arrival status without standing at the door monitoring every delivery. After installation, a digital punch list is completed via mobile form on site, and each incomplete item is automatically assigned to the responsible trade with a resolution deadline, so the reveal happens on time and every punch list item has an owner and a due date.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a design project manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (trade check-in and punch list form)</span><span>Zapier or Make.com</span><span>Twilio (trade coordination SMS)</span><span>Airtable (punch list and trade assignment tracker)</span><span>Slack (project manager live status updates)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a project is completed and the client has signed off, this automation sends a project photography consent form and (once approved) schedules a professional photographer through the firm's preferred vendor, adds the project to the content queue, and notifies the marketing manager that a new portfolio piece will be available on the scheduled photography date. Simultaneously, the firm's top referral sources (interior architects, real estate agents, and luxury builders) receive a curated project highlight email showcasing completed work from the past quarter. Referral partners who sent a client in the past 12 months receive a personal thank-you note from the principal automatically, keeping relationships warm between direct referrals.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a project is completed and the client has signed off, this automation sends a project photography consent form and (once approved) schedules a professional photographer through the firm's preferred vendor, adds the project to the content queue, and notifies the marketing manager that a new portfolio piece will be available on the scheduled photography date. Simultaneously, the firm's top referral sources (interior architects, real estate agents, and luxury builders) receive a curated project highlight email showcasing completed work from the past quarter. Referral partners who sent a client in the past 12 months receive a personal thank-you note from the principal automatically, keeping relationships warm between direct referrals.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a design marketing manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Airtable (project portfolio and content queue)</span><span>Jotform (photography consent form)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign (referral partner highlight email)</span><span>Calendly (photographer scheduling)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a designer finalizes a mood board or design concept, this automation automatically sends it to the client through a branded approval portal and tracks whether the client has actually viewed it. If it's sitting unreviewed after a few days, an automatic reminder goes out, replacing the designer's own manual follow-up emails chasing a client sign-off that's holding up the next phase of the project.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a designer finalizes a mood board or design concept, this automation automatically sends it to the client through a branded approval portal and tracks whether the client has actually viewed it. If it's sitting unreviewed after a few days, an automatic reminder goes out, replacing the designer's own manual follow-up emails chasing a client sign-off that's holding up the next phase of the project.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a design coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio Designer or Houzz Pro</span><span>Zapier or Make.com</span><span>Mailchimp or email</span><span>A client portal tool</span></div>
+          </div>
         </div>
       </details>
 
@@ -515,9 +552,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As items are ordered from various vendors for a project, this automation automatically tracks each item's expected delivery date against the project timeline and flags any delay that would push back the planned install date. The designer finds out about a vendor delay while there's still time to communicate proactively with the client, instead of discovering it the morning of install day when the sofa hasn't arrived.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As items are ordered from various vendors for a project, this automation automatically tracks each item's expected delivery date against the project timeline and flags any delay that would push back the planned install date. The designer finds out about a vendor delay while there's still time to communicate proactively with the client, instead of discovering it the morning of install day when the sofa hasn't arrived.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a project manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio Designer</span><span>Zapier or Make.com</span><span>Google Sheets (order tracker)</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 
@@ -527,9 +567,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For staging companies with a physical inventory of furniture and decor, this automation automatically tracks which pieces are currently deployed at which properties and which pieces are free, flagging what's genuinely available before a new project is scheduled. Double-booking the same couch for two staging jobs on the same weekend, a surprisingly common and costly mistake, stops happening.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For staging companies with a physical inventory of furniture and decor, this automation automatically tracks which pieces are currently deployed at which properties and which pieces are free, flagging what's genuinely available before a new project is scheduled. Double-booking the same couch for two staging jobs on the same weekend, a surprisingly common and costly mistake, stops happening.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a staging operations manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A staging inventory system or Airtable</span><span>Zapier or Make.com</span><span>Google Sheets</span><span>A barcode/QR tagging system</span></div>
+          </div>
         </div>
       </details>
 
@@ -539,9 +582,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a project's install is marked complete, this automation automatically schedules the final client walkthrough, and once that walkthrough is confirmed as done, automatically generates and sends the final invoice. Project completion connects directly to getting paid without a manual step waiting on someone to remember to bill it out.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a project's install is marked complete, this automation automatically schedules the final client walkthrough, and once that walkthrough is confirmed as done, automatically generates and sends the final invoice. Project completion connects directly to getting paid without a manual step waiting on someone to remember to bill it out.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a design director has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Studio Designer or QuickBooks Online</span><span>Zapier or Make.com</span><span>Google Calendar</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 
@@ -551,9 +597,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation monitors vendor-reported lead times for commonly ordered items, fabrics, furniture, fixtures, and automatically flags the design team the moment a vendor's lead time changes significantly. Quotes given to future clients reflect current, real lead times instead of outdated assumptions that end up embarrassing the designer when a \"12-week\" item turns out to actually take 20.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation monitors vendor-reported lead times for commonly ordered items, fabrics, furniture, fixtures, and automatically flags the design team the moment a vendor's lead time changes significantly. Quotes given to future clients reflect current, real lead times instead of outdated assumptions that end up embarrassing the designer when a \"12-week\" item turns out to actually take 20.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a procurement coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A vendor management spreadsheet or Airtable</span><span>Zapier or Make.com</span><span>Email</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
 

@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Executive Director</span><h3>Grant Deadline Tracker &amp; Application Status System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every active grant opportunity (prospect, applied, pending, awarded, declined) lives in a single pipeline that the executive director can see at a glance, and the system automatically sends reminders 45, 14, and 3 days before every deadline. Awarded grants trigger a reporting calendar with key milestones and deliverable due dates pre-populated, so the grant never gets won and then forgotten when the deliverable comes due six months later. The organization's entire grant portfolio is managed proactively rather than reactively.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every active grant opportunity (prospect, applied, pending, awarded, declined) lives in a single pipeline that the executive director can see at a glance, and the system automatically sends reminders 45, 14, and 3 days before every deadline. Awarded grants trigger a reporting calendar with key milestones and deliverable due dates pre-populated, so the grant never gets won and then forgotten when the deliverable comes due six months later. The organization's entire grant portfolio is managed proactively rather than reactively.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on an executive director remembering to check in, update records, and follow up, with no safety net if something slips. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Airtable or Google Sheets (grant pipeline)</span><span>Zapier or Make.com</span><span>Google Calendar (deadline and reporting calendar)</span><span>Email or Slack (escalating deadline reminders)</span><span>Jotform (internal grant application intake)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every donation (regardless of size or channel) triggers an immediate, personalized thank-you email within minutes, followed by a tax receipt within 24 hours. Major donors receive a personal call prompt to the development manager within two business days. Over the following months, donors are moved through a stewardship sequence that shares impact stories, event invitations, and year-end summaries, ensuring that donors hear from the organization more than just when there's a fundraising ask, and dramatically improving year-over-year retention.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every donation (regardless of size or channel) triggers an immediate, personalized thank-you email within minutes, followed by a tax receipt within 24 hours. Major donors receive a personal call prompt to the development manager within two business days. Over the following months, donors are moved through a stewardship sequence that shares impact stories, event invitations, and year-end summaries, ensuring that donors hear from the organization more than just when there's a fundraising ask, and dramatically improving year-over-year retention.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a development manager remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM / donor management (e.g., Bloomerang, DonorPerfect, or Salesforce Nonprofit)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Twilio (major donor call prompt via text to staff)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Open volunteer shifts are automatically posted to the volunteer portal and distributed via email and text to the relevant volunteer pool, with a one-click signup link. Confirmed volunteers receive a reminder 48 hours before their shift with the location, parking instructions, and a contact for questions. After the shift, volunteers receive a thank-you message and their hours are automatically logged, giving the coordinator a real-time count of total volunteer hours without maintaining a separate spreadsheet.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Open volunteer shifts are automatically posted to the volunteer portal and distributed via email and text to the relevant volunteer pool, with a one-click signup link. Confirmed volunteers receive a reminder 48 hours before their shift with the location, parking instructions, and a contact for questions. After the shift, volunteers receive a thank-you message and their hours are automatically logged, giving the coordinator a real-time count of total volunteer hours without maintaining a separate spreadsheet.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a volunteer coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Volunteer management platform (e.g., VolunteerHub or SignUpGenius)</span><span>Zapier or Make.com</span><span>Twilio (SMS shift reminders)</span><span>Google Sheets (volunteer hour log)</span><span>Mailchimp (volunteer email list)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Event registration is handled through a branded page that captures guest information, meal preference, table assignments, and donation amount, and feeds it all into the event CRM automatically. Registered guests receive a confirmation immediately, a logistics email one week before the event, and a donation receipt after the event. Guests who registered but didn't show receive a "we missed you" email with a giving link, and post-event sponsors receive a customized impact report, all generated and delivered without any manual follow-up from the event team.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Event registration is handled through a branded page that captures guest information, meal preference, table assignments, and donation amount, and feeds it all into the event CRM automatically. Registered guests receive a confirmation immediately, a logistics email one week before the event, and a donation receipt after the event. Guests who registered but didn't show receive a "we missed you" email with a giving link, and post-event sponsors receive a customized impact report, all generated and delivered without any manual follow-up from the event team.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a nonprofit event manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Event registration tool (e.g., Eventbrite or Qgiv)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign (pre/post event sequences)</span><span>Donor CRM (e.g., Bloomerang)</span><span>OpenAI API (personalized sponsor impact report)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a new client enrolls in a program, their intake form data automatically creates a client record in the case management system, assigns a case worker, generates an initial service plan template, and schedules the first check-in appointment. As clients progress through the program, milestone outcomes are logged via a simple mobile form by the case worker and compiled automatically into a program-level outcomes report for funders and leadership, replacing the manual data entry and spreadsheet compilation that typically takes weeks at the end of a reporting period.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a new client enrolls in a program, their intake form data automatically creates a client record in the case management system, assigns a case worker, generates an initial service plan template, and schedules the first check-in appointment. As clients progress through the program, milestone outcomes are logged via a simple mobile form by the case worker and compiled automatically into a program-level outcomes report for funders and leadership, replacing the manual data entry and spreadsheet compilation that typically takes weeks at the end of a reporting period.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a program manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Case management software (e.g., Apricot by Bonterra or Salesforce Nonprofit)</span><span>Jotform (intake and milestone forms)</span><span>Zapier or Make.com</span><span>Google Sheets or Airtable (outcomes dashboard)</span><span>Calendly (case worker scheduling)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a donation is processed, whether through the website, a mail-in check entered manually, or a matching gift, the donor automatically receives a tax-compliant receipt by email within minutes, formatted with the organization's EIN, the exact gift amount, and the required non-goods-or-services language. Receipts for gifts over a set threshold are automatically copied to the development associate so major gifts get a personal follow-up on top of the automated receipt. At year-end, every donor automatically receives a consolidated giving statement summarizing all contributions made during the year, eliminating the days finance staff used to spend compiling statements by hand every January. Donors get instant confirmation their gift went through, and the organization stays audit-ready without anyone tracking receipts in a spreadsheet.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a donation is processed, whether through the website, a mail-in check entered manually, or a matching gift, the donor automatically receives a tax-compliant receipt by email within minutes, formatted with the organization's EIN, the exact gift amount, and the required non-goods-or-services language. Receipts for gifts over a set threshold are automatically copied to the development associate so major gifts get a personal follow-up on top of the automated receipt. At year-end, every donor automatically receives a consolidated giving statement summarizing all contributions made during the year, eliminating the days finance staff used to spend compiling statements by hand every January. Donors get instant confirmation their gift went through, and the organization stays audit-ready without anyone tracking receipts in a spreadsheet.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a development associate spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Bloomerang or DonorPerfect</span><span>Zapier or Make.com</span><span>Mailchimp</span><span>QuickBooks</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -514,9 +551,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Recurring donors are automatically enrolled in a dedicated communication track separate from one-time givers, receiving a thank-you message after each processed charge along with a brief impact update every quarter showing specifically what their ongoing support has funded. Any recurring gift that fails to process, due to an expired card or insufficient funds, triggers an automatic, friendly email asking the donor to update their payment method, recovering gifts that would otherwise just quietly lapse. Donors who hit their one-year giving anniversary receive a personalized note recognizing the milestone. Because recurring donors hear from the organization in a way that feels like partnership rather than another ask, retention on the monthly giving program has climbed steadily since the sequence went live.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Recurring donors are automatically enrolled in a dedicated communication track separate from one-time givers, receiving a thank-you message after each processed charge along with a brief impact update every quarter showing specifically what their ongoing support has funded. Any recurring gift that fails to process, due to an expired card or insufficient funds, triggers an automatic, friendly email asking the donor to update their payment method, recovering gifts that would otherwise just quietly lapse. Donors who hit their one-year giving anniversary receive a personalized note recognizing the milestone. Because recurring donors hear from the organization in a way that feels like partnership rather than another ask, retention on the monthly giving program has climbed steadily since the sequence went live.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a donor relations manager remembering to check in, update records, and follow up, with no safety net if something slips. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Bloomerang or DonorPerfect</span><span>Zapier or Make.com</span><span>Stripe</span><span>Mailchimp or ActiveCampaign</span><span>Twilio</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -525,9 +565,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a volunteer signs up for a shift, they immediately receive an automatic confirmation text with the date, time, and location, followed by a reminder 48 hours out and a second reminder the morning of the shift with a one-tap link to cancel or reschedule if something comes up. Volunteers who cancel within 24 hours of a shift automatically trigger a notification to the community engagement coordinator so a replacement can be found before the shift is short-staffed. Anyone who no-shows twice in a rolling 90-day window is automatically flagged for a check-in conversation rather than quietly disappearing from the schedule. No-show rates have dropped noticeably since reminders started going out automatically instead of depending on volunteers checking their own calendars.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a volunteer signs up for a shift, they immediately receive an automatic confirmation text with the date, time, and location, followed by a reminder 48 hours out and a second reminder the morning of the shift with a one-tap link to cancel or reschedule if something comes up. Volunteers who cancel within 24 hours of a shift automatically trigger a notification to the community engagement coordinator so a replacement can be found before the shift is short-staffed. Anyone who no-shows twice in a rolling 90-day window is automatically flagged for a check-in conversation rather than quietly disappearing from the schedule. No-show rates have dropped noticeably since reminders started going out automatically instead of depending on volunteers checking their own calendars.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a community engagement coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>SignUpGenius or VolunteerHub</span><span>Zapier or Make.com</span><span>Twilio</span><span>Google Calendar</span><span>Airtable</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -536,9 +579,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every donor record is monitored continuously for giving activity, and any donor who hasn't made a gift in 12 months or more is automatically flagged and moved into a dedicated win-back sequence rather than staying lumped in with the general mailing list. The first message is a personal, low-pressure check-in referencing their last gift and what it supported, followed two weeks later by a specific ask tied to a current program need. Donors who don't respond after the sequence completes are moved to a lighter-touch quarterly newsletter track instead of being emailed weekly forever. The annual fund manager gets a running list of exactly who lapsed and when, so re-engagement happens on a consistent 12-month trigger instead of once a year during a single mass appeal.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every donor record is monitored continuously for giving activity, and any donor who hasn't made a gift in 12 months or more is automatically flagged and moved into a dedicated win-back sequence rather than staying lumped in with the general mailing list. The first message is a personal, low-pressure check-in referencing their last gift and what it supported, followed two weeks later by a specific ask tied to a current program need. Donors who don't respond after the sequence completes are moved to a lighter-touch quarterly newsletter track instead of being emailed weekly forever. The annual fund manager gets a running list of exactly who lapsed and when, so re-engagement happens on a consistent 12-month trigger instead of once a year during a single mass appeal.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means an annual fund manager handles each case reactively, after someone has already noticed something went wrong. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Bloomerang or DonorPerfect</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>OpenAI API (personalized win-back messaging)</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -547,9 +593,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Guests who RSVP to a fundraiser or community event through the registration page are automatically added to the guest list, sent a calendar invite, and placed on a communication track that includes a reminder one week out and a final reminder the morning of the event with parking and check-in details. Events that hit capacity automatically switch to a waitlist, and any guest who cancels frees up a spot that's offered instantly to the next person in line rather than staff manually managing an overflow list by hand. No-shows are tracked automatically across events, giving the special events coordinator a real attendance-rate benchmark to plan capacity for the next event instead of guessing. Every event runs the same reliable RSVP and reminder cadence without staff rebuilding the process from scratch each time.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Guests who RSVP to a fundraiser or community event through the registration page are automatically added to the guest list, sent a calendar invite, and placed on a communication track that includes a reminder one week out and a final reminder the morning of the event with parking and check-in details. Events that hit capacity automatically switch to a waitlist, and any guest who cancels frees up a spot that's offered instantly to the next person in line rather than staff manually managing an overflow list by hand. No-shows are tracked automatically across events, giving the special events coordinator a real attendance-rate benchmark to plan capacity for the next event instead of guessing. Every event runs the same reliable RSVP and reminder cadence without staff rebuilding the process from scratch each time.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a special events coordinator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Eventbrite or Qgiv</span><span>Zapier or Make.com</span><span>Google Calendar</span><span>Twilio</span><span>Mailchimp</span></div>
+          </div>
         </div>
       </details>
 

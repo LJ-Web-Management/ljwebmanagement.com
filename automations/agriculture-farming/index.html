@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Farm Manager</span><h3>Planting &amp; Harvest Schedule Builder &amp; Field Activity Log</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Based on crop selection, field acreage, seed population rates, and the planned planting window, this automation generates a field-by-field planting schedule with equipment requirements and operator assignments. As planting progresses, operators submit brief daily field logs via mobile form, and the farm manager sees a live map of completed versus remaining acreage in real time. When harvest begins, the same system tracks field-by-field yield data as the combine reports it, compares actual yield against projected bushels, and flags underperforming fields for agronomic review, turning a spreadsheet that lives on one person's laptop into a shared, always-current operational picture.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Based on crop selection, field acreage, seed population rates, and the planned planting window, this automation generates a field-by-field planting schedule with equipment requirements and operator assignments. As planting progresses, operators submit brief daily field logs via mobile form, and the farm manager sees a live map of completed versus remaining acreage in real time. When harvest begins, the same system tracks field-by-field yield data as the combine reports it, compares actual yield against projected bushels, and flags underperforming fields for agronomic review, turning a spreadsheet that lives on one person's laptop into a shared, always-current operational picture.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a farm manager remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Airtable or Google Sheets (field schedule and activity log)</span><span>Jotform (daily field log)</span><span>Zapier or Make.com</span><span>Twilio (operator task notifications)</span><span>Google Maps or farm mapping tool (field visualization)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a crop scout submits a scouting report identifying pest pressure or disease above economic threshold (whether aphids, corn rootworm, white mold, or any flagged issue) this automation immediately notifies the farm manager and the designated agronomist, calculates the field acreage requiring treatment, generates a pre-filled pesticide application record, and schedules the application crew. The entire chain from "I found a problem" to "the sprayer is scheduled" happens automatically, rather than through a series of calls and texts that eat hours out of a narrow spray window when every hour of delay matters.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a crop scout submits a scouting report identifying pest pressure or disease above economic threshold (whether aphids, corn rootworm, white mold, or any flagged issue) this automation immediately notifies the farm manager and the designated agronomist, calculates the field acreage requiring treatment, generates a pre-filled pesticide application record, and schedules the application crew. The entire chain from "I found a problem" to "the sprayer is scheduled" happens automatically, rather than through a series of calls and texts that eat hours out of a narrow spray window when every hour of delay matters.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a crop scout, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (scouting report form)</span><span>Zapier or Make.com</span><span>Airtable (pest pressure log by field)</span><span>Twilio (farm manager and agronomist alert)</span><span>Google Sheets (pesticide application record)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Each fall, this automation sends every grower in the rep's territory a personalized pre-season booking offer for seed, crop protection, and fertilizer, populated with last year's purchase history and any current early-pay incentives. Growers who book early receive automatic order confirmations and are added to a delivery scheduling sequence for spring. Growers who haven't responded by a set date receive a follow-up from the rep. The result is a pre-season order book that is substantially locked in before the competition can make their pitch, rather than chasing individual orders in the chaos of spring planting.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Each fall, this automation sends every grower in the rep's territory a personalized pre-season booking offer for seed, crop protection, and fertilizer, populated with last year's purchase history and any current early-pay incentives. Growers who book early receive automatic order confirmations and are added to a delivery scheduling sequence for spring. Growers who haven't responded by a set date receive a follow-up from the rep. The result is a pre-season order book that is substantially locked in before the competition can make their pitch, rather than chasing individual orders in the chaos of spring planting.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on an agricultural sales representative, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., AgVend or Salesforce)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign (pre-season booking sequence)</span><span>Twilio (grower text reminders)</span><span>Google Sheets (pre-season order tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation maintains a calendar of every crop insurance reporting deadline (acreage reporting, production reporting, prevented planting claims, loss notifications) for every policy and every covered field. Reminders are sent to the farm accountant and the farm manager at 30 and 7 days before each deadline. When a loss event occurs, the system generates a checklist of required documentation, assigns tasks for field verification and yield sampling, and tracks completion until the claim package is submitted, ensuring that a covered loss doesn't become an unpaid claim because a deadline was missed or a document was missing.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation maintains a calendar of every crop insurance reporting deadline (acreage reporting, production reporting, prevented planting claims, loss notifications) for every policy and every covered field. Reminders are sent to the farm accountant and the farm manager at 30 and 7 days before each deadline. When a loss event occurs, the system generates a checklist of required documentation, assigns tasks for field verification and yield sampling, and tracks completion until the claim package is submitted, ensuring that a covered loss doesn't become an unpaid claim because a deadline was missed or a document was missing.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a farm accountant has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Airtable (policy and deadline database)</span><span>Zapier or Make.com</span><span>Google Calendar (deadline entries)</span><span>Email or Slack (escalating reminders)</span><span>Jotform (loss event documentation form)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Each animal in the herd is tracked by ID with a complete health record (vaccination dates, treatment history, weight gain, and breeding status) maintained automatically as events are logged via a mobile form in the field. When an animal is due for a scheduled vaccination or health event based on age or last treatment date, the livestock manager receives a task alert with the animal IDs, the protocol, and the required product. Withdrawal periods for treated animals are automatically flagged to prevent any medicated animal from being marketed before the withholding period has expired, a compliance issue with serious financial and legal consequences.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Each animal in the herd is tracked by ID with a complete health record (vaccination dates, treatment history, weight gain, and breeding status) maintained automatically as events are logged via a mobile form in the field. When an animal is due for a scheduled vaccination or health event based on age or last treatment date, the livestock manager receives a task alert with the animal IDs, the protocol, and the required product. Withdrawal periods for treated animals are automatically flagged to prevent any medicated animal from being marketed before the withholding period has expired, a compliance issue with serious financial and legal consequences.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a livestock manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Livestock management software (e.g., CattleMax or Herdsman) or Airtable</span><span>Jotform (field health event log)</span><span>Zapier or Make.com</span><span>Twilio (vaccination due and withdrawal period alerts)</span><span>Google Sheets (herd health summary)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>By pulling hyperlocal weather forecasts for each individual field, this automation automatically notifies the farm manager the moment conditions line up for spraying, planting, or harvesting, including narrowing windows before a forecast shifts. It separately sends an advance warning ahead of frost, heavy rain, or high wind that would affect any field work already scheduled, giving the crew time to adjust the plan instead of getting caught out in the field.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">By pulling hyperlocal weather forecasts for each individual field, this automation automatically notifies the farm manager the moment conditions line up for spraying, planting, or harvesting, including narrowing windows before a forecast shifts. It separately sends an advance warning ahead of frost, heavy rain, or high wind that would affect any field work already scheduled, giving the crew time to adjust the plan instead of getting caught out in the field.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a farm manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Climate FieldView or a weather API</span><span>Zapier or Make.com</span><span>Twilio (SMS)</span><span>Google Calendar (field task schedule)</span></div>
+          </div>
         </div>
       </details>
 
@@ -515,9 +552,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Tied to hour-meter readings on tractors and other equipment, whether logged manually or pulled from onboard telematics, this automation automatically schedules maintenance tasks at manufacturer-recommended intervals and orders the commonly needed parts ahead of the actual service date. Equipment stops going down in the middle of a critical planting or harvest window because maintenance was scheduled around the calendar instead of around the machine's actual usage.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Tied to hour-meter readings on tractors and other equipment, whether logged manually or pulled from onboard telematics, this automation automatically schedules maintenance tasks at manufacturer-recommended intervals and orders the commonly needed parts ahead of the actual service date. Equipment stops going down in the middle of a critical planting or harvest window because maintenance was scheduled around the calendar instead of around the machine's actual usage.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, an equipment manager manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>John Deere Operations Center or similar telematics</span><span>Zapier or Make.com</span><span>Google Sheets (maintenance log)</span><span>Email or SMS</span></div>
+          </div>
         </div>
       </details>
 
@@ -527,9 +567,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As seed, fertilizer, and chemical inventory is drawn down and logged against each field's application, this automation tracks usage against what's actually needed for the remaining planned acreage for the season. The moment projected usage suggests the farm will run short before the season's done, it automatically flags a reorder need to the operations manager, instead of the shortage surfacing mid-application when it's too late to source more in time.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As seed, fertilizer, and chemical inventory is drawn down and logged against each field's application, this automation tracks usage against what's actually needed for the remaining planned acreage for the season. The moment projected usage suggests the farm will run short before the season's done, it automatically flags a reorder need to the operations manager, instead of the shortage surfacing mid-application when it's too late to source more in time.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a farm operations manager, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Climate FieldView or a farm management platform</span><span>Zapier or Make.com</span><span>Google Sheets</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 
@@ -539,9 +582,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Based on data from ear tags, automated feed intake logs, or manual health checks entered by staff on a mobile app, this automation automatically flags any animal showing a reading outside the normal range, reduced feed intake, unusual movement patterns, for the herd manager to check personally. A minor issue gets caught and treated while it's still isolated to one animal instead of becoming a herd-wide problem discovered days later.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Based on data from ear tags, automated feed intake logs, or manual health checks entered by staff on a mobile app, this automation automatically flags any animal showing a reading outside the normal range, reduced feed intake, unusual movement patterns, for the herd manager to check personally. A minor issue gets caught and treated while it's still isolated to one animal instead of becoming a herd-wide problem discovered days later.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a herd manager remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A livestock monitoring platform (Allflex or Cowlar)</span><span>Zapier or Make.com</span><span>Google Sheets</span><span>Twilio or email</span></div>
+          </div>
         </div>
       </details>
 
@@ -551,9 +597,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As harvest data is logged by field, this automation automatically compares actual yield against the season's projections, updates the available inventory figure for sale, and notifies the sales team of what's newly available to move. The field connects directly to the sales pipeline the moment the combine finishes a pass, instead of yield data sitting in a yield monitor for days before anyone manually updates what's available to sell.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As harvest data is logged by field, this automation automatically compares actual yield against the season's projections, updates the available inventory figure for sale, and notifies the sales team of what's newly available to move. The field connects directly to the sales pipeline the moment the combine finishes a pass, instead of yield data sitting in a yield monitor for days before anyone manually updates what's available to sell.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a sales & operations manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Climate FieldView or a yield monitoring system</span><span>Zapier or Make.com</span><span>Google Sheets</span><span>Email or Slack</span></div>
+          </div>
         </div>
       </details>
 

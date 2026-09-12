@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Project Architect</span><h3>Drawing Revision Control &amp; Submittal Tracker</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every time a drawing set is revised and issued, this automation logs the revision number, date, and scope of changes, notifies all consultants and subconsultants of the updated set, and archives the superseded drawings in a clearly marked "superseded" folder so no one builds from an outdated sheet. When a submittal is sent to the contractor for review, the system starts a tracking clock and sends a reminder at 7 days and 14 days if no review response has been received, because a submittal sitting unanswered is a submittal that becomes a schedule delay.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every time a drawing set is revised and issued, this automation logs the revision number, date, and scope of changes, notifies all consultants and subconsultants of the updated set, and archives the superseded drawings in a clearly marked "superseded" folder so no one builds from an outdated sheet. When a submittal is sent to the contractor for review, the system starts a tracking clock and sends a reminder at 7 days and 14 days if no review response has been received, because a submittal sitting unanswered is a submittal that becomes a schedule delay.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a project architect has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Project management or BIM platform (e.g., Procore, Autodesk BIM 360, or Newforma)</span><span>Zapier or Make.com</span><span>Google Drive or SharePoint (drawing archive)</span><span>Email (consultant revision notifications)</span><span>Airtable (submittal log and review tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a permit application is submitted to a reviewing agency, this automation logs the submission date, expected review clock, and assigned contact at each agency, and begins sending weekly status check reminders to the project engineer to follow up. When review comments are received, they are automatically logged with the date received, parsed into individual comment items, and assigned to the responsible discipline for response, with a deadline calculated from the agency's resubmittal window. No comment goes untracked, no agency deadline gets missed because the project engineer was focused on another submission.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a permit application is submitted to a reviewing agency, this automation logs the submission date, expected review clock, and assigned contact at each agency, and begins sending weekly status check reminders to the project engineer to follow up. When review comments are received, they are automatically logged with the date received, parsed into individual comment items, and assigned to the responsible discipline for response, with a deadline calculated from the agency's resubmittal window. No comment goes untracked, no agency deadline gets missed because the project engineer was focused on another submission.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a civil engineer manually pieces together information from different places, then has to relay it to everyone who needs it. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Airtable or Google Sheets (permit and comment tracker)</span><span>Zapier or Make.com</span><span>Jotform (comment response submission form)</span><span>Google Calendar (review deadlines)</span><span>Email or Slack (comment receipt alerts and response deadline reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every week, this automation pulls billed hours by project and phase from the project accounting system, compares them against the contracted fee and the percent-complete estimate, and updates a live profitability dashboard the principal can review in minutes. Projects where fee burn is outpacing percent complete by more than 10% are flagged for a project manager conversation before the budget is exhausted. Projects approaching the contracted fee threshold trigger an automatic prompt to evaluate whether a supplemental services request is warranted, turning budget management from a monthly accounting exercise into a weekly operational decision.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every week, this automation pulls billed hours by project and phase from the project accounting system, compares them against the contracted fee and the percent-complete estimate, and updates a live profitability dashboard the principal can review in minutes. Projects where fee burn is outpacing percent complete by more than 10% are flagged for a project manager conversation before the budget is exhausted. Projects approaching the contracted fee threshold trigger an automatic prompt to evaluate whether a supplemental services request is warranted, turning budget management from a monthly accounting exercise into a weekly operational decision.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, an ae firm principal spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>AE project accounting software (e.g., Deltek Vantagepoint, BST Global, or Ajera)</span><span>Zapier or Make.com</span><span>Google Sheets or a BI tool (profitability dashboard)</span><span>Slack (weekly fee burn alert to PMs)</span><span>Email (principal dashboard delivery)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every RFI submitted by the contractor is automatically logged with the date received, the question posed, the discipline responsible for the response, and a deadline calculated from the contract's RFI response requirement. Overdue RFIs trigger an escalating sequence of alerts to the responsible engineer and then to the project manager. Approved change orders are logged against the original contract value, and the project engineer receives a running contract value summary that updates automatically with each executed change, so the total project cost picture is always current without anyone manually updating a log.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every RFI submitted by the contractor is automatically logged with the date received, the question posed, the discipline responsible for the response, and a deadline calculated from the contract's RFI response requirement. Overdue RFIs trigger an escalating sequence of alerts to the responsible engineer and then to the project manager. Approved change orders are logged against the original contract value, and the project engineer receives a running contract value summary that updates automatically with each executed change, so the total project cost picture is always current without anyone manually updating a log.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a project engineer has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Project management software (e.g., Procore, PlanGrid, or e-Builder)</span><span>Zapier or Make.com</span><span>Airtable (RFI and change order log)</span><span>Slack (overdue RFI and CO status alerts)</span><span>Email (RFI response notifications to contractor)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>After each coordination model run, this automation parses the clash detection report, categorizes clashes by discipline pair and severity, assigns each clash to the responsible discipline lead with a resolution deadline, and distributes a summary to all coordination meeting participants before the next session. Unresolved clashes from the prior meeting that are still open are highlighted in red in each distribution, creating accountability without the BIM coordinator manually tracking every clash through its full resolution lifecycle across multiple consultants and subcontractors.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">After each coordination model run, this automation parses the clash detection report, categorizes clashes by discipline pair and severity, assigns each clash to the responsible discipline lead with a resolution deadline, and distributes a summary to all coordination meeting participants before the next session. Unresolved clashes from the prior meeting that are still open are highlighted in red in each distribution, creating accountability without the BIM coordinator manually tracking every clash through its full resolution lifecycle across multiple consultants and subcontractors.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a bim coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>BIM coordination platform (e.g., Navisworks, BIM 360 Glue, or Revizto)</span><span>Zapier or Make.com</span><span>Airtable (clash log with discipline assignments)</span><span>Email (clash report distribution)</span><span>Slack (unresolved clash escalation alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a Request for Information comes in from a contractor on an active project, this automation automatically logs it along with its required response deadline, assigns it to the appropriate team member based on the discipline involved, and sends escalating reminders as that deadline approaches. A missed RFI response that could delay an entire construction schedule gets caught while there's still time to answer it, instead of surfacing only when the contractor calls asking why they haven't heard back.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a Request for Information comes in from a contractor on an active project, this automation automatically logs it along with its required response deadline, assigns it to the appropriate team member based on the discipline involved, and sends escalating reminders as that deadline approaches. A missed RFI response that could delay an entire construction schedule gets caught while there's still time to answer it, instead of surfacing only when the contractor calls asking why they haven't heard back.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a project architect manually pieces together information from different places, then has to relay it to everyone who needs it. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Procore or Bluebeam</span><span>Zapier or Make.com</span><span>Google Calendar</span><span>Slack or email</span></div>
+          </div>
         </div>
       </details>
 
@@ -515,9 +552,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a drawing set is revised and marked final, this automation automatically distributes the updated version to every stakeholder on the project's distribution list, logs exactly who received which revision number and when, and flags anyone still confirmed to be working from an outdated set. Field crews and consultants stop building or coordinating off drawings that were already superseded two revisions ago.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a drawing set is revised and marked final, this automation automatically distributes the updated version to every stakeholder on the project's distribution list, logs exactly who received which revision number and when, and flags anyone still confirmed to be working from an outdated set. Field crews and consultants stop building or coordinating off drawings that were already superseded two revisions ago.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a design coordinator manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Bluebeam or Revit</span><span>Procore</span><span>Zapier or Make.com</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 
@@ -527,9 +567,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation tracks every submitted permit application against the issuing jurisdiction's typical review timeline and automatically checks for status updates, notifying the project manager the moment a permit is approved, rejected, or flagged for additional information. Instead of someone manually logging into a municipal portal every few days to check, the status change reaches the project manager the same day it posts.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation tracks every submitted permit application against the issuing jurisdiction's typical review timeline and automatically checks for status updates, notifying the project manager the moment a permit is approved, rejected, or flagged for additional information. Instead of someone manually logging into a municipal portal every few days to check, the status change reaches the project manager the same day it posts.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a project manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A permit tracking tool or municipal portal API</span><span>Zapier or Make.com</span><span>Google Sheets</span><span>Email or Slack</span></div>
+          </div>
         </div>
       </details>
 
@@ -539,9 +582,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As a project reaches each contractually defined milestone, schematic design complete, design development complete, construction documents issued, this automation automatically generates the corresponding invoice based on the fee schedule written into the contract and routes it for internal review before it's sent. Billing keeps pace with actual progress instead of trailing weeks behind because someone forgot to generate the invoice when the milestone was hit.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As a project reaches each contractually defined milestone, schematic design complete, design development complete, construction documents issued, this automation automatically generates the corresponding invoice based on the fee schedule written into the contract and routes it for internal review before it's sent. Billing keeps pace with actual progress instead of trailing weeks behind because someone forgot to generate the invoice when the milestone was hit.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a principal is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>QuickBooks Online or Deltek</span><span>Zapier or Make.com</span><span>Google Sheets (fee schedule)</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 
@@ -551,9 +597,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For multi-disciplinary projects involving structural, mechanical, and other consultants, this automation tracks each consultant's deliverable deadlines and automatically sends reminders as each date approaches. If any consultant's deliverable is at risk of slipping, the project manager is flagged directly instead of discovering the delay only when the overall project schedule is already at risk of shifting.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For multi-disciplinary projects involving structural, mechanical, and other consultants, this automation tracks each consultant's deliverable deadlines and automatically sends reminders as each date approaches. If any consultant's deliverable is at risk of slipping, the project manager is flagged directly instead of discovering the delay only when the overall project schedule is already at risk of shifting.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a project manager handles each case reactively, after someone has already noticed something went wrong. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Procore</span><span>Zapier or Make.com</span><span>Google Calendar</span><span>Slack or email</span></div>
+          </div>
         </div>
       </details>
 

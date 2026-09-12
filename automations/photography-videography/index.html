@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Photographer</span><h3>Booking, Contract &amp; Gallery Delivery Pipeline</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a photography inquiry is submitted through the website, the prospect receives an immediate availability confirmation, a pricing guide, and a link to book a discovery call. After the call, the system sends a booking agreement and retainer invoice simultaneously, the session is not held until both are received. A week before the session, the client gets a preparation guide with wardrobe tips, location details, and what to expect. After the shoot, a gallery delivery notification is sent automatically when the edited gallery is ready, with a download link that expires in 30 days, triggering an extension request prompt if the client doesn't download within that window.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a photography inquiry is submitted through the website, the prospect receives an immediate availability confirmation, a pricing guide, and a link to book a discovery call. After the call, the system sends a booking agreement and retainer invoice simultaneously, the session is not held until both are received. A week before the session, the client gets a preparation guide with wardrobe tips, location details, and what to expect. After the shoot, a gallery delivery notification is sent automatically when the edited gallery is ready, with a download link that expires in 30 days, triggering an extension request prompt if the client doesn't download within that window.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a photographer, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Honeybook or Dubsado (CRM and contract)</span><span>Zapier or Make.com</span><span>Calendly (discovery call scheduling)</span><span>Pixieset or ShootProof (gallery delivery)</span><span>Twilio (gallery ready SMS notification)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a new video production is booked, the client receives a structured creative brief form capturing the video's goal, target audience, key messages, tone, reference examples, and all brand assets. Completed briefs are automatically routed to the assigned director and editor with a project folder pre-created in the shared drive. At each production milestone (pre-production complete, rough cut ready, final cut delivered) the client receives an automated status update with a review link and a feedback deadline. Feedback received after the deadline is flagged as a scope extension rather than incorporated silently, protecting the production timeline and the team's workload.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a new video production is booked, the client receives a structured creative brief form capturing the video's goal, target audience, key messages, tone, reference examples, and all brand assets. Completed briefs are automatically routed to the assigned director and editor with a project folder pre-created in the shared drive. At each production milestone (pre-production complete, rough cut ready, final cut delivered) the client receives an automated status update with a review link and a feedback deadline. Feedback received after the deadline is flagged as a scope extension rather than incorporated silently, protecting the production timeline and the team's workload.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a video production manager handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (creative brief and feedback forms)</span><span>Zapier or Make.com</span><span>Google Drive (project folder creation)</span><span>Frame.io (video review and feedback)</span><span>Email (milestone status updates and deadline reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Studio booking requests are handled through an online form that captures the session type, preferred dates, the number of subjects, and any special requirements, and the system checks studio calendar availability before confirming, no double-booking, no manual calendar management. Confirmed bookings automatically receive a deposit invoice and a session prep questionnaire asking about wardrobe, desired image style, and any concerns. Clients who don't submit their questionnaire within five days receive a reminder, and the studio owner has a complete preparation picture for every session before the day arrives, rather than discovering at the shoot that nobody told them it was a corporate headshot session for forty people.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Studio booking requests are handled through an online form that captures the session type, preferred dates, the number of subjects, and any special requirements, and the system checks studio calendar availability before confirming, no double-booking, no manual calendar management. Confirmed bookings automatically receive a deposit invoice and a session prep questionnaire asking about wardrobe, desired image style, and any concerns. Clients who don't submit their questionnaire within five days receive a reminder, and the studio owner has a complete preparation picture for every session before the day arrives, rather than discovering at the shoot that nobody told them it was a corporate headshot session for forty people.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a studio owner handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Honeybook or a studio booking tool</span><span>Jotform (session questionnaire)</span><span>Zapier or Make.com</span><span>Stripe (deposit invoicing)</span><span>Twilio (booking confirmation and questionnaire reminder SMS)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a rough cut is shared with the client, this automation starts a revision clock based on the contract's revision window and sends the client a feedback form that captures timecoded notes in a structured format, eliminating the "the music feels a bit off around 1:15" email thread that makes revision cycles take twice as long. When revision requests are submitted, they are automatically logged and sent to the editor as a structured list. When the final approved file is delivered, a watermarked preview and a password-protected full-resolution download link are automatically generated and sent, protecting the final deliverable while making it easy for the client to share for approval before distribution.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a rough cut is shared with the client, this automation starts a revision clock based on the contract's revision window and sends the client a feedback form that captures timecoded notes in a structured format, eliminating the "the music feels a bit off around 1:15" email thread that makes revision cycles take twice as long. When revision requests are submitted, they are automatically logged and sent to the editor as a structured list. When the final approved file is delivered, a watermarked preview and a password-protected full-resolution download link are automatically generated and sent, protecting the final deliverable while making it easy for the client to share for approval before distribution.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a videographer, who has to track every step by hand across emails, spreadsheets, and sticky notes. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Frame.io (client review and feedback)</span><span>Jotform (structured revision request form)</span><span>Zapier or Make.com</span><span>Vimeo or Dropbox (watermarked preview and final delivery)</span><span>Email (revision tracking and final delivery notifications)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Photography inquiries submitted through the website, Instagram DM, or Facebook are automatically captured in the CRM, acknowledged within five minutes with a warm reply and a link to view pricing and availability, and enrolled in a nurture sequence if they don't book a consultation immediately. Inquiries that don't book within 48 hours receive a follow-up with a specific availability offer and a limited-time booking incentive. The marketing manager sees a lead source dashboard showing exactly which channels (SEO, Instagram, referral, Google Ads) are driving inquiries, consultations, and bookings, so the advertising budget is directed toward the channels producing actual revenue rather than just traffic.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Photography inquiries submitted through the website, Instagram DM, or Facebook are automatically captured in the CRM, acknowledged within five minutes with a warm reply and a link to view pricing and availability, and enrolled in a nurture sequence if they don't book a consultation immediately. Inquiries that don't book within 48 hours receive a follow-up with a specific availability offer and a limited-time booking incentive. The marketing manager sees a lead source dashboard showing exactly which channels (SEO, Instagram, referral, Google Ads) are driving inquiries, consultations, and bookings, so the advertising budget is directed toward the channels producing actual revenue rather than just traffic.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a photography marketing manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., Honeybook or HubSpot)</span><span>Zapier or Make.com</span><span>Twilio (5-minute inquiry acknowledgment SMS)</span><span>Mailchimp or ActiveCampaign (inquiry nurture sequence)</span><span>Google Sheets or Looker Studio (lead source attribution dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a client inquires and selects a package, this automation automatically sends the contract for e-signature along with a deposit invoice, and only confirms the date on the studio's calendar once both are completed. A date stops being held indefinitely for a client who expresses interest but never actually finalizes the booking, freeing that slot for someone ready to commit.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a client inquires and selects a package, this automation automatically sends the contract for e-signature along with a deposit invoice, and only confirms the date on the studio's calendar once both are completed. A date stops being held indefinitely for a client who expresses interest but never actually finalizes the booking, freeing that slot for someone ready to commit.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a studio manager manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>HoneyBook or Pixieset</span><span>DocuSign or PandaDoc</span><span>Stripe</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
 
@@ -515,9 +552,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a photo or video gallery is ready, this automation automatically emails the client their private gallery link, and if they haven't downloaded their files within a set window, sends an automatic reminder before the gallery's access period actually expires. Clients stop losing access to photos they paid for simply because they meant to download them \"later\" and forgot.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a photo or video gallery is ready, this automation automatically emails the client their private gallery link, and if they haven't downloaded their files within a set window, sends an automatic reminder before the gallery's access period actually expires. Clients stop losing access to photos they paid for simply because they meant to download them \"later\" and forgot.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a photographer spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Pixieset or ShootProof</span><span>Mailchimp or email</span><span>Zapier or Make.com</span><span>Twilio (SMS reminder)</span></div>
+          </div>
         </div>
       </details>
 
@@ -527,9 +567,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A set number of days after gallery delivery, typically three to five, this automation automatically sends clients an email showcasing print and album options built from their own actual photos, timed for when excitement about the images is still at its peak. Passive gallery viewers who'd otherwise just download files and move on convert into print and album buyers because the offer arrives at the moment they're most emotionally invested.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A set number of days after gallery delivery, typically three to five, this automation automatically sends clients an email showcasing print and album options built from their own actual photos, timed for when excitement about the images is still at its peak. Passive gallery viewers who'd otherwise just download files and move on convert into print and album buyers because the offer arrives at the moment they're most emotionally invested.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a sales coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Pixieset or ShootProof</span><span>Mailchimp</span><span>Zapier or Make.com</span><span>Stripe</span></div>
+          </div>
         </div>
       </details>
 
@@ -539,9 +582,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a booked shoot requires an associate photographer or second shooter, this automation automatically checks the associate's calendar for availability, sends them the shoot details for confirmation, and flags the studio owner if no associate has confirmed within a set number of days of the shoot date. A shoot never gets uncomfortably close to happening without a confirmed second shooter in place.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a booked shoot requires an associate photographer or second shooter, this automation automatically checks the associate's calendar for availability, sends them the shoot details for confirmation, and flags the studio owner if no associate has confirmed within a set number of days of the shoot date. A shoot never gets uncomfortably close to happening without a confirmed second shooter in place.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a studio owner is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>HoneyBook</span><span>Google Calendar</span><span>Zapier or Make.com</span><span>Twilio or email</span></div>
+          </div>
         </div>
       </details>
 
@@ -551,9 +597,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For portrait and family photographers, this automation automatically reaches out to past clients around the one-year mark from their last session with a friendly reminder that it might be time for updated family photos. Repeat bookings get generated on a predictable schedule instead of relying entirely on a past client happening to think of the studio again on their own.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For portrait and family photographers, this automation automatically reaches out to past clients around the one-year mark from their last session with a friendly reminder that it might be time for updated family photos. Repeat bookings get generated on a predictable schedule instead of relying entirely on a past client happening to think of the studio again on their own.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a studio owner manually pieces together information from different places, then has to relay it to everyone who needs it.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>HoneyBook or a CRM</span><span>Mailchimp</span><span>Zapier or Make.com</span><span>Google Sheets (session date tracker)</span></div>
+          </div>
         </div>
       </details>
 

@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Service Manager</span><h3>System Performance Underperformance Alert</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation continuously compares each installed solar system's actual energy output against its modeled expected output and automatically alerts the service team when a system is underperforming beyond a normal range. A failed panel or inverter often gets caught before the customer even notices their utility bill went up.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation continuously compares each installed solar system's actual energy output against its modeled expected output and automatically alerts the service team when a system is underperforming beyond a normal range. A failed panel or inverter often gets caught before the customer even notices their utility bill went up.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a service manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A solar monitoring platform (SolarEdge or Enphase)</span><span>Zapier or Make.com</span><span>Email or Slack</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation tracks every project's permit and utility interconnection application status, automatically checking for updates and alerting the project coordinator the moment a stage is approved. Installation and activation move forward the same day approval posts instead of sitting delayed because no one checked the portal.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation tracks every project's permit and utility interconnection application status, automatically checking for updates and alerting the project coordinator the moment a stage is approved. Installation and activation move forward the same day approval posts instead of sitting delayed because no one checked the portal.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a project coordinator has to notice problems after they've already happened, then scramble to fix them manually one at a time. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A solar CRM (Aurora or SolarNexus)</span><span>Zapier or Make.com</span><span>Email or Slack</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As a project passes each contractually defined milestone, site survey, permit approval, installation complete, activation, this automation automatically generates the corresponding invoice tied to the finance agreement. Billing stays synced to actual progress instead of trailing behind because a milestone was reached but nobody triggered the invoice.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As a project passes each contractually defined milestone, site survey, permit approval, installation complete, activation, this automation automatically generates the corresponding invoice tied to the finance agreement. Billing stays synced to actual progress instead of trailing behind because a milestone was reached but nobody triggered the invoice.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a finance manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A solar CRM</span><span>QuickBooks Online</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a prospect uploads a copy of their utility bill during the quote request process, this automation automatically extracts their usage data to generate a preliminary system size and savings estimate. The sales team gets a ready-made starting point instead of a blank lead that requires a full intake call before any real conversation can happen.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a prospect uploads a copy of their utility bill during the quote request process, this automation automatically extracts their usage data to generate a preliminary system size and savings estimate. The sales team gets a ready-made starting point instead of a blank lead that requires a full intake call before any real conversation can happen.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a sales development rep, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>OpenAI API or a bill-parsing tool</span><span>A solar CRM (Aurora)</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As equipment warranties approach expiration, this automation automatically reaches out to the homeowner with maintenance plan or extended warranty options. The offer lands before coverage lapses rather than after something breaks and the homeowner is left paying full price for a repair that could have been covered.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As equipment warranties approach expiration, this automation automatically reaches out to the homeowner with maintenance plan or extended warranty options. The offer lands before coverage lapses rather than after something breaks and the homeowner is left paying full price for a repair that could have been covered.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a customer success manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A solar CRM</span><span>Mailchimp or email</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
     </div>

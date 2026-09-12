@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Agency Owner</span><h3>Client Fill Rate &amp; Revenue Pipeline Dashboard</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every open job order in the agency is tracked in real time against its fill deadline and fee value, and the agency owner receives a Monday morning digest showing orders by urgency, recruiter assignment, candidate pipeline depth, and estimated close probability. Any job order that has been open for more than 14 days without a qualified submittal triggers an escalation alert, and orders approaching their client deadline with no placement imminent receive a priority flag with a suggested action. The agency owner manages the revenue pipeline by data rather than intuition, and every recruiter knows exactly where their book of business stands before the week begins.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every open job order in the agency is tracked in real time against its fill deadline and fee value, and the agency owner receives a Monday morning digest showing orders by urgency, recruiter assignment, candidate pipeline depth, and estimated close probability. Any job order that has been open for more than 14 days without a qualified submittal triggers an escalation alert, and orders approaching their client deadline with no placement imminent receive a priority flag with a suggested action. The agency owner manages the revenue pipeline by data rather than intuition, and every recruiter knows exactly where their book of business stands before the week begins.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, an agency owner spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>ATS (e.g., Bullhorn, JobAdder, or Crelate)</span><span>Zapier or Make.com</span><span>Google Sheets or a BI tool (revenue pipeline dashboard)</span><span>Slack (weekly digest and escalation alerts)</span><span>Email (client fill rate summary)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a new job order is received from a client (via email, phone, or the client portal) this automation creates the order record in the ATS, formats the intake information into a structured job brief, sends it to the recruiting team with a notification and a deadline for first submittals, and fires a confirmation back to the client that the search has officially begun with an expected first-submittal timeline. When the first candidates are submitted, the client receives an automatic notification with a portal link to review profiles and provide feedback, eliminating the delay between "we have the job order" and "the recruiter knows about it and is working it."</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a new job order is received from a client (via email, phone, or the client portal) this automation creates the order record in the ATS, formats the intake information into a structured job brief, sends it to the recruiting team with a notification and a deadline for first submittals, and fires a confirmation back to the client that the search has officially begun with an expected first-submittal timeline. When the first candidates are submitted, the client receives an automatic notification with a portal link to review profiles and provide feedback, eliminating the delay between "we have the job order" and "the recruiter knows about it and is working it."</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, an account executive is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>ATS (e.g., Bullhorn or Crelate)</span><span>Zapier or Make.com</span><span>Jotform (job order intake form for standardized capture)</span><span>Email (client confirmation and submittal notification)</span><span>Slack (recruiting team job order alert)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every candidate in the ATS who was placed more than six months ago, or who applied and wasn't placed more than 90 days ago, receives an automated check-in message asking if they are currently open to opportunities, with a one-click "yes, contact me" or "not right now" response option. Those who express interest are automatically moved to an active pipeline and the recruiter is notified immediately with the candidate's profile. Passive candidates who respond with "not right now" are scheduled for another automated check-in 60 days later. The recruiter's active pipeline grows continuously from the existing database rather than depending entirely on new sourcing every cycle.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every candidate in the ATS who was placed more than six months ago, or who applied and wasn't placed more than 90 days ago, receives an automated check-in message asking if they are currently open to opportunities, with a one-click "yes, contact me" or "not right now" response option. Those who express interest are automatically moved to an active pipeline and the recruiter is notified immediately with the candidate's profile. Passive candidates who respond with "not right now" are scheduled for another automated check-in 60 days later. The recruiter's active pipeline grows continuously from the existing database rather than depending entirely on new sourcing every cycle.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a recruiter has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>ATS (e.g., Bullhorn, Lever, or Crelate)</span><span>Zapier or Make.com</span><span>Twilio (candidate re-engagement SMS)</span><span>Mailchimp or ActiveCampaign (email re-engagement sequence)</span><span>Airtable (re-engagement response tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every Friday morning, all active contractors receive an automated timesheet submission reminder with a direct link to their timesheet form. Timesheets submitted by the cutoff are automatically validated against the approved schedule and flagged for any overtime requiring client approval before they are processed. Timesheets not submitted by the deadline trigger an escalating reminder sequence, and the payroll coordinator receives a list of missing timesheets with enough lead time to chase them before payroll locks. Approved timesheets flow automatically into the payroll platform, eliminating manual data entry and the errors that come with it at the busiest moment of every week.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every Friday morning, all active contractors receive an automated timesheet submission reminder with a direct link to their timesheet form. Timesheets submitted by the cutoff are automatically validated against the approved schedule and flagged for any overtime requiring client approval before they are processed. Timesheets not submitted by the deadline trigger an escalating reminder sequence, and the payroll coordinator receives a list of missing timesheets with enough lead time to chase them before payroll locks. Approved timesheets flow automatically into the payroll platform, eliminating manual data entry and the errors that come with it at the busiest moment of every week.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a staffing payroll coordinator remembering to check in, update records, and follow up, with no safety net if something slips. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>ATS with timesheet module or Jotform (timesheet collection)</span><span>Zapier or Make.com</span><span>Payroll platform (e.g., Gusto, ADP, or Paylocity)</span><span>Twilio (contractor timesheet reminders)</span><span>Google Sheets (timesheet exception tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a new contractor is placed, this automation initiates the I-9 process with a digital completion link sent to the worker before their first day, monitors completion status with escalating reminders, and triggers E-Verify submission automatically upon I-9 completion. Any reverification requirement for a worker with a temporary work authorization is calendared and the compliance manager receives a reminder 90 days before expiration. Industry-specific certifications (OSHA 10, forklift, food handler) are tracked per worker, with renewal alerts sent before expiration. A single compliance dashboard gives the compliance manager a real-time view of every worker's documentation status across the entire contractor base.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a new contractor is placed, this automation initiates the I-9 process with a digital completion link sent to the worker before their first day, monitors completion status with escalating reminders, and triggers E-Verify submission automatically upon I-9 completion. Any reverification requirement for a worker with a temporary work authorization is calendared and the compliance manager receives a reminder 90 days before expiration. Industry-specific certifications (OSHA 10, forklift, food handler) are tracked per worker, with renewal alerts sent before expiration. A single compliance dashboard gives the compliance manager a real-time view of every worker's documentation status across the entire contractor base.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a compliance manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>I-9 compliance platform (e.g., Tracker I-9 or Equifax I-9 Anywhere)</span><span>Zapier or Make.com</span><span>Airtable (certification and reverification tracker)</span><span>Email or Twilio (worker and manager compliance alerts)</span><span>Google Sheets (compliance dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation tracks how long each candidate has sat in a given pipeline stage, submitted, interviewing, offer pending, and automatically flags anyone who's gone quiet past a set number of days, typically five for an active interview stage. The recruiter gets a prompt to follow up before a strong candidate quietly accepts an offer elsewhere without anyone at the agency realizing the candidate had gone cold. Pipelines that used to rely on a recruiter's memory to catch a stalled candidate now surface the problem automatically.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation tracks how long each candidate has sat in a given pipeline stage, submitted, interviewing, offer pending, and automatically flags anyone who's gone quiet past a set number of days, typically five for an active interview stage. The recruiter gets a prompt to follow up before a strong candidate quietly accepts an offer elsewhere without anyone at the agency realizing the candidate had gone cold. Pipelines that used to rely on a recruiter's memory to catch a stalled candidate now surface the problem automatically.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a senior recruiter manually pieces together information from different places, then has to relay it to everyone who needs it.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Bullhorn or JobDiva</span><span>Zapier or Make.com</span><span>Slack or email</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
 
@@ -515,9 +552,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For placed contractors, this automation automatically sends a timesheet reminder at the end of each work week, and once the timesheet is submitted and approved by the client contact, automatically generates the invoice tied to that contractor's bill rate. The gap between hours actually worked and the agency getting paid closes from a manual, once-a-week reconciliation chore to something that happens the moment the client clicks approve.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For placed contractors, this automation automatically sends a timesheet reminder at the end of each work week, and once the timesheet is submitted and approved by the client contact, automatically generates the invoice tied to that contractor's bill rate. The gap between hours actually worked and the agency getting paid closes from a manual, once-a-week reconciliation chore to something that happens the moment the client clicks approve.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on an accounts coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Bullhorn</span><span>Zapier or Make.com</span><span>QuickBooks Online</span><span>Twilio or email</span></div>
+          </div>
         </div>
       </details>
 
@@ -527,9 +567,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a new job order is opened, this automation automatically scans the existing candidate database for people matching the required skills, location, and availability, and surfaces a ranked shortlist to the recruiter within minutes. What used to be a manual search through hundreds of resumes now starts with a pre-built shortlist the recruiter can start calling immediately.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a new job order is opened, this automation automatically scans the existing candidate database for people matching the required skills, location, and availability, and surfaces a ranked shortlist to the recruiter within minutes. What used to be a manual search through hundreds of resumes now starts with a pre-built shortlist the recruiter can start calling immediately.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a recruiting manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Bullhorn or JobDiva</span><span>Zapier or Make.com</span><span>OpenAI API (skills matching)</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
 
@@ -539,9 +582,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Once a candidate reaches the offer stage, this automation automatically sends reference check request forms to the listed references, tracks who has and hasn't responded, and compiles the completed references directly into the candidate's file. A recruiter no longer has to manually call each reference and type up notes between other calls.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Once a candidate reaches the offer stage, this automation automatically sends reference check request forms to the listed references, tracks who has and hasn't responded, and compiles the completed references directly into the candidate's file. A recruiter no longer has to manually call each reference and type up notes between other calls.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a recruiting coordinator remembering to check in, update records, and follow up, with no safety net if something slips. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Bullhorn</span><span>Jotform or a reference-check tool</span><span>Zapier or Make.com</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 
@@ -551,9 +597,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>At 30, 60, and 90 days after a candidate is placed, this automation automatically checks in with both the candidate and the client to confirm the placement is going well. A mismatch gets caught and addressed while there's still time to act, instead of surfacing only once the replacement guarantee period has already expired.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">At 30, 60, and 90 days after a candidate is placed, this automation automatically checks in with both the candidate and the client to confirm the placement is going well. A mismatch gets caught and addressed while there's still time to act, instead of surfacing only once the replacement guarantee period has already expired.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, an account manager manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Bullhorn</span><span>Twilio or email</span><span>Zapier or Make.com</span><span>A CRM</span></div>
+          </div>
         </div>
       </details>
 

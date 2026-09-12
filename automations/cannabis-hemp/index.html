@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Dispensary Owner</span><h3>Loyalty Program &amp; High-Value Customer Re-Engagement System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every purchase automatically updates the customer's loyalty point balance, and customers who hit a tier milestone receive an automatic notification with their reward offer and an expiration date that creates urgency without being pushy. Customers who haven't purchased in 30 days enter a re-engagement sequence, a "we miss you" message with a limited offer on a product category they've purchased before. VIP customers identified by spend threshold receive early access announcements for new drops and limited menu items, giving the dispensary a direct revenue lever that doesn't depend on paid advertising every time a new product arrives.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every purchase automatically updates the customer's loyalty point balance, and customers who hit a tier milestone receive an automatic notification with their reward offer and an expiration date that creates urgency without being pushy. Customers who haven't purchased in 30 days enter a re-engagement sequence, a "we miss you" message with a limited offer on a product category they've purchased before. VIP customers identified by spend threshold receive early access announcements for new drops and limited menu items, giving the dispensary a direct revenue lever that doesn't depend on paid advertising every time a new product arrives.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a dispensary owner has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Dispensary POS (e.g., Dutchie, Treez, or Jane Technologies) with loyalty module</span><span>Zapier or Make.com</span><span>Twilio (loyalty milestone and re-engagement SMS, compliant channels only)</span><span>Mailchimp or email (VIP and lapsed customer sequences)</span><span>Airtable (customer segment tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every inventory movement (receiving, transfer, sale, destruction, or adjustment) is logged in real time and automatically synced to the state's required track-and-trace system (METRC, BioTrack, or equivalent) so that the compliance manager's reporting obligation is met continuously rather than in a stressful end-of-month data dump. Any inventory discrepancy identified between the POS and the track-and-trace system triggers an immediate compliance alert, and the compliance manager receives a daily reconciliation summary confirming that all movement is accounted for before the next state inspection catches what the internal process missed.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every inventory movement (receiving, transfer, sale, destruction, or adjustment) is logged in real time and automatically synced to the state's required track-and-trace system (METRC, BioTrack, or equivalent) so that the compliance manager's reporting obligation is met continuously rather than in a stressful end-of-month data dump. Any inventory discrepancy identified between the POS and the track-and-trace system triggers an immediate compliance alert, and the compliance manager receives a daily reconciliation summary confirming that all movement is accounted for before the next state inspection catches what the internal process missed.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a compliance manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Dispensary or cultivation software with METRC/BioTrack integration (e.g., Leaf Trade or COVA)</span><span>Zapier or Make.com</span><span>Airtable (discrepancy log and compliance tracker)</span><span>Slack or email (daily reconciliation summary and discrepancy alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Sensors in each grow room continuously monitor temperature, humidity, CO2, and light schedules, and any reading outside the set parameters triggers an immediate alert to the head grower and cultivation manager via text, because a HVAC failure that goes unnoticed for six hours during a critical flowering stage can destroy an entire room's yield. Throughout the grow cycle, the cultivation team logs daily observations via mobile form (plant height, leaf color, pest sightings, watering notes) and the system builds a complete grow log by room, strain, and batch that is available for compliance inspection and internal quality review without anyone compiling it from handwritten notes after the fact.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Sensors in each grow room continuously monitor temperature, humidity, CO2, and light schedules, and any reading outside the set parameters triggers an immediate alert to the head grower and cultivation manager via text, because a HVAC failure that goes unnoticed for six hours during a critical flowering stage can destroy an entire room's yield. Throughout the grow cycle, the cultivation team logs daily observations via mobile form (plant height, leaf color, pest sightings, watering notes) and the system builds a complete grow log by room, strain, and batch that is available for compliance inspection and internal quality review without anyone compiling it from handwritten notes after the fact.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a cannabis cultivator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Environmental sensors with API output (e.g., Trolmaster or Growlink)</span><span>Zapier or Make.com</span><span>Jotform (daily grow observation log)</span><span>Twilio (out-of-range environmental alerts)</span><span>Airtable (grow log by room and batch)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Each week, this automation checks every dispensary account's order history, identifies accounts that are typically on a weekly or bi-weekly reorder cycle and haven't placed a new order, and sends the account buyer a personalized reorder reminder with their standard product list and current pricing pre-populated in a simple order form. When new products hit the menu or pricing is updated, all active accounts receive an automatic product sheet or price list update from their account rep, so the buyer is informed before they order from a competitor simply because they didn't know the product existed. The sales rep spends time on relationships and new accounts rather than manually chasing reorders.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Each week, this automation checks every dispensary account's order history, identifies accounts that are typically on a weekly or bi-weekly reorder cycle and haven't placed a new order, and sends the account buyer a personalized reorder reminder with their standard product list and current pricing pre-populated in a simple order form. When new products hit the menu or pricing is updated, all active accounts receive an automatic product sheet or price list update from their account rep, so the buyer is informed before they order from a competitor simply because they didn't know the product existed. The sales rep spends time on relationships and new accounts rather than manually chasing reorders.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a cannabis wholesale sales rep has to notice problems after they've already happened, then scramble to fix them manually one at a time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., HubSpot or a cannabis B2B platform like Leaf Trade)</span><span>Zapier or Make.com</span><span>Jotform (digital order form)</span><span>Mailchimp or email (product announcements and reorder reminders)</span><span>Airtable (account order cycle tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When new products are added to the menu, this automation sends every budtender a product education brief and a short quiz to confirm they understand the effects, recommended use cases, and any relevant compliance disclosures before they sell it to a customer. Quiz results are logged per employee, and budtenders who score below the threshold receive the material again with a re-test prompt before they are cleared to sell the product. The budtender manager sees a real-time training compliance dashboard showing who has completed required trainings and who has outstanding items, keeping customer service quality and compliance standards consistent across every shift.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When new products are added to the menu, this automation sends every budtender a product education brief and a short quiz to confirm they understand the effects, recommended use cases, and any relevant compliance disclosures before they sell it to a customer. Quiz results are logged per employee, and budtenders who score below the threshold receive the material again with a re-test prompt before they are cleared to sell the product. The budtender manager sees a real-time training compliance dashboard showing who has completed required trainings and who has outstanding items, keeping customer service quality and compliance standards consistent across every shift.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a dispensary budtender manager manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Google Forms or Jotform (product quiz)</span><span>Zapier or Make.com</span><span>Google Sheets (training compliance tracker)</span><span>Slack (new product training announcement)</span><span>Email (quiz result notification and remediation prompts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation automatically syncs inventory movement between the point-of-sale system and the state's mandated seed-to-sale tracking system in real time. The reporting gaps and manual data entry errors that lead directly to compliance violations, and potentially to a license being at risk, get eliminated at the source.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation automatically syncs inventory movement between the point-of-sale system and the state's mandated seed-to-sale tracking system in real time. The reporting gaps and manual data entry errors that lead directly to compliance violations, and potentially to a license being at risk, get eliminated at the source.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a compliance manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>METRC or BioTrack</span><span>A cannabis POS (Flowhub or Dutchie)</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
 
@@ -515,9 +552,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When lab testing results come back for a product batch, this automation automatically checks the results against state potency and contaminant limits, and immediately flags any batch that fails so it's pulled from the sales floor before it can be sold. A failed batch never has the chance to reach a customer because a result sat unread in an email.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When lab testing results come back for a product batch, this automation automatically checks the results against state potency and contaminant limits, and immediately flags any batch that fails so it's pulled from the sales floor before it can be sold. A failed batch never has the chance to reach a customer because a result sat unread in an email.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a quality control manager, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>METRC or BioTrack</span><span>A lab results portal</span><span>Zapier or Make.com</span><span>Email or Slack</span></div>
+          </div>
         </div>
       </details>
 
@@ -527,9 +567,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation tracks every state and local license and permit renewal deadline tied to the operation and automatically alerts ownership well ahead of each date. A lapsed cannabis license typically can't be operated through the way a lapsed license in most other industries can, so this alert carries more weight than a routine reminder.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation tracks every state and local license and permit renewal deadline tied to the operation and automatically alerts ownership well ahead of each date. A lapsed cannabis license typically can't be operated through the way a lapsed license in most other industries can, so this alert carries more weight than a routine reminder.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means an operations director handles each case reactively, after someone has already noticed something went wrong. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Google Sheets or a compliance tracking tool</span><span>Zapier or Make.com</span><span>Email or Slack</span></div>
+          </div>
         </div>
       </details>
 
@@ -539,9 +582,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>At checkout, this automation automatically checks a customer's same-day purchase history against state possession limits before the sale is completed. An inadvertent compliance violation at the register, one that can put the dispensary's license at risk, gets prevented before it happens rather than discovered during an audit.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">At checkout, this automation automatically checks a customer's same-day purchase history against state possession limits before the sale is completed. An inadvertent compliance violation at the register, one that can put the dispensary's license at risk, gets prevented before it happens rather than discovered during an audit.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a dispensary manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A cannabis POS (Flowhub or Dutchie)</span><span>METRC</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
 
@@ -551,9 +597,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation tracks required compliance documentation, lab results, licensing, manifest records, for every incoming product from every vendor, automatically flagging any incoming shipment missing required paperwork before it's accepted into inventory. Product with incomplete documentation never quietly makes it onto the shelf.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation tracks required compliance documentation, lab results, licensing, manifest records, for every incoming product from every vendor, automatically flagging any incoming shipment missing required paperwork before it's accepted into inventory. Product with incomplete documentation never quietly makes it onto the shelf.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a purchasing manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>METRC</span><span>Google Sheets or a document management tool</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
 

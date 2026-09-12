@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Scheduling Coordinator</span><h3>Lesson Scheduling &amp; Instructor Matching</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a student books a lesson, this automation automatically matches them with an available instructor based on location and vehicle type needed, and confirms the booking on both the student's and instructor's calendars. Matching stops depending on a coordinator manually cross-checking two calendars for every single lesson request.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a student books a lesson, this automation automatically matches them with an available instructor based on location and vehicle type needed, and confirms the booking on both the student's and instructor's calendars. Matching stops depending on a coordinator manually cross-checking two calendars for every single lesson request.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a scheduling coordinator manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A driving school management platform</span><span>Google Calendar</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Based on each student's enrollment date and state-required practice hour minimums, this automation automatically tracks their progress and reminds them when they're eligible to schedule their permit or road test. The student never has to independently track state requirements themselves to figure out when they're actually ready.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Based on each student's enrollment date and state-required practice hour minimums, this automation automatically tracks their progress and reminds them when they're eligible to schedule their permit or road test. The student never has to independently track state requirements themselves to figure out when they're actually ready.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a student services coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A driving school management platform</span><span>Twilio or email</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For the fleet of training vehicles, this automation automatically schedules routine maintenance and required inspections based on mileage and calendar intervals. Vehicles go off the road for scheduled service on a predictable calendar rather than a surprise breakdown interrupting a lesson mid-session.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For the fleet of training vehicles, this automation automatically schedules routine maintenance and required inspections based on mileage and calendar intervals. Vehicles go off the road for scheduled service on a predictable calendar rather than a surprise breakdown interrupting a lesson mid-session.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a fleet manager manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A fleet maintenance tracker</span><span>Google Calendar</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For teen driving students, this automation automatically sends parents a periodic progress update summarizing completed hours and instructor notes. Parents stay informed without the student having to relay it themselves, which in practice means parents actually stay informed.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For teen driving students, this automation automatically sends parents a periodic progress update summarizing completed hours and instructor notes. Parents stay informed without the student having to relay it themselves, which in practice means parents actually stay informed.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, an instructor coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A driving school management platform</span><span>Mailchimp or email</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As a student uses lesson hours from a purchased package, this automation automatically tracks their remaining balance and sends a renewal reminder before the hours run out. The booking pipeline stays full instead of a student's lessons quietly stalling out because no one flagged that their package was almost spent.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As a student uses lesson hours from a purchased package, this automation automatically tracks their remaining balance and sends a renewal reminder before the hours run out. The booking pipeline stays full instead of a student's lessons quietly stalling out because no one flagged that their package was almost spent.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a billing coordinator manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A driving school management platform</span><span>Stripe or QuickBooks</span><span>Twilio or email</span></div>
+          </div>
         </div>
       </details>
     </div>

@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Property Manager</span><h3>Pre-Arrival Check-In Instructions</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A set number of days and hours before a guest's arrival, this automation automatically sends check-in instructions, door codes, and local recommendations, timed so the information arrives fresh instead of getting buried in an inbox from weeks earlier. Guests show up already knowing exactly how to get in instead of texting the host from the driveway.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A set number of days and hours before a guest's arrival, this automation automatically sends check-in instructions, door codes, and local recommendations, timed so the information arrives fresh instead of getting buried in an inbox from weeks earlier. Guests show up already knowing exactly how to get in instead of texting the host from the driveway.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a property manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Hospitable or Guesty</span><span>Twilio or email</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a guest checks out, this automation automatically notifies the cleaning team with the turnover deadline before the next guest arrives, and flags the property manager if a same-day turnover is at risk based on the cleaner's confirmed availability. A cleaner double-booked or unavailable gets caught with hours to spare instead of discovered at check-in time.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a guest checks out, this automation automatically notifies the cleaning team with the turnover deadline before the next guest arrives, and flags the property manager if a same-day turnover is at risk based on the cleaner's confirmed availability. A cleaner double-booked or unavailable gets caught with hours to spare instead of discovered at check-in time.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means an operations coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Hospitable or Guesty</span><span>Turno</span><span>Zapier or Make.com</span><span>Twilio or email</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>This automation monitors local occupancy trends, nearby events, and competitor pricing, and automatically flags nights where the current listed price is significantly under or over market. The host adjusts before losing bookings to a price that's too high, or leaving money on the table with a price that's too low, instead of setting a rate once and forgetting about it.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">This automation monitors local occupancy trends, nearby events, and competitor pricing, and automatically flags nights where the current listed price is significantly under or over market. The host adjusts before losing bookings to a price that's too high, or leaving money on the table with a price that's too low, instead of setting a rate once and forgetting about it.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a revenue manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>PriceLabs or Beyond Pricing</span><span>Zapier or Make.com</span><span>Email or Slack</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>After checkout, this automation automatically requests a review from the guest, and separately drafts a suggested response to any review the host receives, positive or negative, for the host to approve and post. Response time stays fast and consistent instead of depending on the host remembering to check the listing.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">After checkout, this automation automatically requests a review from the guest, and separately drafts a suggested response to any review the host receives, positive or negative, for the host to approve and post. Response time stays fast and consistent instead of depending on the host remembering to check the listing.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a guest experience manager manually pieces together information from different places, then has to relay it to everyone who needs it.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Hospitable or Guesty</span><span>OpenAI API (response drafting)</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a guest reports an issue during their stay, a broken appliance, a maintenance need, this automation automatically creates a maintenance ticket and routes it to the appropriate vendor or handyman, tracking it to resolution. The issue stops getting lost three messages deep in a guest chat thread that no one revisits after checkout.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a guest reports an issue during their stay, a broken appliance, a maintenance need, this automation automatically creates a maintenance ticket and routes it to the appropriate vendor or handyman, tracking it to resolution. The issue stops getting lost three messages deep in a guest chat thread that no one revisits after checkout.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a property manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Hospitable or Guesty</span><span>A maintenance ticketing tool</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
     </div>

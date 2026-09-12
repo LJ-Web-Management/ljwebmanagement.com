@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">City / County Administrator</span><h3>FOIA / Public Records Request Tracking &amp; Response System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every public records request submitted through the portal, by email, or in person is automatically assigned a unique tracking number, acknowledged to the requester with a response timeline, and routed to the correct department for record retrieval. The city administrator and department heads see a live dashboard of all open requests, their statutory due dates, and current status, so no request is discovered to be overdue when a journalist or attorney follows up. Extensions are automatically documented and communicated to the requester before the original deadline, keeping the agency in compliance with open records statutes without anyone manually managing a spreadsheet.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every public records request submitted through the portal, by email, or in person is automatically assigned a unique tracking number, acknowledged to the requester with a response timeline, and routed to the correct department for record retrieval. The city administrator and department heads see a live dashboard of all open requests, their statutory due dates, and current status, so no request is discovered to be overdue when a journalist or attorney follows up. Extensions are automatically documented and communicated to the requester before the original deadline, keeping the agency in compliance with open records statutes without anyone manually managing a spreadsheet.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a city / county administrator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>GovQA or a public records portal, or Jotform</span><span>Zapier or Make.com</span><span>Airtable or Google Sheets (request tracking dashboard)</span><span>Email (requester acknowledgment and status updates)</span><span>Slack (department routing and overdue alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Citizen service requests submitted via the city website, 311, or in person are automatically categorized by type (pothole, streetlight, water main issue, sign damage) assigned to the appropriate crew, and logged in the work order system with a priority level and target completion date. Requesters receive an automated acknowledgment with a service request number and expected response window. Completed work orders trigger a close-out notification to the requester. The public works director sees a real-time dashboard of open requests by type, aging, and crew workload, replacing the manual dispatch board that gives no visibility into whether requests are being resolved within the city's committed service levels.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Citizen service requests submitted via the city website, 311, or in person are automatically categorized by type (pothole, streetlight, water main issue, sign damage) assigned to the appropriate crew, and logged in the work order system with a priority level and target completion date. Requesters receive an automated acknowledgment with a service request number and expected response window. Completed work orders trigger a close-out notification to the requester. The public works director sees a real-time dashboard of open requests by type, aging, and crew workload, replacing the manual dispatch board that gives no visibility into whether requests are being resolved within the city's committed service levels.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a public works director handles each case reactively, after someone has already noticed something went wrong.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CMMS or work order system (e.g., Cityworks, eSP, or UpKeep)</span><span>Zapier or Make.com</span><span>Jotform or 311 integration (citizen request intake)</span><span>Twilio (citizen status notification)</span><span>Google Sheets (work order dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every active grant (federal, state, and foundation) lives in a single pipeline with key dates: application deadline, award notice, contract execution, reporting periods, and closeout. The grant administrator receives reminders 60, 30, and 7 days before each deadline, and department program managers are notified automatically when their performance data is needed for an upcoming report. Awarded grants trigger a reporting calendar that pushes deadlines to the shared calendar and assigns data collection tasks to the appropriate staff, so quarterly and annual reports are assembled from collected data rather than built under a last-minute deadline with incomplete records.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every active grant (federal, state, and foundation) lives in a single pipeline with key dates: application deadline, award notice, contract execution, reporting periods, and closeout. The grant administrator receives reminders 60, 30, and 7 days before each deadline, and department program managers are notified automatically when their performance data is needed for an upcoming report. Awarded grants trigger a reporting calendar that pushes deadlines to the shared calendar and assigns data collection tasks to the appropriate staff, so quarterly and annual reports are assembled from collected data rather than built under a last-minute deadline with incomplete records.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a grant administrator manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Airtable or Google Sheets (grant pipeline and reporting calendar)</span><span>Zapier or Make.com</span><span>Google Calendar (deadline entries)</span><span>Email or Slack (staff data collection requests and deadline alerts)</span><span>Jotform (performance data collection form)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a department submits a budget amendment request, this automation routes it through the required approval chain (department head, finance director, city manager, and council notification as applicable) with each approver receiving a one-click approve or reject link and a summary of the requested transfer's impact on current year appropriations. Approved amendments are logged automatically in the budget tracking system, and the budget analyst's monthly variance report is generated automatically from all processed amendments, giving leadership an accurate, always-current picture of how the adopted budget is tracking against actual appropriations.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a department submits a budget amendment request, this automation routes it through the required approval chain (department head, finance director, city manager, and council notification as applicable) with each approver receiving a one-click approve or reject link and a summary of the requested transfer's impact on current year appropriations. Approved amendments are logged automatically in the budget tracking system, and the budget analyst's monthly variance report is generated automatically from all processed amendments, giving leadership an accurate, always-current picture of how the adopted budget is tracking against actual appropriations.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a budget analyst spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>ERP or financial management system (e.g., Tyler Munis or NEOGOV)</span><span>Zapier or Make.com</span><span>Jotform (amendment request form)</span><span>Email (approval routing)</span><span>Google Sheets (budget variance tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When an emergency event is declared, this automation triggers a tiered mass notification sequence, text and email alerts to affected residents based on geographic zone, notifications to mutual aid partners and regional emergency management contacts, and a resource request form distributed to department heads for staffing, equipment, and supply commitments. As resources are committed, the system updates a shared operational dashboard in real time so the coordinator knows exactly what is deployed, where, and for how long without chasing confirmations by radio and phone during the most stressful hours of the event.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When an emergency event is declared, this automation triggers a tiered mass notification sequence, text and email alerts to affected residents based on geographic zone, notifications to mutual aid partners and regional emergency management contacts, and a resource request form distributed to department heads for staffing, equipment, and supply commitments. As resources are committed, the system updates a shared operational dashboard in real time so the coordinator knows exactly what is deployed, where, and for how long without chasing confirmations by radio and phone during the most stressful hours of the event.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, an emergency management coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Mass notification platform (e.g., Everbridge, Rave Mobile Safety, or AlertSense)</span><span>Zapier or Make.com</span><span>Jotform (resource commitment form)</span><span>Google Sheets (resource deployment dashboard)</span><span>Slack (inter-agency coordination channel automation)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a public records request is submitted, this automation automatically logs it, calculates the legally required response deadline, routes it to the department that holds the relevant records, and escalates internally if the deadline is approaching without a response drafted. A missed statutory deadline, which can carry real legal exposure, gets caught with days of lead time instead of discovered after the fact.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a public records request is submitted, this automation automatically logs it, calculates the legally required response deadline, routes it to the department that holds the relevant records, and escalates internally if the deadline is approaching without a response drafted. A missed statutory deadline, which can carry real legal exposure, gets caught with days of lead time instead of discovered after the fact.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a records compliance officer has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A records management system or Google Sheets</span><span>Zapier or Make.com</span><span>Email or Slack</span></div>
+          </div>
         </div>
       </details>
 
@@ -515,9 +552,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As a resident's or business's permit application moves through review stages, this automation automatically sends status update notifications by email or text at each stage change. The volume of \"what's the status of my permit\" calls to the department drops sharply because applicants already know before they think to call.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As a resident's or business's permit application moves through review stages, this automation automatically sends status update notifications by email or text at each stage change. The volume of \"what's the status of my permit\" calls to the department drops sharply because applicants already know before they think to call.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a permit technician handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A permitting software system (Accela or CityView)</span><span>Twilio or email</span><span>Zapier or Make.com</span></div>
+          </div>
         </div>
       </details>
 
@@ -527,9 +567,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a resident submits a service request, a pothole, a streetlight outage, a code violation, this automation automatically routes it to the correct department based on category and location, and sends the resident a confirmation with a tracking number and expected resolution timeframe. Requests stop getting misrouted or lost between departments.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a resident submits a service request, a pothole, a streetlight outage, a code violation, this automation automatically routes it to the correct department based on category and location, and sends the resident a confirmation with a tracking number and expected resolution timeframe. Requests stop getting misrouted or lost between departments.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a 311 service coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A 311/CRM system</span><span>Zapier or Make.com</span><span>Twilio or email</span></div>
+          </div>
         </div>
       </details>
 
@@ -539,9 +582,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>For every grant a department has received, this automation tracks required reporting deadlines and spending milestones, automatically reminding the grant manager well ahead of each deadline. Future funding eligibility, which can be jeopardized by a single missed report, stops being put at risk by a deadline that simply slipped someone's mind.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">For every grant a department has received, this automation tracks required reporting deadlines and spending milestones, automatically reminding the grant manager well ahead of each deadline. Future funding eligibility, which can be jeopardized by a single missed report, stops being put at risk by a deadline that simply slipped someone's mind.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left unautomated, a grants manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A grants management system or Google Sheets</span><span>Zapier or Make.com</span><span>Email or Slack</span></div>
+          </div>
         </div>
       </details>
 
@@ -551,9 +597,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Ahead of each scheduled public meeting, this automation automatically compiles the submitted agenda items into the formatted agenda, posts it to the required public notice channels within the legally mandated timeframe, and distributes it to board or council members. Statutory notice requirements, which carry real consequences if missed, are met automatically instead of depending on someone remembering the posting deadline.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Ahead of each scheduled public meeting, this automation automatically compiles the submitted agenda items into the formatted agenda, posts it to the required public notice channels within the legally mandated timeframe, and distributes it to board or council members. Statutory notice requirements, which carry real consequences if missed, are met automatically instead of depending on someone remembering the posting deadline.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a city clerk has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>A meeting management platform (Granicus or PrimeGov)</span><span>Zapier or Make.com</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 

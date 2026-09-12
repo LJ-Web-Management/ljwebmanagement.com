@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">School Administrator</span><h3>Enrollment Inquiry &amp; Waitlist Management System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Prospective families who submit an inquiry are automatically sent a program overview, added to the CRM with a lead score based on their child's start date and program interest, and moved through a nurture sequence that leads to a tour booking. Waitlisted students are automatically notified and invited to enroll the moment a seat opens in their target program, with the offer expiring in 48 hours to keep the process moving without a seat sitting empty.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Prospective families who submit an inquiry are automatically sent a program overview, added to the CRM with a lead score based on their child's start date and program interest, and moved through a nurture sequence that leads to a tour booking. Waitlisted students are automatically notified and invited to enroll the moment a seat opens in their target program, with the offer expiring in 48 hours to keep the process moving without a seat sitting empty.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a school administrator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform or Typeform (inquiry form)</span><span>Zapier or Make.com</span><span>CRM (e.g., HubSpot or a school CRM like Schoolmint)</span><span>Mailchimp or ActiveCampaign</span><span>Calendly (tour scheduling)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a student's grade in the gradebook drops below a set threshold, a parent communication is automatically drafted and sent from the teacher's account, summarizing the current grade, missing assignments, and a suggested next step. Weekly classroom updates are also sent automatically to all parents on a consistent schedule, so the teacher doesn't have to remember to send a newsletter, routine communication happens without eating into planning or grading time.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a student's grade in the gradebook drops below a set threshold, a parent communication is automatically drafted and sent from the teacher's account, summarizing the current grade, missing assignments, and a suggested next step. Weekly classroom updates are also sent automatically to all parents on a consistent schedule, so the teacher doesn't have to remember to send a newsletter, routine communication happens without eating into planning or grading time.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, a k-12 teacher spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Student information system (e.g., PowerSchool or Skyward)</span><span>Zapier or Make.com</span><span>Gmail (automated parent emails)</span><span>Google Classroom (assignment tracking)</span><span>OpenAI API (personalized draft language)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>After each tutoring session, tutors submit a brief session summary through a mobile-friendly form, and the system automatically formats it into a branded progress report and emails it to the parent, with a running log of sessions, topics covered, and improvement notes. Parents who haven't re-booked a session in two weeks receive a gentle reminder, and the business owner gets a weekly rollup showing which students are on track and which may be at risk of dropping.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">After each tutoring session, tutors submit a brief session summary through a mobile-friendly form, and the system automatically formats it into a branded progress report and emails it to the parent, with a running log of sessions, topics covered, and improvement notes. Parents who haven't re-booked a session in two weeks receive a gentle reminder, and the business owner gets a weekly rollup showing which students are on track and which may be at risk of dropping.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a tutoring business owner remembering to check in, update records, and follow up, with no safety net if something slips. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform or Google Forms (session summary)</span><span>Zapier or Make.com</span><span>Mailchimp or email (parent reports)</span><span>Airtable (student tracker)</span><span>Twilio (rebooking reminders)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As employees complete training modules, their completion status syncs automatically to an HR dashboard, and any employee who hasn't completed a required training by the deadline receives escalating reminders, first to them, then to their manager. When a course is completed successfully, the employee's digital certificate is generated and emailed automatically, and their compliance record is updated without anyone in training or HR having to pull a report and send it manually.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As employees complete training modules, their completion status syncs automatically to an HR dashboard, and any employee who hasn't completed a required training by the deadline receives escalating reminders, first to them, then to their manager. When a course is completed successfully, the employee's digital certificate is generated and emailed automatically, and their compliance record is updated without anyone in training or HR having to pull a report and send it manually.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means a corporate trainer re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>LMS (e.g., TalentLMS or Docebo)</span><span>Zapier or Make.com</span><span>HRIS (e.g., BambooHR or ADP) for roster sync</span><span>Email (certificate delivery and reminders)</span><span>Google Sheets or Airtable (compliance dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a student purchases a course, they are automatically enrolled, sent a welcome email with getting-started instructions, and added to a drip sequence that releases lesson content, study prompts, and check-in messages on a structured schedule, keeping engagement high throughout the course rather than letting students fall off after week one. Students who stop logging in receive a re-engagement sequence, and those who complete the course are asked for a testimonial and invited to the next program.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a student purchases a course, they are automatically enrolled, sent a welcome email with getting-started instructions, and added to a drip sequence that releases lesson content, study prompts, and check-in messages on a structured schedule, keeping engagement high throughout the course rather than letting students fall off after week one. Students who stop logging in receive a re-engagement sequence, and those who complete the course are asked for a testimonial and invited to the next program.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on an online course creator remembering to check in, update records, and follow up, with no safety net if something slips. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Course platform (e.g., Teachable, Kajabi, or Thinkific)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign (drip sequence)</span><span>Slack community or Facebook Group (community prompts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a prospective family submits an inquiry form, whether from the school's website, a Facebook ad, or a directory listing, they receive an automated reply within two minutes containing program details, current tuition ranges, and a direct link to book a tour. The inquiry is simultaneously logged in the CRM with source tracking, so admissions staff can see at a glance which channels are actually producing families who show up. Inquiries that go three days without booking a tour trigger a personal follow-up nudge to the admissions coordinator, and families who do book are sent a reminder text the morning of their visit. What used to depend on someone checking a shared inbox between meetings now happens automatically, so no inquiry sits untouched over a weekend.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a prospective family submits an inquiry form, whether from the school's website, a Facebook ad, or a directory listing, they receive an automated reply within two minutes containing program details, current tuition ranges, and a direct link to book a tour. The inquiry is simultaneously logged in the CRM with source tracking, so admissions staff can see at a glance which channels are actually producing families who show up. Inquiries that go three days without booking a tour trigger a personal follow-up nudge to the admissions coordinator, and families who do book are sent a reminder text the morning of their visit. What used to depend on someone checking a shared inbox between meetings now happens automatically, so no inquiry sits untouched over a weekend.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, an admissions coordinator has to notice problems after they've already happened, then scramble to fix them manually one at a time. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform (inquiry form)</span><span>Zapier or Make.com</span><span>HubSpot (CRM)</span><span>Twilio</span><span>Calendly (tour scheduling)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -514,9 +551,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a teacher marks a student absent in the attendance system each morning, a notification goes out automatically to the parent or guardian within 15 minutes, by text and email, confirming the absence and asking for a reason if none was provided. Students who reach three unexcused absences in a rolling 30-day window automatically flag the attendance coordinator for a follow-up call, rather than that pattern getting buried until a report card meeting. Chronic absenteeism thresholds required for state reporting are tracked continuously in the background, so the compliance report that used to take a full day to assemble each semester is ready in minutes. Parents get faster, more consistent communication, and the school catches attendance problems while they're still small.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a teacher marks a student absent in the attendance system each morning, a notification goes out automatically to the parent or guardian within 15 minutes, by text and email, confirming the absence and asking for a reason if none was provided. Students who reach three unexcused absences in a rolling 30-day window automatically flag the attendance coordinator for a follow-up call, rather than that pattern getting buried until a report card meeting. Chronic absenteeism thresholds required for state reporting are tracked continuously in the background, so the compliance report that used to take a full day to assemble each semester is ready in minutes. Parents get faster, more consistent communication, and the school catches attendance problems while they're still small.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, an attendance coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>PowerSchool or Skyward (SIS)</span><span>Zapier or Make.com</span><span>Twilio</span><span>Gmail</span><span>Google Sheets (compliance tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -525,9 +565,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Five days before each tuition installment is due, families are automatically sent a reminder email and text with the amount owed and a direct payment link, cutting down on the "when is this due again" calls to the front office. Accounts that go seven days past due are automatically flagged to the business office manager with a payment history summary, and a second, more direct reminder goes out on day ten before any human has to get involved. Families on a payment plan get their own tailored schedule of reminders rather than a generic notice that doesn't match their terms. The business office spends its time on the handful of accounts that genuinely need a conversation instead of chasing every family every month.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Five days before each tuition installment is due, families are automatically sent a reminder email and text with the amount owed and a direct payment link, cutting down on the "when is this due again" calls to the front office. Accounts that go seven days past due are automatically flagged to the business office manager with a payment history summary, and a second, more direct reminder goes out on day ten before any human has to get involved. Families on a payment plan get their own tailored schedule of reminders rather than a generic notice that doesn't match their terms. The business office spends its time on the handful of accounts that genuinely need a conversation instead of chasing every family every month.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a business office manager remembering to check in, update records, and follow up, with no safety net if something slips. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>FACTS or Procare (tuition management)</span><span>Zapier or Make.com</span><span>Twilio</span><span>Mailchimp</span><span>QuickBooks</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -536,9 +579,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>At the midpoint of each grading period, the system automatically pulls current grades, missing assignment counts, and teacher comments from the gradebook for every student and compiles them into a branded, easy-to-read progress report. Reports are emailed directly to parents on a set date each term rather than depending on individual teachers to remember and format them one by one, and any student whose average has dropped by 10 points or more since the last report is flagged for the academic dean to review. Parents get a consistent, on-time update every single term, and teachers get roughly four hours back per grading period that used to go into manually building reports in the LMS.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">At the midpoint of each grading period, the system automatically pulls current grades, missing assignment counts, and teacher comments from the gradebook for every student and compiles them into a branded, easy-to-read progress report. Reports are emailed directly to parents on a set date each term rather than depending on individual teachers to remember and format them one by one, and any student whose average has dropped by 10 points or more since the last report is flagged for the academic dean to review. Parents get a consistent, on-time update every single term, and teachers get roughly four hours back per grading period that used to go into manually building reports in the LMS.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, an academic dean is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Google Classroom or Canvas</span><span>Zapier or Make.com</span><span>Gmail</span><span>Google Sheets</span><span>PowerSchool</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -547,9 +593,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Ninety days before the current term ends, every enrolled family automatically receives a re-enrollment invitation with an early-bird tuition rate that expires after two weeks, encouraging families to commit before they start shopping around. Families who haven't responded after the early-bird window receive a follow-up sequence at 60 and 30 days out, and any family that still hasn't re-enrolled by 14 days before term end is flagged to the director of admissions for a personal call. Re-enrollment status for every family is visible on a single dashboard instead of living in the admissions director's memory, and the early-bird pricing model consistently locks in a large share of returning families well before the deadline pressure sets in.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Ninety days before the current term ends, every enrolled family automatically receives a re-enrollment invitation with an early-bird tuition rate that expires after two weeks, encouraging families to commit before they start shopping around. Families who haven't responded after the early-bird window receive a follow-up sequence at 60 and 30 days out, and any family that still hasn't re-enrolled by 14 days before term end is flagged to the director of admissions for a personal call. Re-enrollment status for every family is visible on a single dashboard instead of living in the admissions director's memory, and the early-bird pricing model consistently locks in a large share of returning families well before the deadline pressure sets in.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a director of admissions has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Procare or Schoolmint</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign</span><span>Twilio</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -558,9 +607,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a student withdraws or a spot otherwise opens in a full class or program, the waitlist automatically identifies the next eligible family in line and sends them an offer by text and email with a 24-hour window to claim the seat. If the offer expires unclaimed, it automatically passes to the next family on the list rather than sitting with the enrollment coordinator until someone remembers to follow up. Families further down the waitlist receive a periodic status update so they aren't left wondering whether they've been forgotten. Seats that used to sit empty for a week or more while staff manually worked down a waitlist are now filled within a day or two.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a student withdraws or a spot otherwise opens in a full class or program, the waitlist automatically identifies the next eligible family in line and sends them an offer by text and email with a 24-hour window to claim the seat. If the offer expires unclaimed, it automatically passes to the next family on the list rather than sitting with the enrollment coordinator until someone remembers to follow up. Families further down the waitlist receive a periodic status update so they aren't left wondering whether they've been forgotten. Seats that used to sit empty for a week or more while staff manually worked down a waitlist are now filled within a day or two.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means an enrollment coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Procare or Schoolmint</span><span>Zapier or Make.com</span><span>Twilio</span><span>Gmail</span><span>Airtable</span></div>
+          </div>
         </div>
       </details>
 

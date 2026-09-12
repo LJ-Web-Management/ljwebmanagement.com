@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Plant Manager</span><h3>Equipment Downtime Alert &amp; Preventive Maintenance Log</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Sensors or machine operator forms feed real-time equipment status into a central dashboard, and any unplanned downtime event immediately triggers an alert to the maintenance team and plant manager with the machine ID, location, and last known status. Simultaneously, a maintenance ticket is opened and the on-call technician is assigned. Scheduled preventive maintenance windows are calculated from run-hour data and pushed to the maintenance calendar automatically, so the plant never discovers that a machine was overdue for service after it has already gone down.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Sensors or machine operator forms feed real-time equipment status into a central dashboard, and any unplanned downtime event immediately triggers an alert to the maintenance team and plant manager with the machine ID, location, and last known status. Simultaneously, a maintenance ticket is opened and the on-call technician is assigned. Scheduled preventive maintenance windows are calculated from run-hour data and pushed to the maintenance calendar automatically, so the plant never discovers that a machine was overdue for service after it has already gone down.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a plant manager handles each case reactively, after someone has already noticed something went wrong. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CMMS (e.g., Fiix or UpKeep)</span><span>Zapier or Make.com</span><span>IoT sensor integration or Jotform (operator downtime reports)</span><span>Slack or SMS (maintenance team alerts)</span><span>Google Sheets (downtime trend dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When an inspector logs a quality defect (whether from an in-line check, customer return, or final inspection) the system immediately creates a CAPA (Corrective and Preventive Action) record, notifies the production supervisor and quality manager, and assigns a root cause investigation task with a 48-hour deadline. If the defect rate on any product line exceeds a set threshold in a rolling 7-day period, the QC manager receives an escalation alert and the line is flagged for a detailed audit, turning reactive defect management into a proactive quality control system.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When an inspector logs a quality defect (whether from an in-line check, customer return, or final inspection) the system immediately creates a CAPA (Corrective and Preventive Action) record, notifies the production supervisor and quality manager, and assigns a root cause investigation task with a 48-hour deadline. If the defect rate on any product line exceeds a set threshold in a rolling 7-day period, the QC manager receives an escalation alert and the line is flagged for a detailed audit, turning reactive defect management into a proactive quality control system.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a quality control manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>QMS or ERP quality module (e.g., MasterControl or ETQ)</span><span>Jotform (defect report form)</span><span>Zapier or Make.com</span><span>Airtable or Google Sheets (CAPA tracker)</span><span>Slack or email (escalation alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As sales orders are confirmed, this automation generates the corresponding work orders in the production schedule, checks available machine and labor capacity for each required operation, and flags any work order that cannot be completed by the promised ship date given current capacity. The scheduler sees conflicts before they become missed deliveries, and production supervisors receive a pre-shift briefing each morning with today's work orders sorted by priority, starting the day aligned rather than discovering the fire at noon.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As sales orders are confirmed, this automation generates the corresponding work orders in the production schedule, checks available machine and labor capacity for each required operation, and flags any work order that cannot be completed by the promised ship date given current capacity. The scheduler sees conflicts before they become missed deliveries, and production supervisors receive a pre-shift briefing each morning with today's work orders sorted by priority, starting the day aligned rather than discovering the fire at noon.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done by hand, this depends entirely on a production scheduler remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>ERP or MES (e.g., NetSuite Manufacturing, Epicor, or Katana)</span><span>Zapier or Make.com</span><span>Google Sheets (capacity planning model)</span><span>Slack (daily pre-shift briefing)</span><span>Email (work order confirmations to supervisors)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Based on each customer's historical purchase cycle, this automation calculates when they are likely due to reorder and sends the sales rep a prompt five days before that window, with a pre-drafted outreach message referencing the customer's last order details. Accounts that haven't ordered in longer than their typical cycle receive an escalation to the regional sales manager. When a customer's order volume grows significantly year over year, the sales rep receives an alert to schedule an account review and explore expanded capacity or new product categories.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Based on each customer's historical purchase cycle, this automation calculates when they are likely due to reorder and sends the sales rep a prompt five days before that window, with a pre-drafted outreach message referencing the customer's last order details. Accounts that haven't ordered in longer than their typical cycle receive an escalation to the regional sales manager. When a customer's order volume grows significantly year over year, the sales rep receives an alert to schedule an account review and explore expanded capacity or new product categories.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Manually, a manufacturing sales representative is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., Salesforce or HubSpot)</span><span>ERP (order history data)</span><span>Zapier or Make.com</span><span>OpenAI API (personalized outreach draft)</span><span>Slack or email (rep daily prompts and escalations)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Weekly safety inspection checklists are assigned automatically to the designated inspector, completed via a mobile form on the floor, and routed to the EHS manager for review the moment they are submitted. Any failed item generates a corrective action task with an assigned owner and due date. The system also tracks every compliance certificate, permit, and training requirement across the facility, sending renewal reminders 90 and 30 days before each expiration, ensuring the facility is never surprised by an expired permit or certification during an OSHA audit.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Weekly safety inspection checklists are assigned automatically to the designated inspector, completed via a mobile form on the floor, and routed to the EHS manager for review the moment they are submitted. Any failed item generates a corrective action task with an assigned owner and due date. The system also tracks every compliance certificate, permit, and training requirement across the facility, sending renewal reminders 90 and 30 days before each expiration, ensuring the facility is never surprised by an expired permit or certification during an OSHA audit.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, an ehs (environment, health & safety) manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>EHS management software (e.g., Intelex or Cority) or Jotform (inspection forms)</span><span>Zapier or Make.com</span><span>Airtable or Google Sheets (certificate and permit tracker)</span><span>Email or Slack (renewal reminders and corrective action assignments)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Running-hour data pulled from equipment PLCs (or logged manually by operators when a machine isn't networked) is checked daily against each asset's service interval, and once a machine crosses 90% of its due threshold this automation generates a maintenance work order in the CMMS, assigns it to the appropriate technician, and checks parts inventory to see whether the commonly needed filters, belts, or bearings are on the shelf. If a part is below the reorder point, a purchase order draft is created automatically so the part arrives before the service date rather than after the machine has already gone down. The maintenance manager receives a weekly view of every upcoming and overdue work order sorted by criticality, turning what used to be a wall calendar and a gut feeling into a system that catches the 30-day service window before it becomes an unplanned Tuesday-afternoon breakdown.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Running-hour data pulled from equipment PLCs (or logged manually by operators when a machine isn't networked) is checked daily against each asset's service interval, and once a machine crosses 90% of its due threshold this automation generates a maintenance work order in the CMMS, assigns it to the appropriate technician, and checks parts inventory to see whether the commonly needed filters, belts, or bearings are on the shelf. If a part is below the reorder point, a purchase order draft is created automatically so the part arrives before the service date rather than after the machine has already gone down. The maintenance manager receives a weekly view of every upcoming and overdue work order sorted by criticality, turning what used to be a wall calendar and a gut feeling into a system that catches the 30-day service window before it becomes an unplanned Tuesday-afternoon breakdown.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a maintenance manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Fiix or UpKeep (CMMS)</span><span>Epicor or Fishbowl (ERP/inventory)</span><span>Zapier or Make.com</span><span>Slack</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -514,9 +551,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As in-line quality checks are logged, whether from an automated gauge feeding directly into the quality system or an inspector entering readings on a tablet, each measurement is checked against the tolerance band set for that part number and station. The moment a reading falls outside the acceptable range, the shift supervisor and quality manager receive an immediate alert naming the exact measurement, the machine or station involved, and the operator on the line at that moment, rather than finding out during the next scheduled audit. Three consecutive out-of-tolerance readings on the same station automatically pause new work orders. This closes the gap between the minute a part goes out of spec and the moment someone with the authority to stop the line actually finds out.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As in-line quality checks are logged, whether from an automated gauge feeding directly into the quality system or an inspector entering readings on a tablet, each measurement is checked against the tolerance band set for that part number and station. The moment a reading falls outside the acceptable range, the shift supervisor and quality manager receive an immediate alert naming the exact measurement, the machine or station involved, and the operator on the line at that moment, rather than finding out during the next scheduled audit. Three consecutive out-of-tolerance readings on the same station automatically pause new work orders. This closes the gap between the minute a part goes out of spec and the moment someone with the authority to stop the line actually finds out.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a production shift supervisor manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Epicor or Fishbowl</span><span>Zapier or Make.com</span><span>Slack</span><span>Twilio</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -525,9 +565,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As raw materials are consumed on the production floor and logged against each work order in the inventory system, this automation tracks usage rate against a reorder point calculated specifically for each supplier's actual lead time rather than a flat number that treats a 3-day vendor the same as a 6-week vendor. When projected consumption shows a material running out before the next scheduled delivery, a purchase order draft is generated automatically with the supplier's standard quantities and pricing pre-filled, and the procurement manager only needs to review and approve it. Materials tied to suppliers with historically unreliable lead times get an extra buffer built into their trigger point automatically. What used to be a Friday-afternoon spreadsheet review is now a live system that flags shortages 2 to 3 weeks out instead of the week production runs dry.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As raw materials are consumed on the production floor and logged against each work order in the inventory system, this automation tracks usage rate against a reorder point calculated specifically for each supplier's actual lead time rather than a flat number that treats a 3-day vendor the same as a 6-week vendor. When projected consumption shows a material running out before the next scheduled delivery, a purchase order draft is generated automatically with the supplier's standard quantities and pricing pre-filled, and the procurement manager only needs to review and approve it. Materials tied to suppliers with historically unreliable lead times get an extra buffer built into their trigger point automatically. What used to be a Friday-afternoon spreadsheet review is now a live system that flags shortages 2 to 3 weeks out instead of the week production runs dry.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a procurement manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Epicor or Fishbowl</span><span>Zapier or Make.com</span><span>Google Sheets</span><span>Slack</span><span>QuickBooks or NetSuite</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -536,9 +579,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a production run is marked complete in the MES, this automation pulls the run's total output, scrap rate, downtime minutes, and total time-to-complete, and compares each figure against the target set when the run was scheduled. A summary report, highlighting any run that missed its output target by more than 5% or exceeded its scrap allowance, is compiled automatically and emailed to the plant manager within minutes of the run closing rather than waiting for the end-of-shift paperwork to be manually assembled. Runs that hit or beat every target are flagged as a "clean run" for easy reference when building best-practice documentation. The operations director starts each morning already knowing which lines need attention instead of piecing that picture together from three different shift reports.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a production run is marked complete in the MES, this automation pulls the run's total output, scrap rate, downtime minutes, and total time-to-complete, and compares each figure against the target set when the run was scheduled. A summary report, highlighting any run that missed its output target by more than 5% or exceeded its scrap allowance, is compiled automatically and emailed to the plant manager within minutes of the run closing rather than waiting for the end-of-shift paperwork to be manually assembled. Runs that hit or beat every target are flagged as a "clean run" for easy reference when building best-practice documentation. The operations director starts each morning already knowing which lines need attention instead of piecing that picture together from three different shift reports.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Handled by hand, an operations director spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Epicor or Fishbowl</span><span>Zapier or Make.com</span><span>Google Sheets</span><span>Email</span><span>Slack</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -547,9 +593,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a worker reports a safety incident through a simple mobile form (near miss, injury, or property damage) the safety coordinator and plant manager are notified within minutes with the location, description, and any photos attached. The report automatically opens the required documentation packet, incident details, witness statements, and corrective action log, so nothing has to be assembled from scratch after the fact. Because OSHA recordkeeping and reporting deadlines vary by severity (a recordable injury has different timelines than a fatality or hospitalization), the system reads the severity flagged on the intake form and sets the correct follow-up reminders automatically, at 24 hours, 5 days, and whatever window applies. What used to depend on someone remembering the exact regulatory deadline now runs on its own clock, and no incident sits undocumented past the window that matters.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a worker reports a safety incident through a simple mobile form (near miss, injury, or property damage) the safety coordinator and plant manager are notified within minutes with the location, description, and any photos attached. The report automatically opens the required documentation packet, incident details, witness statements, and corrective action log, so nothing has to be assembled from scratch after the fact. Because OSHA recordkeeping and reporting deadlines vary by severity (a recordable injury has different timelines than a fatality or hospitalization), the system reads the severity flagged on the intake form and sets the correct follow-up reminders automatically, at 24 hours, 5 days, and whatever window applies. What used to depend on someone remembering the exact regulatory deadline now runs on its own clock, and no incident sits undocumented past the window that matters.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a safety coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Jotform</span><span>Zapier or Make.com</span><span>Slack</span><span>Google Sheets or Airtable</span><span>Email</span></div>
+          </div>
         </div>
       </details>
 

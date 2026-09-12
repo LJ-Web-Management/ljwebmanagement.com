@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Financial Advisor</span><h3>Birthday, Milestone &amp; Life-Event Outreach System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every client's birthday, portfolio anniversary, and logged life event (a retirement date, a child's college start date, a planned home purchase) triggers an automatic personalized outreach from the advisor. Birthday messages are warm and non-sales-oriented. Anniversary messages include a brief note on the account's performance and an invitation to review. Life event triggers launch a financial planning conversation about the specific milestone approaching. The advisor stays top of mind for every client throughout the year with touchpoints that feel personal and timely rather than scheduled and generic.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every client's birthday, portfolio anniversary, and logged life event (a retirement date, a child's college start date, a planned home purchase) triggers an automatic personalized outreach from the advisor. Birthday messages are warm and non-sales-oriented. Anniversary messages include a brief note on the account's performance and an invitation to review. Life event triggers launch a financial planning conversation about the specific milestone approaching. The advisor stays top of mind for every client throughout the year with touchpoints that feel personal and timely rather than scheduled and generic.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, a financial advisor manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., Wealthbox or Redtail)</span><span>Zapier or Make.com</span><span>Mailchimp or ActiveCampaign (personalized sequences)</span><span>Twilio (birthday text from advisor)</span><span>Google Sheets (milestone event tracker)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When a new client's first policy is bound, this automation launches a welcome sequence that introduces the agency, explains how to file a claim, and delivers the client's policy summary document automatically. Thirty days after binding, the client receives a coverage review questionnaire asking about any changes in their home, vehicles, business activities, or life situation. The agent receives a summary of any gaps identified (an uninsured vehicle, a home-based business, an umbrella policy need) turning the post-sale relationship into an opportunity to ensure the client is properly protected rather than simply properly sold.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When a new client's first policy is bound, this automation launches a welcome sequence that introduces the agency, explains how to file a claim, and delivers the client's policy summary document automatically. Thirty days after binding, the client receives a coverage review questionnaire asking about any changes in their home, vehicles, business activities, or life situation. The agent receives a summary of any gaps identified (an uninsured vehicle, a home-based business, an umbrella policy need) turning the post-sale relationship into an opportunity to ensure the client is properly protected rather than simply properly sold.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Left to a person, this means an insurance agent re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Agency management system (e.g., HawkSoft or Applied Epic)</span><span>Zapier or Make.com</span><span>Jotform (coverage review questionnaire)</span><span>Mailchimp or ActiveCampaign (welcome sequence)</span><span>Slack (gap analysis alert to agent)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Bank and credit card transactions sync automatically into the accounting system each night, and a categorization engine applies the correct chart of accounts code based on vendor name, amount, and memo, flagging only the exceptions that need a human decision. At month end, the bookkeeper receives a pre-built close checklist with every reconciliation item already pre-populated, turning a two-day monthly close into a focused half-day review.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Bank and credit card transactions sync automatically into the accounting system each night, and a categorization engine applies the correct chart of accounts code based on vendor name, amount, and memo, flagging only the exceptions that need a human decision. At month end, the bookkeeper receives a pre-built close checklist with every reconciliation item already pre-populated, turning a two-day monthly close into a focused half-day review.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a bookkeeper has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>QuickBooks Online or Xero</span><span>Zapier or Make.com</span><span>OpenAI API (smart categorization)</span><span>Google Sheets (reconciliation checklist)</span><span>Bank connection via Plaid</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>At the start of tax season, every client on the roster automatically receives a personalized document request checklist via email, with a secure upload portal link. The system tracks what's been received versus what's outstanding, sends weekly nudges to clients with missing items, and gives the preparer a live dashboard showing which returns are ready to work and which are still waiting on a W-2 or K-1, eliminating the spreadsheet of sticky notes that usually passes for a tracking system.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">At the start of tax season, every client on the roster automatically receives a personalized document request checklist via email, with a secure upload portal link. The system tracks what's been received versus what's outstanding, sends weekly nudges to clients with missing items, and gives the preparer a live dashboard showing which returns are ready to work and which are still waiting on a W-2 or K-1, eliminating the spreadsheet of sticky notes that usually passes for a tracking system.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a tax preparer, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>TaxDome or Canopy (client portal)</span><span>Zapier or Make.com</span><span>Twilio or email (reminders)</span><span>Google Sheets or Airtable (status dashboard)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>As a loan moves through the pipeline (application received, appraisal ordered, conditions cleared, clear to close) both the borrower and the referring real estate agent receive automatic milestone update texts and emails. The loan officer never has to remember who to notify at each stage, borrowers feel informed throughout the process, and real estate agents get the proactive communication that turns one referral into many.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">As a loan moves through the pipeline (application received, appraisal ordered, conditions cleared, clear to close) both the borrower and the referring real estate agent receive automatic milestone update texts and emails. The loan officer never has to remember who to notify at each stage, borrowers feel informed throughout the process, and real estate agents get the proactive communication that turns one referral into many.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, a mortgage loan officer has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>LOS (Loan Origination Software, e.g., Encompass or BytePro)</span><span>Zapier or Make.com</span><span>Twilio (SMS milestone updates)</span><span>Mailchimp or email (agent notifications)</span><span>CRM (e.g., Jungo or Salesforce)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every call to the office that goes unanswered, whether the team is with a client, on another line, or simply away from the desk, triggers an automatic text back to the caller within 60 seconds thanking them for calling and asking what they need help with. The missed call and caller's number log directly into the firm's CRM (Redtail CRM or Wealthbox) so the advisor sees exactly who called and when, and if there's no reply within two hours, a second text invites the caller to book a time directly on the advisor's calendar. Prospective clients who would have simply dialed the next firm on their list instead get an immediate, human-sounding response, and the office stops losing new business to a phone that rang at a busy moment.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every call to the office that goes unanswered, whether the team is with a client, on another line, or simply away from the desk, triggers an automatic text back to the caller within 60 seconds thanking them for calling and asking what they need help with. The missed call and caller's number log directly into the firm's CRM (Redtail CRM or Wealthbox) so the advisor sees exactly who called and when, and if there's no reply within two hours, a second text invites the caller to book a time directly on the advisor's calendar. Prospective clients who would have simply dialed the next firm on their list instead get an immediate, human-sounding response, and the office stops losing new business to a phone that rang at a busy moment.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on an office manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>Twilio (missed call text-back)</span><span>Redtail CRM or Wealthbox</span><span>Calendly (booking link)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -514,9 +551,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>When an advisor needs a client's tax documents, statements, or a signed form, this automation sends a secure, trackable request through the firm's client portal rather than an email attachment that gets lost in an inbox. The client receives a link, an upload deadline, and a checklist of exactly what's still outstanding, and the system sends a reminder every three days until every item is marked received. The client services coordinator sees a live dashboard showing who has fully responded, who has partially responded, and who hasn't opened the request at all, and escalation texts go out to anyone still missing documents 48 hours before a filing or meeting deadline. What used to be a manual chase through email threads becomes a fully tracked process where nothing is missed and nobody has to ask twice.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">When an advisor needs a client's tax documents, statements, or a signed form, this automation sends a secure, trackable request through the firm's client portal rather than an email attachment that gets lost in an inbox. The client receives a link, an upload deadline, and a checklist of exactly what's still outstanding, and the system sends a reminder every three days until every item is marked received. The client services coordinator sees a live dashboard showing who has fully responded, who has partially responded, and who hasn't opened the request at all, and escalation texts go out to anyone still missing documents 48 hours before a filing or meeting deadline. What used to be a manual chase through email threads becomes a fully tracked process where nothing is missed and nobody has to ask twice.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a client services coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>Redtail CRM or Wealthbox</span><span>TaxDome or SmartVault (secure client portal)</span><span>Twilio or email (reminder sequence)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -525,9 +565,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every client account is tagged with the date of its last annual review, and 11 months after that date the client automatically receives an email invitation to book the next review directly on the wealth manager's calendar. If the client hasn't booked within 10 days, a follow-up text goes out, and if there's still no response after 30 days, the wealth manager gets an internal alert flagging the account as overdue for outreach by phone. Clients approaching a policy or account anniversary are automatically bundled into the same outreach so the review conversation can also cover any renewal or rebalancing decision that's coming due. Annual reviews that used to slip to 18 or even 24 months between meetings now happen reliably on schedule, protecting both the client relationship and the recurring revenue tied to it.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every client account is tagged with the date of its last annual review, and 11 months after that date the client automatically receives an email invitation to book the next review directly on the wealth manager's calendar. If the client hasn't booked within 10 days, a follow-up text goes out, and if there's still no response after 30 days, the wealth manager gets an internal alert flagging the account as overdue for outreach by phone. Clients approaching a policy or account anniversary are automatically bundled into the same outreach so the review conversation can also cover any renewal or rebalancing decision that's coming due. Annual reviews that used to slip to 18 or even 24 months between meetings now happen reliably on schedule, protecting both the client relationship and the recurring revenue tied to it.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a wealth manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>Redtail CRM or Wealthbox</span><span>Calendly (review booking)</span><span>Twilio (SMS follow-up)</span><span>Mailchimp or email (invitation sequence)</span></div>
+          </div>
         </div>
       </details>
 

@@ -363,6 +363,21 @@
   .lj-cat-item[open] .lj-cat-chevron { transform: rotate(180deg); color: var(--cyan); }
   .lj-cat-body { padding: 0 24px 24px; }
   .lj-cat-body p { color: var(--body); font-size: 14.5px; line-height: 1.65; margin: 0 0 18px; }
+  .lj-mode-toggle { display: inline-flex; background: var(--mist); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; margin: 0 0 24px; }
+  .lj-mode-btn { border: 0; background: transparent; padding: 9px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .lj-mode-btn.is-active { background: var(--navy); color: #fff; }
+  .lj-cat-desc-human { display: none; }
+  .lj-view-human .lj-cat-desc-ai { display: none; }
+  .lj-view-human .lj-cat-desc-human { display: block; }
+  .lj-view-human .lj-cat-tools-wrap { display: none; }
+  @media (max-width: 480px) { .lj-mode-toggle { width: 100%; } .lj-mode-btn { flex: 1; } }
+
+  .lj-list-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 0 0 24px; }
+  .lj-list-controls .lj-mode-toggle { margin: 0; }
+  .lj-expand-all { border: 1px solid var(--line); background: var(--white); color: var(--navy); font-weight: 600; font-size: 14px; padding: 10px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; transition: border-color .15s ease, color .15s ease; }
+  .lj-expand-all:hover { border-color: var(--cyan); color: var(--cyan); }
+  @media (max-width: 480px) { .lj-expand-all { width: 100%; } }
+
   .lj-cat-tools-label {
     display: block; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 11px;
     letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px;
@@ -441,16 +456,23 @@
 <!-- AUTOMATIONS LIST -->
 <section class="lj-section" style="padding-top:48px;">
   <div class="lj-inner">
-    <div class="lj-cat-list">
+    <div class="lj-list-controls">
+      <div class="lj-mode-toggle" role="group" aria-label="View these automations as"><button type="button" class="lj-mode-btn is-active" data-lj-mode="ai" aria-pressed="true">AI Automated</button><button type="button" class="lj-mode-btn" data-lj-mode="human" aria-pressed="false">Manual (Human)</button></div>
+      <button type="button" class="lj-expand-all" data-state="collapsed">Expand All</button>
+    </div>
+      <div class="lj-cat-list">
       <details class="lj-cat-item">
         <summary>
           <div><span class="lj-cat-role">Agency Owner</span><h3>Client Reporting &amp; Performance Dashboard System</h3></div>
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>At the end of each month, this automation pulls data from every client's connected ad accounts, analytics platforms, and CRM, and assembles a branded performance report for each account, complete with month-over-month comparisons and an AI-drafted narrative summary of what drove the results. Reports land in the client's inbox on the same day every month without an account manager spending hours pulling numbers, and clients experience the agency as more organized and proactive than the competition.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">At the end of each month, this automation pulls data from every client's connected ad accounts, analytics platforms, and CRM, and assembles a branded performance report for each account, complete with month-over-month comparisons and an AI-drafted narrative summary of what drove the results. Reports land in the client's inbox on the same day every month without an account manager spending hours pulling numbers, and clients experience the agency as more organized and proactive than the competition.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, an agency owner has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>Google Analytics API</span><span>Meta Ads API and Google Ads API</span><span>OpenAI API (narrative summary generation)</span><span>Google Slides or a reporting tool (e.g., AgencyAnalytics or Looker Studio)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -459,9 +481,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>A monthly content calendar built in Airtable or Notion feeds directly into a scheduling tool, automatically posting to Instagram, Facebook, LinkedIn, and X at the optimal engagement times for each platform, with platform-specific caption formatting applied automatically. When a piece of content performs unusually well, the system flags it for the social media manager to consider boosting as a paid post, turning organic performance data into a paid media signal without any manual monitoring.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">A monthly content calendar built in Airtable or Notion feeds directly into a scheduling tool, automatically posting to Instagram, Facebook, LinkedIn, and X at the optimal engagement times for each platform, with platform-specific caption formatting applied automatically. When a piece of content performs unusually well, the system flags it for the social media manager to consider boosting as a paid post, turning organic performance data into a paid media signal without any manual monitoring.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a social media manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Airtable or Notion (content calendar)</span><span>Zapier or Make.com</span><span>Buffer or Later (multi-platform scheduler)</span><span>Meta Business Suite</span><span>Slack (performance alerts)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -470,9 +495,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Each week, the system checks the ranking positions for every target keyword across every client, flags any significant movements (gains and losses) and sends a concise alert to the SEO specialist so they can investigate immediately rather than discovering a drop weeks later. At month end, a full ranking report is automatically generated with a trend chart, top-performing pages, and an AI-drafted summary of what changed and what to prioritize next month.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Each week, the system checks the ranking positions for every target keyword across every client, flags any significant movements (gains and losses) and sends a concise alert to the SEO specialist so they can investigate immediately rather than discovering a drop weeks later. At month end, a full ranking report is automatically generated with a trend chart, top-performing pages, and an AI-drafted summary of what changed and what to prioritize next month.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a seo specialist, who has to track every step by hand across emails, spreadsheets, and sticky notes. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Rank tracking tool (e.g., SEMrush, Ahrefs, or AccuRanker API)</span><span>Zapier or Make.com</span><span>Google Search Console API</span><span>OpenAI API (monthly report narrative)</span><span>Google Sheets or Looker Studio (report output)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -481,9 +509,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Throughout each day, this automation monitors ad spend pacing against monthly budgets, CPC against targets, and conversion rates against benchmarks, and sends an immediate Slack alert if any campaign crosses a threshold in either direction. Overspending on a poor performer is caught before it burns the month's budget, and a campaign that suddenly starts converting unusually well triggers a budget increase prompt so the ads manager can capitalize on momentum rather than capping it by accident.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Throughout each day, this automation monitors ad spend pacing against monthly budgets, CPC against targets, and conversion rates against benchmarks, and sends an immediate Slack alert if any campaign crosses a threshold in either direction. Overspending on a poor performer is caught before it burns the month's budget, and a campaign that suddenly starts converting unusually well triggers a budget increase prompt so the ads manager can capitalize on momentum rather than capping it by accident.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual approach means a paid ads manager handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Meta Ads API and Google Ads API</span><span>Zapier or Make.com</span><span>Slack (real-time performance alerts)</span><span>Google Sheets (budget tracker dashboard)</span><span>OpenAI API (anomaly summary)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -492,9 +523,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every client account is automatically scored monthly based on usage, results, and engagement, and accounts that meet the "ready for upsell" criteria trigger a task for the account manager to reach out with a specific service expansion proposal. Clients who score low on the health index receive a proactive check-in call prompt before they reach the point of canceling. The account manager's week begins with a prioritized list of exactly which clients need attention and why, not a gut feeling about who to call.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every client account is automatically scored monthly based on usage, results, and engagement, and accounts that meet the "ready for upsell" criteria trigger a task for the account manager to reach out with a specific service expansion proposal. Clients who score low on the health index receive a proactive check-in call prompt before they reach the point of canceling. The account manager's week begins with a prioritized list of exactly which clients need attention and why, not a gut feeling about who to call.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without this system, an account manager manually pieces together information from different places, then has to relay it to everyone who needs it. Over a month, those small manual steps add up to a significant amount of lost time.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>CRM (e.g., HubSpot)</span><span>Zapier or Make.com</span><span>Google Sheets or Airtable (client health scoring)</span><span>Slack (daily prioritized account digest)</span><span>OpenAI API (personalized outreach draft)</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -503,9 +537,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>On the first business day of each month, this automation pulls performance data directly from Google Ads, Meta Ads Manager, LinkedIn Campaign Manager, the client's Google Analytics account, and their email marketing platform, then drops every metric into a pre-built, branded report template without anyone opening a single dashboard. The finished PDF is emailed to the client by 9 a.m., and a Slack notification confirms delivery to the account manager so nothing slips through on a busy Monday. What used to take a marketing operations manager four to six hours per client across a portfolio of twenty accounts now takes zero manual hours, and every client gets their report on the same predictable date every month instead of whenever someone finds the time.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">On the first business day of each month, this automation pulls performance data directly from Google Ads, Meta Ads Manager, LinkedIn Campaign Manager, the client's Google Analytics account, and their email marketing platform, then drops every metric into a pre-built, branded report template without anyone opening a single dashboard. The finished PDF is emailed to the client by 9 a.m., and a Slack notification confirms delivery to the account manager so nothing slips through on a busy Monday. What used to take a marketing operations manager four to six hours per client across a portfolio of twenty accounts now takes zero manual hours, and every client gets their report on the same predictable date every month instead of whenever someone finds the time.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a marketing operations manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>Google Ads &amp; Meta Ads Manager</span><span>Google Analytics</span><span>Slack</span><span>Google Slides or Looker Studio</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -514,9 +551,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>The moment a signed contract is detected through a DocuSign or PandaDoc webhook, this automation creates a new project folder in the shared drive, builds out a task list in Asana with every onboarding milestone pre-assigned to the right team member, and emails the client a welcome packet with a link to book their kickoff call. Billing details are pushed into the invoicing system automatically so the first invoice goes out on schedule without a manual data entry step. What used to take a new business coordinator most of a morning per client, chasing folder creation, task setup, and calendar links, now happens within minutes of the ink drying on the contract, and every client gets the same polished first impression regardless of who on the team is handling the account that week.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">The moment a signed contract is detected through a DocuSign or PandaDoc webhook, this automation creates a new project folder in the shared drive, builds out a task list in Asana with every onboarding milestone pre-assigned to the right team member, and emails the client a welcome packet with a link to book their kickoff call. Billing details are pushed into the invoicing system automatically so the first invoice goes out on schedule without a manual data entry step. What used to take a new business coordinator most of a morning per client, chasing folder creation, task setup, and calendar links, now happens within minutes of the ink drying on the contract, and every client gets the same polished first impression regardless of who on the team is handling the account that week.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without a system in place, a new business coordinator has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>DocuSign or PandaDoc</span><span>Asana</span><span>Calendly</span><span>HubSpot</span><span>QuickBooks Online</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -525,9 +565,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every few hours, this automation checks each client's live ad spend in Google Ads and Meta Ads Manager against their monthly budget, and calculates the pace at which they're on track to finish the month. The moment a campaign is projected to exceed its budget by more than 10%, the media buyer gets an immediate Slack message with the exact campaign, the overage amount, and a one-click pause link, and if no one responds within a set window, the campaign pauses itself automatically. Agencies that used to discover a blown budget at the end of the month, when it was too late to do anything but apologize, now catch the overage while there's still time to course-correct and protect the agency's margin on that account.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every few hours, this automation checks each client's live ad spend in Google Ads and Meta Ads Manager against their monthly budget, and calculates the pace at which they're on track to finish the month. The moment a campaign is projected to exceed its budget by more than 10%, the media buyer gets an immediate Slack message with the exact campaign, the overage amount, and a one-click pause link, and if no one responds within a set window, the campaign pauses itself automatically. Agencies that used to discover a blown budget at the end of the month, when it was too late to do anything but apologize, now catch the overage while there's still time to course-correct and protect the agency's margin on that account.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">The manual version of this puts the entire workload on a media buyer, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>Google Ads API</span><span>Meta Ads Manager API</span><span>Slack</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -536,9 +579,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every piece of content submitted for client approval, whether it's a blog post, an ad creative, or a social caption, gets a timestamp the moment it's sent, and this automation tracks how long it's been sitting unanswered. After 48 hours of silence, the client automatically receives a friendly, non-pushy nudge reminding them the piece is waiting on their sign-off, and after 5 days with still no response, the creative director gets flagged directly so they can decide whether to call the client. Content that used to sit in client inboxes for two or three weeks, quietly stalling the production calendar, now gets approved or escalated within days, keeping the whole content pipeline moving instead of backing up behind one unanswered email.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every piece of content submitted for client approval, whether it's a blog post, an ad creative, or a social caption, gets a timestamp the moment it's sent, and this automation tracks how long it's been sitting unanswered. After 48 hours of silence, the client automatically receives a friendly, non-pushy nudge reminding them the piece is waiting on their sign-off, and after 5 days with still no response, the creative director gets flagged directly so they can decide whether to call the client. Content that used to sit in client inboxes for two or three weeks, quietly stalling the production calendar, now gets approved or escalated within days, keeping the whole content pipeline moving instead of backing up behind one unanswered email.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Without automation, this falls entirely on a creative director, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>Asana</span><span>Gmail or Outlook</span><span>Slack</span></div>
+          </div>
         </div>
       </details>
       <details class="lj-cat-item">
@@ -547,9 +593,12 @@
           <svg class="lj-cat-chevron" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
         </summary>
         <div class="lj-cat-body">
-          <p>Every month, this automation compares each client's current email open rates, meeting attendance, and average response time against their trailing three-month baseline, looking for the kind of sudden pullback that usually precedes a cancellation notice. Any account showing a meaningful drop across two or more of these signals gets automatically flagged as "at risk" in the CRM, and the retention specialist receives a notification listing the specific data points that triggered it, not just a vague warning. Instead of finding out a client is unhappy when they submit a 30-day cancellation notice, the team now gets a two-to-three week head start to schedule a save call and address whatever's actually going wrong.</p>
-          <span class="lj-cat-tools-label">Tools Required</span>
+          <p class="lj-cat-desc lj-cat-desc-ai">Every month, this automation compares each client's current email open rates, meeting attendance, and average response time against their trailing three-month baseline, looking for the kind of sudden pullback that usually precedes a cancellation notice. Any account showing a meaningful drop across two or more of these signals gets automatically flagged as "at risk" in the CRM, and the retention specialist receives a notification listing the specific data points that triggered it, not just a vague warning. Instead of finding out a client is unhappy when they submit a 30-day cancellation notice, the team now gets a two-to-three week head start to schedule a save call and address whatever's actually going wrong.</p>
+          <p class="lj-cat-desc lj-cat-desc-human">Done manually, a retention specialist has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.</p>
+          <div class="lj-cat-tools-wrap">
+            <span class="lj-cat-tools-label">Tools Required</span>
           <div class="lj-cat-tools"><span>Zapier or Make.com</span><span>HubSpot</span><span>Google Analytics</span><span>Slack</span><span>Google Sheets</span></div>
+          </div>
         </div>
       </details>
 
