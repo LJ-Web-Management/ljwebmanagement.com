@@ -1,18 +1,17 @@
 # LJ Web Management
 
-> LJ Web Management builds custom, done-for-you AI automation systems that remove repetitive tasks and bottlenecks, connecting the business tools a team already uses so people can save time and focus on growth.
+> LJ Web Management teaches practical, self-paced tech and AI courses covering artificial intelligence, web and app development, automation, cybersecurity, cloud computing, and career skills.
 
-LJ Web Management is based in Lockport, Illinois, and works with businesses across 57+ industries. Rather than selling off-the-shelf software, the company scopes and builds automations tailored to a client's specific role, tools, and workflow, then delivers a flat, upfront quote before any work begins. The catalog covers 1000+ pre-scoped, done-for-you automations organized by industry and job role (real estate, healthcare, legal, home services, restaurants, e-commerce, and dozens more), alongside larger platform-scale solutions for businesses that need more than a single automation.
+LJ Web Management is based in Lockport, Illinois. The company sells digital courses priced between $12 and $49 each, as one-time payments with no subscription. Courses are self-paced, delivered by email after purchase, and cover topics from AI fundamentals and prompt engineering to web development, no-code automation, cybersecurity, cloud computing, and career skills for the AI era.
 
 ## Core Pages
 
-- [Home](https://www.ljwebmanagement.com/): Overview of what LJ Web Management does and how automation engagements start.
-- [How It Works](https://www.ljwebmanagement.com/how-it-works): Explains the process from consultation to flat quote to delivery.
-- [Automations](https://www.ljwebmanagement.com/automations): Browsable catalog of 1000+ done-for-you automations across 57+ industries, searchable by industry.
-- [Solutions](https://www.ljwebmanagement.com/solutions): Platform-scale offerings, including Custom Website Design & Development (with SEO and POS integration), Obsolescence Management, ERP Implementation & Integration, Managed SaaS Delivery & Support, LMS Deployment, and Restaurant POS Systems.
-- [Book a Consultation](https://www.ljwebmanagement.com/appointment): Schedule a free consultation to scope an automation project.
+- [Home](https://www.ljwebmanagement.com/): Overview of the course catalog and what LJ Web Management teaches.
+- [Courses](https://www.ljwebmanagement.com/courses): Full catalog of 62 self-paced courses, searchable and filterable by category and level.
+- [How It Works](https://www.ljwebmanagement.com/how-it-works): Explains the process from browsing a course to purchase to receiving access by email.
+- [Book an Appointment](https://www.ljwebmanagement.com/appointment): Book a time to enroll in a course and get a payment link.
+- [FAQ](https://www.ljwebmanagement.com/faq): Answers on pricing, payment, refunds, and access.
 - [Contact Us](https://www.ljwebmanagement.com/contactus): General contact information and inquiry form.
-- [Blog](https://blog.ljwebmanagement.com): Articles on business automation and related topics.
 
 ## Company Info
 
@@ -24,4 +23,3 @@ LJ Web Management is based in Lockport, Illinois, and works with businesses acro
 
 - [Privacy Policy](https://www.ljwebmanagement.com/privacy-policy)
 - [Terms of Service](https://www.ljwebmanagement.com/terms-of-service)
-- [FAQ](https://www.ljwebmanagement.com/faq)

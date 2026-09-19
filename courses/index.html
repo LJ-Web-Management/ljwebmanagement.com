@@ -4,21 +4,21 @@
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="description" content="Have a question about a course, an order, or a refund? Contact LJ Web Management at info@ljwebmanagement.com."/>
+  <meta name="description" content="Browse 62 self-paced tech and AI courses from LJ Web Management: AI, web development, automation, cybersecurity, cloud, and career skills, $12 to $49 each."/>
 
   <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Contact Us | LJ Web Management"/>
+  <meta property="og:title" content="Courses | LJ Web Management"/>
   <meta property="og:site_name" content="LJ Web Management"/>
-  <meta property="og:url" content="https://www.ljwebmanagement.com/contactus"/>
+  <meta property="og:url" content="https://www.ljwebmanagement.com/courses"/>
   <meta property="og:image" content="https://www.ljwebmanagement.com/assets/social-share.png"/>
-  <meta property="og:description" content="Have a question about a course, an order, or a refund? Contact LJ Web Management at info@ljwebmanagement.com."/>
+  <meta property="og:description" content="Browse 62 self-paced tech and AI courses from LJ Web Management: AI, web development, automation, cybersecurity, cloud, and career skills, $12 to $49 each."/>
 
   <meta name="twitter:card" content="summary_large_image"/>
 
-  <link rel="canonical" href="https://www.ljwebmanagement.com/contactus"/>
+  <link rel="canonical" href="https://www.ljwebmanagement.com/courses"/>
   <link rel="preconnect" href="https://va.tawk.to"/>
   <link rel="apple-touch-icon" href="../assets/favicon.ico"/>
-  <title>Contact Us | LJ Web Management</title>
+  <title>Courses | LJ Web Management</title>
   <link type="image/x-icon" rel="shortcut icon" href="../assets/favicon.ico"/>
   <link rel="stylesheet" href="../assets/tokens.css"/>
   <link rel="stylesheet" href="../assets/apple.css"/>
@@ -51,6 +51,7 @@
 }
   </script>
 
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SFXD7K93JS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -69,13 +70,13 @@
     </a>
     <nav class="nav-links" aria-label="Main">
       <a href="../" class="nav-link">Home</a>
-      <a href="../courses" class="nav-link">Courses</a>
+      <a href="./" class="nav-link active">Courses</a>
       <a href="../how-it-works" class="nav-link">How It Works</a>
       <a href="../faq" class="nav-link">FAQ</a>
-      <a href="./" class="nav-link active">Contact</a>
+      <a href="../contactus" class="nav-link">Contact</a>
     </nav>
     <div class="nav-actions">
-      <a href="../courses" class="btn btn-primary btn-sm nav-cta">Browse Courses</a>
+      <a href="../contactus" class="btn btn-primary btn-sm nav-cta">Ask a Question</a>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
@@ -83,11 +84,11 @@
   </div>
   <div class="mobile-menu" id="mobileMenu">
     <a href="../">Home</a>
-    <a href="../courses">Courses</a>
+    <a href="./">Courses</a>
     <a href="../how-it-works">How It Works</a>
     <a href="../faq">FAQ</a>
-    <a href="./">Contact</a>
-    <a href="../courses" class="btn btn-primary">Browse Courses</a>
+    <a href="../contactus">Contact</a>
+    <a href="../contactus" class="btn btn-primary">Ask a Question</a>
   </div>
 </header>
 
@@ -95,42 +96,33 @@
 
 <section class="hero">
   <div class="wrap-grid">
-    <span class="eyebrow"><span class="dot"></span>Contact</span>
-    <h1>Let's talk.</h1>
-    <p class="lede">Questions about a course, an order, a refund, or which course fits you best? Send a message and a real person will get back to you, usually within one business day.</p>
+    <span class="eyebrow"><span class="dot"></span>62 Courses</span>
+    <h1>The full course catalog.</h1>
+    <p class="lede">AI, coding, automation, cybersecurity, cloud, and career skills. Every course is self-paced and priced between $12 and $49, one time, no subscription.</p>
   </div>
 </section>
 
 <section class="section" style="padding-top:0;">
-  <div class="wrap-grid contact-grid">
-    <div>
-      <div style="border-radius:var(--r-panel); overflow:hidden; box-shadow:var(--sh-panel);">
-        <div data-tf-live="01KY317GTBCXA4CV67B60P7AQ9"></div>
-        <script src="//embed.typeform.com/next/embed.js"></script>
+  <div class="wrap-grid">
+    <div class="catalog-toolbar">
+      <div id="catalogSeg" class="seg" role="group" aria-label="Filter by category"></div>
+      <div class="catalog-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="text" id="catalogSearch" placeholder="Search courses..." aria-label="Search courses"/>
       </div>
     </div>
-    <div style="display:flex; flex-direction:column; gap:16px;">
-      <div class="contact-card">
-        <h3>Email</h3>
-        <p><a href="mailto:info@ljwebmanagement.com">info@ljwebmanagement.com</a></p>
-      </div>
-      <div class="contact-card">
-        <h3>Phone</h3>
-        <p><a href="tel:+18775593268">+1 (877) 559-3268</a></p>
-      </div>
-      <div class="contact-card">
-        <h3>Address</h3>
-        <p>1108 E 9th St<br/>Lockport, IL 60441<br/>United States</p>
-      </div>
-      <div class="contact-card">
-        <h3>Response time</h3>
-        <p>We typically reply within one business day. Order and access emails are sent shortly after purchase.</p>
-      </div>
+    <p class="catalog-count" id="catalogCount">Loading courses...</p>
+    <div class="course-grid" id="courseGrid">
+      <div class="course-empty">Loading courses...</div>
     </div>
   </div>
 </section>
 
 </main>
+
+<div class="modal-scrim" id="courseModalScrim" aria-hidden="true">
+  <div class="modal-sheet" id="courseModalSheet" role="dialog" aria-modal="true"></div>
+</div>
 
 <footer class="site-footer">
   <div class="footer-top">
@@ -146,9 +138,9 @@
       <div class="footer-col">
         <h4>Company</h4>
         <a href="../">Home</a>
-        <a href="../courses">Courses</a>
+        <a href="./">Courses</a>
         <a href="../how-it-works">How It Works</a>
-        <a href="./">Contact</a>
+        <a href="../contactus">Contact</a>
       </div>
       <div class="footer-col">
         <h4>Support</h4>

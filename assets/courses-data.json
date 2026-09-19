@@ -1,0 +1,1066 @@
+{
+  "categories": [
+    "AI & Prompt Engineering",
+    "Web & App Development",
+    "Data & Automation",
+    "Cybersecurity & IT",
+    "Cloud & DevOps",
+    "Career & AI Productivity"
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "slug": "ai-fundamentals",
+      "title": "AI Fundamentals: How Modern AI Actually Works",
+      "category": "AI & Prompt Engineering",
+      "level": "Beginner",
+      "price": 15,
+      "duration": "2 hours",
+      "summary": "A plain-language tour of machine learning, neural networks, and large language models, no math background required.",
+      "description": "Cut through the hype and understand what AI actually is. This course walks through machine learning, neural networks, and large language models in plain language, using analogies instead of equations, so you can follow AI news, evaluate tools, and talk about AI with confidence.",
+      "outcomes": [
+        "Explain the difference between AI, machine learning, and deep learning",
+        "Understand how large language models generate text",
+        "Recognize what AI is and isn't good at today",
+        "Evaluate new AI tools with a clear framework"
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "prompt-engineering-foundations",
+      "title": "Prompt Engineering Foundations",
+      "category": "AI & Prompt Engineering",
+      "level": "Beginner",
+      "price": 19,
+      "duration": "3 hours",
+      "summary": "The core techniques for getting reliable, high-quality output from any AI chat model.",
+      "description": "Most people use maybe 10% of what a modern AI model can do because they never learned to ask well. This course teaches the core structure of a good prompt: context, constraints, examples, and iteration, so your results stop feeling like a coin flip.",
+      "outcomes": [
+        "Structure prompts for consistent, high-quality output",
+        "Use examples and constraints to control format and tone",
+        "Break complex tasks into prompt chains",
+        "Debug a prompt that isn't working"
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "advanced-prompt-engineering",
+      "title": "Advanced Prompt Engineering for ChatGPT & Claude",
+      "category": "AI & Prompt Engineering",
+      "level": "Intermediate",
+      "price": 29,
+      "duration": "5 hours",
+      "summary": "Chain-of-thought, few-shot examples, system prompts, and structured output for production-grade AI workflows.",
+      "description": "Go beyond basic prompting into the techniques professionals use to build reliable AI workflows: chain-of-thought reasoning, few-shot examples, system prompts, and structured (JSON) output. You'll build a small library of reusable prompt templates for your own work.",
+      "outcomes": [
+        "Write system prompts that hold up across many inputs",
+        "Use chain-of-thought and few-shot examples correctly",
+        "Force structured, parseable output from a model",
+        "Build a personal library of reusable prompt templates"
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "mastering-claude",
+      "title": "Mastering Claude: Prompts, Projects & Workflows",
+      "category": "AI & Prompt Engineering",
+      "level": "Intermediate",
+      "price": 29,
+      "duration": "4 hours",
+      "summary": "Get the most out of Claude for research, writing, coding, and long-document analysis.",
+      "description": "A focused, hands-on tour of Claude: Projects, long-context document analysis, artifacts, and the prompting habits that get the best results for research, writing, and coding tasks specifically on Claude's models.",
+      "outcomes": [
+        "Set up Claude Projects for recurring work",
+        "Analyze long documents and extract structured insights",
+        "Use Claude effectively for coding and debugging",
+        "Know when to reach for Claude versus another tool"
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "mastering-chatgpt-for-work",
+      "title": "Mastering ChatGPT for Work",
+      "category": "AI & Prompt Engineering",
+      "level": "Beginner",
+      "price": 19,
+      "duration": "3 hours",
+      "summary": "Practical ChatGPT workflows for email, reports, research, spreadsheets, and meeting prep.",
+      "description": "A practical, workplace-focused course on ChatGPT: drafting emails and reports, summarizing meetings, researching topics, working with spreadsheets, and building custom GPTs for repeated tasks. No technical background needed.",
+      "outcomes": [
+        "Draft and edit professional documents faster with ChatGPT",
+        "Summarize meetings, articles, and long threads accurately",
+        "Use ChatGPT alongside spreadsheets and data",
+        "Save and reuse your best prompts as templates"
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "building-custom-gpts",
+      "title": "Building Custom GPTs and AI Assistants",
+      "category": "AI & Prompt Engineering",
+      "level": "Intermediate",
+      "price": 35,
+      "duration": "5 hours",
+      "summary": "Design, build, and share custom GPTs and assistants tailored to a specific job or workflow.",
+      "description": "Learn to design a custom GPT or AI assistant from scratch: defining its instructions, knowledge base, and guardrails, then testing and refining it until it reliably handles a real task, from customer support answers to internal documentation search.",
+      "outcomes": [
+        "Design instructions and guardrails for a custom assistant",
+        "Attach a knowledge base for accurate, grounded answers",
+        "Test and iterate an assistant against real inputs",
+        "Share or deploy an assistant to a team"
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "ai-image-generation",
+      "title": "AI Image Generation with Midjourney & DALL-E",
+      "category": "AI & Prompt Engineering",
+      "level": "Beginner",
+      "price": 19,
+      "duration": "3 hours",
+      "summary": "Create professional-quality images and graphics using AI image generators.",
+      "description": "Learn how to prompt AI image tools like Midjourney and DALL-E for consistent, professional results: composition, lighting, style references, and the editing workflow that turns a rough generation into a finished asset.",
+      "outcomes": [
+        "Write prompts that control composition, lighting, and style",
+        "Use reference images and style consistency techniques",
+        "Upscale and edit AI-generated images",
+        "Understand licensing and commercial-use considerations"
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "introduction-to-llms",
+      "title": "Introduction to Large Language Models",
+      "category": "AI & Prompt Engineering",
+      "level": "Intermediate",
+      "price": 29,
+      "duration": "4 hours",
+      "summary": "How transformers, tokens, and training actually produce the models behind ChatGPT and Claude.",
+      "description": "A technical-but-accessible introduction to how large language models are built: tokenization, transformers, training and fine-tuning, and the limitations (like hallucination) that come from how these models actually work.",
+      "outcomes": [
+        "Explain tokenization, embeddings, and the transformer architecture",
+        "Understand the difference between pretraining and fine-tuning",
+        "Explain why models hallucinate and how to reduce it",
+        "Read a model card and understand its limitations"
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "rag-explained",
+      "title": "Retrieval-Augmented Generation (RAG) Explained",
+      "category": "AI & Prompt Engineering",
+      "level": "Advanced",
+      "price": 39,
+      "duration": "5 hours",
+      "summary": "Build an AI system that answers questions from your own documents, accurately and with sources.",
+      "description": "Learn how retrieval-augmented generation works and build one yourself: chunking documents, generating embeddings, storing them in a vector database, and wiring retrieval into a prompt so an AI model can answer questions grounded in your own content.",
+      "outcomes": [
+        "Chunk and embed documents for retrieval",
+        "Set up a vector database for semantic search",
+        "Wire retrieved context into a grounded prompt",
+        "Reduce hallucination with citations and source grounding"
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "fine-tuning-ai-models",
+      "title": "Fine-Tuning AI Models for Your Business",
+      "category": "AI & Prompt Engineering",
+      "level": "Advanced",
+      "price": 49,
+      "duration": "6 hours",
+      "summary": "When and how to fine-tune a model on your own data instead of relying on prompting alone.",
+      "description": "Fine-tuning isn't always the right answer, this course teaches you when it is. Learn to prepare a training dataset, run a fine-tuning job, evaluate the result against a baseline, and decide whether fine-tuning, RAG, or better prompting solves your problem.",
+      "outcomes": [
+        "Decide when fine-tuning beats prompting or RAG",
+        "Prepare and clean a fine-tuning dataset",
+        "Run and evaluate a fine-tuning job",
+        "Avoid the most common fine-tuning mistakes"
+      ]
+    },
+    {
+      "id": 11,
+      "slug": "ai-ethics-safety",
+      "title": "AI Ethics, Safety & Responsible Use",
+      "category": "AI & Prompt Engineering",
+      "level": "Beginner",
+      "price": 15,
+      "duration": "2 hours",
+      "summary": "Bias, privacy, misinformation, and the responsible-use practices every AI user should know.",
+      "description": "A grounded look at the real risks of AI, bias, privacy, misinformation, and job displacement, paired with practical practices for using AI responsibly at work: disclosure, human review, and data handling.",
+      "outcomes": [
+        "Recognize common sources of bias in AI output",
+        "Apply responsible data-handling practices with AI tools",
+        "Know when AI output needs human review or disclosure",
+        "Evaluate an AI vendor's privacy and safety claims"
+      ]
+    },
+    {
+      "id": 12,
+      "slug": "voice-ai-conversational-agents",
+      "title": "Voice AI & Conversational Agents",
+      "category": "AI & Prompt Engineering",
+      "level": "Intermediate",
+      "price": 35,
+      "duration": "5 hours",
+      "summary": "Build a voice-driven AI agent using speech-to-text, an LLM, and text-to-speech.",
+      "description": "Learn the building blocks of voice AI: speech-to-text, a language model for reasoning and response, and text-to-speech, then combine them into a working conversational agent for a support line, kiosk, or app.",
+      "outcomes": [
+        "Combine speech-to-text, an LLM, and text-to-speech into one pipeline",
+        "Design natural, low-latency conversation flows",
+        "Handle interruptions and turn-taking gracefully",
+        "Deploy a simple voice agent for a real use case"
+      ]
+    },
+    {
+      "id": 13,
+      "slug": "html-css-js-crash-course",
+      "title": "HTML, CSS & JavaScript Crash Course",
+      "category": "Web & App Development",
+      "level": "Beginner",
+      "price": 19,
+      "duration": "6 hours",
+      "summary": "Build and publish your first real website from a blank page, no prior coding experience needed.",
+      "description": "Start from zero and finish with a live website. This course covers HTML structure, CSS layout and styling, and just enough JavaScript to make a page interactive, building one project step by step from a blank file to a published site.",
+      "outcomes": [
+        "Structure a page with semantic HTML",
+        "Style and lay out a page with modern CSS",
+        "Add interactivity with basic JavaScript",
+        "Publish a finished site live on the web"
+      ]
+    },
+    {
+      "id": 14,
+      "slug": "modern-javascript",
+      "title": "Modern JavaScript from Scratch",
+      "category": "Web & App Development",
+      "level": "Beginner",
+      "price": 25,
+      "duration": "8 hours",
+      "summary": "Variables, functions, arrays, objects, async code, and the DOM, the foundation for every JS framework.",
+      "description": "A complete grounding in modern JavaScript: variables, functions, arrays and objects, asynchronous code with promises and async/await, and DOM manipulation. This is the foundation every framework (React, Vue, Node) is built on.",
+      "outcomes": [
+        "Write clean, modern JavaScript (ES6+) syntax",
+        "Work confidently with arrays, objects, and functions",
+        "Handle asynchronous code with promises and async/await",
+        "Manipulate the DOM to build interactive pages"
+      ]
+    },
+    {
+      "id": 15,
+      "slug": "react-for-beginners",
+      "title": "React for Beginners",
+      "category": "Web & App Development",
+      "level": "Intermediate",
+      "price": 35,
+      "duration": "10 hours",
+      "summary": "Components, props, state, and hooks, build a real multi-page app with the most in-demand front-end library.",
+      "description": "Learn React the way it's actually used on the job: components, props, state, hooks, and routing. You'll build a complete multi-page app from scratch and come away able to read and contribute to a real React codebase.",
+      "outcomes": [
+        "Build reusable components with props and state",
+        "Use React hooks (useState, useEffect) correctly",
+        "Handle forms, lists, and conditional rendering",
+        "Add client-side routing to a multi-page app"
+      ]
+    },
+    {
+      "id": 16,
+      "slug": "fullstack-nextjs",
+      "title": "Full-Stack Web Development with Next.js",
+      "category": "Web & App Development",
+      "level": "Advanced",
+      "price": 49,
+      "duration": "14 hours",
+      "summary": "Build, and deploy a complete full-stack application: frontend, backend API routes, and a database.",
+      "description": "A project-based deep dive into full-stack development with Next.js: pages and routing, API routes, database integration, authentication, and deployment. You'll finish with a deployed, working full-stack application in your portfolio.",
+      "outcomes": [
+        "Build server-rendered and static pages with Next.js",
+        "Create backend API routes and connect a database",
+        "Add authentication to a full-stack app",
+        "Deploy a production application"
+      ]
+    },
+    {
+      "id": 17,
+      "slug": "ai-coding-tools",
+      "title": "Building Websites with AI Coding Tools (Cursor & Copilot)",
+      "category": "Web & App Development",
+      "level": "Intermediate",
+      "price": 29,
+      "duration": "5 hours",
+      "summary": "Ship real projects faster using AI pair-programming tools without losing control of your code.",
+      "description": "Learn to work effectively with AI coding assistants like Cursor and GitHub Copilot: prompting for code, reviewing and correcting AI-generated output, and structuring a project so the AI stays useful as it grows.",
+      "outcomes": [
+        "Set up and configure an AI coding assistant",
+        "Prompt effectively for code generation and refactors",
+        "Review AI-generated code for bugs and security issues",
+        "Keep a growing project organized for AI assistance"
+      ]
+    },
+    {
+      "id": 18,
+      "slug": "python-for-beginners",
+      "title": "Python Programming for Beginners",
+      "category": "Web & App Development",
+      "level": "Beginner",
+      "price": 19,
+      "duration": "8 hours",
+      "summary": "The most popular language for AI, data, and automation, taught from the very first line of code.",
+      "description": "A friendly, from-scratch introduction to Python: variables, loops, functions, and data structures, with small real projects along the way. Python is the language behind most AI tools, making it the natural next step after this course.",
+      "outcomes": [
+        "Write and run Python scripts confidently",
+        "Use loops, conditionals, and functions",
+        "Work with lists, dictionaries, and files",
+        "Build three small real-world Python projects"
+      ]
+    },
+    {
+      "id": 19,
+      "slug": "python-automation-scripting",
+      "title": "Python for Automation & Scripting",
+      "category": "Web & App Development",
+      "level": "Intermediate",
+      "price": 29,
+      "duration": "6 hours",
+      "summary": "Automate spreadsheets, files, emails, and repetitive tasks with practical Python scripts.",
+      "description": "Turn Python into your personal automation tool: rename and organize files in bulk, read and write spreadsheets, send emails, and schedule scripts to run on their own. Every lesson ends with a script you can actually use.",
+      "outcomes": [
+        "Automate file and folder organization tasks",
+        "Read, write, and manipulate spreadsheets with Python",
+        "Send automated emails and notifications from a script",
+        "Schedule scripts to run automatically"
+      ]
+    },
+    {
+      "id": 20,
+      "slug": "api-development-nodejs",
+      "title": "API Development with Node.js",
+      "category": "Web & App Development",
+      "level": "Intermediate",
+      "price": 35,
+      "duration": "8 hours",
+      "summary": "Design and build a REST API from scratch with Node.js, Express, and a real database.",
+      "description": "Learn to build a production-style REST API: routing, middleware, database models, authentication, and error handling with Node.js and Express. You'll finish with a working API you can plug into any frontend.",
+      "outcomes": [
+        "Design RESTful routes and resources",
+        "Connect an API to a database with an ORM",
+        "Add authentication and authorization",
+        "Handle errors and validate input properly"
+      ]
+    },
+    {
+      "id": 21,
+      "slug": "react-native-mobile",
+      "title": "Mobile App Development with React Native",
+      "category": "Web & App Development",
+      "level": "Advanced",
+      "price": 45,
+      "duration": "12 hours",
+      "summary": "Build one codebase that runs as a real iOS and Android app.",
+      "description": "Learn React Native by building a complete mobile app: navigation, device features like camera and location, local storage, and the process of packaging and submitting an app to the App Store and Google Play.",
+      "outcomes": [
+        "Build mobile screens and navigation with React Native",
+        "Access device features like camera and location",
+        "Store data locally on the device",
+        "Package an app for iOS and Android submission"
+      ]
+    },
+    {
+      "id": 22,
+      "slug": "building-your-first-saas",
+      "title": "Building Your First SaaS Product",
+      "category": "Web & App Development",
+      "level": "Advanced",
+      "price": 49,
+      "duration": "10 hours",
+      "summary": "From idea to a live, paying-customer-ready product: auth, billing, and deployment included.",
+      "description": "A complete blueprint for shipping a real SaaS product: user accounts and authentication, subscription billing, a usable dashboard, and deployment. Aimed at builders who already know some code and want to ship something people can pay for.",
+      "outcomes": [
+        "Set up user accounts and authentication",
+        "Add subscription billing to a web app",
+        "Design a usable, simple product dashboard",
+        "Deploy and launch a live SaaS product"
+      ]
+    },
+    {
+      "id": 23,
+      "slug": "git-github-for-beginners",
+      "title": "Git & GitHub for Beginners",
+      "category": "Web & App Development",
+      "level": "Beginner",
+      "price": 12,
+      "duration": "2 hours",
+      "summary": "Version control basics every developer needs: commits, branches, pull requests, and collaboration.",
+      "description": "A short, practical course on Git and GitHub: tracking changes, branching, merging, resolving conflicts, and collaborating with pull requests. Essential groundwork before any coding job or team project.",
+      "outcomes": [
+        "Track changes with commits and understand history",
+        "Create and merge branches without fear",
+        "Resolve merge conflicts calmly",
+        "Collaborate with pull requests on GitHub"
+      ]
+    },
+    {
+      "id": 24,
+      "slug": "vibe-coding",
+      "title": "Vibe Coding: Building Apps with AI Pair Programmers",
+      "category": "Web & App Development",
+      "level": "Intermediate",
+      "price": 29,
+      "duration": "4 hours",
+      "summary": "Describe what you want, let AI generate the app, and learn to steer, review, and ship it.",
+      "description": "A modern approach to building software where AI writes most of the code and you provide direction, review, and taste. Learn the workflow of describing features in plain language, iterating with an AI tool, and shipping a working app quickly.",
+      "outcomes": [
+        "Describe app features clearly enough for AI to build them",
+        "Iterate quickly between prompt, output, and testing",
+        "Spot and fix mistakes in AI-generated applications",
+        "Ship a small working app end to end"
+      ]
+    },
+    {
+      "id": 25,
+      "slug": "nocode-automation-zapier-make",
+      "title": "No-Code Automation with Zapier & Make",
+      "category": "Data & Automation",
+      "level": "Beginner",
+      "price": 19,
+      "duration": "3 hours",
+      "summary": "Connect your everyday apps and automate repetitive busywork without writing a single line of code.",
+      "description": "Learn to build automations that connect the apps you already use, email, spreadsheets, calendars, forms, CRMs, using Zapier and Make. No coding required, just clear step-by-step logic and a handful of real templates you can adapt immediately.",
+      "outcomes": [
+        "Build multi-step automations (Zaps and Scenarios)",
+        "Connect common business apps without code",
+        "Use filters, formatting, and conditional logic",
+        "Troubleshoot a broken automation"
+      ]
+    },
+    {
+      "id": 26,
+      "slug": "ai-agents-n8n",
+      "title": "Building AI Agents with n8n",
+      "category": "Data & Automation",
+      "level": "Intermediate",
+      "price": 35,
+      "duration": "6 hours",
+      "summary": "Combine AI models with automation workflows to build agents that take real action.",
+      "description": "Learn n8n, an open workflow-automation tool, and combine it with AI models to build agents that read data, make decisions, and take action: replying to emails, updating records, or routing tasks, with minimal ongoing maintenance.",
+      "outcomes": [
+        "Build multi-step workflows in n8n",
+        "Connect an AI model into an automation workflow",
+        "Design agents that make decisions on incoming data",
+        "Monitor and maintain a live automation"
+      ]
+    },
+    {
+      "id": 27,
+      "slug": "intro-to-sql-databases",
+      "title": "Introduction to SQL & Databases",
+      "category": "Data & Automation",
+      "level": "Beginner",
+      "price": 19,
+      "duration": "5 hours",
+      "summary": "Query, filter, and join data like an analyst, the most in-demand data skill there is.",
+      "description": "Learn SQL from the ground up: selecting, filtering, sorting, and joining data across tables, plus the basics of how relational databases are structured. A foundational skill for data, analytics, and most technical roles.",
+      "outcomes": [
+        "Write SELECT queries with filtering and sorting",
+        "Join data across multiple tables",
+        "Use aggregate functions and group data",
+        "Understand basic relational database design"
+      ]
+    },
+    {
+      "id": 28,
+      "slug": "data-analysis-python-pandas",
+      "title": "Data Analysis with Python & Pandas",
+      "category": "Data & Automation",
+      "level": "Intermediate",
+      "price": 29,
+      "duration": "7 hours",
+      "summary": "Clean, explore, and analyze real datasets using Python's most popular data library.",
+      "description": "Learn to load, clean, and analyze real-world datasets with Python and Pandas: handling missing data, filtering and grouping, and producing summary statistics and charts that actually answer a question.",
+      "outcomes": [
+        "Load and clean messy real-world datasets",
+        "Filter, group, and summarize data with Pandas",
+        "Merge and reshape multiple datasets",
+        "Produce clear charts from your analysis"
+      ]
+    },
+    {
+      "id": 29,
+      "slug": "excel-to-ai",
+      "title": "Excel to AI: Supercharging Spreadsheets with AI",
+      "category": "Data & Automation",
+      "level": "Beginner",
+      "price": 15,
+      "duration": "2 hours",
+      "summary": "Use AI to write formulas, clean data, and analyze spreadsheets in a fraction of the time.",
+      "description": "A short course for anyone who lives in spreadsheets: use AI to generate complex formulas, clean messy data, summarize large sheets, and build quick analyses, without becoming a spreadsheet expert first.",
+      "outcomes": [
+        "Generate complex formulas from plain-language descriptions",
+        "Clean and standardize messy spreadsheet data with AI",
+        "Summarize and analyze large sheets quickly",
+        "Catch and correct AI mistakes in formulas"
+      ]
+    },
+    {
+      "id": 30,
+      "slug": "building-chatbots",
+      "title": "Building Chatbots for Your Website",
+      "category": "Data & Automation",
+      "level": "Intermediate",
+      "price": 29,
+      "duration": "4 hours",
+      "summary": "Design and deploy an AI chatbot that answers questions about your business, accurately.",
+      "description": "Build a chatbot that actually helps visitors: define its knowledge, scope its answers to avoid making things up, design a natural conversation flow, and embed it on a real website.",
+      "outcomes": [
+        "Scope a chatbot's knowledge and guardrails",
+        "Design a natural, helpful conversation flow",
+        "Reduce incorrect or made-up answers",
+        "Embed a chatbot on a live website"
+      ]
+    },
+    {
+      "id": 31,
+      "slug": "intro-to-machine-learning",
+      "title": "Introduction to Machine Learning",
+      "category": "Data & Automation",
+      "level": "Intermediate",
+      "price": 35,
+      "duration": "6 hours",
+      "summary": "Train your first models and understand the ideas behind classification and prediction.",
+      "description": "A hands-on introduction to machine learning: supervised vs. unsupervised learning, training and testing a model, and evaluating results, using Python and simple, well-known datasets throughout.",
+      "outcomes": [
+        "Explain supervised vs. unsupervised learning",
+        "Train and test a basic classification model",
+        "Evaluate a model's accuracy and limitations",
+        "Avoid common beginner mistakes like overfitting"
+      ]
+    },
+    {
+      "id": 32,
+      "slug": "data-visualization-fundamentals",
+      "title": "Data Visualization Fundamentals",
+      "category": "Data & Automation",
+      "level": "Beginner",
+      "price": 19,
+      "duration": "4 hours",
+      "summary": "Turn raw numbers into charts and dashboards that actually communicate something.",
+      "description": "Learn the principles of good data visualization, choosing the right chart, avoiding misleading design, and guiding a reader's eye, then apply them practically to build clear charts and a simple dashboard.",
+      "outcomes": [
+        "Choose the right chart type for the data",
+        "Avoid common visualization mistakes and distortions",
+        "Design a simple, readable dashboard",
+        "Tell a clear story with a chart"
+      ]
+    },
+    {
+      "id": 33,
+      "slug": "workflow-automation-small-business",
+      "title": "Workflow Automation for Small Business",
+      "category": "Data & Automation",
+      "level": "Beginner",
+      "price": 19,
+      "duration": "3 hours",
+      "summary": "Map your business's repetitive tasks and automate the highest-impact ones first.",
+      "description": "A practical planning-and-execution course for small business owners: map out where time is actually going, identify the automations with the best return, and implement your first three using accessible no-code tools.",
+      "outcomes": [
+        "Map repetitive tasks across a small business",
+        "Prioritize automations by time saved and effort",
+        "Implement automations with no-code tools",
+        "Measure whether an automation is actually working"
+      ]
+    },
+    {
+      "id": 34,
+      "slug": "ai-crm-sales-automation",
+      "title": "AI-Powered CRM & Sales Automation",
+      "category": "Data & Automation",
+      "level": "Intermediate",
+      "price": 29,
+      "duration": "4 hours",
+      "summary": "Automate lead follow-up, scoring, and pipeline updates with AI inside your CRM.",
+      "description": "Learn to layer AI on top of a CRM to automatically draft follow-ups, score and prioritize leads, and keep pipeline data current, freeing sales time for actual conversations instead of data entry.",
+      "outcomes": [
+        "Automate lead follow-up and nurture sequences",
+        "Use AI to score and prioritize leads",
+        "Keep CRM data current with less manual entry",
+        "Measure automation impact on sales pipeline"
+      ]
+    },
+    {
+      "id": 35,
+      "slug": "cybersecurity-fundamentals",
+      "title": "Cybersecurity Fundamentals",
+      "category": "Cybersecurity & IT",
+      "level": "Beginner",
+      "price": 19,
+      "duration": "4 hours",
+      "summary": "The core concepts, threats, and defenses every tech professional should understand.",
+      "description": "A foundational course covering the core concepts of cybersecurity: common threats, the CIA triad, authentication and access control, and the everyday defensive practices that prevent most real-world incidents.",
+      "outcomes": [
+        "Explain the CIA triad and core security principles",
+        "Recognize common attack types (phishing, malware, etc.)",
+        "Apply strong authentication and access-control practices",
+        "Follow a basic security checklist for any system"
+      ]
+    },
+    {
+      "id": 36,
+      "slug": "ethical-hacking-introduction",
+      "title": "Ethical Hacking: An Introduction",
+      "category": "Cybersecurity & IT",
+      "level": "Intermediate",
+      "price": 35,
+      "duration": "6 hours",
+      "summary": "Think like an attacker, legally, to find and fix weaknesses before someone else does.",
+      "description": "An introduction to ethical hacking and penetration testing: reconnaissance, scanning, common vulnerability classes, and reporting findings responsibly, all within a legal, lab-based environment.",
+      "outcomes": [
+        "Understand the ethical-hacking process and legal boundaries",
+        "Perform basic reconnaissance and vulnerability scanning",
+        "Recognize common vulnerability classes (OWASP-style)",
+        "Write a clear, actionable findings report"
+      ]
+    },
+    {
+      "id": 37,
+      "slug": "securing-ai-systems",
+      "title": "Securing AI Systems & Applications",
+      "category": "Cybersecurity & IT",
+      "level": "Advanced",
+      "price": 39,
+      "duration": "5 hours",
+      "summary": "Prompt injection, data leakage, and the new attack surface AI applications introduce.",
+      "description": "AI applications introduce risks that traditional security training doesn't cover: prompt injection, data leakage through model output, and insecure tool use. Learn to identify and defend against these AI-specific attack patterns.",
+      "outcomes": [
+        "Recognize and defend against prompt injection",
+        "Prevent sensitive data leakage through AI output",
+        "Secure tool use and function-calling in AI apps",
+        "Apply a security checklist before shipping an AI feature"
+      ]
+    },
+    {
+      "id": 38,
+      "slug": "network-security-basics",
+      "title": "Network Security Basics",
+      "category": "Cybersecurity & IT",
+      "level": "Beginner",
+      "price": 19,
+      "duration": "4 hours",
+      "summary": "Firewalls, VPNs, and secure network design explained without the jargon.",
+      "description": "Understand how networks are secured in practice: firewalls, VPNs, network segmentation, and secure Wi-Fi configuration, with enough hands-on detail to actually apply it to a home or small-office network.",
+      "outcomes": [
+        "Explain how firewalls and VPNs protect a network",
+        "Configure a secure home or small-office Wi-Fi network",
+        "Understand basic network segmentation",
+        "Recognize signs of network compromise"
+      ]
+    },
+    {
+      "id": 39,
+      "slug": "password-privacy-identity-protection",
+      "title": "Password, Privacy & Identity Protection",
+      "category": "Cybersecurity & IT",
+      "level": "Beginner",
+      "price": 12,
+      "duration": "2 hours",
+      "summary": "Practical steps to lock down your accounts, passwords, and personal data today.",
+      "description": "A fast, practical course on personal security: password managers, multi-factor authentication, reducing your data footprint, and spotting identity-theft warning signs, no technical background required.",
+      "outcomes": [
+        "Set up and use a password manager correctly",
+        "Enable multi-factor authentication everywhere it matters",
+        "Reduce your personal data exposure online",
+        "Recognize early signs of identity theft"
+      ]
+    },
+    {
+      "id": 40,
+      "slug": "cloud-security-essentials",
+      "title": "Cloud Security Essentials",
+      "category": "Cybersecurity & IT",
+      "level": "Intermediate",
+      "price": 29,
+      "duration": "4 hours",
+      "summary": "Secure cloud storage, access, and configurations, where most breaches actually happen.",
+      "description": "Most cloud breaches come from misconfiguration, not sophisticated attacks. Learn to secure cloud storage buckets, manage identity and access properly, and audit a cloud environment for the most common, costly mistakes.",
+      "outcomes": [
+        "Identify common cloud misconfiguration risks",
+        "Apply least-privilege identity and access management",
+        "Secure cloud storage and public-facing resources",
+        "Run a basic cloud security audit"
+      ]
+    },
+    {
+      "id": 41,
+      "slug": "it-support-troubleshooting",
+      "title": "Introduction to IT Support & Troubleshooting",
+      "category": "Cybersecurity & IT",
+      "level": "Beginner",
+      "price": 15,
+      "duration": "3 hours",
+      "summary": "The systematic troubleshooting process behind every good help-desk technician.",
+      "description": "Learn the structured approach real IT support technicians use to diagnose and fix problems fast: gathering information, isolating variables, and documenting the fix, applicable to hardware, software, and network issues alike.",
+      "outcomes": [
+        "Apply a systematic troubleshooting process",
+        "Diagnose common hardware and software issues",
+        "Communicate clearly with non-technical users",
+        "Document fixes for future reference"
+      ]
+    },
+    {
+      "id": 42,
+      "slug": "phishing-social-engineering-defense",
+      "title": "Phishing & Social Engineering Defense",
+      "category": "Cybersecurity & IT",
+      "level": "Beginner",
+      "price": 12,
+      "duration": "2 hours",
+      "summary": "Spot the manipulation tactics behind phishing, vishing, and social engineering attacks.",
+      "description": "Attackers target people more often than systems. Learn to recognize phishing emails, phone-based social engineering, and pretexting tactics, and build habits that make you a hard target.",
+      "outcomes": [
+        "Spot red flags in phishing emails and messages",
+        "Recognize voice and pretexting social-engineering tactics",
+        "Verify requests through a second channel before acting",
+        "Report and respond to a suspected attack correctly"
+      ]
+    },
+    {
+      "id": 43,
+      "slug": "security-awareness-small-teams",
+      "title": "Security Awareness for Small Teams",
+      "category": "Cybersecurity & IT",
+      "level": "Beginner",
+      "price": 15,
+      "duration": "2 hours",
+      "summary": "A ready-to-use security training for small businesses without a dedicated IT department.",
+      "description": "A compact security-awareness course built for small teams: the handful of habits and policies that prevent the majority of real-world incidents, presented simply enough to roll out to an entire staff.",
+      "outcomes": [
+        "Establish baseline security habits across a small team",
+        "Set simple, enforceable password and access policies",
+        "Reduce risk from personal devices and shared accounts",
+        "Build a lightweight incident-reporting process"
+      ]
+    },
+    {
+      "id": 44,
+      "slug": "incident-response-fundamentals",
+      "title": "Incident Response Fundamentals",
+      "category": "Cybersecurity & IT",
+      "level": "Advanced",
+      "price": 39,
+      "duration": "5 hours",
+      "summary": "What to do in the first hours after a breach: containment, investigation, and recovery.",
+      "description": "Learn the incident response lifecycle: preparation, detection, containment, eradication, and recovery, plus how to run a calm, structured response instead of a panicked scramble when something actually goes wrong.",
+      "outcomes": [
+        "Apply the incident response lifecycle under pressure",
+        "Contain an active incident without destroying evidence",
+        "Coordinate communication during a live incident",
+        "Run a useful post-incident review"
+      ]
+    },
+    {
+      "id": 45,
+      "slug": "cloud-computing-fundamentals",
+      "title": "Cloud Computing Fundamentals (AWS, Azure, GCP)",
+      "category": "Cloud & DevOps",
+      "level": "Beginner",
+      "price": 19,
+      "duration": "4 hours",
+      "summary": "Understand the cloud concepts and services shared across every major provider.",
+      "description": "A provider-neutral introduction to cloud computing: compute, storage, networking, and pricing models, mapped across AWS, Azure, and GCP so you can move between them without relearning the basics each time.",
+      "outcomes": [
+        "Explain core cloud concepts: compute, storage, networking",
+        "Compare services across AWS, Azure, and GCP",
+        "Understand cloud pricing models and cost drivers",
+        "Choose the right service tier for a simple project"
+      ]
+    },
+    {
+      "id": 46,
+      "slug": "aws-for-beginners",
+      "title": "AWS for Beginners",
+      "category": "Cloud & DevOps",
+      "level": "Beginner",
+      "price": 25,
+      "duration": "6 hours",
+      "summary": "Launch your first server, storage bucket, and database on the world's largest cloud platform.",
+      "description": "A hands-on introduction to Amazon Web Services: setting up an account safely, launching an EC2 server, storing files in S3, and connecting a simple database, with cost-control practices built in from day one.",
+      "outcomes": [
+        "Set up an AWS account with proper cost controls",
+        "Launch and connect to an EC2 server",
+        "Store and serve files using S3",
+        "Avoid the most common AWS billing surprises"
+      ]
+    },
+    {
+      "id": 47,
+      "slug": "docker-containers-explained",
+      "title": "Docker & Containers Explained",
+      "category": "Cloud & DevOps",
+      "level": "Intermediate",
+      "price": 29,
+      "duration": "4 hours",
+      "summary": "Package an application once and run it anywhere with confidence.",
+      "description": "Learn Docker from first principles: images, containers, and Dockerfiles, then use Docker Compose to run a multi-service application locally the same way it will run in production.",
+      "outcomes": [
+        "Write a Dockerfile for a real application",
+        "Understand the difference between images and containers",
+        "Run multi-service apps with Docker Compose",
+        "Debug a container that won't start"
+      ]
+    },
+    {
+      "id": 48,
+      "slug": "intro-to-devops-cicd",
+      "title": "Introduction to DevOps & CI/CD",
+      "category": "Cloud & DevOps",
+      "level": "Intermediate",
+      "price": 29,
+      "duration": "5 hours",
+      "summary": "Automate testing and deployment so shipping code stops being scary.",
+      "description": "Learn the DevOps mindset and the CI/CD pipelines that put it into practice: automated testing, build pipelines, and automated deployment, using widely-used tools you can apply to almost any project.",
+      "outcomes": [
+        "Explain the DevOps philosophy and its benefits",
+        "Build a basic CI pipeline that runs tests automatically",
+        "Automate deployment on a successful build",
+        "Roll back a bad deployment safely"
+      ]
+    },
+    {
+      "id": 49,
+      "slug": "deploying-ai-applications",
+      "title": "Deploying AI Applications to the Cloud",
+      "category": "Cloud & DevOps",
+      "level": "Advanced",
+      "price": 39,
+      "duration": "5 hours",
+      "summary": "Take an AI prototype from your laptop to a scalable, production-ready cloud service.",
+      "description": "Learn to deploy AI-powered applications properly: managing API keys and secrets, handling rate limits and cost, scaling under load, and monitoring output quality once real users are involved.",
+      "outcomes": [
+        "Deploy an AI application to a cloud environment",
+        "Manage secrets, rate limits, and cost controls",
+        "Scale an AI service under real user load",
+        "Monitor AI output quality in production"
+      ]
+    },
+    {
+      "id": 50,
+      "slug": "kubernetes-fundamentals",
+      "title": "Kubernetes Fundamentals",
+      "category": "Cloud & DevOps",
+      "level": "Advanced",
+      "price": 45,
+      "duration": "6 hours",
+      "summary": "Orchestrate containers at scale: pods, deployments, services, and scaling explained clearly.",
+      "description": "A practical introduction to Kubernetes: pods, deployments, services, and scaling, with enough real cluster work that the core concepts stick, aimed at engineers moving beyond single-container Docker setups.",
+      "outcomes": [
+        "Explain pods, deployments, and services",
+        "Deploy an application to a Kubernetes cluster",
+        "Scale an application up and down on demand",
+        "Troubleshoot a failing deployment"
+      ]
+    },
+    {
+      "id": 51,
+      "slug": "serverless-computing-explained",
+      "title": "Serverless Computing Explained",
+      "category": "Cloud & DevOps",
+      "level": "Intermediate",
+      "price": 25,
+      "duration": "3 hours",
+      "summary": "Run code without managing servers, and know when that trade-off actually makes sense.",
+      "description": "Learn serverless computing: functions-as-a-service, event triggers, and cost models, plus a clear-eyed look at when serverless is the right architecture and when it isn't.",
+      "outcomes": [
+        "Deploy a function-as-a-service to the cloud",
+        "Trigger functions from events (HTTP, storage, schedule)",
+        "Understand serverless cost and cold-start trade-offs",
+        "Decide when serverless fits a given project"
+      ]
+    },
+    {
+      "id": 52,
+      "slug": "linux-command-line-basics",
+      "title": "Linux Command Line Basics",
+      "category": "Cloud & DevOps",
+      "level": "Beginner",
+      "price": 15,
+      "duration": "3 hours",
+      "summary": "Navigate, manage files, and run programs from the terminal, a must-have for every tech role.",
+      "description": "Get comfortable in the Linux terminal: navigating the filesystem, managing files and permissions, installing software, and chaining commands together, the baseline skill for nearly every technical job.",
+      "outcomes": [
+        "Navigate and manage files from the command line",
+        "Understand file permissions and ownership",
+        "Install and manage software packages",
+        "Chain commands together with pipes and redirects"
+      ]
+    },
+    {
+      "id": 53,
+      "slug": "ai-tools-everyday-productivity",
+      "title": "AI Tools for Everyday Productivity",
+      "category": "Career & AI Productivity",
+      "level": "Beginner",
+      "price": 15,
+      "duration": "2 hours",
+      "summary": "A curated toolkit of AI apps that save real time on email, scheduling, notes, and research.",
+      "description": "A practical survey of the AI tools worth actually using day to day: for email triage, meeting notes, scheduling, and quick research, with setup instructions for each so you can start saving time this week.",
+      "outcomes": [
+        "Set up an AI-assisted email and inbox workflow",
+        "Automate meeting notes and follow-ups",
+        "Use AI for fast, reliable research",
+        "Build a personal AI productivity stack"
+      ]
+    },
+    {
+      "id": 54,
+      "slug": "using-ai-to-write-better",
+      "title": "Using AI to Write Better, Faster",
+      "category": "Career & AI Productivity",
+      "level": "Beginner",
+      "price": 15,
+      "duration": "2 hours",
+      "summary": "Draft, edit, and polish writing with AI while keeping your own voice.",
+      "description": "Learn to use AI as a writing partner, not a replacement: drafting faster, tightening weak sentences, adjusting tone for different audiences, and editing AI output so it still sounds like you.",
+      "outcomes": [
+        "Draft first versions of writing faster with AI",
+        "Edit AI output so it keeps your own voice",
+        "Adjust tone and formality for different audiences",
+        "Catch generic or inaccurate AI phrasing"
+      ]
+    },
+    {
+      "id": 55,
+      "slug": "freelancing-with-ai",
+      "title": "Freelancing with AI: Build a One-Person Business",
+      "category": "Career & AI Productivity",
+      "level": "Intermediate",
+      "price": 29,
+      "duration": "4 hours",
+      "summary": "Use AI to handle proposals, client work, and admin so one person can do the work of a small team.",
+      "description": "A practical guide to freelancing with AI as a force multiplier: writing proposals, scoping projects, drafting deliverables faster, and automating the admin side of running a one-person business.",
+      "outcomes": [
+        "Use AI to write stronger client proposals",
+        "Speed up deliverable creation without cutting quality",
+        "Automate invoicing, scheduling, and client admin",
+        "Price and scope AI-assisted work fairly"
+      ]
+    },
+    {
+      "id": 56,
+      "slug": "landing-a-tech-job",
+      "title": "Landing a Tech Job: Resume, Portfolio & Interviews",
+      "category": "Career & AI Productivity",
+      "level": "Beginner",
+      "price": 19,
+      "duration": "3 hours",
+      "summary": "Build a resume and portfolio that get callbacks, and prepare for the interviews that follow.",
+      "description": "A career-focused course covering the practical side of landing a tech role: building a resume that passes screening, putting together a portfolio that shows real work, and preparing for common interview formats.",
+      "outcomes": [
+        "Build a resume tailored to tech roles",
+        "Put together a portfolio that shows real projects",
+        "Prepare for behavioral and screening interviews",
+        "Negotiate an offer with confidence"
+      ]
+    },
+    {
+      "id": 57,
+      "slug": "technical-interview-prep",
+      "title": "Technical Interview Prep: Coding Challenges",
+      "category": "Career & AI Productivity",
+      "level": "Intermediate",
+      "price": 29,
+      "duration": "5 hours",
+      "summary": "Practice the coding-challenge format and problem-solving approach interviewers actually look for.",
+      "description": "Learn a repeatable approach to technical coding interviews: understanding the problem, talking through your approach out loud, and writing clean, working code under time pressure, with practice problems throughout.",
+      "outcomes": [
+        "Apply a repeatable approach to coding problems",
+        "Communicate your thinking clearly while coding",
+        "Recognize common problem patterns quickly",
+        "Handle follow-up and edge-case questions calmly"
+      ]
+    },
+    {
+      "id": 58,
+      "slug": "ai-for-marketers",
+      "title": "AI for Marketers: Content, Ads & Analytics",
+      "category": "Career & AI Productivity",
+      "level": "Beginner",
+      "price": 19,
+      "duration": "3 hours",
+      "summary": "Use AI to produce content, optimize ad copy, and read analytics faster.",
+      "description": "A practical AI course for marketers: generating and editing content at scale, testing and optimizing ad copy, and using AI to summarize campaign analytics into decisions instead of just numbers.",
+      "outcomes": [
+        "Generate and edit on-brand content faster with AI",
+        "Test and optimize ad copy variations",
+        "Summarize campaign analytics into clear takeaways",
+        "Build a repeatable AI content workflow"
+      ]
+    },
+    {
+      "id": 59,
+      "slug": "ai-for-educators-trainers",
+      "title": "AI for Educators & Trainers",
+      "category": "Career & AI Productivity",
+      "level": "Beginner",
+      "price": 15,
+      "duration": "2 hours",
+      "summary": "Build lesson plans, quizzes, and feedback faster with AI, without losing pedagogical quality.",
+      "description": "Learn how educators and trainers can use AI to draft lesson plans, generate practice questions, and give faster feedback, while keeping a critical eye on accuracy and appropriateness for the classroom.",
+      "outcomes": [
+        "Draft lesson plans and materials faster with AI",
+        "Generate practice questions and assessments",
+        "Give faster, more consistent feedback with AI support",
+        "Evaluate AI-generated educational content for accuracy"
+      ]
+    },
+    {
+      "id": 60,
+      "slug": "building-a-personal-brand-in-tech",
+      "title": "Building a Personal Brand in Tech",
+      "category": "Career & AI Productivity",
+      "level": "Beginner",
+      "price": 15,
+      "duration": "2 hours",
+      "summary": "Get visible in your field with a simple, sustainable content and networking habit.",
+      "description": "A practical course on building a professional presence: choosing a focus, writing and sharing content consistently, and networking online in a way that actually leads to opportunities, not just likes.",
+      "outcomes": [
+        "Choose a clear professional focus and voice",
+        "Build a sustainable content-sharing habit",
+        "Network online in a way that leads to opportunities",
+        "Turn visibility into real career outcomes"
+      ]
+    },
+    {
+      "id": 61,
+      "slug": "public-speaking-technical-presentations",
+      "title": "Public Speaking & Technical Presentations",
+      "category": "Career & AI Productivity",
+      "level": "Beginner",
+      "price": 12,
+      "duration": "2 hours",
+      "summary": "Explain technical work clearly to any audience, from teammates to executives.",
+      "description": "Learn to structure and deliver a technical presentation that lands: framing the problem, simplifying without dumbing down, and handling questions confidently in front of any audience.",
+      "outcomes": [
+        "Structure a technical talk for a mixed audience",
+        "Simplify complex material without losing accuracy",
+        "Handle questions and pushback confidently",
+        "Reduce presentation anxiety with practical techniques"
+      ]
+    },
+    {
+      "id": 62,
+      "slug": "time-management-deep-work",
+      "title": "Time Management & Deep Work for Developers",
+      "category": "Career & AI Productivity",
+      "level": "Beginner",
+      "price": 12,
+      "duration": "2 hours",
+      "summary": "Protect focused time for real work in a job full of interruptions and context-switching.",
+      "description": "A short, practical course on managing time and attention in a technical role: structuring a day around deep work, managing interruptions, and avoiding the context-switching that quietly kills productivity.",
+      "outcomes": [
+        "Structure a workday around protected deep-work blocks",
+        "Reduce costly context-switching between tasks",
+        "Manage interruptions without damaging relationships",
+        "Build a sustainable, repeatable weekly routine"
+      ]
+    }
+  ]
+}
