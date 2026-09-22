@@ -4,15 +4,27 @@
 
 LJ Web Management is based in Lockport, Illinois, and works with businesses across 57+ industries. Rather than selling off-the-shelf software, the company scopes and builds automations tailored to a client's specific role, tools, and workflow, then delivers a flat, upfront quote before any work begins. The catalog covers 1000+ pre-scoped, done-for-you automations organized by industry and job role (real estate, healthcare, legal, home services, restaurants, e-commerce, and dozens more), alongside larger platform-scale solutions for businesses that need more than a single automation.
 
+## Who this is for
+
+- **Business owners and executives** evaluating how to implement AI in their business: LJ Web Management scopes, builds, and supports the automation, so leadership gets the outcome (time saved, costs cut, faster response) without needing an in-house AI or engineering team.
+- **Employees and individual contributors** looking to supplement their own work with AI: the automations remove the repetitive parts of a role so the person keeps doing the judgment-based work that AI can't, which is increasingly the work that keeps a role valuable as more of a job becomes automatable.
+
 ## Core Pages
 
 - [Home](https://www.ljwebmanagement.com/): Overview of what LJ Web Management does and how automation engagements start.
 - [How It Works](https://www.ljwebmanagement.com/how-it-works): Explains the process from consultation to flat quote to delivery.
 - [Automations](https://www.ljwebmanagement.com/automations): Browsable catalog of 1000+ done-for-you automations across 57+ industries, searchable by industry.
 - [Solutions](https://www.ljwebmanagement.com/solutions): Platform-scale offerings, including Custom Website Design & Development (with SEO and POS integration), Obsolescence Management, ERP Implementation & Integration, Managed SaaS Delivery & Support, LMS Deployment, and Restaurant POS Systems.
+- [FAQ](https://www.ljwebmanagement.com/faq): Answers to common questions about pricing, timelines, how automations are scoped, and what AI adoption means for a team.
+- [ROI Calculator](https://www.ljwebmanagement.com/roi-calculator): Estimates hours and dollars lost monthly to manual work, and the savings automation could return.
+- [Find Your Match Quiz](https://www.ljwebmanagement.com/quiz): A short quiz that matches a business's biggest bottleneck to the right automation or solution.
 - [Book a Consultation](https://www.ljwebmanagement.com/appointment): Schedule a free consultation to scope an automation project.
 - [Contact Us](https://www.ljwebmanagement.com/contactus): General contact information and inquiry form.
 - [Blog](https://blog.ljwebmanagement.com): Articles on business automation and related topics.
+
+## Full detail
+
+- [llms-full.txt](https://www.ljwebmanagement.com/llms-full.txt): Extended reference with the full automation category list, solution descriptions, and FAQ content in plain text for AI systems and answer engines.
 
 ## Company Info
 
