@@ -1,0 +1,90 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "LJ Web Management Content Reference",
+    "description": "Read-only reference endpoints that describe LJ Web Management: a company that builds custom, done-for-you AI automation systems for businesses. These are static content resources for AI agents and answer engines, not a transactional API. To engage LJ Web Management directly, use the Book a Consultation page.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "LJ Web Management",
+      "email": "info@ljwebmanagement.com",
+      "url": "https://www.ljwebmanagement.com/contactus"
+    }
+  },
+  "servers": [
+    {"url": "https://www.ljwebmanagement.com"}
+  ],
+  "paths": {
+    "/llms.txt": {
+      "get": {
+        "summary": "Short company and site overview for AI agents",
+        "operationId": "getLlmsSummary",
+        "responses": {
+          "200": {
+            "description": "Plain text overview of LJ Web Management and its core pages",
+            "content": {"text/plain": {"schema": {"type": "string"}}}
+          }
+        }
+      }
+    },
+    "/llms-full.txt": {
+      "get": {
+        "summary": "Full reference: company facts, all platform solutions, all automation categories, and the complete FAQ",
+        "operationId": "getLlmsFull",
+        "responses": {
+          "200": {
+            "description": "Plain text full reference document",
+            "content": {"text/plain": {"schema": {"type": "string"}}}
+          }
+        }
+      }
+    },
+    "/crawl": {
+      "get": {
+        "summary": "Markdown-formatted company and services summary for AI crawlers",
+        "operationId": "getCrawlSummary",
+        "responses": {
+          "200": {
+            "description": "Markdown content summarizing LJ Web Management's services",
+            "content": {"text/markdown": {"schema": {"type": "string"}}}
+          }
+        }
+      }
+    },
+    "/sitemap.xml": {
+      "get": {
+        "summary": "XML sitemap of all indexable pages",
+        "operationId": "getSitemap",
+        "responses": {
+          "200": {
+            "description": "XML sitemap",
+            "content": {"application/xml": {"schema": {"type": "string"}}}
+          }
+        }
+      }
+    },
+    "/faq": {
+      "get": {
+        "summary": "Frequently asked questions about pricing, process, tools, and industries served",
+        "operationId": "getFaq",
+        "responses": {
+          "200": {
+            "description": "HTML page containing FAQPage structured data",
+            "content": {"text/html": {"schema": {"type": "string"}}}
+          }
+        }
+      }
+    },
+    "/automations": {
+      "get": {
+        "summary": "Catalog of 1000+ done-for-you automations across 57+ industries",
+        "operationId": "getAutomationsCatalog",
+        "responses": {
+          "200": {
+            "description": "HTML catalog page containing an ItemList of automation categories",
+            "content": {"text/html": {"schema": {"type": "string"}}}
+          }
+        }
+      }
+    }
+  }
+}

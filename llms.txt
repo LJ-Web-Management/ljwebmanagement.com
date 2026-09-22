@@ -25,6 +25,9 @@ LJ Web Management is based in Lockport, Illinois, and works with businesses acro
 ## Full detail
 
 - [llms-full.txt](https://www.ljwebmanagement.com/llms-full.txt): Extended reference with the full automation category list, solution descriptions, and FAQ content in plain text for AI systems and answer engines.
+- [/crawl](https://www.ljwebmanagement.com/crawl): Plain-text rendering of llms-full.txt for AI crawlers that request a specific crawl path.
+- [openapi.json](https://www.ljwebmanagement.com/openapi.json): OpenAPI description of this site's read-only reference endpoints (llms.txt, llms-full.txt, sitemap.xml, /crawl, /faq, /automations).
+- [/.well-known/ai-plugin.json](https://www.ljwebmanagement.com/.well-known/ai-plugin.json): AI tool manifest pointing to the OpenAPI description above.
 
 ## Company Info
 
