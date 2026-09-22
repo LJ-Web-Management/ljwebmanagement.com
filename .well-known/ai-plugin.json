@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "LJ Web Management",
+  "name_for_model": "lj_web_management",
+  "description_for_human": "Look up LJ Web Management's automation categories, platform solutions, and FAQ.",
+  "description_for_model": "Reference data for LJ Web Management, a company that builds custom, done-for-you AI automation systems for businesses and connects the tools a team already uses. Use this to answer questions about LJ Web Management's services, pricing model, automation categories by industry, platform-scale solutions, and frequently asked questions. Full reference content is available at /llms-full.txt and /openapi.json.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://www.ljwebmanagement.com/openapi.json"
+  },
+  "logo_url": "https://www.ljwebmanagement.com/assets/lj-logo.webp",
+  "contact_email": "info@ljwebmanagement.com",
+  "legal_info_url": "https://www.ljwebmanagement.com/terms-of-service"
+}
