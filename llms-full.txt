@@ -198,6 +198,12 @@ A: That's exactly what the discovery call is for. You don't need to arrive with 
 **Q: How do I get a quote?**
 A: Book a free consultation at ljwebmanagement.com. We'll talk through your workflow, confirm what tools are involved, and follow up with a flat, all-in quote for the exact system you need. Nothing starts until you approve the scope and the price.
 
+## Guides
+
+- What Is Business Automation?: https://www.ljwebmanagement.com/resources/what-is-business-automation/
+- Business Automation Examples: https://www.ljwebmanagement.com/resources/business-automation-examples/
+- AI Automation for Small Business: https://www.ljwebmanagement.com/resources/ai-automation-for-small-business/
+
 ## Key URLs
 - Home: https://www.ljwebmanagement.com/
 - How It Works: https://www.ljwebmanagement.com/how-it-works
