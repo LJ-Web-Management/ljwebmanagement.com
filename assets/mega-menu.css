@@ -1,0 +1,256 @@
+/* ============ LJ MEGA MENU ============ */
+.lj-topbar {
+  position: relative;
+  z-index: 1000;
+}
+.lj-topbar-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 20px;
+  background: #ffffff;
+  border-radius: 999px;
+  box-shadow: 0 2px 14px rgba(25, 56, 102, 0.12);
+}
+.lj-topbar-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.lj-topbar-logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+.lj-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.lj-topbar-cta {
+  font-family: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  background: #193866;
+  border-radius: 999px;
+  padding: 10px 20px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.lj-topbar-cta:hover {
+  background: #122a4d;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+.lj-menu-toggle {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: transparent;
+  border: 1.5px solid #e3e8ef;
+  border-radius: 999px;
+  padding: 9px 18px 9px 14px;
+  cursor: pointer;
+  font-family: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #193866;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.lj-menu-toggle:hover {
+  border-color: #193866;
+  background: #f6f8fb;
+}
+.lj-menu-toggle-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 18px;
+}
+.lj-menu-toggle-bars span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #193866;
+  border-radius: 1px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.lj-menu-toggle[aria-expanded="true"] .lj-menu-toggle-bars span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.lj-menu-toggle[aria-expanded="true"] .lj-menu-toggle-bars span:nth-child(2) {
+  opacity: 0;
+}
+.lj-menu-toggle[aria-expanded="true"] .lj-menu-toggle-bars span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.lj-mega-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: #193866;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-16px);
+  transition: opacity 0.28s ease, transform 0.28s ease, visibility 0s;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.lj-mega-menu.is-open {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.lj-mega-menu-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 100px 24px 80px;
+  position: relative;
+}
+.lj-mega-menu-close {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.lj-mega-menu-close:hover {
+  background: #1EB4E6;
+  border-color: #1EB4E6;
+  transform: rotate(90deg);
+}
+.lj-mega-menu-logo {
+  display: block;
+  margin-bottom: 56px;
+}
+.lj-mega-menu-logo img {
+  height: 36px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+.lj-mega-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr 1fr;
+  gap: 40px;
+}
+.lj-mega-col h3 {
+  font-family: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #68ddff;
+  margin: 0 0 20px;
+}
+.lj-mega-col a {
+  display: block;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.86);
+  text-decoration: none;
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+.lj-mega-col a:last-of-type {
+  border-bottom: none;
+}
+.lj-mega-col a:hover {
+  color: #1EB4E6;
+  padding-left: 4px;
+}
+.lj-mega-col a.lj-mega-viewall {
+  color: #1EB4E6;
+  font-weight: 700;
+  border-bottom: none;
+  margin-top: 6px;
+}
+.lj-mega-cta {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 24px;
+}
+.lj-mega-cta p {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 18px;
+}
+.lj-mega-cta .lj-btn-cyan {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 14.5px;
+  background: #1EB4E6;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 13px 18px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: background 0.2s ease;
+}
+.lj-mega-cta .lj-btn-cyan:hover {
+  background: #189cc9;
+  color: #ffffff;
+}
+.lj-mega-contact a {
+  display: block;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13.5px;
+  text-decoration: none;
+  padding: 4px 0;
+  border-bottom: none;
+}
+.lj-mega-contact a:hover {
+  color: #ffffff;
+  padding-left: 0;
+}
+
+body.lj-menu-open {
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .lj-mega-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 28px;
+  }
+}
+@media (max-width: 640px) {
+  .lj-topbar-cta {
+    display: none;
+  }
+  .lj-menu-toggle-label {
+    display: none;
+  }
+  .lj-mega-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .lj-mega-menu-inner {
+    padding: 88px 20px 60px;
+  }
+  .lj-mega-menu-logo {
+    margin-bottom: 40px;
+  }
+}

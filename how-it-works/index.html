@@ -25,6 +25,7 @@
         <link rel="preload" href="../assets/fonts/sora-var.woff2" as="font" type="font/woff2" crossorigin=""/>
         <link rel="preload" href="../web/assets/1/89536c4/web.fontawesome.min.woff2" as="font" crossorigin=""/>
         <link type="text/css" rel="stylesheet" href="../web/assets/1/80bc15d/web.assets_frontend.min.css"/>
+<link rel="stylesheet" href="/assets/mega-menu.css"/>
         <script type="text/javascript" defer="defer" src="../assets/site.js"></script>
         
         <script type="application/ld+json">
@@ -460,166 +461,71 @@
                 <header id="top" data-anchor="true" data-name="Header" data-extra-items-toggle-aria-label="Extra items button" class="   o_header_fade_out" style=" ">
     <span id="o_fake_header_disclaimer"></span>
                     <div class="container py-3 px-0">
-    <nav data-name="Navbar" aria-label="Main" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc o_full_border d-none d-lg-block rounded-pill px-4 ">
-        
-                <div id="o_main_nav" class="container o_main_nav">
-                    
-    <a data-name="Navbar Logo" href="../" class="navbar-brand logo me-4">
-            
-            <span role="img" aria-label="Logo of LJ Web Management" title="LJ Web Management"><img src="../assets/lj-logo.webp" class="img img-fluid" width="95" height="40" alt="LJ Web Management" loading="lazy"/></span>
-        </a>
-    
-                    
-    <ul role="menu" id="top_menu" class="nav navbar-nav top_menu me-auto">
-        
-                        
+    <div class="lj-topbar">
+        <div class="lj-topbar-inner">
+            <a href="/" class="lj-topbar-logo" aria-label="LJ Web Management home">
+                <img src="/assets/lj-logo.webp" width="95" height="40" alt="LJ Web Management" loading="eager"/>
+            </a>
+            <div class="lj-topbar-right">
+                <a href="/contactus" class="lj-topbar-cta">Contact Us</a>
+                <button type="button" class="lj-menu-toggle" aria-expanded="false" aria-controls="lj-mega-menu" aria-label="Open menu">
+                    <span class="lj-menu-toggle-bars"><span></span><span></span><span></span></span>
+                    <span class="lj-menu-toggle-label">Menu</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
-    <li role="presentation" class="nav-item ">
-        <a role="menuitem" href="../" class="nav-link ">
-            <span>Home</span>
-        </a>
-    </li>
-
-    <li role="presentation" class="nav-item ">
-        <a role="menuitem" href="../how-it-works" class="nav-link active">
-            <span>How It Works</span>
-        </a>
-    </li>
-
-    <li role="presentation" class="nav-item ">
-        <a role="menuitem" href="../automations" class="nav-link ">
-            <span>Automations</span>
-        </a>
-    </li>
-
-    <li role="presentation" class="nav-item ">
-        <a role="menuitem" href="../solutions" class="nav-link ">
-            <span>Solutions</span>
-        </a>
-    </li>
-                    
-    
-    <li role="presentation" class="nav-item ">
-        <a role="menuitem" href="../appointment" class="nav-link ">
-            <span>Book a Consultation</span>
-        </a>
-    </li>
-
-    </ul>
-                    
-                    <ul class="navbar-nav align-items-center gap-1 flex-wrap flex-shrink-0 justify-content-end ps-3">
-                        
-                        
-        <li class="">
-                <div data-name="Text" class="s_text_block ">
-                    <a href="mailto:info@ljwebmanagement.com" class="nav-link o_nav-link_secondary p-2">
-                        <i class="fa fa-envelope-o fa-1x fa-fw me-1"></i>
-                        <span class="o_force_ltr"><small>info@ljwebmanagement.com</small></span></a>
-                </div>
-        </li>
-                        
-                        
-                        
-                        
-                        
-        <li class="">
-            <div class="oe_structure oe_structure_solo ">
-                <section class="oe_unremovable oe_unmovable s_text_block" data-snippet="s_text_block" data-name="Text">
-                    <div class="container">
-                        <a href="../contactus" class="oe_unremovable btn btn-primary btn_cta rounded-pill">Contact Us</a>
+    <div id="lj-mega-menu" class="lj-mega-menu" aria-hidden="true">
+        <div class="lj-mega-menu-inner">
+            <button type="button" class="lj-mega-menu-close" aria-label="Close menu">&times;</button>
+            <a href="/" class="lj-mega-menu-logo" aria-label="LJ Web Management home">
+                <img src="/assets/lj-logo.webp" width="95" height="40" alt="LJ Web Management" loading="lazy"/>
+            </a>
+            <div class="lj-mega-grid">
+                <nav class="lj-mega-col" aria-label="Company">
+                    <h3>Company</h3>
+                    <a href="/">Home</a>
+                    <a href="/how-it-works">How It Works</a>
+                    <a href="/solutions">Solutions</a>
+                    <a href="/faq">FAQ</a>
+                    <a href="/contactus">Contact Us</a>
+                </nav>
+                <nav class="lj-mega-col" aria-label="Automations by industry">
+                    <h3>Automations by Industry</h3>
+                    <a href="/automations/real-estate/">Real Estate</a>
+                    <a href="/automations/healthcare/">Healthcare</a>
+                    <a href="/automations/legal/">Legal</a>
+                    <a href="/automations/home-services/">Home Services</a>
+                    <a href="/automations/ecommerce-retail/">E-Commerce &amp; Retail</a>
+                    <a href="/automations/financial-services/">Financial Services</a>
+                    <a href="/automations/restaurants-food-service/">Restaurants &amp; Food Service</a>
+                    <a href="/automations/property-management/">Property Management</a>
+                    <a href="/automations/construction-contracting/">Construction &amp; Contracting</a>
+                    <a href="/automations/marketing-agencies/">Marketing Agencies</a>
+                    <a href="/automations" class="lj-mega-viewall">View All 57 Industries &rarr;</a>
+                </nav>
+                <nav class="lj-mega-col" aria-label="Resources">
+                    <h3>Resources</h3>
+                    <a href="/roi-calculator">ROI Calculator</a>
+                    <a href="/quiz">Find Your Match Quiz</a>
+                    <a href="/resources/what-is-business-automation/">What Is Business Automation?</a>
+                    <a href="/resources/business-automation-examples/">Business Automation Examples</a>
+                    <a href="/resources/ai-automation-for-small-business/">AI Automation for Small Business</a>
+                    <a href="https://blog.ljwebmanagement.com">Blog</a>
+                </nav>
+                <div class="lj-mega-col lj-mega-cta">
+                    <h3>Get Started</h3>
+                    <p>Book a free consultation and we'll scope your automation with a flat, upfront quote.</p>
+                    <a href="/appointment" class="lj-btn-cyan">Book a Consultation</a>
+                    <div class="lj-mega-contact">
+                        <a href="tel:+18775593268">+1-877-559-3268</a>
+                        <a href="mailto:info@ljwebmanagement.com">info@ljwebmanagement.com</a>
                     </div>
-                </section>
-            </div>
-        </li>
-                    </ul>
-                </div>
-            
-    </nav>
-
-    <nav data-name="Navbar" aria-label="Mobile" class="navbar  navbar-light o_colored_level o_cc o_header_mobile d-block d-lg-none o_full_border mx-1 rounded-pill px-3">
-        
-
-        <div class="o_main_nav container flex-wrap justify-content-between">
-            <div class="d-flex flex-grow-1">
-                
-    <a data-name="Navbar Logo" href="../" class="navbar-brand logo ">
-            
-            <span role="img" aria-label="Logo of LJ Web Management" title="LJ Web Management"><img src="../assets/lj-logo.webp" class="img img-fluid" width="95" height="40" alt="LJ Web Management" loading="lazy"/></span>
-        </a>
-    
-                <ul class="o_header_mobile_buttons_wrap navbar-nav d-flex flex-row align-items-center gap-2 mb-0 ms-auto"></ul>
-            </div>
-            <button class="nav-link btn p-2 o_not_editable" type="button" data-bs-toggle="offcanvas" data-bs-target="#top_menu_collapse_mobile" aria-controls="top_menu_collapse_mobile" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="top_menu_collapse_mobile" class="offcanvas offcanvas-end o_navbar_mobile">
-                <div class="offcanvas-header justify-content-end o_not_editable">
-                    <button type="button" class="nav-link btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body d-flex flex-column justify-content-between h-100 w-100 pt-0">
-                    <ul class="navbar-nav">
-                        
-                        
-                        <li>
-    <ul role="menu" class="nav navbar-nav top_menu  o_mega_menu_is_offcanvas mx-n3  ">
-        
-                                
-
-    <li role="presentation" class="nav-item border-top  px-0">
-        <a role="menuitem" href="../" class="nav-link p-3 text-wrap ">
-            <span>Home</span>
-        </a>
-    </li>
-
-    <li role="presentation" class="nav-item border-top  px-0">
-        <a role="menuitem" href="../how-it-works" class="nav-link p-3 text-wrap active">
-            <span>How It Works</span>
-        </a>
-    </li>
-
-    <li role="presentation" class="nav-item border-top px-0">
-        <a role="menuitem" href="../automations" class="nav-link p-3 text-wrap ">
-            <span>Automations</span>
-        </a>
-    </li>
-
-    <li role="presentation" class="nav-item border-top px-0">
-        <a role="menuitem" href="../solutions" class="nav-link p-3 text-wrap ">
-            <span>Solutions</span>
-        </a>
-    </li>
-
-    <li role="presentation" class="nav-item border-top border-bottom px-0">
-        <a role="menuitem" href="../appointment" class="nav-link p-3 text-wrap ">
-            <span>Book a Consultation</span>
-        </a>
-    </li>
-                            
-    </ul>
-                        </li>
-                        
-                        
-                    </ul>
-                    <ul class="navbar-nav gap-2 mt-3 w-100">
-                        
-                        
-                        
-                        
-        <li class="">
-            <div class="oe_structure oe_structure_solo ">
-                <section class="oe_unremovable oe_unmovable s_text_block" data-snippet="s_text_block" data-name="Text">
-                    <div class="container">
-                        <a href="../contactus" class="oe_unremovable btn btn-primary btn_cta rounded-pill w-100">Contact Us</a>
-                    </div>
-                </section>
-            </div>
-        </li>
-                    </ul>
                 </div>
             </div>
         </div>
-    
-    </nav>
+    </div>
         </div>
     </header>
                 <main class="">
