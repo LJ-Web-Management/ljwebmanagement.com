@@ -190,6 +190,33 @@
 }
 </script>
 
+        <style>@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url('/assets/fonts/inter-latin.woff2') format('woff2')}@font-face{font-family:'Sora';font-style:normal;font-weight:400 800;font-display:swap;src:url('/assets/fonts/sora-latin.woff2') format('woff2')}:root{--navy:#193866;--navy-light:#254a81;--navy-dark:#0f2544;--cyan:#1EB4E6;--cyan-ink:#0877A0;--cyan-light:#68ddff;--ink:#16202e;--body:#4b5563;--muted:#6b7280;--line:#e3e8ef;--mist:#f6f8fb;--white:#ffffff;--shadow:0 18px 40px rgba(15,37,68,0.09)}body,p,span,a,li,input,textarea,select,button{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}h1,h2,h3,h4,h5,h6{font-family:'Sora','Inter',sans-serif}header .navbar.o_cc{background-color:#FFFFFF !important;box-shadow:0 2px 14px rgba(25,56,102,0.12)}header .navbar.o_cc .nav-link{color:#193866 !important}header .navbar.o_cc .nav-link:hover,header .navbar.o_cc .nav-link.active{color:#1EB4E6 !important}header .navbar.o_cc .o_nav-link_secondary{color:#6b7280 !important}header .navbar.o_cc .btn_cta{background-color:#193866 !important;border-color:#193866 !important;color:#FFFFFF !important}header .navbar.o_cc .btn_cta:hover{background-color:#122a4d !important;border-color:#122a4d !important}header .navbar.o_cc .navbar-toggler-icon{filter:invert(1)}.offcanvas.o_navbar_mobile{background-color:#FFFFFF !important}.offcanvas.o_navbar_mobile .nav-link{color:#193866 !important}.offcanvas.o_navbar_mobile .nav-link:hover,.offcanvas.o_navbar_mobile .nav-link.active{color:#1EB4E6 !important}.offcanvas.o_navbar_mobile .o_nav-link_secondary{color:#6b7280 !important}.offcanvas.o_navbar_mobile .btn-close{filter:none}.o_footer{background-color:#193866 !important}.btn-primary:not(.btn_cta),.btn-fill-primary:not(.btn_cta){background-color:#193866 !important;border-color:#193866 !important;color:#FFFFFF !important}.btn-primary:not(.btn_cta):hover,.btn-fill-primary:not(.btn_cta):hover{background-color:#122a4d !important;border-color:#122a4d !important}.btn-outline-primary{color:#193866 !important;border-color:#193866 !important}.btn-outline-primary:hover{background-color:#193866 !important;color:#FFFFFF !important}header .navbar-brand.logo img{height:3.75rem;max-height:3.75rem}@media (max-width:991.98px){header .o_header_mobile .navbar-brand.logo{margin-left:0.5rem}}header .navbar.o_cc .btn_cta,.offcanvas.o_navbar_mobile .btn_cta{font-weight:600;padding:0.55rem 1.4rem;letter-spacing:0.01em}.o_footer_logo img{max-height:4.5rem;max-width:100%;width:auto;height:auto;object-fit:contain}.btn:hover{box-shadow:0 0 0 4px rgba(30,180,230,0.22),0 10px 26px rgba(30,180,230,0.28);transform:translateY(-2px);transition:box-shadow 0.25s ease,transform 0.2s ease}
+  /* ============ FOOTER ============ */
+  .lj-footer { background: var(--navy); color: rgba(255,255,255,0.72); }
+  .lj-footer * { box-sizing: border-box; }
+  .lj-footer-inner { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+  .lj-footer-top { padding: 64px 0 48px; }
+  .lj-footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px; }
+  .lj-footer-brand img { height: 40px; width: auto; margin-bottom: 18px; display: block; }
+  .lj-footer-brand p { font-size: 14px; line-height: 1.65; color: rgba(255,255,255,0.62); max-width: 320px; margin: 0; }
+  .lj-footer-social { display: flex; gap: 10px; margin-top: 22px; }
+  .lj-footer-social a { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: #fff; transition: background .2s ease, transform .2s ease; }
+  .lj-footer-social a:hover { background: var(--cyan); transform: translateY(-2px); color: #fff; }
+  .lj-footer-social svg { width: 17px; height: 17px; }
+  .lj-footer-col { display: flex; flex-direction: column; gap: 12px; }
+  .lj-footer-col h2 { font-family: 'Sora', sans-serif; color: #fff; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin: 0 0 6px; }
+  .lj-footer-col a, .lj-footer-col span { color: rgba(255,255,255,0.68); font-size: 14px; text-decoration: none; line-height: 1.4; }
+  .lj-footer-col a:hover { color: #fff; }
+  .lj-footer-address { color: rgba(255,255,255,0.5); font-size: 13px; }
+  .lj-footer-bottom { border-top: 1px solid rgba(255,255,255,0.12); }
+  .lj-footer-bottom-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 22px 24px; }
+  .lj-footer-bottom-row > span { font-size: 13px; color: rgba(255,255,255,0.55); }
+  .lj-footer-legal { display: flex; gap: 20px; }
+  .lj-footer-legal a { color: rgba(255,255,255,0.55); font-size: 13px; text-decoration: none; }
+  .lj-footer-legal a:hover { color: #fff; }
+  @media (max-width: 900px) { .lj-footer-grid { grid-template-columns: 1fr 1fr; row-gap: 36px; } .lj-footer-brand { grid-column: 1 / -1; } }
+  @media (max-width: 560px) { .lj-footer-top { padding: 48px 0 36px; } .lj-footer-grid { grid-template-columns: 1fr; gap: 30px; } .lj-footer-bottom-row { flex-direction: column; align-items: flex-start; } }
+</style>
 <style>
   .lj-res {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -228,7 +255,7 @@
     background: var(--mist); border: 1px solid var(--line); border-radius: 14px; padding: 24px 28px; margin: 8px 0 28px;
   }
   .lj-res .lj-res-callout p:last-child { margin-bottom: 0; }
-  .lj-res .lj-res-card-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 8px; }
+  .lj-res .lj-res-card-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 24px; }
   .lj-res .lj-res-card {
     background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px;
   }
@@ -243,6 +270,8 @@
   .lj-res-cta p { color: rgba(255,255,255,0.78); margin: 0 0 26px; }
   .lj-res-cta-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
   .lj-res-cta .lj-btn-outline { color: #fff; border-color: rgba(255,255,255,0.35); }
+  .lj-res-cta .lj-btn-primary { background: var(--cyan-ink, #0877A0); }
+  .lj-res-cta .lj-btn-primary:hover { background: #066a8f; }
 </style>
 
 </head>
@@ -411,7 +440,7 @@
       <p>Answer a few questions and get matched to the automation built for your biggest bottleneck.</p>
       <div class="lj-res-cta-row">
         <a href="/quiz/" class="lj-btn lj-btn-outline">Take the Automation Match Quiz</a>
-        <a href="/appointment/" class="lj-btn lj-btn-outline">Book a Free Automation Consultation</a>
+        <a href="/appointment/" class="lj-btn lj-btn-primary">Book a Free Automation Consultation</a>
       </div>
     </div>
   </div>
