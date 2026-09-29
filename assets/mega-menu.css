@@ -218,7 +218,7 @@
   font-family: 'Sora', sans-serif;
   font-weight: 700;
   font-size: 14.5px;
-  background: #1EB4E6;
+  background: #0877A0;
   color: #ffffff;
   border-radius: 10px;
   padding: 13px 18px;
@@ -227,7 +227,7 @@
   transition: background 0.2s ease;
 }
 .lj-mega-cta .lj-btn-cyan:hover {
-  background: #189cc9;
+  background: #06607F;
   color: #ffffff;
 }
 .lj-mega-contact a {
@@ -270,4 +270,24 @@ body.lj-menu-open {
   .lj-mega-menu-logo {
     margin-bottom: 40px;
   }
+}
+
+/* Visually hidden, still read by screen readers (keeps heading levels sequential) */
+.lj-sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Links inside running text need more than color to stand out */
+#wrap p > a:not([class*="btn"]),
+#wrap a.o_translate_inline {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
