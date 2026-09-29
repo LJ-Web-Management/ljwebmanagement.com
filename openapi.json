@@ -7,7 +7,7 @@
     "contact": {
       "name": "LJ Web Management",
       "email": "info@ljwebmanagement.com",
-      "url": "https://www.ljwebmanagement.com/contactus"
+      "url": "https://www.ljwebmanagement.com/contactus/"
     }
   },
   "servers": [
@@ -38,7 +38,7 @@
         }
       }
     },
-    "/crawl": {
+    "/crawl/": {
       "get": {
         "summary": "Markdown-formatted company and services summary for AI crawlers",
         "operationId": "getCrawlSummary",
@@ -62,7 +62,7 @@
         }
       }
     },
-    "/faq": {
+    "/faq/": {
       "get": {
         "summary": "Frequently asked questions about pricing, process, tools, and industries served",
         "operationId": "getFaq",
@@ -74,7 +74,7 @@
         }
       }
     },
-    "/automations": {
+    "/automations/": {
       "get": {
         "summary": "Catalog of 1000+ done-for-you automations across 57+ industries",
         "operationId": "getAutomationsCatalog",
