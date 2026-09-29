@@ -206,14 +206,14 @@ A: Book a free consultation at ljwebmanagement.com. We'll talk through your work
 
 ## Key URLs
 - Home: https://www.ljwebmanagement.com/
-- How It Works: https://www.ljwebmanagement.com/how-it-works
-- Automations catalog: https://www.ljwebmanagement.com/automations
-- Solutions: https://www.ljwebmanagement.com/solutions
-- FAQ: https://www.ljwebmanagement.com/faq
-- ROI Calculator: https://www.ljwebmanagement.com/roi-calculator
-- Find Your Match Quiz: https://www.ljwebmanagement.com/quiz
-- Book a Consultation: https://www.ljwebmanagement.com/appointment
-- Contact: https://www.ljwebmanagement.com/contactus
+- How It Works: https://www.ljwebmanagement.com/how-it-works/
+- Automations catalog: https://www.ljwebmanagement.com/automations/
+- Solutions: https://www.ljwebmanagement.com/solutions/
+- FAQ: https://www.ljwebmanagement.com/faq/
+- ROI Calculator: https://www.ljwebmanagement.com/roi-calculator/
+- Find Your Match Quiz: https://www.ljwebmanagement.com/quiz/
+- Book a Consultation: https://www.ljwebmanagement.com/appointment/
+- Contact: https://www.ljwebmanagement.com/contactus/
 - Blog: https://blog.ljwebmanagement.com
-- Privacy Policy: https://www.ljwebmanagement.com/privacy-policy
-- Terms of Service: https://www.ljwebmanagement.com/terms-of-service
+- Privacy Policy: https://www.ljwebmanagement.com/privacy-policy/
+- Terms of Service: https://www.ljwebmanagement.com/terms-of-service/
