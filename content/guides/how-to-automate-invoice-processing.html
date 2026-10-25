@@ -1,0 +1,79 @@
+<!--
+{
+  "title": "How to Automate Invoice Processing and Accounts Payable",
+  "seoTitle": "How to Automate Invoice Processing & Accounts Payable (AP)",
+  "description": "How to automate accounts payable: capture supplier invoices, extract data with OCR and AI, match to purchase orders, route approvals, sync to accounting, and schedule payments.",
+  "eyebrow": "How to automate",
+  "icon": "receipt",
+  "order": 15,
+  "group": "how-to",
+  "category": "billing-finance",
+  "keywords": ["invoice", "bill", "expense", "purchase order", "vendor"],
+  "published": "2026-10-25",
+  "related": ["automate-invoicing-payment-reminders", "how-to-automate-data-entry", "document-workflow-automation"],
+  "tools": [["Late payment calculator", "/tools/late-payment-calculator/", "receipt"], ["Automation payback calculator", "/tools/automation-payback-calculator/", "trend"]],
+  "keyPoints": [
+    "Invoice processing automation captures supplier invoices, extracts their data, checks it, routes approvals, and creates bills in your accounting software.",
+    "AI and OCR handle invoices in any layout; rules handle matching, approval limits, and duplicate checks.",
+    "Keep a person approving payments, new vendors, and anything that fails a check.",
+    "This is about the bills you pay (accounts payable); for invoices you send, automate invoicing and reminders."
+  ],
+  "faq": [
+    ["How do I automate invoice processing?", "<p>Send all supplier invoices to one inbox or folder, use OCR and AI to extract the vendor, invoice number, dates, amounts, and line items, validate the data with rules (duplicates, totals, purchase order match), route it for approval based on amount or category, and create the bill in your accounting software for payment.</p>"],
+    ["What is accounts payable automation?", "<p>Accounts payable (AP) automation is using software to handle the bills a business pays: capturing invoices, extracting their data, matching them to orders and receipts, routing approvals, recording them in accounting, and scheduling payments, with people handling exceptions.</p>"],
+    ["Can AI read invoices?", "<p>Yes. Modern AI document extraction reads invoices in many different layouts, including scans and photos, and returns structured fields. Accuracy is high for clear documents, and validation rules plus human review of uncertain results catch the rest.</p>"],
+    ["What is three-way matching?", "<p>Three-way matching checks a supplier invoice against the purchase order and the receiving record (proof the goods or services arrived) before payment. Automation can do the comparison and flag only mismatches for review.</p>"],
+    ["Does my accounting software already do this?", "<p>Many accounting platforms include bill capture features or partner apps that extract invoice data. Check what yours offers first; an automation platform or custom workflow can fill gaps such as approval routing or syncing with other systems.</p>"]
+  ]
+}
+-->
+<p><strong>To automate invoice processing, route all supplier invoices to one inbox, use OCR and AI to extract the invoice data, validate it with rules (duplicates, totals, purchase order matching), send it to the right person for approval, and create the bill in your accounting software ready for payment.</strong> People only handle approvals and exceptions instead of typing every invoice by hand.</p>
+<p>This guide covers accounts payable, the bills your business pays. If you want to automate the invoices you <em>send</em> and the reminders to collect them, see <a href="/guides/automate-invoicing-payment-reminders/">how to automate invoicing and payment reminders</a>.</p>
+
+<h2>What manual invoice processing looks like</h2>
+<ol>
+<li>Invoices arrive by email, mail, supplier portals, and occasionally in someone's personal inbox.</li>
+<li>Someone opens each one and types the details into the accounting system.</li>
+<li>They email or walk it to a manager for approval, then wait.</li>
+<li>Someone checks it against the order and delivery, if they remember.</li>
+<li>Payment is scheduled, and the invoice is filed somewhere.</li>
+</ol>
+<p>Each step is slow, and the gaps cause the real problems: duplicate payments, missed early-payment discounts, late fees, and month-end scrambles.</p>
+
+<h2>The automated workflow</h2>
+<table>
+<thead><tr><th>Step</th><th>What happens</th><th>Who or what does it</th></tr></thead>
+<tbody>
+<tr><td>1. Capture</td><td>Suppliers send invoices to one address (such as ap@yourcompany.com); paper invoices are scanned to a folder</td><td>Email rules or automation</td></tr>
+<tr><td>2. Extract</td><td>Vendor, invoice number, dates, totals, tax, and line items are read from the document</td><td>OCR plus AI</td></tr>
+<tr><td>3. Validate</td><td>Check for duplicates, confirm the vendor exists, line items add up to the total, and the PO matches</td><td>Rules</td></tr>
+<tr><td>4. Code</td><td>Suggest the expense account, class, or job based on vendor and past bills</td><td>Rules or AI suggestion</td></tr>
+<tr><td>5. Approve</td><td>Route to the right approver by amount, department, or project, with reminders</td><td>Automation plus a person</td></tr>
+<tr><td>6. Record</td><td>Create the bill in accounting with the document attached</td><td>Integration</td></tr>
+<tr><td>7. Pay</td><td>Schedule payment for the due date or discount date</td><td>Accounting or payment tool, approved by a person</td></tr>
+</tbody>
+</table>
+
+<h2>Where AI helps, and where it does not</h2>
+<p>Every supplier formats invoices differently, which is why template-based OCR often broke in the past. AI document extraction reads the meaning, not just the position, so it copes with new layouts. Ask it to return a fixed structure (JSON with set field names) and to mark fields it could not find as missing rather than guessing.</p>
+<p>What AI should not do on its own: approve invoices, change bank details, or release payments. Those stay with people, backed by rules.</p>
+<div class="lj-callout lj-callout--warn"><strong>Protect against invoice fraud</strong><p>Never let an automation change a supplier's bank details based on an email or invoice. Verify any change by phone using a number you already have on file. Flag invoices from new vendors, unusual amounts, and urgent payment requests for review.</p></div>
+
+<h2>Approval rules that work</h2>
+<ul>
+<li>Under a set amount from a known vendor with a matching PO: auto-approve and record.</li>
+<li>Over the amount, or no PO: route to the budget owner, with a reminder after 48 hours.</li>
+<li>Above a higher threshold: require a second approver.</li>
+<li>Failed any validation check: send to the bookkeeper with the reason.</li>
+</ul>
+
+<h2>Tools you can use</h2>
+<ul>
+<li><strong>Your accounting software's bill capture</strong> features or partner apps, if they cover your needs.</li>
+<li><strong>Dedicated AP automation tools</strong> for higher volumes and complex approvals.</li>
+<li><strong>An automation platform with an AI step</strong> to build a custom flow between your inbox, approval tool, and accounting system.</li>
+</ul>
+
+<h2>Measure the results</h2>
+<p>Track invoices processed per week, average time from receipt to approval, invoices with errors, late fees paid, and early-payment discounts captured. Put a value on the hours saved with the <a href="/tools/automation-payback-calculator/">payback calculator</a>, and on the other side of the ledger, see what faster collection is worth with the <a href="/tools/late-payment-calculator/">late payment calculator</a>.</p>
+<p>Browse <a href="/automations/category/billing-finance/">billing and finance automations</a> for more ideas by industry.</p>

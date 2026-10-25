@@ -1,0 +1,25 @@
+{
+  "order": 2,
+  "title": "AI at Work 101",
+  "name": "AI at Work 101: Using AI and AI Automation in Your Business",
+  "seoTitle": "Free AI Automation Course for Business: AI at Work 101",
+  "icon": "bot",
+  "level": "Beginner",
+  "description": "A free, six-lesson course on using AI at work: how language models work, writing reliable prompts, adding AI steps to workflows, AI agents, privacy and accuracy, and your first AI project.",
+  "lead": "Six practical lessons on putting AI to work in a real business: what language models can and cannot do, how to write prompts that give reliable results, where AI belongs inside a workflow, and how to keep it accurate and safe.",
+  "audience": "Business owners and teams who use, or want to use, AI tools at work and want to go beyond chatting with an assistant to building AI into everyday processes. No coding or data science required.",
+  "outcomes": [
+    "Understand what large language models are good and bad at",
+    "Write prompts that produce consistent, usable output",
+    "Know where an AI step belongs inside a workflow, and where it does not",
+    "Explain what AI agents are and the guardrails they need",
+    "Protect customer data and catch AI mistakes before they matter",
+    "Plan and measure a first AI automation project"
+  ],
+  "faq": [
+    ["Is this AI course free?", "<p>Yes. All six lessons are free with no sign-up, and your progress is saved in your browser.</p>"],
+    ["Do I need to know how to code?", "<p>No. The course is written for business owners and teams. It explains how AI works at the level you need to use it well, and shows how no-code automation tools can run AI steps for you.</p>"],
+    ["Should I take Automation 101 first?", "<p>It helps but is not required. <a href=\"/learn/automation-101/\">Automation 101</a> explains triggers, actions, and how apps connect, which makes lesson three of this course easier to follow.</p>"],
+    ["Which AI tools does the course use?", "<p>The lessons are tool-neutral. The techniques apply to the major AI assistants and model APIs, and to automation platforms such as Zapier, Make, n8n, and Power Automate that can call them.</p>"]
+  ]
+}

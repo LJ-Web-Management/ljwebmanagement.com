@@ -1,0 +1,149 @@
+{
+  "order": 1,
+  "type": "score",
+  "name": "AI Readiness Assessment",
+  "tag": "Assessment",
+  "icon": "bot",
+  "minutes": 3,
+  "eyebrow": "Free AI readiness assessment",
+  "title": "Is your business ready for AI and automation?",
+  "seoTitle": "AI Readiness Assessment for Small Business (Free, 3 Minutes)",
+  "description": "Free AI readiness assessment: ten questions on your processes, data, tools, team, and goals. Get a readiness score and the next steps for your business.",
+  "lead": "Ten quick questions across processes, data, tools, people, and goals. Get an instant readiness score, see your strongest and weakest areas, and know exactly what to do next.",
+  "card": "Ten questions on your processes, data, tools, team, and goals. Get a readiness score and your next steps.",
+  "keywords": "ai readiness assessment score ready for ai checklist",
+  "intro": {
+    "title": "How ready is your business for AI?",
+    "text": "Answer honestly; there are no wrong answers. Most small businesses score in the middle, and every result comes with practical next steps.",
+    "bullets": ["A 0 to 100 readiness score", "Your score across five areas", "The two areas to focus on first, with free resources"],
+    "button": "Start the assessment"
+  },
+  "dims": [
+    { "key": "processes", "name": "Processes", "advice": "Write down the steps for your two most common workflows, agree on how exceptions are handled, and remove steps that only exist because of old tools.", "link": ["Lesson: mapping a process before you automate it", "/learn/automation-101/mapping-a-process/"] },
+    { "key": "data", "name": "Data", "advice": "Pick one system as the source of truth for customers, make key fields required, and merge duplicates. Clean data makes automation and AI far more reliable.", "link": ["Guide: how to automate data entry", "/guides/how-to-automate-data-entry/"] },
+    { "key": "tools", "name": "Tools and integrations", "advice": "List your core apps and check what integrations and APIs each one offers. Replacing one closed tool is sometimes the biggest unlock.", "link": ["Lesson: connecting your tools", "/learn/automation-101/connecting-your-tools/"] },
+    { "key": "people", "name": "People and ownership", "advice": "Name an owner, give them a few hours a week, and involve the people who do the work today. Frame automation as removing chores, not jobs.", "link": ["Guide: AI vs. automation", "/guides/ai-vs-automation/"] },
+    { "key": "goals", "name": "Goals and guardrails", "advice": "Choose one process and one metric to improve, and write a short policy on which AI tools are approved and what data they may see.", "link": ["Lesson: data, privacy, and accuracy", "/learn/ai-at-work-101/data-privacy-and-accuracy/"] }
+  ],
+  "questions": [
+    {
+      "dim": "processes",
+      "q": "How well documented are your core processes, such as sales, scheduling, billing, and onboarding?",
+      "options": [
+        { "t": "They mostly live in people's heads", "s": 0 },
+        { "t": "Some are written down, but they are out of date", "s": 1 },
+        { "t": "Most are written down and mostly followed", "s": 2 },
+        { "t": "Documented, followed, and reviewed regularly", "s": 3 }
+      ]
+    },
+    {
+      "dim": "processes",
+      "q": "How consistent are your repeatable tasks from one person to the next?",
+      "options": [
+        { "t": "Everyone does it their own way", "s": 0 },
+        { "t": "Roughly similar, with lots of exceptions", "s": 1 },
+        { "t": "Mostly the same, with known exceptions", "s": 2 },
+        { "t": "Same steps every time, with clear rules for exceptions", "s": 3 }
+      ]
+    },
+    {
+      "dim": "data",
+      "q": "Where does your customer information live?",
+      "options": [
+        { "t": "Spreadsheets, inboxes, and paper", "s": 0 },
+        { "t": "Several tools that do not talk to each other", "s": 1 },
+        { "t": "A main system such as a CRM, with some gaps", "s": 2 },
+        { "t": "One source of truth that is kept up to date", "s": 3 }
+      ]
+    },
+    {
+      "dim": "data",
+      "q": "How clean is that data?",
+      "options": [
+        { "t": "Lots of duplicates and missing fields", "s": 0 },
+        { "t": "Usable, but someone fixes it often", "s": 1 },
+        { "t": "Mostly clean, with occasional cleanup", "s": 2 },
+        { "t": "Clean, with required fields and clear owners", "s": 3 }
+      ]
+    },
+    {
+      "dim": "tools",
+      "q": "Do your main business apps share information with each other today?",
+      "options": [
+        { "t": "No, we copy and paste between them", "s": 0 },
+        { "t": "One or two built-in integrations", "s": 1 },
+        { "t": "Several are connected through Zapier, Make, or similar", "s": 2 },
+        { "t": "Most core systems are connected, and we know how", "s": 3 }
+      ]
+    },
+    {
+      "dim": "tools",
+      "q": "Do your key tools offer integrations or an API?",
+      "options": [
+        { "t": "I do not know", "s": 0 },
+        { "t": "Some are older desktop or closed systems", "s": 1 },
+        { "t": "Most are modern cloud tools", "s": 2 },
+        { "t": "Yes, and we have checked what each one supports", "s": 3 }
+      ]
+    },
+    {
+      "dim": "people",
+      "q": "How does your team feel about AI and automation?",
+      "options": [
+        { "t": "Worried it will replace them", "s": 0 },
+        { "t": "Skeptical or unsure", "s": 1 },
+        { "t": "Curious and open to trying it", "s": 2 },
+        { "t": "Already using AI tools and asking for more", "s": 3 }
+      ]
+    },
+    {
+      "dim": "people",
+      "q": "Who would own an automation or AI project inside your business?",
+      "options": [
+        { "t": "Nobody has time", "s": 0 },
+        { "t": "The owner, in spare moments", "s": 1 },
+        { "t": "A named person with some time set aside", "s": 2 },
+        { "t": "A named owner with time, budget, and authority", "s": 3 }
+      ]
+    },
+    {
+      "dim": "goals",
+      "q": "How clear is the problem you want AI or automation to solve?",
+      "options": [
+        { "t": "We just know we should be using AI", "s": 0 },
+        { "t": "A general goal, like saving time or growing faster", "s": 1 },
+        { "t": "A specific process we want to fix", "s": 2 },
+        { "t": "A specific process with a metric and a target", "s": 3 }
+      ]
+    },
+    {
+      "dim": "goals",
+      "q": "Do you have rules for how AI tools may use customer and company data?",
+      "options": [
+        { "t": "No, people use whatever tools they like", "s": 0 },
+        { "t": "Informal guidance only", "s": 1 },
+        { "t": "A written policy on approved tools and data", "s": 2 },
+        { "t": "A written policy plus review of AI output that reaches customers", "s": 3 }
+      ]
+    }
+  ],
+  "bands": [
+    { "min": 0, "title": "Getting started", "text": "You are at the beginning, which is a perfectly good place to be. Your fastest wins will come from documenting one or two key processes and getting customer data into one place. Start with a simple, rule-based automation before adding AI.", "cta": [["Start the free Automation 101 course", "/learn/automation-101/"], ["How to automate your business", "/guides/how-to-automate-your-business/"]] },
+    { "min": 35, "title": "Building foundations", "text": "Some of the pieces are in place. Shore up the weakest areas below, pick one specific process with a clear goal, and you will be ready for a first automation, with AI steps wherever reading or writing is involved.", "cta": [["Score what to automate first", "/tools/automation-priority-scorer/"], ["Book a free consultation", "/appointment/"]] },
+    { "min": 60, "title": "Ready to pilot", "text": "You are ready for a focused pilot. Choose one high-volume process, decide how you will measure success, and build it end to end, adding AI where it handles language or judgment and keeping a person in the loop at first.", "cta": [["Book a free consultation", "/appointment/"], ["Guide: AI workflow automation", "/guides/ai-workflow-automation/"]] },
+    { "min": 82, "title": "Ready to scale", "text": "Your processes, data, and team are in good shape. You can automate several workflows and use AI more ambitiously, including agents for well-scoped tasks with clear guardrails. The main risk now is sprawl, so keep ownership and monitoring clear.", "cta": [["Plan your automation roadmap", "/appointment/"], ["Guide: what is an AI agent?", "/guides/what-is-an-ai-agent/"]] }
+  ],
+  "explainer": "<h2>What this AI readiness assessment measures</h2><p>AI and automation succeed or fail on the basics. A business with clear processes, clean data, connected tools, a willing team, and a specific goal can put AI to work quickly. A business missing those pieces usually gets more value from fixing them first. The assessment scores five areas:</p><ul><li><strong>Processes:</strong> whether the work is documented and done consistently. You cannot automate a process nobody can describe.</li><li><strong>Data:</strong> whether customer and operational data lives in one place and is clean enough to trust.</li><li><strong>Tools and integrations:</strong> whether your apps can share information through integrations or APIs.</li><li><strong>People and ownership:</strong> whether the team is open to change and someone owns the project.</li><li><strong>Goals and guardrails:</strong> whether you know what problem you are solving and how AI may use your data.</li></ul><h2>How the score works</h2><p>Each answer is worth 0 to 3 points. Your total is converted to a score out of 100, and each area gets its own percentage so you can see where to focus. The two lowest areas are highlighted with practical next steps.</p><h2>What to do with your result</h2><p>Whatever your score, the next step is the same shape: pick one specific, high-volume process, fix whatever blocks it, and automate it end to end. Use the <a href=\"/tools/automation-priority-scorer/\">priority scorer</a> to choose the process, and the free <a href=\"/learn/automation-101/\">Automation 101</a> and <a href=\"/learn/ai-at-work-101/\">AI at Work 101</a> courses to build the skills.</p>",
+  "faq": [
+    ["What is an AI readiness assessment?", "<p>A short evaluation of whether a business has the processes, data, tools, people, and goals in place to adopt AI and automation successfully. It highlights gaps to close before investing, so projects deliver results instead of stalling.</p>"],
+    ["How do I know if my business is ready for AI?", "<p>You are ready for a first project if you can name a specific, repetitive process, the data it needs is in a system rather than in people's heads, your tools can connect, and someone has time to own it. You do not need a data science team or a large budget.</p>"],
+    ["What should a small business do first with AI?", "<p>Start with one well-defined task where AI reads or writes language inside a workflow you already run: sorting incoming email, drafting replies for review, summarizing calls, or extracting data from documents. Keep a person reviewing anything customer-facing at first.</p>"],
+    ["Are my answers stored?", "<p>No. The assessment runs entirely in your browser, and your answers are not sent to us or saved.</p>"]
+  ],
+  "related": [
+    ["How to automate your business, step by step", "/guides/how-to-automate-your-business/", "book"],
+    ["AI vs. automation: what's the difference?", "/guides/ai-vs-automation/", "book"],
+    ["Free course: AI at Work 101", "/learn/ai-at-work-101/", "school"],
+    ["Automation priority scorer", "/tools/automation-priority-scorer/", "listCheck"]
+  ]
+}

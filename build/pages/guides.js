@@ -18,6 +18,16 @@ const { card, guideCard } = require("./automations");
 
 const GUIDES_DIR = path.join(ROOT, "content", "guides");
 
+// Topic groups for the guides hub and the resource center. Every guide's
+// metadata names one of these keys in `group`.
+const GROUPS = [
+  ["fundamentals", "Automation fundamentals", "compass"],
+  ["how-to", "How to automate", "listCheck"],
+  ["ai", "AI and agents", "sparkles"],
+  ["playbooks", "Workflow playbooks", "zap"],
+  ["platforms", "Platforms and ROI", "calculator"],
+];
+
 function formatDate(iso) {
   return new Date(iso + "T12:00:00Z").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
 }
@@ -32,6 +42,7 @@ function load(cat) {
       if (!m) throw new Error("content/guides/" + file + " is missing its metadata comment");
       const meta = JSON.parse(m[1]);
       const slug = file.replace(/\.html$/, "");
+      if (!GROUPS.some(([k]) => k === meta.group)) throw new Error("content/guides/" + file + " has an unknown group: " + meta.group);
       const toc = [];
       const body = raw.slice(m[0].length).replace(/<h2>([\s\S]*?)<\/h2>/g, (all, inner) => {
         const text = inner.replace(/<[^>]+>/g, "");
@@ -91,12 +102,17 @@ function examples(g, cat) {
 function buildGuide(g, all, cat) {
   const crumbs = L.breadcrumbs([
     ["Home", "/"],
+    ["Resources", "/resources/"],
     ["Guides", "/guides/"],
     [g.title, g.url],
   ]);
   const faq = g.faq && g.faq.length ? L.faq(g.faq) : null;
   const picks = examples(g, cat);
-  const related = all.filter((x) => x !== g).sort((a, b) => (a.category === g.category ? -1 : 0) - (b.category === g.category ? -1 : 0)).slice(0, 3);
+  // Related guides: any named in the metadata first, then the same topic
+  // group, then the same business function.
+  const named = (g.related || []).map((slug) => all.find((x) => x.slug === slug)).filter(Boolean);
+  const rank = (x) => (x.group === g.group ? 0 : 2) + (x.category === g.category ? 0 : 1);
+  const related = named.concat(all.filter((x) => x !== g && named.indexOf(x) === -1).sort((a, b) => rank(a) - rank(b))).slice(0, 3);
   const updated = g.updated || g.published;
   const share = encodeURIComponent(SITE_URL + g.url);
   const shareTitle = encodeURIComponent(g.title);
@@ -127,11 +143,11 @@ function buildGuide(g, all, cat) {
           <a href="https://x.com/intent/post?url=${share}&amp;text=${shareTitle}" target="_blank" rel="noopener" aria-label="Share on X">${icon("xlogo")}</a>
           <a href="mailto:?subject=${shareTitle}&amp;body=${share}" aria-label="Share by email">${icon("mail")}</a>
         </div>
-        <div class="lj-author-box"><img src="/assets/lj-logo-80.webp" width="52" height="52" alt="" loading="lazy"><div><strong>Written by the LJ Web Management team</strong><p>We build done-for-you automation systems for small and mid-sized businesses across 57 industries. These guides come from the workflows we scope and build every week.</p></div></div>
       </div>
     </article>
     <aside class="lj-article-aside" aria-label="On this page">
       ${g.toc.length > 2 ? '<nav class="lj-toc" aria-label="Table of contents"><p>On this page</p><ol>' + g.toc.map(([id, t]) => '<li><a href="#' + id + '">' + escapeHtml(t) + "</a></li>").join("") + (faq ? '<li><a href="#faq">FAQ</a></li>' : "") + "</ol></nav>" : ""}
+      ${g.tools ? '<div class="lj-aside-tools"><p>Free tools for this</p>' + L.linkList(g.tools) + "</div>" : ""}
       <div class="lj-aside-cta"><strong>Want this built for you?</strong>We scope it on a free call and quote a flat price before any work starts.<a class="lj-btn lj-btn-accent lj-btn-sm" href="/appointment/">Book a Free Consultation</a></div>
     </aside>
   </div>
@@ -151,7 +167,7 @@ ${picks.length ? `<section class="lj-section lj-section--mist">
       <div><span class="lj-eyebrow">Keep reading</span><h2>More automation guides</h2></div>
       <a class="lj-link-arrow" href="/guides/">All guides ${icon("arrowRight")}</a>
     </div>
-    <div class="lj-grid lj-grid-3">${related.map(guideCard).join("")}</div>
+    <div class="lj-grid lj-grid-3">${related.map((g) => guideCard(g)).join("")}</div>
   </div>
 </section>`;
 
@@ -188,30 +204,22 @@ ${picks.length ? `<section class="lj-section lj-section--mist">
 function buildHub(all, latestPosts) {
   const crumbs = L.breadcrumbs([
     ["Home", "/"],
+    ["Resources", "/resources/"],
     ["Guides", "/guides/"],
   ]);
-  const [featured, ...rest] = all;
   const main = `
 <section class="lj-page-hero lj-page-hero--center">
   <div class="lj-container">
     ${crumbs.html}
     <span class="lj-eyebrow lj-eyebrow--pill">Automation guides</span>
     <h1>Practical playbooks for <span class="lj-gradient-text--ink">automating your business</span></h1>
-    <p class="lj-lead">Step-by-step guides to the workflows that save small teams the most time: lead follow-up, scheduling, invoicing, onboarding, reviews, and more. Written from the automations we build every week.</p>
+    <p class="lj-lead">${all.length} free guides to workflow automation, AI, and the processes that save small teams the most time, from how to automate your business to lead follow-up, invoicing, reporting, and AI agents. Written from the automations we build every week.</p>
   </div>
 </section>
-<section class="lj-section">
+<section class="lj-section lj-section--tight">
   <div class="lj-container">
-    <a class="lj-card lj-post-card lj-post-card--featured" href="${featured.url}">
-      <span class="lj-post-card-media lj-post-card-media--art"><span class="lj-card-icon">${icon(featured.icon || "book")}</span></span>
-      <span class="lj-post-card-body">
-        <span class="lj-post-card-meta"><span class="lj-tag lj-tag--cyan">Start here</span><span>${featured.readMinutes} min read</span></span>
-        <h2 class="lj-mt-0" style="font-size:clamp(1.4rem,2.4vw,1.9rem)">${escapeHtml(featured.title)}</h2>
-        <p>${escapeHtml(featured.description)}</p>
-        <span class="lj-link-arrow">Read the guide ${icon("arrowRight")}</span>
-      </span>
-    </a>
-    <div class="lj-grid lj-grid-3 lj-mt-lg">${rest.map(guideCard).join("")}</div>
+    <div class="lj-chip-row lj-guide-jump">${GROUPS.map(([k, name]) => '<a class="lj-chip" href="#' + k + '">' + name + ' <span class="lj-chip-count">' + all.filter((g) => g.group === k).length + "</span></a>").join("")}</div>
+    ${GROUPS.map(([k, name, ic]) => '<h2 class="lj-group-title" id="' + k + '"><span class="lj-card-icon">' + icon(ic) + "</span>" + name + "</h2>" + '<div class="lj-grid lj-grid-3">' + all.filter((g) => g.group === k).map((g) => guideCard(g, g.order === 1 ? "Start here" : g.eyebrow === name ? "Guide" : g.eyebrow)).join("") + "</div>").join("")}
   </div>
 </section>
 <section class="lj-section lj-section--mist">
@@ -228,8 +236,8 @@ function buildHub(all, latestPosts) {
     "guides/index.html",
     L.page({
       path: "/guides/",
-      title: "Business Automation Guides & Playbooks | LJ Web Management",
-      description: "Step-by-step guides to automating lead follow-up, appointment reminders, invoicing, onboarding, review requests, and more, from the team that builds them.",
+      title: "Automation & AI Guides: How to Automate Your Business | LJ Web Management",
+      description: "Free guides to workflow automation, AI, and RPA: how to automate emails, invoices, reports, data entry, customer support, and more, from the team that builds them.",
       active: "resources",
       jsonLd: [
         {
@@ -256,4 +264,4 @@ function searchEntries(all) {
   return all.map((g) => ["Guide", g.title, (g.eyebrow || "Guide") + " · " + g.readMinutes + " min read", g.url, (g.keywords || []).join(" ") + " " + g.description]);
 }
 
-module.exports = { load, build, searchEntries, formatDate };
+module.exports = { load, build, searchEntries, formatDate, GROUPS };

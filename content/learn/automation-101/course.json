@@ -1,0 +1,25 @@
+{
+  "order": 1,
+  "title": "Automation 101",
+  "name": "Automation 101: How to Automate Your Business",
+  "seoTitle": "Free Automation Course: Automation 101 for Business Owners",
+  "icon": "school",
+  "level": "Beginner",
+  "description": "A free, eight-lesson course on business automation: how workflows work, what to automate first, how apps connect, choosing a platform, testing, and measuring ROI.",
+  "lead": "Eight short lessons that take you from &ldquo;we should automate something&rdquo; to a clear plan for your first workflow. No technical background needed, no sign-up, and a quick knowledge check at the end of every lesson.",
+  "audience": "Business owners, managers, and team members who want to cut repetitive work but are not sure where to start. If you can use a spreadsheet, you can follow this course.",
+  "outcomes": [
+    "Explain how triggers, actions, and conditions make a workflow",
+    "Find and rank the tasks in your business worth automating",
+    "Map a process so it is ready to automate",
+    "Understand how apps connect through integrations, APIs, and webhooks",
+    "Choose between Zapier, Make, n8n, and custom builds",
+    "Test, monitor, and measure an automation so it keeps paying off"
+  ],
+  "faq": [
+    ["Is this automation course really free?", "<p>Yes. Every lesson is free to read, with no sign-up. Your progress is saved in your browser so you can pick up where you left off.</p>"],
+    ["Do I need technical skills?", "<p>No. The course explains every concept in plain language. Where a lesson touches on technical ideas such as APIs or webhooks, it focuses on what they do for you rather than how to code them.</p>"],
+    ["How long does the course take?", "<p>About an hour in total. Each lesson takes around eight minutes and ends with a three-question knowledge check.</p>"],
+    ["What should I do after finishing?", "<p>Take the free <a href=\"/learn/ai-at-work-101/\">AI at Work 101</a> course to add AI to your workflows, score your own task list with the <a href=\"/tools/automation-priority-scorer/\">priority scorer</a>, or <a href=\"/appointment/\">book a free consultation</a> to plan your first build.</p>"]
+  ]
+}

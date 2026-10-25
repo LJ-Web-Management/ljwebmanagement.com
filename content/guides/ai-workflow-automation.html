@@ -1,0 +1,109 @@
+<!--
+{
+  "title": "AI Workflow Automation: How to Add AI to Your Business Workflows",
+  "seoTitle": "AI Workflow Automation: Examples, Tools, and How to Start",
+  "description": "AI workflow automation adds AI steps that classify, extract, summarize, and draft inside automated workflows. Examples by department, tools, design patterns, and how to start.",
+  "eyebrow": "AI and agents",
+  "icon": "sparkles",
+  "order": 22,
+  "group": "ai",
+  "category": "customer-communication",
+  "keywords": ["ai-assisted", "ai ", "summar", "triage", "draft"],
+  "published": "2026-10-25",
+  "related": ["ai-vs-automation", "what-is-an-ai-agent", "ai-automation-for-small-business"],
+  "tools": [["AI cost calculator", "/tools/ai-cost-calculator/", "bot"], ["AI prompt library", "/tools/ai-prompt-library/", "message"], ["AI readiness assessment", "/quizzes/ai-readiness-assessment/", "listCheck"]],
+  "keyPoints": [
+    "AI workflow automation means adding AI steps (classify, extract, summarize, draft, answer) inside rule-based workflows.",
+    "It automates the language-heavy work that rules could never handle: emails, documents, calls, and free-text forms.",
+    "Design pattern: trigger, prepare, AI step with a fixed output format, validate, human review where needed, act, log.",
+    "Start with one high-volume, low-risk task, keep people approving at first, and expand with evidence."
+  ],
+  "faq": [
+    ["What is AI workflow automation?", "<p>AI workflow automation combines traditional workflow automation, which follows rules to move data and trigger actions between apps, with AI steps that handle language and judgment, such as categorizing emails, extracting data from documents, summarizing calls, or drafting replies.</p>"],
+    ["What are examples of AI workflow automation?", "<p>Sorting and routing a shared inbox, extracting data from invoices and forms, summarizing sales calls into CRM notes, drafting support replies from help content, qualifying leads from form answers, and turning meeting notes into tasks.</p>"],
+    ["What tools are used for AI workflow automation?", "<p>Automation platforms such as Zapier, Make, n8n, and Microsoft Power Automate include AI steps or can call AI model APIs. Many CRMs, help desks, and document tools also have built-in AI features. Custom builds use AI provider APIs directly.</p>"],
+    ["How do I add AI to an existing workflow?", "<p>Find the step where a person currently reads or writes text, replace it with an AI step that returns a fixed, structured output, add validation and a fallback to a person for uncertain cases, and keep human approval for anything customer-facing until accuracy is proven.</p>"],
+    ["Is AI workflow automation expensive?", "<p>The AI usage for typical small business volumes is often modest, frequently pennies per task. Costs rise with long documents, large models, and high volumes. Use an AI cost calculator with your provider's current prices, and include build and review time in your estimate.</p>"]
+  ]
+}
+-->
+<p><strong>AI workflow automation is the practice of adding AI steps to automated workflows so they can handle language and judgment, not just rules.</strong> A traditional workflow can move data and send messages; an AI step inside it can read an email and decide what it is about, pull the totals out of an invoice, summarize a call, or draft a reply. Together they automate work that used to require a person to read and type.</p>
+<p>This guide shows what AI can do inside a workflow, examples by department, a reliable design pattern, and how to start.</p>
+
+<h2>The five AI steps</h2>
+<table>
+<thead><tr><th>AI step</th><th>What it does</th><th>Typical output</th></tr></thead>
+<tbody>
+<tr><td><strong>Classify</strong></td><td>Decides what something is</td><td>A category and urgency for an email or ticket</td></tr>
+<tr><td><strong>Extract</strong></td><td>Pulls specific facts from unstructured text or documents</td><td>Vendor, date, total, and line items from an invoice</td></tr>
+<tr><td><strong>Summarize</strong></td><td>Condenses long content</td><td>Call notes, next steps, and a deal update</td></tr>
+<tr><td><strong>Draft</strong></td><td>Writes a first version</td><td>A reply, a proposal section, a follow-up email</td></tr>
+<tr><td><strong>Answer</strong></td><td>Responds using your own content</td><td>An answer from your FAQ and policies, with a handoff when unsure</td></tr>
+</tbody>
+</table>
+
+<h2>Examples by department</h2>
+<h3>Sales</h3>
+<ul>
+<li>Qualify inbound leads from free-text form answers and route hot ones instantly</li>
+<li>Summarize discovery calls into CRM fields and next steps</li>
+<li>Draft personalized follow-ups for a salesperson to approve</li>
+</ul>
+<h3>Customer service</h3>
+<ul>
+<li>Triage the shared inbox by type and urgency</li>
+<li>Draft replies from help articles; agents approve and send</li>
+<li>Flag frustrated customers for priority handling</li>
+</ul>
+<h3>Finance and operations</h3>
+<ul>
+<li>Extract data from supplier invoices, receipts, and order forms (see <a href="/guides/how-to-automate-invoice-processing/">invoice processing</a>)</li>
+<li>Categorize transactions for bookkeeper review</li>
+<li>Turn job notes and photos into a standard completion report</li>
+</ul>
+<h3>Marketing</h3>
+<ul>
+<li>Repurpose a blog post into social posts and a newsletter section for review</li>
+<li>Draft personal responses to reviews</li>
+<li>Summarize customer feedback into themes each month</li>
+</ul>
+<h3>HR and admin</h3>
+<ul>
+<li>Answer staff policy questions from the handbook</li>
+<li>Summarize meetings into decisions and action items</li>
+<li>Turn rough process notes into standard operating procedures</li>
+</ul>
+
+<h2>A design pattern that works</h2>
+<ol>
+<li><strong>Trigger:</strong> a new email, file, form, ticket, or recording.</li>
+<li><strong>Prepare:</strong> trim the input to what is needed and fetch any reference information (policies, customer record).</li>
+<li><strong>AI step:</strong> a tested prompt that returns a fixed format, such as JSON with allowed values.</li>
+<li><strong>Validate:</strong> rules check the output: allowed category, totals that add up, required fields present.</li>
+<li><strong>Review:</strong> a person approves anything customer-facing, financial, or uncertain.</li>
+<li><strong>Act:</strong> update the CRM, send the reply, create the bill, assign the task.</li>
+<li><strong>Log:</strong> keep the input, output, and any human edits to improve the prompt over time.</li>
+</ol>
+<p>The free lesson <a href="/learn/ai-at-work-101/where-ai-fits-in-a-workflow/">where AI fits inside a workflow</a> walks through three examples in detail, and <a href="/learn/ai-at-work-101/writing-prompts-that-work/">writing prompts that work</a> covers the AI step itself.</p>
+
+<h2>Grounding AI in your own information</h2>
+<p>AI models know a lot in general but nothing about your business. When an AI step needs your prices, policies, or product details, the workflow should provide them. For larger knowledge bases, <strong>retrieval-augmented generation (RAG)</strong> finds the most relevant passages first and gives only those to the model, which keeps answers accurate and costs down.</p>
+
+<h2>Tools for AI workflow automation</h2>
+<ul>
+<li><strong>Automation platforms:</strong> Zapier, Make, n8n, and Power Automate offer AI steps or connect to AI model APIs.</li>
+<li><strong>Built-in AI in your apps:</strong> many CRMs, help desks, and document tools now include AI features.</li>
+<li><strong>AI model APIs:</strong> for custom builds and more control over prompts, models, and data handling.</li>
+</ul>
+<p>Estimate running costs with the <a href="/tools/ai-cost-calculator/">AI cost calculator</a> and borrow tested prompts from the <a href="/tools/ai-prompt-library/">AI prompt library</a>.</p>
+
+<h2>Getting started</h2>
+<ul class="lj-checklist">
+<li>Pick one frequent, language-heavy, low-risk task, such as inbox triage or call summaries</li>
+<li>Record how long it takes today and what a good result looks like</li>
+<li>Test the AI step on 20 real past examples before going live</li>
+<li>Run a pilot with human review on everything; track how often reviewers edit</li>
+<li>Expand autonomy only for categories where edits are rare</li>
+<li>Use business-grade AI services and share only the data each task needs</li>
+</ul>
+<p>Not sure if you are ready? Take the free <a href="/quizzes/ai-readiness-assessment/">AI readiness assessment</a>, or see <a href="/resources/ai-automation-for-small-business/">AI automation for small business</a> for a getting-started view focused on small teams.</p>

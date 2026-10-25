@@ -1,0 +1,111 @@
+{
+  "order": 2,
+  "type": "knowledge",
+  "name": "Automation IQ Quiz",
+  "tag": "Quiz",
+  "icon": "award",
+  "minutes": 4,
+  "about": "Business process automation and AI",
+  "eyebrow": "Free automation quiz",
+  "title": "How much do you know about automation?",
+  "seoTitle": "Automation IQ Quiz: Test Your Workflow Automation Knowledge",
+  "description": "Ten questions on triggers, webhooks, RPA, AI, and automation strategy, with an explanation after every answer. Free workflow automation knowledge quiz.",
+  "lead": "Ten questions on triggers, webhooks, RPA, AI, and automation strategy. Every answer comes with a short explanation, so you learn something either way.",
+  "card": "Test what you know about triggers, webhooks, RPA, AI, and automation strategy, with an explanation for every answer.",
+  "keywords": "quiz test knowledge automation questions",
+  "intro": {
+    "title": "Test your automation IQ",
+    "text": "Pick an answer to see whether you got it right and why. At the end you get a score and links to brush up on anything you missed.",
+    "bullets": ["Ten multiple-choice questions", "An explanation after every answer", "Links to the lessons that cover what you missed"],
+    "button": "Start the quiz"
+  },
+  "questions": [
+    {
+      "q": "In a workflow automation, what is a trigger?",
+      "options": ["The event that starts the workflow", "The last step, which sends a notification", "A person who approves each run", "The app where your data is stored"],
+      "answer": 0,
+      "why": "A trigger is the event that starts a workflow, such as a form submission, a new email, or a scheduled time. Everything after it is an action.",
+      "link": ["Lesson: triggers, actions, and conditions", "/learn/automation-101/triggers-actions-and-conditions/"]
+    },
+    {
+      "q": "Which task is usually the best first automation for a small business?",
+      "options": ["Rebuilding the whole website", "A frequent, rule-based task close to revenue, like replying to new leads", "An AI agent that handles every customer conversation", "A report you run once a year"],
+      "answer": 1,
+      "why": "High-volume, rule-based work close to revenue pays back fastest and carries little risk. Big, rare, or open-ended projects come later.",
+      "link": ["Guide: what to automate first", "/guides/what-to-automate-first/"]
+    },
+    {
+      "q": "What is a webhook?",
+      "options": ["A paid plugin for a website", "A message one app sends to another the moment something happens", "A type of spam filter", "A scheduled backup of your data"],
+      "answer": 1,
+      "why": "A webhook is an automatic message an app sends to a web address when an event occurs, so other systems can react instantly instead of checking for changes over and over.",
+      "link": ["Lesson: connecting your tools", "/learn/automation-101/connecting-your-tools/"]
+    },
+    {
+      "q": "What does RPA stand for?",
+      "options": ["Rapid process analysis", "Robotic process automation", "Remote program access", "Rules, prompts, and actions"],
+      "answer": 1,
+      "why": "Robotic process automation uses software bots that mimic a person clicking and typing in an app's screens. It is most useful when a system has no API or integration.",
+      "link": ["Guide: what is RPA?", "/guides/what-is-rpa/"]
+    },
+    {
+      "q": "What is the main difference between rule-based automation and AI?",
+      "options": ["Automation is always more expensive", "Automation follows rules you define, while AI handles language and judgment where rules fall short", "AI cannot be used inside an automation", "There is no real difference"],
+      "answer": 1,
+      "why": "Rule-based automation does the same thing every time. AI interprets messy input such as emails and documents. The most reliable systems use AI steps inside rule-based workflows.",
+      "link": ["Guide: AI vs. automation", "/guides/ai-vs-automation/"]
+    },
+    {
+      "q": "An AI model gives a confident answer that sounds right but is wrong. What is this usually called?",
+      "options": ["A hallucination", "A webhook", "A timeout", "A trigger"],
+      "answer": 0,
+      "why": "Language models can produce fluent but incorrect output, often called a hallucination. Grounding the model in your own information and adding human review reduces the risk.",
+      "link": ["Lesson: data, privacy, and accuracy", "/learn/ai-at-work-101/data-privacy-and-accuracy/"]
+    },
+    {
+      "q": "What does \"human in the loop\" mean?",
+      "options": ["A person reviews or approves certain steps before the automation continues", "A person does every step by hand", "The automation emails the team a daily summary", "Customers can opt out of automated messages"],
+      "answer": 0,
+      "why": "Human in the loop means the workflow pauses for a person to check or approve a step, such as an AI-drafted reply or a large refund, before it goes ahead.",
+      "link": ["Glossary: human in the loop", "/glossary/#human-in-the-loop"]
+    },
+    {
+      "q": "Your automation should send a follow-up only if the lead has not replied yet. What do you need to add?",
+      "options": ["A second trigger", "A condition, such as a filter or branch", "A new CRM", "An AI agent"],
+      "answer": 1,
+      "why": "Conditions (filters, branches, or if/else paths) let a workflow check something, like whether a reply arrived, and choose what to do next.",
+      "link": ["Lesson: triggers, actions, and conditions", "/learn/automation-101/triggers-actions-and-conditions/"]
+    },
+    {
+      "q": "What is the best first step before automating a messy process?",
+      "options": ["Buy a new automation platform", "Write the steps down and simplify the process", "Add AI to absorb the mess", "Automate it now and fix problems later"],
+      "answer": 1,
+      "why": "Automating a messy process just makes the mess happen faster. Mapping and simplifying first makes the automation smaller, cheaper, and more reliable.",
+      "link": ["Lesson: mapping a process before you automate it", "/learn/automation-101/mapping-a-process/"]
+    },
+    {
+      "q": "How do you calculate an automation's payback period?",
+      "options": ["Build cost divided by the monthly net benefit", "Monthly benefit multiplied by 12", "Hours saved divided by team size", "Running cost divided by build cost"],
+      "answer": 0,
+      "why": "Payback period is the upfront cost divided by what the automation returns each month after its running costs. A $3,000 build that nets $1,000 a month pays back in three months.",
+      "link": ["Automation payback calculator", "/tools/automation-payback-calculator/"]
+    }
+  ],
+  "bands": [
+    { "min": 0, "title": "Just getting started", "text": "Everyone starts somewhere. The free Automation 101 course covers every concept in this quiz in about an hour, with a short knowledge check in each lesson.", "cta": [["Start Automation 101", "/learn/automation-101/"], ["Browse the glossary", "/glossary/"]] },
+    { "min": 50, "title": "Solid foundations", "text": "You know the basics. Fill the gaps below and you will be ready to plan your first workflow with confidence.", "cta": [["Take the AI Readiness Assessment", "/quizzes/ai-readiness-assessment/"], ["How to automate your business", "/guides/how-to-automate-your-business/"]] },
+    { "min": 80, "title": "Automation pro", "text": "You know your triggers from your webhooks. Put it to work: score your task list and pick the automation that will pay back fastest.", "cta": [["Open the priority scorer", "/tools/automation-priority-scorer/"], ["Book a free consultation", "/appointment/"]] }
+  ],
+  "explainer": "<h2>What the quiz covers</h2><p>The questions span the core ideas behind business automation: how workflows start (triggers), how apps talk to each other (APIs and webhooks), the main kinds of automation (rule-based workflows, RPA, and AI), the risks of AI (hallucinations) and how to manage them (human review), and how to choose and justify a project (process mapping and payback).</p><h2>Want to learn it properly?</h2><p>Every question links to a lesson or guide. The free <a href=\"/learn/automation-101/\">Automation 101</a> course teaches these concepts in eight short lessons, and the <a href=\"/glossary/\">glossary</a> defines every term in plain English.</p>",
+  "faq": [
+    ["What are the basics of workflow automation?", "<p>A workflow starts with a trigger (an event such as a new form submission), then runs actions (create a contact, send a message, update a record), often with conditions that decide which actions run. Integrations and APIs let the workflow move data between apps.</p>"],
+    ["Is this quiz scored or saved?", "<p>Your score is calculated in your browser and is not saved or sent anywhere. You can retake it as often as you like.</p>"],
+    ["Where can I learn business automation for free?", "<p>Start with our free <a href=\"/learn/automation-101/\">Automation 101</a> course, then read the guides in the <a href=\"/resources/\">resource center</a>. Most automation platforms also publish free tutorials for their own tools.</p>"]
+  ],
+  "related": [
+    ["Free course: Automation 101", "/learn/automation-101/", "school"],
+    ["What is workflow automation?", "/guides/what-is-workflow-automation/", "book"],
+    ["Automation and AI glossary", "/glossary/", "bookOpen"],
+    ["Rule, AI, or human? The sorting quiz", "/quizzes/rule-ai-or-human/", "listCheck"]
+  ]
+}

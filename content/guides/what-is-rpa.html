@@ -1,0 +1,86 @@
+<!--
+{
+  "title": "What Is RPA? Robotic Process Automation Explained for Small Business",
+  "seoTitle": "What Is RPA (Robotic Process Automation)? Uses, Tools, Limits",
+  "description": "RPA stands for robotic process automation: software bots that click and type in apps like a person. What it is, use cases, tools, RPA vs. API automation, and when to use it.",
+  "eyebrow": "Automation fundamentals",
+  "icon": "bot",
+  "order": 5,
+  "group": "fundamentals",
+  "category": "operations-inventory",
+  "keywords": ["data entry", "sync", "export", "reconciliation"],
+  "published": "2026-10-25",
+  "related": ["business-process-automation", "what-is-workflow-automation", "how-to-automate-data-entry"],
+  "tools": [["Automation platform picker", "/quizzes/automation-platform-picker/", "layers"], ["Glossary: RPA", "/glossary/#robotic-process-automation-rpa", "bookOpen"]],
+  "keyPoints": [
+    "RPA stands for robotic process automation: software bots that mimic a person clicking, typing, and copying in an app's screens.",
+    "It shines when a system has no API or integration, such as older desktop software or government portals.",
+    "Because bots depend on screen layouts, they break more easily than API-based automation.",
+    "For modern cloud apps, prefer integrations and workflow platforms; use RPA to bridge the gaps."
+  ],
+  "faq": [
+    ["What does RPA stand for?", "<p>RPA stands for robotic process automation. The \"robots\" are software programs, not physical machines, that operate applications through their user interface the way a person would.</p>"],
+    ["What is RPA used for?", "<p>RPA is used for repetitive, rule-based tasks in systems that cannot be connected another way: copying data between legacy applications, entering records into government or insurance portals, downloading reports, and reconciling information across screens.</p>"],
+    ["Is RPA the same as AI?", "<p>No. Traditional RPA follows exact, scripted steps and does not understand content. AI can be combined with RPA to handle judgment-heavy parts, such as reading a document before a bot enters its data.</p>"],
+    ["What are examples of RPA tools?", "<p>Well-known RPA platforms include UiPath, Automation Anywhere, and Microsoft Power Automate's desktop flows. Some browser automation tools offer lighter-weight RPA for web apps.</p>"],
+    ["Should a small business use RPA?", "<p>Only where an important system has no API or integration. For most small businesses, cloud apps connected through integrations or platforms like Zapier, Make, or n8n are cheaper and more reliable. RPA is a useful bridge for the exceptions.</p>"]
+  ]
+}
+-->
+<p><strong>RPA, or robotic process automation, is software that uses "bots" to operate applications the way a person does: clicking buttons, typing into fields, copying data between screens, and downloading files.</strong> The bot follows a script of exact steps, so it can automate repetitive work in systems that offer no other way to connect.</p>
+<p>RPA is widely used by large companies with older systems. For small businesses, it is a useful tool in specific situations, and the wrong tool in many others. This guide explains the difference.</p>
+
+<h2>How RPA works</h2>
+<p>An RPA bot is recorded or configured to repeat a sequence of actions on screen. For example:</p>
+<ol>
+<li>Open the insurance portal and log in.</li>
+<li>Search for the patient's policy number.</li>
+<li>Copy the eligibility status and copay into a spreadsheet.</li>
+<li>Repeat for every appointment tomorrow.</li>
+</ol>
+<p>The bot identifies buttons and fields by their position, label, or the page structure behind them. It can run on a schedule, on demand, or when triggered by another system. Some bots run "attended," alongside a person at their desk; others run "unattended" on a server.</p>
+
+<h2>RPA use cases</h2>
+<ul>
+<li><strong>Legacy software:</strong> entering data into older desktop applications that have no API.</li>
+<li><strong>Portals:</strong> checking insurance eligibility, filing on government or carrier portals, downloading statements from supplier websites.</li>
+<li><strong>Report downloads:</strong> logging in to systems each morning to export reports that cannot be scheduled.</li>
+<li><strong>Data migration:</strong> moving records from an old system to a new one when no import tool exists.</li>
+<li><strong>Reconciliation:</strong> comparing figures across systems that cannot talk to each other.</li>
+</ul>
+
+<h2>RPA vs. API-based automation</h2>
+<table>
+<thead><tr><th></th><th>RPA (screen-based)</th><th>API and integration-based</th></tr></thead>
+<tbody>
+<tr><td><strong>How it connects</strong></td><td>Operates the user interface like a person</td><td>Exchanges data directly between systems</td></tr>
+<tr><td><strong>Works without an API</strong></td><td>Yes, its main advantage</td><td>No</td></tr>
+<tr><td><strong>Speed</strong></td><td>Limited by screen loading</td><td>Fast</td></tr>
+<tr><td><strong>Reliability</strong></td><td>Breaks when screens or layouts change</td><td>Stable unless the API changes</td></tr>
+<tr><td><strong>Maintenance</strong></td><td>Higher</td><td>Lower</td></tr>
+<tr><td><strong>Typical tools</strong></td><td>UiPath, Automation Anywhere, Power Automate desktop flows</td><td>Zapier, Make, n8n, native integrations, custom code</td></tr>
+</tbody>
+</table>
+<p>The rule of thumb: <strong>if an app has an API or integration, use it.</strong> Reach for RPA only for the systems that leave you no other option.</p>
+
+<h2>RPA and AI together</h2>
+<p>Classic RPA cannot interpret anything; it only follows steps. Pairing it with AI expands what it can do. An AI step can read an emailed document and extract the fields, then a bot enters them into a legacy system. This combination is sometimes called intelligent automation. Learn more in <a href="/guides/ai-workflow-automation/">AI workflow automation</a>.</p>
+
+<h2>Is RPA right for your business?</h2>
+<p>Consider RPA when all of these are true:</p>
+<ul class="lj-checklist">
+<li>The task is high volume and fully rule-based</li>
+<li>The system involved has no API, integration, or reliable export</li>
+<li>Replacing the system is not realistic in the near term</li>
+<li>Someone can maintain the bot when screens change</li>
+</ul>
+<p>If the system can be replaced with a modern, connected tool, that is often the better long-term investment. Everything else in your stack can usually be automated more simply with <a href="/guides/what-is-workflow-automation/">workflow automation</a>.</p>
+
+<h2>Getting started</h2>
+<ol>
+<li>List the systems your team copies data into or out of by hand.</li>
+<li>Check each one for an API, integration, or scheduled export. Many have more than people realize.</li>
+<li>For the ones that truly have none, pilot a single bot on a high-volume task and measure its reliability for a month.</li>
+<li>Document the bot's steps and assign an owner who checks its runs.</li>
+</ol>
+<p>Not sure what your tools support? The free lesson on <a href="/learn/automation-101/connecting-your-tools/">connecting your tools</a> explains integrations, APIs, and webhooks in plain English.</p>

@@ -1,0 +1,89 @@
+<!--
+{
+  "title": "How to Automate Emails: Follow-Ups, Sorting, and Replies",
+  "seoTitle": "How to Automate Emails for Business: Follow-Ups, Sorting, Replies",
+  "description": "How to automate business email: triggered follow-ups and sequences, inbox sorting and routing, AI-drafted replies, and the rules that keep automated email personal and compliant.",
+  "eyebrow": "How to automate",
+  "icon": "mail",
+  "order": 12,
+  "group": "how-to",
+  "category": "customer-communication",
+  "keywords": ["email", "follow-up", "welcome", "inbox", "newsletter"],
+  "published": "2026-10-25",
+  "related": ["automate-lead-follow-up", "how-to-automate-customer-support", "ai-workflow-automation"],
+  "tools": [["AI prompt library", "/tools/ai-prompt-library/", "message"], ["Lead response calculator", "/tools/lead-response-calculator/", "target"]],
+  "keyPoints": [
+    "Email automation covers three jobs: sending (triggered messages and sequences), sorting (routing incoming mail), and replying (templates and AI drafts).",
+    "Trigger emails from real events, such as a form submission, booking, or payment, rather than fixed blasts.",
+    "AI can sort incoming email and draft replies, with a person approving anything sensitive.",
+    "Stop sequences when people respond, and follow consent and unsubscribe rules."
+  ],
+  "faq": [
+    ["How do I automate emails?", "<p>Decide which event should send each email (a form submission, a booking, an invoice), write the message as a template with personalization fields, and set up a workflow in your email platform, CRM, or an automation tool to send it when the event happens. For follow-ups, add delays and a rule that stops the sequence when the person replies.</p>"],
+    ["Can I automate email replies?", "<p>Yes. Simple acknowledgments and common questions can be answered with templates. AI can draft replies to more varied emails using your help content, and a person can review and send them. Fully automatic AI replies suit routine, low-risk questions once quality is proven.</p>"],
+    ["How do I automatically sort incoming emails?", "<p>Start with your email client's rules and filters for predictable patterns, such as sender or subject. For free-text messages, an AI classification step in an automation can label each email by type and urgency and route it to the right person or tool.</p>"],
+    ["Is automated email legal?", "<p>Transactional emails, such as confirmations and receipts, are generally fine. Marketing emails must follow laws such as CAN-SPAM in the United States, including a clear unsubscribe option and accurate sender details, and other countries have stricter consent rules. Check the rules that apply to your audience.</p>"]
+  ]
+}
+-->
+<p><strong>To automate email, set up three things: triggered emails that send when something happens (a form submission, booking, or payment), rules or AI that sort incoming mail and route it to the right person, and templates or AI drafts that speed up replies.</strong> Most businesses can do all three with their existing email platform and CRM, plus an automation tool to connect them.</p>
+<p>Email is where a lot of repetitive work hides. This guide covers how to automate the sending, sorting, and replying, without making your messages feel robotic.</p>
+
+<h2>Part 1: Automate the emails you send</h2>
+<h3>Triggered emails</h3>
+<p>The most valuable automated emails are sent in response to an event, so they arrive exactly when they are relevant:</p>
+<table>
+<thead><tr><th>Trigger</th><th>Email</th></tr></thead>
+<tbody>
+<tr><td>Website inquiry</td><td>Instant acknowledgment with next steps and a booking link</td></tr>
+<tr><td>Appointment booked</td><td>Confirmation, preparation details, and calendar link</td></tr>
+<tr><td>Contract signed</td><td>Welcome email with intake form and what to expect</td></tr>
+<tr><td>Job completed</td><td>Invoice, thank-you, and review request</td></tr>
+<tr><td>Invoice due soon or overdue</td><td>Polite payment reminder with a pay-online link</td></tr>
+<tr><td>Quote sent, no response</td><td>Follow-up after three days answering common questions</td></tr>
+</tbody>
+</table>
+<h3>Sequences</h3>
+<p>A sequence is a series of emails sent over time: a welcome series for new subscribers, a nurture series for leads not ready to buy, an onboarding series for new clients. Two rules make sequences work:</p>
+<ul>
+<li><strong>Stop on response.</strong> When someone replies, books, or buys, they should leave the sequence immediately.</li>
+<li><strong>Each email earns its place.</strong> Every message should add something new: an answer, a tip, a useful link.</li>
+</ul>
+<p>The <a href="/guides/automate-lead-follow-up/">lead follow-up playbook</a> includes a complete sequence with templates.</p>
+
+<h2>Part 2: Automate sorting incoming email</h2>
+<p>A shared inbox can eat hours a day just deciding what each message is and who should handle it.</p>
+<ul>
+<li><strong>Rules and filters</strong> handle predictable patterns: invoices from known suppliers go to accounting, notifications from a specific app get labeled and archived.</li>
+<li><strong>AI classification</strong> handles the rest. An automation sends each new email to an AI step that returns a category (sales, support, billing, scheduling, spam), an urgency, and a one-line summary. The workflow then labels it, forwards it, creates a ticket or CRM task, or posts urgent items to the team chat.</li>
+<li><strong>A fallback</strong> catches anything the AI is unsure about and sends it to a person.</li>
+</ul>
+<p>The <a href="/tools/ai-prompt-library/">AI prompt library</a> includes a ready-made email classification prompt that returns structured output a workflow can use.</p>
+
+<h2>Part 3: Automate replies</h2>
+<ol>
+<li><strong>Templates</strong> for the questions you answer every week: pricing, hours, directions, how to reschedule.</li>
+<li><strong>Auto-acknowledgments</strong> that confirm receipt and set expectations: "We reply within two business hours. In the meantime, here is our booking link."</li>
+<li><strong>AI-drafted replies</strong> that use your help content to answer more varied questions. A person reviews and sends; over time, routine categories can be sent automatically.</li>
+</ol>
+<div class="lj-callout"><strong>Keep it human</strong><p>Write automated emails the way you would write a quick personal note: short, specific, signed by a real person, with a reply-to address someone actually reads. Avoid "noreply" addresses for anything a customer might want to answer.</p></div>
+
+<h2>Tools for email automation</h2>
+<ul>
+<li><strong>Your CRM or email marketing platform</strong> for sequences and triggered messages.</li>
+<li><strong>Your email client's rules</strong> for basic sorting and filing.</li>
+<li><strong>An automation platform</strong> (Zapier, Make, n8n, or Power Automate) to trigger emails from other apps and to add AI steps.</li>
+<li><strong>An AI model</strong> through your automation platform for classification and drafting.</li>
+</ul>
+
+<h2>Deliverability and compliance basics</h2>
+<ul class="lj-checklist">
+<li>Send from your own domain with email authentication (SPF, DKIM, and DMARC) set up</li>
+<li>Include a clear unsubscribe option in marketing emails, and honor it promptly</li>
+<li>Keep transactional and marketing emails separate where your platform allows</li>
+<li>Do not buy lists; email people who asked to hear from you</li>
+<li>Check the consent rules for your audience, especially outside the United States</li>
+</ul>
+
+<h2>Where to start</h2>
+<p>Begin with the email that costs you the most when it is late or forgotten: usually the reply to a new inquiry. Use the <a href="/tools/lead-response-calculator/">lead response calculator</a> to see what faster replies are worth, then add confirmations, reminders, and inbox sorting one at a time.</p>

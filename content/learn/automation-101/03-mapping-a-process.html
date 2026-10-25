@@ -1,0 +1,76 @@
+<!--
+{
+  "title": "Mapping a process before you automate it",
+  "description": "How to write down a process step by step, simplify it, and turn it into a clear blueprint for an automation, with a simple template you can copy.",
+  "minutes": 8,
+  "keyPoints": [
+    "Automating a messy process makes the mess happen faster. Map and simplify first.",
+    "Write each step as one action, noting who does it, in which app, and what triggers it.",
+    "Mark every decision point and every exception, and decide who owns them.",
+    "A good process map is the blueprint for the automation and the SOP for your team."
+  ],
+  "check": [
+    { "q": "Why map a process before automating it?", "options": ["Automation tools require a drawing", "To find unnecessary steps, decisions, and exceptions before they are built into the automation", "It is a legal requirement", "To slow the project down"], "answer": 1, "why": "Mapping exposes waste and ambiguity. Removing them first makes the automation simpler, cheaper, and more reliable." },
+    { "q": "Which detail matters most for each step in a process map?", "options": ["The color of the app's logo", "Who does it, in which tool, and what starts it", "How long the employee has worked there", "The step's font size"], "answer": 1, "why": "Who, where, and what triggers each step tells you exactly what the automation needs to connect and when." },
+    { "q": "What should happen with exceptions, such as an order with a missing address?", "options": ["Ignore them", "Decide how each is handled and who owns it, before building", "Let the automation guess", "Delete the order"], "answer": 1, "why": "Every automation meets cases that do not fit the rule. Decide in advance whether they are skipped, fixed, or sent to a person." }
+  ]
+}
+-->
+<p>The most common reason automations disappoint is not the technology. It is automating a process nobody had written down. Hidden steps get missed, exceptions break things, and the team ends up working around the system. Ten minutes of mapping prevents most of that.</p>
+
+<h2>Step 1: Name the start and the finish</h2>
+<p>Every process turns an input into an outcome. Write both down in one line:</p>
+<ul>
+<li><em>"A new web inquiry becomes a booked consultation."</em></li>
+<li><em>"A completed job becomes a paid invoice."</em></li>
+<li><em>"A signed client becomes a fully onboarded account."</em></li>
+</ul>
+<p>The start is usually your trigger. The finish is how you will know the automation worked.</p>
+
+<h2>Step 2: List every step as it happens today</h2>
+<p>Walk through the process with the person who actually does it. Write one action per line, starting with a verb, and note three things for each step:</p>
+<table>
+<thead><tr><th>#</th><th>Step</th><th>Who</th><th>Where (app)</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Read the new inquiry email</td><td>Office manager</td><td>Gmail</td></tr>
+<tr><td>2</td><td>Copy name, phone, and service into the CRM</td><td>Office manager</td><td>CRM</td></tr>
+<tr><td>3</td><td>Reply with available times</td><td>Office manager</td><td>Gmail</td></tr>
+<tr><td>4</td><td>If no reply in 2 days, follow up</td><td>Office manager (if remembered)</td><td>Gmail</td></tr>
+<tr><td>5</td><td>Book the time in the calendar</td><td>Office manager</td><td>Calendar</td></tr>
+<tr><td>6</td><td>Send a confirmation with directions</td><td>Office manager</td><td>Gmail</td></tr>
+</tbody>
+</table>
+<p>Record what really happens, including the workarounds, not what the process is supposed to be. "If remembered" is exactly the kind of note that shows where automation will help.</p>
+
+<h2>Step 3: Mark decisions and exceptions</h2>
+<p>Highlight every point where someone makes a choice, and every situation that does not fit the normal path:</p>
+<ul>
+<li><strong>Decisions:</strong> Is this a new or existing customer? Is it commercial or residential? Is the amount over the approval limit?</li>
+<li><strong>Exceptions:</strong> The inquiry is spam. The phone number is missing. The customer asks for a time outside business hours.</li>
+</ul>
+<p>For each one, decide: can a clear rule handle it, does it need AI to interpret something, or should it go to a person? Then name the person.</p>
+
+<h2>Step 4: Simplify before you automate</h2>
+<p>Now look at the map with fresh eyes and ask of every step:</p>
+<ul class="lj-checklist">
+<li>Does this step add value, or does it exist only because of an old tool or habit?</li>
+<li>Is anyone entering the same information twice?</li>
+<li>Could two steps be combined, or done at the same time?</li>
+<li>Is there an approval nobody actually needs?</li>
+<li>Can the customer do this step themselves, such as picking a time from a booking link?</li>
+</ul>
+<p>In the example above, a self-service booking link removes steps 3 to 5 entirely. The automation that remains is smaller and more reliable.</p>
+
+<h2>Step 5: Write the target process</h2>
+<p>Rewrite the map as it should run, marking which steps will be automated:</p>
+<ol>
+<li><strong>Trigger:</strong> a new inquiry arrives through the website form.</li>
+<li><strong>Automated:</strong> create or update the contact in the CRM.</li>
+<li><strong>Automated:</strong> text and email a reply within a minute with a booking link.</li>
+<li><strong>Automated:</strong> if not booked in 2 days, send a follow-up; repeat once more on day 5.</li>
+<li><strong>Automated:</strong> when booked, send a confirmation with directions and add reminders.</li>
+<li><strong>Person:</strong> handle any inquiry flagged as unusual or high value.</li>
+</ol>
+<p>This document is now two things at once: the blueprint for whoever builds the automation, and the standard operating procedure (SOP) for your team. Keep it somewhere everyone can find it, and update it when the process changes.</p>
+<div class="lj-callout"><strong>Tip: let AI help you write it</strong><p>Describe the process out loud, transcribe it, and ask an AI assistant to turn it into numbered steps with who, where, and decision points. The <a href="/tools/ai-prompt-library/">prompt library</a> has a ready-made prompt for this. Always check the result with the person who does the work.</p></div>
+<p>Next, you will learn exactly how triggers, actions, and conditions turn this map into a working automation.</p>

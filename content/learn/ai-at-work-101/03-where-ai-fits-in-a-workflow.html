@@ -1,0 +1,71 @@
+<!--
+{
+  "title": "Where AI fits inside a workflow",
+  "description": "The five jobs AI does best inside business workflows, how to combine AI steps with rule-based automation and human review, and three worked examples.",
+  "minutes": 9,
+  "keyPoints": [
+    "Use rules for predictable steps and AI only where a step involves reading or writing language.",
+    "AI's five workflow jobs: classify, extract, summarize, draft, and answer from your content.",
+    "Put a human approval step wherever an AI mistake would reach a customer or cost money.",
+    "Confidence thresholds and fallbacks keep AI steps safe at scale."
+  ],
+  "check": [
+    { "q": "In a well-designed workflow, where should the AI step go?", "options": ["Everywhere, replacing all rules", "Only where a step requires interpreting or producing language", "Nowhere; AI cannot be used in workflows", "Only at the very end"], "answer": 1, "why": "Rules are cheaper and more predictable. AI earns its place where language or variety makes rules impractical." },
+    { "q": "An AI step drafts replies to customer complaints. What should come next?", "options": ["Send immediately with no review", "A person reviews and approves the draft before it is sent", "Delete the draft", "Send it to all customers"], "answer": 1, "why": "Complaints are sensitive. Human approval keeps quality and tone right while AI saves the drafting time." },
+    { "q": "What is a confidence threshold used for?", "options": ["Making the AI more confident", "Routing low-confidence AI results to a person instead of acting on them automatically", "Speeding up the internet", "Setting the price per token"], "answer": 1, "why": "When the AI reports low confidence, or the answer falls outside allowed values, the workflow sends the item to a person." }
+  ]
+}
+-->
+<p>The most reliable AI automation is not a robot that does everything. It is an ordinary workflow, with triggers, actions, and conditions, that hands the language-heavy steps to AI and keeps people in charge of the decisions that matter. This lesson shows how to design that combination.</p>
+
+<h2>Rules first, AI where it earns its place</h2>
+<p>Before adding AI to a step, ask: <em>could a simple rule do this?</em> Sending a reminder at a set time, copying an order into accounting, or assigning a lead by zip code are rule-based. They are cheaper, faster, and more predictable without AI.</p>
+<p>AI belongs where the input is free-form language or varies too much for rules: emails written a hundred different ways, invoices in dozens of layouts, call recordings, open-ended questions.</p>
+
+<h2>The five jobs AI does in a workflow</h2>
+<table>
+<thead><tr><th>Job</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td><strong>Classify</strong></td><td>Sort incoming emails into sales, support, billing, or spam, and flag urgent ones</td></tr>
+<tr><td><strong>Extract</strong></td><td>Pull vendor, invoice number, date, and total from PDF invoices</td></tr>
+<tr><td><strong>Summarize</strong></td><td>Turn a sales call transcript into notes and next steps for the CRM</td></tr>
+<tr><td><strong>Draft</strong></td><td>Write a first reply to a support question for a person to approve</td></tr>
+<tr><td><strong>Answer from your content</strong></td><td>A website assistant that answers using only your FAQ and policies, handing off when unsure</td></tr>
+</tbody>
+</table>
+
+<h2>Three worked examples</h2>
+<h3>1. Inbox triage</h3>
+<ol>
+<li><strong>Trigger:</strong> a new email arrives in the shared inbox.</li>
+<li><strong>AI step:</strong> classify it and return category, urgency, and a one-line summary as JSON.</li>
+<li><strong>Rules:</strong> route by category to the right person or tool; post urgent items to the team chat.</li>
+<li><strong>Fallback:</strong> anything the AI marks as unclear goes to the office manager.</li>
+</ol>
+<h3>2. Invoice capture</h3>
+<ol>
+<li><strong>Trigger:</strong> a PDF arrives in the invoices mailbox.</li>
+<li><strong>AI step:</strong> extract vendor, invoice number, date, due date, and line items.</li>
+<li><strong>Rules:</strong> check the vendor exists and the total matches the line items; create a draft bill in accounting.</li>
+<li><strong>Human step:</strong> the bookkeeper approves drafts over a set amount or any that failed a check.</li>
+</ol>
+<h3>3. Support reply drafts</h3>
+<ol>
+<li><strong>Trigger:</strong> a new support ticket.</li>
+<li><strong>Retrieve:</strong> find the most relevant help articles for the question.</li>
+<li><strong>AI step:</strong> draft a reply using only those articles.</li>
+<li><strong>Human step:</strong> an agent reviews, edits if needed, and sends. Over time, routine categories can be sent automatically once quality is proven.</li>
+</ol>
+
+<h2>Keeping AI steps safe</h2>
+<ul class="lj-checklist">
+<li><strong>Constrain the output:</strong> fixed categories and formats, so a strange answer is easy to detect</li>
+<li><strong>Validate:</strong> check AI output with rules where possible (does the total add up, is the date valid, is the category allowed)</li>
+<li><strong>Use thresholds:</strong> route low-confidence or invalid results to a person</li>
+<li><strong>Approve what matters:</strong> human review for anything that commits money, reaches an upset customer, or has legal weight</li>
+<li><strong>Log everything:</strong> keep the input, output, and any human edits, so you can spot patterns and improve the prompt</li>
+</ul>
+
+<h2>Start with drafts, earn automation</h2>
+<p>A practical path for any AI step: start with AI drafting and a person approving everything. Track how often the person changes the draft. When edits become rare for a category, let that category run automatically, and keep reviewing a sample. Trust is earned with evidence, not assumed.</p>
+<p>The <a href="/guides/ai-workflow-automation/">AI workflow automation guide</a> covers more examples. In the next lesson, you will look at AI agents, which take this a step further.</p>

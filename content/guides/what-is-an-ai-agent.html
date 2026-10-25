@@ -1,0 +1,89 @@
+<!--
+{
+  "title": "What Is an AI Agent? A Plain-English Guide for Business",
+  "seoTitle": "What Is an AI Agent? Definition, Examples, and Business Uses",
+  "description": "An AI agent is software that pursues a goal by deciding which steps to take and using tools such as your CRM, email, or calendar. Definition, how agents work, examples, and risks.",
+  "eyebrow": "AI and agents",
+  "icon": "bot",
+  "order": 21,
+  "group": "ai",
+  "category": "customer-communication",
+  "keywords": ["ai-assisted", "ai ", "chatbot", "triage"],
+  "published": "2026-10-25",
+  "related": ["ai-agents-vs-workflow-automation", "ai-vs-automation", "ai-workflow-automation"],
+  "tools": [["Lesson: AI agents and guardrails", "/learn/ai-at-work-101/ai-agents-explained/", "school"], ["AI cost calculator", "/tools/ai-cost-calculator/", "bot"]],
+  "keyPoints": [
+    "An AI agent is software built around an AI model that pursues a goal by choosing steps and using tools.",
+    "Agents combine a model (reasoning), tools (actions), instructions (limits), and memory or context.",
+    "They suit multi-step tasks where the path depends on what is discovered along the way.",
+    "Guardrails are essential: limited permissions, human approval for consequential actions, logs, and step limits."
+  ],
+  "faq": [
+    ["What is an AI agent in simple terms?", "<p>An AI agent is a program that is given a goal and a set of tools, such as access to your calendar, CRM, or email, and figures out the steps to reach the goal by itself, using the tools, checking the results, and continuing until it is done or needs help.</p>"],
+    ["What is the difference between an AI agent and a chatbot?", "<p>A chatbot mainly holds a conversation and answers questions. An AI agent can take actions in other systems, such as looking up an order, updating a record, or scheduling a meeting, and decides which actions to take to achieve a goal. Some chatbots include agent capabilities.</p>"],
+    ["What are examples of AI agents in business?", "<p>Examples include a support agent that investigates an order across several systems and drafts a reply, a scheduling agent that finds a time across calendars, a research agent that prepares a sales call brief, and an internal assistant that answers staff questions from company policies and files requests.</p>"],
+    ["Are AI agents safe to use?", "<p>They can be, with guardrails: give them only the access the task needs, require human approval for actions that send messages, spend money, or change records, log every step, and limit how many steps they can take. Start with low-risk, reversible tasks.</p>"],
+    ["What is agentic AI?", "<p>Agentic AI describes AI systems that act with some autonomy toward a goal, planning steps and using tools, rather than only responding to a single prompt. An agentic workflow is a process in which some steps are planned and carried out by an AI agent.</p>"]
+  ]
+}
+-->
+<p><strong>An AI agent is software built around an AI model that is given a goal and a set of tools, and decides for itself which steps to take to reach that goal: using the tools, checking the results, and continuing until the job is done or it needs a person's help.</strong> Where a traditional automation follows a fixed path, an agent chooses its path as it goes.</p>
+<p>Agents are one of the most talked-about developments in AI. This guide explains how they work, where they are genuinely useful for a business, and how to use them safely.</p>
+
+<h2>How an AI agent works</h2>
+<p>Every agent has four ingredients:</p>
+<ol>
+<li><strong>A model:</strong> a large language model that reasons about the goal and decides what to do next.</li>
+<li><strong>Tools:</strong> specific actions the agent may take, such as search the CRM, check the calendar, look up an order, read a document, draft an email, or create a task.</li>
+<li><strong>Instructions:</strong> its role, rules, and limits: what it may and may not do, and when to ask a person.</li>
+<li><strong>Context:</strong> the information it is working with, from the conversation, your documents, and the results of earlier steps.</li>
+</ol>
+<p>The agent works in a loop: <em>think</em> about the next step, <em>act</em> by calling a tool, <em>observe</em> the result, and repeat. If a customer asks why their order is late, the agent might look up the order, see it is with the courier, check the tracking, find a delay notice, and draft a reply with the new delivery date, without anyone scripting those exact steps.</p>
+
+<h2>AI agents vs. chatbots vs. workflows</h2>
+<ul>
+<li><strong>A chatbot</strong> converses and answers questions, usually without taking actions in other systems.</li>
+<li><strong>A workflow</strong> takes actions, but only the ones you designed, in the order you designed.</li>
+<li><strong>An agent</strong> takes actions and chooses which ones, based on the goal and what it finds.</li>
+</ul>
+<p>For a detailed comparison of when to use each, read <a href="/guides/ai-agents-vs-workflow-automation/">AI agents vs. workflow automation</a>.</p>
+
+<h2>Business examples</h2>
+<table>
+<thead><tr><th>Agent</th><th>Goal</th><th>Tools it uses</th></tr></thead>
+<tbody>
+<tr><td>Support investigator</td><td>Resolve "where is my order?" questions</td><td>Order system, shipping tracker, help center, email drafts</td></tr>
+<tr><td>Scheduling assistant</td><td>Book a meeting that suits everyone</td><td>Calendars, booking rules, email</td></tr>
+<tr><td>Sales research</td><td>Prepare a brief before a call</td><td>CRM, company website, past emails</td></tr>
+<tr><td>Internal help desk</td><td>Answer staff questions and file requests</td><td>Policy documents, ticketing system</td></tr>
+<tr><td>Data cleanup</td><td>Fix records that failed validation</td><td>CRM, lookup sources, a review queue</td></tr>
+</tbody>
+</table>
+
+<h2>When an agent is the right tool</h2>
+<ul class="lj-checklist">
+<li>The task has several steps, and the next step depends on what is found</li>
+<li>The goal is clear and success is easy to check</li>
+<li>The tools needed can be limited to what the task requires</li>
+<li>Mistakes are reversible, or a person approves before anything consequential happens</li>
+</ul>
+<p>If the steps are always the same, a regular workflow is cheaper and more reliable. If a step only needs to read or write text, an AI step inside a workflow is enough. See <a href="/guides/ai-workflow-automation/">AI workflow automation</a>.</p>
+
+<h2>Risks and guardrails</h2>
+<ul>
+<li><strong>Wrong actions:</strong> an agent can misunderstand and do the wrong thing confidently. Require approval for sending, spending, deleting, or changing records.</li>
+<li><strong>Too much access:</strong> give the minimum permissions needed, read-only wherever possible.</li>
+<li><strong>Manipulation:</strong> content the agent reads (emails, web pages) can contain instructions meant to mislead it. Limited tools and approvals contain the damage.</li>
+<li><strong>Runaway costs and loops:</strong> cap the number of steps and the spend per task.</li>
+<li><strong>Opacity:</strong> log every step, tool call, and result so you can review what happened.</li>
+</ul>
+<div class="lj-callout"><strong>Connecting agents to tools</strong><p>Standards such as the Model Context Protocol (MCP) make it easier to connect AI agents to business systems, so the same connector can serve many AI applications. That convenience makes careful permissions even more important.</p></div>
+
+<h2>How to start with AI agents</h2>
+<ol>
+<li>Automate the predictable basics with ordinary workflows first.</li>
+<li>Choose one low-risk, multi-step task where an agent can prepare work for a person to approve.</li>
+<li>Give it narrow tools, clear instructions, and an easy handoff.</li>
+<li>Measure accuracy and time saved for a few weeks before widening its scope.</li>
+</ol>
+<p>Learn the fundamentals in the free lesson <a href="/learn/ai-at-work-101/ai-agents-explained/">AI agents: goals, tools, and guardrails</a>, part of the <a href="/learn/ai-at-work-101/">AI at Work 101</a> course.</p>

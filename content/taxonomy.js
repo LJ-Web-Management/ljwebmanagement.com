@@ -36,7 +36,7 @@ const categories = [
       "Referral and loyalty programs that track themselves",
       "Segmented campaigns built from actual purchase history",
     ],
-    guide: "what-to-automate-first",
+    guide: "how-to-automate-emails",
   },
   {
     slug: "scheduling-dispatch",
@@ -70,7 +70,7 @@ const categories = [
       "Escalations when a response deadline is about to slip",
       "Fewer inbound status calls for your front desk",
     ],
-    guide: "missed-call-text-back",
+    guide: "how-to-automate-customer-support",
   },
   {
     slug: "reviews-feedback",
@@ -155,7 +155,7 @@ const categories = [
       "Deadline tracking for filings, permits, and inspections",
       "An automatic audit trail of every notice sent",
     ],
-    guide: "what-to-automate-first",
+    guide: "document-workflow-automation",
   },
   {
     slug: "operations-inventory",
@@ -172,7 +172,7 @@ const categories = [
       "Preventive maintenance scheduled by usage or date",
       "Work orders and project milestones that update stakeholders",
     ],
-    guide: "what-to-automate-first",
+    guide: "business-process-automation",
   },
   {
     slug: "reporting-analytics",
@@ -189,7 +189,7 @@ const categories = [
       "Dashboards fed directly from your systems",
       "Client and owner reports assembled without copy and paste",
     ],
-    guide: "automation-roi",
+    guide: "how-to-automate-reports",
   },
 ];
 

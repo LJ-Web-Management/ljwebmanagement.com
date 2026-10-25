@@ -59,6 +59,12 @@ function head(opts) {
   return lines.join("\n");
 }
 
+// Script tag for the interactive tools engine (calculators, quizzes, course
+// progress), loaded only on the pages that use it.
+function toolsScript() {
+  return '<script src="/assets/js/tools.js?v=' + fileHash("assets/js/tools.js") + '" defer></script>';
+}
+
 // Full page. `opts.main` is the inner HTML of <main>.
 function page(opts) {
   return [
@@ -134,28 +140,39 @@ function sectionHead(eyebrow, title, text, cls) {
   );
 }
 
-function ctaBand(title, text, primary, secondary) {
+// Light page hero used by the resource pages. `title` and `lead` are HTML.
+function hero(o) {
   return (
-    '<div class="lj-cta-band"><div><h2>' + title + "</h2><p>" + text + '</p></div><div class="lj-btn-row">' +
-    '<a class="lj-btn lj-btn-accent" href="' + primary[1] + '">' + primary[0] + "</a>" +
-    (secondary ? '<a class="lj-btn lj-btn-light" href="' + secondary[1] + '">' + secondary[0] + "</a>" : "") +
-    "</div></div>"
+    '<section class="lj-page-hero' + (o.center === false ? "" : " lj-page-hero--center") + '"><div class="lj-container">' +
+    (o.crumbs ? o.crumbs.html : "") +
+    (o.eyebrow ? '<span class="lj-eyebrow lj-eyebrow--pill">' + o.eyebrow + "</span>" : "") +
+    "<h1>" + o.title + "</h1>" +
+    (o.lead ? '<p class="lj-lead">' + o.lead + "</p>" : "") +
+    (o.extra || "") +
+    "</div></section>"
   );
 }
 
-const PROCESS_STEPS = [
-  ["Book a free consultation", "Tell us what's slowing your team down and which tools are involved. No prep required."],
-  ["Get a flat, upfront quote", "We scope the exact system you need and give you one all-in price. No hourly billing, no surprises."],
-  ["We build, launch, and support it", "Nothing starts until you approve. Most automations go live in days, and we stay on to support them."],
-];
-
-function processSteps() {
+// Resource card (course, quiz, calculator, guide): icon, tag, title, text.
+function rcard(o) {
   return (
-    '<div class="lj-process">' +
-    PROCESS_STEPS.map(([t, d]) => '<div class="lj-process-step"><h3>' + t + "</h3><p>" + d + "</p></div>").join("") +
-    "</div>"
+    '<a class="lj-card lj-gcard" href="' + o.href + '">' +
+    '<span class="lj-gcard-top"><span class="lj-card-icon lj-card-icon--soft">' + chrome.icon(o.icon || "book") + '</span><span class="lj-post-card-meta"><span class="lj-tag lj-tag--cyan">' + escapeHtml(o.tag) + "</span>" + (o.meta ? "<span>" + escapeHtml(o.meta) + "</span>" : "") + "</span></span>" +
+    "<h3>" + escapeHtml(o.title) + "</h3><p>" + escapeHtml(truncate(o.text, 150)) + "</p>" +
+    '<span class="lj-link-arrow">' + escapeHtml(o.cta || "Open") + " " + chrome.icon("arrowRight") + "</span></a>"
   );
 }
+
+// Compact list of related links: [[title, href, iconName], ...].
+function linkList(items) {
+  return (
+    '<ul class="lj-link-list">' +
+    items.map(([t, href, ic]) => '<li><a href="' + href + '">' + chrome.icon(ic || "arrowRight") + "<span>" + escapeHtml(t) + "</span></a></li>").join("") +
+    "</ul>"
+  );
+}
+
+
 
 module.exports = {
   YEAR,
@@ -165,7 +182,9 @@ module.exports = {
   breadcrumbs,
   faq,
   sectionHead,
-  ctaBand,
-  processSteps,
+  hero,
+  rcard,
+  toolsScript,
+  linkList,
   icon: chrome.icon,
 };

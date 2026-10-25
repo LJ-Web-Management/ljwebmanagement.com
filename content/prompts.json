@@ -1,0 +1,219 @@
+{
+  "lead": "Copy-and-paste prompts for the work small teams do every day: email, sales, marketing, support, operations, finance, and planning your next automation. Replace the [bracketed] parts with your details.",
+  "categories": {
+    "email": "Email & messages",
+    "sales": "Sales",
+    "marketing": "Marketing",
+    "support": "Customer support",
+    "ops": "Operations & admin",
+    "finance": "Finance & billing",
+    "hr": "Hiring & team",
+    "automation": "Automation planning"
+  },
+  "prompts": [
+    {
+      "cat": "email",
+      "title": "Turn rough notes into a clear email",
+      "use": "Paste bullet points or a voice-to-text ramble and get a ready-to-send email.",
+      "prompt": "You are helping me write a professional email.\n\nRecipient: [who they are and our relationship]\nGoal: [what I want them to know or do]\nTone: [friendly / formal / direct]\n\nMy rough notes:\n[paste notes]\n\nWrite the email in under 150 words with a clear subject line. Put the request or key point in the first two sentences. End with one specific next step. Do not invent facts that are not in my notes."
+    },
+    {
+      "cat": "email",
+      "title": "Reply to a frustrated customer",
+      "use": "Draft a calm, accountable reply to a complaint for a person to review before sending.",
+      "prompt": "Draft a reply to this customer message for me to review.\n\nCustomer message:\n[paste message]\n\nWhat actually happened on our side: [facts]\nWhat we can offer: [refund / redo / discount / call / nothing beyond an apology]\n\nRules: acknowledge the specific problem in their words, take responsibility where we are at fault, do not make promises beyond what I listed, keep it under 120 words, and end with a clear next step. Avoid generic phrases like \"we value your business.\""
+    },
+    {
+      "cat": "email",
+      "title": "Summarize a long email thread",
+      "use": "Get the decisions, open questions, and owners from a messy thread in seconds.",
+      "prompt": "Summarize the email thread below for someone who has not read it.\n\nReturn:\n1. A two-sentence summary of what the thread is about.\n2. Decisions made (bullet list).\n3. Open questions (bullet list).\n4. Action items with the person responsible and any deadline mentioned.\n\nOnly use information in the thread. If an owner or deadline is unclear, say \"unclear\".\n\nThread:\n[paste thread]"
+    },
+    {
+      "cat": "email",
+      "title": "Classify incoming emails for routing",
+      "use": "A prompt to use inside an automation that sorts inbound email by type and urgency.",
+      "prompt": "Classify the email below. Respond with JSON only, using exactly these keys:\n{\"category\": one of [\"sales_inquiry\", \"support_request\", \"billing\", \"scheduling\", \"vendor\", \"spam\", \"other\"], \"urgency\": one of [\"high\", \"normal\", \"low\"], \"summary\": a sentence under 20 words, \"needs_human\": true or false}\n\nMark urgency high only if the sender reports something broken, a payment problem, or a same-day deadline. Set needs_human to true for complaints, legal or medical questions, and anything you are unsure about.\n\nEmail:\n[email text]"
+    },
+    {
+      "cat": "sales",
+      "title": "Write a first reply to a new lead",
+      "use": "A fast, personal first response to a web form or inquiry.",
+      "prompt": "Write a short first reply to a new lead for [business name], a [type of business].\n\nLead's message: [paste form submission]\nWhat we offer that is relevant: [services]\nHow to book: [link or phone]\n\nKeep it under 90 words, reference something specific from their message, answer any simple question they asked, and invite them to book a call with one clear link. Friendly and human, no hype."
+    },
+    {
+      "cat": "sales",
+      "title": "Three-step follow-up sequence",
+      "use": "Follow-ups for leads who have not replied, ready to load into your CRM or automation tool.",
+      "prompt": "Write a three-message follow-up sequence for leads who asked about [service] but have not replied.\n\nTiming: day 1 (text message), day 3 (email), day 7 (text message).\nVoice: [describe our tone]\n\nEach message should be shorter than the last, add something new (a helpful tip, a common question answered, or a simple yes or no question), and make replying easy. Texts under 280 characters. Do not use fake urgency or discounts unless I list one: [offer, if any]."
+    },
+    {
+      "cat": "sales",
+      "title": "Prepare for a sales call",
+      "use": "A one-page brief from what you know about a prospect.",
+      "prompt": "Prepare a one-page call brief.\n\nProspect: [company, person, role]\nWhat they told us: [form answers, emails, notes]\nWhat we sell: [offer]\n\nInclude: their likely goals and pain points (marked as assumptions), five discovery questions tailored to them, two relevant examples of how we have helped similar businesses (use only these: [examples]), likely objections with honest responses, and a suggested next step for the end of the call."
+    },
+    {
+      "cat": "sales",
+      "title": "Turn call notes into a CRM update",
+      "use": "Clean, structured notes and next steps from a messy call transcript.",
+      "prompt": "Turn these sales call notes into a CRM update.\n\nReturn these fields: Summary (3 sentences), Budget, Timeline, Decision makers, Needs, Objections, Next step, Follow-up date. Write \"not discussed\" for anything not in the notes. Do not guess numbers.\n\nNotes:\n[paste notes or transcript]"
+    },
+    {
+      "cat": "sales",
+      "title": "Write a proposal summary",
+      "use": "A clear executive summary for a quote or proposal.",
+      "prompt": "Write the executive summary for a proposal.\n\nClient: [name and situation]\nTheir problem in their words: [quote or notes]\nOur solution: [what we will do]\nDeliverables: [list]\nTimeline: [dates]\nPrice: [amount and terms]\n\nUnder 200 words. Open with their problem, explain the outcome they will get, then the plan. Plain language, no jargon, no claims I have not provided."
+    },
+    {
+      "cat": "marketing",
+      "title": "Repurpose one post into five",
+      "use": "Turn a blog post or video transcript into social posts for several channels.",
+      "prompt": "Repurpose the content below into:\n1. A LinkedIn post (under 200 words, one clear takeaway, ends with a question)\n2. Two short posts for X (under 260 characters each)\n3. An Instagram caption (under 120 words with 3 to 5 relevant hashtags)\n4. A two-sentence email newsletter teaser with a link placeholder\n\nKeep the facts exactly as written. Audience: [who they are]. Voice: [describe].\n\nContent:\n[paste]"
+    },
+    {
+      "cat": "marketing",
+      "title": "Respond to an online review",
+      "use": "Personal, on-brand responses to positive and negative reviews.",
+      "prompt": "Write a public response to this review for [business name].\n\nReview ([star rating] stars):\n[paste review]\n\nFor 4 to 5 stars: thank them by name, mention one specific detail they shared, and keep it under 60 words.\nFor 1 to 3 stars: thank them, acknowledge the specific issue without arguing or sharing private details, explain any fix briefly, and invite them to contact [name, phone or email] directly. Under 90 words. Never offer incentives in a public reply."
+    },
+    {
+      "cat": "marketing",
+      "title": "Outline an SEO article",
+      "use": "A helpful article outline built around what a searcher actually needs.",
+      "prompt": "Create an outline for an article targeting the search \"[keyword]\".\n\nAudience: [who is searching and why]\nOur expertise: [what we know first-hand]\n\nInclude: a title under 60 characters, a two-sentence answer to the search for the opening paragraph, H2 sections in a logical order, the key points under each, three FAQ questions people also ask, and where a table, checklist, or example would help. Flag any statistic that would need a source."
+    },
+    {
+      "cat": "marketing",
+      "title": "Write a monthly customer newsletter",
+      "use": "A short, useful newsletter from a few updates and tips.",
+      "prompt": "Write a customer newsletter for [business name].\n\nThis month's updates: [list]\nOne helpful tip for customers: [topic]\nCall to action: [what we want readers to do, with link placeholder]\n\nFormat: subject line plus preview text, a two-sentence intro, the tip as the main section (around 120 words), updates as short bullets, then the call to action. Warm, practical, no filler."
+    },
+    {
+      "cat": "support",
+      "title": "Answer from your own help content",
+      "use": "A grounded support answer that only uses your approved information.",
+      "prompt": "You are a support assistant for [business name]. Answer the customer's question using ONLY the reference information below. If the answer is not in the reference information, say you will connect them with a team member and do not guess.\n\nReference information:\n[paste FAQ, policies, product details]\n\nCustomer question:\n[question]\n\nAnswer in under 100 words, in plain language, and include the relevant link from the reference information if there is one."
+    },
+    {
+      "cat": "support",
+      "title": "Turn tickets into FAQ entries",
+      "use": "Find repeated questions in support tickets and draft answers for your help center.",
+      "prompt": "Below are recent customer support tickets. Group them by the underlying question, then list the top [number] questions with how many tickets each covers. For each, draft a clear FAQ answer under 80 words using only what the tickets and our policy notes say.\n\nPolicy notes: [paste]\n\nTickets:\n[paste tickets]"
+    },
+    {
+      "cat": "support",
+      "title": "Write a status update for an outage or delay",
+      "use": "Clear, honest customer communication when something goes wrong.",
+      "prompt": "Write a customer update about [issue].\n\nWhat happened: [facts]\nWho is affected: [customers or services]\nWhat we are doing: [actions]\nNext update: [time]\n\nUnder 120 words. Say plainly what is affected and what customers should do, if anything. Apologize once, do not speculate about causes we have not confirmed, and do not promise a fix time unless I gave one."
+    },
+    {
+      "cat": "support",
+      "title": "Write a support macro",
+      "use": "Reusable reply templates with personalization fields.",
+      "prompt": "Write a reusable support reply template for this situation: [situation, e.g. customer asks to change their appointment].\n\nOur process: [steps]\nLinks: [booking or help links]\n\nUse placeholders like {first_name} and {date} where personal details belong. Keep it under 90 words, friendly, and include exactly what the customer needs to do next."
+    },
+    {
+      "cat": "ops",
+      "title": "Write a standard operating procedure",
+      "use": "Turn how someone does a task into a step-by-step SOP a new hire can follow.",
+      "prompt": "Turn the description below into a standard operating procedure.\n\nFormat: Purpose (one sentence), When to use it, Tools needed, numbered Steps (one action per step, starting with a verb), Common mistakes, and Who to ask for help. Mark any step that requires judgment with \"(judgment call)\". Flag anything ambiguous as a question at the end instead of guessing.\n\nDescription:\n[paste how the task is done today]"
+    },
+    {
+      "cat": "ops",
+      "title": "Extract data from a document",
+      "use": "Pull structured fields out of an order, form, or contract for an automation.",
+      "prompt": "Extract the following fields from the document below and return JSON only:\n{\"[field_1]\": \"\", \"[field_2]\": \"\", \"[field_3]\": \"\", \"line_items\": [{\"description\": \"\", \"quantity\": 0, \"unit_price\": 0}]}\n\nRules: copy values exactly as written, use null for anything missing, format dates as YYYY-MM-DD, and do not calculate or infer values that are not stated.\n\nDocument:\n[paste text]"
+    },
+    {
+      "cat": "ops",
+      "title": "Summarize a meeting into actions",
+      "use": "Decisions, owners, and deadlines from a meeting transcript.",
+      "prompt": "Summarize this meeting transcript.\n\nReturn: a three-sentence summary, decisions made, action items as a table (task, owner, due date), and open questions. Only include owners and dates that were actually said; otherwise write \"unassigned\" or \"no date\".\n\nTranscript:\n[paste]"
+    },
+    {
+      "cat": "ops",
+      "title": "Draft a weekly operations report",
+      "use": "Turn raw numbers into a short narrative report for the team or owner.",
+      "prompt": "Write a weekly operations summary from the numbers below.\n\nThis week: [metrics]\nLast week: [metrics]\nTargets: [targets]\n\nFormat: three bullet highlights, three bullet concerns (with the numbers that justify them), and one recommended focus for next week. Calculate changes accurately and show the percentage change. Do not speculate about causes; list possible causes as questions."
+    },
+    {
+      "cat": "finance",
+      "title": "Polite payment reminder sequence",
+      "use": "Before-due, due-date, and overdue reminders that stay friendly.",
+      "prompt": "Write three payment reminder emails for invoice {invoice_number} for {amount} due {due_date}.\n\n1. Three days before the due date: friendly heads-up with the pay link {pay_link}.\n2. On the due date: short reminder.\n3. Seven days overdue: polite but direct, asks them to pay or reply if there is a problem.\n\nEach under 80 words. Keep the placeholders exactly as written. No threats, no fees unless I list one: [late fee policy, if any]."
+    },
+    {
+      "cat": "finance",
+      "title": "Categorize expenses",
+      "use": "Sort a list of transactions into your chart of accounts for review.",
+      "prompt": "Categorize each transaction below into one of these categories: [list your expense categories].\n\nReturn a table with: date, description, amount, category, confidence (high, medium, low). Use \"needs review\" as the category when you are not confident. Do not change amounts.\n\nTransactions:\n[paste]"
+    },
+    {
+      "cat": "finance",
+      "title": "Explain a financial report in plain English",
+      "use": "Understand a P&L or cash flow report without the jargon.",
+      "prompt": "Explain this [profit and loss / cash flow / balance sheet] report to a business owner who is not an accountant.\n\nCover: what the business earned and spent, the three biggest changes from the previous period with the numbers, anything that looks unusual and is worth asking my accountant about, and one question I should ask about cash. Use plain language and do not give tax or legal advice.\n\nReport:\n[paste]"
+    },
+    {
+      "cat": "hr",
+      "title": "Write a job description",
+      "use": "A clear, inclusive job post from a few notes.",
+      "prompt": "Write a job description for a [role] at [business name], a [type of business] in [location or remote].\n\nWhat this person will do: [notes]\nMust-haves: [list]\nNice-to-haves: [list]\nPay range and benefits: [details]\n\nFormat: a two-sentence intro about the role, what you will do (bullets), what you bring (bullets, must-haves only), nice to have, pay and benefits, and how to apply. Use inclusive language and avoid jargon and unnecessary requirements."
+    },
+    {
+      "cat": "hr",
+      "title": "Screen applications against criteria",
+      "use": "A consistent first-pass summary of applications for a person to decide on.",
+      "prompt": "Compare the application below with these criteria: [list criteria].\n\nFor each criterion, say whether the application shows evidence (yes, partial, no) and quote the evidence. Then list questions to ask in an interview. Do not score or reject the candidate, do not consider age, gender, ethnicity, or other protected characteristics, and do not infer anything not stated.\n\nApplication:\n[paste]"
+    },
+    {
+      "cat": "hr",
+      "title": "Build a new-hire onboarding plan",
+      "use": "A first-two-weeks plan with tasks, training, and check-ins.",
+      "prompt": "Create a two-week onboarding plan for a new [role].\n\nTools they need access to: [list]\nTraining they need: [list]\nWho they will work with: [names and roles]\n\nOrganize by day for week one and by goal for week two. Include accounts to set up before day one, a short welcome message from the manager, check-in meetings, and one small real task they can finish in week one."
+    },
+    {
+      "cat": "automation",
+      "title": "Find automation opportunities in a process",
+      "use": "Map a process and spot the steps worth automating.",
+      "prompt": "I will describe a process in my business. Break it into numbered steps, and for each step identify: who does it, which tool or system it happens in, the trigger that starts it, and whether it is (a) rule-based and automatable, (b) suitable for an AI step with human review, or (c) best left to a person. Then recommend the single highest-value step to automate first and explain why in two sentences.\n\nProcess:\n[describe the process from start to finish]"
+    },
+    {
+      "cat": "automation",
+      "title": "Write the spec for a workflow",
+      "use": "Turn an idea into a clear trigger, steps, and edge cases before you build.",
+      "prompt": "Help me write a specification for an automation.\n\nGoal: [what should happen]\nTools involved: [apps]\n\nReturn: Trigger (exactly what event starts it), Inputs (data available at the trigger), Steps (numbered, one action each, naming the app), Conditions and branches, Outputs, Edge cases and how to handle each one, What to log, and Who gets alerted when it fails. Ask me questions about anything ambiguous at the end."
+    },
+    {
+      "cat": "automation",
+      "title": "Write test cases for an automation",
+      "use": "Realistic examples to test a workflow before it goes live.",
+      "prompt": "Write test cases for this automation: [describe trigger and steps].\n\nInclude 10 cases: 4 normal cases with realistic data, 3 edge cases (missing fields, duplicates, unusual formats), and 3 failure cases (an app is down, a value is invalid, a person needs to step in). For each, give the input, the expected result, and what should be logged or alerted."
+    },
+    {
+      "cat": "automation",
+      "title": "Improve an AI prompt used in an automation",
+      "use": "Make a prompt that runs inside a workflow more reliable.",
+      "prompt": "Here is a prompt used inside an automated workflow, plus examples of outputs that went wrong.\n\nPrompt:\n[paste]\n\nBad outputs and what was wrong with each:\n[paste]\n\nRewrite the prompt to be more reliable. Make the task and output format explicit, add rules that prevent the failures shown, include one short example of correct output, and tell the model what to do when it is unsure. Explain each change in one line."
+    },
+    {
+      "cat": "automation",
+      "title": "Choose between Zapier, Make, n8n, or custom",
+      "use": "A structured recommendation for which platform fits a workflow.",
+      "prompt": "Recommend an automation approach for this workflow: [describe it].\n\nOur context: monthly volume [number of runs], apps involved [list], technical comfort [low / medium / high], budget [range], data sensitivity [low / medium / high].\n\nCompare Zapier, Make, n8n (cloud or self-hosted), and a custom build on: setup effort, running cost at our volume, flexibility, reliability, and data control. Recommend one with reasons, and list what would change your recommendation. Note that pricing changes often and should be checked on each vendor's site."
+    }
+  ],
+  "explainer": "<h2>How to get reliable results from these prompts</h2><ul><li><strong>Give context.</strong> The bracketed parts matter most. The model only knows what you tell it about your business, customer, and goal.</li><li><strong>Ask for a format.</strong> Word limits, bullet lists, tables, and JSON make output easier to use and to check.</li><li><strong>Tell it what not to do.</strong> Rules such as \"do not invent facts\" and \"say unclear if unsure\" reduce confident mistakes.</li><li><strong>Review before it reaches a customer.</strong> Treat AI output as a first draft, especially for anything involving money, health, legal matters, or commitments.</li><li><strong>Protect sensitive data.</strong> Use business plans that do not train on your data, and leave out personal details a task does not need.</li></ul><h2>From prompt to automation</h2><p>Prompts marked for use inside an automation (classifying email, extracting data) are written to return predictable output, such as JSON with fixed keys. That is what lets a workflow tool like Zapier, Make, or n8n read the answer and take the next step automatically. Learn how in our guide to <a href=\"/guides/ai-workflow-automation/\">AI workflow automation</a> and lesson two of the free <a href=\"/learn/ai-at-work-101/\">AI at Work 101</a> course.</p>",
+  "faq": [
+    ["Which AI tool should I use these prompts with?", "<p>Any capable AI assistant or model API works, including the chat assistants from the major AI providers. For automations, the same prompts can run through an API step in Zapier, Make, n8n, or custom code.</p>"],
+    ["What makes a good AI prompt for business?", "<p>A clear role or task, the context the model needs, the exact output format, and rules about what to avoid. Short, specific prompts with an example of good output beat long, vague ones.</p>"],
+    ["Is it safe to paste customer data into AI tools?", "<p>Only into tools whose business terms you have reviewed, and only the data the task needs. Many business and API plans do not train on your data by default, but check your provider's terms and any industry rules, such as HIPAA, that apply to you.</p>"]
+  ],
+  "related": [
+    ["Writing prompts that get reliable results (lesson)", "/learn/ai-at-work-101/writing-prompts-that-work/", "school"],
+    ["AI workflow automation guide", "/guides/ai-workflow-automation/", "book"],
+    ["AI cost calculator", "/tools/ai-cost-calculator/", "bot"],
+    ["What is an AI agent?", "/guides/what-is-an-ai-agent/", "sparkles"]
+  ]
+}

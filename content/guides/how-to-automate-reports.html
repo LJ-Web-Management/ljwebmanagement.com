@@ -1,0 +1,85 @@
+<!--
+{
+  "title": "How to Automate Reports and Dashboards",
+  "seoTitle": "How to Automate Reports: Weekly KPIs, Dashboards, and Alerts",
+  "description": "How to automate business reports: choose the few numbers that matter, connect data sources, build a live dashboard, schedule summaries, and add alerts and AI commentary.",
+  "eyebrow": "How to automate",
+  "icon": "chart",
+  "order": 14,
+  "group": "how-to",
+  "category": "reporting-analytics",
+  "keywords": ["report", "dashboard", "summary", "kpi", "digest"],
+  "published": "2026-10-25",
+  "related": ["how-to-automate-data-entry", "automation-roi", "how-to-automate-your-business"],
+  "tools": [["Time savings calculator", "/tools/time-savings-calculator/", "clock"], ["Prompt: weekly operations report", "/tools/ai-prompt-library/#prompt-draft-a-weekly-operations-report", "message"]],
+  "keyPoints": [
+    "Decide on the five to ten numbers that drive decisions before automating anything.",
+    "Connect data sources once, then let a dashboard update itself and a scheduled summary deliver it.",
+    "Alerts on thresholds are often more useful than a report nobody opens.",
+    "AI can turn numbers into a short written summary, but the calculations should come from your systems."
+  ],
+  "faq": [
+    ["How do I automate a weekly report?", "<p>Identify where each number comes from, connect those sources to a spreadsheet or dashboard tool with integrations or scheduled imports, build the report once, and schedule an automation to refresh it and send a summary by email or chat at the same time every week.</p>"],
+    ["What tools can automate business reports?", "<p>Spreadsheets with connected data (Excel with Power Query, Google Sheets with connectors), business intelligence tools such as Looker Studio or Power BI, the built-in reporting in your CRM or accounting software, and automation platforms that pull data on a schedule and send summaries.</p>"],
+    ["Can AI write my business reports?", "<p>AI can write a clear narrative summary of numbers you provide, highlighting changes and questions worth asking. The figures themselves should be calculated by your systems or spreadsheet, not by the AI, and the summary should be checked against the data.</p>"],
+    ["How do I automate reports in Excel?", "<p>Use Power Query to import and clean data from your sources, PivotTables or formulas to calculate the report, and refresh it with one click or on a schedule. Power Automate can refresh, save, and email the file automatically.</p>"]
+  ]
+}
+-->
+<p><strong>To automate reports, choose the few numbers that drive decisions, connect each data source once to a spreadsheet or dashboard tool, build the report one time, and schedule an automation to refresh it and deliver a summary by email or chat.</strong> Add threshold alerts for the numbers that need attention between reports, and optionally an AI step that writes a short commentary on what changed.</p>
+<p>Many small businesses lose hours every week exporting data, pasting it into spreadsheets, and rebuilding the same charts. This guide shows how to make reporting run itself.</p>
+
+<h2>Step 1: Decide what is worth reporting</h2>
+<p>Automation makes reports easy to produce, which makes it tempting to report on everything. Resist that. Choose five to ten numbers that actually change decisions, such as:</p>
+<table>
+<thead><tr><th>Area</th><th>Example metrics</th></tr></thead>
+<tbody>
+<tr><td>Sales</td><td>New leads, response time, appointments booked, close rate, revenue booked</td></tr>
+<tr><td>Operations</td><td>Jobs completed, on-time rate, backlog, utilization</td></tr>
+<tr><td>Finance</td><td>Invoiced, collected, overdue balance, days to get paid, cash on hand</td></tr>
+<tr><td>Customers</td><td>No-show rate, new reviews and rating, support tickets open, response time</td></tr>
+</tbody>
+</table>
+<p>For each, note where the data lives and how it should be calculated. Agree on definitions, such as what counts as a "lead," before automating.</p>
+
+<h2>Step 2: Connect the data sources</h2>
+<ul>
+<li><strong>Built-in reporting:</strong> CRMs, accounting tools, and schedulers often have dashboards and scheduled email reports. Use them for single-app numbers.</li>
+<li><strong>Connected spreadsheets:</strong> Excel's Power Query or Google Sheets connectors import data from files, databases, and apps on refresh.</li>
+<li><strong>Automation platforms:</strong> Zapier, Make, or n8n can pull figures from several apps on a schedule and write them to a sheet or database.</li>
+<li><strong>Business intelligence tools:</strong> Looker Studio, Power BI, and similar tools connect to many sources and build interactive dashboards.</li>
+</ul>
+<p>Moving data from many sources into one place, cleaning it, and loading it into a reporting tool is called ETL (extract, transform, load). For small businesses it can be as simple as a scheduled automation writing rows to a sheet.</p>
+
+<h2>Step 3: Build the report once</h2>
+<p>Build the dashboard or spreadsheet so it calculates everything from the connected data with no manual steps. Show the current period next to the previous one and the target, so changes are obvious at a glance.</p>
+
+<h2>Step 4: Deliver it automatically</h2>
+<p>A dashboard nobody opens does not help. Schedule delivery where people already look:</p>
+<ul>
+<li>A Monday-morning email or chat message with the key numbers and a link to the full dashboard</li>
+<li>A daily summary for time-sensitive operations, such as tomorrow's schedule or yesterday's sales</li>
+<li>A monthly summary for the owner or accountant</li>
+</ul>
+
+<h2>Step 5: Add alerts</h2>
+<p>Often the most valuable "report" is a message that arrives only when something needs attention:</p>
+<ul class="lj-checklist">
+<li>A lead has gone more than an hour without a reply</li>
+<li>An invoice over a set amount is 15 days overdue</li>
+<li>Inventory for a top product falls below its reorder point</li>
+<li>A new review of three stars or less comes in</li>
+<li>Daily bookings fall well below the usual level</li>
+</ul>
+
+<h2>Step 6: Let AI write the commentary</h2>
+<p>An AI step can turn this week's and last week's numbers into a short written summary: three highlights, three concerns, and one suggested focus. Two rules keep it trustworthy: the numbers and percentage changes should come from your systems, not the AI, and the AI should list possible causes as questions rather than state them as facts. The <a href="/tools/ai-prompt-library/">prompt library</a> includes a ready-made weekly report prompt.</p>
+
+<h2>Common mistakes</h2>
+<ul>
+<li><strong>Automating a report nobody uses.</strong> Ask what decision each number informs.</li>
+<li><strong>Inconsistent definitions.</strong> If sales and finance count revenue differently, automation spreads the confusion.</li>
+<li><strong>Fragile manual links.</strong> One hand-edited cell can break an otherwise automated report. Keep inputs and calculations separate.</li>
+<li><strong>No owner.</strong> Someone should notice when a data source stops updating.</li>
+</ul>
+<p>Automated reporting also makes it easy to measure your other automations. See <a href="/guides/automation-roi/">how to calculate automation ROI</a>, or browse <a href="/automations/category/reporting-analytics/">reporting and analytics automations</a> by industry.</p>

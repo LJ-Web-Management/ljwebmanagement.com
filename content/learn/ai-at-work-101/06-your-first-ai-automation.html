@@ -1,0 +1,71 @@
+<!--
+{
+  "title": "Planning your first AI automation",
+  "description": "A step-by-step plan for your first AI automation project: choosing the task, defining success, designing the workflow, piloting with human review, and scaling.",
+  "minutes": 9,
+  "keyPoints": [
+    "Choose a frequent, language-heavy task with a clear definition of a good result.",
+    "Define success with a baseline and a target before building anything.",
+    "Design the workflow with rules, an AI step, validation, and human review.",
+    "Pilot on real examples, measure edit rates, and expand autonomy only with evidence."
+  ],
+  "check": [
+    { "q": "Which is the best first AI automation project?", "options": ["A fully autonomous agent that runs the whole business", "Drafting replies to routine customer emails for a person to approve", "Automating hiring decisions", "Replacing your accounting system"], "answer": 1, "why": "It is frequent, language-heavy, easy to judge, and safe because a person approves each reply." },
+    { "q": "During a pilot, which metric best shows whether AI drafts are ready for more autonomy?", "options": ["How many emails arrived", "How often a person had to significantly edit or reject the draft", "The length of each draft", "The number of tokens used"], "answer": 1, "why": "A falling edit rate is direct evidence that the AI's output meets your standard for that type of task." },
+    { "q": "What should you do before building the AI step?", "options": ["Nothing; start building", "Record a baseline and define what a good result looks like", "Buy the largest AI model", "Announce it to customers"], "answer": 1, "why": "Without a baseline and a quality standard, you cannot judge whether the project worked." }
+  ]
+}
+-->
+<p>You now know how language models work, how to prompt them, where they fit in a workflow, and how to keep them safe. This final lesson puts it together into a plan you can use for your first AI automation project, whether you build it yourself or with a partner.</p>
+
+<h2>Step 1: Choose the right first task</h2>
+<p>A good first AI project is:</p>
+<ul class="lj-checklist">
+<li><strong>Frequent:</strong> it happens daily, so the time savings are real and you get lots of examples to learn from</li>
+<li><strong>Language-heavy:</strong> it involves reading, sorting, summarizing, extracting, or writing</li>
+<li><strong>Easy to judge:</strong> a person can quickly tell a good result from a bad one</li>
+<li><strong>Low risk:</strong> a mistake can be caught before it matters</li>
+</ul>
+<p>Strong candidates: sorting a shared inbox, drafting replies to routine questions, summarizing calls into CRM notes, extracting data from invoices or forms, and turning meeting notes into action items. Use the <a href="/tools/automation-priority-scorer/">priority scorer</a> to compare your options.</p>
+
+<h2>Step 2: Define success</h2>
+<p>Before building, write down:</p>
+<ul>
+<li><strong>The baseline:</strong> how long the task takes today, how many per week, and the current error rate or delay.</li>
+<li><strong>The quality bar:</strong> what a good output looks like, ideally with a few real examples.</li>
+<li><strong>The target:</strong> for example, "cut time spent on inbox triage from six hours a week to one, with fewer than 5% of emails misrouted."</li>
+</ul>
+
+<h2>Step 3: Design the workflow</h2>
+<p>Sketch it using the pattern from lesson three:</p>
+<ol>
+<li><strong>Trigger:</strong> what starts it (a new email, a new file, a finished call)</li>
+<li><strong>Prepare:</strong> gather and trim the input; retrieve any reference information the AI needs</li>
+<li><strong>AI step:</strong> your tested prompt, with a fixed output format</li>
+<li><strong>Validate:</strong> rule-based checks on the output</li>
+<li><strong>Review:</strong> a person approves, edits, or rejects (at least during the pilot)</li>
+<li><strong>Act:</strong> update the CRM, send the reply, file the document</li>
+<li><strong>Log:</strong> keep the input, output, and any edits</li>
+</ol>
+<p>Estimate the running cost with the <a href="/tools/ai-cost-calculator/">AI cost calculator</a>. For most first projects it is small next to the time saved.</p>
+
+<h2>Step 4: Pilot with real examples</h2>
+<ul>
+<li>Test the prompt on 20 or more real past examples before going live, and fix failure patterns.</li>
+<li>Run the pilot for two to four weeks with human review on every output.</li>
+<li>Track the <strong>edit rate</strong>: how often the reviewer had to meaningfully change or reject the output, by category.</li>
+<li>Collect the team's feedback weekly. They will spot problems and improvements faster than any dashboard.</li>
+</ul>
+
+<h2>Step 5: Expand carefully</h2>
+<p>When the edit rate for a category is consistently low, consider letting that category run without approval, while still reviewing a random sample each week. Keep human approval for sensitive categories indefinitely. Then compare against your baseline, write up the result, and pick the next project.</p>
+<div class="lj-callout"><strong>A realistic expectation</strong><p>The first AI automation usually takes longer to get right than people expect, mostly in testing and refining the prompt. The second one goes much faster, because the patterns, review habits, and integrations are already in place.</p></div>
+
+<h2>You have finished the course</h2>
+<p>You now have the foundations to plan, build, and run AI automations responsibly. Here is where to go next:</p>
+<ul>
+<li>See how your business scores with the <a href="/quizzes/ai-readiness-assessment/">AI readiness assessment</a>.</li>
+<li>Copy proven prompts from the <a href="/tools/ai-prompt-library/">AI prompt library</a>.</li>
+<li>Read <a href="/guides/ai-workflow-automation/">AI workflow automation</a> for more examples by department.</li>
+<li>Want an expert to build it with you? <a href="/appointment/">Book a free consultation</a>.</li>
+</ul>
