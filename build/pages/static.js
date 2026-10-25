@@ -54,7 +54,7 @@ function home(cat, guides, extra) {
   const course = extra.courses[0];
   const readiness = extra.quizzes.find((q) => q.url === "/quizzes/ai-readiness-assessment/") || extra.quizzes[0];
   const tile = (href, ic, title, sub) => '<a class="lj-itile" href="' + href + '"><span class="lj-itile-icon">' + icon(ic) + "</span><span><strong>" + title + "</strong><small>" + sub + "</small></span></a>";
-  const faq = L.faq(content("faq.json")[0].items.slice(0, 5), { openFirst: true });
+  const faq = L.faq(content("faq.json")[0].items.slice(0, 5));
 
   const main = `
 <section class="lj-hero">
@@ -206,7 +206,7 @@ function home(cat, guides, extra) {
 
 <section class="lj-section">
   <div class="lj-container lj-container--narrow">
-    ${L.sectionHead("FAQ", "Questions we hear every week", "")}
+    ${L.sectionHead("FAQ", "Questions we hear every day", "")}
     ${faq.html}
     <p class="lj-center lj-mt-lg"><a class="lj-btn lj-btn-ghost" href="/faq/">See all FAQs</a></p>
   </div>

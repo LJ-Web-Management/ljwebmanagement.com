@@ -109,13 +109,13 @@ function breadcrumbs(items) {
 }
 
 // Visible FAQ list plus the matching FAQPage schema node. Answers are HTML.
-function faq(items, opts) {
+function faq(items) {
   const html =
     '<div class="lj-faq">' +
     items
       .map(
-        ([q, a], i) =>
-          "<details" + (opts && opts.openFirst && i === 0 ? " open" : "") + "><summary>" + escapeHtml(q) + '</summary><div class="lj-faq-answer">' + a + "</div></details>"
+        ([q, a]) =>
+          "<details><summary>" + escapeHtml(q) + '</summary><div class="lj-faq-answer">' + a + "</div></details>"
       )
       .join("") +
     "</div>";
