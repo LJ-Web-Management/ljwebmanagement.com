@@ -22,16 +22,18 @@
 <link rel="alternate" type="application/rss+xml" title="LJ Web Management Blog" href="https://blog.ljwebmanagement.com/feed.xml">
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/site.css?v=1bc8adafc7">
+<link rel="stylesheet" href="/assets/css/site.css?v=de2d153a2e">
 <script>document.documentElement.classList.add('lj-js')</script>
-<script src="/assets/js/site.js?v=01bf1f68fd" defer></script>
+<script src="/assets/js/site.js?v=015d50ac44" defer></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://www.ljwebmanagement.com/#organization","name":"LJ Web Management","url":"https://www.ljwebmanagement.com/","logo":"https://www.ljwebmanagement.com/assets/lj-logo.webp","image":"https://www.ljwebmanagement.com/assets/lj-logo.webp","description":"LJ Web Management is a business automation company that builds custom AI workflow automation systems, removing repetitive tasks and bottlenecks by connecting the business tools teams already use.","telephone":"+1-877-559-3268","email":"info@ljwebmanagement.com","address":{"@type":"PostalAddress","streetAddress":"1108 E 9th St.","addressLocality":"Lockport","addressRegion":"IL","postalCode":"60441","addressCountry":"US"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59","description":"Available by appointment"},"priceRange":"$$","sameAs":["https://www.linkedin.com/company/ljwebmanagement/","https://www.instagram.com/ljwebmanagement/","https://x.com/lj_web_mgmt"]},{"@type":"Service","@id":"https://www.ljwebmanagement.com/automations/general-business/company-wide-announcement-broadcast-system/#service","name":"Company-Wide Announcement Broadcast System","description":"When leadership needs to get an announcement in front of every employee at once, whether it's a policy change, a snow day closure, or a major company update, the workflow pushes it out across every channel simultaneously instead of relying on one email that half the company won't open until tomorrow. A single message drafted by the chief operating officer in a shared Google Doc triggers a Slack post to the company-wide channel, an email through Microsoft 365 to every distribution list, and, for time-sensitive alerts like a building closure, a text blast to all employees through Twilio. The workflow tracks open and read rates where available and flags any employee who hasn't acknowledged a required-read policy update within twenty-four hours. Critical information reaches the entire company within minutes instead of trickling out over a full day.","serviceType":"HR, Hiring & Team Management automation","category":"General Business","url":"https://www.ljwebmanagement.com/automations/general-business/company-wide-announcement-broadcast-system/","provider":{"@id":"https://www.ljwebmanagement.com/#organization"},"areaServed":{"@type":"Country","name":"United States"},"audience":{"@type":"BusinessAudience","audienceType":"Chief Operating Officer, General Business"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.ljwebmanagement.com/"},{"@type":"ListItem","position":2,"name":"Automations","item":"https://www.ljwebmanagement.com/automations/"},{"@type":"ListItem","position":3,"name":"General Business","item":"https://www.ljwebmanagement.com/automations/general-business/"},{"@type":"ListItem","position":4,"name":"Company-Wide Announcement Broadcast System","item":"https://www.ljwebmanagement.com/automations/general-business/company-wide-announcement-broadcast-system/"}]}]}</script>
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});gtag('js',new Date());
 window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]).push(arguments);};
 (function(){var loaded=false,armed=false,ev=['pointerdown','mousemove','scroll','touchstart','keydown'];
-function allowed(){var m=document.cookie.match(/(?:^|;\s*)lj_consent=([^;]*)/);if(!m)return false;var v=decodeURIComponent(m[1]).split('|');return v[0]==='v1'&&v[1]==='a1';}
+function choice(){var m=document.cookie.match(/(?:^|;\s*)lj_consent=([^;]*)/);if(!m)return null;var v=decodeURIComponent(m[1]).split('|');return v[0]==='v1'?v[1]==='a1':null;}
+function signal(){return navigator.globalPrivacyControl===true||navigator.doNotTrack==='1'||window.doNotTrack==='1';}
+function allowed(){var c=choice();return c===null?!signal():c;}
 function add(s){var e=document.createElement('script');e.async=true;e.src=s;document.head.appendChild(e);}
 function load(){if(loaded||!allowed())return;loaded=true;ev.forEach(function(e){window.removeEventListener(e,load);});gtag('consent','update',{analytics_storage:'granted'});gtag('config','G-SFXD7K93JS',{allow_google_signals:false,allow_ad_personalization_signals:false});clarity('consentv2',{ad_Storage:'denied',analytics_Storage:'granted'});add('https://www.googletagmanager.com/gtag/js?id=G-SFXD7K93JS');add('https://www.clarity.ms/tag/ylzewu0va8');}
 function arm(){if(armed||!allowed())return;armed=true;ev.forEach(function(e){window.addEventListener(e,load,{passive:true});});}
@@ -256,11 +258,11 @@ window.ljAnalytics={allowed:allowed,arm:arm,loaded:function(){return loaded;}};a
   <div class="lj-consent-inner">
     <div class="lj-consent-text">
       <h2 id="lj-consent-title">Your privacy choices</h2>
-      <p>With your permission, we use analytics cookies (Google Analytics and Microsoft Clarity, which can record how you use our pages) to understand and improve this site. They stay off unless you accept. We do not sell or share your personal information or use advertising cookies. <a href="/privacy-policy/#cookies">Privacy Policy</a></p>
+      <p>We use cookies for analytics (Google Analytics and Microsoft Clarity, which can record how you use our pages) to understand and improve this site. We do not sell or share your personal information or use advertising cookies. You can opt out at any time. <a href="/privacy-policy/#cookies">Privacy Policy</a></p>
     </div>
     <div class="lj-consent-actions">
-      <button type="button" class="lj-btn lj-btn-primary lj-btn-sm" data-lj-consent-set="1">Accept analytics</button>
-      <button type="button" class="lj-btn lj-btn-primary lj-btn-sm" data-lj-consent-set="0">Reject analytics</button>
+      <button type="button" class="lj-btn lj-btn-primary lj-btn-sm" data-lj-consent-set="1">OK</button>
+      <button type="button" class="lj-btn lj-btn-primary lj-btn-sm" data-lj-consent-set="0">Opt out</button>
       <button type="button" class="lj-btn lj-btn-ghost lj-btn-sm" data-lj-consent-open>Settings</button>
     </div>
   </div>
@@ -271,45 +273,25 @@ window.ljAnalytics={allowed:allowed,arm:arm,loaded:function(){return loaded;}};a
     <button type="button" class="lj-popup-close" data-lj-consent-close aria-label="Close privacy settings"><svg class="lj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12"/><path d="M18 6L6 18"/></svg></button>
   </div>
   <div class="lj-consent-panel-body">
-    <p>Choose which optional technologies we may use. You can change this at any time from <strong>Your Privacy Choices</strong> at the bottom of every page.</p>
+    <p>Analytics are on unless you turn them off. You can change this at any time from <strong>Your Privacy Choices</strong> at the bottom of every page.</p>
     <p class="lj-consent-signal" data-lj-consent-signal hidden>Your browser sent a Global Privacy Control or Do Not Track signal, so optional analytics are off. You can still turn them on below if you want to.</p>
     <div class="lj-consent-cat"><div><p class="lj-consent-cat-title">Strictly necessary</p><p>Remember your privacy choices (a first-party cookie named <code>lj_consent</code>, kept for 12 months) and on-device preferences such as course progress and the blog newsletter pop-up (browser local storage). We use these only to apply your choices, never to identify or track you.</p></div><span class="lj-tag">Always on</span></div>
     <div class="lj-consent-cat"><div><p class="lj-consent-cat-title"><label for="lj-consent-analytics">Analytics</label></p><p>Google Analytics measures visits, pages, devices, and approximate location. Microsoft Clarity records clicks, scrolling, and page interactions to create heatmaps and session recordings. Google signals and ad personalization are turned off.</p></div><input type="checkbox" class="lj-switch" id="lj-consent-analytics" role="switch"></div>
     <div class="lj-consent-cat"><div><p class="lj-consent-cat-title">Selling, sharing, and targeted advertising</p><p>We do not sell or share personal information, use advertising cookies, or engage in targeted advertising. Turning analytics off stops all optional measurement.</p></div><span class="lj-tag">Never used</span></div>
-    <div class="lj-consent-cat"><div><p class="lj-consent-cat-title">Live chat and forms</p><p>Live chat (Tawk.to) loads only when you choose to start a chat. Forms (Typeform) load on the pages where you fill them in, and the information you enter goes to Typeform for us.</p></div><span class="lj-tag">Only when used</span></div>
+    <div class="lj-consent-cat"><div><p class="lj-consent-cat-title">Live chat and forms</p><p>Live chat (Tawk.to) loads after you first interact with a page, and receives your messages if you start a chat. Forms (Typeform) load on the pages where you fill them in, and the information you enter goes to Typeform for us.</p></div><span class="lj-tag">Part of the site</span></div>
     <p class="lj-consent-more"><a href="/privacy-choices/">Learn about your privacy rights and how to make a request</a></p>
   </div>
   <div class="lj-consent-panel-foot">
     <button type="button" class="lj-btn lj-btn-primary lj-btn-sm" data-lj-consent-save>Save my choices</button>
-    <button type="button" class="lj-btn lj-btn-ghost lj-btn-sm" data-lj-consent-set="1">Accept analytics</button>
-    <button type="button" class="lj-btn lj-btn-ghost lj-btn-sm" data-lj-consent-set="0">Reject analytics</button>
+    <button type="button" class="lj-btn lj-btn-ghost lj-btn-sm" data-lj-consent-set="1">Allow analytics</button>
+    <button type="button" class="lj-btn lj-btn-ghost lj-btn-sm" data-lj-consent-set="0">Opt out of analytics</button>
   </div>
 </dialog>
 
-<div class="lj-chat" data-lj-chat hidden>
-  <div class="lj-chat-notice" id="lj-chat-notice" role="dialog" aria-modal="false" aria-labelledby="lj-chat-notice-title" hidden>
-    <p class="lj-chat-notice-title" id="lj-chat-notice-title">Chat with our team</p>
-    <p>Live chat is provided by Tawk.to. Your messages and basic technical details (such as your IP address and the page you are on) are sent to Tawk.to and kept as a record of the conversation. See our <a href="https://www.ljwebmanagement.com/privacy-policy/#chat">Privacy Policy</a>.</p>
-    <div class="lj-chat-notice-actions"><button type="button" class="lj-btn lj-btn-primary lj-btn-sm" data-lj-chat-start>Start chat</button><button type="button" class="lj-btn lj-btn-ghost lj-btn-sm" data-lj-chat-cancel>Not now</button></div>
-  </div>
-  <button type="button" class="lj-chat-launcher" data-lj-chat-open aria-expanded="false" aria-controls="lj-chat-notice"><svg class="lj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 21l1.4-4.5A8.5 8.5 0 1 1 20.5 12z"/><path d="M8.5 12h.01"/><path d="M12 12h.01"/><path d="M15.5 12h.01"/></svg><span>Chat with us</span></button>
-</div>
 <script>
 var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();
-(function(){var KEY='lj-chat',root=document.querySelector('[data-lj-chat]');if(!root)return;var notice=root.querySelector('#lj-chat-notice'),launcher=root.querySelector('[data-lj-chat-open]'),loaded=false,openOnLoad=false,userOpened=false;
-function agreed(){try{return localStorage.getItem(KEY)==='1';}catch(e){return false;}}
-function load(open){openOnLoad=open;if(loaded){if(open&&Tawk_API.maximize){userOpened=true;Tawk_API.maximize();}return;}loaded=true;var s=document.createElement('script');s.async=true;s.src='https://embed.tawk.to/6a5c3cb0940f101d5323afce/1jts4q4bq';s.charset='UTF-8';s.setAttribute('crossorigin','*');document.body.appendChild(s);}
-function showNotice(show){notice.hidden=!show;launcher.setAttribute('aria-expanded',show?'true':'false');if(show){var b=notice.querySelector('[data-lj-chat-start]');b&&b.focus();}}
-window.addEventListener('blur',function(){if(document.activeElement&&document.activeElement.tagName==='IFRAME'){userOpened=true;setTimeout(function(){userOpened=false;},1500);}});
-Tawk_API.onLoad=function(){root.hidden=true;if(openOnLoad){userOpened=true;Tawk_API.maximize();setTimeout(function(){userOpened=false;},1500);}else{Tawk_API.minimize();}};
-Tawk_API.onChatMaximized=function(){if(!userOpened&&!openOnLoad){Tawk_API.minimize();}openOnLoad=false;};
-launcher.addEventListener('click',function(){if(agreed()){launcher.disabled=true;load(true);}else{showNotice(notice.hidden);}});
-root.querySelector('[data-lj-chat-start]').addEventListener('click',function(){try{localStorage.setItem(KEY,'1');}catch(e){}showNotice(false);launcher.disabled=true;load(true);});
-root.querySelector('[data-lj-chat-cancel]').addEventListener('click',function(){showNotice(false);launcher.focus();});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!notice.hidden){showNotice(false);launcher.focus();}});
-root.hidden=false;
-if(agreed()){var ev=['mousemove','scroll','touchstart','keydown','click'],go=function(){ev.forEach(function(x){window.removeEventListener(x,go);});load(false);};ev.forEach(function(x){window.addEventListener(x,go,{passive:true});});}
-})();
+(function(){var opened=false;window.addEventListener('blur',function(){if(document.activeElement&&document.activeElement.tagName==='IFRAME'){opened=true;setTimeout(function(){opened=false;},1500);}});Tawk_API.onLoad=function(){Tawk_API.minimize();};Tawk_API.onChatMaximized=function(){if(!opened){Tawk_API.minimize();}};})();
+(function(){var loaded=false;function load(){if(loaded)return;loaded=true;var b=document.getElementById('lj-consent');if(b&&!b.hidden){var r=b.getBoundingClientRect();if(r.right>window.innerWidth-110){var y=Math.round(window.innerHeight-r.top)+12;Tawk_API.customStyle={visibility:{desktop:{position:'br',xOffset:20,yOffset:y},mobile:{position:'br',xOffset:10,yOffset:y}}};}}var s=document.createElement('script');s.async=true;s.src='https://embed.tawk.to/6a5c3cb0940f101d5323afce/1jts4q4bq';s.charset='UTF-8';s.setAttribute('crossorigin','*');document.body.appendChild(s);}['mousemove','scroll','touchstart','keydown','click'].forEach(function(e){window.addEventListener(e,load,{passive:true,once:true});});})();
 </script>
 </body>
 </html>
