@@ -22,14 +22,20 @@
 <link rel="alternate" type="application/rss+xml" title="LJ Web Management Blog" href="https://blog.ljwebmanagement.com/feed.xml">
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/site.css?v=7e8afbc538">
+<link rel="stylesheet" href="/assets/css/site.css?v=1bc8adafc7">
 <script>document.documentElement.classList.add('lj-js')</script>
-<script src="/assets/js/site.js?v=bdd64519d4" defer></script>
+<script src="/assets/js/site.js?v=01bf1f68fd" defer></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","@id":"https://www.ljwebmanagement.com/#organization","name":"LJ Web Management","url":"https://www.ljwebmanagement.com/","logo":"https://www.ljwebmanagement.com/assets/lj-logo.webp","image":"https://www.ljwebmanagement.com/assets/lj-logo.webp","description":"LJ Web Management is a business automation company that builds custom AI workflow automation systems, removing repetitive tasks and bottlenecks by connecting the business tools teams already use.","telephone":"+1-877-559-3268","email":"info@ljwebmanagement.com","address":{"@type":"PostalAddress","streetAddress":"1108 E 9th St.","addressLocality":"Lockport","addressRegion":"IL","postalCode":"60441","addressCountry":"US"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59","description":"Available by appointment"},"priceRange":"$$","sameAs":["https://www.linkedin.com/company/ljwebmanagement/","https://www.instagram.com/ljwebmanagement/","https://x.com/lj_web_mgmt"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.ljwebmanagement.com/"},{"@type":"ListItem","position":2,"name":"Privacy Policy","item":"https://www.ljwebmanagement.com/privacy-policy/"}]}]}</script>
 <script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SFXD7K93JS');
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied'});gtag('js',new Date());
 window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]).push(arguments);};
-(function(){var loaded=false,ev=['pointerdown','mousemove','scroll','touchstart','keydown'];function add(s){var e=document.createElement('script');e.async=true;e.src=s;document.head.appendChild(e);}function load(){if(loaded)return;loaded=true;ev.forEach(function(e){window.removeEventListener(e,load);});add('https://www.googletagmanager.com/gtag/js?id=G-SFXD7K93JS');add('https://www.clarity.ms/tag/ylzewu0va8');}ev.forEach(function(e){window.addEventListener(e,load,{passive:true});});})();
+(function(){var loaded=false,armed=false,ev=['pointerdown','mousemove','scroll','touchstart','keydown'];
+function allowed(){var m=document.cookie.match(/(?:^|;\s*)lj_consent=([^;]*)/);if(!m)return false;var v=decodeURIComponent(m[1]).split('|');return v[0]==='v1'&&v[1]==='a1';}
+function add(s){var e=document.createElement('script');e.async=true;e.src=s;document.head.appendChild(e);}
+function load(){if(loaded||!allowed())return;loaded=true;ev.forEach(function(e){window.removeEventListener(e,load);});gtag('consent','update',{analytics_storage:'granted'});gtag('config','G-SFXD7K93JS',{allow_google_signals:false,allow_ad_personalization_signals:false});clarity('consentv2',{ad_Storage:'denied',analytics_Storage:'granted'});add('https://www.googletagmanager.com/gtag/js?id=G-SFXD7K93JS');add('https://www.clarity.ms/tag/ylzewu0va8');}
+function arm(){if(armed||!allowed())return;armed=true;ev.forEach(function(e){window.addEventListener(e,load,{passive:true});});}
+window.ljAnalytics={allowed:allowed,arm:arm,loaded:function(){return loaded;}};arm();})();
 </script>
 </head>
 <body class="">
@@ -117,7 +123,8 @@ window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]
       <button type="button" class="lj-search-close" data-lj-search-close aria-label="Close search">Esc</button>
     </div>
     <div class="lj-search-body">
-      <ul class="lj-search-results" id="lj-search-results" role="listbox" aria-label="Search results"></ul>
+      <ul class="lj-search-results" id="lj-search-results" aria-label="Search results"></ul>
+      <p class="lj-sr-only" aria-live="polite" data-lj-search-status></p>
       <div class="lj-search-empty" data-lj-search-hint>
         <p class="lj-search-hint-title">Popular searches</p>
         <div class="lj-chip-row">
@@ -143,24 +150,26 @@ window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]
   </div>
 </section>
 <section class="lj-section">
-  <div class="lj-container lj-container--narrow"><div class="lj-prose lj-legal"><p class="lj-muted"><strong>Effective Date: October 25, 2026</strong></p>
+  <div class="lj-container lj-container--narrow"><div class="lj-prose lj-legal"><p class="lj-muted"><strong>Effective Date: October 25, 2026</strong> &middot; Last updated: October 25, 2026</p>
 <p>This Privacy Policy explains how LJ Web Management, doing business as LJ Web Management ("LJ Web Management," "we," "us," or "our"), collects, uses, discloses, and protects information when you visit <a href="https://www.ljwebmanagement.com/">https://www.ljwebmanagement.com</a> or our blog at <a href="https://blog.ljwebmanagement.com/">https://blog.ljwebmanagement.com</a>, contact us, chat with us, subscribe to our newsletter, schedule an appointment, or use our services.</p>
+<div class="lj-callout"><strong>The short version</strong><ul><li>We collect what you give us (for example, through forms, chat, email, or calls) and basic technical information when you visit.</li><li>Optional analytics (Google Analytics and Microsoft Clarity) run only if you accept them in our cookie banner, and you can change your mind at any time from <a href="/privacy-choices/">Your Privacy Choices</a>.</li><li>We do not sell or share personal information, use advertising cookies, or engage in targeted advertising, and we honor Global Privacy Control signals.</li><li>Any U.S. resident can ask to access, correct, delete, or get a copy of their personal information, and appeal if we say no (see <a href="#your-rights">Section 32</a>).</li></ul></div>
+<p>If you need this Policy in another format because of a disability, contact us using the details in Section 51 and we will provide it in a format that works for you.</p>
 <h2>1. INFORMATION WE COLLECT</h2>
 <p>Information you provide. We may collect your name, email address, telephone number, appointment details, messages, and other information you choose to provide through contact forms, appointment requests, live chat, newsletter sign-ups, consultations, or other communications.</p>
 <p>Customer project information. In some projects, customers may provide business files, records, credentials, workflow information, personal information, confidential information, or other content needed to evaluate, build, operate, maintain, or change an automation. The information collected depends on the project. Customers should provide only information reasonably necessary for the requested services and must have the right to provide it to us.</p>
 <p>Payment and transaction information. If you purchase services, we may collect billing details, transaction records, and information necessary to administer upfront project payments and recurring monthly fees. Payment-card information may be collected and processed directly by a third-party payment processor rather than stored by us.</p>
 <p>Website and technical information. Our website and service providers may automatically collect information such as your IP address, visit date and time, pages or resources accessed, referring page, browser type and version, device or platform information, approximate location, language, and interactions with the website.</p>
-<p>Cookies and analytics. We and our service providers may use essential cookies for website operation, session management, preferences, security, and form functionality. We also use analytics technologies (currently Google Analytics and Microsoft Clarity) to understand website traffic and interactions. Our forms and live chat are provided by third parties that may set their own cookies. See Sections 20 and 21 for details.</p>
+<p>Cookies and analytics. We use one first-party cookie to remember your privacy choices. With your consent, we also use analytics technologies (currently Google Analytics and Microsoft Clarity) to understand website traffic and interactions; they do not run unless you accept them. Our forms and live chat are provided by third parties that may set their own cookies when you use them. See Sections 20 and 21 for details.</p>
 <h2>2. HOW WE USE INFORMATION</h2>
 <p>We may use information to:</p>
 <ul><li>respond to inquiries and schedule or conduct appointments;</li><li>evaluate customer needs and prepare proposals or contracts;</li><li>design, build, test, deliver, maintain, support, or modify automation systems;</li><li>process payments and administer customer relationships;</li><li>operate, secure, troubleshoot, and improve our website and services;</li><li>analyze website traffic and usage;</li><li>communicate service, administrative, security, or policy updates;</li><li>enforce agreements and protect our rights, customers, and others; and</li><li>comply with legal obligations and respond to lawful requests.</li></ul>
 <h2>3. HOW WE DISCLOSE INFORMATION</h2>
 <p>We may disclose information:</p>
 <ul><li>to vendors that provide website hosting, forms, appointments, live chat, analytics, communications, payment processing, cloud hosting, software, security, or other operational services, including the website providers listed in Section 4;</li><li>to contractors or professional advisers who need the information to perform services for us and are subject to appropriate obligations;</li><li>when needed to perform a customer contract or implement a requested automation;</li><li>when required by law, court order, or lawful government request;</li><li>when reasonably necessary to protect rights, safety, property, or the integrity of our services; or</li><li>in connection with a merger, financing, acquisition, sale, reorganization, or transfer of some or all of our business or assets.</li></ul>
-<p>We do not sell personal information for money. If our practices change, we will update this Policy and provide any choices required by applicable law.</p>
+<p>We do not sell personal information or share it for cross-context behavioral advertising, and we do not process it for targeted advertising (see Section 27). If our practices change, we will update this Policy and provide any choices required by applicable law before the change applies.</p>
 <h2>4. THIRD-PARTY SERVICES</h2>
 <p>Our website and blog currently rely on these third-party providers:</p>
-<ul><li>Amazon Web Services (Amazon S3 and Amazon CloudFront), which hosts and delivers the website and blog and may log technical request information;</li><li>Typeform, which provides our contact, appointment, newsletter, and newsletter-unsubscribe forms and receives the information you enter into them;</li><li>Tawk.to, which provides the live chat widget and receives the messages and technical information sent through it;</li><li>Google Analytics, which measures website traffic and usage; and</li><li>Microsoft Clarity, which measures how visitors interact with pages, including heatmaps and session recordings.</li></ul>
+<ul><li>Amazon Web Services (Amazon S3 and Amazon CloudFront), which hosts and delivers the website and blog and may log technical request information;</li><li>Typeform, which provides our contact, appointment, newsletter, and newsletter-unsubscribe forms and receives the information you enter into them;</li><li>Tawk.to, which provides the live chat widget, loads only when you choose to start a chat, and receives the messages and technical information sent through it;</li><li>Google Analytics, which measures website traffic and usage, only if you accept analytics; and</li><li>Microsoft Clarity, which measures how visitors interact with pages, including heatmaps and session recordings, only if you accept analytics.</li></ul>
 <p>These providers may process submitted information, cookies, server logs, browser and device information, and other technical data, some as our service providers and some under their own terms and privacy policies. Payment, automation, or other third-party providers used for customer projects may also process information under their own terms. Links to third-party websites or services are governed by those third parties' policies, not this Policy.</p>
 <h2>5. CUSTOMER DATA AND CONFIDENTIAL INFORMATION</h2>
 <p>The type of data processed for a customer automation varies by project and should be addressed in the applicable proposal, contract, or other written agreement. Customers are responsible for obtaining any notices, permissions, and legal authority needed for LJ Web Management and its providers to process data supplied by or on behalf of the customer. Unless specifically agreed in writing, customers should not provide highly sensitive information that is unnecessary for the services.</p>
@@ -169,7 +178,7 @@ window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]
 <h2>7. DATA SECURITY</h2>
 <p>We use reasonable administrative, technical, and organizational measures designed to protect information. No method of transmission, storage, or processing is completely secure, and we cannot guarantee absolute security.</p>
 <h2>8. YOUR CHOICES AND RIGHTS</h2>
-<p>You may contact us to request access to, correction of, or deletion of personal information we maintain about you. We may need to verify your identity and may retain information when permitted or required by law. Depending on where you live, you may have additional privacy rights. You may control cookies through your browser and any cookie controls presented on our website; disabling some cookies may affect website functionality.</p>
+<p>You may contact us to request access to, correction of, or deletion of personal information we maintain about you. We may need to verify your identity and may retain information when permitted or required by law. Depending on where you live, you may have additional privacy rights. You can change your cookie and analytics choices at any time from <a href="/privacy-choices/">Your Privacy Choices</a>, linked at the bottom of every page, or through your browser settings. Section 32 explains how to make a request and how to appeal a decision.</p>
 <h2>9. CHILDREN'S PRIVACY</h2>
 <p>Our website and services are intended for business users and are not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information to us, please contact us.</p>
 <h2>10. INTERNATIONAL PROCESSING</h2>
@@ -238,35 +247,46 @@ window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]
 <p>We may process information to protect vital interests or for other grounds recognized by applicable law in unusual circumstances.</p>
 <p>The legal basis can vary by activity and jurisdiction. Contact us if you have a question about the basis for a particular activity.</p>
 <h2>19. WEBSITE HOSTING</h2>
-<p>Our website and blog are static websites hosted on Amazon Web Services, using Amazon S3 to store the site files and Amazon CloudFront to deliver them. The websites do not have user accounts, and our own website code does not set cookies. It uses your browser's local storage only for a few on-device preferences: remembering that you joined the newsletter or asked not to see the newsletter pop-up on the blog again, and saving your progress in our free courses and the entries you make in some free tools, such as the automation priority scorer. That information stays in your browser, is not sent to us, and can be cleared at any time through your browser settings.</p>
+<p>Our website and blog are static websites hosted on Amazon Web Services, using Amazon S3 to store the site files and Amazon CloudFront to deliver them. The websites do not have user accounts. Our own website code sets one strictly necessary first-party cookie, <code>lj_consent</code>, which records your analytics choice and the date you made it for 12 months so that the same choice applies on our website and blog. It also uses your browser's local storage for a few on-device preferences: remembering that you joined the newsletter or asked not to see the newsletter pop-up on the blog again, and saving your progress in our free courses and the entries you make in some free tools, such as the automation priority scorer. That information stays in your browser, is not sent to us, and can be cleared at any time through your browser settings.</p>
 <p>When a page or file is requested, our hosting providers may log technical information such as IP address, request date and time, requested resource, browser and device information, and referring page, for delivery, security, and troubleshooting.</p>
 <p>Forms on our website are embedded from Typeform, and live chat is provided by Tawk.to. Information you enter into those features is transmitted to and stored by those providers, and we receive it from them.</p>
 <p>Our hosting arrangements and providers may change. Providers' own privacy and security materials govern their independent obligations and provide current details about their services.</p>
 <p>We will not represent that a particular analytics, advertising, payment, session-recording, form-protection, or integration feature is active unless it is actually in use on our website.</p>
-<h2>20. COOKIES AND SIMILAR TECHNOLOGIES</h2>
+<h2 id="cookies">20. COOKIES AND SIMILAR TECHNOLOGIES</h2>
 <p>A cookie is a small text file or identifier stored by or through a browser. Similar technologies may include local storage, pixels, tags, scripts, and server-side identifiers.</p>
 <p>Essential cookies may be used to deliver website functions, maintain sessions, route traffic, protect forms, prevent abuse, remember security choices, or support content requested by the visitor.</p>
 <p>Preference cookies may remember language, region, time zone, or other choices so that the website can provide a more consistent experience.</p>
 <p>Analytics technologies may measure visits, page views, referrals, general location, device characteristics, navigation, and interactions so that we can understand and improve website performance.</p>
 <p>Third-party content, embedded media, social links, or integrations may allow the applicable third party to receive technical information when the content loads or when a visitor interacts with it.</p>
-<p>The cookies and similar technologies on our website currently come from third-party features: Google Analytics and Microsoft Clarity (analytics), Tawk.to (live chat), and Typeform (embedded forms). Our own website code uses browser local storage only for the on-device preferences described in Section 19, and not for tracking or advertising. Analytics and chat scripts load after a visitor first interacts with a page, for example by scrolling, moving the pointer, or pressing a key.</p>
-<p>Cookie availability and duration vary by provider, configuration, browser, consent choice, and feature. Each provider's privacy materials describe the cookies it uses. The website's cookie notice or cookie-management interface, when displayed, provides additional current information.</p>
+<p>When you first visit, a banner asks whether you accept optional analytics. "Accept analytics" and "Reject analytics" are equally easy to choose, and "Settings" explains each category. Until you accept, analytics scripts are not loaded and analytics cookies are not set. You can change your choice at any time from <a href="/privacy-choices/">Your Privacy Choices</a>; if you withdraw consent, we stop loading analytics and delete the analytics cookies our site can access.</p>
+<table>
+<thead><tr><th>Category</th><th>What it is</th><th>Examples</th><th>When it is used</th></tr></thead>
+<tbody>
+<tr><td>Strictly necessary</td><td>Remembers your privacy choices and on-device preferences</td><td><code>lj_consent</code> cookie (12 months); local storage for course progress, tool entries, and the blog newsletter pop-up</td><td>Always; cannot be switched off on our site</td></tr>
+<tr><td>Analytics</td><td>Measures traffic and how pages are used</td><td>Google Analytics cookies such as <code>_ga</code> and <code>_ga_*</code>; Microsoft Clarity cookies such as <code>_clck</code> and <code>_clsk</code></td><td>Only if you accept analytics</td></tr>
+<tr><td>Live chat</td><td>Provides the Tawk.to chat window</td><td>Cookies and storage set by Tawk.to, for example to keep a conversation open between pages</td><td>Only after you choose to start a chat</td></tr>
+<tr><td>Forms</td><td>Provides the Typeform forms you fill in</td><td>Cookies and storage set by Typeform within its form frame</td><td>On pages with a form, and when you open the newsletter form</td></tr>
+<tr><td>Advertising</td><td>Ad targeting or retargeting</td><td>None</td><td>Never; we do not use advertising cookies or pixels</td></tr>
+</tbody>
+</table>
+<p>Cookie names and durations are set by each provider and may change. Each provider's privacy materials describe the cookies it uses.</p>
 <p>You can use browser settings to block, delete, or receive warnings about cookies. Blocking essential cookies may prevent portions of the website from operating correctly.</p>
 <p>Where required, optional cookies will be subject to the choices presented through an available consent mechanism. A visitor may be able to revise a cookie choice through that mechanism or by clearing stored cookies.</p>
-<p>We do not promise that browser-based Global Privacy Control or Do Not Track signals will be recognized in every context. Where applicable law requires recognition of a valid signal, we will endeavor to process it as legally required.</p>
+<p>Global Privacy Control and Do Not Track. If your browser sends a Global Privacy Control (GPC) signal, we treat it as a request to opt out of the sale or sharing of your personal information and of targeted advertising for that browser, and we keep optional analytics off. We treat a Do Not Track signal the same way. You can still turn analytics on yourself in the privacy settings if you choose. Because the choice is stored in your browser, it applies to that browser and device.</p>
 <h2>21. ANALYTICS</h2>
 <p>We use website analytics to understand general traffic, visitor behavior, page performance, and interactions with inquiry or appointment pathways.</p>
-<p>We currently use Google Analytics and Microsoft Clarity on our website and blog. Google Analytics measures visits, page views, referrals, devices, approximate location, and similar usage information. Microsoft Clarity records how visitors interact with pages, including clicks, scrolling, mouse movement, and page content, to produce heatmaps and session recordings that help us find usability problems.</p>
+<p>With your consent, we use Google Analytics and Microsoft Clarity on our website and blog. Neither runs unless you accept analytics. Google Analytics measures visits, page views, referrals, devices, approximate location, and similar usage information. Microsoft Clarity records how visitors interact with pages, including clicks, scrolling, mouse movement, and page content, to produce heatmaps and session recordings that help us find usability problems.</p>
 <p>Our contact, appointment, and newsletter forms are embedded from Typeform in a separate frame, so the information you type into those forms is collected by Typeform rather than captured in Clarity session recordings.</p>
 <p>Analytics information may include technical, usage, referral, device, approximate-location, and event information. It may be aggregated or associated with online identifiers.</p>
-<p>Analytics providers may set their own cookies or receive information under their own privacy terms. Optional analytics may depend on visitor consent where required.</p>
-<p>We use analytics for measurement and improvement. We do not state in this Policy that we use behavioral advertising or cross-context advertising unless such technology is actually enabled.</p>
+<p>Analytics providers may set their own cookies and receive information under their own privacy terms. We configure Google Analytics with Google signals and ad personalization turned off, and we signal to Microsoft Clarity that advertising storage is not permitted.</p>
+<p>We use analytics only for measurement and improvement, not for advertising. Analytics data is kept according to each provider's retention settings and is not used to identify you by name.</p>
 <h2>22. APPOINTMENTS, CONTACT FORMS, AND COMMUNICATIONS</h2>
 <p>When you request an appointment or contact us, we collect at least the name, email address, telephone number, and information you include in the request.</p>
 <p>Appointment records may be used to confirm, remind, reschedule, cancel, conduct, and follow up on consultations.</p>
 <p>Communications may pass through email, calendar, videoconferencing, telephone, Typeform, the Tawk.to live chat widget, or other tools selected for the interaction.</p>
-<p>If you use live chat, Tawk.to processes your messages, any contact details you provide, and technical information such as IP address, browser, and the page you are viewing, so that we can respond. Chat transcripts may be kept as communication records.</p>
-<p>If you subscribe to our newsletter, we collect the email address and any other details you submit through the sign-up form. You can unsubscribe at any time using the link in a newsletter or the unsubscribe page on our blog.</p>
+<p id="chat">Live chat does not load until you choose to start a chat. The first time, we show a short notice explaining that Tawk.to handles the conversation, and the chat starts only if you agree. If you use live chat, Tawk.to processes your messages, any contact details you provide, and technical information such as IP address, browser, and the page you are viewing, so that we can respond. Chat transcripts may be kept as communication records.</p>
+<p>If you subscribe to our newsletter, we collect the email address and any other details you submit through the sign-up form and use them only to send the newsletter. You can unsubscribe at any time using the link in a newsletter or the unsubscribe page on our blog.</p>
+<p>If you give us your telephone number, we may call or text you about your inquiry, appointment, or project. Message and data rates may apply. You can reply STOP to any text to opt out or HELP for help. We do not sell or share mobile numbers or text-messaging consent with third parties for their marketing.</p>
 <p>Do not assume that ordinary email, voicemail, or form submissions are encrypted end to end. Use a transfer method approved for the project when sending confidential or sensitive material.</p>
 <p>We may keep a record of business communications to provide continuity, document decisions, resolve questions, manage the customer relationship, and meet legal or accounting obligations.</p>
 <p>We do not record telephone or video calls without providing notice or obtaining consent when required by applicable law.</p>
@@ -302,11 +322,12 @@ window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]
 <p>Where legally permitted, we may evaluate the validity and scope of a request, seek clarification, object to an improper request, or notify an affected customer before disclosure.</p>
 <p>We may disclose information in due diligence or a business transaction involving investment, financing, restructuring, sale, merger, acquisition, bankruptcy, or transfer of assets, subject to appropriate confidentiality measures where feasible.</p>
 <p>We may disclose aggregated or deidentified information that does not reasonably identify an individual.</p>
-<h2>27. SALE, SHARING, AND TARGETED ADVERTISING</h2>
-<p>We do not sell personal information for money.</p>
-<p>We do not knowingly sell personal information about children.</p>
-<p>We do not currently state that we share personal information for cross-context behavioral advertising or process it for targeted advertising as those terms are defined by particular state privacy laws.</p>
-<p>Some privacy laws define sale or sharing broadly and may treat certain advertising or analytics disclosures as regulated even when no money changes hands.</p>
+<h2 id="sale-sharing">27. SALE, SHARING, AND TARGETED ADVERTISING</h2>
+<p>We do not sell personal information, for money or anything else of value.</p>
+<p>We do not share personal information for cross-context behavioral advertising, process it for targeted advertising, or use it for profiling that produces legal or similarly significant effects.</p>
+<p>We do not use advertising cookies, pixels, or retargeting on our website or blog. Our optional analytics run only with your consent and are configured not to support advertising.</p>
+<p>We do not sell or share the personal information of consumers under 16 years of age, and we do not have actual knowledge of doing so.</p>
+<p>Some privacy laws define sale or sharing broadly. We honor Global Privacy Control signals and opt-out requests as described in Sections 20 and 32, even though we do not engage in these activities.</p>
 <p>If our use of advertising or analytics technology changes in a way that creates a regulated sale, sharing, or targeted-advertising activity, we will update our notice and provide legally required choices before or when the change applies.</p>
 <p>Service-provider disclosures necessary to operate our business are not intended as sales of personal information.</p>
 <h2>28. DATA MINIMIZATION AND PURPOSE LIMITATION</h2>
@@ -345,11 +366,12 @@ window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]
 <p>Customers should report suspected incidents involving our services promptly to <a href="mailto:info@ljwebmanagement.com">info@ljwebmanagement.com</a> and include enough non-sensitive detail for us to identify the relevant account or project.</p>
 <p>Do not include passwords, full payment-card details, or unnecessary sensitive information in an initial incident email.</p>
 <p>We may preserve logs, restrict access, suspend integrations, rotate credentials, or take other reasonable steps while investigating an incident.</p>
-<h2>32. INDIVIDUAL PRIVACY REQUESTS</h2>
+<h2 id="your-rights">32. INDIVIDUAL PRIVACY REQUESTS</h2>
+<p>Any resident of the United States may ask us to confirm whether we process their personal information and to access it, receive a portable copy, correct inaccuracies, or delete it, whether or not their state's privacy law requires it, subject to verification and the exceptions below. Residents of states with comprehensive privacy laws (including California, Colorado, Connecticut, Delaware, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, and Virginia) may have the rights those laws provide.</p>
 <p>Depending on applicable law, an individual may have rights to know or access personal information, obtain a copy, correct inaccurate information, request deletion, restrict or object to processing, withdraw consent, or receive information in a portable format.</p>
 <p>Some jurisdictions provide rights to opt out of sale, sharing, targeted advertising, or certain profiling. We do not currently describe those activities as part of our ordinary practices, but we will honor rights that legally apply.</p>
 <p>Rights are not absolute. Exceptions may apply for completing transactions, providing requested services, protecting security, preventing fraud, maintaining records, exercising legal rights, complying with law, or protecting another person's rights.</p>
-<p>A request should identify the person, the relationship with LJ Web Management, the relevant email address or telephone number, the approximate interaction date, and the right being requested.</p>
+<p>To make a request, email <a href="mailto:info@ljwebmanagement.com?subject=Privacy%20Request">info@ljwebmanagement.com</a> with the subject line "Privacy Request," call us toll-free at +1 (877) 559-3268, or write to us at the address in Section 51. You can also use <a href="/privacy-choices/">Your Privacy Choices</a> to change cookie and analytics settings. A request should identify the person, the relationship with LJ Web Management, the relevant email address or telephone number, the approximate interaction date, and the right being requested.</p>
 <p>We may request additional information reasonably necessary to verify identity, authority, and the scope of the request.</p>
 <p>We will not request more verification information than reasonably needed. Verification methods may vary based on request sensitivity and the risk of unauthorized disclosure or deletion.</p>
 <p>If we cannot verify a request, we may deny it or limit our response and explain the reason where required.</p>
@@ -357,13 +379,13 @@ window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]
 <p>If information is controlled by one of our business customers, we may direct the requester to that customer and assist as required by law or contract.</p>
 <p>We may charge a fee or decline repetitive, excessive, manifestly unfounded, technically infeasible, or abusive requests where applicable law permits.</p>
 <p>Where the CCPA applies, we aim to confirm receipt within 10 days and substantively respond within 45 days of a verifiable request, with one 45-day extension where reasonably necessary and notice of that extension provided within the initial 45-day period. Where the GDPR or UK GDPR applies, we aim to respond within one month of a verifiable request, extendable by a further two months for complex or numerous requests, with notice of any extension provided within the initial month. For any other applicable law, we aim to respond within the period that law requires, with notice of any permitted extension.</p>
-<p>If a request is denied, the requester may have a right to appeal or complain to a regulator depending on the applicable law.</p>
+<p>Appeals. If we decline to act on your request, in whole or in part, we will explain why. You may appeal by replying to our decision or emailing <a href="mailto:info@ljwebmanagement.com?subject=Privacy%20Appeal">info@ljwebmanagement.com</a> with the subject line "Privacy Appeal" within a reasonable time. We will respond to an appeal in writing within 45 days, explaining the action taken and the reasons. If we deny your appeal, you may contact the Attorney General of your state.</p>
 <p>We do not discriminate against a person for exercising an applicable privacy right.</p>
 <h2>33. COMMUNICATION CHOICES</h2>
 <p>You may ask us to stop promotional email by using an unsubscribe instruction provided in the message or contacting us.</p>
 <p>An opt-out from promotional messages does not prevent transactional, appointment, billing, project, security, legal, or service communications.</p>
 <p>You may ask us to update your business contact details or communication preferences.</p>
-<p>Telephone and text-message choices will be honored as required by applicable law and any consent language presented when a number is collected.</p>
+<p>Telephone and text-message choices will be honored as required by applicable law and any consent language presented when a number is collected. Reply STOP to any text message to stop receiving texts from us.</p>
 <p>We do not state that consent to promotional communications is required to purchase services unless expressly disclosed and legally permitted.</p>
 <h2>34. UNITED STATES STATE PRIVACY NOTICES</h2>
 <p>Privacy rights vary by state and may depend on residency, the nature of the information, the purpose of processing, and whether a law applies to LJ Web Management.</p>
@@ -374,6 +396,19 @@ window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]
 <p>We do not knowingly use sensitive personal information to infer characteristics about individuals for unrelated purposes.</p>
 <p>We do not offer financial incentives in exchange for personal information unless a separate notice describing material terms is provided.</p>
 <p>State-law requests may be subject to verification, exceptions, response periods, appeal processes, and agent requirements described by the applicable law.</p>
+<p>The table below summarizes the categories of personal information we have collected in the past 12 months, where they come from, why we use them, who receives them, and how long we keep them. We do not sell or share any of these categories, and we do not collect sensitive personal information through our website.</p>
+<table>
+<thead><tr><th>Category</th><th>Examples</th><th>Sources</th><th>Purposes</th><th>Disclosed for business purposes to</th><th>Retention</th></tr></thead>
+<tbody>
+<tr><td>Identifiers</td><td>Name, email address, telephone number, IP address, online identifiers</td><td>You; your organization; our service providers</td><td>Responding to inquiries, appointments, services, security, analytics (with consent)</td><td>Hosting, form, chat, email, calendar, and analytics providers; professional advisers</td><td>As long as needed for the relationship and records (Section 29)</td></tr>
+<tr><td>Commercial information</td><td>Proposals, purchases, invoices, payment status</td><td>You; payment providers</td><td>Providing services, billing, accounting, legal compliance</td><td>Payment, accounting, and professional service providers</td><td>As required by tax and accounting law</td></tr>
+<tr><td>Internet or other electronic activity</td><td>Pages viewed, clicks, session recordings, device and browser details</td><td>Your browser, through our hosting and (with consent) analytics providers</td><td>Operating, securing, and improving the website</td><td>Hosting and analytics providers</td><td>Per provider retention settings; hosting logs for security and troubleshooting</td></tr>
+<tr><td>Approximate location</td><td>City or region inferred from IP address</td><td>Your browser, through our providers</td><td>Analytics (with consent), security</td><td>Hosting and analytics providers</td><td>Per provider retention settings</td></tr>
+<tr><td>Professional information</td><td>Company, role, workflows, tools, project requirements</td><td>You; your organization</td><td>Evaluating and delivering automation projects</td><td>Contractors and providers needed for the project</td><td>For the relationship and a reasonable period afterward</td></tr>
+<tr><td>Communications</td><td>Emails, chat transcripts, form messages, meeting notes</td><td>You</td><td>Responding to you, records of decisions, support</td><td>Email, chat, form, and calendar providers</td><td>For the relationship and a reasonable period afterward</td></tr>
+<tr><td>Inferences</td><td>Likely service interests drawn from your inquiry</td><td>Information you provide</td><td>Preparing for consultations and proposals</td><td>Not disclosed outside our service providers</td><td>For the relationship</td></tr>
+</tbody>
+</table>
 <h2>35. ILLINOIS RESIDENTS</h2>
 <p>LJ Web Management is based in Illinois and handles information in accordance with applicable Illinois requirements.</p>
 <p>Illinois law may require notification following certain breaches involving defined categories of personal information.</p>
@@ -382,10 +417,13 @@ window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]
 <p>Certain Illinois laws govern specific information, such as biometric identifiers or health-related data. We do not intentionally collect biometric identifiers through our general website, contact, or appointment forms.</p>
 <p>A customer project involving regulated Illinois data requires advance review and an appropriate written agreement before implementation.</p>
 <h2>36. CALIFORNIA AND OTHER COMPREHENSIVE STATE LAWS</h2>
+<p>California "Shine the Light." We do not disclose personal information to third parties for their own direct marketing purposes.</p>
+<p>Nevada. We do not sell covered information as defined by Nevada law. Nevada residents may still submit a request to opt out of any future sale using the methods in Section 32.</p>
+<p>Consumer health data. Our website does not collect consumer health data as defined by Washington's My Health My Data Act or similar laws. Please do not submit health information through our general forms or chat.</p>
 <p>If a comprehensive state privacy law applies to LJ Web Management and your information, you may have rights described in Section 32 and any additional rights provided by that law.</p>
 <p>The applicability thresholds and exemptions differ by state. Business-contact information, employee information, customer-controlled project data, nonprofit activity, and other categories may be treated differently across laws.</p>
 <p>Nothing in this Policy is intended to provide fewer rights than applicable law.</p>
-<p>We do not extend a jurisdiction-specific statutory right to every person worldwide merely by describing it here, but we may honor requests voluntarily when reasonable and lawful.</p>
+<p>We extend the access, correction, deletion, portability, and opt-out rights described in Section 32 to all U.S. residents. We do not extend every jurisdiction-specific statutory right to every person worldwide merely by describing it here, but we may honor requests voluntarily when reasonable and lawful.</p>
 <h2>37. EEA, UNITED KINGDOM, AND SWITZERLAND</h2>
 <p>If data-protection law in the European Economic Area, United Kingdom, or Switzerland applies, individuals may have rights of access, correction, erasure, restriction, objection, portability, and withdrawal of consent.</p>
 <p>Individuals may also have a right to complain to the supervisory authority in their place of residence, work, or alleged infringement.</p>
@@ -476,7 +514,8 @@ window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]
 <p>1108 E 9th St.</p>
 <p>Lockport, IL 60441</p>
 <p>United States</p>
-<p>Phone: +1 877-559-3268</p>
+<p>Phone (toll-free): +1 877-559-3268</p>
+<p>Email: <a href="mailto:info@ljwebmanagement.com">info@ljwebmanagement.com</a></p>
 </div></div>
 </section>
 </main>
@@ -513,15 +552,68 @@ window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]
     </div>
     <div class="lj-footer-bottom">
       <span>&copy; 2026 LJ Web Management, LLC. All rights reserved.</span>
-      <nav aria-label="Legal"><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a></nav>
+      <nav aria-label="Legal"><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a><a href="/accessibility/">Accessibility</a><a href="/privacy-choices/" data-lj-consent-open>Your Privacy Choices</a></nav>
     </div>
   </div>
 </footer>
+<section class="lj-consent" id="lj-consent" aria-labelledby="lj-consent-title" data-lj-consent-cookie="lj_consent" data-lj-consent-version="v1" hidden>
+  <div class="lj-consent-inner">
+    <div class="lj-consent-text">
+      <h2 id="lj-consent-title">Your privacy choices</h2>
+      <p>With your permission, we use analytics cookies (Google Analytics and Microsoft Clarity, which can record how you use our pages) to understand and improve this site. They stay off unless you accept. We do not sell or share your personal information or use advertising cookies. <a href="/privacy-policy/#cookies">Privacy Policy</a></p>
+    </div>
+    <div class="lj-consent-actions">
+      <button type="button" class="lj-btn lj-btn-primary lj-btn-sm" data-lj-consent-set="1">Accept analytics</button>
+      <button type="button" class="lj-btn lj-btn-primary lj-btn-sm" data-lj-consent-set="0">Reject analytics</button>
+      <button type="button" class="lj-btn lj-btn-ghost lj-btn-sm" data-lj-consent-open>Settings</button>
+    </div>
+  </div>
+</section>
+<dialog class="lj-popup lj-consent-panel" id="lj-consent-panel" aria-labelledby="lj-consent-panel-title">
+  <div class="lj-consent-panel-head">
+    <h2 id="lj-consent-panel-title">Privacy and cookie settings</h2>
+    <button type="button" class="lj-popup-close" data-lj-consent-close aria-label="Close privacy settings"><svg class="lj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12"/><path d="M18 6L6 18"/></svg></button>
+  </div>
+  <div class="lj-consent-panel-body">
+    <p>Choose which optional technologies we may use. You can change this at any time from <strong>Your Privacy Choices</strong> at the bottom of every page.</p>
+    <p class="lj-consent-signal" data-lj-consent-signal hidden>Your browser sent a Global Privacy Control or Do Not Track signal, so optional analytics are off. You can still turn them on below if you want to.</p>
+    <div class="lj-consent-cat"><div><p class="lj-consent-cat-title">Strictly necessary</p><p>Remember your privacy choices (a first-party cookie named <code>lj_consent</code>, kept for 12 months) and on-device preferences such as course progress and the blog newsletter pop-up (browser local storage). We use these only to apply your choices, never to identify or track you.</p></div><span class="lj-tag">Always on</span></div>
+    <div class="lj-consent-cat"><div><p class="lj-consent-cat-title"><label for="lj-consent-analytics">Analytics</label></p><p>Google Analytics measures visits, pages, devices, and approximate location. Microsoft Clarity records clicks, scrolling, and page interactions to create heatmaps and session recordings. Google signals and ad personalization are turned off.</p></div><input type="checkbox" class="lj-switch" id="lj-consent-analytics" role="switch"></div>
+    <div class="lj-consent-cat"><div><p class="lj-consent-cat-title">Selling, sharing, and targeted advertising</p><p>We do not sell or share personal information, use advertising cookies, or engage in targeted advertising. Turning analytics off stops all optional measurement.</p></div><span class="lj-tag">Never used</span></div>
+    <div class="lj-consent-cat"><div><p class="lj-consent-cat-title">Live chat and forms</p><p>Live chat (Tawk.to) loads only when you choose to start a chat. Forms (Typeform) load on the pages where you fill them in, and the information you enter goes to Typeform for us.</p></div><span class="lj-tag">Only when used</span></div>
+    <p class="lj-consent-more"><a href="/privacy-choices/">Learn about your privacy rights and how to make a request</a></p>
+  </div>
+  <div class="lj-consent-panel-foot">
+    <button type="button" class="lj-btn lj-btn-primary lj-btn-sm" data-lj-consent-save>Save my choices</button>
+    <button type="button" class="lj-btn lj-btn-ghost lj-btn-sm" data-lj-consent-set="1">Accept analytics</button>
+    <button type="button" class="lj-btn lj-btn-ghost lj-btn-sm" data-lj-consent-set="0">Reject analytics</button>
+  </div>
+</dialog>
 
+<div class="lj-chat" data-lj-chat hidden>
+  <div class="lj-chat-notice" id="lj-chat-notice" role="dialog" aria-modal="false" aria-labelledby="lj-chat-notice-title" hidden>
+    <p class="lj-chat-notice-title" id="lj-chat-notice-title">Chat with our team</p>
+    <p>Live chat is provided by Tawk.to. Your messages and basic technical details (such as your IP address and the page you are on) are sent to Tawk.to and kept as a record of the conversation. See our <a href="https://www.ljwebmanagement.com/privacy-policy/#chat">Privacy Policy</a>.</p>
+    <div class="lj-chat-notice-actions"><button type="button" class="lj-btn lj-btn-primary lj-btn-sm" data-lj-chat-start>Start chat</button><button type="button" class="lj-btn lj-btn-ghost lj-btn-sm" data-lj-chat-cancel>Not now</button></div>
+  </div>
+  <button type="button" class="lj-chat-launcher" data-lj-chat-open aria-expanded="false" aria-controls="lj-chat-notice"><svg class="lj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 21l1.4-4.5A8.5 8.5 0 1 1 20.5 12z"/><path d="M8.5 12h.01"/><path d="M12 12h.01"/><path d="M15.5 12h.01"/></svg><span>Chat with us</span></button>
+</div>
 <script>
 var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();
-(function(){var opened=false;window.addEventListener('blur',function(){if(document.activeElement&&document.activeElement.tagName==='IFRAME'){opened=true;setTimeout(function(){opened=false;},1500);}});Tawk_API.onLoad=function(){Tawk_API.minimize();};Tawk_API.onChatMaximized=function(){if(!opened){Tawk_API.minimize();}};})();
-(function(){var loaded=false;function load(){if(loaded)return;loaded=true;var s=document.createElement('script');s.async=true;s.src='https://embed.tawk.to/6a5c3cb0940f101d5323afce/1jts4q4bq';s.charset='UTF-8';s.setAttribute('crossorigin','*');document.body.appendChild(s);}['mousemove','scroll','touchstart','keydown','click'].forEach(function(e){window.addEventListener(e,load,{passive:true,once:true});});})();
+(function(){var KEY='lj-chat',root=document.querySelector('[data-lj-chat]');if(!root)return;var notice=root.querySelector('#lj-chat-notice'),launcher=root.querySelector('[data-lj-chat-open]'),loaded=false,openOnLoad=false,userOpened=false;
+function agreed(){try{return localStorage.getItem(KEY)==='1';}catch(e){return false;}}
+function load(open){openOnLoad=open;if(loaded){if(open&&Tawk_API.maximize){userOpened=true;Tawk_API.maximize();}return;}loaded=true;var s=document.createElement('script');s.async=true;s.src='https://embed.tawk.to/6a5c3cb0940f101d5323afce/1jts4q4bq';s.charset='UTF-8';s.setAttribute('crossorigin','*');document.body.appendChild(s);}
+function showNotice(show){notice.hidden=!show;launcher.setAttribute('aria-expanded',show?'true':'false');if(show){var b=notice.querySelector('[data-lj-chat-start]');b&&b.focus();}}
+window.addEventListener('blur',function(){if(document.activeElement&&document.activeElement.tagName==='IFRAME'){userOpened=true;setTimeout(function(){userOpened=false;},1500);}});
+Tawk_API.onLoad=function(){root.hidden=true;if(openOnLoad){userOpened=true;Tawk_API.maximize();setTimeout(function(){userOpened=false;},1500);}else{Tawk_API.minimize();}};
+Tawk_API.onChatMaximized=function(){if(!userOpened&&!openOnLoad){Tawk_API.minimize();}openOnLoad=false;};
+launcher.addEventListener('click',function(){if(agreed()){launcher.disabled=true;load(true);}else{showNotice(notice.hidden);}});
+root.querySelector('[data-lj-chat-start]').addEventListener('click',function(){try{localStorage.setItem(KEY,'1');}catch(e){}showNotice(false);launcher.disabled=true;load(true);});
+root.querySelector('[data-lj-chat-cancel]').addEventListener('click',function(){showNotice(false);launcher.focus();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!notice.hidden){showNotice(false);launcher.focus();}});
+root.hidden=false;
+if(agreed()){var ev=['mousemove','scroll','touchstart','keydown','click'],go=function(){ev.forEach(function(x){window.removeEventListener(x,go);});load(false);};ev.forEach(function(x){window.addEventListener(x,go,{passive:true});});}
+})();
 </script>
 </body>
 </html>

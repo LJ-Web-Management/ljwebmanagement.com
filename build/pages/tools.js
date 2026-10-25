@@ -209,7 +209,7 @@ function promptLibrary() {
         '<div class="lj-prompt-head"><span class="lj-tag lj-tag--cyan">' + escapeHtml(cats[p.cat]) + "</span>" +
         '<button type="button" class="lj-copy" data-lj-copy="' + id + '-text">' + icon("copy") + "<span>Copy</span></button></div>" +
         '<h3 id="' + id + '">' + escapeHtml(p.title) + "</h3><p>" + escapeHtml(p.use) + "</p>" +
-        '<pre id="' + id + '-text" class="lj-prompt-text">' + escapeHtml(p.prompt) + "</pre></article>"
+        '<pre id="' + id + '-text" class="lj-prompt-text" tabindex="0" aria-label="Prompt text: ' + escapeHtml(p.title) + '">' + escapeHtml(p.prompt) + "</pre></article>"
       );
     })
     .join("");

@@ -51,6 +51,8 @@ function sitemap(cat, guides, auto, extra) {
   for (let p = 2; p <= auto.pages; p++) add("/automations/page/" + p + "/", "weekly", "0.4");
   cat.automations.forEach((a) => add(a.url, "monthly", "0.6"));
   add("/privacy-policy/", "yearly", "0.3");
+  add("/privacy-choices/", "yearly", "0.3");
+  add("/accessibility/", "yearly", "0.3");
   add("/terms-of-service/", "yearly", "0.3");
 
   writeFile(

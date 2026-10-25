@@ -4,7 +4,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const { ROOT, SITE_URL, escapeHtml, writeFile, formatNumber } = require("../lib/util");
+const { ROOT, SITE_URL, escapeHtml, writeFile, readFile, fileHash, formatNumber } = require("../lib/util");
 const L = require("../lib/layout");
 const { icon } = L;
 const { categoryCard, industrySvg } = require("./automations");
@@ -18,6 +18,30 @@ const TYPEFORM = '<script src="https://embed.typeform.com/next/embed.js" defer><
 /* ---------------------------------------------------------------------- */
 /* Home                                                                     */
 /* ---------------------------------------------------------------------- */
+
+// Transcript of the homepage video, built from its caption file so the two
+// never drift apart. Cues are joined and split into paragraphs at sentence
+// ends roughly every 400 characters.
+function videoTranscript() {
+  const text = readFile("assets/homepage-video.vtt")
+    .split(/\n\n+/)
+    .filter((block) => block.includes("-->"))
+    .map((block) => block.split("\n").slice(2).join(" "))
+    .join(" ")
+    .replace(/\s+/g, " ")
+    .trim();
+  const paras = [];
+  let cur = "";
+  text.split(/(?<=[.?!]) /).forEach((sentence) => {
+    cur += (cur ? " " : "") + sentence;
+    if (cur.length > 400) {
+      paras.push(cur);
+      cur = "";
+    }
+  });
+  if (cur) paras.push(cur);
+  return paras.map((p) => "<p>" + escapeHtml(p) + "</p>").join("");
+}
 
 function home(cat, guides, extra) {
   const total = formatNumber(cat.automations.length);
@@ -107,13 +131,14 @@ function home(cat, guides, extra) {
         <a class="lj-link-arrow" href="/how-it-works/" style="margin-top:24px">See the full five-step process ${icon("arrowRight")}</a>
       </div>
       <div class="lj-card" style="padding:0;overflow:hidden;border-radius:22px;box-shadow:var(--shadow-lg)">
-        <button type="button" class="lj-video-trigger" data-lj-video="/assets/homepage-video.mp4" aria-label="Play the LJ Web Management walkthrough video" style="position:relative;display:block;width:100%;padding:0;border:0;background:var(--navy);line-height:0">
+        <button type="button" class="lj-video-trigger" data-lj-video="/assets/homepage-video.mp4" data-lj-captions="/assets/homepage-video.vtt?v=${fileHash("assets/homepage-video.vtt")}" aria-label="Play the LJ Web Management walkthrough video (captions available)" style="position:relative;display:block;width:100%;padding:0;border:0;background:var(--navy);line-height:0">
           <picture>
             <source srcset="/assets/homepage-video-poster-720.webp 720w, /assets/homepage-video-poster.webp 1200w" sizes="(max-width: 980px) calc(100vw - 48px), 600px" type="image/webp">
             <img src="/assets/homepage-video-poster.jpg" width="1920" height="1080" alt="LJ Web Management automation walkthrough video preview" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
           </picture>
           <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><span style="width:76px;height:76px;border-radius:50%;background:#fff;color:var(--navy);display:inline-flex;align-items:center;justify-content:center;box-shadow:0 14px 34px rgba(8,20,38,.4)">${icon("play")}</span></span>
         </button>
+        <details class="lj-transcript"><summary>Read the video transcript</summary><div tabindex="0" aria-label="Video transcript">${videoTranscript()}</div></details>
       </div>
     </div>
   </div>
@@ -446,7 +471,7 @@ function contact() {
 <section class="lj-section">
   <div class="lj-container">
     <div class="lj-split">
-      <div class="lj-embed"><div data-tf-live="01KY317GTBCXA4CV67B60P7AQ9"></div></div>
+      <div><div class="lj-embed"><div data-tf-live="01KY317GTBCXA4CV67B60P7AQ9"></div></div><p class="lj-notice"><strong>Notice at collection.</strong> We collect what you enter in this form (such as your name, email address, phone number, and message) to respond to your message and follow up about our services. Typeform processes the form for us. If you give us your phone number, we may call or text you about your request; message and data rates may apply, and you can reply STOP to opt out. We do not sell or share personal information. See our <a href="/privacy-policy/">Privacy Policy</a> and <a href="/privacy-choices/">Your Privacy Choices</a>.</p></div>
       <div class="lj-sticky">
         <span class="lj-eyebrow">Other ways to reach us</span>
         <h2 style="font-size:1.5rem">Prefer email or a call?</h2>
@@ -482,7 +507,7 @@ function appointment() {
 <section class="lj-section">
   <div class="lj-container">
     <div class="lj-split">
-      <div class="lj-embed"><div data-tf-live="01KY5CPJYD0ZA29RZEH68M7A52"></div></div>
+      <div><div class="lj-embed"><div data-tf-live="01KY5CPJYD0ZA29RZEH68M7A52"></div></div><p class="lj-notice"><strong>Notice at collection.</strong> We collect what you enter in this form (such as your name, email address, phone number, and message) to schedule, prepare for, and follow up on your consultation. Typeform processes the form for us. If you give us your phone number, we may call or text you about your request; message and data rates may apply, and you can reply STOP to opt out. We do not sell or share personal information. See our <a href="/privacy-policy/">Privacy Policy</a> and <a href="/privacy-choices/">Your Privacy Choices</a>.</p></div>
       <div class="lj-sticky">
         <span class="lj-eyebrow">What to expect</span>
         <ol class="lj-steps" style="margin-top:10px">
@@ -694,6 +719,129 @@ function legalPage(slug, title, description) {
   writeFile(slug + "/index.html", L.page({ path: p, title: title + " | LJ Web Management", description, jsonLd: [crumbs.schema], main }));
 }
 
+/* ---------------------------------------------------------------------- */
+/* Privacy choices and accessibility                                        */
+/* ---------------------------------------------------------------------- */
+
+function privacyChoices() {
+  const crumbs = L.breadcrumbs([["Home", "/"], ["Your Privacy Choices", "/privacy-choices/"]]);
+  const main =
+    L.hero({
+      crumbs,
+      center: false,
+      eyebrow: "Privacy",
+      title: "Your Privacy Choices",
+      lead: "Control optional cookies on this site and learn how to see, correct, or delete the personal information we hold about you. We do not sell or share personal information, and these choices apply to our website and blog.",
+    }) +
+    `
+<section class="lj-section lj-section--tight">
+  <div class="lj-container lj-container--narrow">
+    <div class="lj-prose lj-legal">
+      <h2 id="cookies">Cookie and analytics settings</h2>
+      <div class="lj-callout"><strong>Your current setting</strong><p data-lj-consent-status>Turn on JavaScript to change your settings here, or block cookies in your browser settings. Without JavaScript, optional analytics never load.</p></div>
+      <div class="lj-btn-row lj-mb">
+        <button type="button" class="lj-btn lj-btn-primary" data-lj-consent-open>Open privacy settings</button>
+        <button type="button" class="lj-btn lj-btn-ghost" data-lj-consent-set="0">Turn analytics off</button>
+        <button type="button" class="lj-btn lj-btn-ghost" data-lj-consent-set="1">Turn analytics on</button>
+      </div>
+      <p>Optional analytics (Google Analytics and Microsoft Clarity) help us understand how the site is used. They only run if you turn them on. Strictly necessary storage, which remembers this choice and on-device preferences like course progress, is always on and is used only to apply your choices, never to identify or track you. Your choice is saved in your browser for 12 months, so you will need to set it again on another browser or device, or if you clear your cookies.</p>
+
+      <h2 id="do-not-sell">Do Not Sell or Share My Personal Information</h2>
+      <p>We do not sell personal information, share it for cross-context behavioral advertising, or use it for targeted advertising, and we do not use advertising cookies. There is nothing you need to do to opt out. If you would still like us to record an opt-out request, for example to cover any future change in our practices, email <a href="mailto:info@ljwebmanagement.com?subject=Do%20Not%20Sell%20or%20Share">info@ljwebmanagement.com</a> with the subject line "Do Not Sell or Share."</p>
+      <h3>Global Privacy Control</h3>
+      <p>If your browser sends a Global Privacy Control (GPC) signal, we treat it as an opt-out of selling and sharing and keep optional analytics off for that browser. We treat Do Not Track signals the same way.</p>
+
+      <h2 id="rights">Your privacy rights</h2>
+      <p>We honor these requests from any U.S. resident, whether or not your state's privacy law requires it:</p>
+      <ul>
+        <li><strong>Know and access:</strong> find out what personal information we hold about you and how we use it</li>
+        <li><strong>Get a copy:</strong> receive your information in a portable format</li>
+        <li><strong>Correct:</strong> fix information that is inaccurate</li>
+        <li><strong>Delete:</strong> ask us to delete your information, subject to legal exceptions</li>
+        <li><strong>Opt out:</strong> of any sale, sharing, targeted advertising, or significant profiling (we do none of these)</li>
+        <li><strong>Equal treatment:</strong> we will not treat you differently for using any of these rights</li>
+      </ul>
+      <p>We do not collect sensitive personal information through our website, so there is no sensitive information to limit.</p>
+
+      <h2 id="request">How to make a request</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:info@ljwebmanagement.com?subject=Privacy%20Request">info@ljwebmanagement.com</a> with the subject line "Privacy Request"</li>
+        <li><strong>Phone (toll-free):</strong> <a href="tel:+18775593268">+1 (877) 559-3268</a></li>
+        <li><strong>Mail:</strong> LJ Web Management, 1108 E 9th St., Lockport, IL 60441</li>
+      </ul>
+      <p>Tell us your name, the email address or phone number you used with us, and what you would like us to do. We may ask for a little more information to confirm your identity, and we will only use it for that purpose. We confirm requests within 10 business days and respond within 45 days; if we need more time (up to another 45 days), we will tell you why.</p>
+      <p><strong>Authorized agents.</strong> Someone you authorize can make a request for you. We may ask for proof of their authority and confirm the request directly with you.</p>
+      <p><strong>Appeals.</strong> If we decline your request, we will explain why. You can appeal by replying to our decision or emailing <a href="mailto:info@ljwebmanagement.com?subject=Privacy%20Appeal">info@ljwebmanagement.com</a> with the subject line "Privacy Appeal." We will respond within 45 days. If we deny your appeal, you can contact your state Attorney General.</p>
+
+      <h2 id="more">More information</h2>
+      <p>Our <a href="/privacy-policy/">Privacy Policy</a> explains what we collect, why, who receives it, and how long we keep it, including a summary table for state privacy laws. If you need this information in another format, contact us and we will provide it.</p>
+    </div>
+  </div>
+</section>`;
+  writeFile(
+    "privacy-choices/index.html",
+    L.page({
+      path: "/privacy-choices/",
+      title: "Your Privacy Choices | LJ Web Management",
+      description: "Manage cookie and analytics settings, learn about Global Privacy Control, and request access to, correction of, or deletion of your personal information.",
+      jsonLd: [crumbs.schema],
+      main,
+    })
+  );
+}
+
+function accessibility() {
+  const crumbs = L.breadcrumbs([["Home", "/"], ["Accessibility", "/accessibility/"]]);
+  const main =
+    L.hero({
+      crumbs,
+      center: false,
+      eyebrow: "Accessibility",
+      title: "Accessibility Statement",
+      lead: "We want everyone to be able to use our website and blog, including people who use assistive technology. If anything gets in your way, tell us and we will help.",
+    }) +
+    `
+<section class="lj-section lj-section--tight">
+  <div class="lj-container lj-container--narrow">
+    <div class="lj-prose lj-legal">
+      <h2>Our commitment</h2>
+      <p>LJ Web Management aims for our website (www.ljwebmanagement.com) and blog (blog.ljwebmanagement.com) to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA, and we follow WCAG 2.2 where practical. Accessibility is part of how we design, build, and review every page.</p>
+      <h2>What we do</h2>
+      <ul>
+        <li>Use semantic HTML, headings in a logical order, and labels for every control</li>
+        <li>Support full keyboard use, with a "Skip to content" link and visible focus indicators</li>
+        <li>Meet WCAG contrast requirements for text and interface elements</li>
+        <li>Provide text alternatives for meaningful images and icons, and captions and a written transcript for our homepage video</li>
+        <li>Respect the "reduce motion" setting on your device</li>
+        <li>Make pages work when zoomed to 200 percent and on small screens</li>
+        <li>Test new pages with automated checks (axe-core) and manual keyboard testing before they go live</li>
+      </ul>
+      <h2>Known limitations</h2>
+      <p>Some features come from third parties, and we cannot fully control their accessibility: our contact, booking, and newsletter forms (Typeform) and our live chat (Tawk.to). If any of these cause a problem, you can always reach us by phone or email instead, and we will help you directly, including by booking a consultation for you or sending you the information in another format.</p>
+      <h2>Feedback and help</h2>
+      <p>If you have trouble using any part of our website or blog, or need information in a different format, please contact us:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:info@ljwebmanagement.com?subject=Accessibility">info@ljwebmanagement.com</a> with the subject line "Accessibility"</li>
+        <li><strong>Phone (toll-free):</strong> <a href="tel:+18775593268">+1 (877) 559-3268</a></li>
+        <li><strong>Mail:</strong> LJ Web Management, 1108 E 9th St., Lockport, IL 60441</li>
+      </ul>
+      <p>Please tell us the page and the problem you ran into. We aim to respond within five business days.</p>
+      <p class="lj-muted">This statement was last reviewed on October 25, 2026.</p>
+    </div>
+  </div>
+</section>`;
+  writeFile(
+    "accessibility/index.html",
+    L.page({
+      path: "/accessibility/",
+      title: "Accessibility Statement | LJ Web Management",
+      description: "LJ Web Management's commitment to WCAG 2.1 AA accessibility, known limitations, and how to get help if anything on our website is hard to use.",
+      jsonLd: [crumbs.schema],
+      main,
+    })
+  );
+}
+
 function notFound() {
   const main = `
 <section class="lj-page-hero lj-page-hero--dark lj-page-hero--center" style="padding-block:96px">
@@ -722,6 +870,8 @@ function build(cat, guides, extra) {
   roi();
   legalPage("privacy-policy", "Privacy Policy", "How LJ Web Management collects, uses, discloses, and protects personal information through its website and automation services.");
   legalPage("terms-of-service", "Terms of Service", "The terms that govern use of the LJ Web Management website and automation consulting, development, and support services.");
+  privacyChoices();
+  accessibility();
   notFound();
 }
 
@@ -734,6 +884,8 @@ function searchEntries() {
     ["Page", "Automation Match Quiz", "Find the right solution in three questions", "/quiz/", "quiz match"],
     ["Page", "Book a Free Consultation", "Pick a time to talk", "/appointment/", "book call meeting consultation appointment"],
     ["Page", "Contact Us", "Email, phone, or send a message", "/contactus/", "contact email phone"],
+    ["Page", "Your Privacy Choices", "Cookie settings and privacy requests", "/privacy-choices/", "privacy cookies do not sell opt out gpc delete data request"],
+    ["Page", "Accessibility Statement", "WCAG 2.1 AA and how to get help", "/accessibility/", "accessibility ada wcag screen reader"],
     ["Page", "Resource Center", "Every free guide, course, quiz, and tool", "/resources/", "resources learn free library how to automate"],
     ["Page", "Automation Guides", "Step-by-step playbooks", "/guides/", "guides learn how to"],
     ["Page", "Free Courses", "Automation 101 and AI at Work", "/learn/", "course lessons learn training class"],
