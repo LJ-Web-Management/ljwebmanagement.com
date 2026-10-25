@@ -1,0 +1,126 @@
+{
+  "slug": "finance-billing",
+  "name": "Finance, Billing & Payments",
+  "icon": "receipt",
+  "order": 5,
+  "short": "Recurring billing, invoicing and collections, payables, online payments, and month-end close automation that keep cash flowing.",
+  "intro": "Finance teams lose days every month to re-keying invoices, chasing payments, and reconciling accounts by hand. These solutions connect billing, payments, and accounting so money moves faster, books close sooner, and leadership always knows the cash position.",
+  "guide": "how-to-automate-accounts-receivable",
+  "solutions": [
+    {
+      "id": "membership-billing",
+      "name": "Membership & Subscription Billing Platform",
+      "tagline": "Recurring billing, dunning, and self-service plan changes that protect monthly revenue.",
+      "text": "A recurring billing and membership management platform for businesses that run on subscriptions, memberships, or recurring service plans: gyms, subscription boxes, SaaS products, or membership-based clubs. The platform handles plan tiers, automated recurring billing, failed-payment retry logic, and self-service upgrade, downgrade, and cancel flows so members manage their own accounts without generating support tickets. Dunning sequences recover failed payments automatically, usage-based billing is supported for metered plans, and revenue dashboards break down MRR, churn, and lifetime value so leadership always knows where recurring revenue stands.",
+      "for": ["Gyms, studios, and clubs", "Subscription box and SaaS businesses", "Service companies selling maintenance plans"],
+      "features": [
+        ["Plans and tiers", "Monthly, annual, family, and usage-based pricing."],
+        ["Automated recurring billing", "Charges run on schedule with receipts sent automatically."],
+        ["Smart dunning", "Retries and reminders that recover failed payments."],
+        ["Member self-service", "Upgrade, pause, update cards, or cancel without calling."],
+        ["Retention offers", "Pause and downgrade options shown before cancellation."],
+        ["Recurring revenue dashboards", "MRR, churn, and lifetime value by plan."]
+      ],
+      "problems": ["Failed payments quietly turn into lost members", "Staff process plan changes by hand", "Cancellations require a phone call and frustrate members", "No reliable view of recurring revenue"],
+      "integrations": ["Stripe Billing", "Chargebee", "Recurly", "Mindbody", "QuickBooks", "Xero", "HubSpot", "Mailchimp"],
+      "keywords": ["membership", "subscription", "recurring", "renewal", "failed payment"],
+      "faq": [
+        ["What is dunning?", "Dunning is the process of recovering failed recurring payments through automatic retries, card updater services, and reminder messages asking the customer to update their payment details."],
+        ["Can members manage their own subscriptions?", "Yes. A self-service portal lets members upgrade, downgrade, pause, update payment methods, and cancel according to your policies."],
+        ["Does it support usage-based or metered billing?", "Yes. Usage can be recorded automatically and billed on top of or instead of a base plan."]
+      ]
+    },
+    {
+      "id": "invoicing-accounts-receivable",
+      "name": "Invoicing & Accounts Receivable Automation",
+      "tagline": "Invoices out the same day, reminders on autopilot, and payments matched automatically.",
+      "text": "An accounts receivable system that creates invoices from completed jobs, shipped orders, or billable time, sends them immediately with online payment links, and follows up on unpaid balances with a polite, escalating reminder schedule. Payments are matched to invoices and posted to your accounting system automatically, customers can pay by card, ACH, or saved payment method, and an aging dashboard shows who owes what so your team only calls the accounts that truly need attention.",
+      "for": ["Service businesses invoicing after each job", "B2B companies with net-30 and net-60 terms", "Firms billing hourly or by milestone"],
+      "features": [
+        ["Automatic invoice creation", "Invoices generated from jobs, orders, or approved time."],
+        ["Online payment links", "Card and ACH payments in one click."],
+        ["Reminder schedules", "Friendly to firm reminders before and after the due date."],
+        ["Automatic cash application", "Payments matched and posted to the right invoice."],
+        ["Autopay and saved methods", "Customers can opt into automatic payment."],
+        ["AR aging dashboard", "Overdue balances and collection priorities at a glance."]
+      ],
+      "problems": ["Invoices go out days or weeks after the work", "Staff chase late payers by hand", "Payments are posted to the wrong invoices", "Cash flow is unpredictable"],
+      "integrations": ["QuickBooks", "Xero", "Stripe", "Bill.com", "Melio", "Square", "Salesforce", "HubSpot"],
+      "keywords": ["invoice", "payment reminder", "overdue", "collections", "accounts receivable"],
+      "faq": [
+        ["How much faster do customers pay with automated reminders?", "Most businesses see invoices paid sooner once invoices go out immediately with a payment link and reminders run on a consistent schedule, because nothing depends on someone remembering to follow up."],
+        ["Will automated reminders upset customers?", "Not when they are courteous and accurate. We write reminders in your voice and stop them the moment payment arrives or a dispute is noted."],
+        ["Does it work with QuickBooks?", "Yes. Invoices, payments, and customers sync with QuickBooks Online or Desktop, Xero, and most ERPs."]
+      ]
+    },
+    {
+      "id": "accounts-payable-expense",
+      "name": "Accounts Payable & Expense Management",
+      "tagline": "Bills captured, coded, approved, and paid on time without paper or re-keying.",
+      "text": "A payables and expense system that captures vendor bills from email, reads them with AI document extraction, codes them to the right accounts, and routes them for approval before scheduling payment. Employee expenses are submitted from a phone with receipt photos and checked against policy, corporate card transactions are reconciled automatically, and every approval is logged for audit. Finance gets a clear view of upcoming obligations, and vendors are paid on time without late fees or duplicate payments.",
+      "for": ["Companies processing dozens to thousands of bills a month", "Teams with employees spending on company cards", "Businesses that need audit-ready approval trails"],
+      "features": [
+        ["Bill capture from email", "Invoices forwarded to one address are read automatically."],
+        ["AI data extraction and coding", "Vendor, amounts, and GL codes filled in for review."],
+        ["Approval workflows", "Routing by amount, department, or project."],
+        ["Scheduled payments", "ACH, check, and card payments timed to terms."],
+        ["Expense reports from a phone", "Receipt photos matched to card transactions."],
+        ["Duplicate and fraud checks", "Alerts on duplicate invoices and bank detail changes."]
+      ],
+      "problems": ["Bills are keyed in by hand", "Approvals stall in email threads", "Late fees and missed early-pay discounts", "Expense reports take hours each month"],
+      "integrations": ["Bill.com", "Ramp", "Expensify", "QuickBooks", "Xero", "NetSuite", "Brex", "Dext"],
+      "keywords": ["bill", "expense", "receipt", "vendor invoice", "payable"],
+      "faq": [
+        ["Can AI read our vendor invoices accurately?", "Modern document AI extracts vendor, dates, amounts, and line items with high accuracy, and anything below a confidence threshold is flagged for a quick human check before posting."],
+        ["How do approvals work?", "Rules route each bill to the right approver based on amount, vendor, department, or project, with reminders and escalation if it sits too long."],
+        ["Does this help prevent payment fraud?", "Yes. Duplicate invoice detection, vendor bank detail change alerts, and separation of duties reduce common payables fraud risks."]
+      ]
+    },
+    {
+      "id": "online-payments-checkout",
+      "name": "Online Payments & Checkout Integration",
+      "tagline": "Take card, ACH, and wallet payments anywhere, with every transaction synced to your books.",
+      "text": "A payments setup that lets customers pay the way they prefer, online, in person, by text link, or on recurring autopay, with every transaction flowing cleanly into your accounting and CRM. We select and configure the right processor, build secure checkout into your website, invoices, and booking flows, set up text-to-pay and saved payment methods, and automate payout reconciliation so fees, refunds, and deposits match your bank statements without manual work.",
+      "for": ["Businesses still taking payments over the phone", "Companies with several disconnected payment tools", "Teams spending hours reconciling processor payouts"],
+      "features": [
+        ["Processor selection and setup", "The right fit for your volume, industry, and fees."],
+        ["Website and invoice checkout", "Secure, branded payment pages."],
+        ["Text-to-pay links", "Customers pay from a text in seconds."],
+        ["Saved cards and autopay", "Tokenized payment methods for repeat billing."],
+        ["Payout reconciliation", "Fees, refunds, and deposits matched to the bank."],
+        ["PCI-conscious design", "Card data handled by the processor, never stored by you."]
+      ],
+      "problems": ["Taking card numbers over the phone", "Deposits that do not match sales reports", "Several payment apps that do not talk to each other", "High processing fees nobody has reviewed"],
+      "integrations": ["Stripe", "Square", "PayPal", "Authorize.net", "Clover", "QuickBooks Payments", "Plaid", "Xero"],
+      "keywords": ["payment", "checkout", "deposit", "card"],
+      "faq": [
+        ["Is it safe to take payments on our website?", "Yes, when card data is handled by a PCI-compliant processor through hosted fields or checkout pages, so sensitive card numbers never touch your servers."],
+        ["What is text-to-pay?", "A secure payment link sent by SMS. Customers tap it, pay with a card or wallet, and the payment is recorded against their invoice automatically."],
+        ["Can you help lower our processing fees?", "We review your volume and mix of transactions and recommend processor and pricing options, including ACH for larger invoices."]
+      ]
+    },
+    {
+      "id": "month-end-close",
+      "name": "Month-End Close & Reconciliation Automation",
+      "tagline": "Close the books in days, not weeks, with automated reconciliations and checklists.",
+      "text": "A close management system that turns month-end from a scramble into a checklist. Bank and card transactions are reconciled automatically against your ledger, recurring journal entries and accruals are posted on schedule, intercompany and clearing accounts are matched, and exceptions are routed to the right person with supporting documents attached. A close checklist tracks every task, owner, and due date, and management reports are generated and delivered as soon as the books are final.",
+      "for": ["Finance teams taking two weeks or more to close", "Multi-entity and multi-location businesses", "Owners who want timely monthly financials"],
+      "features": [
+        ["Automated bank reconciliation", "Transactions matched to the ledger with rules and AI."],
+        ["Recurring entries and accruals", "Posted automatically every period."],
+        ["Close checklist", "Tasks, owners, dependencies, and due dates tracked."],
+        ["Exception routing", "Unmatched items sent to the right reviewer with context."],
+        ["Multi-entity consolidation", "Intercompany eliminations and combined reporting."],
+        ["Automatic financial reports", "P&L, balance sheet, and KPIs delivered at close."]
+      ],
+      "problems": ["Closing the books takes most of the following month", "Reconciliations live in fragile spreadsheets", "Leadership makes decisions on outdated numbers", "Audit prep means hunting for support documents"],
+      "integrations": ["QuickBooks", "Xero", "NetSuite", "BlackLine", "FloQast", "Plaid", "Excel", "Power BI"],
+      "keywords": ["reconcil", "bookkeep", "month-end", "journal", "close"],
+      "faq": [
+        ["How long should a month-end close take?", "Many small and midsize businesses aim for five to ten business days. Automating reconciliations and recurring entries is usually the biggest lever for getting there."],
+        ["Can reconciliations be fully automated?", "Most matching can be automated with rules and AI. A person still reviews exceptions and signs off, which keeps controls intact."],
+        ["Does this work with our accountant or bookkeeper?", "Yes. External accountants can work inside the same checklist and reconciliation tools, which usually speeds up their work too."]
+      ]
+    }
+  ]
+}

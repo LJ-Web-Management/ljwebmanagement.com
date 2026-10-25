@@ -1,0 +1,149 @@
+{
+  "slug": "customer-experience",
+  "name": "Customer Experience & Support",
+  "icon": "message",
+  "order": 3,
+  "short": "Booking, help desks, customer portals, shared inboxes, AI phone answering, and knowledge bases that make you easy to do business with.",
+  "intro": "Customers judge you by how easy you are to reach, book, and get help from. These solutions give them self-service options that work around the clock, give your team one organized place to respond, and make sure no call, message, or request falls through the cracks.",
+  "guide": "customer-self-service-portal-guide",
+  "solutions": [
+    {
+      "id": "booking-scheduling",
+      "name": "Booking & Scheduling Platform",
+      "tagline": "Online booking with live availability, deposits, and reminders that cut no-shows.",
+      "text": "A custom booking and scheduling system built for businesses that run on appointments, reservations, or service calls: real estate showings, salon bookings, consultations, rentals, or facility reservations. Clients see live availability and book directly online, automated confirmations and reminders cut down on no-shows, and staff get a centralized calendar with buffer times, resource assignment, and conflict prevention built in. The platform integrates with your existing calendar (Google, Outlook) and payment processor for deposits or full prepayment, and reporting dashboards show booking volume, cancellation rates, and staff utilization so managers can plan capacity instead of guessing.",
+      "for": ["Appointment-based businesses booking by phone", "Rental and facility operators managing resources", "Teams with frequent no-shows and last-minute cancellations"],
+      "features": [
+        ["Live online booking", "Customers pick an open time from your website, Google, or social profiles."],
+        ["Smart availability rules", "Buffers, travel time, staff skills, and resource limits enforced automatically."],
+        ["Deposits and prepayment", "Collect payment at booking to protect your schedule."],
+        ["Reminders and confirmations", "Text and email reminders with one-tap confirm or reschedule."],
+        ["Waitlist and fill-in", "Open slots offered to waitlisted customers automatically."],
+        ["Utilization reporting", "Bookings, cancellations, and staff utilization at a glance."]
+      ],
+      "problems": ["Phone tag to find a time that works", "No-shows and late cancellations cost revenue", "Double bookings across staff calendars", "No visibility into capacity and demand"],
+      "integrations": ["Google Calendar", "Outlook", "Calendly", "Acuity", "Square Appointments", "Stripe", "Twilio", "Zoom"],
+      "keywords": ["appointment", "booking", "schedule", "reminder", "no-show"],
+      "faq": [
+        ["How much do reminders reduce no-shows?", "Automated text and email reminders with easy confirm and reschedule options typically reduce no-shows significantly, and deposits reduce them further for high-value appointments."],
+        ["Can customers book specific staff or rooms?", "Yes. The system handles staff preferences, skills, rooms, equipment, and travel time so bookings are always feasible."],
+        ["Will it sync with our existing calendars?", "Yes. Bookings sync two-way with Google and Outlook calendars so personal commitments block availability automatically."]
+      ]
+    },
+    {
+      "id": "help-desk-ticketing",
+      "name": "Help Desk & Support Ticketing Platform",
+      "tagline": "One shared queue with routing, SLAs, and a knowledge base instead of a flooded inbox.",
+      "text": "A branded support and ticketing platform that gives customers one place to submit issues, track status, and get answers, and gives your support team a shared queue instead of a flooded inbox. Tickets route automatically by category or priority, canned responses and a searchable knowledge base cut down repetitive replies, and SLA timers flag tickets at risk of breaching response commitments before they slip. Built-in reporting shows ticket volume, resolution time, and agent performance, giving support leads the data to staff appropriately instead of reacting to whatever inbox looks worst that day.",
+      "for": ["Support teams working out of a shared email inbox", "Software and product companies with growing user bases", "Service businesses handling warranty and repair requests"],
+      "features": [
+        ["Shared ticket queue", "Every request tracked with an owner, status, and history."],
+        ["Automatic routing", "Tickets assigned by topic, customer tier, or language."],
+        ["SLA timers", "Warnings before response and resolution targets are missed."],
+        ["Macros and AI drafts", "Saved replies and suggested answers for common questions."],
+        ["Customer status page", "Customers see ticket progress without emailing for updates."],
+        ["Support analytics", "Volume, first response, resolution time, and satisfaction."]
+      ],
+      "problems": ["Requests get lost or answered twice in a shared inbox", "Customers email repeatedly asking for updates", "No way to measure response times", "Agents retype the same answers all day"],
+      "integrations": ["Zendesk", "Freshdesk", "Help Scout", "Jira", "Slack", "Intercom", "HubSpot", "Gmail"],
+      "keywords": ["ticket", "support", "help desk", "complaint", "issue"],
+      "faq": [
+        ["When should a business move from email to a help desk?", "As soon as more than one person answers customer emails, or when requests start slipping. A help desk prevents duplicates, shows ownership, and measures response times."],
+        ["Can tickets come from phone, chat, and email?", "Yes. Email, web forms, chat, social messages, and call notes all become tickets in the same queue."],
+        ["Do you set up the knowledge base too?", "Yes. We draft articles from your most common tickets so customers can solve simple issues on their own."]
+      ]
+    },
+    {
+      "id": "customer-portal",
+      "name": "Customer Portal & Self-Service Platform",
+      "tagline": "A branded login where clients see orders, invoices, projects, and documents on their own.",
+      "text": "A branded customer portal where clients can log in to view order history, account status, invoices, project progress, or service history without calling or emailing your team for updates they could see themselves. Self-service actions (updating payment methods, downloading documents, submitting requests) are handled directly in the portal, cutting down the volume of routine inbound contact your team fields every week. The platform integrates with your existing billing, CRM, or project management system so the data shown is always current, and role-based access supports multiple contacts per account for larger clients.",
+      "for": ["B2B companies whose clients ask for status updates", "Professional services firms sharing documents securely", "Contractors and agencies managing ongoing projects"],
+      "features": [
+        ["Secure client login", "Single sign-on or passwordless login with multi-user accounts."],
+        ["Live account data", "Orders, invoices, projects, and service history pulled from your systems."],
+        ["Self-service actions", "Pay invoices, update cards, download files, and submit requests."],
+        ["Secure document exchange", "Upload and share files without email attachments."],
+        ["Notifications", "Clients alerted when something needs their attention."],
+        ["Branded experience", "Your logo, colors, and domain throughout."]
+      ],
+      "problems": ["Staff spend hours answering where is my order or project", "Sensitive documents are emailed back and forth", "Clients cannot pay or update billing on their own", "Updates live in several systems clients cannot see"],
+      "integrations": ["QuickBooks", "Stripe", "HubSpot", "Salesforce", "Asana", "Google Drive", "SharePoint", "DocuSign"],
+      "keywords": ["portal", "client", "status update", "document"],
+      "faq": [
+        ["What can customers do in a portal?", "Typical portals let customers check order or project status, view and pay invoices, download documents, submit requests, and manage account contacts."],
+        ["Is a customer portal secure?", "Yes. We use encrypted connections, role-based permissions, and secure authentication, and sensitive files are stored with access controls rather than sent by email."],
+        ["Does the portal replace our existing software?", "No. It sits on top of your billing, CRM, and project tools and shows customers the right slice of that data."]
+      ]
+    },
+    {
+      "id": "omnichannel-inbox",
+      "name": "Omnichannel Shared Inbox",
+      "tagline": "Email, texts, web chat, and social messages answered from one team inbox.",
+      "text": "A shared inbox that brings email, SMS, website chat, Facebook, Instagram, WhatsApp, and Google Business messages into one place your whole team can work from. Conversations are assigned to the right person, internal notes keep context in the thread, and every customer's history across channels appears in one timeline. Automations handle after-hours replies, tag and route conversations by topic, and push leads into your CRM, while reporting shows response time by channel and team member.",
+      "for": ["Businesses juggling messages across many apps", "Front desks and sales teams sharing customer conversations", "Teams that miss social and text messages"],
+      "features": [
+        ["Every channel in one place", "Email, SMS, chat, social, and WhatsApp in a single inbox."],
+        ["Assignment and collision detection", "Clear ownership so two people never reply at once."],
+        ["Unified customer timeline", "Full history across channels on every conversation."],
+        ["Internal notes and mentions", "Discuss a reply without leaving the thread."],
+        ["After-hours automation", "Instant replies, routing, and follow-up scheduling."],
+        ["Response time reporting", "Speed and volume by channel and team member."]
+      ],
+      "problems": ["Messages are missed because they arrive in different apps", "Staff text customers from personal phones", "No shared history when a coworker takes over", "Slow replies on social channels"],
+      "integrations": ["Front", "Missive", "Podium", "WhatsApp Business", "Facebook Messenger", "Instagram", "Twilio", "HubSpot"],
+      "keywords": ["text", "message", "inbox", "whatsapp", "chat"],
+      "faq": [
+        ["What is an omnichannel inbox?", "It is one workspace where messages from email, text, chat, and social platforms arrive together, so the team can assign, answer, and track every conversation in one place."],
+        ["Can we keep our existing business phone number for texting?", "In most cases yes. Landlines and VoIP numbers can usually be text-enabled so customers keep reaching you at the number they know."],
+        ["Does it work with our CRM?", "Yes. Conversations and new contacts sync to your CRM so sales and support share the same history."]
+      ]
+    },
+    {
+      "id": "ai-phone-receptionist",
+      "name": "AI Phone Receptionist & Call Routing",
+      "tagline": "Every call answered, qualified, booked, or routed, even after hours.",
+      "text": "An AI-powered phone system that answers every call in a natural voice, handles common questions, books appointments, takes detailed messages, and routes urgent or high-value calls to the right person. Missed calls trigger an instant text back so callers are never left hanging, call summaries and recordings are logged to your CRM, and smart routing sends callers to the right department, location, or on-call technician. Reporting shows call volume, missed call rate, and how many calls turned into booked work.",
+      "for": ["Service businesses that miss calls while on jobs", "Practices and offices with busy front desks", "Companies paying for an answering service"],
+      "features": [
+        ["Natural AI voice answering", "Answers questions about hours, services, and policies."],
+        ["Appointment booking by phone", "Books into your calendar during the call."],
+        ["Missed call text back", "An instant text to any caller you could not answer."],
+        ["Smart routing and escalation", "Urgent calls forwarded to on-call staff immediately."],
+        ["Call summaries in your CRM", "Transcripts, summaries, and next steps logged automatically."],
+        ["Call analytics", "Volume, peak times, missed calls, and conversion to bookings."]
+      ],
+      "problems": ["Calls go to voicemail and callers phone a competitor", "Front desk staff are overwhelmed at peak times", "Answering services take incomplete messages", "No record of what was discussed on calls"],
+      "integrations": ["Twilio", "RingCentral", "Aircall", "OpenPhone", "Vapi", "Google Calendar", "HubSpot", "ServiceTitan"],
+      "keywords": ["call", "phone", "missed call", "voicemail", "receptionist"],
+      "faq": [
+        ["Do callers know they are speaking with AI?", "We recommend being transparent. A short disclosure is standard, and modern voice AI is natural enough that most callers simply get their question answered or their appointment booked."],
+        ["What happens with calls the AI cannot handle?", "They are transferred to a person or, after hours, the AI takes a detailed message and alerts the right staff member immediately."],
+        ["Can we keep our current phone number?", "Yes. Calls can be forwarded from your existing number, or the number can be ported, so nothing changes for your customers."]
+      ]
+    },
+    {
+      "id": "knowledge-base",
+      "name": "Knowledge Base & Self-Service Help Center",
+      "tagline": "Searchable answers for customers and staff, kept current and connected to support.",
+      "text": "A searchable help center that answers customer questions before they become tickets and gives your staff one trusted source for procedures and policies. We structure the content, write or migrate articles from your most common support requests, and connect the knowledge base to your help desk and AI chat so suggested answers appear as customers type. Article analytics show what people search for and cannot find, review reminders keep content accurate, and an internal section holds SOPs and training material for your team.",
+      "for": ["Support teams answering the same questions daily", "Software and product companies onboarding users", "Businesses whose processes live in people's heads"],
+      "features": [
+        ["Structured help center", "Categories, search, and related articles that make answers easy to find."],
+        ["Article writing and migration", "Content drafted from real tickets and existing documents."],
+        ["Help desk and chat integration", "Suggested articles in ticket forms and AI chat."],
+        ["Internal SOP library", "Private procedures and training for staff."],
+        ["Search gap reporting", "See what customers search for and cannot find."],
+        ["Content review workflow", "Owners and review dates keep articles accurate."]
+      ],
+      "problems": ["Support volume grows with every new customer", "Answers differ depending on who replies", "New hires learn by interrupting coworkers", "Help content is outdated or scattered across files"],
+      "integrations": ["Zendesk Guide", "Help Scout Docs", "Notion", "Confluence", "Intercom", "Document360", "Google Drive", "Slack"],
+      "keywords": ["faq", "knowledge", "sop", "training", "documentation"],
+      "faq": [
+        ["How much can a knowledge base reduce support tickets?", "A well-organized knowledge base connected to your ticket form and chat can deflect a meaningful share of simple questions. The exact reduction depends on how repetitive your requests are."],
+        ["Should internal and customer documentation live together?", "They can share one platform with separate permissions, which keeps answers consistent while protecting internal procedures."],
+        ["Who keeps the articles up to date?", "Each article gets an owner and review date, and the system reminds owners when content is due for review or when related tickets suggest it is wrong."]
+      ]
+    }
+  ]
+}

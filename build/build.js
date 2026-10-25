@@ -27,6 +27,7 @@ const quizzes = require("./pages/quizzes");
 const tools = require("./pages/tools");
 const glossary = require("./pages/glossary");
 const resources = require("./pages/resources");
+const solutions = require("./pages/solutions");
 const { latestPosts } = require("./lib/blogfeed");
 
 function checkNav() {
@@ -36,6 +37,9 @@ function checkNav() {
     const c = catalog.categoryBySlug[slug];
     if (!c || c.name !== name) throw new Error("build/lib/chrome.js NAV_CATEGORIES is out of sync for " + slug);
   });
+  const solCats = require("./pages/solutions").load();
+  if (chrome.NAV_SOLUTIONS.map(([slug, name]) => slug + name).join() !== solCats.map((c) => c.slug + c.name).join())
+    throw new Error("build/lib/chrome.js NAV_SOLUTIONS is out of sync with content/solutions/");
   chrome.NAV_INDUSTRIES.forEach(([slug]) => {
     if (!catalog.industryBySlug[slug]) throw new Error("build/lib/chrome.js NAV_INDUSTRIES has unknown industry " + slug);
   });
@@ -66,15 +70,17 @@ function main() {
   const quizList = quizzes.list(quizData);
   const toolList = tools.list();
   const terms = glossary.load();
-  const extra = { courses: courseList, quizzes: quizList, tools: toolList, glossary: terms };
+  const solutionCats = solutions.load();
+  const extra = { courses: courseList, quizzes: quizList, tools: toolList, glossary: terms, solutions: solutionCats };
 
   const auto = automations.build(catalog, guidesBySlug);
-  guides.build(guideList, catalog, latestPosts);
+  guides.build(guideList, catalog, latestPosts, solutionCats);
   learn.build(courseList);
   quizzes.build(quizData, toolList);
   tools.build(quizList);
   glossary.build(terms);
   resources.build(Object.assign({ guides: guideList, latestPosts }, extra));
+  solutions.build(solutionCats, catalog, guidesBySlug);
   pages.build(catalog, guideList, extra);
   seo.build(catalog, guideList, auto, extra);
 
@@ -84,6 +90,7 @@ function main() {
       JSON.stringify(
         []
           .concat(pages.searchEntries())
+          .concat(solutions.searchEntries(solutionCats))
           .concat(guides.searchEntries(guideList))
           .concat(learn.searchEntries(courseList))
           .concat(quizzes.searchEntries(quizData))
@@ -97,7 +104,7 @@ function main() {
   console.log(
     "Built " + catalog.automations.length + " automation pages, " + catalog.industries.length + " industries, " +
       catalog.categories.length + " functions, " + catalog.tools.length + " tools, " + guideList.length + " guides, " +
-      courseList.length + " courses, " + quizData.length + " quizzes, " + toolList.length + " free tools, " + terms.terms.length + " glossary terms."
+      courseList.length + " courses, " + quizData.length + " quizzes, " + toolList.length + " free tools, " + terms.terms.length + " glossary terms, " + solutions.all(solutionCats).length + " solutions."
   );
 }
 

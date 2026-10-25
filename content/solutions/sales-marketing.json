@@ -1,0 +1,149 @@
+{
+  "slug": "sales-marketing",
+  "name": "Sales, CRM & Marketing",
+  "icon": "target",
+  "order": 2,
+  "short": "CRMs, marketing automation, quoting, reviews, and loyalty programs that keep every lead and customer moving without manual chasing.",
+  "intro": "Revenue leaks when leads wait, follow-ups slip, and customer data lives in five places. These solutions give your sales and marketing teams one connected system for capturing leads, nurturing them, sending quotes, and bringing customers back, with the repetitive work handled automatically.",
+  "guide": "how-to-choose-a-crm-for-small-business",
+  "solutions": [
+    {
+      "id": "custom-crm",
+      "name": "Custom CRM Platform",
+      "tagline": "A CRM built around your real sales process, with every interaction captured automatically.",
+      "text": "A fully custom-built customer relationship management platform designed around your actual sales process instead of forcing it into someone else's rigid workflow. This includes pipeline and deal-stage tracking, contact and account management, activity logging, and role-based access for sales, support, and leadership teams. The platform integrates with your existing email, calendar, phone system, and marketing tools so every interaction is captured automatically instead of relying on manual data entry. Custom reporting dashboards give leadership real visibility into pipeline health and rep performance, and the system scales with the business instead of charging per-seat fees that grow faster than your team does.",
+      "for": ["Sales teams fighting a CRM that does not fit their process", "Businesses tracking deals in spreadsheets and inboxes", "Companies paying for per-seat licenses they barely use"],
+      "features": [
+        ["Pipelines that match your process", "Stages, fields, and rules designed around how you actually sell."],
+        ["Automatic activity capture", "Emails, calls, meetings, and texts logged without manual entry."],
+        ["Lead routing and assignment", "New leads assigned by territory, product, or round robin in seconds."],
+        ["Tasks and stalled-deal alerts", "Reminders and escalations so no deal goes quiet unnoticed."],
+        ["Role-based access", "Sales, support, and leadership each see what they need."],
+        ["Pipeline and rep dashboards", "Forecast, win rate, and activity reporting in real time."]
+      ],
+      "problems": ["Deals are tracked in spreadsheets, notes, and memory", "Reps skip CRM updates because entry is tedious", "Leadership cannot trust the forecast", "Per-seat pricing grows faster than the team"],
+      "integrations": ["HubSpot", "Salesforce", "Pipedrive", "Gmail", "Outlook", "RingCentral", "Twilio", "Zapier"],
+      "keywords": ["crm", "pipeline", "lead", "deal"],
+      "faq": [
+        ["Should we build a custom CRM or customize HubSpot or Salesforce?", "Most businesses are best served by configuring and automating an established CRM. A fully custom CRM makes sense when your process is unusual, you need deep integration with operational systems, or per-seat costs have become hard to justify. We help you decide on a free call."],
+        ["Can you migrate our existing contacts and deals?", "Yes. We clean, deduplicate, and migrate contacts, companies, deals, and activity history so your team starts with trustworthy data."],
+        ["How do you get reps to actually use the CRM?", "By removing the busywork. When emails, calls, and meetings log themselves and tasks are created automatically, reps only enter what only they know."]
+      ]
+    },
+    {
+      "id": "marketing-automation",
+      "name": "Marketing Automation Platform",
+      "tagline": "Nurture, segment, and score every lead automatically across email, SMS, and ads.",
+      "text": "A marketing automation system that captures leads from every channel, segments them by interest and behavior, and nurtures them with timely email, SMS, and retargeting until they are ready to buy. We design the lifecycle stages, build the nurture journeys, set up lead scoring so sales only talks to warm prospects, and connect everything to your CRM so marketing and sales share one view of each contact. Reporting ties campaigns to pipeline and revenue, so budget goes where it works.",
+      "for": ["Businesses with leads that are not ready to buy yet", "Marketing teams sending one-off blasts to the whole list", "Companies that cannot connect marketing spend to revenue"],
+      "features": [
+        ["Lifecycle stages", "Clear definitions from subscriber to customer, enforced automatically."],
+        ["Behavior-based nurture journeys", "Messages triggered by page visits, downloads, and email engagement."],
+        ["Lead scoring", "Fit and engagement scores that alert sales at the right moment."],
+        ["Segmentation", "Dynamic lists by industry, interest, location, and purchase history."],
+        ["Multichannel delivery", "Email, SMS, and ad audiences coordinated from one journey."],
+        ["Revenue attribution", "See which campaigns created pipeline and closed deals."]
+      ],
+      "problems": ["Leads go cold after the first contact", "Everyone gets the same newsletter regardless of interest", "Sales complains marketing leads are not ready", "No one can say which campaigns produce revenue"],
+      "integrations": ["HubSpot", "ActiveCampaign", "Klaviyo", "Mailchimp", "Salesforce", "Google Ads", "Meta Ads", "Twilio"],
+      "keywords": ["nurture", "drip", "campaign", "email sequence", "segment"],
+      "faq": [
+        ["What is the difference between marketing automation and email marketing?", "Email marketing sends messages to lists. Marketing automation reacts to each person's behavior across channels, scores their interest, and coordinates with sales, so the right message goes out at the right time without manual effort."],
+        ["Do we need a big list for marketing automation to work?", "No. Even a few hundred leads a month benefit from fast follow-up, nurture sequences, and scoring. The system scales as the list grows."],
+        ["Which platform do you recommend?", "HubSpot, ActiveCampaign, and Klaviyo cover most needs depending on whether you sell B2B, services, or e-commerce. We recommend based on your channels, CRM, and budget."]
+      ]
+    },
+    {
+      "id": "email-sms-marketing",
+      "name": "Email & SMS Marketing System",
+      "tagline": "Compliant, branded campaigns and automated flows that drive repeat business.",
+      "text": "A complete email and text messaging program set up for deliverability, compliance, and repeat revenue. We authenticate your sending domain, design branded templates, build welcome, reminder, re-engagement, and post-purchase flows, and set up two-way SMS with proper consent capture and opt-out handling. Your list is segmented so each campaign reaches the right customers, and reporting shows revenue per message, not just opens and clicks.",
+      "for": ["Local businesses that want customers coming back more often", "E-commerce brands relying on discounts to drive sales", "Teams whose emails land in spam"],
+      "features": [
+        ["Deliverability setup", "SPF, DKIM, DMARC, and warm-up so messages reach the inbox."],
+        ["Branded templates", "Mobile-friendly, accessible templates your team can reuse."],
+        ["Automated flows", "Welcome, reminder, birthday, win-back, and post-purchase sequences."],
+        ["Two-way SMS", "Texts customers can reply to, routed to the right staff member."],
+        ["Consent and compliance", "Opt-in capture and opt-out handling built for TCPA and CAN-SPAM."],
+        ["Revenue reporting", "Results measured in bookings and sales per campaign."]
+      ],
+      "problems": ["Emails land in spam or promotions", "No regular contact with past customers", "Texting customers from personal phones", "Unsure whether SMS consent is handled correctly"],
+      "integrations": ["Klaviyo", "Mailchimp", "ActiveCampaign", "Twilio", "Postscript", "Attentive", "Shopify", "Square"],
+      "keywords": ["email", "sms", "text", "newsletter", "win-back"],
+      "faq": [
+        ["Is SMS marketing legal for my business?", "Yes, with proper consent. We set up clear opt-in capture, keep consent records, honor STOP replies automatically, and follow quiet-hours rules to keep your program compliant."],
+        ["Why do my emails go to spam?", "Usually missing domain authentication, poor list hygiene, or sudden volume spikes. We fix authentication, clean the list, and warm up sending so inbox placement improves."],
+        ["How often should we email customers?", "Enough to stay top of mind without fatigue, typically weekly or every other week for campaigns, plus automated flows triggered by each customer's actions."]
+      ]
+    },
+    {
+      "id": "quote-proposal",
+      "name": "Quoting & Proposal Software (CPQ)",
+      "tagline": "Accurate quotes and polished proposals in minutes, with e-signature and deposit collection.",
+      "text": "A configure-price-quote system that turns your pricing rules, product options, and templates into fast, accurate quotes and professional proposals. Sales staff pick options and the system calculates pricing, discounts, and margins, then generates a branded proposal the customer can review, sign, and pay a deposit on online. Approval rules catch discounts outside policy, accepted quotes convert into jobs, orders, or invoices automatically, and follow-up reminders go out for proposals that have not been opened or signed.",
+      "for": ["Contractors and installers building quotes by hand", "Manufacturers and distributors with complex pricing", "Agencies and consultants sending custom proposals"],
+      "features": [
+        ["Pricing rules engine", "Options, bundles, tiers, and margins calculated automatically."],
+        ["Branded proposal templates", "Professional documents generated in one click."],
+        ["E-signature and deposits", "Customers sign and pay online without printing anything."],
+        ["Discount approvals", "Manager sign-off required when pricing falls outside policy."],
+        ["Automatic follow-up", "Reminders for proposals not yet viewed or signed."],
+        ["Quote-to-job conversion", "Accepted quotes become jobs, orders, or invoices instantly."]
+      ],
+      "problems": ["Quotes take days and contain pricing mistakes", "Every rep formats proposals differently", "Signed quotes are re-entered into scheduling and billing", "Nobody follows up on unsigned proposals"],
+      "integrations": ["PandaDoc", "DocuSign", "QuickBooks", "Salesforce", "HubSpot", "Stripe", "Jobber", "ServiceTitan"],
+      "keywords": ["quote", "proposal", "estimate", "bid"],
+      "faq": [
+        ["What does CPQ stand for?", "Configure, price, quote. CPQ software lets sales staff select products or services, applies your pricing rules automatically, and produces a finished quote or proposal."],
+        ["Can customers accept and pay online?", "Yes. Proposals include e-signature and an optional deposit or full payment through your processor, so jobs can be scheduled the moment they are accepted."],
+        ["Will this work for custom or project-based pricing?", "Yes. We model labor rates, materials, markups, and optional line items so even custom projects are priced consistently."]
+      ]
+    },
+    {
+      "id": "reputation-management",
+      "name": "Review & Reputation Management Platform",
+      "tagline": "More five-star reviews, faster responses, and early warning on unhappy customers.",
+      "text": "A reputation system that asks every happy customer for a review at the right moment, routes unhappy feedback to a manager before it goes public, and monitors reviews across Google, Facebook, Yelp, and industry sites in one inbox. AI-drafted replies help your team respond quickly in your voice, sentiment reporting surfaces recurring complaints by location or staff member, and review widgets put fresh social proof on your website automatically.",
+      "for": ["Local service businesses competing on star rating", "Multi-location brands managing many profiles", "Healthcare, legal, and hospitality teams with sensitive feedback"],
+      "features": [
+        ["Automated review requests", "Texts and emails sent after each completed visit or job."],
+        ["Private feedback first", "Unhappy customers reach a manager before a public review."],
+        ["Unified review inbox", "Google, Facebook, Yelp, and niche sites in one place."],
+        ["AI-assisted replies", "Draft responses in your brand voice, approved by staff."],
+        ["Sentiment trends", "Recurring themes by location, service, or employee."],
+        ["Website review widgets", "Fresh reviews displayed on your site automatically."]
+      ],
+      "problems": ["Only unhappy customers bother to leave reviews", "Reviews go unanswered for weeks", "No early warning when service quality slips", "Review requests depend on staff remembering to ask"],
+      "integrations": ["Google Business Profile", "Facebook", "Yelp", "Podium", "Birdeye", "NiceJob", "Twilio", "Slack"],
+      "keywords": ["review", "feedback", "survey", "reputation", "testimonial"],
+      "faq": [
+        ["Is it allowed to filter who gets asked for a review?", "Platforms like Google prohibit selectively soliciting only positive reviews. Our setup asks every customer, while giving anyone with a problem an easy way to reach a manager first."],
+        ["How quickly should we respond to reviews?", "Within a day or two is a good standard. Prompt, specific replies show prospects you care and can soften the impact of a negative review."],
+        ["Can this work across multiple locations?", "Yes. Each location gets its own request flow and reporting, with a combined view for leadership."]
+      ]
+    },
+    {
+      "id": "loyalty-referral",
+      "name": "Loyalty & Referral Program Platform",
+      "tagline": "Reward repeat customers and turn them into your best source of new ones.",
+      "text": "A loyalty and referral platform that rewards customers for repeat purchases, visits, and introductions, without punch cards or manual tracking. Points, tiers, or perks are earned automatically from your POS, booking, or e-commerce data, referral links track who sent whom, and rewards are issued the moment they are earned. Automated reminders tell customers about unused rewards and approaching tier upgrades, and reporting shows how much revenue the program drives compared with its cost.",
+      "for": ["Restaurants, salons, and retailers with repeat customers", "Service businesses that grow by word of mouth", "Brands replacing paper punch cards"],
+      "features": [
+        ["Points, tiers, and perks", "Program rules that fit your margins and customer behavior."],
+        ["Automatic earning", "Rewards credited from POS, booking, or online orders."],
+        ["Referral tracking", "Unique links and codes with rewards for both sides."],
+        ["Reward reminders", "Nudges about unused points and upcoming tier upgrades."],
+        ["Fraud controls", "Limits that stop self-referrals and reward abuse."],
+        ["Program ROI reporting", "Repeat rate, referral revenue, and reward cost side by side."]
+      ],
+      "problems": ["Repeat customers get nothing for their loyalty", "Referrals happen but are never tracked or thanked", "Paper punch cards get lost", "No idea whether discounts actually drive return visits"],
+      "integrations": ["Square", "Toast", "Shopify", "Smile.io", "ReferralCandy", "Stripe", "Klaviyo", "Twilio"],
+      "keywords": ["loyalty", "referral", "repeat", "reward"],
+      "faq": [
+        ["Do loyalty programs actually increase revenue?", "When rewards are tied to behavior you want (more visits, higher spend, referrals) and members are reminded of their progress, programs typically increase visit frequency. We set up reporting so you can see the real effect."],
+        ["Can customers join without downloading an app?", "Yes. Members can sign up and track rewards by phone number, email, or a web wallet, with no app required."],
+        ["How are referrals tracked?", "Each customer gets a unique link or code. When a new customer uses it, both are credited automatically and the referral is recorded in your CRM."]
+      ]
+    }
+  ]
+}

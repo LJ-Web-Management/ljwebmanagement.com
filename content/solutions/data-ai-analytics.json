@@ -1,0 +1,126 @@
+{
+  "slug": "data-ai-analytics",
+  "name": "Data, AI & Analytics",
+  "icon": "chart",
+  "order": 8,
+  "short": "Dashboards, data warehouses, custom AI agents, document AI, and forecasting that turn your data into decisions and your busywork into automation.",
+  "intro": "Most businesses already collect the data they need to make better decisions; it is just trapped in separate tools. These solutions bring it together, put it in front of the right people, and apply AI where it saves real time, with guardrails that keep people in control.",
+  "guide": "ai-agents-for-business-guide",
+  "solutions": [
+    {
+      "id": "bi-reporting",
+      "name": "Business Intelligence & Reporting Dashboards",
+      "tagline": "Live dashboards built from every system, instead of a monthly spreadsheet someone rebuilds by hand.",
+      "text": "A centralized reporting and business intelligence platform that pulls data from your CRM, ERP, POS, marketing tools, and financial systems into live dashboards instead of a monthly spreadsheet someone has to manually rebuild. Custom dashboards are built around the metrics that actually matter to your business (revenue, margin, customer acquisition cost, pipeline velocity, whatever leadership needs to see) with drill-down detail available on demand. Automated report delivery pushes key numbers to stakeholders' inboxes on a schedule, and role-based access means every team sees the data relevant to them without wading through everyone else's.",
+      "for": ["Leadership teams making decisions on stale numbers", "Operations managers tracking KPIs across locations", "Finance teams rebuilding the same reports monthly"],
+      "features": [
+        ["Data connectors", "CRM, ERP, POS, ads, and accounting data combined."],
+        ["KPI definitions", "Agreed formulas so everyone uses the same numbers."],
+        ["Interactive dashboards", "Filter, drill down, and compare periods."],
+        ["Scheduled delivery", "Reports emailed or posted to Slack automatically."],
+        ["Threshold alerts", "Notifications when a metric moves outside its range."],
+        ["Role-based access", "Each team sees the data relevant to them."]
+      ],
+      "problems": ["Reports take days to compile each month", "Departments argue over whose numbers are right", "Decisions made on outdated data", "Nobody notices a problem until it is expensive"],
+      "integrations": ["Power BI", "Looker Studio", "Tableau", "Databox", "QuickBooks", "Salesforce", "Google Analytics 4", "BigQuery"],
+      "keywords": ["report", "dashboard", "kpi", "metric", "analytics"],
+      "faq": [
+        ["Which BI tool should we use?", "Power BI is a strong default for Microsoft shops, Looker Studio suits Google-centric and budget-conscious teams, and Tableau excels at complex analysis. We recommend based on your data sources and users."],
+        ["Do we need a data warehouse for dashboards?", "Not always. Simple dashboards can connect directly to source systems. A warehouse becomes worthwhile when you combine many sources or need historical trends."],
+        ["How do we make sure the numbers are right?", "We document KPI definitions with your leadership, reconcile dashboard totals to source systems, and add data quality checks."]
+      ]
+    },
+    {
+      "id": "data-warehouse-pipelines",
+      "name": "Data Warehouse & Pipeline Setup",
+      "tagline": "One clean, historical home for all your business data, refreshed automatically.",
+      "text": "A modern data stack that extracts data from your business systems, loads it into a cloud warehouse, and transforms it into clean, documented tables ready for reporting, analysis, and AI. Pipelines refresh on a schedule or in near real time, history is preserved even when source systems overwrite records, and data quality tests catch problems before they reach a dashboard. Your team gets a single source of truth that every report, model, and integration can rely on.",
+      "for": ["Companies combining data from five or more systems", "Teams that need historical trend analysis", "Businesses preparing data for AI and forecasting"],
+      "features": [
+        ["Automated extraction", "Managed connectors for SaaS apps, databases, and files."],
+        ["Cloud warehouse", "BigQuery, Snowflake, or Azure set up and secured."],
+        ["Transformation models", "Clean, joined, documented business tables."],
+        ["Historical snapshots", "Track how records change over time."],
+        ["Data quality tests", "Alerts on missing, duplicate, or unexpected data."],
+        ["Access controls", "Permissions and auditing for sensitive data."]
+      ],
+      "problems": ["Analysts spend most of their time cleaning data", "Historical data is lost when systems overwrite records", "Every report pulls data a different way", "AI projects stall on messy data"],
+      "integrations": ["BigQuery", "Snowflake", "Azure Synapse", "Fivetran", "Airbyte", "dbt", "PostgreSQL", "Power BI"],
+      "keywords": ["data", "report", "sync", "export"],
+      "faq": [
+        ["What is a data warehouse?", "A central database optimized for analysis that stores cleaned, combined data from your business systems, including history, so reporting and analytics run from one trusted source."],
+        ["Is a data warehouse expensive to run?", "For most small and midsize businesses, cloud warehouse costs are modest because you pay for storage and queries used. We design to keep costs predictable."],
+        ["How often is the data refreshed?", "Anywhere from daily to every few minutes, depending on how current the reports need to be and what the source systems allow."]
+      ]
+    },
+    {
+      "id": "custom-ai-agents",
+      "name": "Custom AI Agents & Assistants",
+      "tagline": "AI that takes real actions in your systems, with guardrails and human approval where it matters.",
+      "text": "Custom AI agents built to handle multi-step work that used to require a person: researching leads, triaging inboxes, drafting replies and proposals, updating records, answering staff questions from internal documents, and coordinating tasks across your tools. Each agent is connected to the systems it needs through secure, permissioned integrations, grounded in your data, and given clear limits, with human approval on actions that carry risk. Logs and evaluations show what each agent did and how well, so you can expand its responsibilities with confidence.",
+      "for": ["Teams buried in repetitive, judgment-light work", "Businesses with knowledge spread across many documents", "Leaders exploring AI beyond chat"],
+      "features": [
+        ["Use case discovery", "Find the tasks where an agent saves the most time safely."],
+        ["Tool and system access", "Agents read and update your CRM, inbox, and apps through secure integrations."],
+        ["Grounded in your knowledge", "Answers and actions based on your documents and data."],
+        ["Human-in-the-loop approvals", "People approve sensitive actions before they happen."],
+        ["Guardrails and permissions", "Clear limits on what each agent can see and do."],
+        ["Monitoring and evaluation", "Logs, quality checks, and cost tracking."]
+      ],
+      "problems": ["Skilled staff spend hours on repetitive research and admin", "Internal knowledge is hard to find", "Off-the-shelf chatbots cannot take action", "Concern about AI making unchecked mistakes"],
+      "integrations": ["Claude", "OpenAI", "Microsoft Copilot", "n8n", "Make.com", "Zapier", "Slack", "Google Workspace"],
+      "keywords": ["ai", "draft", "summar", "triage", "research"],
+      "faq": [
+        ["What is an AI agent?", "An AI agent is a system that uses a language model to plan and complete multi-step tasks, using tools like your CRM, email, or databases, rather than only answering questions in a chat window."],
+        ["Is it safe to let AI update our systems?", "With the right design, yes. Agents get only the permissions they need, risky actions require human approval, and every action is logged."],
+        ["Will AI agents replace our staff?", "In practice, agents remove repetitive work so people can focus on customers, judgment calls, and growth. Most clients redeploy time rather than reduce headcount."]
+      ]
+    },
+    {
+      "id": "document-ai-extraction",
+      "name": "AI Document Processing & Data Extraction",
+      "tagline": "Turn invoices, forms, IDs, and PDFs into clean data in your systems, without typing.",
+      "text": "An AI document processing pipeline that reads incoming documents (invoices, purchase orders, applications, intake forms, bills of lading, contracts, and scanned paperwork), extracts the fields you need, validates them against your rules and records, and posts the results into your ERP, CRM, or database. Documents arrive from email, upload portals, or scanners, low-confidence fields are sent to a quick human review queue, and every document is filed with its extracted data for audit.",
+      "for": ["Teams keying data from PDFs and paper forms", "Logistics, insurance, healthcare, and finance operations", "Businesses processing hundreds of documents a week"],
+      "features": [
+        ["Multi-source intake", "Email inboxes, portals, scanners, and shared drives."],
+        ["Field extraction", "Header fields, tables, and line items captured accurately."],
+        ["Validation rules", "Checks against vendors, customers, POs, and math."],
+        ["Human review queue", "Only uncertain fields need a person."],
+        ["System posting", "Data written to your ERP, CRM, or database automatically."],
+        ["Searchable archive", "Every document stored with its extracted data."]
+      ],
+      "problems": ["Staff retype data from PDFs all day", "Typos cause billing and shipping errors", "Paper backlogs build up at busy times", "Hiring more people to keep up with volume"],
+      "integrations": ["Azure Document Intelligence", "Google Document AI", "AWS Textract", "Claude", "OpenAI", "SharePoint", "NetSuite", "QuickBooks"],
+      "keywords": ["document", "pdf", "data entry", "extract", "intake"],
+      "faq": [
+        ["How accurate is AI document extraction?", "Accuracy is high on typed documents and improves with consistent layouts. Every field gets a confidence score, and anything below the threshold goes to a person, so errors are caught before posting."],
+        ["Can it read handwriting?", "Modern models handle clear handwriting reasonably well. For critical handwritten fields we route to human review."],
+        ["What happens to our documents and data?", "We use enterprise AI services with data protection terms, store documents in your environment where possible, and restrict access to those who need it."]
+      ]
+    },
+    {
+      "id": "forecasting-predictive-analytics",
+      "name": "Forecasting & Predictive Analytics",
+      "tagline": "Predict demand, revenue, churn, and staffing needs so you can act before it happens.",
+      "text": "Forecasting and predictive models built on your historical data to answer the questions that drive planning: how much will we sell, how much stock and staff will we need, which customers are likely to leave, and which leads are most likely to close. Models are trained and validated on your data, refreshed automatically, and delivered inside the tools your team already uses, such as reorder suggestions in your inventory system or churn-risk flags in your CRM, with plain-language explanations of what drives each prediction.",
+      "for": ["Retailers and distributors planning inventory", "Subscription businesses fighting churn", "Service businesses planning staffing and capacity"],
+      "features": [
+        ["Demand and sales forecasting", "Projections by product, location, and week."],
+        ["Churn prediction", "At-risk customers flagged early for outreach."],
+        ["Lead and opportunity scoring", "Win likelihood based on your historical deals."],
+        ["Staffing forecasts", "Labor needs matched to expected demand."],
+        ["Delivered in your tools", "Predictions inside your CRM, ERP, or dashboards."],
+        ["Explainable results", "Plain-language drivers behind every forecast."]
+      ],
+      "problems": ["Planning based on gut feel and last year's numbers", "Overstock and stockouts at the same time", "Customers leave without warning", "Overstaffed slow days and understaffed busy ones"],
+      "integrations": ["BigQuery ML", "Azure Machine Learning", "Python", "Power BI", "Salesforce", "NetSuite", "Shopify", "Snowflake"],
+      "keywords": ["forecast", "demand", "churn", "predict", "capacity"],
+      "faq": [
+        ["How much data do we need for forecasting?", "Generally at least one to two years of consistent history for seasonal forecasting. Simpler models can work with less, and we assess your data before committing to an approach."],
+        ["How accurate will the forecasts be?", "Accuracy depends on your data and how predictable your business is. We measure accuracy on held-out history and report it honestly before you rely on the model."],
+        ["Do we need a data scientist to use the results?", "No. Predictions are delivered as simple numbers, flags, and suggestions inside the tools your team already uses."]
+      ]
+    }
+  ]
+}

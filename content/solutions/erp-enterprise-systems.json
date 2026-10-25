@@ -1,0 +1,126 @@
+{
+  "slug": "erp-enterprise-systems",
+  "name": "ERP & Enterprise Systems",
+  "icon": "building",
+  "order": 6,
+  "short": "ERP implementation, systems integration, legacy modernization, document management, and compliance platforms for one source of truth.",
+  "intro": "As a business grows, disconnected tools and spreadsheets turn into the biggest drag on speed and accuracy. These solutions unify core operations, connect the systems you keep, retire the ones holding you back, and put compliance and documents under control.",
+  "guide": "erp-implementation-guide",
+  "solutions": [
+    {
+      "id": "erp-integration",
+      "name": "ERP Implementation & Integration",
+      "tagline": "Finance, inventory, procurement, HR, and reporting unified in one integrated backbone.",
+      "text": "End-to-end enterprise resource planning services covering selection, implementation, customization, and integration of ERP systems (such as NetSuite, SAP Business One, Microsoft Dynamics, or Odoo) into a client's existing operations. This offering unifies finance, inventory, procurement, HR, and reporting into a single source of truth, and includes data migration from legacy systems, workflow configuration, staff training, and ongoing support so growing businesses can replace disconnected spreadsheets and standalone tools with one integrated backbone.",
+      "for": ["Businesses that have outgrown QuickBooks and spreadsheets", "Manufacturers and distributors with complex operations", "Multi-entity companies needing consolidated reporting"],
+      "features": [
+        ["ERP selection", "Requirements gathered and vendors compared objectively."],
+        ["Implementation and configuration", "Modules set up around your processes and controls."],
+        ["Data migration", "Customers, vendors, items, and balances cleaned and loaded."],
+        ["Integrations", "CRM, e-commerce, WMS, and payroll connected to the ERP."],
+        ["Training and change management", "Role-based training so the team actually adopts it."],
+        ["Post-launch support", "Optimization, new workflows, and upgrades over time."]
+      ],
+      "problems": ["Data is re-entered across accounting, inventory, and sales tools", "No single, trusted view of the business", "Month-end close and reporting take too long", "Growth is limited by manual processes"],
+      "integrations": ["NetSuite", "SAP Business One", "Microsoft Dynamics 365", "Odoo", "Acumatica", "Salesforce", "Shopify", "Power BI"],
+      "keywords": ["erp", "inventory", "purchase order", "reconcil"],
+      "faq": [
+        ["How do I know if my business needs an ERP?", "Common signs are re-keying data between systems, slow month-end close, inventory inaccuracies, multiple entities or locations, and leadership unable to get timely reports."],
+        ["Which ERP is best for a small or midsize business?", "NetSuite, Microsoft Dynamics 365 Business Central, Acumatica, SAP Business One, and Odoo all serve this market. The right choice depends on industry, complexity, budget, and integrations."],
+        ["What makes ERP projects fail?", "Unclear requirements, poor data migration, and low user adoption. We address all three with structured discovery, careful data cleanup, and hands-on training."]
+      ]
+    },
+    {
+      "id": "systems-integration-api",
+      "name": "Systems Integration & API Development",
+      "tagline": "Make the software you already own share data reliably, in real time.",
+      "text": "Custom integrations that connect your CRM, ERP, accounting, e-commerce, scheduling, and industry software so data moves between them automatically and accurately. We map how records should flow, build integrations using native connectors, iPaaS platforms like Zapier, Make, and n8n, or custom API code where needed, and add error handling, retries, and monitoring so problems are caught and fixed before they cause bad data. Documentation and alerting mean integrations keep working as your systems change.",
+      "for": ["Teams re-keying data between systems", "Businesses with industry software that lacks native integrations", "Companies whose Zapier setup has become fragile"],
+      "features": [
+        ["Integration architecture", "Systems of record and data flows mapped before building."],
+        ["Native, iPaaS, or custom API", "The simplest reliable approach for each connection."],
+        ["Two-way sync", "Records kept consistent across systems with conflict rules."],
+        ["Error handling and retries", "Failures caught, retried, and reported automatically."],
+        ["Monitoring and alerts", "Know immediately if an integration stops working."],
+        ["Documentation", "Clear records of every flow for future changes."]
+      ],
+      "problems": ["Copying data between apps by hand", "Integrations that silently break", "Duplicate and conflicting records across systems", "Vendors say their software cannot connect"],
+      "integrations": ["Zapier", "Make.com", "n8n", "Workato", "REST APIs", "Webhooks", "Salesforce", "NetSuite"],
+      "keywords": ["sync", "integration", "data entry", "import"],
+      "faq": [
+        ["What is an API integration?", "An API integration connects two software systems through their programming interfaces so they can exchange data automatically, such as sending new orders from a store to an ERP."],
+        ["Should we use Zapier or custom code?", "Zapier and Make are fast and affordable for many workflows. Custom code is better for high volume, complex logic, or systems without connectors. We often combine them."],
+        ["What if our software has no API?", "We can often use webhooks, scheduled file exports, database connections, or robotic process automation as a fallback."]
+      ]
+    },
+    {
+      "id": "legacy-modernization",
+      "name": "Legacy System Modernization & Data Migration",
+      "tagline": "Move off aging software and Access databases without losing data or disrupting work.",
+      "text": "A structured program for replacing outdated software, Access databases, on-premise servers, and spreadsheet-based systems with modern cloud platforms. We document what the old system does (including the undocumented workarounds), choose or build the replacement, clean and migrate the data, and run old and new in parallel until results match. Cutover is planned around your busy periods, users are trained before go-live, and historical data stays accessible for reporting and compliance.",
+      "for": ["Businesses running on unsupported or end-of-life software", "Teams dependent on one person who understands the old system", "Companies moving from on-premise servers to the cloud"],
+      "features": [
+        ["System discovery", "Every feature, report, and workaround documented."],
+        ["Replacement selection or build", "Off-the-shelf where it fits, custom where it does not."],
+        ["Data cleanup and migration", "Duplicates removed, formats standardized, history preserved."],
+        ["Parallel running", "Old and new compared until results match."],
+        ["Phased cutover", "Go-live planned around your calendar to limit disruption."],
+        ["Archive access", "Historical records kept searchable for reporting and audits."]
+      ],
+      "problems": ["Critical software is no longer supported", "Only one employee knows how the system works", "Remote access to an old server is slow and risky", "Data is trapped in formats nothing else can read"],
+      "integrations": ["Microsoft Access", "SQL Server", "Azure", "AWS", "Google Cloud", "Airtable", "Salesforce", "NetSuite"],
+      "keywords": ["migration", "spreadsheet", "data entry", "import"],
+      "faq": [
+        ["How do you avoid losing data during migration?", "We profile and clean the data first, run trial migrations, reconcile record counts and totals, and keep the legacy system available until the new one is verified."],
+        ["Can we migrate in phases?", "Yes. Phased migrations by module, location, or team reduce risk and let users adapt gradually."],
+        ["What happens to our old reports?", "We rebuild the reports people rely on in the new system or a BI tool, and archive historical data so it stays accessible."]
+      ]
+    },
+    {
+      "id": "document-management-esignature",
+      "name": "Document Management & E-Signature Platform",
+      "tagline": "Generate, sign, file, and find documents automatically, with full version history.",
+      "text": "A document system that generates contracts, agreements, and forms from templates using data already in your CRM or ERP, sends them for e-signature, and files the signed copy in the right folder with consistent naming. Documents are searchable by content, permissions control who sees what, retention rules archive or delete records on schedule, and reminders chase unsigned documents and upcoming renewals so nothing expires unnoticed.",
+      "for": ["Professional services and legal teams", "Real estate, lending, and insurance businesses", "HR teams managing employee paperwork"],
+      "features": [
+        ["Template-based generation", "Documents filled from CRM, ERP, or form data."],
+        ["E-signature workflows", "Signing order, reminders, and audit trails."],
+        ["Automatic filing", "Signed documents named and stored in the right place."],
+        ["Full-text search", "Find any document by its contents."],
+        ["Permissions and retention", "Access controls and retention schedules enforced."],
+        ["Renewal and expiration alerts", "Reminders before contracts and documents lapse."]
+      ],
+      "problems": ["Contracts are drafted by copying old ones", "Signed documents saved in random folders", "Unsigned agreements stall deals and onboarding", "Contract renewals are missed"],
+      "integrations": ["DocuSign", "Adobe Acrobat Sign", "PandaDoc", "SharePoint", "Google Drive", "Box", "Dropbox", "Salesforce"],
+      "keywords": ["document", "contract", "signature", "agreement", "form"],
+      "faq": [
+        ["Are electronic signatures legally binding?", "In the United States, electronic signatures are generally valid under the ESIGN Act and UETA for most business documents. Some documents have special requirements, which we account for."],
+        ["Can documents be generated automatically from our CRM?", "Yes. Templates pull names, pricing, terms, and other details directly from CRM or ERP records."],
+        ["How do retention policies work?", "Each document type gets a retention period. The system archives or flags documents for deletion when the period ends, keeping you compliant without manual cleanup."]
+      ]
+    },
+    {
+      "id": "compliance-risk-management",
+      "name": "Compliance & Risk Management Platform",
+      "tagline": "Track obligations, certifications, inspections, and incidents before deadlines slip.",
+      "text": "A compliance system that keeps every regulatory obligation, license, certification, inspection, and policy acknowledgment on a schedule with an owner. Deadlines trigger reminders and escalations, evidence is collected and stored with each task, incidents and corrective actions are tracked to closure, and dashboards show compliance status by location, team, or regulation. Audit packages can be generated in minutes because the documentation is captured as the work happens.",
+      "for": ["Healthcare, construction, and food businesses", "Financial services and insurance firms", "Multi-location operators with licenses and inspections"],
+      "features": [
+        ["Obligation register", "Every requirement mapped to an owner and schedule."],
+        ["License and certification tracking", "Expiration alerts for the business and every employee."],
+        ["Inspections and checklists", "Mobile inspections with photos and signatures."],
+        ["Incident and corrective action tracking", "Issues logged, assigned, and followed to closure."],
+        ["Policy acknowledgments", "Staff sign off on policies with automatic reminders."],
+        ["Audit-ready reporting", "Evidence packaged for auditors and regulators on demand."]
+      ],
+      "problems": ["Deadlines tracked in calendars and memory", "Expired licenses and certifications discovered too late", "Audits mean days of gathering evidence", "Incidents are logged but never followed up"],
+      "integrations": ["Vanta", "Drata", "SafetyCulture", "Microsoft 365", "Google Workspace", "DocuSign", "Slack", "Power BI"],
+      "keywords": ["compliance", "license", "certification", "inspection", "deadline"],
+      "faq": [
+        ["What does a compliance management system do?", "It tracks regulatory requirements, deadlines, licenses, inspections, policies, and incidents, assigns owners, sends reminders, and stores evidence so you can prove compliance."],
+        ["Can it track employee certifications?", "Yes. Each employee's licenses and training are tracked with expiration reminders to them and their manager."],
+        ["Does this replace legal advice?", "No. It operationalizes the requirements your advisors identify, making sure the work gets done and documented."]
+      ]
+    }
+  ]
+}

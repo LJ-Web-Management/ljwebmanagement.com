@@ -1,0 +1,149 @@
+{
+  "slug": "industry-platforms-saas",
+  "name": "Industry Platforms, Apps & SaaS",
+  "icon": "grid",
+  "order": 9,
+  "short": "Restaurant POS, marketplaces, property management platforms, custom SaaS products, mobile apps, and managed hosting for your software.",
+  "intro": "Some businesses need more than integrations: they need a platform of their own, whether that is a POS built for their restaurant, a marketplace connecting vendors and buyers, or a SaaS product to sell. These solutions cover building, launching, and running that software reliably.",
+  "guide": "build-vs-buy-custom-software-guide",
+  "solutions": [
+    {
+      "id": "restaurant-pos",
+      "name": "Restaurant Point of Sale (POS) System",
+      "tagline": "Order entry, tabs, kitchen display, and real-time reporting in one connected system.",
+      "text": "A complete point-of-sale platform built for restaurants, cafes, and quick-service operations, covering order entry, table and tab management, and kitchen display integration in one connected system. Checkout closes out tabs and records how each guest paid (cash, card, or other) for clean bookkeeping, and it pairs with your existing card processor or terminal rather than handling card charges itself. The platform also includes menu management, role-based staff logins, and real-time reporting dashboards, giving owners and managers accurate visibility into top-selling items, average tab size, and daily revenue without reconciling numbers across separate tools. This offering includes hardware setup, menu configuration, and staff training to get your team live fast.",
+      "for": ["Full-service restaurants and bars", "Cafes and quick-service counters", "Food trucks and multi-concept operators"],
+      "features": [
+        ["Order entry and modifiers", "Fast ordering with modifiers, courses, and notes."],
+        ["Tables, tabs, and splits", "Floor plans, open tabs, and split checks."],
+        ["Kitchen display integration", "Orders routed to the right station instantly."],
+        ["Menu management", "Update items, prices, and availability everywhere at once."],
+        ["Role-based staff logins", "Permissions for servers, managers, and owners."],
+        ["Real-time reporting", "Sales, item mix, and average tab by shift."]
+      ],
+      "problems": ["Orders lost between the counter and the kitchen", "End-of-night reconciliation takes too long", "Menu changes made in several places", "No clear view of what sells and when"],
+      "integrations": ["Toast", "Square", "Clover", "Stripe Terminal", "DoorDash", "Uber Eats", "7shifts", "QuickBooks"],
+      "keywords": ["restaurant", "order", "menu", "kitchen", "pos"],
+      "faq": [
+        ["Does the POS process card payments itself?", "No. It pairs with your existing card processor or terminal and records how each guest paid, which keeps payment processing flexible and bookkeeping clean."],
+        ["Can it connect to delivery apps?", "Yes. Orders from DoorDash, Uber Eats, and online ordering can flow into the same kitchen queue and reporting."],
+        ["How long does it take to go live?", "Timing depends on menu size and hardware, and includes menu configuration, hardware setup, and staff training before your first service."]
+      ]
+    },
+    {
+      "id": "marketplace-platform",
+      "name": "Marketplace & Multi-Vendor Platform",
+      "tagline": "Connect vendors and customers with routing, commissions, and split payouts handled automatically.",
+      "text": "A multi-vendor marketplace platform for businesses connecting multiple sellers, providers, or contractors with customers through a single storefront: a local services marketplace, a multi-brand e-commerce platform, or a vendor network. The platform handles vendor onboarding and profile management, order or booking routing to the correct vendor, commission calculation, and split payouts, all without manual reconciliation. Vendors get their own dashboard for managing listings, orders, and payouts, and platform admins get oversight tools for approving vendors, resolving disputes, and monitoring marketplace-wide performance from one place.",
+      "for": ["Entrepreneurs launching a services or product marketplace", "Associations and networks connecting members with buyers", "Retailers adding third-party sellers"],
+      "features": [
+        ["Vendor onboarding", "Applications, verification, and profile setup."],
+        ["Listings and search", "Products or services searchable by category and location."],
+        ["Order and booking routing", "Every order sent to the right vendor automatically."],
+        ["Commissions and split payouts", "Fees calculated and payouts sent without reconciliation."],
+        ["Vendor dashboards", "Listings, orders, reviews, and payouts in one place."],
+        ["Admin oversight", "Approvals, disputes, and marketplace analytics."]
+      ],
+      "problems": ["Coordinating vendors by email and spreadsheets", "Paying vendors manually after every sale", "No way to scale beyond a handful of sellers", "Disputes with no record of what happened"],
+      "integrations": ["Stripe Connect", "Sharetribe", "Shopify", "Algolia", "Twilio", "SendGrid", "Google Maps", "QuickBooks"],
+      "keywords": ["vendor", "marketplace", "booking", "order"],
+      "faq": [
+        ["How do split payouts work?", "Using a payments platform like Stripe Connect, each customer payment is divided automatically between the vendor and the marketplace commission, and vendors are paid out on schedule."],
+        ["Should we build a marketplace from scratch?", "Not always. Platforms like Sharetribe can launch a marketplace quickly, and custom development makes sense when your workflows or scale require it."],
+        ["Who handles vendor taxes and verification?", "Payment platforms collect tax information and verify vendor identity as part of onboarding, which we configure for your marketplace."]
+      ]
+    },
+    {
+      "id": "property-management-platform",
+      "name": "Property Management Platform",
+      "tagline": "Leasing, rent collection, maintenance, and owner reporting in one connected system.",
+      "text": "A property management system for residential, commercial, and short-term rental operators that connects listings, applications, leases, rent collection, maintenance, and owner reporting. Applicants apply and screen online, leases are generated and e-signed, rent is collected by ACH with automatic late fees and reminders, and maintenance requests are triaged and dispatched to vendors with photos and updates sent back to tenants. Owners get monthly statements and a portal, and accounting stays reconciled by property.",
+      "for": ["Residential property managers and landlords", "Commercial and mixed-use portfolios", "Short-term and vacation rental operators"],
+      "features": [
+        ["Listings and online applications", "Syndicated listings with online screening."],
+        ["Lease generation and e-signature", "Leases created from templates and signed online."],
+        ["Online rent collection", "ACH and card payments with automatic late fees."],
+        ["Maintenance requests and dispatch", "Tenant requests routed to vendors with status updates."],
+        ["Owner portal and statements", "Monthly statements and documents for every owner."],
+        ["Property-level accounting", "Income and expenses tracked by unit and property."]
+      ],
+      "problems": ["Chasing rent payments and late fees by hand", "Maintenance requests lost in texts and calls", "Owner statements built manually every month", "Leases and documents scattered across folders"],
+      "integrations": ["AppFolio", "Buildium", "Rent Manager", "Yardi", "Guesty", "QuickBooks", "Zillow", "DocuSign"],
+      "keywords": ["tenant", "lease", "rent", "maintenance request", "property"],
+      "faq": [
+        ["Should we use AppFolio or Buildium or a custom system?", "AppFolio and Buildium fit most residential portfolios. We implement and automate them, and build custom tools for unique workflows or integrations they do not cover."],
+        ["Can tenants pay rent online automatically?", "Yes. Tenants can set up autopay by ACH or card, and reminders and late fees are applied according to the lease."],
+        ["How are maintenance vendors managed?", "Requests are categorized and dispatched to approved vendors, who update status and upload photos and invoices for owner approval and billing."]
+      ]
+    },
+    {
+      "id": "custom-saas-development",
+      "name": "Custom SaaS Product Development",
+      "tagline": "Turn your expertise or internal tool into a subscription software product.",
+      "text": "End-to-end development of a software-as-a-service product, from validating the idea and defining a focused first version through design, development, launch, and growth. We build secure multi-tenant applications with user accounts, roles, subscription billing, onboarding, and admin tools, on modern cloud infrastructure that scales as customers sign up. Analytics show how customers use the product, and an iterative roadmap keeps development focused on what drives retention and revenue.",
+      "for": ["Founders with a validated software idea", "Businesses productizing an internal tool", "Industry experts building software for their niche"],
+      "features": [
+        ["Product discovery", "Users, problems, and a focused first version defined."],
+        ["UX and interface design", "Clickable prototypes tested before development."],
+        ["Multi-tenant architecture", "Secure data separation between customers."],
+        ["Accounts, roles, and billing", "Sign-up, permissions, and subscriptions built in."],
+        ["Admin and support tools", "Manage customers, plans, and issues."],
+        ["Product analytics", "Usage, activation, and retention tracking."]
+      ],
+      "problems": ["A great idea with no technical team", "An internal tool other companies want to buy", "A prototype that cannot scale or be secured", "Unclear what to build first"],
+      "integrations": ["AWS", "Google Cloud", "Azure", "Stripe Billing", "Auth0", "PostgreSQL", "React", "PostHog"],
+      "keywords": ["software", "subscription", "onboarding", "portal"],
+      "faq": [
+        ["How do you keep the first version from getting too big?", "We define the smallest product that solves the core problem for a specific customer, launch it, and expand based on real usage rather than assumptions."],
+        ["Who owns the code?", "You do. We deliver the source code and infrastructure in accounts you control."],
+        ["Can you run the product after launch?", "Yes. Our managed SaaS service covers hosting, monitoring, security, and ongoing development."]
+      ]
+    },
+    {
+      "id": "mobile-app-development",
+      "name": "Mobile App Development",
+      "tagline": "iPhone and Android apps for customers or staff, connected to your existing systems.",
+      "text": "Design and development of mobile apps for iPhone and Android, whether customer-facing (ordering, booking, loyalty, account management) or internal (field data collection, inspections, inventory scanning, employee communication). We build cross-platform apps that share one codebase, connect them to your CRM, ERP, and back-office systems through secure APIs, and handle app store submission, push notifications, offline support, and analytics. Ongoing updates keep the app compatible with new OS releases.",
+      "for": ["Brands whose customers order or book repeatedly", "Field teams collecting data on site", "Businesses replacing paper forms with mobile workflows"],
+      "features": [
+        ["Cross-platform development", "One codebase for iPhone and Android."],
+        ["Back-office integration", "Live data from your CRM, ERP, and databases."],
+        ["Push notifications", "Targeted alerts, reminders, and offers."],
+        ["Offline support", "Work continues without a connection and syncs later."],
+        ["Device features", "Camera, barcode scanning, GPS, and signatures."],
+        ["App store launch and updates", "Submission, review, and OS compatibility handled."]
+      ],
+      "problems": ["Customers want to order or book from their phone", "Field staff fill out paper forms and retype them", "Generic apps do not fit your workflow", "Low engagement after the first purchase"],
+      "integrations": ["React Native", "Flutter", "Firebase", "Apple App Store", "Google Play", "Stripe", "Salesforce", "OneSignal"],
+      "keywords": ["mobile", "app", "field", "inspection"],
+      "faq": [
+        ["Should we build a mobile app or a mobile website?", "A mobile-friendly website covers most needs. An app makes sense when customers use it often, or when you need push notifications, offline access, or device features like scanning."],
+        ["Do you build for both iPhone and Android?", "Yes. We typically use a cross-platform framework so one codebase serves both, reducing cost and keeping features in sync."],
+        ["Who publishes the app to the app stores?", "We handle submission under your developer accounts so you own the listing and the app."]
+      ]
+    },
+    {
+      "id": "managed-saas",
+      "name": "Managed SaaS Delivery & Support",
+      "tagline": "Your custom software hosted, monitored, secured, and improved, without an in-house DevOps team.",
+      "text": "A subscription-based service where a business's custom software, internal tools, or automation stack is hosted, monitored, secured, and maintained on the client's behalf. This includes uptime monitoring, security patching, feature updates, technical support, and scaling infrastructure as usage grows, allowing clients to treat their internal software the same way they'd treat any other reliable SaaS product, without needing an in-house DevOps or IT team.",
+      "for": ["Businesses with custom software but no IT team", "Companies whose original developer has moved on", "Teams running critical automations that cannot fail quietly"],
+      "features": [
+        ["Managed cloud hosting", "Reliable infrastructure in accounts you own."],
+        ["24/7 uptime monitoring", "Alerts and response when something goes down."],
+        ["Security patching", "Dependencies, servers, and certificates kept current."],
+        ["Backups and recovery", "Tested backups and a documented recovery plan."],
+        ["Support and small changes", "A team to call for issues and improvements."],
+        ["Scaling and cost optimization", "Infrastructure sized to usage."]
+      ],
+      "problems": ["Nobody maintains the custom software you depend on", "Outages are discovered by customers", "Security updates are years behind", "Hosting costs keep climbing"],
+      "integrations": ["AWS", "Google Cloud", "Azure", "Cloudflare", "GitHub", "Datadog", "Sentry", "PagerDuty"],
+      "keywords": ["monitor", "alert", "backup", "support"],
+      "faq": [
+        ["What does managed SaaS include?", "Hosting, monitoring, security patching, backups, support, and ongoing improvements for your custom software or automations, for a predictable monthly fee."],
+        ["Can you take over software another developer built?", "Yes. We start with a technical review, document the system, fix urgent risks, and then bring it under ongoing management."],
+        ["Do we keep ownership of our software and data?", "Yes. Code, infrastructure, and data remain in accounts you own."]
+      ]
+    }
+  ]
+}

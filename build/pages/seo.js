@@ -27,7 +27,11 @@ function sitemap(cat, guides, auto, extra) {
   add("/automations/", "weekly", "0.9");
   add("/appointment/", "monthly", "0.9");
   add("/how-it-works/", "monthly", "0.8");
-  add("/solutions/", "monthly", "0.8");
+  add("/solutions/", "weekly", "0.9");
+  extra.solutions.forEach((c) => {
+    add(c.url, "monthly", "0.8");
+    c.solutions.forEach((x) => add(x.url, "monthly", "0.8"));
+  });
   add("/guides/", "weekly", "0.8");
   add("/faq/", "monthly", "0.7");
   add("/roi-calculator/", "monthly", "0.7");
@@ -75,7 +79,7 @@ function llms(cat, guides, extra) {
     "- [Home](" + SITE_URL + "/): Overview of what LJ Web Management does and how automation engagements start.",
     "- [How It Works](" + SITE_URL + "/how-it-works/): Explains the process from consultation to flat quote to delivery.",
     "- [Automations](" + SITE_URL + "/automations/): Searchable catalog of " + total + "+ done-for-you automations, organized by business function, industry, and tool. Every automation has its own page with step-by-step detail.",
-    "- [Solutions](" + SITE_URL + "/solutions/): Platform-scale offerings, including custom websites, CRM, ERP implementation and integration, booking, field service, billing, help desk, inventory, HR and payroll, BI reporting, customer portals, marketplaces, managed SaaS, LMS deployment, and restaurant POS systems.",
+    "- [Solutions](" + SITE_URL + "/solutions/): Platform-scale systems in nine categories (websites and digital presence; sales, CRM and marketing; customer experience and support; operations and field service; finance, billing and payments; ERP and enterprise systems; HR, people and training; data, AI and analytics; industry platforms, apps and SaaS). Each solution has its own page at /solutions/<category>/<solution>/.",
     "- [Resource Center](" + SITE_URL + "/resources/): Free hub for learning workflow automation and AI: guides, courses, quizzes, calculators, a prompt library, and a glossary.",
     "- [Guides](" + SITE_URL + "/guides/): Step-by-step guides on how to automate business processes, AI and agents, and common workflows.",
     "- [Free Courses](" + SITE_URL + "/learn/): Free beginner courses on business automation and AI, with knowledge checks.",
@@ -132,10 +136,13 @@ function llms(cat, guides, extra) {
 
 function llmsFull(cat, guides, extra) {
   const intro = fs.readFileSync(path.join(ROOT, "content", "llms-full-intro.md"), "utf8").trim();
-  const sols = JSON.parse(fs.readFileSync(path.join(ROOT, "content", "solutions.json"), "utf8"));
   const faq = JSON.parse(fs.readFileSync(path.join(ROOT, "content", "faq.json"), "utf8"));
+  const sols = extra.solutions.reduce((a, c) => a.concat(c.solutions), []);
   const out = [intro, "", "## Platform-Scale Solutions (" + sols.length + ")"];
-  sols.forEach((s) => out.push("- **" + s.name + "**: " + s.text));
+  extra.solutions.forEach((c) => {
+    out.push("", "### " + c.name + ": " + SITE_URL + c.url, c.short);
+    c.solutions.forEach((s) => out.push("- **" + s.name + "** (" + SITE_URL + s.url + "): " + s.text));
+  });
   out.push("", "## Automation Catalog", "Every automation has its own page at " + SITE_URL + "/automations/<industry>/<automation>/ with a step-by-step description, the tools it connects, and the manual process it replaces.", "", "### By business function (" + cat.categories.length + ")");
   cat.categories.forEach((c) => out.push("- " + c.name + " (" + c.items.length + "): " + SITE_URL + c.url));
   out.push("", "### By industry (" + cat.industries.length + ")");

@@ -1,6 +1,6 @@
 // Hand-written pages: home, how it works, solutions, FAQ, contact, booking,
 // quiz, ROI calculator, legal pages and the 404 page. Long copy that is not
-// page structure lives in content/ (faq.json, solutions.json, pages/*.html).
+// page structure lives in content/ (faq.json, pages/*.html).
 
 const fs = require("fs");
 const path = require("path");
@@ -332,60 +332,6 @@ function howItWorks(cat) {
         },
         crumbs.schema,
         faq.schema,
-      ],
-      main,
-    })
-  );
-}
-
-/* ---------------------------------------------------------------------- */
-/* Solutions                                                                */
-/* ---------------------------------------------------------------------- */
-
-const SOLUTION_ICONS = {
-  "custom-website": "layers", "obsolescence-management": "clock", "erp-integration": "building", "managed-saas": "shield",
-  "lms-deployment": "book", "restaurant-pos": "receipt", "custom-crm": "target", "booking-scheduling": "calendar",
-  "field-service": "tool", "membership-billing": "users", "help-desk-ticketing": "message", "inventory-warehouse": "box",
-  "hr-payroll": "userPlus", "bi-reporting": "chart", "customer-portal": "user", "marketplace-platform": "plug",
-};
-
-function solutions() {
-  const sols = content("solutions.json");
-  const crumbs = L.breadcrumbs([["Home", "/"], ["Solutions", "/solutions/"]]);
-  const main = `
-<section class="lj-page-hero lj-page-hero--dark">
-  <div class="lj-container">
-    ${crumbs.html}
-    <span class="lj-eyebrow lj-eyebrow--pill">Platform solutions</span>
-    <h1>Full-scale systems, <span class="lj-gradient-text">not just single automations</span></h1>
-    <p class="lj-lead">Beyond individual role-based automations, these are broader systems infrastructure investments, built for businesses ready to replace disconnected tools with one integrated backbone. These are the decisions that sit with ownership and leadership, and the systems your team will run on once they're in place.</p>
-    <div class="lj-btn-row"><a class="lj-btn lj-btn-accent" href="/appointment/">Book a Free Consultation ${icon("arrowRight")}</a><a class="lj-btn lj-btn-light" href="/automations/">See Role-Based Automations</a></div>
-  </div>
-</section>
-<section class="lj-section lj-section--tight">
-  <div class="lj-container">
-    <nav class="lj-chip-row" aria-label="Jump to a solution">${sols.map((s) => '<a class="lj-chip" href="#' + s.id + '">' + escapeHtml(s.name) + "</a>").join("")}</nav>
-  </div>
-</section>
-<section class="lj-section lj-section--flush-top">
-  <div class="lj-container">
-    <div>${sols.map((s) => '<article class="lj-sol" id="' + s.id + '"><span class="lj-card-icon">' + icon(SOLUTION_ICONS[s.id] || "layers") + "</span><div><h2>" + escapeHtml(s.name) + "</h2><p>" + escapeHtml(s.text) + '</p><a class="lj-link-arrow" href="/appointment/">Talk to us about this ' + icon("arrowRight") + "</a></div></article>").join("")}</div>
-  </div>
-</section>`;
-  writeFile(
-    "solutions/index.html",
-    L.page({
-      path: "/solutions/",
-      title: "Automation & Software Solutions | LJ Web Management",
-      description: "Platform-scale solutions from LJ Web Management: custom websites, CRM, ERP integration, booking, field service, billing, help desk, inventory, HR, BI, and more.",
-      active: "solutions",
-      jsonLd: [
-        {
-          "@type": "ItemList",
-          name: "LJ Web Management platform solutions",
-          itemListElement: sols.map((s, i) => ({ "@type": "ListItem", position: i + 1, item: { "@type": "Service", name: s.name, description: s.text, url: SITE_URL + "/solutions/#" + s.id, provider: { "@id": SITE_URL + "/#organization" } } })),
-        },
-        crumbs.schema,
       ],
       main,
     })
@@ -852,7 +798,6 @@ function notFound() {
 function build(cat, guides, extra) {
   home(cat, guides, extra);
   howItWorks(cat);
-  solutions();
   faqPage();
   contact();
   appointment();
@@ -868,7 +813,7 @@ function build(cat, guides, extra) {
 function searchEntries() {
   return [
     ["Page", "How It Works", "Our five-step process", "/how-it-works/", "process consultation quote build launch support"],
-    ["Page", "Platform Solutions", "CRM, ERP, booking, field service, billing and more", "/solutions/", "erp crm website pos lms saas platform"],
+    ["Page", "Platform Solutions", "50 systems across 9 categories", "/solutions/", "erp crm website pos lms saas platform software"],
     ["Page", "Automation FAQ", "Pricing, timelines, tools, and support", "/faq/", "questions cost price how long"],
     ["Page", "ROI Calculator", "See what manual work costs you", "/roi-calculator/", "roi savings calculator cost"],
     ["Page", "Automation Match Quiz", "Find the right solution in three questions", "/quiz/", "quiz match"],

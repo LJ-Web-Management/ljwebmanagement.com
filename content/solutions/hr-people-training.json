@@ -1,0 +1,126 @@
+{
+  "slug": "hr-people-training",
+  "name": "HR, People & Training",
+  "icon": "users",
+  "order": 7,
+  "short": "HR and payroll, recruiting, staff scheduling, employee portals, and learning platforms that take paperwork off your managers' plates.",
+  "intro": "Hiring, onboarding, scheduling, paying, and training people generates more paperwork than almost any other part of a business. These solutions connect the employee lifecycle from application to payroll so managers spend their time leading people instead of processing forms.",
+  "guide": "hr-software-for-small-business-guide",
+  "solutions": [
+    {
+      "id": "hr-payroll",
+      "name": "HR & Payroll Management Platform",
+      "tagline": "Employee records, time, benefits, and payroll consolidated into one system.",
+      "text": "A centralized HR and payroll platform that consolidates employee records, time tracking, benefits administration, and payroll processing into one system instead of five disconnected tools. Employee self-service lets staff request time off, view pay stubs, and update their own information, automated payroll runs handle tax calculations and direct deposit, and compliance tracking flags expiring certifications or required documentation before it becomes a liability. The platform integrates with your existing time clock or scheduling system, and reporting dashboards give HR and leadership visibility into headcount, labor cost, and turnover without exporting data from four different logins.",
+      "for": ["Growing teams with HR spread across several tools", "Multi-state employers managing payroll tax", "Businesses with hourly staff and complex time rules"],
+      "features": [
+        ["Single employee record", "Personal, job, pay, and document data in one place."],
+        ["Automated payroll", "Taxes, deductions, and direct deposit on schedule."],
+        ["Time and attendance sync", "Hours flow from the time clock into payroll."],
+        ["Benefits administration", "Enrollment, changes, and carrier feeds."],
+        ["Employee self-service", "Pay stubs, time off, and personal updates without HR."],
+        ["Workforce reporting", "Headcount, labor cost, overtime, and turnover."]
+      ],
+      "problems": ["HR data spread across spreadsheets and logins", "Payroll errors from manual time entry", "Time-off requests lost in email", "No clear view of labor costs"],
+      "integrations": ["Gusto", "ADP", "Rippling", "Paychex", "BambooHR", "QuickBooks", "Deputy", "When I Work"],
+      "keywords": ["payroll", "employee", "time off", "timesheet", "hr"],
+      "faq": [
+        ["Should HR and payroll be in the same system?", "Usually yes. A single system removes duplicate data entry between HR records and payroll, which is where many payroll errors begin."],
+        ["Can you connect our existing time clock?", "Yes. We connect most time clock and scheduling systems so approved hours flow directly into payroll."],
+        ["Do you replace our payroll provider?", "Not necessarily. We often keep a trusted provider like Gusto or ADP and connect it to the rest of your systems."]
+      ]
+    },
+    {
+      "id": "recruiting-ats",
+      "name": "Applicant Tracking & Recruiting Platform",
+      "tagline": "Post once, screen faster, schedule interviews automatically, and hire before competitors do.",
+      "text": "An applicant tracking system that posts jobs to your careers page and major job boards, collects applications in one pipeline, and moves candidates forward automatically. Knockout questions and AI-assisted screening surface qualified applicants, interview scheduling happens through self-booking links, and candidates get timely status updates so none are left wondering. Offer letters are generated and signed electronically, and hired candidates flow straight into onboarding and payroll.",
+      "for": ["High-volume hourly employers", "Growing companies hiring across many roles", "Teams losing candidates to slow responses"],
+      "features": [
+        ["Multi-board job posting", "One posting distributed to Indeed, LinkedIn, and more."],
+        ["Branded careers page", "Mobile-friendly applications in minutes."],
+        ["Screening and scoring", "Knockout questions and AI-assisted resume review."],
+        ["Self-scheduled interviews", "Candidates book open times on the hiring team's calendars."],
+        ["Candidate communication", "Automatic status updates by email and text."],
+        ["Offer to onboarding handoff", "E-signed offers that create the new hire record."]
+      ],
+      "problems": ["Applications scattered across job boards and inboxes", "Good candidates accept other offers while you schedule", "Hiring managers screen resumes by hand", "Applicants never hear back"],
+      "integrations": ["Indeed", "LinkedIn", "Greenhouse", "Lever", "Workable", "BambooHR", "Google Calendar", "DocuSign"],
+      "keywords": ["applicant", "hiring", "candidate", "interview", "recruit"],
+      "faq": [
+        ["What is an applicant tracking system?", "An ATS collects job applications from every source into one pipeline and helps the hiring team screen, interview, communicate with, and hire candidates efficiently."],
+        ["Is AI resume screening fair?", "AI should assist, not decide. We configure screening around job-related criteria, keep humans in charge of decisions, and review outcomes for bias."],
+        ["Can candidates apply by text?", "Yes. Text-to-apply and short mobile applications are especially effective for hourly roles."]
+      ]
+    },
+    {
+      "id": "staff-scheduling-time-clock",
+      "name": "Staff Scheduling & Time Clock System",
+      "tagline": "Build schedules in minutes, fill open shifts fast, and pay exactly the hours worked.",
+      "text": "A scheduling and time tracking system for hourly teams that builds schedules from templates and forecasted demand, publishes them to employees' phones, and lets staff swap shifts and pick up open ones with manager approval. Mobile clock-in with geofencing or kiosk photo verification prevents buddy punching, overtime and break rules are enforced as the schedule is built, and approved timesheets flow straight into payroll.",
+      "for": ["Restaurants, retail, and hospitality", "Healthcare and home care agencies", "Field crews and multi-location teams"],
+      "features": [
+        ["Schedule templates and forecasting", "Build shifts around expected demand."],
+        ["Mobile schedules and alerts", "Staff see shifts and changes on their phones."],
+        ["Shift swaps and open shifts", "Coverage handled by staff with manager approval."],
+        ["Verified clock-in", "Geofencing, photo, or kiosk clock-in."],
+        ["Labor rule enforcement", "Overtime, breaks, and predictive scheduling rules."],
+        ["Payroll-ready timesheets", "Approved hours sent straight to payroll."]
+      ],
+      "problems": ["Schedules built in spreadsheets and posted on a wall", "Managers spend hours finding shift coverage", "Buddy punching and timesheet errors", "Surprise overtime costs"],
+      "integrations": ["7shifts", "Deputy", "When I Work", "Homebase", "Toast", "Gusto", "ADP", "QuickBooks Time"],
+      "keywords": ["shift", "schedule", "timesheet", "clock", "overtime"],
+      "faq": [
+        ["How does geofenced clock-in work?", "Employees can only clock in on their phone when they are within a set distance of the work location, which reduces time theft without extra hardware."],
+        ["Can the system help control overtime?", "Yes. Managers see projected overtime while building the schedule and get alerts before an employee crosses the threshold."],
+        ["Does it work for multiple locations?", "Yes. Each location has its own schedule, with staff able to work across locations and combined labor reporting."]
+      ]
+    },
+    {
+      "id": "employee-portal-intranet",
+      "name": "Employee Portal & Intranet",
+      "tagline": "One home for company news, policies, forms, requests, and the tools staff use daily.",
+      "text": "A branded employee portal that gives every team member one place to find announcements, policies, procedures, forms, benefits information, and links to the tools they use. Requests for IT help, equipment, time off, or reimbursements are submitted through simple forms that route to the right approver, onboarding checklists guide new hires through their first weeks, and a searchable directory helps people find who does what. Mobile access means frontline staff stay informed too.",
+      "for": ["Companies with remote, hybrid, or frontline staff", "Growing teams where information lives in email", "Organizations onboarding employees frequently"],
+      "features": [
+        ["Company news and announcements", "Targeted by location, team, or role."],
+        ["Policy and SOP library", "Searchable documents with acknowledgment tracking."],
+        ["Request forms and approvals", "IT, HR, facilities, and finance requests routed automatically."],
+        ["Onboarding checklists", "Step-by-step tasks for new hires and their managers."],
+        ["People directory", "Find colleagues by team, skill, or location."],
+        ["Mobile access", "Frontline staff included without company email."]
+      ],
+      "problems": ["Employees cannot find the latest policy or form", "Requests get lost in email and chat", "New hires ask the same questions repeatedly", "Frontline workers miss company updates"],
+      "integrations": ["SharePoint", "Microsoft Teams", "Google Sites", "Slack", "Notion", "Connecteam", "BambooHR", "Okta"],
+      "keywords": ["employee", "onboarding", "policy", "request"],
+      "faq": [
+        ["What is the difference between an intranet and an employee portal?", "The terms overlap. An intranet usually focuses on news and documents, while a portal adds self-service requests, onboarding, and links into HR and IT systems. We typically build both together."],
+        ["Can frontline employees without email use it?", "Yes. Mobile apps and SMS login let deskless workers access the portal on their phones."],
+        ["Can we build it on Microsoft 365?", "Yes. SharePoint and Teams are a strong foundation for companies already using Microsoft 365."]
+      ]
+    },
+    {
+      "id": "lms-deployment",
+      "name": "Learning Management System (LMS) Deployment",
+      "tagline": "Onboarding, compliance, and certification training delivered and tracked automatically.",
+      "text": "A fully configured learning management platform used to onboard new employees, deliver ongoing compliance training, or run certification programs, complete with course-building tools, progress tracking, automated reminders for incomplete training, and reporting dashboards for managers and HR. This offering includes initial setup, custom branding, content migration or creation, and integration with existing HR systems so training completion data flows automatically into employee records.",
+      "for": ["Companies with mandatory compliance training", "Franchises and multi-location brands standardizing training", "Organizations selling courses or certifications"],
+      "features": [
+        ["Branded learning portal", "Your logo, colors, and domain."],
+        ["Course building and migration", "Videos, quizzes, and documents organized into paths."],
+        ["Automatic enrollment", "Courses assigned by role, location, or hire date."],
+        ["Reminders and escalations", "Learners and managers nudged on overdue training."],
+        ["Certificates and recertification", "Expirations tracked with automatic re-enrollment."],
+        ["HR integration and reporting", "Completion data synced to employee records."]
+      ],
+      "problems": ["Training tracked on paper sign-in sheets", "No proof of compliance training during audits", "Every location trains differently", "Managers chase employees to finish courses"],
+      "integrations": ["TalentLMS", "LearnDash", "Docebo", "Moodle", "Thinkific", "BambooHR", "Zoom", "SCORM"],
+      "keywords": ["training", "certification", "course", "onboarding", "compliance"],
+      "faq": [
+        ["What is an LMS?", "A learning management system delivers online courses, tracks who completed what, and reports on training across your organization."],
+        ["Can we sell courses to customers with an LMS?", "Yes. Many LMS platforms support e-commerce, so you can sell courses, memberships, or certifications to external learners."],
+        ["Can you create the course content?", "Yes. We can convert existing manuals and slide decks into online courses, or produce new content with your subject matter experts."]
+      ]
+    }
+  ]
+}

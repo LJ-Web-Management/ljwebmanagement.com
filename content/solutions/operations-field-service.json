@@ -1,0 +1,149 @@
+{
+  "slug": "operations-field-service",
+  "name": "Operations & Field Service",
+  "icon": "tool",
+  "order": 4,
+  "short": "Field service dispatch, inventory, project management, fleet tracking, procurement, and lifecycle management for teams that keep things running.",
+  "intro": "Operations run on accurate, real-time information: where crews are, what is in stock, what is due, and what is about to break. These solutions replace whiteboards, phone calls, and spreadsheets with connected systems that schedule, track, and alert automatically.",
+  "guide": "field-service-management-software-guide",
+  "solutions": [
+    {
+      "id": "field-service",
+      "name": "Field Service Management Platform",
+      "tagline": "Dispatch, routing, mobile work orders, and job costing for crews in the field.",
+      "text": "A dispatch and work-order management platform for businesses that send technicians, crews, or inspectors into the field: home services, pest control, HVAC, landscaping, or property maintenance. Jobs are created, assigned, and routed automatically based on technician location and availability, field staff get a mobile-friendly view of job details, photos, and digital sign-off, and customers receive automatic on-my-way and completion notifications. The platform tracks parts and labor for accurate job costing, and real-time dashboards give dispatchers full visibility into every crew's status without a single phone call.",
+      "for": ["HVAC, plumbing, electrical, and pest control companies", "Landscaping, cleaning, and maintenance crews", "Inspection and installation teams"],
+      "features": [
+        ["Drag-and-drop dispatch board", "See every tech, job, and status on one live board."],
+        ["Route optimization", "Jobs assigned by location, skill, and availability to cut drive time."],
+        ["Mobile work orders", "Job details, checklists, photos, and signatures on any phone."],
+        ["Customer notifications", "On-my-way texts, arrival windows, and completion summaries."],
+        ["Job costing", "Parts, labor, and travel tracked against every job."],
+        ["Invoice on completion", "Invoices sent and paid from the field the moment work is done."]
+      ],
+      "problems": ["Dispatchers spend the day on the phone", "Paper work orders get lost or are unreadable", "Customers call asking when the tech will arrive", "Nobody knows which jobs actually make money"],
+      "integrations": ["ServiceTitan", "Jobber", "Housecall Pro", "QuickBooks", "Google Maps", "Twilio", "Stripe", "Samsara"],
+      "keywords": ["dispatch", "technician", "work order", "job", "crew"],
+      "faq": [
+        ["What is field service management software?", "It is software that schedules, dispatches, and tracks work done at customer locations, combining job scheduling, mobile work orders, customer notifications, and invoicing in one system."],
+        ["Can technicians use it offline?", "Yes. Mobile apps cache job details and sync photos, notes, and signatures once a connection returns."],
+        ["Should we use ServiceTitan or Jobber or a custom system?", "Off-the-shelf platforms fit most trades. We implement and automate them, and build custom systems only when your workflow, compliance, or integrations require it."]
+      ]
+    },
+    {
+      "id": "inventory-warehouse",
+      "name": "Inventory & Warehouse Management Platform",
+      "tagline": "Real-time stock, barcode scanning, and automatic reordering across every location.",
+      "text": "A real-time inventory and warehouse management platform that tracks stock levels, locations, and movement across one or multiple warehouses instead of relying on spreadsheets that are out of date the moment they're saved. Barcode and QR scanning speeds receiving and picking, low-stock and reorder-point alerts trigger purchase orders automatically, and the platform integrates with your e-commerce storefront, POS, or ERP so stock counts stay accurate across every sales channel. Batch and lot tracking is available for businesses with expiration dates or compliance requirements, and reporting dashboards flag slow-moving stock before it ties up working capital.",
+      "for": ["Distributors and wholesalers", "Retailers and e-commerce brands selling across channels", "Manufacturers managing raw materials and finished goods"],
+      "features": [
+        ["Multi-location stock tracking", "Quantities by warehouse, bin, and channel in real time."],
+        ["Barcode and QR scanning", "Faster, more accurate receiving, picking, and counts."],
+        ["Automatic reordering", "Reorder points and purchase orders generated from demand."],
+        ["Lot, batch, and serial tracking", "Traceability for expiration dates and recalls."],
+        ["Channel sync", "Stock shared with your store, POS, marketplaces, and ERP."],
+        ["Inventory analytics", "Turnover, dead stock, and carrying cost reports."]
+      ],
+      "problems": ["Stock counts never match the spreadsheet", "Stockouts on best sellers and overstock on slow movers", "Manual purchase orders based on guesswork", "Hours spent on physical counts"],
+      "integrations": ["NetSuite", "Cin7", "Fishbowl", "Shopify", "QuickBooks", "ShipStation", "Amazon", "Zebra scanners"],
+      "keywords": ["inventory", "stock", "reorder", "warehouse", "purchase order"],
+      "faq": [
+        ["When do we need an inventory system instead of spreadsheets?", "When you sell across more than one channel, hold stock in more than one location, or regularly oversell or run out. At that point spreadsheets cannot keep up with real-time changes."],
+        ["Can it handle lot and expiration tracking?", "Yes. Lot, batch, and serial tracking with expiration alerts is available for food, health, and regulated products."],
+        ["Does it integrate with our accounting software?", "Yes. Purchases, receipts, and cost of goods sync to QuickBooks, Xero, or your ERP."]
+      ]
+    },
+    {
+      "id": "project-management",
+      "name": "Project & Job Management Platform",
+      "tagline": "Every project's tasks, budget, schedule, and client updates in one connected system.",
+      "text": "A project and job management system configured around how your team delivers work, whether that is construction jobs, client engagements, or production runs. Projects are created from signed quotes with templates for tasks, milestones, and budgets, team members see what is due and blocked, and time and expenses are tracked against the budget in real time. Clients receive automatic progress updates and approvals, change orders are captured and billed, and dashboards show utilization, profitability, and at-risk projects across the portfolio.",
+      "for": ["Contractors and builders running multiple jobs", "Agencies, consultancies, and professional services firms", "Production and installation teams"],
+      "features": [
+        ["Project templates", "Standard tasks, milestones, and budgets created automatically from a signed quote."],
+        ["Schedules and dependencies", "Timelines that update when a task slips."],
+        ["Time and expense tracking", "Actuals compared with budget as work happens."],
+        ["Change order management", "Scope changes approved, tracked, and billed."],
+        ["Client updates and approvals", "Automatic progress reports and sign-offs."],
+        ["Portfolio dashboards", "Utilization, margin, and at-risk projects in one view."]
+      ],
+      "problems": ["Project status lives in someone's head or inbox", "Budgets overrun before anyone notices", "Change orders are done but never billed", "Clients ask for updates constantly"],
+      "integrations": ["Asana", "Monday.com", "ClickUp", "Procore", "Buildertrend", "QuickBooks", "Harvest", "Slack"],
+      "keywords": ["project", "task", "milestone", "change order", "status update"],
+      "faq": [
+        ["Which project management tool should we use?", "It depends on the work. Asana, Monday.com, and ClickUp suit services teams, while Procore and Buildertrend fit construction. We configure the right tool and connect it to sales and billing."],
+        ["Can projects be created automatically from sales?", "Yes. When a deal closes or a quote is signed, the project, tasks, budget, and client portal access can be created automatically."],
+        ["How do we track project profitability?", "By logging time, materials, and expenses against each project's budget and comparing them with what was billed, which the system does in real time."]
+      ]
+    },
+    {
+      "id": "fleet-asset-tracking",
+      "name": "Fleet & Asset Tracking System",
+      "tagline": "Know where vehicles and equipment are, how they are used, and when they need service.",
+      "text": "A fleet and asset tracking system that combines GPS telematics, equipment tags, and maintenance scheduling in one view. Vehicles and high-value equipment are tracked in real time, preventive maintenance is scheduled automatically by mileage, engine hours, or date, and driver inspections are completed digitally. Alerts flag speeding, idling, after-hours use, and equipment leaving a job site, and reports show utilization so you can right-size the fleet and stop renting equipment you already own.",
+      "for": ["Contractors with vehicles and heavy equipment", "Delivery and logistics operators", "Rental companies and municipalities"],
+      "features": [
+        ["Live GPS tracking", "Vehicle and asset locations on one map."],
+        ["Preventive maintenance scheduling", "Service due by mileage, hours, or calendar."],
+        ["Digital inspections", "Pre-trip and post-trip checklists with photos."],
+        ["Geofence and usage alerts", "Notifications for unauthorized use or equipment leaving a site."],
+        ["Fuel and idle reporting", "Spot waste and coach drivers with data."],
+        ["Utilization reports", "Know which assets earn their keep."]
+      ],
+      "problems": ["Equipment goes missing between job sites", "Maintenance is missed until something breaks", "Paper inspection forms are incomplete", "Paying for vehicles and equipment that sit idle"],
+      "integrations": ["Samsara", "Motive", "Geotab", "Fleetio", "Verizon Connect", "QuickBooks", "Google Maps", "Slack"],
+      "keywords": ["vehicle", "fleet", "equipment", "maintenance", "asset"],
+      "faq": [
+        ["Can we track equipment that does not have an engine?", "Yes. Battery-powered GPS tags and Bluetooth beacons track trailers, tools, and attachments."],
+        ["Does fleet tracking help with insurance?", "Many insurers offer discounts for telematics, and dashcam footage and driving data can help resolve claims."],
+        ["How does preventive maintenance scheduling work?", "Mileage and engine hours come from telematics automatically, and work orders are created when service thresholds are reached."]
+      ]
+    },
+    {
+      "id": "procurement-vendor",
+      "name": "Procurement & Vendor Management Platform",
+      "tagline": "Purchase requests, approvals, vendor records, and three-way matching without paper.",
+      "text": "A procurement system that standardizes how your organization requests, approves, orders, and pays for goods and services. Employees submit purchase requests from a catalog or form, approvals route by amount and department, purchase orders go to vendors automatically, and receipts are matched against invoices before payment. Vendor records hold contracts, insurance certificates, W-9s, and performance history with expiration alerts, and spend reporting reveals where to consolidate suppliers and negotiate better terms.",
+      "for": ["Growing companies without a formal purchasing process", "Multi-location operators buying from many suppliers", "Manufacturers and contractors managing subcontractors"],
+      "features": [
+        ["Purchase requests and approvals", "Rules by amount, department, and budget."],
+        ["Automatic purchase orders", "POs generated and sent to approved vendors."],
+        ["Three-way matching", "PO, receipt, and invoice reconciled before payment."],
+        ["Vendor onboarding and compliance", "W-9s, insurance, and contracts tracked with renewal alerts."],
+        ["Vendor scorecards", "On-time delivery, quality, and price history."],
+        ["Spend analytics", "Spend by category, vendor, and department."]
+      ],
+      "problems": ["Purchases happen without approval or budget checks", "Invoices are paid for goods never received", "Vendor insurance certificates expire unnoticed", "No visibility into total spend by supplier"],
+      "integrations": ["NetSuite", "Procurify", "Coupa", "QuickBooks", "Bill.com", "DocuSign", "Microsoft Teams", "Slack"],
+      "keywords": ["vendor", "purchase", "supplier", "procurement", "certificate"],
+      "faq": [
+        ["What is three-way matching?", "It compares the purchase order, the receiving record, and the vendor invoice before payment, so you only pay for what was ordered and delivered at the agreed price."],
+        ["Is a procurement system only for large companies?", "No. Even a 20-person company benefits from simple request and approval rules, especially when several people can spend company money."],
+        ["Can vendors submit documents themselves?", "Yes. A vendor portal lets suppliers upload W-9s, insurance certificates, and invoices directly."]
+      ]
+    },
+    {
+      "id": "obsolescence-management",
+      "name": "Obsolescence Management Platform",
+      "tagline": "Catch end-of-life parts and equipment long before they stop your production line.",
+      "text": "A centralized system that tracks the lifecycle status of every component, part, or piece of equipment a business relies on, flagging items approaching end-of-life or end-of-support long before they become a supply chain emergency. The platform continuously cross-references bill-of-materials data against manufacturer lifecycle notices, alerts procurement and engineering teams to at-risk parts, and recommends qualified alternatives, giving manufacturing, defense, aerospace, and industrial clients a proactive way to avoid costly last-time-buy scrambles and unplanned production line stoppages.",
+      "for": ["Electronics, aerospace, and defense manufacturers", "Industrial operators maintaining long-lived equipment", "IT teams managing hardware and software lifecycles"],
+      "features": [
+        ["BOM lifecycle monitoring", "Every part checked against manufacturer status data."],
+        ["End-of-life alerts", "Early warning on discontinuation and last-time-buy notices."],
+        ["Alternate part recommendations", "Form, fit, and function replacements surfaced for review."],
+        ["Risk scoring", "Parts ranked by supply risk and production impact."],
+        ["Last-time-buy planning", "Quantities calculated from demand and remaining life."],
+        ["Audit-ready records", "History of every decision for customers and regulators."]
+      ],
+      "problems": ["Discontinued parts discovered only when an order fails", "Emergency redesigns and broker purchases at premium prices", "Lifecycle data tracked by hand in spreadsheets", "No early warning for software and hardware end of support"],
+      "integrations": ["SAP", "Oracle", "Siemens Teamcenter", "Arena PLM", "SiliconExpert", "Octopart", "Power BI", "Excel"],
+      "keywords": ["equipment", "part", "maintenance", "compliance"],
+      "faq": [
+        ["What is obsolescence management?", "It is the practice of tracking when components, equipment, and software will be discontinued or lose support, and planning replacements or last-time buys before shortages disrupt operations."],
+        ["Which industries need obsolescence management?", "Any business with long product lifecycles or critical equipment, especially electronics, aerospace, defense, medical devices, industrial automation, and utilities."],
+        ["Can it monitor software end of support too?", "Yes. Operating systems, firmware, and business software can be tracked alongside physical components."]
+      ]
+    }
+  ]
+}

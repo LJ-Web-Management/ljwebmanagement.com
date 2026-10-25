@@ -7,6 +7,7 @@
 //   keyPoints  short summary bullets shown above the article
 //   faq        [[question, answerHtml], ...] rendered visibly with FAQPage schema
 //   path       optional URL override (the original /resources/ articles keep theirs)
+//   solutionCategory  optional solutions category slug; its solutions are listed below the article
 // The body is plain HTML; <h2> headings get ids and feed the table of contents.
 
 const fs = require("fs");
@@ -26,6 +27,7 @@ const GROUPS = [
   ["ai", "AI and agents", "sparkles"],
   ["playbooks", "Workflow playbooks", "zap"],
   ["platforms", "Platforms and ROI", "calculator"],
+  ["systems", "Choosing business systems", "building"],
 ];
 
 function formatDate(iso) {
@@ -99,7 +101,7 @@ function examples(g, cat) {
   return out;
 }
 
-function buildGuide(g, all, cat) {
+function buildGuide(g, all, cat, solutionCats) {
   const crumbs = L.breadcrumbs([
     ["Home", "/"],
     ["Resources", "/resources/"],
@@ -108,6 +110,8 @@ function buildGuide(g, all, cat) {
   ]);
   const faq = g.faq && g.faq.length ? L.faq(g.faq) : null;
   const picks = examples(g, cat);
+  const solCat = g.solutionCategory ? solutionCats.find((c) => c.slug === g.solutionCategory) : null;
+  if (g.solutionCategory && !solCat) throw new Error("content/guides/" + g.slug + ".html has an unknown solutionCategory: " + g.solutionCategory);
   // Related guides: any named in the metadata first, then the same topic
   // group, then the same business function.
   const named = (g.related || []).map((slug) => all.find((x) => x.slug === slug)).filter(Boolean);
@@ -152,7 +156,16 @@ function buildGuide(g, all, cat) {
     </aside>
   </div>
 </div>
-${picks.length ? `<section class="lj-section lj-section--mist">
+${solCat ? `<section class="lj-section lj-section--mist">
+  <div class="lj-container">
+    <div class="lj-section-head lj-section-head--split">
+      <div><span class="lj-eyebrow">Solutions</span><h2>${escapeHtml(solCat.name)} we build</h2></div>
+      <a class="lj-link-arrow" href="${solCat.url}">View the category ${icon("arrowRight")}</a>
+    </div>
+    <div class="lj-grid lj-grid-3">${solCat.solutions.map((s) => '<a class="lj-card lj-ccard" href="' + s.url + '"><div class="lj-ccard-top"><span class="lj-card-icon">' + icon(s.icon) + "</span></div><h3>" + escapeHtml(s.name) + "</h3><p>" + escapeHtml(s.tagline) + '</p><div class="lj-card-foot"><span class="lj-link-arrow">View solution ' + icon("arrowRight") + "</span></div></a>").join("")}</div>
+  </div>
+</section>` : ""}
+${!solCat && picks.length ? `<section class="lj-section lj-section--mist">
   <div class="lj-container">
     <div class="lj-section-head lj-section-head--split">
       <div><span class="lj-eyebrow">Put it into practice</span><h2>Automations that do this for you</h2></div>
@@ -255,8 +268,8 @@ function buildHub(all, latestPosts) {
   );
 }
 
-function build(all, cat, latestPosts) {
-  all.forEach((g) => buildGuide(g, all, cat));
+function build(all, cat, latestPosts, solutionCats) {
+  all.forEach((g) => buildGuide(g, all, cat, solutionCats || []));
   buildHub(all, latestPosts);
 }
 

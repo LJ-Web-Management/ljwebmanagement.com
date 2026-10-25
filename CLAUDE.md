@@ -31,10 +31,15 @@ Sources:
   at `/automations/<industry>/<slug>/`.
 - `content/taxonomy.js`: the 11 business-function categories, the tool pages,
   and the per-industry intro copy.
+- `content/solutions/<category>.json`: platform solutions, one file per
+  category. Each category gets a page at `/solutions/<category>/` and each
+  solution a page at `/solutions/<category>/<id>/`. The Solutions menu in
+  `build/lib/chrome.js` (`NAV_SOLUTIONS`) must list the same categories; the
+  build fails if they drift.
 - `content/guides/*.html`: long-form guides. Metadata lives in a JSON comment
   at the top of each file; `<h2>` headings feed the table of contents.
-- `content/pages/`, `content/faq.json`, `content/solutions.json`: static page
-  copy (legal text, FAQ, platform solutions, quiz script).
+- `content/pages/`, `content/faq.json`: static page copy (legal text, FAQ,
+  quiz script).
 - `build/`: the generator. `build/pages/*.js` render each page type.
 - `assets/css/site.css` and `assets/js/site.js`: the design system and site
   script.

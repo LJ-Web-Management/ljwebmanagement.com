@@ -1,0 +1,149 @@
+{
+  "slug": "websites-digital-presence",
+  "name": "Websites & Digital Presence",
+  "icon": "layers",
+  "order": 1,
+  "short": "Custom websites, online stores, landing pages, local SEO, and AI chat built to rank, convert, and plug into the rest of your business.",
+  "intro": "Your website is the front door for most new customers, and it should do more than look good. These solutions build sites and digital channels that rank in search, turn visitors into leads and orders, and pass every inquiry straight into your CRM, booking, and payment systems.",
+  "guide": "how-to-choose-a-business-website-platform",
+  "solutions": [
+    {
+      "id": "custom-website",
+      "name": "Custom Website Design & Development",
+      "tagline": "A fully custom website built around how your business actually works, engineered to rank and convert.",
+      "text": "A fully custom-built website designed and developed around how your business actually operates, not a template with your logo swapped in. This offering covers UX and visual design, responsive development, and on-page and technical SEO (structured data, page speed optimization, keyword-mapped content, and search console setup) so the site is built to rank, not just to look good. For businesses that sell in person as well as online, we integrate the site with your POS system, booking software, CRM, and payment processor so orders, appointments, and customer records stay in sync across every channel. Hosting, security updates, analytics, and ongoing maintenance are included, so launch day is the starting point, not the finish line.",
+      "for": ["Service businesses whose site no longer reflects what they sell", "Companies outgrowing a DIY builder or an aging WordPress theme", "Teams that want web leads to land in the CRM automatically"],
+      "features": [
+        ["Custom UX and visual design", "Page layouts planned around your buyers' questions and the actions you want them to take."],
+        ["Technical SEO built in", "Structured data, fast load times, clean URLs, sitemaps, and Search Console from day one."],
+        ["Keyword-mapped content", "Every service and location page targets the searches your customers actually type."],
+        ["Lead capture that routes itself", "Forms, calls, and chats flow into your CRM with source tracking and instant follow-up."],
+        ["Accessible and mobile-first", "Built to WCAG 2.1 AA and tested on phones, tablets, and screen readers."],
+        ["Hosting and care plan", "Managed hosting, backups, security patches, and content updates after launch."]
+      ],
+      "problems": ["The site looks dated and does not reflect the business you run today", "Leads from the contact form sit in an inbox for hours", "Pages load slowly and rank poorly for your core services", "Every small change means waiting on a developer"],
+      "integrations": ["WordPress", "Webflow", "HubSpot", "Google Analytics 4", "Google Search Console", "Calendly", "Stripe", "Square"],
+      "keywords": ["website", "web form", "landing page", "inquiry"],
+      "faq": [
+        ["How is a custom website different from a template?", "A template forces your content into someone else's layout. A custom site starts from your services, customers, and sales process, so every page is structured to answer buyer questions and move them toward booking or buying."],
+        ["Will my new website rank on Google?", "We build in the technical foundations search engines reward (speed, structured data, crawlable architecture, and keyword-mapped pages). Rankings also depend on competition and content over time, which is why ongoing care is part of the plan."],
+        ["Can I edit the site myself after launch?", "Yes. We build on a content management system you can update without code, and we train your team on it. Larger changes can be handled under the care plan."]
+      ]
+    },
+    {
+      "id": "ecommerce-store",
+      "name": "E-Commerce Store Development",
+      "tagline": "An online store that syncs inventory, orders, and customers with the rest of your operation.",
+      "text": "A complete online store built on Shopify, WooCommerce, or a headless platform, designed to sell and to run without manual order handling. We set up your catalog, variants, shipping and tax rules, and payment options, then connect the store to your inventory, fulfillment, accounting, and email marketing so stock levels stay accurate, orders flow to the warehouse automatically, and every sale lands in your books. Abandoned cart recovery, post-purchase sequences, and review requests are configured from the start, so the store grows revenue on its own.",
+      "for": ["Retailers adding online sales to a physical store", "Brands moving off a marketplace-only model", "Wholesalers that want a B2B ordering portal"],
+      "features": [
+        ["Catalog and variant setup", "Products, options, bundles, and collections structured for search and filtering."],
+        ["Inventory sync", "Stock levels shared between online, in-store, and marketplace channels."],
+        ["Automated fulfillment", "Orders routed to your warehouse, 3PL, or dropship partner with tracking sent back to customers."],
+        ["Accounting integration", "Sales, fees, refunds, and taxes posted to QuickBooks or Xero automatically."],
+        ["Revenue recovery flows", "Abandoned cart, browse abandonment, and win-back sequences ready on day one."],
+        ["Product SEO", "Optimized product and category pages with structured data for rich results."]
+      ],
+      "problems": ["Orders are re-keyed from the store into shipping and accounting tools", "Items oversell because stock is not shared across channels", "Abandoned carts are never followed up", "Month-end reconciliation of store payouts takes days"],
+      "integrations": ["Shopify", "WooCommerce", "Stripe", "QuickBooks", "ShipStation", "Klaviyo", "Amazon", "Square"],
+      "keywords": ["order", "e-commerce", "cart", "shipping", "store"],
+      "faq": [
+        ["Which e-commerce platform should I use?", "Shopify suits most retailers that want reliability and a large app ecosystem. WooCommerce fits businesses already on WordPress that want more control. Headless builds make sense for complex catalogs or custom buying experiences. We recommend based on your catalog, channels, and team."],
+        ["Can you migrate my existing store?", "Yes. We migrate products, customers, and order history, and set up redirects so you keep the search rankings your old URLs earned."],
+        ["Do you connect the store to my point of sale?", "Yes. We sync inventory and customers between your POS and online store so in-store and online sales draw from the same stock."]
+      ]
+    },
+    {
+      "id": "landing-pages-funnels",
+      "name": "Landing Pages & Conversion Funnels",
+      "tagline": "Focused campaign pages and follow-up funnels that turn ad clicks into booked calls.",
+      "text": "High-converting landing pages and multi-step funnels built for specific campaigns, offers, and audiences. Each page is designed around one action, tested for speed and clarity, and wired to automated follow-up so every lead gets a text and email within minutes, is tagged by campaign in your CRM, and is nudged toward booking until they convert or opt out. Conversion tracking is set up for Google Ads, Meta, and your analytics, so you can see exactly which campaigns produce revenue, not just clicks.",
+      "for": ["Businesses running paid ads to their homepage", "Teams launching a new service, offer, or location", "Marketers who need pages live without waiting on IT"],
+      "features": [
+        ["Single-goal page design", "Clear headline, proof, and one call to action per page."],
+        ["Instant lead follow-up", "Text and email sent within minutes of every form fill."],
+        ["Campaign attribution", "UTM and click ID capture so every lead is tied to its ad."],
+        ["Conversion tracking", "Google Ads, Meta, and GA4 conversions configured correctly."],
+        ["A/B testing", "Test headlines, offers, and layouts with clean reporting."],
+        ["Booking built in", "Leads can pick a time on the spot instead of waiting for a call."]
+      ],
+      "problems": ["Ad traffic lands on a generic homepage and bounces", "Nobody knows which campaigns produce paying customers", "Leads wait hours or days for a first response", "Building a new page takes weeks"],
+      "integrations": ["Google Ads", "Meta Ads", "HubSpot", "GoHighLevel", "Unbounce", "Calendly", "Twilio", "Google Analytics 4"],
+      "keywords": ["lead", "campaign", "follow-up", "ad"],
+      "faq": [
+        ["Why not send ads to my homepage?", "Homepages serve many audiences, so they convert poorly for any one campaign. A landing page matches the ad's promise and asks for one action, which usually lifts conversion rates noticeably."],
+        ["How fast should leads be contacted?", "As fast as possible. Response speed is one of the strongest predictors of whether a lead converts, which is why every funnel we build sends an automatic first touch within minutes."],
+        ["Can you track leads all the way to revenue?", "Yes. We capture campaign data on every lead and pass it into your CRM, so closed deals can be reported back by campaign and even sent to ad platforms as offline conversions."]
+      ]
+    },
+    {
+      "id": "local-seo-listings",
+      "name": "Local SEO & Listings Management",
+      "tagline": "Consistent listings, location pages, and review velocity that win the map pack.",
+      "text": "A system for ranking in local search and Google Maps across one or many locations. We clean up and sync your business listings across Google, Apple, Bing, Yelp, and industry directories, build optimized location and service-area pages, and automate review requests after every job so your rating and review count keep climbing. Google Business Profile posts, Q&A, and photo updates are scheduled, and a monthly report shows rankings, calls, direction requests, and leads by location.",
+      "for": ["Multi-location service businesses and franchises", "Contractors and home service companies that live on map leads", "Clinics, law firms, and agencies competing locally"],
+      "features": [
+        ["Listing cleanup and sync", "Name, address, phone, and hours consistent everywhere they appear."],
+        ["Location and service-area pages", "Unique, useful pages for each city and service you target."],
+        ["Automated review requests", "Requests sent after every completed job, with negative feedback routed privately first."],
+        ["Google Business Profile management", "Scheduled posts, photos, products, and answered questions."],
+        ["Local rank tracking", "Grid-based map rankings so you see visibility block by block."],
+        ["Lead reporting by location", "Calls, forms, and direction requests tracked per location."]
+      ],
+      "problems": ["Competitors with worse service outrank you on the map", "Listings show old phone numbers or hours", "Happy customers never leave reviews", "No visibility into which locations drive leads"],
+      "integrations": ["Google Business Profile", "Yelp", "Apple Business Connect", "Bing Places", "BrightLocal", "Podium", "NiceJob", "CallRail"],
+      "keywords": ["review", "google", "listing", "reputation"],
+      "faq": [
+        ["What affects local search rankings most?", "Relevance, distance, and prominence. In practice that means a complete and accurate Google Business Profile, consistent listings, strong on-site location pages, and a steady flow of genuine reviews."],
+        ["Can you manage listings for many locations?", "Yes. The system is designed for multi-location brands, with one dashboard for listings, reviews, and reporting across every location."],
+        ["Do you write fake or incentivized reviews?", "No. We automate honest review requests to real customers after real jobs, which is what platforms allow and what builds lasting trust."]
+      ]
+    },
+    {
+      "id": "website-ai-chat",
+      "name": "AI Website Chat & Lead Capture Assistant",
+      "tagline": "A trained AI assistant that answers questions, qualifies visitors, and books appointments 24/7.",
+      "text": "An AI chat assistant trained on your services, pricing guidelines, policies, and FAQs that answers website visitors instantly, day or night. It qualifies leads with the questions your team would ask, books appointments into your calendar, collects contact details into your CRM, and hands off to a human with the full conversation when a question needs one. Guardrails keep answers within approved information, and every conversation is logged so you can see what customers ask and improve the site and the assistant over time.",
+      "for": ["Businesses that get after-hours website traffic", "Teams answering the same questions all day", "Companies whose leads go cold waiting for a callback"],
+      "features": [
+        ["Trained on your content", "Answers grounded in your site, service details, and approved documents."],
+        ["Lead qualification", "Asks your qualifying questions and scores the lead before handoff."],
+        ["Appointment booking", "Books directly into your calendar or scheduling software."],
+        ["Human handoff", "Routes to live staff by text, email, or chat with full context."],
+        ["Guardrails", "Stays on approved topics and declines to guess on pricing or advice."],
+        ["Conversation analytics", "See top questions, drop-off points, and conversion rate."]
+      ],
+      "problems": ["Visitors leave because nobody answers chat after hours", "Staff answer the same basic questions repeatedly", "Leads from chat are never entered into the CRM", "Generic chatbots frustrate customers with canned replies"],
+      "integrations": ["OpenAI", "Claude", "HubSpot", "Calendly", "Intercom", "Tawk.to", "Slack", "Twilio"],
+      "keywords": ["chat", "faq", "inquiry", "after-hours"],
+      "faq": [
+        ["Will an AI assistant give customers wrong answers?", "We ground the assistant in your approved content and set guardrails so it declines rather than guesses on topics like pricing exceptions, legal, or medical advice. Anything outside scope goes to a person."],
+        ["Can it book appointments?", "Yes. It checks real availability in your calendar or booking system and confirms the appointment in the chat, with reminders sent automatically."],
+        ["How is this different from a regular chatbot?", "Older chatbots follow rigid scripts. An AI assistant understands free-form questions, answers in natural language, and still follows the rules and handoff paths you set."]
+      ]
+    },
+    {
+      "id": "web-accessibility",
+      "name": "Website Accessibility (ADA & WCAG) Remediation",
+      "tagline": "Audit and fix your site to WCAG 2.1 AA so every visitor can use it and legal risk goes down.",
+      "text": "A hands-on accessibility program that audits your website against WCAG 2.1 AA, fixes the issues in code and content, and keeps the site compliant as it changes. We combine automated scanning with manual keyboard and screen reader testing, remediate navigation, forms, color contrast, images, video captions, and documents, and publish an accessibility statement. Ongoing monitoring flags new issues introduced by content updates before they become a problem, and training helps your team publish accessible content by default.",
+      "for": ["Businesses that received an accessibility demand letter", "Organizations with public sector or education customers", "Any company that wants its site usable by everyone"],
+      "features": [
+        ["WCAG 2.1 AA audit", "Automated and manual testing with a prioritized issue list."],
+        ["Code remediation", "Fixes made in your templates, not an overlay widget."],
+        ["Keyboard and screen reader testing", "Real-world checks with NVDA, VoiceOver, and keyboard-only use."],
+        ["Captions and documents", "Video captions and accessible PDFs and forms."],
+        ["Accessibility statement", "A clear public statement with a way to request help."],
+        ["Ongoing monitoring", "Scheduled scans that catch regressions after content changes."]
+      ],
+      "problems": ["Visitors using screen readers cannot complete forms", "Overlay widgets did not fix the underlying issues", "No one knows whether new pages meet the standard", "Accessibility complaints or demand letters"],
+      "integrations": ["axe-core", "WordPress", "Webflow", "Shopify", "YouTube", "Adobe Acrobat"],
+      "keywords": ["compliance", "website", "document"],
+      "faq": [
+        ["Do accessibility overlay widgets make a site compliant?", "No. Overlays do not fix the underlying code and can interfere with assistive technology. Real compliance comes from fixing templates, content, and components directly, which is what we do."],
+        ["What standard should my website meet?", "WCAG 2.1 Level AA is the widely used benchmark referenced in many legal settlements and procurement requirements, and it is what we build and test to."],
+        ["How do we stay compliant after remediation?", "Ongoing monitoring scans new and changed pages, and we train your content editors on headings, alt text, link text, and accessible documents."]
+      ]
+    }
+  ]
+}
