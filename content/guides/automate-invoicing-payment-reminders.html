@@ -1,0 +1,86 @@
+<!--
+{
+  "title": "How to Automate Invoicing and Payment Reminders (and Get Paid Faster)",
+  "seoTitle": "How to Automate Invoicing & Payment Reminders",
+  "description": "Send invoices the moment work is done, follow up on unpaid balances without awkward calls, and recover failed card payments automatically.",
+  "eyebrow": "Billing & payments",
+  "icon": "receipt",
+  "order": 5,
+  "category": "billing-finance",
+  "keywords": ["invoice", "payment reminder", "failed payment", "overdue", "collections", "payment recovery"],
+  "published": "2026-10-25",
+  "keyPoints": [
+    "The biggest delay in getting paid is often the gap between finishing work and sending the invoice.",
+    "Trigger invoices from the event that completes the work: a closed job, a delivered order, a milestone.",
+    "Use a polite, escalating reminder schedule that stops the moment payment arrives.",
+    "Recover failed card payments with automatic retries and a quick update-your-card link."
+  ],
+  "faq": [
+    ["How often should I send payment reminders?", "<p>A common schedule is a courtesy reminder a few days before the due date, one on the due date, then reminders at roughly 3, 7, 14, and 30 days past due, escalating in tone and eventually to a personal call. The sequence should stop automatically when payment posts.</p>"],
+    ["Can I automate invoicing with QuickBooks?", "<p>Yes. QuickBooks Online can create and send invoices from other systems through Zapier, Make, or its API, for example when a job is marked complete in your field service software or a deal is won in your CRM. Payments recorded in QuickBooks can then stop the reminder sequence.</p>"],
+    ["Are automated payment reminders rude?", "<p>Not when they are worded well. Most customers who pay late simply forgot. A friendly, consistent reminder with a one-click payment link is usually appreciated, and it removes the awkwardness of your team having to make the ask in person.</p>"],
+    ["What is dunning?", "<p>Dunning is the process of following up on failed or overdue payments, most often for subscriptions and memberships. Automated dunning retries failed cards, notifies the customer, and gives them an easy way to update their payment method before the account lapses.</p>"]
+  ]
+}
+-->
+<p>Ask a small business owner where cash flow gets stuck and you will often hear the same story: the work is done, but the invoice has not gone out yet. It is waiting for someone to get back to the office, check the job notes, and type it up. Then the invoice sits unpaid because nobody has time to chase it.</p>
+<p>Billing is an ideal place to automate. The rules are clear, the volume is steady, and every day of delay costs real money.</p>
+
+<h2>Where the delays actually happen</h2>
+<ol>
+<li><strong>Completion to invoice.</strong> Days pass between finishing the work and sending the bill.</li>
+<li><strong>Invoice to first reminder.</strong> Nobody follows up until the balance is well past due.</li>
+<li><strong>Reminders to escalation.</strong> Follow-up is inconsistent because it depends on someone remembering, and nobody enjoys making collection calls.</li>
+<li><strong>Failed payments.</strong> A card on file declines and nobody notices until the next statement.</li>
+</ol>
+<p>Each gap has a clean automation fix.</p>
+
+<h2>Step 1: Invoice the moment work is done</h2>
+<p>Pick the event that means "this is billable" in your business and make it the trigger:</p>
+<ul>
+<li>A job marked complete in your field service software</li>
+<li>An order marked delivered</li>
+<li>A project milestone approved by the client</li>
+<li>A monthly date for retainers and recurring services</li>
+<li>Hours approved in a timesheet</li>
+</ul>
+<p>The automation pulls the customer, line items, and rates, creates the invoice in your accounting system (QuickBooks, Xero, FreshBooks, or similar), and sends it with a payment link. For service businesses, attaching proof of work such as photos or a signed completion form cuts down on billing questions later.</p>
+<div class="lj-callout"><strong>Add a review step where it matters</strong><p>Fully automatic invoicing works well for standard pricing. For variable jobs, have the automation create a draft and alert a person to approve it with one click. You still remove most of the work while keeping control over unusual charges.</p></div>
+
+<h2>Step 2: Make paying easy</h2>
+<p>Every invoice and reminder should include a direct payment link (card and ACH where possible). The fewer steps between "I should pay this" and "paid," the faster money arrives. If you collect deposits, send the deposit request automatically when a quote is accepted or a contract is signed.</p>
+
+<h2>Step 3: Set up a polite reminder schedule</h2>
+<table>
+<thead><tr><th>Timing</th><th>Tone</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>3 days before due</td><td>Courtesy</td><td>"Just a heads up that invoice #1042 for $480 is due Friday. Pay online here: [link]"</td></tr>
+<tr><td>Due date</td><td>Friendly</td><td>"Invoice #1042 is due today. Thanks for taking care of it: [link]"</td></tr>
+<tr><td>3 days late</td><td>Helpful</td><td>"Looks like #1042 is still open. Any questions about it? Here's the link again."</td></tr>
+<tr><td>7 to 14 days late</td><td>Direct</td><td>"Invoice #1042 is now 10 days past due. Please pay or reply to set up a plan."</td></tr>
+<tr><td>30 days late</td><td>Escalate</td><td>Alert the owner or account manager to call personally.</td></tr>
+</tbody>
+</table>
+<p>Two rules keep this professional: the sequence stops immediately when payment posts, and anyone who replies with a question is routed to a person rather than getting another automated message.</p>
+<div class="lj-callout lj-callout--warn"><strong>Late fees and collections rules</strong><p>If you charge late fees, make sure they are in your agreement and comply with the laws in your state. Consumer debt collection has additional rules. Keep automated reminders factual and courteous, and get advice before automating anything that looks like formal collections.</p></div>
+
+<h2>Step 4: Recover failed payments automatically</h2>
+<p>For subscriptions, memberships, and card-on-file customers, failed payments are a quiet but significant source of lost revenue. A recovery workflow typically:</p>
+<ol>
+<li>Retries the card on a smart schedule (payment processors like Stripe can do this automatically).</li>
+<li>Texts and emails the customer a secure link to update their card.</li>
+<li>Pauses services or access only after several attempts and clear notice.</li>
+<li>Alerts your team about high-value accounts so someone can reach out personally.</li>
+</ol>
+
+<h2>Step 5: Keep the books reconciled as you go</h2>
+<p>The same connections that send invoices can also record payments, match deposits to invoices, categorize expenses, and flag discrepancies. That turns month-end close from a scramble into a review. Commission calculations, vendor invoice approvals, and owner statements are also common billing automations once the basics are in place.</p>
+
+<h2>What to measure</h2>
+<ul class="lj-checklist">
+<li>Days from job completion to invoice sent</li>
+<li>Days sales outstanding (average days to get paid)</li>
+<li>Percentage of invoices paid by the due date</li>
+<li>Failed payments recovered each month</li>
+</ul>
+<p>Browse <a href="/automations/category/billing-finance/">billing and payment automations</a> by industry, see the <a href="/automations/tools/quickbooks/">QuickBooks</a> and <a href="/automations/tools/stripe/">Stripe</a> integrations, or <a href="/appointment/">book a free consultation</a> to map your billing workflow.</p>
