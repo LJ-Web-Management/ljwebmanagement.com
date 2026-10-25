@@ -118,7 +118,7 @@ function home(cat, guides, extra) {
 
 <section class="lj-section">
   <div class="lj-container">
-    <div class="lj-split" style="grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center">
+    <div class="lj-split lj-split--media">
       <div>
         <span class="lj-eyebrow">Our process</span>
         <h2>Ready to automate the boring, repetitive work?</h2>
@@ -148,7 +148,6 @@ function home(cat, guides, extra) {
   <div class="lj-container">
     ${L.sectionHead("Why LJ Web Management", "Automation built around how your business already works", "")}
     <div class="lj-features">
-      <div><span class="lj-features-stat">${total}+</span><h3>Pre-scoped, role-specific automations</h3><p>Not generic templates. Every workflow is written for a real job in a real industry, then tailored to your exact tools.</p></div>
       <div><span class="lj-card-icon lj-card-icon--soft">${icon("receipt")}</span><h3>A clear quote, not a price list</h3><p>After a free consultation you get one flat, all-in price. Nothing starts until you approve the scope.</p></div>
       <div><span class="lj-card-icon lj-card-icon--soft">${icon("plug")}</span><h3>Custom-fit systems</h3><p>Built around the tools you already use, not the other way around.</p></div>
       <div><span class="lj-card-icon lj-card-icon--soft">${icon("zap")}</span><h3>Fast to launch</h3><p>Most systems go live within days, not months.</p></div>
@@ -159,11 +158,9 @@ function home(cat, guides, extra) {
 
 <section class="lj-section">
   <div class="lj-container">
-    <div class="lj-section-head lj-section-head--split">
-      <div><span class="lj-eyebrow">Where we help</span><h2>Built for your industry</h2><p>Role-specific automations for ${cat.industries.length} industries, from dental practices to warehouses.</p></div>
-      <a class="lj-link-arrow" href="/automations/#industries">All ${cat.industries.length} industries ${icon("arrowRight")}</a>
-    </div>
+    ${L.sectionHead("Where we help", "Built for your industry", "Role-specific automations for " + cat.industries.length + " industries, from dental practices to warehouses.")}
     <div class="lj-grid lj-grid-4">${featuredInds.map((ind) => '<a class="lj-card lj-card--link" href="' + ind.url + '"><span class="lj-itile-icon" style="margin-bottom:14px">' + industrySvg(ind) + "</span><h3 style=\"font-size:17px\">" + escapeHtml(ind.name) + "</h3><p>" + escapeHtml(ind.card) + '</p><div class="lj-card-foot"><span class="lj-count">' + ind.items.length + ' automations</span><span class="lj-card-arrow">' + icon("arrowRight") + "</span></div></a>").join("")}</div>
+    <p class="lj-center lj-mt-lg"><a class="lj-link-arrow" href="/automations/#industries">All ${cat.industries.length} industries ${icon("arrowRight")}</a></p>
   </div>
 </section>
 
@@ -738,18 +735,18 @@ function privacyChoices() {
   <div class="lj-container lj-container--narrow">
     <div class="lj-prose lj-legal">
       <h2 id="cookies">Cookie and analytics settings</h2>
-      <div class="lj-callout"><strong>Your current setting</strong><p data-lj-consent-status>Turn on JavaScript to change your settings here, or block cookies in your browser settings. Without JavaScript, optional analytics never load.</p></div>
+      <div class="lj-callout"><strong>Your current setting</strong><p data-lj-consent-status>Turn on JavaScript to change your settings here, or block cookies in your browser settings. Without JavaScript, analytics never load.</p></div>
       <div class="lj-btn-row lj-mb">
         <button type="button" class="lj-btn lj-btn-primary" data-lj-consent-open>Open privacy settings</button>
-        <button type="button" class="lj-btn lj-btn-ghost" data-lj-consent-set="0">Turn analytics off</button>
-        <button type="button" class="lj-btn lj-btn-ghost" data-lj-consent-set="1">Turn analytics on</button>
+        <button type="button" class="lj-btn lj-btn-ghost" data-lj-consent-set="0">Opt out of analytics</button>
+        <button type="button" class="lj-btn lj-btn-ghost" data-lj-consent-set="1">Allow analytics</button>
       </div>
-      <p>Optional analytics (Google Analytics and Microsoft Clarity) help us understand how the site is used. They only run if you turn them on. Strictly necessary storage, which remembers this choice and on-device preferences like course progress, is always on and is used only to apply your choices, never to identify or track you. Your choice is saved in your browser for 12 months, so you will need to set it again on another browser or device, or if you clear your cookies.</p>
+      <p>Analytics (Google Analytics and Microsoft Clarity) help us understand how the site is used. They run unless you opt out, or your browser sends a Global Privacy Control or Do Not Track signal. Strictly necessary storage, which remembers this choice and on-device preferences like course progress, is always on and is used only to apply your choices, never to identify or track you. Your choice is saved in your browser for 12 months, so you will need to set it again on another browser or device, or if you clear your cookies.</p>
 
       <h2 id="do-not-sell">Do Not Sell or Share My Personal Information</h2>
       <p>We do not sell personal information, share it for cross-context behavioral advertising, or use it for targeted advertising, and we do not use advertising cookies. There is nothing you need to do to opt out. If you would still like us to record an opt-out request, for example to cover any future change in our practices, email <a href="mailto:info@ljwebmanagement.com?subject=Do%20Not%20Sell%20or%20Share">info@ljwebmanagement.com</a> with the subject line "Do Not Sell or Share."</p>
       <h3>Global Privacy Control</h3>
-      <p>If your browser sends a Global Privacy Control (GPC) signal, we treat it as an opt-out of selling and sharing and keep optional analytics off for that browser. We treat Do Not Track signals the same way.</p>
+      <p>If your browser sends a Global Privacy Control (GPC) signal, we treat it as an opt-out of selling and sharing and keep analytics off for that browser. We treat Do Not Track signals the same way.</p>
 
       <h2 id="rights">Your privacy rights</h2>
       <p>We honor these requests from any U.S. resident, whether or not your state's privacy law requires it:</p>

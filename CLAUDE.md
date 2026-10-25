@@ -59,14 +59,14 @@ the blog's latest posts from `https://blog.ljwebmanagement.com/assets/js/latest-
 ## Privacy and accessibility rules
 
 - Third-party scripts that track or record visitors (analytics, session
-  recording, ad pixels) must only load through the consent gate in
-  `build/lib/chrome.js` (`analytics()`), after the visitor accepts them in the
-  cookie banner. Never add them directly to a page. Live chat loads only when
-  the visitor starts a chat (`chatWidget()`).
-- The consent choice is the `lj_consent` cookie on `.ljwebmanagement.com`,
-  shared by www and the blog. Bump `CONSENT_VERSION` in `chrome.js` to ask
-  everyone again after adding a new kind of tracking, and update the
+  recording, ad pixels) must only load through `analytics()` in
+  `build/lib/chrome.js`, never directly on a page. Analytics run by default
+  and stop when a visitor opts out from the cookie banner or Your Privacy
+  Choices. Live chat is the standard Tawk.to widget from `chatWidget()`.
+- The choice is the `lj_consent` cookie on `.ljwebmanagement.com`, shared by
+  www and the blog. Bump `CONSENT_VERSION` in `chrome.js` to show the banner
+  to everyone again after adding a new kind of tracking, and update the
   Privacy Policy (`content/pages/privacy-policy.html`) in the same change.
-- Global Privacy Control and Do Not Track signals keep optional analytics off.
+- Global Privacy Control and Do Not Track signals count as an opt-out.
 - New pages must pass an axe-core WCAG 2.1 AA check, work by keyboard, and
   keep visible focus. Videos need captions (see `assets/homepage-video.vtt`).
