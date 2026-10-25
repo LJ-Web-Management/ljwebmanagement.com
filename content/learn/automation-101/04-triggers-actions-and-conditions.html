@@ -1,0 +1,73 @@
+<!--
+{
+  "title": "Triggers, actions, and conditions: how workflows think",
+  "description": "The building blocks of every automated workflow explained with examples: event and scheduled triggers, actions, filters, branches, delays, and loops.",
+  "minutes": 9,
+  "keyPoints": [
+    "A trigger is the event that starts a workflow: something happens, or a scheduled time arrives.",
+    "Actions do the work, usually by creating, updating, sending, or looking something up in an app.",
+    "Conditions (filters and branches) decide which actions run for each record.",
+    "Delays, lookups, and loops let one workflow handle follow-ups, existing records, and lists."
+  ],
+  "check": [
+    { "q": "\"Every Monday at 8 a.m., email the weekly sales summary.\" What kind of trigger is this?", "options": ["An event trigger", "A scheduled trigger", "A condition", "A loop"], "answer": 1, "why": "It runs at a set time rather than in response to something happening, so it is a scheduled trigger." },
+    { "q": "You want different follow-ups for residential and commercial leads. What do you add?", "options": ["A second trigger", "A branch (a condition with different paths)", "A delay", "Another CRM"], "answer": 1, "why": "A branch checks a value (lead type) and sends each record down the right path of actions." },
+    { "q": "Why add a lookup (search) step before creating a CRM contact?", "options": ["To slow the workflow down", "To check whether the contact already exists and avoid duplicates", "Lookups are required by law", "To send a text message"], "answer": 1, "why": "Searching first lets the workflow update an existing record instead of creating a duplicate." }
+  ]
+}
+-->
+<p>In lesson one you met the three building blocks of every workflow. Now it is time to look at each one closely, because once you understand them, every automation tool on the market will feel familiar. Zapier, Make, n8n, and Power Automate all use different words for the same ideas.</p>
+
+<h2>Triggers: what starts the workflow</h2>
+<p>A trigger is the moment a workflow wakes up. There are two main kinds:</p>
+<ul>
+<li><strong>Event triggers</strong> fire when something happens in an app: a form is submitted, an email arrives, a payment succeeds, a deal moves to "won," a row is added to a spreadsheet, a file lands in a folder.</li>
+<li><strong>Scheduled triggers</strong> fire at a set time: every morning at 8, every Friday at 4, the first of the month.</li>
+</ul>
+<p>Choosing the right trigger is half the design. Ask: <em>what is the earliest reliable signal that this work needs to happen?</em> For invoicing, it might be "job marked complete." For a review request, "appointment checked out." The more precise the trigger, the more precise everything after it.</p>
+<div class="lj-callout lj-callout--warn"><strong>Watch out for "someone notices"</strong><p>If today's trigger is a person noticing something ("when I see the job is done"), you need to capture that moment digitally first, for example with a status field or a one-tap button. Automation cannot start from something that only happens in someone's head.</p></div>
+
+<h2>Actions: what the workflow does</h2>
+<p>Actions are the steps that run after the trigger. Almost every action is one of a handful of verbs:</p>
+<ul>
+<li><strong>Create:</strong> a contact, a task, an invoice, a calendar event, a document.</li>
+<li><strong>Update:</strong> a deal stage, a status, a spreadsheet row, a tag.</li>
+<li><strong>Send:</strong> an email, a text, a chat message, a notification.</li>
+<li><strong>Find:</strong> look up a customer, an order, or a record to use its details later.</li>
+<li><strong>Transform:</strong> format a date, split a full name, calculate a total, or ask an AI model to summarize or classify text.</li>
+</ul>
+<p>Each action can use data from the trigger and from earlier steps. That is called <strong>data mapping</strong>: telling the tool that the "Email" field from the form goes into the "Email" field of the CRM contact.</p>
+
+<h2>Conditions: deciding what happens</h2>
+<p>Conditions make a workflow smart. There are two common forms:</p>
+<ul>
+<li><strong>Filters</strong> stop the workflow unless a rule is met: only continue if the order total is over $500, only if the lead's state is Illinois, only if the email is not from our own domain.</li>
+<li><strong>Branches</strong> (also called paths or routers) send each record down a different set of actions: residential leads get one follow-up sequence, commercial leads another.</li>
+</ul>
+<p>Write conditions in plain English first: "If the customer is new, send the welcome sequence; otherwise, send a thank-you." Then build them.</p>
+
+<h2>Four more tools you will use often</h2>
+<ol>
+<li><strong>Delays:</strong> wait a set time before the next step, such as two days before a follow-up or one hour before a reminder.</li>
+<li><strong>Lookups:</strong> search before you create, so you update an existing customer instead of creating a duplicate.</li>
+<li><strong>Loops:</strong> repeat actions for each item in a list, such as every line item on an order or every row in a report.</li>
+<li><strong>Error paths:</strong> decide what happens when a step fails, such as retrying or alerting a person. Lesson seven covers this.</li>
+</ol>
+
+<h2>Putting it together</h2>
+<p>Here is the lead follow-up workflow from lesson three, written the way an automation tool sees it:</p>
+<table>
+<thead><tr><th>Step</th><th>Type</th><th>What it does</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Trigger</td><td>New website form submission</td></tr>
+<tr><td>2</td><td>Find</td><td>Search the CRM for a contact with this email</td></tr>
+<tr><td>3</td><td>Branch</td><td>Found? Update the contact. Not found? Create it.</td></tr>
+<tr><td>4</td><td>Send</td><td>Text and email a reply with a booking link</td></tr>
+<tr><td>5</td><td>Send</td><td>Notify the assigned salesperson in chat</td></tr>
+<tr><td>6</td><td>Delay</td><td>Wait 2 days</td></tr>
+<tr><td>7</td><td>Filter</td><td>Continue only if no appointment has been booked</td></tr>
+<tr><td>8</td><td>Send</td><td>Send a friendly follow-up text</td></tr>
+</tbody>
+</table>
+<p>Eight steps, no code, and every lead gets a fast reply and a follow-up, every time. The <a href="/guides/automate-lead-follow-up/">lead follow-up guide</a> shows a complete version with message templates.</p>
+<p>In the next lesson, you will see how automation tools actually connect to your apps behind the scenes.</p>

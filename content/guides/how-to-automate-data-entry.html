@@ -1,0 +1,89 @@
+<!--
+{
+  "title": "How to Automate Data Entry (Including Excel and Google Sheets)",
+  "seoTitle": "How to Automate Data Entry in Excel, Google Sheets, and Apps",
+  "description": "How to automate data entry: capture data once with forms, sync apps with integrations, extract data from documents with OCR and AI, and automate Excel and Google Sheets.",
+  "eyebrow": "How to automate",
+  "icon": "file",
+  "order": 13,
+  "group": "how-to",
+  "category": "operations-inventory",
+  "keywords": ["data entry", "sync", "spreadsheet", "log", "record"],
+  "published": "2026-10-25",
+  "related": ["how-to-automate-invoice-processing", "how-to-automate-repetitive-tasks", "how-to-automate-reports"],
+  "tools": [["Time savings calculator", "/tools/time-savings-calculator/", "clock"], ["AI prompt library: data extraction", "/tools/ai-prompt-library/#prompt-extract-data-from-a-document", "message"]],
+  "keyPoints": [
+    "The best data entry automation removes typing entirely: capture data once, digitally, at the source.",
+    "Integrations and automation platforms copy data between apps; OCR and AI read documents and emails.",
+    "In Excel and Google Sheets, use forms, imports, formulas, and automation platforms instead of retyping.",
+    "Validate automated entries with rules and send low-confidence records to a person."
+  ],
+  "faq": [
+    ["How can I automate data entry?", "<p>Capture information digitally where it starts (online forms instead of paper), connect your apps so data flows between them through integrations or an automation platform, and use OCR and AI to extract data from documents and emails. Add validation rules and send anything uncertain to a person for review.</p>"],
+    ["How do I automate data entry in Excel?", "<p>Use Microsoft Forms or another form tool to feed responses into a workbook, Power Query to import and clean data from other files and systems, and Power Automate to add rows when events happen in other apps. Data validation and tables reduce errors in anything still typed by hand.</p>"],
+    ["How do I automate data entry in Google Sheets?", "<p>Connect Google Forms to a sheet, use IMPORTRANGE or connected data sources to pull data from other sheets and systems, and use an automation platform such as Zapier or Make to add or update rows when something happens in another app. Apps Script can handle custom logic.</p>"],
+    ["Can AI do data entry?", "<p>Yes. AI can read emails, PDFs, scanned documents, and photos and extract specific fields, such as names, dates, amounts, and line items, into a structured format that an automation then enters into your systems. Validation checks and human review of uncertain results keep accuracy high.</p>"]
+  ]
+}
+-->
+<p><strong>To automate data entry, capture information digitally once at its source, connect your apps so that data flows between them automatically, and use OCR and AI to read documents and emails that would otherwise be retyped.</strong> In spreadsheets like Excel and Google Sheets, forms, imports, and automation platforms can add and update rows without anyone typing.</p>
+<p>Manual data entry is slow, mind-numbing, and one of the biggest sources of errors in a small business. This guide shows how to remove it in layers, from the easiest fixes to AI-powered document capture.</p>
+
+<h2>Layer 1: Capture data once, at the source</h2>
+<p>The cheapest data entry is the entry nobody has to do. If customers, staff, or suppliers are giving you information on paper, by phone, or in free-form emails, move that to a structured digital form:</p>
+<ul>
+<li>Online intake and order forms instead of paper or phone intake</li>
+<li>Booking links instead of scheduling by email</li>
+<li>Mobile forms for field staff instead of handwritten job sheets</li>
+<li>Supplier portals or structured email templates for orders and invoices</li>
+</ul>
+<p>Every form submission becomes a clean record that automations can use immediately.</p>
+
+<h2>Layer 2: Let apps share data</h2>
+<p>Much "data entry" is really copying: from a form into the CRM, from the CRM into an invoice, from the store into accounting. Remove it with:</p>
+<ul>
+<li><strong>Native integrations</strong> between your apps, such as a store syncing orders to accounting.</li>
+<li><strong>An automation platform</strong> (Zapier, Make, n8n, or Power Automate) that creates or updates records in one app when something happens in another.</li>
+<li><strong>Two-way sync</strong> tools where the same records must stay matched in two systems.</li>
+</ul>
+<div class="lj-callout"><strong>Search before you create</strong><p>When automating entry into a CRM or accounting system, add a "find" step first. If the customer or product already exists, update it instead of creating a duplicate. Deduplication is much easier to prevent than to clean up.</p></div>
+
+<h2>Layer 3: Read documents and emails with OCR and AI</h2>
+<p>For information that arrives as PDFs, scans, photos, or free-text emails:</p>
+<ol>
+<li><strong>Capture:</strong> documents arrive in a dedicated inbox or folder.</li>
+<li><strong>Read:</strong> OCR converts images to text; an AI step extracts the fields you need (vendor, date, amounts, line items, names, addresses) into a structured format such as JSON.</li>
+<li><strong>Validate:</strong> rules check the result: does the total equal the sum of the lines, is the date valid, does the customer exist?</li>
+<li><strong>Enter:</strong> the automation creates or updates the record.</li>
+<li><strong>Review:</strong> anything that failed a check or that the AI was unsure about goes to a person.</li>
+</ol>
+<p>This is often called intelligent document processing. See <a href="/guides/how-to-automate-invoice-processing/">how to automate invoice processing</a> for a full worked example.</p>
+
+<h2>Automating data entry in Excel</h2>
+<ul>
+<li><strong>Microsoft Forms</strong> responses can flow straight into an Excel workbook.</li>
+<li><strong>Power Query</strong> imports and cleans data from other workbooks, CSV exports, databases, and web sources, refreshable with one click.</li>
+<li><strong>Power Automate</strong> adds rows when an email arrives, a form is submitted, or a record changes in another app.</li>
+<li><strong>Tables and data validation</strong> (dropdowns, date rules) reduce errors in anything still entered by hand.</li>
+</ul>
+
+<h2>Automating data entry in Google Sheets</h2>
+<ul>
+<li><strong>Google Forms</strong> writes each response to a new row automatically.</li>
+<li><strong>IMPORTRANGE</strong> and connected data sources pull data from other sheets and systems.</li>
+<li><strong>Zapier, Make, or n8n</strong> add or update rows when something happens in your CRM, store, or inbox.</li>
+<li><strong>Apps Script</strong> handles custom logic, such as formatting or moving rows when a status changes.</li>
+</ul>
+<p>One caution: spreadsheets are great for collecting and reporting, but if several people and automations depend on the same data, a proper database or CRM is usually more reliable as the single source of truth.</p>
+
+<h2>Keep automated data clean</h2>
+<ul class="lj-checklist">
+<li>Make key fields required at the source, such as email and phone on forms</li>
+<li>Standardize formats automatically: capitalization, phone numbers, dates</li>
+<li>Check for duplicates before creating records</li>
+<li>Log every automated entry so you can trace and fix mistakes</li>
+<li>Review a sample of automated entries weekly at first</li>
+</ul>
+
+<h2>Where to start</h2>
+<p>Find the data your team types most often, usually form submissions into the CRM, orders into accounting, or invoices into bookkeeping. Time it for a week, then put a value on it with the <a href="/tools/time-savings-calculator/">time savings calculator</a>. That number usually makes the decision obvious.</p>

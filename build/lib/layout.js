@@ -59,6 +59,12 @@ function head(opts) {
   return lines.join("\n");
 }
 
+// Script tag for the interactive tools engine (calculators, quizzes, course
+// progress), loaded only on the pages that use it.
+function toolsScript() {
+  return '<script src="/assets/js/tools.js?v=' + fileHash("assets/js/tools.js") + '" defer></script>';
+}
+
 // Full page. `opts.main` is the inner HTML of <main>.
 function page(opts) {
   return [
@@ -134,6 +140,38 @@ function sectionHead(eyebrow, title, text, cls) {
   );
 }
 
+// Light page hero used by the resource pages. `title` and `lead` are HTML.
+function hero(o) {
+  return (
+    '<section class="lj-page-hero' + (o.center === false ? "" : " lj-page-hero--center") + '"><div class="lj-container">' +
+    (o.crumbs ? o.crumbs.html : "") +
+    (o.eyebrow ? '<span class="lj-eyebrow lj-eyebrow--pill">' + o.eyebrow + "</span>" : "") +
+    "<h1>" + o.title + "</h1>" +
+    (o.lead ? '<p class="lj-lead">' + o.lead + "</p>" : "") +
+    (o.extra || "") +
+    "</div></section>"
+  );
+}
+
+// Resource card (course, quiz, calculator, guide): icon, tag, title, text.
+function rcard(o) {
+  return (
+    '<a class="lj-card lj-gcard" href="' + o.href + '">' +
+    '<span class="lj-gcard-top"><span class="lj-card-icon lj-card-icon--soft">' + chrome.icon(o.icon || "book") + '</span><span class="lj-post-card-meta"><span class="lj-tag lj-tag--cyan">' + escapeHtml(o.tag) + "</span>" + (o.meta ? "<span>" + escapeHtml(o.meta) + "</span>" : "") + "</span></span>" +
+    "<h3>" + escapeHtml(o.title) + "</h3><p>" + escapeHtml(truncate(o.text, 150)) + "</p>" +
+    '<span class="lj-link-arrow">' + escapeHtml(o.cta || "Open") + " " + chrome.icon("arrowRight") + "</span></a>"
+  );
+}
+
+// Compact list of related links: [[title, href, iconName], ...].
+function linkList(items) {
+  return (
+    '<ul class="lj-link-list">' +
+    items.map(([t, href, ic]) => '<li><a href="' + href + '">' + chrome.icon(ic || "arrowRight") + "<span>" + escapeHtml(t) + "</span></a></li>").join("") +
+    "</ul>"
+  );
+}
+
 
 
 module.exports = {
@@ -144,5 +182,9 @@ module.exports = {
   breadcrumbs,
   faq,
   sectionHead,
+  hero,
+  rcard,
+  toolsScript,
+  linkList,
   icon: chrome.icon,
 };

@@ -1,0 +1,61 @@
+<!--
+{
+  "title": "Data, privacy, and accuracy",
+  "description": "How to use AI at work without exposing customer data or publishing mistakes: approved tools, data minimization, grounding, review steps, and a simple AI use policy.",
+  "minutes": 8,
+  "keyPoints": [
+    "Use business-grade AI services whose terms you have reviewed, not personal accounts.",
+    "Share only the data a task needs, and keep especially sensitive data out unless your agreements cover it.",
+    "Reduce mistakes by grounding AI in your own information and validating its output.",
+    "A one-page AI use policy prevents most problems before they start."
+  ],
+  "check": [
+    { "q": "What is the safest default for using AI with customer data?", "options": ["Paste everything into any free AI tool", "Use approved business tools and share only the data the task needs", "Never use AI for anything", "Email the data to the AI provider"], "answer": 1, "why": "Approved tools with reviewed terms, plus data minimization, protect customers while still getting the benefit." },
+    { "q": "What does grounding an AI answer mean?", "options": ["Unplugging the computer", "Giving the model your own relevant information and asking it to answer only from that", "Making the answer shorter", "Translating it"], "answer": 1, "why": "Grounding reduces invented answers by tying the response to information you supplied." },
+    { "q": "Which AI output should always get human review before use?", "options": ["An internal brainstorm list", "A reply to a customer about a billing dispute", "A draft title for a blog post", "A list of meeting agenda ideas"], "answer": 1, "why": "Customer-facing, financial, or sensitive output needs a person to check accuracy and tone." }
+  ]
+}
+-->
+<p>AI can save hours every week, but two risks need managing from day one: customer and company data ending up somewhere it should not, and AI mistakes reaching customers. Neither requires a legal department to handle. A few clear habits cover most of it.</p>
+<p><em>This lesson is practical guidance, not legal advice. If you handle regulated data, such as health records, check the specific rules that apply to you.</em></p>
+
+<h2>Choose tools deliberately</h2>
+<ul>
+<li><strong>Use business plans and APIs,</strong> not personal accounts. Business and API terms from the major AI providers typically state how your data is used and retained, and many do not use it to train models by default. Read the terms for the tools you approve.</li>
+<li><strong>Keep a short list of approved tools</strong> so the team is not pasting customer details into whatever app they found this week.</li>
+<li><strong>Check for the agreements you need.</strong> Health data in the United States, for example, generally requires a business associate agreement (BAA) with any vendor that handles it.</li>
+<li><strong>Control access:</strong> shared business accounts, strong passwords, two-factor authentication, and removing access when people leave.</li>
+</ul>
+
+<h2>Share less data</h2>
+<p>The simplest privacy technique is <strong>data minimization</strong>: send the AI only what the task needs.</p>
+<ul>
+<li>To classify an email, the AI needs the message text, not the customer's full account history.</li>
+<li>To summarize a call, remove payment details and other sensitive numbers first.</li>
+<li>Replace names with placeholders when the task does not depend on them.</li>
+<li>Never put passwords, API keys, or full card numbers into a prompt.</li>
+</ul>
+
+<h2>Reduce mistakes</h2>
+<p>AI models can produce confident, plausible, wrong answers. Five habits keep that from causing harm:</p>
+<ol>
+<li><strong>Ground it:</strong> give the model your own current information (policies, prices, product details) and tell it to answer only from that.</li>
+<li><strong>Allow "I do not know":</strong> instruct it to say when the answer is not in the material, and route those cases to a person.</li>
+<li><strong>Validate automatically:</strong> check extracted numbers add up, dates are valid, and categories are allowed values.</li>
+<li><strong>Review what matters:</strong> a person approves anything customer-facing, financial, legal, or medical until accuracy is proven, and keeps sampling afterwards.</li>
+<li><strong>Keep records:</strong> log inputs, outputs, and human edits, so you can find and fix patterns.</li>
+</ol>
+
+<h2>Be transparent</h2>
+<p>Customers generally do not mind AI helping a business respond faster, but they do mind feeling misled. Consider telling people when they are chatting with an AI assistant, making it easy to reach a person, and updating your privacy policy to describe the AI services that process their information.</p>
+
+<h2>A one-page AI use policy</h2>
+<p>Write down, in plain language:</p>
+<ul class="lj-checklist">
+<li>Which AI tools are approved, and for what kinds of work</li>
+<li>What data may never be entered (for example, health details, card numbers, passwords)</li>
+<li>Which outputs need human review before use</li>
+<li>Who to ask when unsure, and how to report a problem</li>
+<li>When the policy will be reviewed (AI tools change quickly; every six months is sensible)</li>
+</ul>
+<p>Share it with the team, and you will have addressed the most common AI risks for a small business. The <a href="/quizzes/ai-readiness-assessment/">AI readiness assessment</a> checks this alongside your processes, data, and tools.</p>

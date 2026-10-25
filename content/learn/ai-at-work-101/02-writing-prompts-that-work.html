@@ -1,0 +1,66 @@
+<!--
+{
+  "title": "Writing prompts that get reliable results",
+  "description": "A simple five-part structure for business prompts, how to get consistent formats like JSON, using examples, and how to test and improve a prompt.",
+  "minutes": 9,
+  "keyPoints": [
+    "Good prompts state the task, give context, supply the material, set the output format, and add rules.",
+    "Specific instructions and an example of good output beat long, vague requests.",
+    "For automations, ask for fixed formats such as JSON with set keys, so the workflow can read the answer.",
+    "Test prompts on real examples, including tricky ones, and refine them like any other process."
+  ],
+  "check": [
+    { "q": "Which prompt is likely to produce the most reliable result?", "options": ["\"Write an email.\"", "\"Write a friendly reply under 100 words to this customer asking to reschedule, offering the times listed, and ending with a link to book.\"", "\"Be creative.\"", "\"Do your best with this.\""], "answer": 1, "why": "It states the task, tone, length, content, and call to action. Specific prompts get specific results." },
+    { "q": "Why ask for JSON output in an automation?", "options": ["JSON looks impressive", "A fixed, labeled format lets the next workflow step read the answer reliably", "AI models cannot write plain text", "It is cheaper for every task"], "answer": 1, "why": "Workflows need predictable structure. JSON with fixed keys means the next step knows exactly where to find each value." },
+    { "q": "What should a prompt tell the model to do when it is unsure?", "options": ["Guess confidently", "Say so, for example by returning \"unclear\" or flagging for a person", "Stop responding", "Make up a source"], "answer": 1, "why": "Giving the model a safe way to express uncertainty prevents confident guesses and lets the workflow route the case to a person." }
+  ]
+}
+-->
+<p>Most disappointing AI results come from vague prompts. The model is not lazy or confused; it simply filled the gaps with its best guess. This lesson gives you a structure that removes the guessing, whether you are typing into a chat assistant or writing a prompt that runs thousands of times inside an automation.</p>
+
+<h2>The five parts of a strong prompt</h2>
+<ol>
+<li><strong>Task:</strong> what you want, in one clear sentence. "Classify this email." "Draft a reply." "Extract these fields."</li>
+<li><strong>Context:</strong> who you are, who the audience is, and why this matters. "We are a dental practice. The reader is an existing patient."</li>
+<li><strong>Material:</strong> the input to work on: the email, the document, the notes. Clearly separated from the instructions.</li>
+<li><strong>Format:</strong> exactly what the output should look like: length, structure, tone, bullet points, a table, or JSON with named keys.</li>
+<li><strong>Rules:</strong> what to avoid and what to do when unsure. "Use only the information provided." "If the date is missing, write unknown."</li>
+</ol>
+
+<h2>A before and after</h2>
+<p><strong>Before:</strong> <em>"Reply to this customer."</em></p>
+<p><strong>After:</strong></p>
+<blockquote><p>Draft a reply to the customer email below for our office manager to review. We are a residential plumbing company. The customer is asking to reschedule. Offer these times: Tuesday 9 a.m. or Wednesday 2 p.m. Keep it under 90 words, warm and professional, and end with our booking link: [link]. Do not promise discounts or anything not listed here.</p><p>Customer email: [paste]</p></blockquote>
+<p>The second prompt takes thirty seconds longer to write and saves several rounds of editing. Better still, save it as a template and reuse it.</p>
+
+<h2>Show, do not just tell</h2>
+<p>One short example of good output is often worth a paragraph of instructions. If you want replies in a certain style or summaries in a certain shape, include an example and say "follow this format." Keep examples short, and use more than one if the task varies, so the model does not copy one example too literally.</p>
+
+<h2>Prompts for automations: structure is everything</h2>
+<p>When a prompt runs inside a workflow, a person is not reading the answer. The next step is. That changes what "good output" means:</p>
+<ul>
+<li>Ask for <strong>JSON with fixed keys</strong> and allowed values, for example: <code>{"category": "sales" | "support" | "billing" | "other", "urgency": "high" | "normal", "summary": "..."}</code>.</li>
+<li>Tell the model to respond with the JSON <strong>only</strong>, with no extra text.</li>
+<li>Give it a safe answer for uncertainty, such as <code>"other"</code> or a <code>"needs_human": true</code> flag, so the workflow can route unclear cases to a person.</li>
+<li>Keep the instructions stable. Changing the prompt changes the output; treat edits like changes to the workflow, and test them.</li>
+</ul>
+<p>Many AI providers and automation platforms also offer structured output settings that enforce a format. Use them when available.</p>
+
+<h2>Test and improve</h2>
+<p>Treat a prompt like a recipe you are perfecting:</p>
+<ul class="lj-checklist">
+<li>Collect 10 to 20 real examples, including tricky and unusual ones</li>
+<li>Run the prompt on all of them and note every wrong or awkward result</li>
+<li>Add a rule or example that fixes each type of failure</li>
+<li>Re-run the full set to make sure the fix did not break something else</li>
+<li>Save the final version, with the date, as the one your team or workflow uses</li>
+</ul>
+
+<h2>Common mistakes</h2>
+<ul>
+<li><strong>Asking for everything at once.</strong> Break big jobs into steps: extract, then summarize, then draft.</li>
+<li><strong>Burying the instruction.</strong> Put the task first and the material after, clearly marked.</li>
+<li><strong>Not saying what to avoid.</strong> If invented details would be harmful, say "do not invent facts."</li>
+<li><strong>Trusting without checking.</strong> Review output wherever mistakes would cost money or trust.</li>
+</ul>
+<p>Ready-made prompts for email, sales, support, operations, and automation planning are in the free <a href="/tools/ai-prompt-library/">AI prompt library</a>. Next, you will see exactly where AI belongs inside a workflow.</p>

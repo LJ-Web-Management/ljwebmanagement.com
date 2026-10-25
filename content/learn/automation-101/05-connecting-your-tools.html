@@ -1,0 +1,63 @@
+<!--
+{
+  "title": "Connecting your tools: integrations, APIs, and webhooks",
+  "description": "How business apps share data with each other: native integrations, automation platforms, APIs, webhooks, and polling, explained without code.",
+  "minutes": 8,
+  "keyPoints": [
+    "Apps connect through native integrations, automation platforms, or custom code, all built on APIs.",
+    "An API is a defined way for software to request data or actions from another app.",
+    "Webhooks push events to other systems instantly; polling checks for changes on a schedule.",
+    "Before automating, check what each of your core apps can connect to."
+  ],
+  "check": [
+    { "q": "What is an API?", "options": ["A type of computer virus", "A defined way for one piece of software to request data or actions from another", "A spreadsheet formula", "A paid support plan"], "answer": 1, "why": "APIs are how software talks to software. Integrations and automation platforms are built on them." },
+    { "q": "What is the main advantage of a webhook over polling?", "options": ["Webhooks are cheaper to print", "Webhooks deliver events instantly instead of checking on a schedule", "Polling is illegal", "Webhooks do not need the internet"], "answer": 1, "why": "A webhook pushes a message the moment something happens. Polling checks every few minutes, so it is slower and uses more requests." },
+    { "q": "Your old desktop software has no API or integrations. What is one option?", "options": ["It can never be automated", "Robotic process automation (RPA) or an export and import routine", "Delete the software", "Use a webhook anyway"], "answer": 1, "why": "When there is no API, RPA bots or scheduled file exports can bridge the gap, though replacing the tool is often the better long-term fix." }
+  ]
+}
+-->
+<p>When an automation "creates a contact in your CRM" or "sends a text," something has to carry the data between apps. This lesson explains the plumbing in plain English, so you can judge what is possible with the tools you already use.</p>
+
+<h2>Three ways apps connect</h2>
+<ol>
+<li><strong>Native integrations.</strong> Built by the app makers themselves: your scheduling tool syncs with your calendar, your store pushes orders to your accounting software. Easy to switch on, but limited to what the vendor chose to build.</li>
+<li><strong>Automation platforms.</strong> Tools like Zapier, Make, n8n, and Power Automate maintain connectors to thousands of apps and let you design your own workflows between them. This is where most small business automation happens.</li>
+<li><strong>Custom code.</strong> A developer writes software that talks to the apps directly. Most flexible, best for complex or high-volume needs, and more work to build and maintain.</li>
+</ol>
+<p>All three are built on the same foundation: APIs.</p>
+
+<h2>APIs in plain English</h2>
+<p>An <strong>API</strong> (application programming interface) is a menu of requests an app will accept from other software: "give me the contact with this email," "create an invoice with these line items," "list orders from yesterday." Each request needs credentials, usually an <strong>API key</strong> or a login approval, so the app knows who is asking and what they are allowed to do.</p>
+<p>You will rarely touch an API directly. But knowing whether an app has a good API tells you how well it can be automated. Modern cloud apps almost always do. Older desktop software often does not.</p>
+
+<h2>Webhooks and polling: how workflows hear about events</h2>
+<p>For a workflow to start when something happens, it has to find out that it happened. There are two ways:</p>
+<ul>
+<li><strong>Webhooks</strong> are instant. When the event occurs, the app sends a message to a web address your automation provides: "a new order just came in, here are the details." The workflow runs within seconds.</li>
+<li><strong>Polling</strong> is periodic. The automation platform asks the app every few minutes, "anything new?" It works with more apps, but there is a delay, and frequent checks can count against plan limits.</li>
+</ul>
+<p>For time-sensitive work like replying to leads or texting back missed calls, prefer triggers that use webhooks. For a nightly report, polling is fine.</p>
+
+<h2>Data formats you will see</h2>
+<p>When data moves between apps it usually travels as <strong>JSON</strong>, a simple text format of labeled fields:</p>
+<p><code>{"first_name": "Dana", "email": "dana@example.com", "service": "Roof repair"}</code></p>
+<p>Automation platforms show this as a list of fields you can pick from when mapping data into the next step. If a field looks wrong, such as a date in the wrong format, you add a formatting step to fix it.</p>
+
+<h2>When there is no API</h2>
+<p>Some tools simply will not connect. You have a few options:</p>
+<ul>
+<li><strong>Exports and imports:</strong> schedule the old system to export a file that an automation picks up and processes.</li>
+<li><strong>Email parsing:</strong> many systems send notification emails; an automation can read them and extract the data.</li>
+<li><strong>Robotic process automation (RPA):</strong> a software bot that clicks and types in the app's screens like a person. See <a href="/guides/what-is-rpa/">what RPA is and when to use it</a>.</li>
+<li><strong>Replace the tool:</strong> sometimes the best automation project is switching one closed system for a modern one that connects to everything else.</li>
+</ul>
+
+<h2>Your homework: an integration inventory</h2>
+<p>List your five most-used business apps. For each, find out:</p>
+<ul class="lj-checklist">
+<li>Does it have native integrations with your other apps?</li>
+<li>Is it supported by Zapier, Make, n8n, or Power Automate, and which triggers and actions are available?</li>
+<li>Does it offer webhooks for the events you care about?</li>
+<li>Who has the admin login needed to connect it?</li>
+</ul>
+<p>This inventory will make the next lesson, choosing a platform, much easier.</p>

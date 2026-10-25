@@ -7,7 +7,7 @@ const path = require("path");
 const { ROOT, SITE_URL, escapeHtml, writeFile, formatNumber } = require("../lib/util");
 const L = require("../lib/layout");
 const { icon } = L;
-const { categoryCard, guideCard, industrySvg } = require("./automations");
+const { categoryCard, industrySvg } = require("./automations");
 const { latestPosts } = require("../lib/blogfeed");
 
 const content = (f) => JSON.parse(fs.readFileSync(path.join(ROOT, "content", f), "utf8"));
@@ -19,14 +19,17 @@ const TYPEFORM = '<script src="https://embed.typeform.com/next/embed.js" defer><
 /* Home                                                                     */
 /* ---------------------------------------------------------------------- */
 
-function home(cat, guides) {
+function home(cat, guides, extra) {
   const total = formatNumber(cat.automations.length);
   const featuredInds = ["real-estate", "healthcare", "legal", "home-services", "restaurants-food-service", "ecommerce-retail", "property-management", "fitness-wellness"].map(
     (s) => cat.industryBySlug[s]
   );
   const toolNames = ["Zapier", "Make.com", "HubSpot", "Salesforce", "QuickBooks", "Twilio", "Slack", "Google Workspace", "Mailchimp", "Calendly", "DocuSign", "Stripe", "Airtable", "Shopify", "Clio", "Jotform", "ActiveCampaign", "Outlook"];
   const marquee = toolNames.concat(toolNames).map((t, i) => '<span class="lj-marquee-item"' + (i >= toolNames.length ? ' aria-hidden="true"' : "") + ">" + icon("plug") + escapeHtml(t) + "</span>").join("");
-  const homeGuides = ["what-to-automate-first", "automate-lead-follow-up", "reduce-no-shows-appointment-reminders"].map((s) => guides.find((g) => g.slug === s));
+  const pillar = guides.find((g) => g.slug === "how-to-automate-your-business") || guides[0];
+  const course = extra.courses[0];
+  const readiness = extra.quizzes.find((q) => q.url === "/quizzes/ai-readiness-assessment/") || extra.quizzes[0];
+  const tile = (href, ic, title, sub) => '<a class="lj-itile" href="' + href + '"><span class="lj-itile-icon">' + icon(ic) + "</span><span><strong>" + title + "</strong><small>" + sub + "</small></span></a>";
   const faq = L.faq(content("faq.json")[0].items.slice(0, 5), { openFirst: true });
 
   const main = `
@@ -152,10 +155,20 @@ function home(cat, guides) {
 <section class="lj-section">
   <div class="lj-container">
     <div class="lj-section-head lj-section-head--split">
-      <div><span class="lj-eyebrow">Learn the playbooks</span><h2>Guides from the team that builds them</h2></div>
-      <a class="lj-link-arrow" href="/guides/">All guides ${icon("arrowRight")}</a>
+      <div><span class="lj-eyebrow">Free resource center</span><h2>Learn how to automate, at your own pace</h2></div>
+      <a class="lj-link-arrow" href="/resources/">Open the resource center ${icon("arrowRight")}</a>
     </div>
-    <div class="lj-grid lj-grid-3">${homeGuides.map((g) => guideCard(g)).join("")}</div>
+    <div class="lj-grid lj-grid-3">
+      ${L.rcard({ href: course.url, icon: course.icon, tag: "Free course", meta: course.lessons.length + " lessons", title: course.name, text: course.description, cta: "Start learning" })}
+      ${L.rcard({ href: readiness.url, icon: readiness.icon, tag: readiness.tag, meta: readiness.minutes + " min", title: readiness.name, text: readiness.card, cta: "Take the assessment" })}
+      ${L.rcard({ href: pillar.url, icon: pillar.icon, tag: "Guide", meta: pillar.readMinutes + " min read", title: pillar.title, text: pillar.description, cta: "Read the guide" })}
+    </div>
+    <div class="lj-grid lj-grid-4 lj-mt-lg lj-home-tiles">
+      ${tile("/guides/", "book", guides.length + " free guides", "How to automate, step by step")}
+      ${tile("/tools/", "calculator", "Calculators &amp; tools", "ROI, time savings, AI cost")}
+      ${tile("/quizzes/", "listCheck", "Quizzes &amp; assessments", "AI readiness, automation IQ")}
+      ${tile("/glossary/", "bookOpen", "Automation glossary", extra.glossary.terms.length + " terms in plain English")}
+    </div>
   </div>
 </section>
 
@@ -170,16 +183,6 @@ function home(cat, guides) {
 </section>
 
 <section class="lj-section">
-  <div class="lj-container">
-    ${L.sectionHead("Free tools", "Not sure where to start?", "Run the numbers on your own manual work, or answer three questions to find the solution built for your bottleneck.")}
-    <div class="lj-grid lj-grid-2">
-      <a class="lj-card lj-card--link" href="/roi-calculator/"><span class="lj-card-icon">${icon("calculator")}</span><h3>ROI Calculator</h3><p>See how many hours and dollars your team's manual work is costing every month, and what automation could give back.</p><div class="lj-card-foot"><span class="lj-link-arrow">Calculate my savings ${icon("arrowRight")}</span></div></a>
-      <a class="lj-card lj-card--link" href="/quiz/"><span class="lj-card-icon">${icon("compass")}</span><h3>Automation Match Quiz</h3><p>Answer three quick questions about your biggest bottleneck and get matched to the right solution for your business.</p><div class="lj-card-foot"><span class="lj-link-arrow">Take the quiz ${icon("arrowRight")}</span></div></a>
-    </div>
-  </div>
-</section>
-
-<section class="lj-section lj-section--mist">
   <div class="lj-container lj-container--narrow">
     ${L.sectionHead("FAQ", "Questions we hear every week", "")}
     ${faq.html}
@@ -540,7 +543,7 @@ function appointment() {
 /* ---------------------------------------------------------------------- */
 
 function quiz() {
-  const crumbs = L.breadcrumbs([["Home", "/"], ["Automation Match Quiz", "/quiz/"]]);
+  const crumbs = L.breadcrumbs([["Home", "/"], ["Resources", "/resources/"], ["Quizzes", "/quizzes/"], ["Automation Match Quiz", "/quiz/"]]);
   const main = `
 <section class="lj-page-hero lj-page-hero--center">
   <div class="lj-container">
@@ -586,7 +589,7 @@ function quiz() {
 }
 
 function roi() {
-  const crumbs = L.breadcrumbs([["Home", "/"], ["ROI Calculator", "/roi-calculator/"]]);
+  const crumbs = L.breadcrumbs([["Home", "/"], ["Resources", "/resources/"], ["Free Tools", "/tools/"], ["ROI Calculator", "/roi-calculator/"]]);
   const field = (id, label, min, max, value, step, hint, fmt) =>
     '<div class="lj-calc-field"><label for="lj-roi-' + id + '">' + label + ' <output id="lj-roi-' + id + '-val" for="lj-roi-' + id + '">' + fmt + "</output></label>" +
     '<input type="range" id="lj-roi-' + id + '" min="' + min + '" max="' + max + '" value="' + value + '" step="' + step + '"><small>' + hint + "</small></div>";
@@ -708,8 +711,8 @@ function notFound() {
   );
 }
 
-function build(cat, guides) {
-  home(cat, guides);
+function build(cat, guides, extra) {
+  home(cat, guides, extra);
   howItWorks(cat);
   solutions();
   faqPage();
@@ -731,7 +734,12 @@ function searchEntries() {
     ["Page", "Automation Match Quiz", "Find the right solution in three questions", "/quiz/", "quiz match"],
     ["Page", "Book a Free Consultation", "Pick a time to talk", "/appointment/", "book call meeting consultation appointment"],
     ["Page", "Contact Us", "Email, phone, or send a message", "/contactus/", "contact email phone"],
+    ["Page", "Resource Center", "Every free guide, course, quiz, and tool", "/resources/", "resources learn free library how to automate"],
     ["Page", "Automation Guides", "Step-by-step playbooks", "/guides/", "guides learn how to"],
+    ["Page", "Free Courses", "Automation 101 and AI at Work", "/learn/", "course lessons learn training class"],
+    ["Page", "Free Calculators & Tools", "ROI, time savings, AI cost, and more", "/tools/", "calculator tools free"],
+    ["Page", "Quizzes & Assessments", "AI readiness, automation IQ, platform picker", "/quizzes/", "quiz assessment test readiness"],
+    ["Page", "Automation & AI Glossary", "Terms explained in plain English", "/glossary/", "glossary definitions terms meaning"],
     ["Page", "Blog", "AI and automation articles, published daily", "https://blog.ljwebmanagement.com/", "blog articles news"],
   ];
 }

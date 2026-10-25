@@ -1,0 +1,68 @@
+<!--
+{
+  "title": "Testing, monitoring, and handling errors",
+  "description": "How to test an automation before it reaches customers, what to monitor after launch, and how to design error handling so problems get caught early.",
+  "minutes": 8,
+  "keyPoints": [
+    "Test with realistic data, including messy and edge cases, before going live.",
+    "Launch in stages: internal test, a small slice of real traffic, then everything.",
+    "Every automation needs an owner, error alerts, and a log of what it did.",
+    "Most breakages come from changes: a renamed field, an expired login, a new process step."
+  ],
+  "check": [
+    { "q": "Which test data is most useful before launching?", "options": ["Only perfect, complete records", "Realistic records, including missing fields, duplicates, and unusual formats", "No test data; launch and see", "Random numbers"], "answer": 1, "why": "Real-world data is messy. Testing edge cases finds the problems before customers do." },
+    { "q": "An automation has silently failed for a week. What was most likely missing?", "options": ["A logo", "Error alerts and an owner who receives them", "A faster computer", "More triggers"], "answer": 1, "why": "Failures should alert a named person immediately. Without alerts, problems are found by unhappy customers." },
+    { "q": "What is the most common cause of an automation breaking after months of working?", "options": ["Bad weather", "A change in a connected app or process, such as a renamed field or expired login", "Too many successful runs", "Using the wrong font"], "answer": 1, "why": "Automations depend on the apps around them. When those change, the workflow needs updating." }
+  ]
+}
+-->
+<p>An automation that works on launch day but quietly fails a month later is worse than no automation, because everyone has stopped watching the task. This lesson covers the habits that keep workflows reliable: testing properly, launching carefully, and knowing immediately when something goes wrong.</p>
+
+<h2>Test like the real world</h2>
+<p>Most workflows pass a test with one perfect record and then fail on real data. Build a small test set that includes:</p>
+<ul class="lj-checklist">
+<li><strong>Normal cases:</strong> three or four realistic examples of what usually happens</li>
+<li><strong>Missing data:</strong> no phone number, no last name, an empty optional field</li>
+<li><strong>Odd formats:</strong> names in all capitals, international phone numbers, dates written differently</li>
+<li><strong>Duplicates:</strong> the same person submitting twice, or an existing customer</li>
+<li><strong>Exceptions:</strong> spam, a cancelled order, an amount over your approval limit</li>
+</ul>
+<p>For each, write down what <em>should</em> happen, run it, and compare. The <a href="/tools/ai-prompt-library/">prompt library</a> includes a prompt that generates test cases from a workflow description.</p>
+<p>Use test contacts and your own phone number for anything that sends messages. A test that texts a real customer "TEST TEST" is a memorable mistake.</p>
+
+<h2>Launch in stages</h2>
+<ol>
+<li><strong>Internal run:</strong> trigger the workflow yourself several times and check every output.</li>
+<li><strong>Shadow mode:</strong> where possible, let the automation run alongside the manual process for a few days, sending its messages to you instead of customers, and compare results.</li>
+<li><strong>Partial rollout:</strong> turn it on for one location, one service, or one team member's leads.</li>
+<li><strong>Full launch:</strong> once results match expectations, turn it on for everything, and tell the team what changed.</li>
+</ol>
+
+<h2>Design for failure</h2>
+<p>Every step that talks to another app can fail: the app is down, a login expired, a required field is empty. Decide in advance what happens:</p>
+<ul>
+<li><strong>Retry</strong> temporary failures automatically (most platforms can do this).</li>
+<li><strong>Skip and log</strong> records that cannot be processed, so the rest keep flowing.</li>
+<li><strong>Alert a person</strong> with enough detail to fix it: which workflow, which record, which step, and the error message.</li>
+<li><strong>Never fail silently.</strong> If a customer message did not send, someone must know.</li>
+</ul>
+
+<h2>Monitor what matters</h2>
+<p>Each automation should have:</p>
+<ul>
+<li><strong>An owner:</strong> a named person who receives alerts and makes changes.</li>
+<li><strong>A run history:</strong> most platforms keep one; check it weekly at first, then monthly.</li>
+<li><strong>A health check:</strong> a simple number that would look wrong if the automation stopped, such as leads replied to per day or invoices sent per week.</li>
+<li><strong>A change log:</strong> a short note every time someone edits the workflow, with the date and the reason.</li>
+</ul>
+
+<h2>Why automations break later</h2>
+<p>Most workflows do not break on their own. Something around them changes:</p>
+<ul>
+<li>Someone renames a field, adds a required field, or changes a dropdown option in a connected app.</li>
+<li>A password changes or a connection's login expires.</li>
+<li>An app updates its API or retires an old feature.</li>
+<li>The business changes the process (a new service, a new pricing rule) but not the automation.</li>
+</ul>
+<p>The fix is a habit: whenever you change a tool or a process, ask "which automations touch this?" Your workflow documentation from lesson three makes that a two-minute check.</p>
+<p>In the final lesson, you will learn how to measure whether an automation is paying off and how to decide what to automate next.</p>

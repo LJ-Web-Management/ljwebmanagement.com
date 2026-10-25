@@ -1,0 +1,107 @@
+{
+  "order": 3,
+  "type": "picker",
+  "name": "Automation Platform Picker",
+  "tag": "Quiz",
+  "icon": "layers",
+  "minutes": 2,
+  "eyebrow": "Free platform picker",
+  "title": "Which automation platform fits your business?",
+  "seoTitle": "Zapier vs Make vs n8n vs Power Automate: Which Fits You? (Quiz)",
+  "description": "Answer seven questions about your team, apps, volume, and data to see whether Zapier, Make, n8n, Power Automate, or a custom build fits your business best.",
+  "lead": "Seven questions about your team, apps, volume, and data. See whether Zapier, Make, n8n, Microsoft Power Automate, or a done-for-you build is the best fit, and why.",
+  "card": "Seven questions to see whether Zapier, Make, n8n, Power Automate, or a custom build fits your business best.",
+  "keywords": "zapier make n8n power automate platform comparison which tool",
+  "intro": {
+    "title": "Find your best-fit platform",
+    "text": "There is no single best automation tool, only the best fit for your team, apps, volume, and data. Answer seven quick questions and we will show your top match and runner-up.",
+    "bullets": ["Covers Zapier, Make, n8n, Power Automate, and custom builds", "Weighs skills, apps, volume, complexity, and data sensitivity", "Links to a detailed comparison"],
+    "button": "Find my platform"
+  },
+  "outcomes": {
+    "zapier": { "name": "Zapier", "text": "The easiest place to start, with the largest library of app integrations. Best for simple, linear workflows built by non-technical teams. Costs can climb as volume grows, so keep an eye on task usage.", "link": ["Compare Zapier, Make, and n8n", "/guides/zapier-vs-make-vs-n8n/"] },
+    "make": { "name": "Make", "text": "A visual builder that handles branching, data mapping, and higher volumes affordably. A strong fit for a tech-comfortable person who wants more control than Zapier without writing code.", "link": ["Compare Zapier, Make, and n8n", "/guides/zapier-vs-make-vs-n8n/"] },
+    "n8n": { "name": "n8n", "text": "Source-available and very flexible, with a self-hosted option that keeps data on your own servers and keeps costs low at high volume. Best with a developer or technical person to set it up and maintain it.", "link": ["Compare Zapier, Make, and n8n", "/guides/zapier-vs-make-vs-n8n/"] },
+    "power": { "name": "Microsoft Power Automate", "text": "The natural choice if your business runs on Microsoft 365. Works closely with Outlook, Teams, SharePoint, and Excel, and some capabilities may already be included in your Microsoft licenses.", "link": ["What is workflow automation?", "/guides/what-is-workflow-automation/"] },
+    "custom": { "name": "A done-for-you or custom build", "text": "When workflows are complex, data is sensitive, or nobody has time to build and maintain them, a partner can design, build, and support the system on whichever platform fits, with custom code where needed.", "link": ["Book a free consultation", "/appointment/"] }
+  },
+  "resultTitle": "Your best-fit automation platform",
+  "resultText": "Based on your answers, here is where we would start. Any of these platforms can work; the right one depends on your team, apps, and volume.",
+  "cta": [["Read the full comparison", "/guides/zapier-vs-make-vs-n8n/"], ["Ask us which fits", "/appointment/"]],
+  "questions": [
+    {
+      "q": "How comfortable is your team with technical tools?",
+      "options": [
+        { "t": "Not very. It needs to be point-and-click simple", "w": { "zapier": 3, "power": 1, "custom": 3 } },
+        { "t": "Comfortable with spreadsheets and app settings", "w": { "zapier": 2, "make": 2, "power": 2, "custom": 1 } },
+        { "t": "Happy working with logic, data mapping, and some JSON", "w": { "make": 3, "n8n": 2, "power": 1 } },
+        { "t": "We have developers", "w": { "n8n": 3, "custom": 2, "make": 1 } }
+      ]
+    },
+    {
+      "q": "Which apps does your business rely on most?",
+      "options": [
+        { "t": "Microsoft 365, Teams, SharePoint, or Dynamics", "w": { "power": 3, "make": 1 } },
+        { "t": "Google Workspace and popular cloud apps (CRM, forms, scheduling)", "w": { "zapier": 3, "make": 2, "n8n": 1 } },
+        { "t": "Niche or industry-specific software", "w": { "custom": 3, "n8n": 2, "make": 1 } },
+        { "t": "Our own database or internal systems", "w": { "n8n": 3, "custom": 3 } }
+      ]
+    },
+    {
+      "q": "How many automation runs do you expect each month?",
+      "options": [
+        { "t": "Under a thousand", "w": { "zapier": 3, "make": 2, "power": 2 } },
+        { "t": "A few thousand", "w": { "make": 3, "n8n": 2, "zapier": 1, "power": 2 } },
+        { "t": "Tens of thousands or more", "w": { "n8n": 3, "custom": 3, "make": 2 } },
+        { "t": "Not sure yet", "w": { "zapier": 2, "make": 2, "custom": 1 } }
+      ]
+    },
+    {
+      "q": "How complex are your workflows?",
+      "options": [
+        { "t": "Simple: when this happens, do that", "w": { "zapier": 3, "power": 2 } },
+        { "t": "Some branches, filters, and formatting", "w": { "make": 3, "zapier": 2, "power": 2, "n8n": 1 } },
+        { "t": "Loops, many branches, error handling, and data transformation", "w": { "n8n": 3, "make": 2, "custom": 2 } },
+        { "t": "Complex, with AI steps and custom logic", "w": { "n8n": 2, "custom": 3, "make": 1 } }
+      ]
+    },
+    {
+      "q": "How sensitive is the data involved?",
+      "options": [
+        { "t": "Low: marketing and general business data", "w": { "zapier": 2, "make": 2, "power": 1, "n8n": 1 } },
+        { "t": "Moderate: customer contact and order details", "w": { "zapier": 1, "make": 2, "power": 2, "n8n": 2, "custom": 1 } },
+        { "t": "High: health, financial, or regulated data", "w": { "n8n": 3, "custom": 3, "power": 2 } }
+      ]
+    },
+    {
+      "q": "Who will build and maintain the automations?",
+      "options": [
+        { "t": "Me or a teammate, as a side task", "w": { "zapier": 3, "make": 1, "power": 2 } },
+        { "t": "A tech-savvy person on our team", "w": { "make": 3, "n8n": 2, "power": 2 } },
+        { "t": "A developer or IT team", "w": { "n8n": 3, "custom": 2, "power": 1 } },
+        { "t": "We would rather have experts build and support it", "w": { "custom": 3 } }
+      ]
+    },
+    {
+      "q": "What matters most to you?",
+      "options": [
+        { "t": "Getting started today", "w": { "zapier": 3, "power": 1 } },
+        { "t": "The lowest cost as we scale", "w": { "n8n": 3, "make": 2 } },
+        { "t": "Flexibility and power", "w": { "make": 2, "n8n": 3, "custom": 2 } },
+        { "t": "Hands-off reliability, with someone accountable", "w": { "custom": 3, "power": 1 } }
+      ]
+    }
+  ],
+  "explainer": "<h2>How the platforms differ</h2><table><thead><tr><th>Platform</th><th>Best for</th><th>Watch out for</th></tr></thead><tbody><tr><td><strong>Zapier</strong></td><td>Non-technical teams, simple workflows, the widest choice of app integrations</td><td>Per-task pricing that grows with volume</td></tr><tr><td><strong>Make</strong></td><td>Visual, multi-step workflows with branching and data mapping</td><td>A steeper learning curve than Zapier</td></tr><tr><td><strong>n8n</strong></td><td>Technical teams, high volume, self-hosting and data control</td><td>Needs someone to host, update, and maintain it</td></tr><tr><td><strong>Power Automate</strong></td><td>Businesses built on Microsoft 365</td><td>Licensing can be confusing; fewer non-Microsoft integrations</td></tr><tr><td><strong>Custom or done-for-you</strong></td><td>Complex, sensitive, or business-critical workflows</td><td>Higher upfront cost; choose a partner who documents their work</td></tr></tbody></table><p>Pricing and features change often, so check each vendor's site before you commit. The full <a href=\"/guides/zapier-vs-make-vs-n8n/\">Zapier vs. Make vs. n8n comparison</a> goes deeper on how each one works and charges.</p><h2>How the picker scores your answers</h2><p>Each answer adds points to the platforms that suit it. Your result shows the platform with the highest share of its possible points, plus the runner-up, so you can see how close the call is.</p>",
+  "faq": [
+    ["Which is better, Zapier or Make?", "<p>Zapier is easier to learn and connects to more apps out of the box. Make offers more control over branching and data, and is usually more economical at higher volumes. Non-technical teams often start with Zapier; tech-comfortable builders often prefer Make.</p>"],
+    ["Is n8n free?", "<p>n8n is source-available and can be self-hosted, which avoids per-run fees but means paying for and maintaining a server. It also offers a paid cloud version. Check the current license and pricing on n8n's site.</p>"],
+    ["Can I switch platforms later?", "<p>Yes, though workflows must be rebuilt, since platforms do not share a format. Documenting each workflow's trigger, steps, and data makes switching far easier.</p>"]
+  ],
+  "related": [
+    ["Zapier vs. Make vs. n8n: full comparison", "/guides/zapier-vs-make-vs-n8n/", "book"],
+    ["Lesson: choosing an automation platform", "/learn/automation-101/choosing-an-automation-platform/", "school"],
+    ["Automation payback calculator", "/tools/automation-payback-calculator/", "calculator"],
+    ["Automations by tool and integration", "/automations/#tools", "plug"]
+  ]
+}

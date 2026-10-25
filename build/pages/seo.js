@@ -20,7 +20,7 @@ function text(html) {
     .trim();
 }
 
-function sitemap(cat, guides, auto) {
+function sitemap(cat, guides, auto, extra) {
   const urls = [];
   const add = (p, freq, priority) => urls.push({ loc: SITE_URL + p, freq, priority });
   add("/", "daily", "1.0");
@@ -37,6 +37,17 @@ function sitemap(cat, guides, auto) {
   cat.industries.forEach((i) => add(i.url, "weekly", "0.8"));
   cat.tools.forEach((t) => add(t.url, "weekly", "0.6"));
   guides.forEach((g) => add(g.url, "monthly", "0.8"));
+  add("/resources/", "weekly", "0.9");
+  add("/learn/", "monthly", "0.8");
+  extra.courses.forEach((c) => {
+    add(c.url, "monthly", "0.8");
+    c.lessons.forEach((l) => add(l.url, "monthly", "0.7"));
+  });
+  add("/quizzes/", "monthly", "0.8");
+  extra.quizzes.filter((q) => q.url !== "/quiz/").forEach((q) => add(q.url, "monthly", "0.8"));
+  add("/tools/", "monthly", "0.8");
+  extra.tools.filter((t) => t.url !== "/roi-calculator/").forEach((t) => add(t.url, "monthly", "0.8"));
+  add("/glossary/", "monthly", "0.8");
   for (let p = 2; p <= auto.pages; p++) add("/automations/page/" + p + "/", "weekly", "0.4");
   cat.automations.forEach((a) => add(a.url, "monthly", "0.6"));
   add("/privacy-policy/", "yearly", "0.3");
@@ -51,7 +62,7 @@ function sitemap(cat, guides, auto) {
   return urls.length;
 }
 
-function llms(cat, guides) {
+function llms(cat, guides, extra) {
   const intro = fs.readFileSync(path.join(ROOT, "content", "llms-intro.md"), "utf8").trim();
   const total = formatNumber(cat.automations.length);
   const out = [
@@ -63,7 +74,12 @@ function llms(cat, guides) {
     "- [How It Works](" + SITE_URL + "/how-it-works/): Explains the process from consultation to flat quote to delivery.",
     "- [Automations](" + SITE_URL + "/automations/): Searchable catalog of " + total + "+ done-for-you automations, organized by business function, industry, and tool. Every automation has its own page with step-by-step detail.",
     "- [Solutions](" + SITE_URL + "/solutions/): Platform-scale offerings, including custom websites, CRM, ERP implementation and integration, booking, field service, billing, help desk, inventory, HR and payroll, BI reporting, customer portals, marketplaces, managed SaaS, LMS deployment, and restaurant POS systems.",
-    "- [Guides](" + SITE_URL + "/guides/): Step-by-step playbooks for common automation projects.",
+    "- [Resource Center](" + SITE_URL + "/resources/): Free hub for learning workflow automation and AI: guides, courses, quizzes, calculators, a prompt library, and a glossary.",
+    "- [Guides](" + SITE_URL + "/guides/): Step-by-step guides on how to automate business processes, AI and agents, and common workflows.",
+    "- [Free Courses](" + SITE_URL + "/learn/): Free beginner courses on business automation and AI, with knowledge checks.",
+    "- [Free Tools](" + SITE_URL + "/tools/): Free automation calculators (ROI, time savings, lead response, no-show cost, late payments, AI cost, payback) plus a priority scorer and AI prompt library.",
+    "- [Quizzes](" + SITE_URL + "/quizzes/): AI readiness assessment, automation knowledge quiz, and platform picker.",
+    "- [Glossary](" + SITE_URL + "/glossary/): Plain-English definitions of automation and AI terms.",
     "- [FAQ](" + SITE_URL + "/faq/): Answers to common questions about pricing, timelines, how automations are scoped, and what AI adoption means for a team.",
     "- [ROI Calculator](" + SITE_URL + "/roi-calculator/): Estimates hours and dollars lost monthly to manual work, and the savings automation could return.",
     "- [Find Your Match Quiz](" + SITE_URL + "/quiz/): A short quiz that matches a business's biggest bottleneck to the right automation or solution.",
@@ -77,6 +93,16 @@ function llms(cat, guides) {
   cat.categories.forEach((c) => out.push("- [" + c.name + "](" + SITE_URL + c.url + "): " + c.short + " (" + c.items.length + " automations)"));
   out.push("", "## Guides", "");
   guides.forEach((g) => out.push("- [" + g.title + "](" + SITE_URL + g.url + "): " + g.description));
+  out.push("", "## Free Courses", "");
+  extra.courses.forEach((c) => {
+    out.push("- [" + c.name + "](" + SITE_URL + c.url + "): " + c.description);
+    c.lessons.forEach((l) => out.push("  - [Lesson " + l.n + ": " + l.title + "](" + SITE_URL + l.url + "): " + l.description));
+  });
+  out.push("", "## Quizzes and Assessments", "");
+  extra.quizzes.forEach((q) => out.push("- [" + q.name + "](" + SITE_URL + q.url + "): " + q.card));
+  out.push("", "## Free Calculators and Tools", "");
+  extra.tools.forEach((t) => out.push("- [" + t.name + "](" + SITE_URL + t.url + "): " + t.text));
+  out.push("", "## Glossary", "", "- [Automation and AI Glossary](" + SITE_URL + "/glossary/): " + extra.glossary.terms.length + " terms, each with its own anchor, for example " + SITE_URL + "/glossary/#" + extra.glossary.terms[0].slug + ".");
   out.push(
     "",
     "## Full detail",
@@ -102,7 +128,7 @@ function llms(cat, guides) {
   writeFile("llms.txt", out.join("\n"));
 }
 
-function llmsFull(cat, guides) {
+function llmsFull(cat, guides, extra) {
   const intro = fs.readFileSync(path.join(ROOT, "content", "llms-full-intro.md"), "utf8").trim();
   const sols = JSON.parse(fs.readFileSync(path.join(ROOT, "content", "solutions.json"), "utf8"));
   const faq = JSON.parse(fs.readFileSync(path.join(ROOT, "content", "faq.json"), "utf8"));
@@ -122,13 +148,30 @@ function llmsFull(cat, guides) {
   );
   out.push("## Guides", "");
   guides.forEach((g) => out.push("- " + g.title + ": " + SITE_URL + g.url));
+  out.push("", "## Free Courses", "");
+  extra.courses.forEach((c) => {
+    out.push("### " + c.name + " (" + SITE_URL + c.url + ")", c.description, "");
+    c.lessons.forEach((l) => out.push(l.n + ". " + l.title + ": " + SITE_URL + l.url));
+    out.push("");
+  });
+  out.push("## Quizzes and Assessments", "");
+  extra.quizzes.forEach((q) => out.push("- " + q.name + ": " + SITE_URL + q.url + " " + q.card));
+  out.push("", "## Free Calculators and Tools", "");
+  extra.tools.forEach((t) => out.push("- " + t.name + ": " + SITE_URL + t.url + " " + t.text));
+  out.push("", "## Automation and AI Glossary (" + SITE_URL + "/glossary/)", "");
+  extra.glossary.terms.forEach((t) => out.push("**" + t.term + (t.aka ? " (" + t.aka + ")" : "") + "**: " + text(t.def)));
   out.push(
     "",
     "## Key URLs",
     "- Home: " + SITE_URL + "/",
     "- How It Works: " + SITE_URL + "/how-it-works/",
     "- Automations catalog: " + SITE_URL + "/automations/",
+    "- Resource Center: " + SITE_URL + "/resources/",
     "- Guides: " + SITE_URL + "/guides/",
+    "- Free Courses: " + SITE_URL + "/learn/",
+    "- Free Tools: " + SITE_URL + "/tools/",
+    "- Quizzes: " + SITE_URL + "/quizzes/",
+    "- Glossary: " + SITE_URL + "/glossary/",
     "- Solutions: " + SITE_URL + "/solutions/",
     "- FAQ: " + SITE_URL + "/faq/",
     "- ROI Calculator: " + SITE_URL + "/roi-calculator/",
@@ -155,10 +198,10 @@ function llmsFull(cat, guides) {
   );
 }
 
-function build(cat, guides, auto) {
-  const n = sitemap(cat, guides, auto);
-  llms(cat, guides);
-  llmsFull(cat, guides);
+function build(cat, guides, auto, extra) {
+  const n = sitemap(cat, guides, auto, extra);
+  llms(cat, guides, extra);
+  llmsFull(cat, guides, extra);
   console.log("  sitemap.xml: " + n + " URLs");
 }
 
