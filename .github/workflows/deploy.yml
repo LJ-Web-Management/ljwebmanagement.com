@@ -37,9 +37,16 @@ jobs:
         # Long-lived, immutable cache for everything except HTML: these assets are
         # only ever updated under a new filename or invalidated via CloudFront below,
         # so browsers/CDN can cache them for a year without re-checking.
-        aws s3 sync ./ s3://ljwebmanagement-website --delete --exclude ".git/*" --exclude ".github/*" --exclude "*.html" --cache-control "public, max-age=31536000, immutable"
+        # Build sources (build/, content/, package.json, docs) are not part of the site.
+        # Filters are applied in order with later ones winning, so the excludes go
+        # last, after any --include.
+        EXCLUDES=(--exclude ".git/*" --exclude ".github/*" --exclude "build/*" --exclude "content/*" --exclude "infra/*" --exclude "package.json" --exclude "CLAUDE.md" --exclude "README.md" --exclude ".gitignore")
+        aws s3 sync ./ s3://ljwebmanagement-website --delete --exclude "*.html" --exclude "assets/data/*" "${EXCLUDES[@]}" --cache-control "public, max-age=31536000, immutable"
         # HTML must-revalidate on every request so page edits go live immediately.
-        aws s3 sync ./ s3://ljwebmanagement-website --delete --exclude ".git/*" --exclude ".github/*" --exclude "*" --include "*.html" --cache-control "public, max-age=0, must-revalidate"
+        aws s3 sync ./ s3://ljwebmanagement-website --delete --exclude "*" --include "*.html" "${EXCLUDES[@]}" --cache-control "public, max-age=0, must-revalidate"
+        # The site search index is also loaded by blog.ljwebmanagement.com without a
+        # version query string, so it gets a short cache instead of an immutable one.
+        aws s3 sync ./assets/data s3://ljwebmanagement-website/assets/data --delete --cache-control "public, max-age=3600"
         # If deploying a build folder (e.g. dist/ or build/), change `./` to `./dist`
 
     - name: Invalidate CloudFront Cache

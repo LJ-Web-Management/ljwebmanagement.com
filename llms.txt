@@ -13,24 +13,51 @@ LJ Web Management is based in Lockport, Illinois, and works with businesses acro
 
 - [Home](https://www.ljwebmanagement.com/): Overview of what LJ Web Management does and how automation engagements start.
 - [How It Works](https://www.ljwebmanagement.com/how-it-works/): Explains the process from consultation to flat quote to delivery.
-- [Automations](https://www.ljwebmanagement.com/automations/): Browsable catalog of 1000+ done-for-you automations across 57+ industries, searchable by industry.
-- [Solutions](https://www.ljwebmanagement.com/solutions/): Platform-scale offerings, including Custom Website Design & Development (with SEO and POS integration), Obsolescence Management, ERP Implementation & Integration, Managed SaaS Delivery & Support, LMS Deployment, and Restaurant POS Systems.
+- [Automations](https://www.ljwebmanagement.com/automations/): Searchable catalog of 1,000+ done-for-you automations, organized by business function, industry, and tool. Every automation has its own page with step-by-step detail.
+- [Solutions](https://www.ljwebmanagement.com/solutions/): Platform-scale offerings, including custom websites, CRM, ERP implementation and integration, booking, field service, billing, help desk, inventory, HR and payroll, BI reporting, customer portals, marketplaces, managed SaaS, LMS deployment, and restaurant POS systems.
+- [Guides](https://www.ljwebmanagement.com/guides/): Step-by-step playbooks for common automation projects.
 - [FAQ](https://www.ljwebmanagement.com/faq/): Answers to common questions about pricing, timelines, how automations are scoped, and what AI adoption means for a team.
 - [ROI Calculator](https://www.ljwebmanagement.com/roi-calculator/): Estimates hours and dollars lost monthly to manual work, and the savings automation could return.
 - [Find Your Match Quiz](https://www.ljwebmanagement.com/quiz/): A short quiz that matches a business's biggest bottleneck to the right automation or solution.
 - [Book a Consultation](https://www.ljwebmanagement.com/appointment/): Schedule a free consultation to scope an automation project.
 - [Contact Us](https://www.ljwebmanagement.com/contactus/): General contact information and inquiry form.
-- [Blog](https://blog.ljwebmanagement.com): Articles on business automation and related topics.
+- [Blog](https://blog.ljwebmanagement.com/): Daily articles on AI and business automation.
+
+## Automations by Business Function
+
+- [Lead Follow-Up & Sales](https://www.ljwebmanagement.com/automations/category/lead-follow-up-sales/): Respond to every lead in minutes, chase quotes automatically, and keep deals from going quiet. (127 automations)
+- [Marketing & Customer Retention](https://www.ljwebmanagement.com/automations/category/marketing-retention/): Win back lapsed customers, reward loyalty, and keep repeat business coming in on its own. (143 automations)
+- [Scheduling, Reminders & Dispatch](https://www.ljwebmanagement.com/automations/category/scheduling-dispatch/): Fill calendars, cut no-shows, backfill cancellations, and route crews without phone tag. (101 automations)
+- [Customer Service & Communication](https://www.ljwebmanagement.com/automations/category/customer-communication/): Proactive status updates, faster support routing, and far fewer "just checking in" calls. (113 automations)
+- [Reviews, Feedback & Reputation](https://www.ljwebmanagement.com/automations/category/reviews-feedback/): Ask every customer for a review at the right moment, fix problems fast, and watch your reputation. (46 automations)
+- [Billing, Payments & Finance](https://www.ljwebmanagement.com/automations/category/billing-finance/): Invoices that send themselves, payment reminders that get paid, and books that close on time. (69 automations)
+- [Client Onboarding & Intake](https://www.ljwebmanagement.com/automations/category/onboarding-intake/): Turn a signed deal into a smooth start with forms, documents, welcome sequences, and kickoff. (38 automations)
+- [HR, Hiring & Team Management](https://www.ljwebmanagement.com/automations/category/hr-team/): Hire faster, onboard consistently, and keep certifications, shifts, and timesheets on track. (54 automations)
+- [Compliance, Documents & Deadlines](https://www.ljwebmanagement.com/automations/category/compliance-documents/): Track licenses, permits, contracts, signatures, and filing deadlines before they become problems. (122 automations)
+- [Operations, Inventory & Vendors](https://www.ljwebmanagement.com/automations/category/operations-inventory/): Keep stock, equipment, vendors, projects, and work orders moving without the spreadsheet chase. (138 automations)
+- [Reporting & Analytics](https://www.ljwebmanagement.com/automations/category/reporting-analytics/): Dashboards, digests, and alerts that show leaders what is happening without anyone building a report. (49 automations)
 
 ## Guides
 
-- [What Is Business Automation?](https://www.ljwebmanagement.com/resources/what-is-business-automation/): A guide to what business automation is, how it works, and how it differs from AI automation and RPA.
-- [Business Automation Examples](https://www.ljwebmanagement.com/resources/business-automation-examples/): Real examples of business automation across sales, marketing, operations, support, finance, HR, and by industry.
-- [AI Automation for Small Business](https://www.ljwebmanagement.com/resources/ai-automation-for-small-business/): How a small business can start using AI automation without an in-house IT team.
+- [What Should You Automate First? A 5-Factor Scoring Framework](https://www.ljwebmanagement.com/guides/what-to-automate-first/): A simple way to score every repetitive task in your business and pick the automation that will pay off fastest, with a worksheet you can use today.
+- [How to Automate Lead Follow-Up: A Speed-to-Lead Playbook](https://www.ljwebmanagement.com/guides/automate-lead-follow-up/): Respond to every new lead in minutes, follow up until they answer, and hand hot leads to a person at the right moment. A practical playbook with message templates.
+- [Missed-Call Text-Back: How It Works and How to Set It Up](https://www.ljwebmanagement.com/guides/missed-call-text-back/): Every unanswered call is a customer about to dial your competitor. Here is how missed-call text-back works, what to say, and how to set it up the right way.
+- [How to Reduce No-Shows With Automated Appointment Reminders](https://www.ljwebmanagement.com/guides/reduce-no-shows-appointment-reminders/): A practical reminder schedule, message templates, and the waitlist and rebooking automations that keep your calendar full when people still cancel.
+- [How to Automate Invoicing and Payment Reminders (and Get Paid Faster)](https://www.ljwebmanagement.com/guides/automate-invoicing-payment-reminders/): Send invoices the moment work is done, follow up on unpaid balances without awkward calls, and recover failed card payments automatically.
+- [How to Automate Review Requests Without Annoying Customers](https://www.ljwebmanagement.com/guides/automate-review-requests/): Get more reviews by asking every customer at the right moment, with the right link, while staying inside Google's review policies. Timing, templates, and setup.
+- [Client Onboarding Automation: A Step-by-Step Guide](https://www.ljwebmanagement.com/guides/client-onboarding-automation/): Turn a signed deal into a smooth start: automated intake forms, document collection, welcome sequences, and kickoff scheduling that every client experiences the same way.
+- [Employee Onboarding Automation: A Checklist for Small Teams](https://www.ljwebmanagement.com/guides/employee-onboarding-automation/): Automate offer-to-first-day paperwork, account setup, training assignments, and check-ins so every new hire gets a consistent start, even without an HR department.
+- [CRM Automation: How to Keep Your Pipeline Clean Without Manual Data Entry](https://www.ljwebmanagement.com/guides/crm-automation/): The CRM automations that matter most: lead capture, routing, deduplication, activity logging, stage updates, and stalled-deal alerts, plus how to roll them out.
+- [How to Calculate the ROI of Business Automation](https://www.ljwebmanagement.com/guides/automation-roi/): A simple, honest method for estimating what an automation will save and earn, including the costs people forget, with worked examples and a payback calculation.
+- [Zapier vs. Make vs. n8n: How to Choose an Automation Platform](https://www.ljwebmanagement.com/guides/zapier-vs-make-vs-n8n/): An honest comparison of the three most popular workflow automation platforms for small businesses: how they work, how they charge, and which one fits your situation.
+- [AI Agents vs. Workflow Automation: What Small Businesses Should Know](https://www.ljwebmanagement.com/guides/ai-agents-vs-workflow-automation/): What AI agents actually are, how they differ from rule-based workflow automation, where each one shines, and how to combine them safely in a small business.
+- [What Is Business Automation? A Plain-Language Guide](https://www.ljwebmanagement.com/resources/what-is-business-automation/): What business automation is, how it works, and how it's different from AI automation and RPA, with examples and next steps for implementing it.
+- [50+ Business Automation Examples by Department & Industry](https://www.ljwebmanagement.com/resources/business-automation-examples/): Real business automation examples across sales, marketing, operations, support, finance, and HR, plus examples by industry to spark ideas for your team.
+- [AI Automation for Small Business: Getting Started Without an IT Team](https://www.ljwebmanagement.com/resources/ai-automation-for-small-business/): How a small business can start using AI automation without an in-house IT team, what it costs, and which automations to build first.
 
 ## Full detail
 
-- [llms-full.txt](https://www.ljwebmanagement.com/llms-full.txt): Extended reference with the full automation category list, solution descriptions, and FAQ content in plain text for AI systems and answer engines.
+- [llms-full.txt](https://www.ljwebmanagement.com/llms-full.txt): Extended reference with every business function, industry, and integration in the catalog, the solution descriptions, and the full FAQ, in plain text for AI systems and answer engines.
 - [/crawl](https://www.ljwebmanagement.com/crawl/): Plain-text rendering of llms-full.txt for AI crawlers that request a specific crawl path.
 - [openapi.json](https://www.ljwebmanagement.com/openapi.json): OpenAPI description of this site's read-only reference endpoints (llms.txt, llms-full.txt, sitemap.xml, /crawl/, /faq/, /automations/).
 - [/.well-known/ai-plugin.json](https://www.ljwebmanagement.com/.well-known/ai-plugin.json): AI tool manifest pointing to the OpenAPI description above.
@@ -46,4 +73,3 @@ LJ Web Management is based in Lockport, Illinois, and works with businesses acro
 
 - [Privacy Policy](https://www.ljwebmanagement.com/privacy-policy/)
 - [Terms of Service](https://www.ljwebmanagement.com/terms-of-service/)
-- [FAQ](https://www.ljwebmanagement.com/faq/)

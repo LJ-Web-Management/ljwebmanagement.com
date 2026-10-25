@@ -1,0 +1,78 @@
+<!--
+{
+  "title": "Zapier vs. Make vs. n8n: How to Choose an Automation Platform",
+  "seoTitle": "Zapier vs Make vs n8n: Which Automation Platform Should You Use?",
+  "description": "An honest comparison of the three most popular workflow automation platforms for small businesses: how they work, how they charge, and which one fits your situation.",
+  "eyebrow": "Tools",
+  "icon": "plug",
+  "order": 11,
+  "category": "operations-inventory",
+  "keywords": ["sync", "routing", "alert"],
+  "published": "2026-10-25",
+  "keyPoints": [
+    "Zapier is the easiest to start with and has the largest catalog of app integrations.",
+    "Make offers a visual builder with more control over branching, loops, and data handling.",
+    "n8n is developer-friendly and can be self-hosted, which suits technical teams and strict data needs.",
+    "The best platform is the one that fits your workflow's complexity, volume, and who will maintain it."
+  ],
+  "faq": [
+    ["Is Make cheaper than Zapier?", "<p>For many multi-step workflows, Make costs less at the same volume because of how it meters usage, but it depends on how your scenarios are built and how often they run. Both change their pricing periodically, so estimate your monthly runs and steps and compare current plans directly.</p>"],
+    ["Is n8n free?", "<p>n8n can be self-hosted under its fair-code license, which avoids per-run platform fees, but you take on hosting, updates, security, and monitoring. n8n also offers a paid cloud version. Check the license terms if you plan to use it commercially in a customer-facing way.</p>"],
+    ["Can I switch automation platforms later?", "<p>Yes, but workflows do not transfer automatically between platforms, so switching means rebuilding. Documenting each workflow's trigger, steps, and owners makes a future move much easier.</p>"],
+    ["Which platform does LJ Web Management use?", "<p>We build on the platform that fits each client's workflow, budget, and tools, most often Zapier or Make, and n8n or custom code when a workflow needs it. Most automations in our catalog list Zapier or Make.com because either can usually do the job.</p>"]
+  ]
+}
+-->
+<p>Almost every automation in our catalog runs on one of three platforms: Zapier, Make (formerly Integromat), or n8n. They all do the same basic job: watch for a trigger in one app, then take actions in others. But they make different trade-offs, and picking the wrong one can mean paying too much, hitting limits, or ending up with workflows nobody on your team can maintain.</p>
+<p>Here is how we think about the choice. Pricing and features change often, so treat this as a framework and check current plans before you commit.</p>
+
+<h2>The short version</h2>
+<table>
+<thead><tr><th></th><th>Zapier</th><th>Make</th><th>n8n</th></tr></thead>
+<tbody>
+<tr><td><strong>Best for</strong></td><td>Getting simple workflows running fast</td><td>Complex, multi-branch workflows on a budget</td><td>Technical teams, self-hosting, custom logic</td></tr>
+<tr><td><strong>Learning curve</strong></td><td>Lowest</td><td>Moderate</td><td>Highest</td></tr>
+<tr><td><strong>App integrations</strong></td><td>Largest catalog</td><td>Large catalog plus flexible HTTP module</td><td>Smaller catalog, strong HTTP and code support</td></tr>
+<tr><td><strong>How you build</strong></td><td>Step-by-step list</td><td>Visual canvas</td><td>Visual canvas with code nodes</td></tr>
+<tr><td><strong>How it charges</strong></td><td>By tasks (actions that run)</td><td>By operations or credits</td><td>By executions in the cloud; self-hosted has no per-run fee</td></tr>
+<tr><td><strong>Hosting</strong></td><td>Cloud only</td><td>Cloud only</td><td>Cloud or self-hosted</td></tr>
+</tbody>
+</table>
+
+<h2>Zapier: the fastest way to start</h2>
+<p>Zapier is the platform most people try first, for good reason. You build a "Zap" as a list of steps: a trigger, then one or more actions, with filters and paths for simple branching. Its app directory is the largest of the three, so the tool you use almost certainly has an integration.</p>
+<p><strong>Strengths:</strong> very easy to learn, broad integrations, reliable, and good built-in tools for formatting data, delays, and AI steps.</p>
+<p><strong>Watch out for:</strong> cost at high volume, because every action that runs counts toward your task limit. Complex logic with many branches or loops can get awkward to build and expensive to run.</p>
+<p><strong>Choose Zapier when</strong> your workflows are straightforward, volume is modest, and non-technical team members need to understand and adjust them.</p>
+
+<h2>Make: more control for complex workflows</h2>
+<p>Make uses a visual canvas where you connect modules into "scenarios." Routers split a workflow into branches, iterators and aggregators handle lists (such as every line item on an order), and error handlers let you decide what happens when a step fails.</p>
+<p><strong>Strengths:</strong> excellent for complex logic and data transformation, often more economical than Zapier for multi-step workflows, and the visual layout makes complicated flows easier to follow.</p>
+<p><strong>Watch out for:</strong> a steeper learning curve, and usage that is metered per operation, so scenarios that poll frequently or process large lists need to be designed efficiently.</p>
+<p><strong>Choose Make when</strong> you have branching logic, need to process batches of records, or want more automation per dollar and have someone comfortable with a visual builder.</p>
+
+<h2>n8n: flexibility and control for technical teams</h2>
+<p>n8n is a workflow automation tool you can run in its cloud or host yourself. It has a visual editor like Make, but leans further toward developers: you can drop in JavaScript or Python, call any API, and build AI agent workflows with fine-grained control.</p>
+<p><strong>Strengths:</strong> self-hosting keeps data on your own infrastructure and removes per-run platform fees, custom code is a first-class feature, and it handles sophisticated AI workflows well.</p>
+<p><strong>Watch out for:</strong> self-hosting means you own uptime, updates, backups, and security. It also assumes more technical comfort from whoever maintains it.</p>
+<p><strong>Choose n8n when</strong> you have technical staff or a partner to maintain it, run very high volumes, have strict data residency requirements, or need custom logic that does not fit a no-code tool.</p>
+
+<h2>Questions that decide it</h2>
+<ol>
+<li><strong>Who will maintain the workflows?</strong> If it is a non-technical office manager, favor Zapier. If it is a technical partner, any of the three works.</li>
+<li><strong>How complex is the logic?</strong> Lots of branching, loops, or data reshaping points toward Make or n8n.</li>
+<li><strong>How much volume?</strong> Estimate runs per month times steps per run, then price each platform's current plans.</li>
+<li><strong>Do your apps have integrations?</strong> Check each platform's directory for every tool in the workflow, including the specific triggers and actions you need.</li>
+<li><strong>Where must the data live?</strong> Regulated data or strict policies may favor self-hosted n8n or direct integrations.</li>
+</ol>
+<div class="lj-callout"><strong>You do not have to pick just one</strong><p>Many businesses run simple notifications in Zapier and heavier data workflows in Make or n8n. What matters is that every workflow is documented, has an owner, and alerts someone when it fails.</p></div>
+
+<h2>Build habits that matter more than the platform</h2>
+<ul class="lj-checklist">
+<li>Name workflows clearly (what triggers them and what they do)</li>
+<li>Send failure alerts to a person, not just an email inbox nobody checks</li>
+<li>Keep a simple inventory: workflow, owner, apps connected, last reviewed</li>
+<li>Test with real examples before turning a workflow on for every customer</li>
+<li>Review workflows when you change a connected app or form</li>
+</ul>
+<p>Not sure which platform fits? <a href="/appointment/">Book a free consultation</a> and we will recommend one based on your tools and volume, or browse the <a href="/automations/">automation catalog</a> to see the kinds of workflows each one runs.</p>
