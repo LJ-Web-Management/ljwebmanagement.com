@@ -65,13 +65,12 @@ function industryTile(ind) {
   );
 }
 
-function guideCard(g) {
+function guideCard(g, label) {
   return (
-    '<a class="lj-card lj-post-card" href="' + g.url + '">' +
-    '<span class="lj-post-card-media lj-post-card-media--art"><span class="lj-card-icon">' + icon(g.icon || "book") + "</span></span>" +
-    '<span class="lj-post-card-body"><span class="lj-post-card-meta"><span class="lj-tag lj-tag--cyan">Guide</span><span>' + g.readMinutes + " min read</span></span>" +
+    '<a class="lj-card lj-gcard" href="' + g.url + '">' +
+    '<span class="lj-gcard-top"><span class="lj-card-icon lj-card-icon--soft">' + icon(g.icon || "book") + '</span><span class="lj-post-card-meta"><span class="lj-tag lj-tag--cyan">' + (label || "Guide") + "</span><span>" + g.readMinutes + " min read</span></span></span>" +
     "<h3>" + escapeHtml(g.title) + "</h3><p>" + escapeHtml(truncate(g.description, 140)) + "</p>" +
-    '<span class="lj-link-arrow">Read the guide ' + icon("arrowRight") + "</span></span></a>"
+    '<span class="lj-link-arrow">Read the guide ' + icon("arrowRight") + "</span></a>"
   );
 }
 
@@ -196,13 +195,6 @@ function buildDetail(a, cat) {
     </div>
     <div class="lj-grid lj-grid-3">${related.map((r) => card(r, r.industry === a.industry ? "category" : "industry")).join("")}</div>
   </div>
-</section>
-
-<section class="lj-section lj-section--mist">
-  <div class="lj-container">
-    ${L.sectionHead("How it's priced", "From conversation to working automation in three steps", "")}
-    ${L.processSteps()}
-  </div>
 </section>`;
 
   const service = {
@@ -324,7 +316,7 @@ ${topTools.length ? `<section class="lj-section lj-section--mist lj-section--tig
 ${guides.length ? `<section class="lj-section lj-section--mist">
   <div class="lj-container">
     ${L.sectionHead("Guides", "Learn how these workflows work", "")}
-    <div class="lj-grid lj-grid-3">${guides.map(guideCard).join("")}</div>
+    <div class="lj-grid lj-grid-3">${guides.map((g) => guideCard(g)).join("")}</div>
   </div>
 </section>` : ""}`;
 
@@ -413,16 +405,7 @@ function buildCategory(c, cat, guidesBySlug) {
     ${L.sectionHead("Other business functions", "Explore more automation categories", "")}
     <div class="lj-chip-row" style="justify-content:center">${others.map((o) => '<a class="lj-chip" href="' + o.url + '">' + icon(o.icon) + escapeHtml(o.name) + ' <span class="lj-chip-count">' + o.items.length + "</span></a>").join("")}</div>
   </div>
-</section>
-
-${guide ? `<section class="lj-section">
-  <div class="lj-container">
-    <div class="lj-grid lj-grid-2" style="align-items:center">
-      <div>${L.sectionHead("Go deeper", "Read the playbook", escapeHtml(guide.description), "lj-section-head--left")}</div>
-      ${guideCard(guide)}
-    </div>
-  </div>
-</section>` : ""}`;
+</section>`;
 
   const collection = {
     "@type": "CollectionPage",
@@ -553,11 +536,11 @@ function buildHub(cat) {
   <div class="lj-container">
     ${L.sectionHead("Browse by business function", "What do you want to stop doing by hand?", "Every automation is filed under the part of the business it improves, so you can compare approaches across industries.")}
     <div class="lj-grid lj-grid-3">${cat.categories.map(categoryCard).join("")}
-      <a class="lj-card lj-bento-card--dark" href="/contactus/" style="justify-content:center">
-        <span class="lj-card-icon" style="background:rgba(255,255,255,.12)">${icon("sparkles")}</span>
-        <h3 style="color:#fff">Need something custom?</h3>
-        <p style="color:rgba(255,255,255,.75)">The catalog is a starting point. Tell us the workflow and we'll scope it, even if it's not listed here.</p>
-        <div class="lj-card-foot"><span class="lj-link-arrow" style="color:var(--cyan-300)">Tell us what to automate ${icon("arrowRight")}</span></div>
+      <a class="lj-card lj-card--dark" href="/contactus/">
+        <span class="lj-card-icon">${icon("sparkles")}</span>
+        <h3>Need something custom?</h3>
+        <p>The catalog is a starting point. Tell us the workflow and we'll scope it, even if it's not listed here.</p>
+        <div class="lj-card-foot"><span class="lj-link-arrow">Tell us what to automate ${icon("arrowRight")}</span></div>
       </a>
     </div>
   </div>
@@ -582,13 +565,6 @@ function buildHub(cat) {
     ${L.sectionHead("A to Z directory", "Every automation, alphabetically", "Page 1 of " + pages + ". Use search above to jump straight to a task, role, or tool.")}
     <div class="lj-grid lj-grid-3">${all.slice(0, PAGE_SIZE).map((a) => card(a, "industry")).join("")}</div>
     ${pagination(1, pages)}
-  </div>
-</section>
-
-<section class="lj-section">
-  <div class="lj-container">
-    ${L.sectionHead("How it works", "Don't see your exact workflow? We build custom ones too.", "The catalog is a starting point. Every automation is tailored to your tools, and we regularly build workflows that are not listed here.")}
-    ${L.processSteps()}
   </div>
 </section>`;
 

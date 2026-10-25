@@ -79,11 +79,11 @@ function home(cat, guides) {
   <div class="lj-container">
     ${L.sectionHead("Automations by business function", "What do you want to stop doing by hand?", "Every automation in the catalog is filed under the part of the business it improves. Pick one to see real workflows from every industry.")}
     <div class="lj-grid lj-grid-3">${cat.categories.map(categoryCard).join("")}
-      <a class="lj-card lj-bento-card--dark" href="/automations/" style="justify-content:center">
-        <span class="lj-card-icon" style="background:rgba(255,255,255,.12)">${icon("search")}</span>
-        <h3 style="color:#fff">Not sure where it fits?</h3>
-        <p style="color:rgba(255,255,255,.75)">Search all ${total} automations by task, role, tool, or industry.</p>
-        <div class="lj-card-foot"><span class="lj-link-arrow" style="color:var(--cyan-300)">Open the catalog ${icon("arrowRight")}</span></div>
+      <a class="lj-card lj-card--dark" href="/automations/">
+        <span class="lj-card-icon">${icon("search")}</span>
+        <h3>Not sure where it fits?</h3>
+        <p>Search all ${total} automations by task, role, tool, or industry.</p>
+        <div class="lj-card-foot"><span class="lj-link-arrow">Open the catalog ${icon("arrowRight")}</span></div>
       </a>
     </div>
   </div>
@@ -119,12 +119,12 @@ function home(cat, guides) {
 <section class="lj-section lj-section--mist">
   <div class="lj-container">
     ${L.sectionHead("Why LJ Web Management", "Automation built around how your business already works", "")}
-    <div class="lj-bento">
-      <div class="lj-bento-card lj-bento-card--dark lj-bento-wide"><span class="lj-bento-big">${total}+</span><h3>Pre-scoped, role-specific automations</h3><p>Not generic templates. Every workflow is written for a real job in a real industry, then tailored to your exact tools.</p></div>
-      <div class="lj-bento-card lj-bento-wide"><span class="lj-card-icon lj-card-icon--soft">${icon("receipt")}</span><h3>A clear quote, not a price list</h3><p>After a free consultation you get one flat, all-in price. Nothing starts until you approve the scope.</p></div>
-      <div class="lj-bento-card"><span class="lj-card-icon lj-card-icon--soft">${icon("plug")}</span><h3>Custom-fit systems</h3><p>Built around the tools you already use, not the other way around.</p></div>
-      <div class="lj-bento-card"><span class="lj-card-icon lj-card-icon--soft">${icon("zap")}</span><h3>Fast to launch</h3><p>Most systems go live within days, not months.</p></div>
-      <div class="lj-bento-card"><span class="lj-card-icon lj-card-icon--soft">${icon("message")}</span><h3>Real support</h3><p>A team that answers when something needs to change, long after launch day.</p></div>
+    <div class="lj-features">
+      <div><span class="lj-features-stat">${total}+</span><h3>Pre-scoped, role-specific automations</h3><p>Not generic templates. Every workflow is written for a real job in a real industry, then tailored to your exact tools.</p></div>
+      <div><span class="lj-card-icon lj-card-icon--soft">${icon("receipt")}</span><h3>A clear quote, not a price list</h3><p>After a free consultation you get one flat, all-in price. Nothing starts until you approve the scope.</p></div>
+      <div><span class="lj-card-icon lj-card-icon--soft">${icon("plug")}</span><h3>Custom-fit systems</h3><p>Built around the tools you already use, not the other way around.</p></div>
+      <div><span class="lj-card-icon lj-card-icon--soft">${icon("zap")}</span><h3>Fast to launch</h3><p>Most systems go live within days, not months.</p></div>
+      <div><span class="lj-card-icon lj-card-icon--soft">${icon("message")}</span><h3>Real support</h3><p>A team that answers when something needs to change, long after launch day.</p></div>
     </div>
   </div>
 </section>
@@ -142,9 +142,9 @@ function home(cat, guides) {
 <section class="lj-section lj-section--dark">
   <div class="lj-container">
     ${L.sectionHead("Who it's for", "Built for the people deciding on AI, and the people working alongside it", "Implementing AI in a business and using AI to get more out of a job are two different problems. We work on both sides of that.")}
-    <div class="lj-grid lj-grid-2">
-      <div class="lj-bento-card lj-bento-card--dark" style="border:1px solid rgba(255,255,255,.1)"><span class="lj-card-icon" style="background:rgba(255,255,255,.1)">${icon("building")}</span><h3>Business owners &amp; executives</h3><p>You don't need to hire an AI team to bring AI into your business. We scope the highest-cost repetitive process in your operation, build the automation around the tools you already use, and support it after launch, so leadership gets fewer manual hours, faster response times, and lower costs without the overhead of building it in-house.</p><p style="margin-top:18px"><a class="lj-link-arrow" style="color:var(--cyan-300)" href="/how-it-works/">See how implementation works ${icon("arrowRight")}</a></p></div>
-      <div class="lj-bento-card lj-bento-card--dark" style="border:1px solid rgba(255,255,255,.1)"><span class="lj-card-icon" style="background:rgba(255,255,255,.1)">${icon("user")}</span><h3>Employees supplementing their own work</h3><p>The roles most at risk from AI are the ones where nobody bothers to use it. Automating the repetitive part of a job frees up time for the judgment and relationships AI can't replace, which is exactly what tends to keep a role valuable as more work becomes automatable.</p><p style="margin-top:18px"><a class="lj-link-arrow" style="color:var(--cyan-300)" href="/faq/#general">Read the automation FAQ ${icon("arrowRight")}</a></p></div>
+    <div class="lj-features" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:32px 56px">
+      <div><span class="lj-card-icon">${icon("building")}</span><h3>Business owners &amp; executives</h3><p>You don't need to hire an AI team to bring AI into your business. We scope the highest-cost repetitive process in your operation, build the automation around the tools you already use, and support it after launch, so leadership gets fewer manual hours, faster response times, and lower costs without the overhead of building it in-house.</p><p><a class="lj-link-arrow" href="/how-it-works/">See how implementation works ${icon("arrowRight")}</a></p></div>
+      <div><span class="lj-card-icon">${icon("user")}</span><h3>Employees supplementing their own work</h3><p>The roles most at risk from AI are the ones where nobody bothers to use it. Automating the repetitive part of a job frees up time for the judgment and relationships AI can't replace, which is exactly what tends to keep a role valuable as more work becomes automatable.</p><p><a class="lj-link-arrow" href="/faq/#general">Read the automation FAQ ${icon("arrowRight")}</a></p></div>
     </div>
   </div>
 </section>
@@ -155,7 +155,7 @@ function home(cat, guides) {
       <div><span class="lj-eyebrow">Learn the playbooks</span><h2>Guides from the team that builds them</h2></div>
       <a class="lj-link-arrow" href="/guides/">All guides ${icon("arrowRight")}</a>
     </div>
-    <div class="lj-grid lj-grid-3">${homeGuides.map(guideCard).join("")}</div>
+    <div class="lj-grid lj-grid-3">${homeGuides.map((g) => guideCard(g)).join("")}</div>
   </div>
 </section>
 
@@ -173,8 +173,8 @@ function home(cat, guides) {
   <div class="lj-container">
     ${L.sectionHead("Free tools", "Not sure where to start?", "Run the numbers on your own manual work, or answer three questions to find the solution built for your bottleneck.")}
     <div class="lj-grid lj-grid-2">
-      <a class="lj-card lj-card--link" href="/roi-calculator/" style="padding:32px"><span class="lj-card-icon">${icon("calculator")}</span><h3>ROI Calculator</h3><p>See how many hours and dollars your team's manual work is costing every month, and what automation could give back.</p><div class="lj-card-foot"><span class="lj-link-arrow">Calculate my savings ${icon("arrowRight")}</span></div></a>
-      <a class="lj-card lj-card--link" href="/quiz/" style="padding:32px"><span class="lj-card-icon">${icon("compass")}</span><h3>Automation Match Quiz</h3><p>Answer three quick questions about your biggest bottleneck and get matched to the right solution for your business.</p><div class="lj-card-foot"><span class="lj-link-arrow">Take the quiz ${icon("arrowRight")}</span></div></a>
+      <a class="lj-card lj-card--link" href="/roi-calculator/"><span class="lj-card-icon">${icon("calculator")}</span><h3>ROI Calculator</h3><p>See how many hours and dollars your team's manual work is costing every month, and what automation could give back.</p><div class="lj-card-foot"><span class="lj-link-arrow">Calculate my savings ${icon("arrowRight")}</span></div></a>
+      <a class="lj-card lj-card--link" href="/quiz/"><span class="lj-card-icon">${icon("compass")}</span><h3>Automation Match Quiz</h3><p>Answer three quick questions about your biggest bottleneck and get matched to the right solution for your business.</p><div class="lj-card-foot"><span class="lj-link-arrow">Take the quiz ${icon("arrowRight")}</span></div></a>
     </div>
   </div>
 </section>
@@ -258,7 +258,7 @@ function howItWorks(cat) {
 <section class="lj-section">
   <div class="lj-container">
     ${L.sectionHead("The full process", "Five steps from first call to live system", "Every project follows the same process, so you always know what's happening next and why.")}
-    <div class="lj-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">${steps.map(([t, d], i) => '<div class="lj-process-step" style="counter-increment:none"><span class="lj-steps-label">Step 0' + (i + 1) + "</span><h3>" + escapeHtml(t) + "</h3><p>" + escapeHtml(d) + "</p></div>").join("")}</div>
+    <div class="lj-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">${steps.map(([t, d], i) => '<div class="lj-process-step"><span class="lj-steps-label">Step 0' + (i + 1) + "</span><h3>" + escapeHtml(t) + "</h3><p>" + escapeHtml(d) + "</p></div>").join("")}</div>
   </div>
 </section>
 
@@ -351,7 +351,7 @@ function solutions() {
 </section>
 <section class="lj-section lj-section--flush-top">
   <div class="lj-container">
-    <div class="lj-grid">${sols.map((s) => '<article class="lj-sol" id="' + s.id + '"><span class="lj-card-icon">' + icon(SOLUTION_ICONS[s.id] || "layers") + "</span><div><h2>" + escapeHtml(s.name) + "</h2><p>" + escapeHtml(s.text) + '</p><a class="lj-link-arrow" href="/appointment/">Talk to us about this ' + icon("arrowRight") + "</a></div></article>").join("")}</div>
+    <div>${sols.map((s) => '<article class="lj-sol" id="' + s.id + '"><span class="lj-card-icon">' + icon(SOLUTION_ICONS[s.id] || "layers") + "</span><div><h2>" + escapeHtml(s.name) + "</h2><p>" + escapeHtml(s.text) + '</p><a class="lj-link-arrow" href="/appointment/">Talk to us about this ' + icon("arrowRight") + "</a></div></article>").join("")}</div>
   </div>
 </section>`;
   writeFile(
@@ -402,9 +402,6 @@ function faqPage() {
 </section>
 <section class="lj-section">
   <div class="lj-container lj-container--narrow">${sections}</div>
-</section>
-<section class="lj-section lj-section--flush-top">
-  <div class="lj-container">${L.ctaBand("Still have questions?", "Book a free consultation and ask us anything. You'll leave with a clear picture of what's possible, before any commitment.", ["Book a Free Consultation", "/appointment/"], ["Contact Us", "/contactus/"])}</div>
 </section>`;
   writeFile(
     "faq/index.html",

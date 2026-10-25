@@ -127,7 +127,6 @@ function buildGuide(g, all, cat) {
           <a href="https://x.com/intent/post?url=${share}&amp;text=${shareTitle}" target="_blank" rel="noopener" aria-label="Share on X">${icon("xlogo")}</a>
           <a href="mailto:?subject=${shareTitle}&amp;body=${share}" aria-label="Share by email">${icon("mail")}</a>
         </div>
-        <div class="lj-author-box"><img src="/assets/lj-logo-80.webp" width="52" height="52" alt="" loading="lazy"><div><strong>Written by the LJ Web Management team</strong><p>We build done-for-you automation systems for small and mid-sized businesses across 57 industries. These guides come from the workflows we scope and build every week.</p></div></div>
       </div>
     </article>
     <aside class="lj-article-aside" aria-label="On this page">
@@ -151,7 +150,7 @@ ${picks.length ? `<section class="lj-section lj-section--mist">
       <div><span class="lj-eyebrow">Keep reading</span><h2>More automation guides</h2></div>
       <a class="lj-link-arrow" href="/guides/">All guides ${icon("arrowRight")}</a>
     </div>
-    <div class="lj-grid lj-grid-3">${related.map(guideCard).join("")}</div>
+    <div class="lj-grid lj-grid-3">${related.map((g) => guideCard(g)).join("")}</div>
   </div>
 </section>`;
 
@@ -190,7 +189,6 @@ function buildHub(all, latestPosts) {
     ["Home", "/"],
     ["Guides", "/guides/"],
   ]);
-  const [featured, ...rest] = all;
   const main = `
 <section class="lj-page-hero lj-page-hero--center">
   <div class="lj-container">
@@ -202,16 +200,7 @@ function buildHub(all, latestPosts) {
 </section>
 <section class="lj-section">
   <div class="lj-container">
-    <a class="lj-card lj-post-card lj-post-card--featured" href="${featured.url}">
-      <span class="lj-post-card-media lj-post-card-media--art"><span class="lj-card-icon">${icon(featured.icon || "book")}</span></span>
-      <span class="lj-post-card-body">
-        <span class="lj-post-card-meta"><span class="lj-tag lj-tag--cyan">Start here</span><span>${featured.readMinutes} min read</span></span>
-        <h2 class="lj-mt-0" style="font-size:clamp(1.4rem,2.4vw,1.9rem)">${escapeHtml(featured.title)}</h2>
-        <p>${escapeHtml(featured.description)}</p>
-        <span class="lj-link-arrow">Read the guide ${icon("arrowRight")}</span>
-      </span>
-    </a>
-    <div class="lj-grid lj-grid-3 lj-mt-lg">${rest.map(guideCard).join("")}</div>
+    <div class="lj-grid lj-grid-3">${all.map((g, i) => guideCard(g, i === 0 ? "Start here" : "Guide")).join("")}</div>
   </div>
 </section>
 <section class="lj-section lj-section--mist">

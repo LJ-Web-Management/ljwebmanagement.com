@@ -134,28 +134,7 @@ function sectionHead(eyebrow, title, text, cls) {
   );
 }
 
-function ctaBand(title, text, primary, secondary) {
-  return (
-    '<div class="lj-cta-band"><div><h2>' + title + "</h2><p>" + text + '</p></div><div class="lj-btn-row">' +
-    '<a class="lj-btn lj-btn-accent" href="' + primary[1] + '">' + primary[0] + "</a>" +
-    (secondary ? '<a class="lj-btn lj-btn-light" href="' + secondary[1] + '">' + secondary[0] + "</a>" : "") +
-    "</div></div>"
-  );
-}
 
-const PROCESS_STEPS = [
-  ["Book a free consultation", "Tell us what's slowing your team down and which tools are involved. No prep required."],
-  ["Get a flat, upfront quote", "We scope the exact system you need and give you one all-in price. No hourly billing, no surprises."],
-  ["We build, launch, and support it", "Nothing starts until you approve. Most automations go live in days, and we stay on to support them."],
-];
-
-function processSteps() {
-  return (
-    '<div class="lj-process">' +
-    PROCESS_STEPS.map(([t, d]) => '<div class="lj-process-step"><h3>' + t + "</h3><p>" + d + "</p></div>").join("") +
-    "</div>"
-  );
-}
 
 module.exports = {
   YEAR,
@@ -165,7 +144,5 @@ module.exports = {
   breadcrumbs,
   faq,
   sectionHead,
-  ctaBand,
-  processSteps,
   icon: chrome.icon,
 };
