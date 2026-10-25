@@ -60,16 +60,10 @@ function home(cat, guides, extra) {
 <section class="lj-hero">
   <div class="lj-container lj-hero-grid">
     <div>
-      <span class="lj-eyebrow lj-eyebrow--pill">Business automation, done for you</span>
+      <p class="lj-hero-call">Questions? Call <a href="tel:+18775593268">(877) 559-3268</a></p>
       <h1>Cut through the delay. <span class="lj-gradient-text">Automate the busywork.</span></h1>
       <p class="lj-lead">We build custom business automation and AI workflow systems that remove repetitive tasks and bottlenecks, connecting the tools you already use so your team can focus on the work that actually grows the business.</p>
       <button type="button" class="lj-hero-search" data-lj-search-open aria-label="Search ${total}+ automations">${icon("search")}<span class="lj-hero-search-text">Search ${total}+ automations by task, tool, or industry</span><span class="lj-btn lj-btn-primary lj-btn-sm">Search</span></button>
-      <div class="lj-hero-quick"><span>Popular:</span>
-        <a href="/guides/missed-call-text-back/">Missed-call text-back</a>
-        <a href="/automations/category/scheduling-dispatch/">Appointment reminders</a>
-        <a href="/automations/category/billing-finance/">Invoicing</a>
-        <a href="/automations/category/reviews-feedback/">Review requests</a>
-      </div>
       <div class="lj-hero-actions">
         <a class="lj-btn lj-btn-accent lj-btn-lg" href="/appointment/">Book a Free Consultation ${icon("arrowRight")}</a>
         <a class="lj-btn lj-btn-light lj-btn-lg" href="/automations/">Browse Automations</a>
