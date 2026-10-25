@@ -7075,6 +7075,18 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://www.ljwebmanagement.com/privacy-choices/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.ljwebmanagement.com/accessibility/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://www.ljwebmanagement.com/terms-of-service/</loc>
     <lastmod>2026-10-25</lastmod>
     <changefreq>yearly</changefreq>
