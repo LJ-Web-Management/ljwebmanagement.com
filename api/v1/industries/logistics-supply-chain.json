@@ -1,0 +1,294 @@
+{
+  "slug": "logistics-supply-chain",
+  "name": "Logistics & Supply Chain",
+  "summary": "Shipment tracking, delay alerts, vendor quotes, reorder points, and customs paperwork.",
+  "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "logistics-supply-chain/shipment-tracking-delay-alert-system",
+      "slug": "shipment-tracking-delay-alert-system",
+      "title": "Shipment Tracking & Delay Alert System",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Logistics Manager",
+      "summary": "Every active shipment is monitored against its expected delivery date, and the moment a carrier scan indicates a delay (weather hold, missed scan…",
+      "steps": [
+        "Every active shipment is monitored against its expected delivery date, and the moment a carrier scan indicates a delay (weather hold, missed scan, customs flag) the system sends an automatic alert to the logistics manager and a proactive heads-up to the customer or receiving team.",
+        "Customers find out about delays from the company, not from a missed delivery, and the logistics manager spends time solving problems rather than manually checking tracking portals across multiple carriers."
+      ],
+      "manualProcess": "Left unautomated, a logistics manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Shipment tracking API (e.g., EasyPost, ShipBob, or project44)",
+        "Zapier or Make.com",
+        "Slack or email (internal delay alerts)",
+        "Twilio (customer SMS notifications)",
+        "Airtable or Google Sheets (shipment dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Slack",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/shipment-tracking-delay-alert-system/"
+    },
+    {
+      "id": "logistics-supply-chain/receiving-putaway-pick-pack-ship-task-assignment",
+      "slug": "receiving-putaway-pick-pack-ship-task-assignment",
+      "title": "Receiving, Putaway & Pick-Pack-Ship Task Assignment",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Warehouse Manager",
+      "summary": "When a purchase order is marked received, the system automatically creates putaway tasks assigned to the correct zone team, updates inventory counts…",
+      "steps": [
+        "When a purchase order is marked received, the system automatically creates putaway tasks assigned to the correct zone team, updates inventory counts in the WMS, and notifies the fulfillment team that the items are available to pick.",
+        "When a sales order is released, pick tasks are assigned to available pickers based on zone and workload, packing instructions are generated, and the carrier label is ready before the picker arrives at the pack station, eliminating the supervisory bottleneck that typically slows warehouse throughput."
+      ],
+      "manualProcess": "Without a system in place, a warehouse manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "WMS (e.g., Fishbowl, ShipHero, or 3PL Central)",
+        "Zapier or Make.com",
+        "Slack (task notifications)",
+        "EasyPost or ShipStation (label generation)",
+        "Airtable (task assignment board)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/receiving-putaway-pick-pack-ship-task-assignment/"
+    },
+    {
+      "id": "logistics-supply-chain/vendor-quote-collection-purchase-order-generator",
+      "slug": "vendor-quote-collection-purchase-order-generator",
+      "title": "Vendor Quote Collection & Purchase Order Generator",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Procurement Manager",
+      "summary": "When a requisition is approved, the system automatically sends a formatted request for quote to the preferred vendor list, tracks responses in a…",
+      "steps": [
+        "When a requisition is approved, the system automatically sends a formatted request for quote to the preferred vendor list, tracks responses in a comparison matrix, and (when a vendor is selected) generates a fully formatted purchase order pre-filled with item details, delivery address, and payment terms.",
+        "The procurement manager reviews and approves in one click rather than building each PO from scratch, and every purchase is fully documented from requisition to PO to receipt."
+      ],
+      "manualProcess": "The manual approach means a procurement manager handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Procurement platform or ERP connector (e.g., Coupa or NetSuite)",
+        "Zapier or Make.com",
+        "Jotform (RFQ form for vendors)",
+        "Google Sheets or Airtable (quote comparison matrix)",
+        "DocuSign (PO signature)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "DocuSign",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/vendor-quote-collection-purchase-order-generator/"
+    },
+    {
+      "id": "logistics-supply-chain/vehicle-maintenance-schedule-compliance-tracker",
+      "slug": "vehicle-maintenance-schedule-compliance-tracker",
+      "title": "Vehicle Maintenance Schedule & Compliance Tracker",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Fleet Manager",
+      "summary": "Based on each vehicle's mileage data synced from the telematics system, this automation calculates when the next oil change, inspection, DOT…",
+      "steps": [
+        "Based on each vehicle's mileage data synced from the telematics system, this automation calculates when the next oil change, inspection, DOT compliance check, or registration renewal is due and schedules it automatically with the designated service provider.",
+        "The driver and fleet manager both receive reminders 14 and 3 days in advance, and any vehicle that misses a scheduled service is flagged as out of compliance until the service record is uploaded, keeping the fleet legal and the maintenance log current without manual tracking."
+      ],
+      "manualProcess": "Manually, a fleet manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Fleet telematics system (e.g., Samsara or Verizon Connect API)",
+        "Zapier or Make.com",
+        "Google Sheets or Airtable (maintenance log)",
+        "Email or Slack (reminders and compliance flags)",
+        "Jotform (service record upload)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/vehicle-maintenance-schedule-compliance-tracker/"
+    },
+    {
+      "id": "logistics-supply-chain/demand-forecast-inventory-replenishment-alert-system",
+      "slug": "demand-forecast-inventory-replenishment-alert-system",
+      "title": "Demand Forecast & Inventory Replenishment Alert System",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Supply Chain Analyst",
+      "summary": "Each week, the system pulls the last 13 weeks of sales velocity data, applies a seasonal adjustment model, and generates a replenishment…",
+      "steps": [
+        "Each week, the system pulls the last 13 weeks of sales velocity data, applies a seasonal adjustment model, and generates a replenishment recommendation for every SKU that is projected to hit its reorder point before the next purchase order cycle.",
+        "The analyst receives a pre-built order recommendation report to review rather than building it manually in Excel, and any SKU where actual velocity has deviated significantly from forecast is flagged for a deeper review, turning a reactive process into a proactive one."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a supply chain analyst, who has to track every step by hand across emails, spreadsheets, and sticky notes. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "ERP or inventory management system",
+        "Zapier or Make.com",
+        "Google Sheets or Airtable (forecast model)",
+        "OpenAI API (deviation summary)",
+        "Email or Slack (weekly replenishment report)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/demand-forecast-inventory-replenishment-alert-system/"
+    },
+    {
+      "id": "logistics-supply-chain/shipment-delay-auto-notification-system",
+      "slug": "shipment-delay-auto-notification-system",
+      "title": "Shipment Delay Auto-Notification System",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Customer Service Manager",
+      "summary": "This automation continuously checks carrier tracking data against each shipment's original expected delivery date.",
+      "steps": [
+        "This automation continuously checks carrier tracking data against each shipment's original expected delivery date.",
+        "The moment a shipment is flagged as delayed by the carrier's own tracking feed, it automatically notifies the customer with a new estimated delivery date and a brief explanation, and separately alerts the operations team internally so they can address the root cause if it's a recurring lane issue.",
+        "Customers hear about the delay from the company itself within minutes of it being flagged, not from refreshing a tracking page three days later and calling in confused."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a customer service manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "project44 or FourKites (tracking)",
+        "Twilio (SMS)",
+        "Zapier or Make.com",
+        "Mailchimp or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/shipment-delay-auto-notification-system/"
+    },
+    {
+      "id": "logistics-supply-chain/po-to-vendor-confirmation-loop",
+      "slug": "po-to-vendor-confirmation-loop",
+      "title": "PO-to-Vendor Confirmation Loop",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Procurement Specialist",
+      "summary": "When a purchase order is created in the system, this automation automatically emails it to the vendor and then monitors the vendor's inbox for a…",
+      "steps": [
+        "When a purchase order is created in the system, this automation automatically emails it to the vendor and then monitors the vendor's inbox for a confirmation reply.",
+        "If no confirmation arrives within 24 hours, it automatically sends a follow-up, and if 48 hours pass with still no response, it flags the buyer with a task to call the vendor directly.",
+        "Orders that used to sit silently unconfirmed for a week, discovered only when the expected ship date came and went, now get caught and chased down automatically within two days."
+      ],
+      "manualProcess": "Without a system in place, a procurement specialist has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "NetSuite or an ERP system",
+        "Zapier or Make.com",
+        "Gmail or Outlook",
+        "Twilio or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Outlook"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/po-to-vendor-confirmation-loop/"
+    },
+    {
+      "id": "logistics-supply-chain/freight-cost-anomaly-detector",
+      "slug": "freight-cost-anomaly-detector",
+      "title": "Freight Cost Anomaly Detector",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Logistics Manager",
+      "summary": "Every invoice that comes in from a freight carrier is automatically compared line by line against the rate that was originally quoted for that…",
+      "steps": [
+        "Every invoice that comes in from a freight carrier is automatically compared line by line against the rate that was originally quoted for that shipment.",
+        "Any invoice that comes in more than a set percentage over quote, commonly 5-10%, is automatically flagged and routed to the logistics manager with the specific discrepancy highlighted for review before it's approved for payment.",
+        "Overcharges that used to get buried in a stack of freight invoices and paid without a second look now get caught before the check goes out."
+      ],
+      "manualProcess": "Handled by hand, a logistics manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A TMS (McLeod or Trimble)",
+        "Zapier or Make.com",
+        "Google Sheets (rate comparison)",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/freight-cost-anomaly-detector/"
+    },
+    {
+      "id": "logistics-supply-chain/inventory-reorder-point-automation",
+      "slug": "inventory-reorder-point-automation",
+      "title": "Inventory Reorder Point Automation",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Inventory Planner",
+      "summary": "As inventory levels update in the warehouse management system with each pick and receipt, this automation continuously watches every SKU against a…",
+      "steps": [
+        "As inventory levels update in the warehouse management system with each pick and receipt, this automation continuously watches every SKU against a reorder threshold calculated from that supplier's specific lead time.",
+        "The moment stock hits that point, it automatically generates a purchase order draft for the usual supplier at the usual order quantity and notifies the buyer to review and approve it.",
+        "The business stops finding out it's out of stock only after a customer order fails to fulfill, catching the gap while there's still time to reorder."
+      ],
+      "manualProcess": "Without a system in place, an inventory planner has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "A WMS (Fishbowl or NetSuite)",
+        "Zapier or Make.com",
+        "Google Sheets",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/inventory-reorder-point-automation/"
+    },
+    {
+      "id": "logistics-supply-chain/customs-documentation-assembler",
+      "slug": "customs-documentation-assembler",
+      "title": "Customs Documentation Assembler",
+      "industry": "logistics-supply-chain",
+      "category": "compliance-documents",
+      "role": "Import/Export Coordinator",
+      "summary": "For every international shipment, this automation automatically pulls the commercial invoice, packing list, and certificate of origin directly from…",
+      "steps": [
+        "For every international shipment, this automation automatically pulls the commercial invoice, packing list, and certificate of origin directly from the order management system and assembles them into the exact format required by customs for that destination country.",
+        "The completed packet is automatically sent to the freight forwarder as soon as the shipment is booked, instead of a coordinator manually gathering three separate documents from three separate systems under a shipping deadline.",
+        "Shipments move through customs faster because the paperwork is correct and complete before the truck even leaves the dock."
+      ],
+      "manualProcess": "Left to a person, this means an import/export coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.",
+      "tools": [
+        "An ERP or order management system",
+        "Zapier or Make.com",
+        "Google Drive or Dropbox",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/customs-documentation-assembler/"
+    }
+  ]
+}

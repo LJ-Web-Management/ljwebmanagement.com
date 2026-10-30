@@ -37,6 +37,7 @@ function sitemap(cat, guides, auto, extra) {
   add("/roi-calculator/", "monthly", "0.7");
   add("/quiz/", "monthly", "0.7");
   add("/contactus/", "monthly", "0.6");
+  add("/developers/", "monthly", "0.6");
   cat.categories.forEach((c) => add(c.url, "weekly", "0.8"));
   cat.industries.forEach((i) => add(i.url, "weekly", "0.8"));
   cat.tools.forEach((t) => add(t.url, "weekly", "0.6"));
@@ -93,6 +94,15 @@ function llms(cat, guides, extra) {
     "- [Contact Us](" + SITE_URL + "/contactus/): General contact information and inquiry form.",
     "- [Blog](" + BLOG_URL + "/): Daily articles on AI and business automation.",
     "",
+    "## Developers and AI Agents",
+    "",
+    "- [LJ Web Management Developer API and Docs](" + SITE_URL + "/developers/): Free, read-only JSON API (no API key), example requests, error format, and every machine-readable file.",
+    "- [API index](" + SITE_URL + "/api/v1/index.json): JSON list of every endpoint: company facts, categories, industries with full automation detail, solutions, integrations, FAQ, and glossary.",
+    "- [OpenAPI description](" + SITE_URL + "/openapi.json): OpenAPI 3 spec with an operation ID and typed schema for every endpoint, ready to use as LLM function-calling tools.",
+    "- [API catalog](" + SITE_URL + "/.well-known/api-catalog): RFC 9727 linkset pointing to the OpenAPI spec and docs.",
+    "- Markdown: every page is available as Markdown. Send `Accept: text/markdown` to any page URL, or add `index.md` to it (for example " + SITE_URL + "/index.md).",
+    "- [Sitemap](" + SITE_URL + "/sitemap.xml): every indexable page.",
+    "",
     "## Automations by Business Function",
     "",
   ];
@@ -115,7 +125,7 @@ function llms(cat, guides, extra) {
     "",
     "- [llms-full.txt](" + SITE_URL + "/llms-full.txt): Extended reference with every business function, industry, and integration in the catalog, the solution descriptions, and the full FAQ, in plain text for AI systems and answer engines.",
     "- [/crawl](" + SITE_URL + "/crawl/): Plain-text rendering of llms-full.txt for AI crawlers that request a specific crawl path.",
-    "- [openapi.json](" + SITE_URL + "/openapi.json): OpenAPI description of this site's read-only reference endpoints (llms.txt, llms-full.txt, sitemap.xml, /crawl/, /faq/, /automations/).",
+    "- [openapi.json](" + SITE_URL + "/openapi.json): OpenAPI description of the read-only JSON API at /api/v1/.",
     "- [/.well-known/ai-plugin.json](" + SITE_URL + "/.well-known/ai-plugin.json): AI tool manifest pointing to the OpenAPI description above.",
     "",
     "## Company Info",
@@ -187,6 +197,7 @@ function llmsFull(cat, guides, extra) {
     "- Find Your Match Quiz: " + SITE_URL + "/quiz/",
     "- Book a Consultation: " + SITE_URL + "/appointment/",
     "- Contact: " + SITE_URL + "/contactus/",
+    "- Developer API and docs: " + SITE_URL + "/developers/",
     "- Blog: " + BLOG_URL + "/",
     "- Privacy Policy: " + SITE_URL + "/privacy-policy/",
     "- Terms of Service: " + SITE_URL + "/terms-of-service/",

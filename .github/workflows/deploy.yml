@@ -40,14 +40,30 @@ jobs:
         # Build sources (build/, content/, package.json, docs) are not part of the site.
         # Filters are applied in order with later ones winning, so the excludes go
         # last, after any --include.
-        EXCLUDES=(--exclude ".git/*" --exclude ".github/*" --exclude "build/*" --exclude "content/*" --exclude "infra/*" --exclude "package.json" --exclude "CLAUDE.md" --exclude "README.md" --exclude ".gitignore")
-        aws s3 sync ./ s3://ljwebmanagement-website --delete --exclude "*.html" --exclude "assets/data/*" "${EXCLUDES[@]}" --cache-control "public, max-age=31536000, immutable"
+        EXCLUDES=(--exclude ".git/*" --exclude ".github/*" --exclude "build/*" --exclude "content/*" --exclude "infra/*" --exclude "test/*" --exclude "package.json" --exclude "CLAUDE.md" --exclude "README.md" --exclude ".gitignore")
+        # Files that change in place (pages, Markdown twins, the JSON API and
+        # the machine-readable descriptions of it) are synced separately below.
+        aws s3 sync ./ s3://ljwebmanagement-website --delete --exclude "*.html" --exclude "*.md" --exclude "assets/data/*" --exclude "api/*" --exclude "openapi.json" --exclude ".well-known/*" "${EXCLUDES[@]}" --cache-control "public, max-age=31536000, immutable"
         # HTML must-revalidate on every request so page edits go live immediately.
         aws s3 sync ./ s3://ljwebmanagement-website --delete --exclude "*" --include "*.html" "${EXCLUDES[@]}" --cache-control "public, max-age=0, must-revalidate"
+        # Markdown twin of every page, served to Accept: text/markdown by the
+        # edge function (infra/README.md).
+        aws s3 sync ./ s3://ljwebmanagement-website --delete --exclude "*" --include "*.md" "${EXCLUDES[@]}" --content-type "text/markdown; charset=utf-8" --cache-control "public, max-age=0, must-revalidate"
+        # Public JSON API and its descriptions.
+        aws s3 sync ./api s3://ljwebmanagement-website/api --delete --content-type "application/json; charset=utf-8" --cache-control "public, max-age=3600"
+        aws s3 cp ./openapi.json s3://ljwebmanagement-website/openapi.json --content-type "application/json; charset=utf-8" --cache-control "public, max-age=3600"
+        aws s3 sync ./.well-known s3://ljwebmanagement-website/.well-known --delete --exclude "api-catalog" --cache-control "public, max-age=3600"
+        aws s3 cp ./.well-known/api-catalog s3://ljwebmanagement-website/.well-known/api-catalog --content-type 'application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"' --cache-control "public, max-age=3600"
         # The site search index is also loaded by blog.ljwebmanagement.com without a
         # version query string, so it gets a short cache instead of an immutable one.
         aws s3 sync ./assets/data s3://ljwebmanagement-website/assets/data --delete --cache-control "public, max-age=3600"
         # If deploying a build folder (e.g. dist/ or build/), change `./` to `./dist`
+
+    # Optional until the function is created and associated (infra/README.md):
+    # set the repository variable CLOUDFRONT_EDGE_FUNCTION to its name.
+    - name: Publish CloudFront edge function
+      if: ${{ vars.CLOUDFRONT_EDGE_FUNCTION != '' }}
+      run: infra/deploy-edge-function.sh "${{ vars.CLOUDFRONT_EDGE_FUNCTION }}"
 
     - name: Invalidate CloudFront Cache
       run: |

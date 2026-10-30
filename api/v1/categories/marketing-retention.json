@@ -1,0 +1,1440 @@
+{
+  "slug": "marketing-retention",
+  "name": "Marketing & Customer Retention",
+  "summary": "Win back lapsed customers, reward loyalty, and keep repeat business coming in on its own.",
+  "description": "Keeping a customer costs far less than finding a new one, but retention work is easy to postpone because nothing visibly breaks when you skip it. These automations run the campaigns that quietly drive repeat revenue: win-back sequences, renewal reminders, referral rewards, birthday offers, and launch announcements. Each one is triggered by real customer behavior instead of a calendar reminder someone forgets to check.",
+  "url": "https://www.ljwebmanagement.com/automations/category/marketing-retention/",
+  "automationCount": 143,
+  "automations": [
+    {
+      "id": "addiction-treatment-behavioral-health/referral-partner-outreach-relationship-nurture-system",
+      "title": "Referral Partner Outreach & Relationship Nurture System",
+      "industry": "addiction-treatment-behavioral-health",
+      "category": "marketing-retention",
+      "role": "Business Development Representative",
+      "summary": "The behavioral health facility's referral relationships (hospital social workers, primary care physicians, employee assistance programs, criminal…",
+      "url": "https://www.ljwebmanagement.com/automations/addiction-treatment-behavioral-health/referral-partner-outreach-relationship-nurture-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/addiction-treatment-behavioral-health.json"
+    },
+    {
+      "id": "automotive/maintenance-reminder-lapsed-customer-win-back-system",
+      "title": "Maintenance Reminder & Lapsed Customer Win-Back System",
+      "industry": "automotive",
+      "category": "marketing-retention",
+      "role": "Auto Repair Shop Owner",
+      "summary": "Based on the mileage and service interval recorded at each visit, this automation calculates when each customer is due for their next oil change…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/maintenance-reminder-lapsed-customer-win-back-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/repeat-buyer-loyalty-milestone-recognition",
+      "title": "Repeat Buyer Loyalty Milestone Recognition",
+      "industry": "automotive",
+      "category": "marketing-retention",
+      "role": "Customer Retention Specialist",
+      "summary": "Customers approaching a repeat purchase milestone, buying their third vehicle from the dealership for example, are automatically identified from…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/repeat-buyer-loyalty-milestone-recognition/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/new-model-year-announcement-trade-in-incentive",
+      "title": "New Model Year Announcement & Trade-In Incentive",
+      "industry": "automotive",
+      "category": "marketing-retention",
+      "role": "Dealership Sales Manager",
+      "summary": "When the new model year of a vehicle a past customer already owns is unveiled, that customer automatically receives an announcement highlighting…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/new-model-year-announcement-trade-in-incentive/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/vehicle-ownership-anniversary-offer",
+      "title": "Vehicle Ownership Anniversary Offer",
+      "industry": "automotive",
+      "category": "marketing-retention",
+      "role": "Customer Retention Specialist",
+      "summary": "Customers automatically receive a milestone thank-you or offer when they reach an ownership anniversary with their vehicle, one year, three years…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/vehicle-ownership-anniversary-offer/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "cannabis-hemp/loyalty-program-high-value-customer-re-engagement-system",
+      "title": "Loyalty Program & High-Value Customer Re-Engagement System",
+      "industry": "cannabis-hemp",
+      "category": "marketing-retention",
+      "role": "Dispensary Owner",
+      "summary": "Every purchase automatically updates the customer's loyalty point balance, and customers who hit a tier milestone receive an automatic notification…",
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/loyalty-program-high-value-customer-re-engagement-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cannabis-hemp.json"
+    },
+    {
+      "id": "commercial-real-estate/property-listing-syndication-investor-update-system",
+      "title": "Property Listing Syndication & Investor Update System",
+      "industry": "commercial-real-estate",
+      "category": "marketing-retention",
+      "role": "CRE Marketing Manager",
+      "summary": "When a property is listed for sale or lease, this automation syncs the listing details, photos, floor plans, and offering memorandum to every…",
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/property-listing-syndication-investor-update-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/commercial-real-estate.json"
+    },
+    {
+      "id": "commercial-real-estate/lease-expiration-renewal-pipeline",
+      "title": "Lease Expiration & Renewal Pipeline",
+      "industry": "commercial-real-estate",
+      "category": "marketing-retention",
+      "role": "Leasing Manager",
+      "summary": "This automation tracks every tenant lease's expiration date across a portfolio and automatically triggers a renewal outreach sequence starting 180…",
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/lease-expiration-renewal-pipeline/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/commercial-real-estate.json"
+    },
+    {
+      "id": "commercial-real-estate/vacancy-listing-syndication",
+      "title": "Vacancy Listing Syndication",
+      "industry": "commercial-real-estate",
+      "category": "marketing-retention",
+      "role": "Leasing Agent",
+      "summary": "The moment a space is marked vacant or a notice to vacate is logged, this automation automatically pushes the listing to commercial listing…",
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/vacancy-listing-syndication/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/commercial-real-estate.json"
+    },
+    {
+      "id": "dental-practices/recall-reactivation-campaign-system",
+      "title": "Recall & Reactivation Campaign System",
+      "industry": "dental-practices",
+      "category": "marketing-retention",
+      "role": "Dental Office Manager",
+      "summary": "Patients who are overdue for their 6-month cleaning receive an automated outreach sequence (a text at the first overdue month, an email at two…",
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/recall-reactivation-campaign-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/dental-practices.json"
+    },
+    {
+      "id": "dental-practices/before-after-content-pipeline-review-generation-system",
+      "title": "Before/After Content Pipeline & Review Generation System",
+      "industry": "dental-practices",
+      "category": "marketing-retention",
+      "role": "Dental Marketing Manager",
+      "summary": "After a successful cosmetic or restorative case, the patient is automatically sent a satisfaction survey, and those who respond positively are…",
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/before-after-content-pipeline-review-generation-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/dental-practices.json"
+    },
+    {
+      "id": "dental-practices/insurance-benefit-reset-reminder-system",
+      "title": "Insurance Benefit Reset Reminder System",
+      "industry": "dental-practices",
+      "category": "marketing-retention",
+      "role": "Insurance Coordinator",
+      "summary": "Starting in early November, this automation scans every active patient's insurance benefit usage and remaining treatment needs for the calendar year…",
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/insurance-benefit-reset-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/dental-practices.json"
+    },
+    {
+      "id": "driving-schools/package-hours-balance-renewal-reminder",
+      "title": "Package Hours Balance & Renewal Reminder",
+      "industry": "driving-schools",
+      "category": "marketing-retention",
+      "role": "Billing Coordinator",
+      "summary": "As a student uses lesson hours from a purchased package, this automation automatically tracks their remaining balance and sends a renewal reminder…",
+      "url": "https://www.ljwebmanagement.com/automations/driving-schools/package-hours-balance-renewal-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/driving-schools.json"
+    },
+    {
+      "id": "ecommerce-retail/post-purchase-cross-sell-review-request-sequence",
+      "title": "Post-Purchase Cross-Sell & Review Request Sequence",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Store Owner",
+      "summary": "Seven days after a customer's first order is delivered, they automatically receive a product-specific email recommending complementary items based…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/post-purchase-cross-sell-review-request-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/influencer-ugc-content-collection-publishing-pipeline",
+      "title": "Influencer & UGC Content Collection & Publishing Pipeline",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Marketing Manager",
+      "summary": "When a customer uses the brand's hashtag, tags the brand in a post, or is identified as a micro-influencer in the product niche, this automation…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/influencer-ugc-content-collection-publishing-pipeline/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/lapsed-customer-win-back-campaign",
+      "title": "Lapsed Customer Win-Back Campaign",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Ecommerce Manager",
+      "summary": "When a previously active customer crosses 90 days without a purchase, this automation pulls their purchase history and builds a personalized…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/lapsed-customer-win-back-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/vip-tier-auto-upgrade-system",
+      "title": "VIP Tier Auto-Upgrade System",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Loyalty Program Manager",
+      "summary": "As customers place orders, this automation tracks lifetime spend in real time and automatically moves them into the next loyalty tier the moment…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/vip-tier-auto-upgrade-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/multi-touch-win-back-campaign-for-lapsed-customers",
+      "title": "Multi-Touch Win-Back Campaign for Lapsed Customers",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "CRM Manager",
+      "summary": "Once a customer's purchase history in Shopify or WooCommerce shows no order in 120 days, this automation pulls their past category and brand…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/multi-touch-win-back-campaign-for-lapsed-customers/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/browsing-history-product-recommendation-email",
+      "title": "Browsing-History Product Recommendation Email",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Site Merchandiser",
+      "summary": "Using the browsing and purchase data collected in Segment or directly inside Klaviyo, this automation builds a \"you may also like\" email a few days…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/browsing-history-product-recommendation-email/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/vip-customer-auto-tagging-perks-enrollment",
+      "title": "VIP Customer Auto-Tagging & Perks Enrollment",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Loyalty Program Manager",
+      "summary": "As orders come in, this automation continuously totals each customer's lifetime spend inside Shopify or WooCommerce and, the moment a customer…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/vip-customer-auto-tagging-perks-enrollment/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/loyalty-points-expiration-reminder",
+      "title": "Loyalty Points Expiration Reminder",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Customer Loyalty Coordinator",
+      "summary": "As loyalty points inside Smile.io or LoyaltyLion approach their expiration date, this automation automatically identifies every customer with unused…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/loyalty-points-expiration-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/post-return-win-back-offer",
+      "title": "Post-Return Win-Back Offer",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Customer Retention Manager",
+      "summary": "Rather than letting a returned order be the last interaction a customer has with the brand, this automation triggers the moment a return is…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/post-return-win-back-offer/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/pre-order-launch-notification",
+      "title": "Pre-Order Launch Notification",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Product Launch Manager",
+      "summary": "Customers who place a pre-order in Shopify or WooCommerce are automatically added to a dedicated launch-day segment inside Klaviyo, separate from…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/pre-order-launch-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/gift-purchase-recipient-follow-up",
+      "title": "Gift Purchase Recipient Follow-Up",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Gifting & Promotions Manager",
+      "summary": "When a customer marks an order as a gift at checkout in Shopify or WooCommerce, this automation waits until a few days after the estimated delivery…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/gift-purchase-recipient-follow-up/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/lifetime-value-segmentation-campaign",
+      "title": "Lifetime Value Segmentation Campaign",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Customer Data Manager",
+      "summary": "Using order history pulled from Shopify or WooCommerce, this automation continuously recalculates each customer's lifetime spend and automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/lifetime-value-segmentation-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/seasonal-purchase-history-re-engagement",
+      "title": "Seasonal Purchase History Re-Engagement",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Lifecycle Marketing Manager",
+      "summary": "Using prior-year order data stored in Shopify or WooCommerce, this automation identifies every customer who bought a seasonal item, holiday decor…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/seasonal-purchase-history-re-engagement/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/vip-early-access-to-new-product-launches",
+      "title": "VIP Early Access to New Product Launches",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "VIP Experience Manager",
+      "summary": "Customers already tagged as VIP based on lifetime spend or loyalty tier inside Smile.io are automatically added to a dedicated early-access segment…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/vip-early-access-to-new-product-launches/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/birthday-month-personalized-discount-automation",
+      "title": "Birthday Month Personalized Discount Automation",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Customer Marketing Manager",
+      "summary": "Customers automatically receive a personalized discount code during their birthday month, pulled directly from their stored profile data, without…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/birthday-month-personalized-discount-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/influencer-gifted-product-content-follow-up",
+      "title": "Influencer Gifted Product Content Follow-Up",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Affiliate Marketing Manager",
+      "summary": "When a free product is sent to an influencer, the automation automatically sends a follow-up request for the agreed content and tag within the…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/influencer-gifted-product-content-follow-up/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/consumable-reorder-prediction-reminder",
+      "title": "Consumable Reorder Prediction Reminder",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Subscription Manager",
+      "summary": "Based on the typical reorder timing for a consumable product, customers automatically receive a \"running low, time to reorder\" reminder timed to…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/consumable-reorder-prediction-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/order-driven-customer-profile-enrichment",
+      "title": "Order-Driven Customer Profile Enrichment",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Customer Data Manager",
+      "summary": "Order data automatically enriches each customer's profile with category preferences and average order value, sharpening future segmentation and…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/order-driven-customer-profile-enrichment/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/inactive-subscriber-re-permission-sweep",
+      "title": "Inactive Subscriber Re-Permission Sweep",
+      "industry": "ecommerce-retail",
+      "category": "marketing-retention",
+      "role": "Lifecycle Marketing Manager",
+      "summary": "Email subscribers who haven't engaged in a long stretch automatically receive a re-permission campaign asking if they'd like to stay subscribed…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/inactive-subscriber-re-permission-sweep/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "education/early-re-enrollment-retention-campaign",
+      "title": "Early Re-Enrollment & Retention Campaign",
+      "industry": "education",
+      "category": "marketing-retention",
+      "role": "Director of Admissions",
+      "summary": "Ninety days before the current term ends, every enrolled family automatically receives a re-enrollment invitation with an early-bird tuition rate…",
+      "url": "https://www.ljwebmanagement.com/automations/education/early-re-enrollment-retention-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/education.json"
+    },
+    {
+      "id": "financial-services/birthday-milestone-life-event-outreach-system",
+      "title": "Birthday, Milestone & Life-Event Outreach System",
+      "industry": "financial-services",
+      "category": "marketing-retention",
+      "role": "Financial Advisor",
+      "summary": "Every client's birthday, portfolio anniversary, and logged life event (a retirement date, a child's college start date, a planned home purchase)…",
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/birthday-milestone-life-event-outreach-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/financial-services.json"
+    },
+    {
+      "id": "fitness-wellness/member-check-in-retention-alert-system",
+      "title": "Member Check-In & Retention Alert System",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Gym / Studio Owner",
+      "summary": "Each day, this automation flags any active member who hasn't checked in for 14 days, adds them to a win-back sequence that starts with a \"we miss…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/member-check-in-retention-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/membership-renewal-notification-system",
+      "title": "Membership Renewal Notification System",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Gym Owner",
+      "summary": "Seven days before a membership auto-renews, the member receives a clear email showing the exact charge amount and date, along with an easy upgrade…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/membership-renewal-notification-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/lapsed-member-win-back-sequence",
+      "title": "Lapsed Member Win-Back Sequence",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Gym / Studio Owner",
+      "summary": "When an active member goes 2 full weeks without a check-in, this automation triggers a \"come back\" text with a genuinely useful incentive, a free…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/lapsed-member-win-back-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/member-referral-reward-automation",
+      "title": "Member Referral Reward Automation",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Gym Owner",
+      "summary": "Each member gets a unique referral link they can text or share directly, and when a referred friend signs up and completes their first month, both…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/member-referral-reward-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/progress-milestone-celebration-system",
+      "title": "Progress Milestone Celebration System",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Personal Trainer",
+      "summary": "As check-in data and workout logs come in, this automation watches for milestones, a 25th check-in, a 90-day attendance streak, a personal best on a…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/progress-milestone-celebration-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/membership-renewal-lapse-alert-system",
+      "title": "Membership Renewal & Lapse Alert System",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Membership Coordinator",
+      "summary": "Members are automatically notified before their renewal date with a one-click renew option, and staff are automatically flagged the moment a…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/membership-renewal-lapse-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/missed-visit-win-back-automation",
+      "title": "Missed-Visit Win-Back Automation",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Retention Specialist",
+      "summary": "A member who hasn't checked in for a defined number of days automatically receives a friendly re-engagement message, catching attrition before it…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/missed-visit-win-back-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/birthday-offer-automation",
+      "title": "Birthday Offer Automation",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Salon Owner",
+      "summary": "Members and clients automatically receive a personalized discount or offer during the week of their birthday, pulled directly from their profile…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/birthday-offer-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/referral-reward-tracking-automation",
+      "title": "Referral Reward Tracking Automation",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Loyalty Coordinator",
+      "summary": "When a referred friend signs up, the system automatically detects the connection and triggers the promised reward, a free class or a discount, to…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/referral-reward-tracking-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/training-package-expiration-renewal-alert",
+      "title": "Training Package Expiration Renewal Alert",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Client Success Coordinator",
+      "summary": "Clients nearing the end of a purchased personal training package automatically receive a renewal offer before their sessions run out, instead of the…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/training-package-expiration-renewal-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/retail-restock-notification-for-members",
+      "title": "Retail Restock Notification for Members",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Retail Manager",
+      "summary": "Members who asked about an out-of-stock retail item, supplements, apparel, equipment, automatically receive a notification the moment it's back in…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/retail-restock-notification-for-members/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/milestone-achievement-celebration-automation",
+      "title": "Milestone Achievement Celebration Automation",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Member Experience Manager",
+      "summary": "The automation automatically detects member milestones, a 100th check-in, a one-year anniversary, and sends a congratulatory message, sometimes…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/milestone-achievement-celebration-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/cancellation-retention-offer-automation",
+      "title": "Cancellation Retention Offer Automation",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Cancellation Specialist",
+      "summary": "When a member submits an online cancellation request, an automatic retention offer, a pause option or a discount, is presented before the…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/cancellation-retention-offer-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/new-program-launch-announcement",
+      "title": "New Program Launch Announcement",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Program Director",
+      "summary": "When a new class or program is added to the schedule, members whose profile matches the relevant interest tags automatically receive an email or…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/new-program-launch-announcement/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/app-login-inactivity-re-engagement-nudge",
+      "title": "App Login Inactivity Re-Engagement Nudge",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Retention Specialist",
+      "summary": "Members who haven't logged into the booking app in a while automatically receive a re-engagement message highlighting new classes or features they…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/app-login-inactivity-re-engagement-nudge/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/annual-health-screening-referral-reminder",
+      "title": "Annual Health Screening Referral Reminder",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Wellness Director",
+      "summary": "Members due for a routine annual health screening automatically receive a referral reminder pointing them to a partnered health provider, instead of…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/annual-health-screening-referral-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/class-pack-balance-low-reminder",
+      "title": "Class Pack Balance Low Reminder",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Billing Coordinator",
+      "summary": "Members using a punch card or class pack automatically get notified as their remaining balance runs low, prompting a timely repurchase before it…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/class-pack-balance-low-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "general-business/subscription-renewal-outreach-cadence",
+      "title": "Subscription Renewal Outreach Cadence",
+      "industry": "general-business",
+      "category": "marketing-retention",
+      "role": "Renewals Manager",
+      "summary": "Ninety days before any customer's subscription renewal date stored in the CRM, an automated cadence kicks off in HubSpot: a check-in email at day…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/subscription-renewal-outreach-cadence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/referral-program-tracking-payout-automation",
+      "title": "Referral Program Tracking & Payout Automation",
+      "industry": "general-business",
+      "category": "marketing-retention",
+      "role": "Partnerships Manager",
+      "summary": "When an existing customer or partner submits a referral through a branded form built in JotForm, the record automatically creates a new lead in…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/referral-program-tracking-payout-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/automated-new-subscriber-welcome-sequence",
+      "title": "Automated New-Subscriber Welcome Sequence",
+      "industry": "general-business",
+      "category": "marketing-retention",
+      "role": "Email Marketing Manager",
+      "summary": "The moment a new contact submits a signup form on the website or checkout page, they're added to Mailchimp with a source tag, and a five-part…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/automated-new-subscriber-welcome-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/cross-platform-social-post-scheduling-and-recycling",
+      "title": "Cross-Platform Social Post Scheduling and Recycling",
+      "industry": "general-business",
+      "category": "marketing-retention",
+      "role": "Social Media Manager",
+      "summary": "Every piece of approved content, blog posts, product announcements, customer wins, gets drafted once in Canva, logged into an Airtable content…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/cross-platform-social-post-scheduling-and-recycling/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/editorial-content-calendar-deadline-reminders",
+      "title": "Editorial Content Calendar Deadline Reminders",
+      "industry": "general-business",
+      "category": "marketing-retention",
+      "role": "Content Marketing Coordinator",
+      "summary": "Every content piece scheduled in the Airtable editorial calendar, whether it's a blog post, case study, or email newsletter, carries a draft-due…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/editorial-content-calendar-deadline-reminders/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/birthday-and-anniversary-offer-automation",
+      "title": "Birthday and Anniversary Offer Automation",
+      "industry": "general-business",
+      "category": "marketing-retention",
+      "role": "Brand Manager",
+      "summary": "Customer birthdates and signup anniversaries captured at checkout or during account creation feed into Klaviyo, which automatically triggers a…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/birthday-and-anniversary-offer-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/loyalty-milestone-reward-triggers",
+      "title": "Loyalty Milestone Reward Triggers",
+      "industry": "general-business",
+      "category": "marketing-retention",
+      "role": "Loyalty Program Manager",
+      "summary": "Every purchase, referral, or review a customer completes adds points to their loyalty account tracked in a platform like Smile.io, and once a…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/loyalty-milestone-reward-triggers/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/lapsed-customer-win-back-campaign",
+      "title": "Lapsed Customer Win-Back Campaign",
+      "industry": "general-business",
+      "category": "marketing-retention",
+      "role": "Customer Retention Manager",
+      "summary": "When a customer hasn't made a purchase or booked a service in 90 days, a scheduled query in the CRM flags them as lapsed and Zapier automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/lapsed-customer-win-back-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/webinar-registration-and-follow-up-sequence",
+      "title": "Webinar Registration and Follow-Up Sequence",
+      "industry": "general-business",
+      "category": "marketing-retention",
+      "role": "Events Marketing Manager",
+      "summary": "Every registrant who signs up through the Zoom or Eventbrite registration form is instantly added to a dedicated Mailchimp automation that sends a…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/webinar-registration-and-follow-up-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/retargeting-audience-sync-across-ad-platforms",
+      "title": "Retargeting Audience Sync Across Ad Platforms",
+      "industry": "general-business",
+      "category": "marketing-retention",
+      "role": "Growth Marketing Manager",
+      "summary": "Customer and website visitor segments built in the CRM (recent purchasers, cart abandoners, high-intent page visitors) sync automatically every six…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/retargeting-audience-sync-across-ad-platforms/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/email-list-segmentation-and-hygiene",
+      "title": "Email List Segmentation and Hygiene",
+      "industry": "general-business",
+      "category": "marketing-retention",
+      "role": "Marketing Operations Manager",
+      "summary": "Every week, Zapier runs a scheduled scan across the Mailchimp database checking for hard bounces, spam complaints, and contacts who haven't opened…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/email-list-segmentation-and-hygiene/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/membership-renewal-and-retention-sequence",
+      "title": "Membership Renewal and Retention Sequence",
+      "industry": "general-business",
+      "category": "marketing-retention",
+      "role": "Membership Manager",
+      "summary": "Sixty days before a membership or subscription is set to expire, the CRM automatically flags the account and Zapier kicks off a renewal sequence…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/membership-renewal-and-retention-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/ai-assisted-ad-copy-and-landing-page-variant-generator",
+      "title": "AI-Assisted Ad Copy and Landing Page Variant Generator",
+      "industry": "general-business",
+      "category": "marketing-retention",
+      "role": "Conversion Rate Optimization Manager",
+      "summary": "When a campaign brief is added to Airtable with the offer, target audience, and key benefits, Zapier passes those details to the OpenAI API, which…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/ai-assisted-ad-copy-and-landing-page-variant-generator/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "healthcare/annual-wellness-visit-outreach-campaign",
+      "title": "Annual Wellness Visit Outreach Campaign",
+      "industry": "healthcare",
+      "category": "marketing-retention",
+      "role": "Medicare Program Coordinator",
+      "summary": "Each month, this automation automatically scans the patient roster for Medicare patients who are eligible for their annual wellness visit and…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/annual-wellness-visit-outreach-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/population-health-screening-outreach-campaign",
+      "title": "Population Health Screening Outreach Campaign",
+      "industry": "healthcare",
+      "category": "marketing-retention",
+      "role": "Population Health Manager",
+      "summary": "This automation automatically identifies patient segments who are overdue for a specific test or screening, such as diabetic patients overdue for an…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/population-health-screening-outreach-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "home-services/seasonal-reactivation-referral-campaign-system",
+      "title": "Seasonal Reactivation & Referral Campaign System",
+      "industry": "home-services",
+      "category": "marketing-retention",
+      "role": "Business Owner",
+      "summary": "Three times a year (at the start of cooling season, heating season, and the spring tune-up window) this automation sends a targeted outreach…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/seasonal-reactivation-referral-campaign-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/maintenance-plan-renewal-upsell-campaign",
+      "title": "Maintenance Plan Renewal & Upsell Campaign",
+      "industry": "home-services",
+      "category": "marketing-retention",
+      "role": "Service Manager",
+      "summary": "Thirty days before a customer's annual maintenance plan expires, this automation triggers a renewal sequence: a personalized email with the…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/maintenance-plan-renewal-upsell-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/automated-contract-renewal-payment-links",
+      "title": "Automated Contract Renewal & Payment Links",
+      "industry": "home-services",
+      "category": "marketing-retention",
+      "role": "Billing Coordinator",
+      "summary": "Forty-five days before a customer's service contract is set to expire, this automation generates a renewal invoice with a one-click payment link and…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/automated-contract-renewal-payment-links/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/automated-referral-tracking-rewards",
+      "title": "Automated Referral Tracking & Rewards",
+      "industry": "home-services",
+      "category": "marketing-retention",
+      "role": "Marketing Coordinator",
+      "summary": "Every customer who completes a job is sent a unique referral link a few days after the invoice is paid, and any new customer who books through that…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/automated-referral-tracking-rewards/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/maintenance-plan-renewal-reminders",
+      "title": "Maintenance Plan Renewal Reminders",
+      "industry": "home-services",
+      "category": "marketing-retention",
+      "role": "Membership Coordinator",
+      "summary": "Thirty and again ten days before a customer's maintenance plan is set to renew, this automation sends a reminder email and text summarizing what the…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/maintenance-plan-renewal-reminders/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/referral-program-auto-tracking-payout",
+      "title": "Referral Program Auto-Tracking & Payout",
+      "industry": "home-services",
+      "category": "marketing-retention",
+      "role": "Customer Loyalty Coordinator",
+      "summary": "When an existing customer refers a new client, whether through a shared link or by simply giving out their name, this automation logs the referral…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/referral-program-auto-tracking-payout/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/new-service-area-expansion-announcement",
+      "title": "New Service Area Expansion Announcement",
+      "industry": "home-services",
+      "category": "marketing-retention",
+      "role": "Growth Marketing Manager",
+      "summary": "When the company adds a new zip code or service area to its coverage map, this automation automatically pulls every past inquiry from that area that…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/new-service-area-expansion-announcement/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/new-homeowner-welcome-offer-automation",
+      "title": "New Homeowner Welcome Offer Automation",
+      "industry": "home-services",
+      "category": "marketing-retention",
+      "role": "Growth Marketing Manager",
+      "summary": "Using public property records, the automation automatically identifies newly sold homes within the service area and sends the new owner a welcome…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/new-homeowner-welcome-offer-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "insurance/policy-renewal-reminder-system",
+      "title": "Policy Renewal Reminder System",
+      "industry": "insurance",
+      "category": "marketing-retention",
+      "role": "Renewal Specialist",
+      "summary": "Sixty days before any policy on the book is set to renew, this automation pulls the renewal date directly from the agency management system (AMS360…",
+      "url": "https://www.ljwebmanagement.com/automations/insurance/policy-renewal-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/insurance.json"
+    },
+    {
+      "id": "insurance/life-event-trigger-outreach-system",
+      "title": "Life-Event Trigger Outreach System",
+      "industry": "insurance",
+      "category": "marketing-retention",
+      "role": "Personal Lines Producer",
+      "summary": "Clients are invited to share upcoming milestones (a marriage, a new home purchase, a new baby, a teen driver) directly through a short update form…",
+      "url": "https://www.ljwebmanagement.com/automations/insurance/life-event-trigger-outreach-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/insurance.json"
+    },
+    {
+      "id": "insurance/circumstance-aware-renewal-outreach",
+      "title": "Circumstance-Aware Renewal Outreach",
+      "industry": "insurance",
+      "category": "marketing-retention",
+      "role": "Renewal Coordinator",
+      "summary": "Sixty, thirty, and seven days before a policy is set to renew, this automation checks the CRM for any noted change in the client's circumstances, a…",
+      "url": "https://www.ljwebmanagement.com/automations/insurance/circumstance-aware-renewal-outreach/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/insurance.json"
+    },
+    {
+      "id": "insurance/lapsed-policy-win-back-campaign",
+      "title": "Lapsed Policy Win-Back Campaign",
+      "industry": "insurance",
+      "category": "marketing-retention",
+      "role": "Retention Specialist",
+      "summary": "When a policy lapses due to non-payment or non-renewal, this automation automatically enrolls the former client in a 90-day win-back sequence that…",
+      "url": "https://www.ljwebmanagement.com/automations/insurance/lapsed-policy-win-back-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/insurance.json"
+    },
+    {
+      "id": "interior-design-home-staging/portfolio-content-pipeline-referral-outreach-system",
+      "title": "Portfolio Content Pipeline & Referral Outreach System",
+      "industry": "interior-design-home-staging",
+      "category": "marketing-retention",
+      "role": "Design Marketing Manager",
+      "summary": "When a project is completed and the client has signed off, this automation sends a project photography consent form and (once approved) schedules a…",
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/portfolio-content-pipeline-referral-outreach-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/interior-design-home-staging.json"
+    },
+    {
+      "id": "landscaping-lawn-care/seasonal-contract-renewal-automation",
+      "title": "Seasonal Contract Renewal Automation",
+      "industry": "landscaping-lawn-care",
+      "category": "marketing-retention",
+      "role": "Account Manager",
+      "summary": "As a customer's seasonal service contract nears its end, this automation automatically sends a renewal offer with updated pricing, and flags the…",
+      "url": "https://www.ljwebmanagement.com/automations/landscaping-lawn-care/seasonal-contract-renewal-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/landscaping-lawn-care.json"
+    },
+    {
+      "id": "laundry-dry-cleaning/loyalty-punch-card-digital-tracker",
+      "title": "Loyalty Punch Card Digital Tracker",
+      "industry": "laundry-dry-cleaning",
+      "category": "marketing-retention",
+      "role": "Store Owner",
+      "summary": "This automation automatically tracks each customer's order count toward a loyalty reward digitally, notifying them by text when they've earned a…",
+      "url": "https://www.ljwebmanagement.com/automations/laundry-dry-cleaning/loyalty-punch-card-digital-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/laundry-dry-cleaning.json"
+    },
+    {
+      "id": "legal/referral-partner-tracking-nurture-system",
+      "title": "Referral Partner Tracking & Nurture System",
+      "industry": "legal",
+      "category": "marketing-retention",
+      "role": "Legal Marketing Manager",
+      "summary": "Every time a new client lists a referral source during intake, the system logs the referring attorney, accountant, or business contact, updates…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/referral-partner-tracking-nurture-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/webinar-signup-to-nurture-sequence-automation",
+      "title": "Webinar Signup to Nurture Sequence Automation",
+      "industry": "legal",
+      "category": "marketing-retention",
+      "role": "Events & Marketing Coordinator",
+      "summary": "Anyone who registers for a free legal webinar or seminar through the firm's registration page in Jotform is automatically added to a topic-specific…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/webinar-signup-to-nurture-sequence-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/past-client-relationship-check-in-automation",
+      "title": "Past Client Relationship Check-In Automation",
+      "industry": "legal",
+      "category": "marketing-retention",
+      "role": "Client Retention Specialist",
+      "summary": "Former clients whose matters closed more than six months earlier are automatically enrolled in a periodic check-in sequence in Mailchimp, receiving…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/past-client-relationship-check-in-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/new-practice-area-cross-marketing-automation",
+      "title": "New Practice Area Cross-Marketing Automation",
+      "industry": "legal",
+      "category": "marketing-retention",
+      "role": "Legal Marketing Manager",
+      "summary": "Existing clients automatically receive information about a newly added practice area that's genuinely relevant to their profile, estate planning…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/new-practice-area-cross-marketing-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "manufacturing/customer-reorder-reminder-account-growth-alert",
+      "title": "Customer Reorder Reminder & Account Growth Alert",
+      "industry": "manufacturing",
+      "category": "marketing-retention",
+      "role": "Manufacturing Sales Representative",
+      "summary": "Based on each customer's historical purchase cycle, this automation calculates when they are likely due to reorder and sends the sales rep a prompt…",
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/customer-reorder-reminder-account-growth-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/manufacturing.json"
+    },
+    {
+      "id": "marketing-agencies/churn-risk-flag-system",
+      "title": "Churn Risk Flag System",
+      "industry": "marketing-agencies",
+      "category": "marketing-retention",
+      "role": "Retention Specialist",
+      "summary": "Every month, this automation compares each client's current email open rates, meeting attendance, and average response time against their trailing…",
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/churn-risk-flag-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/marketing-agencies.json"
+    },
+    {
+      "id": "media-publishing/subscription-renewal-churn-prevention-campaign",
+      "title": "Subscription Renewal & Churn Prevention Campaign",
+      "industry": "media-publishing",
+      "category": "marketing-retention",
+      "role": "Digital Publisher",
+      "summary": "Thirty days before a subscriber's renewal date, this automation sends a personalized renewal confirmation with a summary of what the subscription…",
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/subscription-renewal-churn-prevention-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/media-publishing.json"
+    },
+    {
+      "id": "media-publishing/content-performance-alert-repurposing-trigger-system",
+      "title": "Content Performance Alert & Repurposing Trigger System",
+      "industry": "media-publishing",
+      "category": "marketing-retention",
+      "role": "Content Marketing Director",
+      "summary": "Every 24 hours, this automation checks performance data across the content library (page views, time on page, backlinks acquired, and social shares)…",
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/content-performance-alert-repurposing-trigger-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/media-publishing.json"
+    },
+    {
+      "id": "media-publishing/content-calendar-to-multi-channel-publish",
+      "title": "Content Calendar-to-Multi-Channel Publish",
+      "industry": "media-publishing",
+      "category": "marketing-retention",
+      "role": "Content Manager",
+      "summary": "Once a piece of content is marked approved in the editorial calendar, this automation automatically formats and schedules it for publishing across…",
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/content-calendar-to-multi-channel-publish/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/media-publishing.json"
+    },
+    {
+      "id": "media-publishing/subscriber-win-back-sequence",
+      "title": "Subscriber Win-Back Sequence",
+      "industry": "media-publishing",
+      "category": "marketing-retention",
+      "role": "Newsletter Editor",
+      "summary": "When a subscriber's engagement, opens, clicks, site visits, drops to zero for a set period, this automation automatically enrolls them in a win-back…",
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/subscriber-win-back-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/media-publishing.json"
+    },
+    {
+      "id": "nonprofit/donor-acknowledgment-stewardship-drip-system",
+      "title": "Donor Acknowledgment & Stewardship Drip System",
+      "industry": "nonprofit",
+      "category": "marketing-retention",
+      "role": "Development Manager",
+      "summary": "Every donation (regardless of size or channel) triggers an immediate, personalized thank-you email within minutes, followed by a tax receipt within…",
+      "url": "https://www.ljwebmanagement.com/automations/nonprofit/donor-acknowledgment-stewardship-drip-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/nonprofit.json"
+    },
+    {
+      "id": "nonprofit/fundraising-event-registration-communication-system",
+      "title": "Fundraising Event Registration & Communication System",
+      "industry": "nonprofit",
+      "category": "marketing-retention",
+      "role": "Nonprofit Event Manager",
+      "summary": "Event registration is handled through a branded page that captures guest information, meal preference, table assignments, and donation amount, and…",
+      "url": "https://www.ljwebmanagement.com/automations/nonprofit/fundraising-event-registration-communication-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/nonprofit.json"
+    },
+    {
+      "id": "nonprofit/recurring-donor-engagement-retention-sequence",
+      "title": "Recurring Donor Engagement & Retention Sequence",
+      "industry": "nonprofit",
+      "category": "marketing-retention",
+      "role": "Donor Relations Manager",
+      "summary": "Recurring donors are automatically enrolled in a dedicated communication track separate from one-time givers, receiving a thank-you message after…",
+      "url": "https://www.ljwebmanagement.com/automations/nonprofit/recurring-donor-engagement-retention-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/nonprofit.json"
+    },
+    {
+      "id": "nonprofit/lapsed-donor-win-back-campaign",
+      "title": "Lapsed Donor Win-Back Campaign",
+      "industry": "nonprofit",
+      "category": "marketing-retention",
+      "role": "Annual Fund Manager",
+      "summary": "Every donor record is monitored continuously for giving activity, and any donor who hasn't made a gift in 12 months or more is automatically flagged…",
+      "url": "https://www.ljwebmanagement.com/automations/nonprofit/lapsed-donor-win-back-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/nonprofit.json"
+    },
+    {
+      "id": "nonprofit/fundraiser-rsvp-day-of-reminder-system",
+      "title": "Fundraiser RSVP & Day-Of Reminder System",
+      "industry": "nonprofit",
+      "category": "marketing-retention",
+      "role": "Special Events Coordinator",
+      "summary": "Guests who RSVP to a fundraiser or community event through the registration page are automatically added to the guest list, sent a calendar invite…",
+      "url": "https://www.ljwebmanagement.com/automations/nonprofit/fundraiser-rsvp-day-of-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/nonprofit.json"
+    },
+    {
+      "id": "photography-videography/client-anniversary-re-engagement",
+      "title": "Client Anniversary Re-Engagement",
+      "industry": "photography-videography",
+      "category": "marketing-retention",
+      "role": "Studio Owner",
+      "summary": "For portrait and family photographers, this automation automatically reaches out to past clients around the one-year mark from their last session…",
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/client-anniversary-re-engagement/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/photography-videography.json"
+    },
+    {
+      "id": "professional-services/media-pitch-tracker-press-mention-alert-system",
+      "title": "Media Pitch Tracker & Press Mention Alert System",
+      "industry": "professional-services",
+      "category": "marketing-retention",
+      "role": "Public Relations Manager",
+      "summary": "Outbound pitches are logged in a CRM the moment they're sent, and the system automatically follows up with journalists who haven't responded in five…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/media-pitch-tracker-press-mention-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/policy-renewal-automation",
+      "title": "Policy Renewal Automation",
+      "industry": "professional-services",
+      "category": "marketing-retention",
+      "role": "Insurance Agent",
+      "summary": "Insurance clients automatically receive a renewal notice showing their current premium alongside a simple link to renew, sent well ahead of the…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/policy-renewal-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/referral-partner-milestone-notification",
+      "title": "Referral Partner Milestone Notification",
+      "industry": "professional-services",
+      "category": "marketing-retention",
+      "role": "Referral Partner Manager",
+      "summary": "Referring partners such as CPAs, attorneys, or other advisors are automatically notified when a mutual client's engagement reaches a key milestone…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/referral-partner-milestone-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/client-life-event-outreach-trigger",
+      "title": "Client Life-Event Outreach Trigger",
+      "industry": "professional-services",
+      "category": "marketing-retention",
+      "role": "Financial Advisor",
+      "summary": "Life events logged in the CRM, a marriage, a new child, a home purchase, automatically trigger a relevant outreach or service recommendation, such…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/client-life-event-outreach-trigger/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/referral-thank-you-automation",
+      "title": "Referral Thank-You Automation",
+      "industry": "professional-services",
+      "category": "marketing-retention",
+      "role": "Referral Partner Manager",
+      "summary": "When a client refers new business to the firm, the automation automatically sends a thank-you note or small reward the same week, reinforcing the…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/referral-thank-you-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "property-management/90-60-30-day-lease-renewal-countdown-sequence",
+      "title": "90/60/30-Day Lease Renewal Countdown Sequence",
+      "industry": "property-management",
+      "category": "marketing-retention",
+      "role": "Leasing Manager",
+      "summary": "Both the tenant and the leasing manager are automatically notified on a fixed schedule, 90, 60, and 30 days out, before a lease expires, so a…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/90-60-30-day-lease-renewal-countdown-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/instant-vacancy-listing-syndication",
+      "title": "Instant Vacancy Listing Syndication",
+      "industry": "property-management",
+      "category": "marketing-retention",
+      "role": "Marketing Coordinator",
+      "summary": "The moment a unit is marked available in the property management platform, its listing, photos, price, and availability date included, is…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/instant-vacancy-listing-syndication/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/personalized-lease-renewal-offer-generator",
+      "title": "Personalized Lease Renewal Offer Generator",
+      "industry": "property-management",
+      "category": "marketing-retention",
+      "role": "Leasing Manager",
+      "summary": "As a lease renewal approaches, the automation automatically generates a personalized renewal offer based on the tenant's actual payment history and…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/personalized-lease-renewal-offer-generator/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/resident-referral-reward-tracking-automation",
+      "title": "Resident Referral Reward Tracking Automation",
+      "industry": "property-management",
+      "category": "marketing-retention",
+      "role": "Marketing Coordinator",
+      "summary": "When a current resident refers a new tenant who ends up signing a lease, the referral is automatically tracked from the moment the new applicant…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/resident-referral-reward-tracking-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/upcoming-vacant-unit-media-request-automation",
+      "title": "Upcoming-Vacant Unit Media Request Automation",
+      "industry": "property-management",
+      "category": "marketing-retention",
+      "role": "Marketing Coordinator",
+      "summary": "When a unit is marked as upcoming-vacant, the automation automatically requests that updated photos or a video walkthrough be scheduled before the…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/upcoming-vacant-unit-media-request-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "real-estate/lease-renewal-campaign-vacancy-launch-system",
+      "title": "Lease Renewal Campaign & Vacancy Launch System",
+      "industry": "real-estate",
+      "category": "marketing-retention",
+      "role": "Property Manager",
+      "summary": "Ninety days before each lease expiration, tenants automatically receive a personalized renewal offer with the new rate and a deadline to respond.",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/lease-renewal-campaign-vacancy-launch-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/client-anniversary-referral-ask-system",
+      "title": "Client Anniversary & Referral Ask System",
+      "industry": "real-estate",
+      "category": "marketing-retention",
+      "role": "Client Retention Specialist",
+      "summary": "On the anniversary of every past client's closing date, the system automatically sends a personalized email with a current market snapshot for their…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/client-anniversary-referral-ask-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/price-drop-listing-anniversary-re-engagement-alerts",
+      "title": "Price-Drop & Listing Anniversary Re-Engagement Alerts",
+      "industry": "real-estate",
+      "category": "marketing-retention",
+      "role": "Buyer's Specialist",
+      "summary": "Every buyer who previously inquired about a specific property stays quietly tracked against that listing long after the initial conversation ends.",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/price-drop-listing-anniversary-re-engagement-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/referral-partner-status-notification-loop",
+      "title": "Referral Partner Status Notification Loop",
+      "industry": "real-estate",
+      "category": "marketing-retention",
+      "role": "Referral Partner Manager",
+      "summary": "When a new lead's source is tagged as a referral partner, a lender, home inspector, or past client, the automation automatically notifies that…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/referral-partner-status-notification-loop/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/new-listing-to-social-media-post-generator",
+      "title": "New Listing to Social Media Post Generator",
+      "industry": "real-estate",
+      "category": "marketing-retention",
+      "role": "Marketing Director",
+      "summary": "As soon as a new listing goes live in the MLS feed, this automation automatically pulls the photos, price, bed and bath count, and key highlights…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/new-listing-to-social-media-post-generator/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/past-client-home-anniversary-check-in-system",
+      "title": "Past Client Home-Anniversary Check-In System",
+      "industry": "real-estate",
+      "category": "marketing-retention",
+      "role": "Client Relations Coordinator",
+      "summary": "On the exact anniversary of a client's home purchase, the automation automatically sends a personalized check-in email that includes a current…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/past-client-home-anniversary-check-in-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/post-closing-move-in-service-referral-system",
+      "title": "Post-Closing Move-In Service Referral System",
+      "industry": "real-estate",
+      "category": "marketing-retention",
+      "role": "Move Concierge",
+      "summary": "The moment a transaction closes, the buyer automatically receives a welcome email curated by the move concierge automation, listing recommended…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/post-closing-move-in-service-referral-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/virtual-tour-auto-distribution-system",
+      "title": "Virtual Tour Auto-Distribution System",
+      "industry": "real-estate",
+      "category": "marketing-retention",
+      "role": "Multimedia Marketing Coordinator",
+      "summary": "The moment a new listing goes live, the automation automatically generates the finished virtual tour and video walkthrough link from the media…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/virtual-tour-auto-distribution-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/neighborhood-market-report-subscription-system",
+      "title": "Neighborhood Market Report Subscription System",
+      "industry": "real-estate",
+      "category": "marketing-retention",
+      "role": "Content Marketing Manager",
+      "summary": "Website visitors can subscribe to ongoing updates for a specific neighborhood directly from the site, and each month the automation automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/neighborhood-market-report-subscription-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/closing-gift-milestone-delivery-automation",
+      "title": "Closing Gift & Milestone Delivery Automation",
+      "industry": "real-estate",
+      "category": "marketing-retention",
+      "role": "Client Experience Manager",
+      "summary": "The moment a transaction's status changes to closed, the automation automatically triggers an order for a client closing gift through the…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/closing-gift-milestone-delivery-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/neighborhood-sold-comp-alert-to-homeowners",
+      "title": "Neighborhood Sold Comp Alert to Homeowners",
+      "industry": "real-estate",
+      "category": "marketing-retention",
+      "role": "Farming & Prospecting Specialist",
+      "summary": "Homeowners in a farmed neighborhood automatically receive a notification when a comparable home nearby sells, including the sale price and a short…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/neighborhood-sold-comp-alert-to-homeowners/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "renewable-energy-solar/warranty-maintenance-renewal-reminder",
+      "title": "Warranty & Maintenance Renewal Reminder",
+      "industry": "renewable-energy-solar",
+      "category": "marketing-retention",
+      "role": "Customer Success Manager",
+      "summary": "As equipment warranties approach expiration, this automation automatically reaches out to the homeowner with maintenance plan or extended warranty…",
+      "url": "https://www.ljwebmanagement.com/automations/renewable-energy-solar/warranty-maintenance-renewal-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/renewable-energy-solar.json"
+    },
+    {
+      "id": "restaurants-food-service/daily-location-announcement-pre-order-system",
+      "title": "Daily Location Announcement & Pre-Order System",
+      "industry": "restaurants-food-service",
+      "category": "marketing-retention",
+      "role": "Food Truck Owner",
+      "summary": "Each morning, the owner confirms the day's location in a simple form, and the system automatically posts it to Facebook, Instagram, and Google…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/daily-location-announcement-pre-order-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/slow-night-demand-trigger-promo-blast",
+      "title": "Slow-Night Demand Trigger & Promo Blast",
+      "industry": "restaurants-food-service",
+      "category": "marketing-retention",
+      "role": "Marketing Coordinator",
+      "summary": "The system checks reservation volume for each upcoming night against a rolling average for that day of the week, and when bookings for, say, a…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/slow-night-demand-trigger-promo-blast/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/birthday-club-auto-offer-system",
+      "title": "Birthday Club Auto-Offer System",
+      "industry": "restaurants-food-service",
+      "category": "marketing-retention",
+      "role": "Guest Relations Manager",
+      "summary": "Birthdays collected at checkout, on receipts, through a loyalty app, or via a simple sign-up form, feed automatically into a guest database, and on…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/birthday-club-auto-offer-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/birthday-anniversary-offer-automation",
+      "title": "Birthday & Anniversary Offer Automation",
+      "industry": "restaurants-food-service",
+      "category": "marketing-retention",
+      "role": "Loyalty Program Manager",
+      "summary": "Roughly a week ahead of a loyalty member's birthday or dining anniversary, the system automatically pulls the date from the loyalty platform and…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/birthday-anniversary-offer-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/loyalty-milestone-progress-alert",
+      "title": "Loyalty Milestone Progress Alert",
+      "industry": "restaurants-food-service",
+      "category": "marketing-retention",
+      "role": "Loyalty Enrollment Specialist",
+      "summary": "As a loyalty member's points balance approaches the threshold for their next reward, the system automatically sends a text nudging them that they're…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/loyalty-milestone-progress-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/slow-night-flash-promotion-trigger",
+      "title": "Slow-Night Flash Promotion Trigger",
+      "industry": "restaurants-food-service",
+      "category": "marketing-retention",
+      "role": "Revenue Manager",
+      "summary": "The system continuously analyzes historical reservation and cover data to identify shifts that run consistently under capacity, a slow Tuesday, a…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/slow-night-flash-promotion-trigger/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/gift-card-purchase-remaining-balance-reminder",
+      "title": "Gift Card Purchase & Remaining Balance Reminder",
+      "industry": "restaurants-food-service",
+      "category": "marketing-retention",
+      "role": "Gift Card Program Administrator",
+      "summary": "An online gift card purchase automatically triggers a delivery confirmation to the buyer along with a scheduled send date if it was purchased as a…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/gift-card-purchase-remaining-balance-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/new-menu-launch-announcement-campaign",
+      "title": "New Menu Launch Announcement Campaign",
+      "industry": "restaurants-food-service",
+      "category": "marketing-retention",
+      "role": "Menu Development Manager",
+      "summary": "The day a new seasonal menu goes live, the loyalty list and email subscribers automatically receive an announcement featuring the new dishes with…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/new-menu-launch-announcement-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/wine-beverage-club-renewal-reminder",
+      "title": "Wine & Beverage Club Renewal Reminder",
+      "industry": "restaurants-food-service",
+      "category": "marketing-retention",
+      "role": "Beverage Director",
+      "summary": "Members of the wine or beverage club automatically receive a shipment notification and renewal reminder ahead of each billing cycle, along with the…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/wine-beverage-club-renewal-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/daypart-promotion-automation",
+      "title": "Daypart Promotion Automation",
+      "industry": "restaurants-food-service",
+      "category": "marketing-retention",
+      "role": "Marketing Coordinator",
+      "summary": "For dayparts that historically run quiet, an early lunch hour, a slow midweek happy hour, the system automatically sends a targeted promotion to…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/daypart-promotion-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/post-visit-loyalty-sign-up-prompt",
+      "title": "Post-Visit Loyalty Sign-Up Prompt",
+      "industry": "restaurants-food-service",
+      "category": "marketing-retention",
+      "role": "Guest Relations Manager",
+      "summary": "Guests who pay their check and aren't already loyalty program members automatically receive a text or email invitation to join right after their…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/post-visit-loyalty-sign-up-prompt/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/holiday-reservation-early-booking-push-campaign",
+      "title": "Holiday Reservation Early-Booking Push Campaign",
+      "industry": "restaurants-food-service",
+      "category": "marketing-retention",
+      "role": "Marketing Coordinator",
+      "summary": "Ahead of major holidays, past guests automatically receive an email encouraging them to book early, timed to land well before the restaurant's…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/holiday-reservation-early-booking-push-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/new-location-opening-waitlist-automation",
+      "title": "New Location Opening Waitlist Automation",
+      "industry": "restaurants-food-service",
+      "category": "marketing-retention",
+      "role": "Multi-Unit Director",
+      "summary": "Interest signups for an upcoming new restaurant location are automatically captured, and when the location actually opens, those signups…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/new-location-opening-waitlist-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "salons-spas-barbershops/birthday-first-visit-anniversary-offer-system",
+      "title": "Birthday & First-Visit Anniversary Offer System",
+      "industry": "salons-spas-barbershops",
+      "category": "marketing-retention",
+      "role": "Spa Director",
+      "summary": "Client birthdays and first-visit dates are pulled automatically from the booking platform each morning, and anyone with a birthday or first-visit…",
+      "url": "https://www.ljwebmanagement.com/automations/salons-spas-barbershops/birthday-first-visit-anniversary-offer-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/salons-spas-barbershops.json"
+    },
+    {
+      "id": "salons-spas-barbershops/retail-product-restock-reminder-system",
+      "title": "Retail Product Restock Reminder System",
+      "industry": "salons-spas-barbershops",
+      "category": "marketing-retention",
+      "role": "Retail Sales Associate",
+      "summary": "Based on the size of the product a client purchased and its average days-to-empty (a 2-ounce serum lasts about 60 days, a shampoo bottle about 45)…",
+      "url": "https://www.ljwebmanagement.com/automations/salons-spas-barbershops/retail-product-restock-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/salons-spas-barbershops.json"
+    },
+    {
+      "id": "staffing-recruiting/placement-anniversary-check-in",
+      "title": "Placement Anniversary Check-In",
+      "industry": "staffing-recruiting",
+      "category": "marketing-retention",
+      "role": "Account Manager",
+      "summary": "At 30, 60, and 90 days after a candidate is placed, this automation automatically checks in with both the candidate and the client to confirm the…",
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/placement-anniversary-check-in/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/staffing-recruiting.json"
+    },
+    {
+      "id": "technology-saas/churn-risk-detection-intervention-playbook-system",
+      "title": "Churn Risk Detection & Intervention Playbook System",
+      "industry": "technology-saas",
+      "category": "marketing-retention",
+      "role": "Customer Success Manager",
+      "summary": "Each week, this automation calculates a health score for every account based on login frequency, feature adoption, support ticket volume, and NPS…",
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/churn-risk-detection-intervention-playbook-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/technology-saas.json"
+    },
+    {
+      "id": "technology-saas/churn-signal-detection-save-sequence",
+      "title": "Churn Signal Detection & Save Sequence",
+      "industry": "technology-saas",
+      "category": "marketing-retention",
+      "role": "Customer Success Manager",
+      "summary": "This automation continuously monitors usage data for signs a customer is disengaging: login frequency dropping below their normal baseline, key…",
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/churn-signal-detection-save-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/technology-saas.json"
+    },
+    {
+      "id": "telecommunications/churn-prediction-proactive-save-campaign-system",
+      "title": "Churn Prediction & Proactive Save Campaign System",
+      "industry": "telecommunications",
+      "category": "marketing-retention",
+      "role": "Customer Retention Manager",
+      "summary": "Each week, this automation scores every active subscriber account on a churn risk index built from usage trends, billing history, support ticket…",
+      "url": "https://www.ljwebmanagement.com/automations/telecommunications/churn-prediction-proactive-save-campaign-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/telecommunications.json"
+    },
+    {
+      "id": "telecommunications/contract-renewal-pipeline-upgrade-campaign-system",
+      "title": "Contract Renewal Pipeline & Upgrade Campaign System",
+      "industry": "telecommunications",
+      "category": "marketing-retention",
+      "role": "B2B Account Manager",
+      "summary": "Six months before a business customer's contract expires, the account manager receives a renewal preparation alert with the account's current…",
+      "url": "https://www.ljwebmanagement.com/automations/telecommunications/contract-renewal-pipeline-upgrade-campaign-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/telecommunications.json"
+    },
+    {
+      "id": "telecommunications/contract-renewal-at-risk-retention-offer-system",
+      "title": "Contract Renewal & At-Risk Retention Offer System",
+      "industry": "telecommunications",
+      "category": "marketing-retention",
+      "role": "Renewals Specialist",
+      "summary": "Sixty days before a customer's contract term ends, this automation automatically flags the account and pulls the last six months of usage and…",
+      "url": "https://www.ljwebmanagement.com/automations/telecommunications/contract-renewal-at-risk-retention-offer-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/telecommunications.json"
+    },
+    {
+      "id": "veterinary-practices/pet-birthday-campaign-loyalty-referral-system",
+      "title": "Pet Birthday Campaign & Loyalty Referral System",
+      "industry": "veterinary-practices",
+      "category": "marketing-retention",
+      "role": "Marketing Coordinator",
+      "summary": "Every pet's birthday on file triggers a personalized birthday email from the practice, with the pet's name, a cute graphic, and a special birthday…",
+      "url": "https://www.ljwebmanagement.com/automations/veterinary-practices/pet-birthday-campaign-loyalty-referral-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/veterinary-practices.json"
+    },
+    {
+      "id": "veterinary-practices/lapsed-patient-recall-reactivation-system",
+      "title": "Lapsed Patient Recall & Reactivation System",
+      "industry": "veterinary-practices",
+      "category": "marketing-retention",
+      "role": "Veterinary Technician",
+      "summary": "Patients who haven't been seen in 12, 18, or 24 months are automatically segmented into a lapsed-patient list pulled nightly from the practice…",
+      "url": "https://www.ljwebmanagement.com/automations/veterinary-practices/lapsed-patient-recall-reactivation-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/veterinary-practices.json"
+    },
+    {
+      "id": "veterinary-practices/prescription-refill-reminder-reorder-system",
+      "title": "Prescription Refill Reminder & Reorder System",
+      "industry": "veterinary-practices",
+      "category": "marketing-retention",
+      "role": "Pharmacy Coordinator",
+      "summary": "Every prescription filled through the practice is logged with its expected refill date based on dosing instructions, and 5 days before that date the…",
+      "url": "https://www.ljwebmanagement.com/automations/veterinary-practices/prescription-refill-reminder-reorder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/veterinary-practices.json"
+    }
+  ]
+}

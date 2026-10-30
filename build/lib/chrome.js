@@ -143,9 +143,11 @@ function escapeHtml(str) {
 }
 
 // Same Organization node on every page of both sites, so search engines
-// treat the blog and the main site as one entity.
+// treat the blog and the main site as one entity. "Organization" is listed
+// explicitly (ProfessionalService is a subtype) so parsers that only look
+// for the base type still find it.
 const ORGANIZATION = {
-  "@type": "ProfessionalService",
+  "@type": ["Organization", "ProfessionalService"],
   "@id": SITE_URL + "/#organization",
   name: "LJ Web Management",
   url: SITE_URL + "/",
@@ -155,6 +157,26 @@ const ORGANIZATION = {
     "LJ Web Management is a business automation company that builds custom AI workflow automation systems, removing repetitive tasks and bottlenecks by connecting the business tools teams already use.",
   telephone: PHONE,
   email: EMAIL,
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      contactType: "sales",
+      telephone: PHONE,
+      email: EMAIL,
+      url: SITE_URL + "/appointment/",
+      areaServed: "US",
+      availableLanguage: "English",
+    },
+    {
+      "@type": "ContactPoint",
+      contactType: "customer support",
+      telephone: PHONE,
+      email: EMAIL,
+      url: SITE_URL + "/contactus/",
+      areaServed: "US",
+      availableLanguage: "English",
+    },
+  ],
   address: {
     "@type": "PostalAddress",
     streetAddress: "1108 E 9th St.",

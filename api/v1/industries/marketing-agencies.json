@@ -1,0 +1,297 @@
+{
+  "slug": "marketing-agencies",
+  "name": "Marketing Agencies",
+  "summary": "Client reporting, content calendars, budget pacing, SEO reports, and onboarding.",
+  "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "marketing-agencies/client-reporting-performance-dashboard-system",
+      "slug": "client-reporting-performance-dashboard-system",
+      "title": "Client Reporting & Performance Dashboard System",
+      "industry": "marketing-agencies",
+      "category": "reporting-analytics",
+      "role": "Agency Owner",
+      "summary": "At the end of each month, this automation pulls data from every client's connected ad accounts, analytics platforms, and CRM, and assembles a…",
+      "steps": [
+        "At the end of each month, this automation pulls data from every client's connected ad accounts, analytics platforms, and CRM, and assembles a branded performance report for each account, complete with month-over-month comparisons and an AI-drafted narrative summary of what drove the results.",
+        "Reports land in the client's inbox on the same day every month without an account manager spending hours pulling numbers, and clients experience the agency as more organized and proactive than the competition."
+      ],
+      "manualProcess": "Without a system in place, an agency owner has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Zapier or Make.com",
+        "Google Analytics API",
+        "Meta Ads API and Google Ads API",
+        "OpenAI API (narrative summary generation)",
+        "Google Slides or a reporting tool (e.g., AgencyAnalytics or Looker Studio)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/client-reporting-performance-dashboard-system/"
+    },
+    {
+      "id": "marketing-agencies/content-calendar-builder-cross-platform-scheduler",
+      "slug": "content-calendar-builder-cross-platform-scheduler",
+      "title": "Content Calendar Builder & Cross-Platform Scheduler",
+      "industry": "marketing-agencies",
+      "category": "scheduling-dispatch",
+      "role": "Social Media Manager",
+      "summary": "A monthly content calendar built in Airtable or Notion feeds directly into a scheduling tool, automatically posting to Instagram, Facebook…",
+      "steps": [
+        "A monthly content calendar built in Airtable or Notion feeds directly into a scheduling tool, automatically posting to Instagram, Facebook, LinkedIn, and X at the optimal engagement times for each platform, with platform-specific caption formatting applied automatically.",
+        "When a piece of content performs unusually well, the system flags it for the social media manager to consider boosting as a paid post, turning organic performance data into a paid media signal without any manual monitoring."
+      ],
+      "manualProcess": "Done manually, a social media manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Airtable or Notion (content calendar)",
+        "Zapier or Make.com",
+        "Buffer or Later (multi-platform scheduler)",
+        "Meta Business Suite",
+        "Slack (performance alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/content-calendar-builder-cross-platform-scheduler/"
+    },
+    {
+      "id": "marketing-agencies/rank-tracking-monthly-seo-report-generator",
+      "slug": "rank-tracking-monthly-seo-report-generator",
+      "title": "Rank Tracking & Monthly SEO Report Generator",
+      "industry": "marketing-agencies",
+      "category": "reporting-analytics",
+      "role": "SEO Specialist",
+      "summary": "Each week, the system checks the ranking positions for every target keyword across every client, flags any significant movements (gains and losses)…",
+      "steps": [
+        "Each week, the system checks the ranking positions for every target keyword across every client, flags any significant movements (gains and losses) and sends a concise alert to the SEO specialist so they can investigate immediately rather than discovering a drop weeks later.",
+        "At month end, a full ranking report is automatically generated with a trend chart, top-performing pages, and an AI-drafted summary of what changed and what to prioritize next month."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a seo specialist, who has to track every step by hand across emails, spreadsheets, and sticky notes. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Rank tracking tool (e.g., SEMrush, Ahrefs, or AccuRanker API)",
+        "Zapier or Make.com",
+        "Google Search Console API",
+        "OpenAI API (monthly report narrative)",
+        "Google Sheets or Looker Studio (report output)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/rank-tracking-monthly-seo-report-generator/"
+    },
+    {
+      "id": "marketing-agencies/campaign-performance-alert-budget-pacing-system",
+      "slug": "campaign-performance-alert-budget-pacing-system",
+      "title": "Campaign Performance Alert & Budget Pacing System",
+      "industry": "marketing-agencies",
+      "category": "reporting-analytics",
+      "role": "Paid Ads Manager",
+      "summary": "Throughout each day, this automation monitors ad spend pacing against monthly budgets, CPC against targets, and conversion rates against benchmarks…",
+      "steps": [
+        "Throughout each day, this automation monitors ad spend pacing against monthly budgets, CPC against targets, and conversion rates against benchmarks, and sends an immediate Slack alert if any campaign crosses a threshold in either direction.",
+        "Overspending on a poor performer is caught before it burns the month's budget, and a campaign that suddenly starts converting unusually well triggers a budget increase prompt so the ads manager can capitalize on momentum rather than capping it by accident."
+      ],
+      "manualProcess": "The manual approach means a paid ads manager handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Meta Ads API and Google Ads API",
+        "Zapier or Make.com",
+        "Slack (real-time performance alerts)",
+        "Google Sheets (budget tracker dashboard)",
+        "OpenAI API (anomaly summary)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/campaign-performance-alert-budget-pacing-system/"
+    },
+    {
+      "id": "marketing-agencies/client-check-in-upsell-trigger-system",
+      "slug": "client-check-in-upsell-trigger-system",
+      "title": "Client Check-In & Upsell Trigger System",
+      "industry": "marketing-agencies",
+      "category": "lead-follow-up-sales",
+      "role": "Account Manager",
+      "summary": "Every client account is automatically scored monthly based on usage, results, and engagement, and accounts that meet the \"ready for upsell\" criteria…",
+      "steps": [
+        "Every client account is automatically scored monthly based on usage, results, and engagement, and accounts that meet the \"ready for upsell\" criteria trigger a task for the account manager to reach out with a specific service expansion proposal.",
+        "Clients who score low on the health index receive a proactive check-in call prompt before they reach the point of canceling.",
+        "The account manager's week begins with a prioritized list of exactly which clients need attention and why, not a gut feeling about who to call."
+      ],
+      "manualProcess": "Without this system, an account manager manually pieces together information from different places, then has to relay it to everyone who needs it. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "CRM (e.g., HubSpot)",
+        "Zapier or Make.com",
+        "Google Sheets or Airtable (client health scoring)",
+        "Slack (daily prioritized account digest)",
+        "OpenAI API (personalized outreach draft)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable",
+        "HubSpot",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/client-check-in-upsell-trigger-system/"
+    },
+    {
+      "id": "marketing-agencies/monthly-client-report-auto-assembly-system",
+      "slug": "monthly-client-report-auto-assembly-system",
+      "title": "Monthly Client Report Auto-Assembly System",
+      "industry": "marketing-agencies",
+      "category": "reporting-analytics",
+      "role": "Marketing Operations Manager",
+      "summary": "On the first business day of each month, this automation pulls performance data directly from Google Ads, Meta Ads Manager, LinkedIn Campaign…",
+      "steps": [
+        "On the first business day of each month, this automation pulls performance data directly from Google Ads, Meta Ads Manager, LinkedIn Campaign Manager, the client's Google Analytics account, and their email marketing platform, then drops every metric into a pre-built, branded report template without anyone opening a single dashboard.",
+        "The finished PDF is emailed to the client by 9 a.m., and a Slack notification confirms delivery to the account manager so nothing slips through on a busy Monday.",
+        "What used to take a marketing operations manager four to six hours per client across a portfolio of twenty accounts now takes zero manual hours, and every client gets their report on the same predictable date every month instead of whenever someone finds the time."
+      ],
+      "manualProcess": "Without a system in place, a marketing operations manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.",
+      "tools": [
+        "Zapier or Make.com",
+        "Google Ads & Meta Ads Manager",
+        "Google Analytics",
+        "Slack",
+        "Google Slides or Looker Studio"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/monthly-client-report-auto-assembly-system/"
+    },
+    {
+      "id": "marketing-agencies/new-client-onboarding-sequence",
+      "slug": "new-client-onboarding-sequence",
+      "title": "New Client Onboarding Sequence",
+      "industry": "marketing-agencies",
+      "category": "onboarding-intake",
+      "role": "New Business Coordinator",
+      "summary": "The moment a signed contract is detected through a DocuSign or PandaDoc webhook, this automation creates a new project folder in the shared drive…",
+      "steps": [
+        "The moment a signed contract is detected through a DocuSign or PandaDoc webhook, this automation creates a new project folder in the shared drive, builds out a task list in Asana with every onboarding milestone pre-assigned to the right team member, and emails the client a welcome packet with a link to book their kickoff call.",
+        "Billing details are pushed into the invoicing system automatically so the first invoice goes out on schedule without a manual data entry step.",
+        "What used to take a new business coordinator most of a morning per client, chasing folder creation, task setup, and calendar links, now happens within minutes of the ink drying on the contract, and every client gets the same polished first impression regardless of who on the team is handling the account that week."
+      ],
+      "manualProcess": "Without a system in place, a new business coordinator has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Zapier or Make.com",
+        "DocuSign or PandaDoc",
+        "Asana",
+        "Calendly",
+        "HubSpot",
+        "QuickBooks Online"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "QuickBooks",
+        "DocuSign",
+        "Calendly",
+        "HubSpot",
+        "PandaDoc"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/new-client-onboarding-sequence/"
+    },
+    {
+      "id": "marketing-agencies/ad-spend-threshold-alert-system",
+      "slug": "ad-spend-threshold-alert-system",
+      "title": "Ad Spend Threshold Alert System",
+      "industry": "marketing-agencies",
+      "category": "reporting-analytics",
+      "role": "Media Buyer",
+      "summary": "Every few hours, this automation checks each client's live ad spend in Google Ads and Meta Ads Manager against their monthly budget, and calculates…",
+      "steps": [
+        "Every few hours, this automation checks each client's live ad spend in Google Ads and Meta Ads Manager against their monthly budget, and calculates the pace at which they're on track to finish the month.",
+        "The moment a campaign is projected to exceed its budget by more than 10%, the media buyer gets an immediate Slack message with the exact campaign, the overage amount, and a one-click pause link, and if no one responds within a set window, the campaign pauses itself automatically.",
+        "Agencies that used to discover a blown budget at the end of the month, when it was too late to do anything but apologize, now catch the overage while there's still time to course-correct and protect the agency's margin on that account."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a media buyer, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Zapier or Make.com",
+        "Google Ads API",
+        "Meta Ads Manager API",
+        "Slack",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/ad-spend-threshold-alert-system/"
+    },
+    {
+      "id": "marketing-agencies/content-approval-follow-up-tracker",
+      "slug": "content-approval-follow-up-tracker",
+      "title": "Content Approval Follow-Up Tracker",
+      "industry": "marketing-agencies",
+      "category": "operations-inventory",
+      "role": "Creative Director",
+      "summary": "Every piece of content submitted for client approval, whether it's a blog post, an ad creative, or a social caption, gets a timestamp the moment…",
+      "steps": [
+        "Every piece of content submitted for client approval, whether it's a blog post, an ad creative, or a social caption, gets a timestamp the moment it's sent, and this automation tracks how long it's been sitting unanswered.",
+        "After 48 hours of silence, the client automatically receives a friendly, non-pushy nudge reminding them the piece is waiting on their sign-off, and after 5 days with still no response, the creative director gets flagged directly so they can decide whether to call the client.",
+        "Content that used to sit in client inboxes for two or three weeks, quietly stalling the production calendar, now gets approved or escalated within days, keeping the whole content pipeline moving instead of backing up behind one unanswered email."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a creative director, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Zapier or Make.com",
+        "Asana",
+        "Gmail or Outlook",
+        "Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Outlook"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/content-approval-follow-up-tracker/"
+    },
+    {
+      "id": "marketing-agencies/churn-risk-flag-system",
+      "slug": "churn-risk-flag-system",
+      "title": "Churn Risk Flag System",
+      "industry": "marketing-agencies",
+      "category": "marketing-retention",
+      "role": "Retention Specialist",
+      "summary": "Every month, this automation compares each client's current email open rates, meeting attendance, and average response time against their trailing…",
+      "steps": [
+        "Every month, this automation compares each client's current email open rates, meeting attendance, and average response time against their trailing three-month baseline, looking for the kind of sudden pullback that usually precedes a cancellation notice.",
+        "Any account showing a meaningful drop across two or more of these signals gets automatically flagged as \"at risk\" in the CRM, and the retention specialist receives a notification listing the specific data points that triggered it, not just a vague warning.",
+        "Instead of finding out a client is unhappy when they submit a 30-day cancellation notice, the team now gets a two-to-three week head start to schedule a save call and address whatever's actually going wrong."
+      ],
+      "manualProcess": "Done manually, a retention specialist has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.",
+      "tools": [
+        "Zapier or Make.com",
+        "HubSpot",
+        "Google Analytics",
+        "Slack",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "HubSpot",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/churn-risk-flag-system/"
+    }
+  ]
+}

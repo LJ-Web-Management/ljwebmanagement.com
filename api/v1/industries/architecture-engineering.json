@@ -1,0 +1,287 @@
+{
+  "slug": "architecture-engineering",
+  "name": "Architecture & Engineering",
+  "summary": "Drawing revisions, RFIs, permit tracking, consultant deadlines, and project budget variance.",
+  "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "architecture-engineering/drawing-revision-control-submittal-tracker",
+      "slug": "drawing-revision-control-submittal-tracker",
+      "title": "Drawing Revision Control & Submittal Tracker",
+      "industry": "architecture-engineering",
+      "category": "operations-inventory",
+      "role": "Project Architect",
+      "summary": "Every time a drawing set is revised and issued, this automation logs the revision number, date, and scope of changes, notifies all consultants and…",
+      "steps": [
+        "Every time a drawing set is revised and issued, this automation logs the revision number, date, and scope of changes, notifies all consultants and subconsultants of the updated set, and archives the superseded drawings in a clearly marked \"superseded\" folder so no one builds from an outdated sheet.",
+        "When a submittal is sent to the contractor for review, the system starts a tracking clock and sends a reminder at 7 days and 14 days if no review response has been received, because a submittal sitting unanswered is a submittal that becomes a schedule delay."
+      ],
+      "manualProcess": "Without automation, a project architect has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Project management or BIM platform (e.g., Procore, Autodesk BIM 360, or Newforma)",
+        "Zapier or Make.com",
+        "Google Drive or SharePoint (drawing archive)",
+        "Email (consultant revision notifications)",
+        "Airtable (submittal log and review tracker)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/drawing-revision-control-submittal-tracker/"
+    },
+    {
+      "id": "architecture-engineering/permit-application-status-review-comment-tracker",
+      "slug": "permit-application-status-review-comment-tracker",
+      "title": "Permit Application Status & Review Comment Tracker",
+      "industry": "architecture-engineering",
+      "category": "compliance-documents",
+      "role": "Civil Engineer",
+      "summary": "When a permit application is submitted to a reviewing agency, this automation logs the submission date, expected review clock, and assigned contact…",
+      "steps": [
+        "When a permit application is submitted to a reviewing agency, this automation logs the submission date, expected review clock, and assigned contact at each agency, and begins sending weekly status check reminders to the project engineer to follow up.",
+        "When review comments are received, they are automatically logged with the date received, parsed into individual comment items, and assigned to the responsible discipline for response, with a deadline calculated from the agency's resubmittal window.",
+        "No comment goes untracked, no agency deadline gets missed because the project engineer was focused on another submission."
+      ],
+      "manualProcess": "Without this system, a civil engineer manually pieces together information from different places, then has to relay it to everyone who needs it. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Airtable or Google Sheets (permit and comment tracker)",
+        "Zapier or Make.com",
+        "Jotform (comment response submission form)",
+        "Google Calendar (review deadlines)",
+        "Email or Slack (comment receipt alerts and response deadline reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Airtable",
+        "Google Sheets",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/permit-application-status-review-comment-tracker/"
+    },
+    {
+      "id": "architecture-engineering/project-profitability-budget-variance-dashboard",
+      "slug": "project-profitability-budget-variance-dashboard",
+      "title": "Project Profitability & Budget Variance Dashboard",
+      "industry": "architecture-engineering",
+      "category": "reporting-analytics",
+      "role": "AE Firm Principal",
+      "summary": "Every week, this automation pulls billed hours by project and phase from the project accounting system, compares them against the contracted fee and…",
+      "steps": [
+        "Every week, this automation pulls billed hours by project and phase from the project accounting system, compares them against the contracted fee and the percent-complete estimate, and updates a live profitability dashboard the principal can review in minutes.",
+        "Projects where fee burn is outpacing percent complete by more than 10% are flagged for a project manager conversation before the budget is exhausted.",
+        "Projects approaching the contracted fee threshold trigger an automatic prompt to evaluate whether a supplemental services request is warranted, turning budget management from a monthly accounting exercise into a weekly operational decision."
+      ],
+      "manualProcess": "Left unautomated, an ae firm principal spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "AE project accounting software (e.g., Deltek Vantagepoint, BST Global, or Ajera)",
+        "Zapier or Make.com",
+        "Google Sheets or a BI tool (profitability dashboard)",
+        "Slack (weekly fee burn alert to PMs)",
+        "Email (principal dashboard delivery)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/project-profitability-budget-variance-dashboard/"
+    },
+    {
+      "id": "architecture-engineering/rfi-log-change-order-tracking-automation",
+      "slug": "rfi-log-change-order-tracking-automation",
+      "title": "RFI Log & Change Order Tracking Automation",
+      "industry": "architecture-engineering",
+      "category": "operations-inventory",
+      "role": "Project Engineer",
+      "summary": "Every RFI submitted by the contractor is automatically logged with the date received, the question posed, the discipline responsible for the…",
+      "steps": [
+        "Every RFI submitted by the contractor is automatically logged with the date received, the question posed, the discipline responsible for the response, and a deadline calculated from the contract's RFI response requirement.",
+        "Overdue RFIs trigger an escalating sequence of alerts to the responsible engineer and then to the project manager.",
+        "Approved change orders are logged against the original contract value, and the project engineer receives a running contract value summary that updates automatically with each executed change, so the total project cost picture is always current without anyone manually updating a log."
+      ],
+      "manualProcess": "Done manually, a project engineer has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Project management software (e.g., Procore, PlanGrid, or e-Builder)",
+        "Zapier or Make.com",
+        "Airtable (RFI and change order log)",
+        "Slack (overdue RFI and CO status alerts)",
+        "Email (RFI response notifications to contractor)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/rfi-log-change-order-tracking-automation/"
+    },
+    {
+      "id": "architecture-engineering/model-coordination-clash-report-distribution-system",
+      "slug": "model-coordination-clash-report-distribution-system",
+      "title": "Model Coordination & Clash Report Distribution System",
+      "industry": "architecture-engineering",
+      "category": "operations-inventory",
+      "role": "BIM Coordinator",
+      "summary": "After each coordination model run, this automation parses the clash detection report, categorizes clashes by discipline pair and severity, assigns…",
+      "steps": [
+        "After each coordination model run, this automation parses the clash detection report, categorizes clashes by discipline pair and severity, assigns each clash to the responsible discipline lead with a resolution deadline, and distributes a summary to all coordination meeting participants before the next session.",
+        "Unresolved clashes from the prior meeting that are still open are highlighted in red in each distribution, creating accountability without the BIM coordinator manually tracking every clash through its full resolution lifecycle across multiple consultants and subcontractors."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a bim coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "BIM coordination platform (e.g., Navisworks, BIM 360 Glue, or Revizto)",
+        "Zapier or Make.com",
+        "Airtable (clash log with discipline assignments)",
+        "Email (clash report distribution)",
+        "Slack (unresolved clash escalation alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/model-coordination-clash-report-distribution-system/"
+    },
+    {
+      "id": "architecture-engineering/rfi-response-deadline-tracker",
+      "slug": "rfi-response-deadline-tracker",
+      "title": "RFI Response Deadline Tracker",
+      "industry": "architecture-engineering",
+      "category": "operations-inventory",
+      "role": "Project Architect",
+      "summary": "When a Request for Information comes in from a contractor on an active project, this automation automatically logs it along with its required…",
+      "steps": [
+        "When a Request for Information comes in from a contractor on an active project, this automation automatically logs it along with its required response deadline, assigns it to the appropriate team member based on the discipline involved, and sends escalating reminders as that deadline approaches.",
+        "A missed RFI response that could delay an entire construction schedule gets caught while there's still time to answer it, instead of surfacing only when the contractor calls asking why they haven't heard back."
+      ],
+      "manualProcess": "Without this system, a project architect manually pieces together information from different places, then has to relay it to everyone who needs it. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Procore or Bluebeam",
+        "Zapier or Make.com",
+        "Google Calendar",
+        "Slack or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/rfi-response-deadline-tracker/"
+    },
+    {
+      "id": "architecture-engineering/drawing-revision-distribution-system",
+      "slug": "drawing-revision-distribution-system",
+      "title": "Drawing Revision Distribution System",
+      "industry": "architecture-engineering",
+      "category": "operations-inventory",
+      "role": "Design Coordinator",
+      "summary": "When a drawing set is revised and marked final, this automation automatically distributes the updated version to every stakeholder on the project's…",
+      "steps": [
+        "When a drawing set is revised and marked final, this automation automatically distributes the updated version to every stakeholder on the project's distribution list, logs exactly who received which revision number and when, and flags anyone still confirmed to be working from an outdated set.",
+        "Field crews and consultants stop building or coordinating off drawings that were already superseded two revisions ago."
+      ],
+      "manualProcess": "Without this system, a design coordinator manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Bluebeam or Revit",
+        "Procore",
+        "Zapier or Make.com",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/drawing-revision-distribution-system/"
+    },
+    {
+      "id": "architecture-engineering/permit-application-status-tracker",
+      "slug": "permit-application-status-tracker",
+      "title": "Permit Application Status Tracker",
+      "industry": "architecture-engineering",
+      "category": "compliance-documents",
+      "role": "Project Manager",
+      "summary": "This automation tracks every submitted permit application against the issuing jurisdiction's typical review timeline and automatically checks for…",
+      "steps": [
+        "This automation tracks every submitted permit application against the issuing jurisdiction's typical review timeline and automatically checks for status updates, notifying the project manager the moment a permit is approved, rejected, or flagged for additional information.",
+        "Instead of someone manually logging into a municipal portal every few days to check, the status change reaches the project manager the same day it posts."
+      ],
+      "manualProcess": "Without automation, a project manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "A permit tracking tool or municipal portal API",
+        "Zapier or Make.com",
+        "Google Sheets",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/permit-application-status-tracker/"
+    },
+    {
+      "id": "architecture-engineering/project-milestone-billing-trigger",
+      "slug": "project-milestone-billing-trigger",
+      "title": "Project Milestone Billing Trigger",
+      "industry": "architecture-engineering",
+      "category": "billing-finance",
+      "role": "Principal",
+      "summary": "As a project reaches each contractually defined milestone, schematic design complete, design development complete, construction documents issued…",
+      "steps": [
+        "As a project reaches each contractually defined milestone, schematic design complete, design development complete, construction documents issued, this automation automatically generates the corresponding invoice based on the fee schedule written into the contract and routes it for internal review before it's sent.",
+        "Billing keeps pace with actual progress instead of trailing weeks behind because someone forgot to generate the invoice when the milestone was hit."
+      ],
+      "manualProcess": "Manually, a principal is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "QuickBooks Online or Deltek",
+        "Zapier or Make.com",
+        "Google Sheets (fee schedule)",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "QuickBooks",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/project-milestone-billing-trigger/"
+    },
+    {
+      "id": "architecture-engineering/consultant-coordination-deadline-alerts",
+      "slug": "consultant-coordination-deadline-alerts",
+      "title": "Consultant Coordination Deadline Alerts",
+      "industry": "architecture-engineering",
+      "category": "operations-inventory",
+      "role": "Project Manager",
+      "summary": "For multi-disciplinary projects involving structural, mechanical, and other consultants, this automation tracks each consultant's deliverable…",
+      "steps": [
+        "For multi-disciplinary projects involving structural, mechanical, and other consultants, this automation tracks each consultant's deliverable deadlines and automatically sends reminders as each date approaches.",
+        "If any consultant's deliverable is at risk of slipping, the project manager is flagged directly instead of discovering the delay only when the overall project schedule is already at risk of shifting."
+      ],
+      "manualProcess": "The manual approach means a project manager handles each case reactively, after someone has already noticed something went wrong. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Procore",
+        "Zapier or Make.com",
+        "Google Calendar",
+        "Slack or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/consultant-coordination-deadline-alerts/"
+    }
+  ]
+}

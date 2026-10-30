@@ -1,0 +1,280 @@
+{
+  "slug": "pharmaceutical-biotech",
+  "name": "Pharmaceutical & Biotech",
+  "summary": "Submission deadlines, batch record deviations, trial enrollment, and sample accountability.",
+  "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "pharmaceutical-biotech/site-enrollment-tracker-protocol-deviation-alert-system",
+      "slug": "site-enrollment-tracker-protocol-deviation-alert-system",
+      "title": "Site Enrollment Tracker & Protocol Deviation Alert System",
+      "industry": "pharmaceutical-biotech",
+      "category": "operations-inventory",
+      "role": "Clinical Trial Manager",
+      "summary": "Every clinical site's enrollment progress is tracked against its committed recruitment target and the overall trial timeline, and the clinical trial…",
+      "steps": [
+        "Every clinical site's enrollment progress is tracked against its committed recruitment target and the overall trial timeline, and the clinical trial manager receives a weekly enrollment dashboard showing which sites are on track, which are lagging, and which are at risk of requiring a rescue intervention.",
+        "When a protocol deviation is reported, the system immediately notifies the trial manager and the sponsor's safety team, initiates a CAPA workflow with assigned deadlines, and logs the deviation in the study's master tracking file in the format required for regulatory inspection, ensuring that every deviation is documented, responded to, and closed within the protocol's required window."
+      ],
+      "manualProcess": "The manual approach means a clinical trial manager handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "CTMS (e.g., Medidata Rave, Veeva Vault, or Florence eBinders)",
+        "Zapier or Make.com",
+        "Airtable (enrollment tracker and deviation log)",
+        "Email or Slack (site enrollment alerts and deviation notifications)",
+        "Jotform (deviation report form for site coordinators)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/site-enrollment-tracker-protocol-deviation-alert-system/"
+    },
+    {
+      "id": "pharmaceutical-biotech/fda-submission-deadline-ectd-document-tracker",
+      "slug": "fda-submission-deadline-ectd-document-tracker",
+      "title": "FDA Submission Deadline & eCTD Document Tracker",
+      "industry": "pharmaceutical-biotech",
+      "category": "compliance-documents",
+      "role": "Regulatory Affairs Manager",
+      "summary": "Every active IND, NDA, BLA, or 510(k) submission has a complete calendar of required actions, annual report due dates, response deadlines for FDA…",
+      "steps": [
+        "Every active IND, NDA, BLA, or 510(k) submission has a complete calendar of required actions, annual report due dates, response deadlines for FDA information requests, post-market commitment reports, and labeling update requirements, tracked in a central system with reminders at 90, 30, and 7 days before each date.",
+        "When an FDA complete response letter or information request is received, a structured response workflow is triggered automatically, assigning sections to the responsible regulatory, clinical, and CMC teams with deadlines calculated from the statutory response window.",
+        "No submission deadline is missed because it was buried in an email thread from three months ago."
+      ],
+      "manualProcess": "Left unautomated, a regulatory affairs manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Regulatory information management system or Airtable (submission calendar)",
+        "Zapier or Make.com",
+        "Google Calendar (deadline entries)",
+        "Email or Slack (team task assignments and escalating reminders)",
+        "SharePoint or Veeva Vault (document repository)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/fda-submission-deadline-ectd-document-tracker/"
+    },
+    {
+      "id": "pharmaceutical-biotech/batch-record-review-deviation-escalation-system",
+      "slug": "batch-record-review-deviation-escalation-system",
+      "title": "Batch Record Review & Deviation Escalation System",
+      "industry": "pharmaceutical-biotech",
+      "category": "compliance-documents",
+      "role": "Quality Assurance Manager",
+      "summary": "When a batch record is submitted for QA review, this automation assigns it to the appropriate QA reviewer based on product line and workload, starts…",
+      "steps": [
+        "When a batch record is submitted for QA review, this automation assigns it to the appropriate QA reviewer based on product line and workload, starts the review clock against the target release timeline, and sends a reminder at 48 hours before the target date if the review is still open.",
+        "Any out-of-specification result, yield deviation, or equipment alarm documented in the batch record triggers an automatic deviation report creation and notifies the QA manager for immediate investigation, ensuring that a batch with a quality event is never released without a formal disposition, which is the scenario that creates regulatory risk and product recalls."
+      ],
+      "manualProcess": "Without a system in place, a quality assurance manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "QMS or ERP quality module (e.g., MasterControl, TrackWise, or Veeva Quality)",
+        "Zapier or Make.com",
+        "Airtable (batch review tracker and deviation log)",
+        "Slack (OOS and deviation alerts)",
+        "Email (reviewer assignment and deadline reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/batch-record-review-deviation-escalation-system/"
+    },
+    {
+      "id": "pharmaceutical-biotech/kol-engagement-tracker-scientific-interaction-logger",
+      "slug": "kol-engagement-tracker-scientific-interaction-logger",
+      "title": "KOL Engagement Tracker & Scientific Interaction Logger",
+      "industry": "pharmaceutical-biotech",
+      "category": "reporting-analytics",
+      "role": "Medical Science Liaison",
+      "summary": "After every interaction with a key opinion leader (a scientific exchange, an advisory board, a conference presentation debrief, or a medical…",
+      "steps": [
+        "After every interaction with a key opinion leader (a scientific exchange, an advisory board, a conference presentation debrief, or a medical education discussion) the MSL submits a brief interaction log via mobile form capturing the topics discussed, the KOL's questions and feedback, and any follow-up commitments made.",
+        "The system automatically logs the interaction in the CRM, sends the committed follow-up materials on the promised timeline, and alerts the MSL when a KOL they've engaged with hasn't had contact in more than 90 days.",
+        "Relationships are maintained systematically rather than depending on the MSL's personal memory of dozens of simultaneous KOL relationships."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a medical science liaison, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "MSL CRM (e.g., Veeva CRM or Salesforce Health Cloud)",
+        "Jotform (interaction log form)",
+        "Zapier or Make.com",
+        "Email (follow-up material delivery)",
+        "Slack (lapsed engagement alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Salesforce"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/kol-engagement-tracker-scientific-interaction-logger/"
+    },
+    {
+      "id": "pharmaceutical-biotech/sample-accountability-call-report-automation",
+      "slug": "sample-accountability-call-report-automation",
+      "title": "Sample Accountability & Call Report Automation",
+      "industry": "pharmaceutical-biotech",
+      "category": "compliance-documents",
+      "role": "Pharmaceutical Sales Representative",
+      "summary": "After each physician office call, the pharma rep submits a digital call report capturing the products detailed, samples left, signature obtained…",
+      "steps": [
+        "After each physician office call, the pharma rep submits a digital call report capturing the products detailed, samples left, signature obtained, and any next steps, and the system automatically updates the sample accountability log, checks the rep's sample inventory balance, and alerts the rep when a particular product sample supply is running low enough to warrant a replenishment request.",
+        "Weekly call activity reports are compiled automatically from submitted call records and sent to the district manager, eliminating the end-of-week reporting session that reps dread and managers question the accuracy of because it is reconstructed from memory rather than real-time logging."
+      ],
+      "manualProcess": "Without automation, a pharmaceutical sales representative has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Pharma CRM (e.g., Veeva CRM or IQVIA OCE)",
+        "Jotform (call report form for offline visits)",
+        "Zapier or Make.com",
+        "Google Sheets (sample inventory tracker)",
+        "Email (weekly activity report to district manager)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/sample-accountability-call-report-automation/"
+    },
+    {
+      "id": "pharmaceutical-biotech/clinical-trial-enrollment-tracker",
+      "slug": "clinical-trial-enrollment-tracker",
+      "title": "Clinical Trial Enrollment Tracker",
+      "industry": "pharmaceutical-biotech",
+      "category": "operations-inventory",
+      "role": "Clinical Trial Coordinator",
+      "summary": "This automation tracks enrollment numbers against target recruitment goals for each active trial site and automatically alerts the study coordinator…",
+      "steps": [
+        "This automation tracks enrollment numbers against target recruitment goals for each active trial site and automatically alerts the study coordinator when a site is falling behind pace.",
+        "Recruiting efforts can be adjusted while there's still time to hit enrollment targets, instead of a shortfall surfacing only at a scheduled monthly review."
+      ],
+      "manualProcess": "Without this system, a clinical trial coordinator manually pieces together information from different places, then has to relay it to everyone who needs it. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "A CTMS (clinical trial management system)",
+        "Zapier or Make.com",
+        "Google Sheets",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/clinical-trial-enrollment-tracker/"
+    },
+    {
+      "id": "pharmaceutical-biotech/adverse-event-reporting-deadline-alert",
+      "slug": "adverse-event-reporting-deadline-alert",
+      "title": "Adverse Event Reporting Deadline Alert",
+      "industry": "pharmaceutical-biotech",
+      "category": "compliance-documents",
+      "role": "Pharmacovigilance Specialist",
+      "summary": "When an adverse event is logged, this automation automatically calculates the required regulatory reporting deadline based on the event's severity…",
+      "steps": [
+        "When an adverse event is logged, this automation automatically calculates the required regulatory reporting deadline based on the event's severity classification and alerts the safety team with escalating urgency as that deadline approaches.",
+        "Reporting windows that are measured in days, not weeks, for serious events never get missed due to a manual tracking oversight."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a pharmacovigilance specialist, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A pharmacovigilance database",
+        "Zapier or Make.com",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/adverse-event-reporting-deadline-alert/"
+    },
+    {
+      "id": "pharmaceutical-biotech/cold-chain-temperature-excursion-alert",
+      "slug": "cold-chain-temperature-excursion-alert",
+      "title": "Cold Chain Temperature Excursion Alert",
+      "industry": "pharmaceutical-biotech",
+      "category": "operations-inventory",
+      "role": "Quality Assurance Manager",
+      "summary": "For temperature-sensitive shipments, this automation continuously monitors data from in-transit temperature loggers and immediately alerts the…",
+      "steps": [
+        "For temperature-sensitive shipments, this automation continuously monitors data from in-transit temperature loggers and immediately alerts the quality team the moment a shipment records a temperature excursion outside the approved range.",
+        "The issue gets caught in transit instead of being discovered only after delivery, when the product may already need to be destroyed."
+      ],
+      "manualProcess": "Without automation, a quality assurance manager has to notice problems after they've already happened, then scramble to fix them manually one at a time.",
+      "tools": [
+        "A cold chain monitoring platform (Controlant or Sensitech)",
+        "Zapier or Make.com",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/cold-chain-temperature-excursion-alert/"
+    },
+    {
+      "id": "pharmaceutical-biotech/batch-record-deviation-escalation",
+      "slug": "batch-record-deviation-escalation",
+      "title": "Batch Record Deviation Escalation",
+      "industry": "pharmaceutical-biotech",
+      "category": "compliance-documents",
+      "role": "Quality Assurance Specialist",
+      "summary": "When a manufacturing batch record shows a deviation from the approved process, this automation automatically routes it to quality assurance with the…",
+      "steps": [
+        "When a manufacturing batch record shows a deviation from the approved process, this automation automatically routes it to quality assurance with the deviation details, starts the investigation documentation, and tracks the investigation against its required closure timeline.",
+        "Deviations stop sitting unaddressed while an investigation deadline quietly approaches."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a quality assurance specialist, who has to track every step by hand across emails, spreadsheets, and sticky notes.",
+      "tools": [
+        "A QMS (quality management system) like MasterControl or Veeva",
+        "Zapier or Make.com",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/batch-record-deviation-escalation/"
+    },
+    {
+      "id": "pharmaceutical-biotech/sample-chain-of-custody-log",
+      "slug": "sample-chain-of-custody-log",
+      "title": "Sample Chain-of-Custody Log",
+      "industry": "pharmaceutical-biotech",
+      "category": "compliance-documents",
+      "role": "Lab Operations Manager",
+      "summary": "As samples move between collection, storage, and testing, this automation automatically logs each handoff with a timestamp and the handler's name…",
+      "steps": [
+        "As samples move between collection, storage, and testing, this automation automatically logs each handoff with a timestamp and the handler's name, maintaining an auditable chain of custody.",
+        "A paper log that can be lost, incomplete, or illegible gets replaced with a digital record that holds up under audit."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a lab operations manager remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A LIMS (laboratory information management system)",
+        "Zapier or Make.com",
+        "A barcode scanning app"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/sample-chain-of-custody-log/"
+    }
+  ]
+}

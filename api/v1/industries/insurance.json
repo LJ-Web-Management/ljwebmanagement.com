@@ -1,0 +1,345 @@
+{
+  "slug": "insurance",
+  "name": "Insurance",
+  "summary": "Quote requests, renewals, claims status updates, certificates of insurance, and cross-sell.",
+  "url": "https://www.ljwebmanagement.com/automations/insurance/",
+  "automationCount": 12,
+  "automations": [
+    {
+      "id": "insurance/new-prospect-intake-instant-quote-request-system",
+      "slug": "new-prospect-intake-instant-quote-request-system",
+      "title": "New Prospect Intake & Instant Quote Request System",
+      "industry": "insurance",
+      "category": "lead-follow-up-sales",
+      "role": "Insurance Agent",
+      "summary": "Prospects who reach the agency through ads, referrals, or the website fill out a dynamic intake form that captures coverage type, risk details, and…",
+      "steps": [
+        "Prospects who reach the agency through ads, referrals, or the website fill out a dynamic intake form that captures coverage type, risk details, and contact information, and the system immediately sends that data to the relevant carriers for a quote, notifies the agent with a complete prospect summary, and schedules a follow-up call on the agent's calendar.",
+        "The time between \"I need insurance\" and \"I have a quote in hand\" drops from days to hours, and no lead falls through the cracks while the agent is with another client."
+      ],
+      "manualProcess": "Without this system, an insurance agent manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Jotform or agency intake tool",
+        "Zapier or Make.com",
+        "Agency management system (e.g., HawkSoft or Applied Epic)",
+        "Calendly (follow-up call scheduling)",
+        "Twilio (immediate prospect text confirmation)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Calendly"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/insurance/new-prospect-intake-instant-quote-request-system/"
+    },
+    {
+      "id": "insurance/claim-assignment-documentation-request-status-update-system",
+      "slug": "claim-assignment-documentation-request-status-update-system",
+      "title": "Claim Assignment, Documentation Request & Status Update System",
+      "industry": "insurance",
+      "category": "customer-communication",
+      "role": "Claims Adjuster",
+      "summary": "New claims submitted through the portal are automatically assigned to the correct adjuster based on coverage type and workload, and the claimant…",
+      "steps": [
+        "New claims submitted through the portal are automatically assigned to the correct adjuster based on coverage type and workload, and the claimant immediately receives a confirmation with their claim number, their adjuster's name, and a document upload link for photos, estimates, and supporting materials.",
+        "The adjuster receives a pre-built claim file with everything collected to date, and the claimant automatically receives a status update every 72 hours until the claim is closed, eliminating the \"where is my claim?\" calls that consume a disproportionate amount of an adjuster's day."
+      ],
+      "manualProcess": "Without this system, a claims adjuster manually pieces together information from different places, then has to relay it to everyone who needs it. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Claims management system (e.g., Guidewire or Duck Creek)",
+        "Zapier or Make.com",
+        "Jotform (document upload portal)",
+        "Twilio or email (status updates)",
+        "Slack (internal adjuster alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/insurance/claim-assignment-documentation-request-status-update-system/"
+    },
+    {
+      "id": "insurance/policy-anniversary-cross-sell-opportunity-system",
+      "slug": "policy-anniversary-cross-sell-opportunity-system",
+      "title": "Policy Anniversary & Cross-Sell Opportunity System",
+      "industry": "insurance",
+      "category": "lead-follow-up-sales",
+      "role": "Insurance Account Manager",
+      "summary": "Thirty days before each policy anniversary, the account manager receives a prompt to reach out to the client with a coverage review, and the client…",
+      "steps": [
+        "Thirty days before each policy anniversary, the account manager receives a prompt to reach out to the client with a coverage review, and the client receives an email highlighting the value of their current coverage and any recent claims-free discount they've earned.",
+        "Life events tracked in the CRM (a home purchase, a new vehicle, a business expansion) trigger an immediate cross-sell alert with a suggested product and a pre-written outreach message the account manager can personalize and send in minutes rather than drafting from scratch."
+      ],
+      "manualProcess": "Left unautomated, an insurance account manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Agency management system or CRM",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign (anniversary emails)",
+        "Slack (cross-sell opportunity alerts)",
+        "Twilio (SMS outreach)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Slack",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/insurance/policy-anniversary-cross-sell-opportunity-system/"
+    },
+    {
+      "id": "insurance/application-screening-risk-flag-report-generator",
+      "slug": "application-screening-risk-flag-report-generator",
+      "title": "Application Screening & Risk Flag Report Generator",
+      "industry": "insurance",
+      "category": "compliance-documents",
+      "role": "Insurance Underwriter",
+      "summary": "Incoming applications are automatically checked against underwriting guidelines (coverage limits, geographic risk, loss history, required…",
+      "steps": [
+        "Incoming applications are automatically checked against underwriting guidelines (coverage limits, geographic risk, loss history, required documentation) and any application that meets all criteria is flagged as clean for fast-track review, while applications with one or more flags are routed to the appropriate underwriter with a highlighted exception report already generated.",
+        "The underwriter starts every application review knowing exactly what needs scrutiny, rather than reading through the whole submission to find the issue buried on page six."
+      ],
+      "manualProcess": "The manual approach means an insurance underwriter handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Underwriting platform or AMS",
+        "Zapier or Make.com",
+        "Google Sheets or Airtable (submission tracker)",
+        "OpenAI API (risk flag summary report)",
+        "Email or Slack (routing and exception alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/insurance/application-screening-risk-flag-report-generator/"
+    },
+    {
+      "id": "insurance/producer-scorecard-goal-tracking-dashboard",
+      "slug": "producer-scorecard-goal-tracking-dashboard",
+      "title": "Producer Scorecard & Goal-Tracking Dashboard",
+      "industry": "insurance",
+      "category": "reporting-analytics",
+      "role": "Insurance Agency Owner",
+      "summary": "Each week, this automation pulls production data for every agent (new policies written, premium volume, retention rate, cross-sell ratio) and…",
+      "steps": [
+        "Each week, this automation pulls production data for every agent (new policies written, premium volume, retention rate, cross-sell ratio) and updates a live scorecard that the agency owner can see at a glance.",
+        "Agents who are tracking below their monthly goal receive a proactive coaching prompt from the owner's calendar, and top performers are automatically recognized in the team communication channel.",
+        "The agency owner manages the team by data rather than instinct, and every producer knows exactly where they stand at all times."
+      ],
+      "manualProcess": "Without automation, an insurance agency owner has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Agency management system (e.g., Applied Epic or HawkSoft)",
+        "Zapier or Make.com",
+        "Google Sheets or a BI tool (producer scorecard)",
+        "Slack (weekly scorecard and recognition posts)",
+        "Google Calendar (coaching call prompts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/insurance/producer-scorecard-goal-tracking-dashboard/"
+    },
+    {
+      "id": "insurance/policy-renewal-reminder-system",
+      "slug": "policy-renewal-reminder-system",
+      "title": "Policy Renewal Reminder System",
+      "industry": "insurance",
+      "category": "marketing-retention",
+      "role": "Renewal Specialist",
+      "summary": "Sixty days before any policy on the book is set to renew, this automation pulls the renewal date directly from the agency management system (AMS360…",
+      "steps": [
+        "Sixty days before any policy on the book is set to renew, this automation pulls the renewal date directly from the agency management system (AMS360 or EZLynx) and sends the client a reminder email summarizing their current coverage and premium.",
+        "A second reminder goes out 30 days out, and if the policy is still unrenewed 10 days before expiration, the renewal specialist receives an internal alert to call the client directly before coverage lapses.",
+        "Clients who need a rate re-shop or have had a change in circumstances are flagged automatically instead of being renewed on autopilot, and the agency stops losing policies to silent non-renewals that were never actually declined, just never followed up on."
+      ],
+      "manualProcess": "Handled by hand, a renewal specialist spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Zapier or Make.com",
+        "AMS360 or EZLynx",
+        "Twilio (SMS reminders)",
+        "Mailchimp or email (renewal notices)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/insurance/policy-renewal-reminder-system/"
+    },
+    {
+      "id": "insurance/life-event-trigger-outreach-system",
+      "slug": "life-event-trigger-outreach-system",
+      "title": "Life-Event Trigger Outreach System",
+      "industry": "insurance",
+      "category": "marketing-retention",
+      "role": "Personal Lines Producer",
+      "summary": "Clients are invited to share upcoming milestones (a marriage, a new home purchase, a new baby, a teen driver) directly through a short update form…",
+      "steps": [
+        "Clients are invited to share upcoming milestones (a marriage, a new home purchase, a new baby, a teen driver) directly through a short update form linked in every renewal and service email.",
+        "The moment a client logs one of these life events, the automation matches it against a library of relevant coverage triggers (umbrella liability for a new home, an added driver for a teen, life insurance for a new baby) and immediately sends the client an educational message along with a prompt for the producer to schedule a coverage review call.",
+        "The producer's task list updates automatically with the specific gap to address, turning a client's good news into a timely, relevant conversation instead of a missed cross-sell opportunity that surfaces only at the next renewal, if at all."
+      ],
+      "manualProcess": "Without a system in place, a personal lines producer has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.",
+      "tools": [
+        "Zapier or Make.com",
+        "AMS360 or EZLynx",
+        "Jotform (life-event update form)",
+        "Twilio or email (outreach messages)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/insurance/life-event-trigger-outreach-system/"
+    },
+    {
+      "id": "insurance/circumstance-aware-renewal-outreach",
+      "slug": "circumstance-aware-renewal-outreach",
+      "title": "Circumstance-Aware Renewal Outreach",
+      "industry": "insurance",
+      "category": "marketing-retention",
+      "role": "Renewal Coordinator",
+      "summary": "Sixty, thirty, and seven days before a policy is set to renew, this automation checks the CRM for any noted change in the client's circumstances, a…",
+      "steps": [
+        "Sixty, thirty, and seven days before a policy is set to renew, this automation checks the CRM for any noted change in the client's circumstances, a new vehicle, a new address, a recent life event, and sends a renewal reminder that reflects those specifics rather than a generic notice.",
+        "Any client whose premium is increasing by more than a set percentage is automatically flagged so the agent calls before the renewal notice arrives cold.",
+        "Renewal season stops being one mass mailing and becomes a set of targeted, relevant conversations."
+      ],
+      "manualProcess": "Left to a person, this means a renewal coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "AMS360 or EZLynx",
+        "Zapier or Make.com",
+        "Mailchimp or email",
+        "Twilio (SMS)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/insurance/circumstance-aware-renewal-outreach/"
+    },
+    {
+      "id": "insurance/claims-status-update-automation",
+      "slug": "claims-status-update-automation",
+      "title": "Claims Status Update Automation",
+      "industry": "insurance",
+      "category": "customer-communication",
+      "role": "Claims Coordinator",
+      "summary": "As a claim moves through each stage, filed, under review, adjuster assigned, approved, paid, this automation automatically texts and emails the…",
+      "steps": [
+        "As a claim moves through each stage, filed, under review, adjuster assigned, approved, paid, this automation automatically texts and emails the policyholder a plain-language update the moment the status changes in the claims system.",
+        "The volume of \\\"what's happening with my claim\\\" calls to the office drops sharply because the customer already knows before they think to call."
+      ],
+      "manualProcess": "Left unautomated, a claims coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "AMS360 or a claims management system",
+        "Twilio (SMS)",
+        "Zapier or Make.com",
+        "Mailchimp or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/insurance/claims-status-update-automation/"
+    },
+    {
+      "id": "insurance/cross-sell-opportunity-flag",
+      "slug": "cross-sell-opportunity-flag",
+      "title": "Cross-Sell Opportunity Flag",
+      "industry": "insurance",
+      "category": "lead-follow-up-sales",
+      "role": "Personal Lines Agent",
+      "summary": "This automation reviews every client's current policies against a library of common coverage gaps, a homeowner's policy with no umbrella coverage…",
+      "steps": [
+        "This automation reviews every client's current policies against a library of common coverage gaps, a homeowner's policy with no umbrella coverage, an auto policy with no renters coverage on file for a renting driver, and automatically flags the cross-sell opportunity to the agent along with a suggested talking point for the next conversation.",
+        "The agent stops relying on memory to catch these gaps across hundreds of accounts."
+      ],
+      "manualProcess": "Done manually, a personal lines agent has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "AMS360 or EZLynx",
+        "Zapier or Make.com",
+        "Google Sheets or CRM",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/insurance/cross-sell-opportunity-flag/"
+    },
+    {
+      "id": "insurance/certificate-of-insurance-auto-generator",
+      "slug": "certificate-of-insurance-auto-generator",
+      "title": "Certificate of Insurance Auto-Generator",
+      "industry": "insurance",
+      "category": "compliance-documents",
+      "role": "Commercial Lines Account Manager",
+      "summary": "When a commercial client requests a certificate of insurance, a routine ask from vendors and landlords, this automation automatically pulls the…",
+      "steps": [
+        "When a commercial client requests a certificate of insurance, a routine ask from vendors and landlords, this automation automatically pulls the current policy data from the agency management system, generates the certificate in the correct standard ACORD format, and emails it directly to whoever requested it.",
+        "What used to be a multi-day request sitting in an account manager's inbox turns into a same-day, often same-hour, turnaround."
+      ],
+      "manualProcess": "Left unautomated, a commercial lines account manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "AMS360",
+        "Zapier or Make.com",
+        "A certificate-generation tool (Certificates Now or similar)",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/insurance/certificate-of-insurance-auto-generator/"
+    },
+    {
+      "id": "insurance/lapsed-policy-win-back-campaign",
+      "slug": "lapsed-policy-win-back-campaign",
+      "title": "Lapsed Policy Win-Back Campaign",
+      "industry": "insurance",
+      "category": "marketing-retention",
+      "role": "Retention Specialist",
+      "summary": "When a policy lapses due to non-payment or non-renewal, this automation automatically enrolls the former client in a 90-day win-back sequence that…",
+      "steps": [
+        "When a policy lapses due to non-payment or non-renewal, this automation automatically enrolls the former client in a 90-day win-back sequence that offers a fresh rate re-quote and highlights whatever coverage gap they now have without a policy in force.",
+        "Revenue that would otherwise simply disappear from the books gets a structured, timed attempt at recovery instead of being written off the moment the policy lapses."
+      ],
+      "manualProcess": "Done manually, a retention specialist has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "AMS360 or EZLynx",
+        "Mailchimp or email",
+        "Zapier or Make.com",
+        "Twilio (SMS)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/insurance/lapsed-policy-win-back-campaign/"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "slug": "pool-service",
+  "name": "Pool Service & Maintenance",
+  "summary": "Route skip notifications, chemical trend alerts, repair quotes, and seasonal openings.",
+  "url": "https://www.ljwebmanagement.com/automations/pool-service/",
+  "automationCount": 5,
+  "automations": [
+    {
+      "id": "pool-service/chemical-reading-trend-alert",
+      "slug": "chemical-reading-trend-alert",
+      "title": "Chemical Reading Trend Alert",
+      "industry": "pool-service",
+      "category": "operations-inventory",
+      "role": "Service Manager",
+      "summary": "As technicians log chemical readings during each visit, this automation automatically tracks the trend over time per pool and flags any pool showing…",
+      "steps": [
+        "As technicians log chemical readings during each visit, this automation automatically tracks the trend over time per pool and flags any pool showing a pattern suggesting an equipment issue, a failing chlorinator, a slow leak, rather than a normal one-off reading.",
+        "A developing equipment problem gets caught over a few visits instead of only when the pool turns green."
+      ],
+      "manualProcess": "Left to a person, this means a service manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Pool Office Manager or Skimmer",
+        "Zapier or Make.com",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pool-service/chemical-reading-trend-alert/"
+    },
+    {
+      "id": "pool-service/weekly-route-skip-notification",
+      "slug": "weekly-route-skip-notification",
+      "title": "Weekly Route & Skip Notification",
+      "industry": "pool-service",
+      "category": "scheduling-dispatch",
+      "role": "Route Manager",
+      "summary": "This automation automatically builds the weekly service route and, if a technician needs to skip a pool due to an access issue, a locked gate, a dog…",
+      "steps": [
+        "This automation automatically builds the weekly service route and, if a technician needs to skip a pool due to an access issue, a locked gate, a dog in the yard, automatically notifies both the office and the customer.",
+        "A skipped pool never just quietly doesn't get serviced with no one aware until the customer calls asking why their water looks off."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a route manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.",
+      "tools": [
+        "Skimmer or Pool Office Manager",
+        "Twilio or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pool-service/weekly-route-skip-notification/"
+    },
+    {
+      "id": "pool-service/equipment-repair-quote-to-approval-workflow",
+      "slug": "equipment-repair-quote-to-approval-workflow",
+      "title": "Equipment Repair Quote-to-Approval Workflow",
+      "industry": "pool-service",
+      "category": "lead-follow-up-sales",
+      "role": "Service Technician",
+      "summary": "When a technician identifies needed equipment repair during a routine visit, this automation automatically generates a quote with photos of the…",
+      "steps": [
+        "When a technician identifies needed equipment repair during a routine visit, this automation automatically generates a quote with photos of the issue, sends it to the customer for approval, and schedules the repair automatically once approved.",
+        "No separate office callback is required to move from finding a problem to having the repair scheduled."
+      ],
+      "manualProcess": "Without this system, a service technician manually pieces together information from different places, then has to relay it to everyone who needs it. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Skimmer",
+        "Zapier or Make.com",
+        "Stripe or QuickBooks"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "QuickBooks",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pool-service/equipment-repair-quote-to-approval-workflow/"
+    },
+    {
+      "id": "pool-service/seasonal-opening-closing-scheduling-campaign",
+      "slug": "seasonal-opening-closing-scheduling-campaign",
+      "title": "Seasonal Opening/Closing Scheduling Campaign",
+      "industry": "pool-service",
+      "category": "scheduling-dispatch",
+      "role": "Office Manager",
+      "summary": "Ahead of each season, this automation automatically reaches out to customers to book their pool opening or closing service, spreading bookings out…",
+      "steps": [
+        "Ahead of each season, this automation automatically reaches out to customers to book their pool opening or closing service, spreading bookings out over the available scheduling window instead of everyone calling in during the same rushed week.",
+        "The office stops fielding a flood of calls the first warm weekend of spring."
+      ],
+      "manualProcess": "Left unautomated, an office manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Skimmer or Pool Office Manager",
+        "Mailchimp or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pool-service/seasonal-opening-closing-scheduling-campaign/"
+    },
+    {
+      "id": "pool-service/service-visit-photo-log",
+      "slug": "service-visit-photo-log",
+      "title": "Service Visit Photo Log",
+      "industry": "pool-service",
+      "category": "customer-communication",
+      "role": "Service Technician",
+      "summary": "After each visit, this automation automatically sends the customer a quick summary with a photo of the pool and the chemical readings taken.",
+      "steps": [
+        "After each visit, this automation automatically sends the customer a quick summary with a photo of the pool and the chemical readings taken.",
+        "Customers who aren't home to see the service happen get visible proof of the work, building trust that used to depend entirely on taking the company's word for it."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a service technician, who has to track every step by hand across emails, spreadsheets, and sticky notes.",
+      "tools": [
+        "Skimmer",
+        "Twilio or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pool-service/service-visit-photo-log/"
+    }
+  ]
+}

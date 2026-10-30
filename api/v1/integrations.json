@@ -1,0 +1,141 @@
+{
+  "count": 17,
+  "integrations": [
+    {
+      "slug": "twilio",
+      "name": "Twilio (SMS & Voice)",
+      "tag": "Twilio",
+      "description": "Twilio powers the text messages and calls in these automations: instant lead replies, appointment reminders, status updates, and two-way SMS conversations that land with the right person on your team.",
+      "automationCount": 435,
+      "url": "https://www.ljwebmanagement.com/automations/tools/twilio/"
+    },
+    {
+      "slug": "slack",
+      "name": "Slack",
+      "tag": "Slack",
+      "description": "Slack is where these automations bring work to your team: internal alerts, approval requests, daily digests, and escalations posted to the channel or person who owns the problem.",
+      "automationCount": 329,
+      "url": "https://www.ljwebmanagement.com/automations/tools/slack/"
+    },
+    {
+      "slug": "google-sheets",
+      "name": "Google Sheets",
+      "tag": "Google Sheets",
+      "description": "Google Sheets acts as a lightweight database in these automations: logs, trackers, and simple dashboards that update themselves as work happens, with no manual copy and paste.",
+      "automationCount": 327,
+      "url": "https://www.ljwebmanagement.com/automations/tools/google-sheets/"
+    },
+    {
+      "slug": "mailchimp",
+      "name": "Mailchimp",
+      "tag": "Mailchimp",
+      "description": "Mailchimp runs the email side of these automations: nurture sequences, win-back campaigns, renewal reminders, and segmented messages triggered by real customer activity.",
+      "automationCount": 275,
+      "url": "https://www.ljwebmanagement.com/automations/tools/mailchimp/"
+    },
+    {
+      "slug": "airtable",
+      "name": "Airtable",
+      "tag": "Airtable",
+      "description": "Airtable is the backbone for trackers that outgrow a spreadsheet: deal pipelines, compliance logs, inventory, and project records with automatic status changes and alerts.",
+      "automationCount": 191,
+      "url": "https://www.ljwebmanagement.com/automations/tools/airtable/"
+    },
+    {
+      "slug": "jotform",
+      "name": "Jotform",
+      "tag": "Jotform",
+      "description": "Jotform collects the information that starts the workflow: intake forms, surveys, inspection checklists, and requests that route themselves to the right place the moment they are submitted.",
+      "automationCount": 148,
+      "url": "https://www.ljwebmanagement.com/automations/tools/jotform/"
+    },
+    {
+      "slug": "activecampaign",
+      "name": "ActiveCampaign",
+      "tag": "ActiveCampaign",
+      "description": "ActiveCampaign combines email marketing with CRM-style automation, making it a strong fit for behavior-based nurture sequences, lead scoring, and lifecycle campaigns.",
+      "automationCount": 94,
+      "url": "https://www.ljwebmanagement.com/automations/tools/activecampaign/"
+    },
+    {
+      "slug": "google-calendar",
+      "name": "Google Calendar",
+      "tag": "Google Calendar",
+      "description": "Google Calendar keeps schedules in sync: appointments booked by these automations land on the right calendar, and changes trigger confirmations, reminders, and reschedule notices.",
+      "automationCount": 63,
+      "url": "https://www.ljwebmanagement.com/automations/tools/google-calendar/"
+    },
+    {
+      "slug": "hubspot",
+      "name": "HubSpot",
+      "tag": "HubSpot",
+      "description": "HubSpot is the CRM at the center of many of these automations: leads captured and routed, deals advanced by real activity, and follow-up tasks created without manual data entry.",
+      "automationCount": 57,
+      "url": "https://www.ljwebmanagement.com/automations/tools/hubspot/"
+    },
+    {
+      "slug": "quickbooks",
+      "name": "QuickBooks",
+      "tag": "QuickBooks",
+      "description": "QuickBooks automations connect finished work to finished books: invoices created from completed jobs, payments recorded and reconciled, and overdue balances followed up on schedule.",
+      "automationCount": 48,
+      "url": "https://www.ljwebmanagement.com/automations/tools/quickbooks/"
+    },
+    {
+      "slug": "calendly",
+      "name": "Calendly",
+      "tag": "Calendly",
+      "description": "Calendly handles self-scheduling in these automations, so leads and clients book directly from a text or email and the rest of the workflow starts the moment they do.",
+      "automationCount": 48,
+      "url": "https://www.ljwebmanagement.com/automations/tools/calendly/"
+    },
+    {
+      "slug": "clio",
+      "name": "Clio",
+      "tag": "Clio",
+      "description": "Clio automations help law firms keep intake, matters, deadlines, billing, and client communication moving without paralegals re-keying information between systems.",
+      "automationCount": 46,
+      "url": "https://www.ljwebmanagement.com/automations/tools/clio/"
+    },
+    {
+      "slug": "docusign",
+      "name": "DocuSign",
+      "tag": "DocuSign",
+      "description": "DocuSign automations send agreements the moment they are ready, chase unsigned documents on a schedule, and kick off the next step as soon as the last signature lands.",
+      "automationCount": 44,
+      "url": "https://www.ljwebmanagement.com/automations/tools/docusign/"
+    },
+    {
+      "slug": "stripe",
+      "name": "Stripe",
+      "tag": "Stripe",
+      "description": "Stripe automations handle the payment side: deposits and payment links sent automatically, failed charges recovered with reminders, and subscription events synced to the rest of your tools.",
+      "automationCount": 42,
+      "url": "https://www.ljwebmanagement.com/automations/tools/stripe/"
+    },
+    {
+      "slug": "salesforce",
+      "name": "Salesforce",
+      "tag": "Salesforce",
+      "description": "Salesforce automations keep larger pipelines honest: leads routed by territory, stale opportunities flagged, and records enriched and updated without reps doing data entry.",
+      "automationCount": 35,
+      "url": "https://www.ljwebmanagement.com/automations/tools/salesforce/"
+    },
+    {
+      "slug": "outlook",
+      "name": "Microsoft Outlook",
+      "tag": "Outlook",
+      "description": "Outlook automations work inside the inbox and calendar your team already lives in: parsing incoming requests, sending templated follow-ups, and keeping meetings in sync.",
+      "automationCount": 26,
+      "url": "https://www.ljwebmanagement.com/automations/tools/outlook/"
+    },
+    {
+      "slug": "pandadoc",
+      "name": "PandaDoc",
+      "tag": "PandaDoc",
+      "description": "PandaDoc automations generate proposals and quotes from your data, track when they are opened, and follow up automatically until they are signed or declined.",
+      "automationCount": 24,
+      "url": "https://www.ljwebmanagement.com/automations/tools/pandadoc/"
+    }
+  ]
+}

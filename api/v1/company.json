@@ -1,0 +1,22 @@
+{
+  "name": "LJ Web Management",
+  "description": "LJ Web Management is a business automation company that builds custom AI workflow automation systems, removing repetitive tasks and bottlenecks by connecting the business tools teams already use.",
+  "url": "https://www.ljwebmanagement.com/",
+  "email": "info@ljwebmanagement.com",
+  "telephone": "+1-877-559-3268",
+  "address": {
+    "streetAddress": "1108 E 9th St.",
+    "addressLocality": "Lockport",
+    "addressRegion": "IL",
+    "postalCode": "60441",
+    "addressCountry": "US"
+  },
+  "bookingUrl": "https://www.ljwebmanagement.com/appointment/",
+  "contactUrl": "https://www.ljwebmanagement.com/contactus/",
+  "pricingModel": "Flat, upfront quote after a free consultation. Nothing starts until the client approves the scope.",
+  "sameAs": [
+    "https://www.linkedin.com/company/ljwebmanagement/",
+    "https://www.instagram.com/ljwebmanagement/",
+    "https://x.com/lj_web_mgmt"
+  ]
+}

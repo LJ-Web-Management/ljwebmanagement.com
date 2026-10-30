@@ -1,0 +1,136 @@
+{
+  "slug": "locksmith-security",
+  "name": "Locksmith & Security Services",
+  "summary": "Emergency dispatch with ETAs, maintenance contracts, credential audits, and quote follow-up.",
+  "url": "https://www.ljwebmanagement.com/automations/locksmith-security/",
+  "automationCount": 5,
+  "automations": [
+    {
+      "id": "locksmith-security/emergency-dispatch-eta-texting",
+      "slug": "emergency-dispatch-eta-texting",
+      "title": "Emergency Dispatch & ETA Texting",
+      "industry": "locksmith-security",
+      "category": "customer-communication",
+      "role": "Dispatcher",
+      "summary": "When an emergency lockout call comes in, this automation automatically identifies the nearest available technician, dispatches the job, and texts…",
+      "steps": [
+        "When an emergency lockout call comes in, this automation automatically identifies the nearest available technician, dispatches the job, and texts the customer a live ETA.",
+        "Response speed is often the entire basis of the sale in this business, and this automation shaves the minutes that used to go to manually checking which tech was closest."
+      ],
+      "manualProcess": "Left unautomated, a dispatcher spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A dispatch/field service tool (Housecall Pro)",
+        "Twilio (SMS)",
+        "Zapier or Make.com",
+        "Google Maps API"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/locksmith-security/emergency-dispatch-eta-texting/"
+    },
+    {
+      "id": "locksmith-security/recurring-maintenance-contract-scheduling",
+      "slug": "recurring-maintenance-contract-scheduling",
+      "title": "Recurring Maintenance Contract Scheduling",
+      "industry": "locksmith-security",
+      "category": "scheduling-dispatch",
+      "role": "Account Manager",
+      "summary": "For commercial clients with access control or security system maintenance contracts, this automation automatically schedules the recurring service…",
+      "steps": [
+        "For commercial clients with access control or security system maintenance contracts, this automation automatically schedules the recurring service visits required by the contract and reminds the client ahead of each one.",
+        "Contract compliance stops depending on someone remembering to book the next visit months in advance."
+      ],
+      "manualProcess": "Manually, an account manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Housecall Pro or ServiceTitan",
+        "Google Calendar",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/locksmith-security/recurring-maintenance-contract-scheduling/"
+    },
+    {
+      "id": "locksmith-security/key-access-credential-audit-reminder",
+      "slug": "key-access-credential-audit-reminder",
+      "title": "Key/Access Credential Audit Reminder",
+      "industry": "locksmith-security",
+      "category": "compliance-documents",
+      "role": "Security Consultant",
+      "summary": "For commercial security clients, this automation automatically reminds facility managers on a recurring quarterly schedule to review who currently…",
+      "steps": [
+        "For commercial security clients, this automation automatically reminds facility managers on a recurring quarterly schedule to review who currently has active keys or access credentials.",
+        "Accumulated access from former employees or contractors, a common and quietly dangerous gap, gets caught before it becomes a real security incident."
+      ],
+      "manualProcess": "Without this system, a security consultant manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "An access control platform",
+        "Email or Slack",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/locksmith-security/key-access-credential-audit-reminder/"
+    },
+    {
+      "id": "locksmith-security/job-completion-photo-invoice-automation",
+      "slug": "job-completion-photo-invoice-automation",
+      "title": "Job Completion Photo & Invoice Automation",
+      "industry": "locksmith-security",
+      "category": "billing-finance",
+      "role": "Field Technician Supervisor",
+      "summary": "When a technician marks a job complete, this automation automatically attaches photos of the completed work, generates the invoice, and sends it to…",
+      "steps": [
+        "When a technician marks a job complete, this automation automatically attaches photos of the completed work, generates the invoice, and sends it to the customer.",
+        "Commercial clients get documentation for their own records alongside the bill instead of having to request photos separately after the fact."
+      ],
+      "manualProcess": "Without this system, a field technician supervisor manually pieces together information from different places, then has to relay it to everyone who needs it.",
+      "tools": [
+        "Housecall Pro or ServiceTitan",
+        "Zapier or Make.com",
+        "QuickBooks Online"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "QuickBooks"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/locksmith-security/job-completion-photo-invoice-automation/"
+    },
+    {
+      "id": "locksmith-security/security-system-quote-follow-up-sequence",
+      "slug": "security-system-quote-follow-up-sequence",
+      "title": "Security System Quote Follow-Up Sequence",
+      "industry": "locksmith-security",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Manager",
+      "summary": "For unaccepted security system installation quotes, this automation automatically follows up at set intervals, three days, seven days, fourteen…",
+      "steps": [
+        "For unaccepted security system installation quotes, this automation automatically follows up at set intervals, three days, seven days, fourteen days, with the prospect.",
+        "These are typically higher-consideration purchases that benefit from a few gentle nudges rather than a single quote and silence, and the follow-up happens without a salesperson having to remember every open quote."
+      ],
+      "manualProcess": "Left unautomated, a sales manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A CRM (HubSpot or similar)",
+        "Mailchimp or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "HubSpot"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/locksmith-security/security-system-quote-follow-up-sequence/"
+    }
+  ]
+}

@@ -1,0 +1,1230 @@
+{
+  "slug": "compliance-documents",
+  "name": "Compliance, Documents & Deadlines",
+  "summary": "Track licenses, permits, contracts, signatures, and filing deadlines before they become problems.",
+  "description": "Compliance failures are rarely about not knowing the rule. They come from a deadline that lived in one person's head, a certificate that expired quietly, or a signature request that stalled in someone's inbox. These automations track every date that matters, chase missing documents and signatures, and escalate when something is about to slip, while keeping an audit trail of what was sent and when.",
+  "url": "https://www.ljwebmanagement.com/automations/category/compliance-documents/",
+  "automationCount": 122,
+  "automations": [
+    {
+      "id": "addiction-treatment-behavioral-health/treatment-plan-review-clinical-documentation-compliance-tracker",
+      "title": "Treatment Plan Review & Clinical Documentation Compliance Tracker",
+      "industry": "addiction-treatment-behavioral-health",
+      "category": "compliance-documents",
+      "role": "Clinical Director",
+      "summary": "Every client's treatment plan is tracked against the required review schedule (typically every 30 days for residential, every 90 days for…",
+      "url": "https://www.ljwebmanagement.com/automations/addiction-treatment-behavioral-health/treatment-plan-review-clinical-documentation-compliance-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/addiction-treatment-behavioral-health.json"
+    },
+    {
+      "id": "addiction-treatment-behavioral-health/insurance-authorization-tracking",
+      "title": "Insurance Authorization Tracking",
+      "industry": "addiction-treatment-behavioral-health",
+      "category": "compliance-documents",
+      "role": "Utilization Review Coordinator",
+      "summary": "This automation tracks the authorization status and remaining approved days for each patient's insurance, automatically alerting clinical and…",
+      "url": "https://www.ljwebmanagement.com/automations/addiction-treatment-behavioral-health/insurance-authorization-tracking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/addiction-treatment-behavioral-health.json"
+    },
+    {
+      "id": "agriculture-farming/crop-insurance-documentation-deadline-tracker",
+      "title": "Crop Insurance Documentation & Deadline Tracker",
+      "industry": "agriculture-farming",
+      "category": "compliance-documents",
+      "role": "Farm Accountant",
+      "summary": "This automation maintains a calendar of every crop insurance reporting deadline (acreage reporting, production reporting, prevented planting claims…",
+      "url": "https://www.ljwebmanagement.com/automations/agriculture-farming/crop-insurance-documentation-deadline-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/agriculture-farming.json"
+    },
+    {
+      "id": "agriculture-farming/animal-health-record-vaccination-schedule-automation",
+      "title": "Animal Health Record & Vaccination Schedule Automation",
+      "industry": "agriculture-farming",
+      "category": "compliance-documents",
+      "role": "Livestock Manager",
+      "summary": "Each animal in the herd is tracked by ID with a complete health record (vaccination dates, treatment history, weight gain, and breeding status)…",
+      "url": "https://www.ljwebmanagement.com/automations/agriculture-farming/animal-health-record-vaccination-schedule-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/agriculture-farming.json"
+    },
+    {
+      "id": "architecture-engineering/permit-application-status-review-comment-tracker",
+      "title": "Permit Application Status & Review Comment Tracker",
+      "industry": "architecture-engineering",
+      "category": "compliance-documents",
+      "role": "Civil Engineer",
+      "summary": "When a permit application is submitted to a reviewing agency, this automation logs the submission date, expected review clock, and assigned contact…",
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/permit-application-status-review-comment-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/architecture-engineering.json"
+    },
+    {
+      "id": "architecture-engineering/permit-application-status-tracker",
+      "title": "Permit Application Status Tracker",
+      "industry": "architecture-engineering",
+      "category": "compliance-documents",
+      "role": "Project Manager",
+      "summary": "This automation tracks every submitted permit application against the issuing jurisdiction's typical review timeline and automatically checks for…",
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/permit-application-status-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/architecture-engineering.json"
+    },
+    {
+      "id": "automotive/deal-paperwork-checklist-funding-status-tracker",
+      "title": "Deal Paperwork Checklist & Funding Status Tracker",
+      "industry": "automotive",
+      "category": "compliance-documents",
+      "role": "Finance & Insurance Manager",
+      "summary": "The moment a deal is desked, the system generates a complete checklist of every document required for that specific deal (based on the lender…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/deal-paperwork-checklist-funding-status-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/drop-off-photo-documentation-automation",
+      "title": "Drop-Off Photo Documentation Automation",
+      "industry": "automotive",
+      "category": "compliance-documents",
+      "role": "Shop Foreman",
+      "summary": "Photos taken of the vehicle at service drop-off are automatically attached to the repair order, creating documentation that protects both the shop…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/drop-off-photo-documentation-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "cannabis-hemp/state-reporting-seed-to-sale-track-and-trace-automation",
+      "title": "State Reporting & Seed-to-Sale Track-and-Trace Automation",
+      "industry": "cannabis-hemp",
+      "category": "compliance-documents",
+      "role": "Compliance Manager",
+      "summary": "Every inventory movement (receiving, transfer, sale, destruction, or adjustment) is logged in real time and automatically synced to the state's…",
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/state-reporting-seed-to-sale-track-and-trace-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cannabis-hemp.json"
+    },
+    {
+      "id": "cannabis-hemp/seed-to-sale-compliance-sync",
+      "title": "Seed-to-Sale Compliance Sync",
+      "industry": "cannabis-hemp",
+      "category": "compliance-documents",
+      "role": "Compliance Manager",
+      "summary": "This automation automatically syncs inventory movement between the point-of-sale system and the state's mandated seed-to-sale tracking system in…",
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/seed-to-sale-compliance-sync/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cannabis-hemp.json"
+    },
+    {
+      "id": "cannabis-hemp/batch-testing-result-alert",
+      "title": "Batch Testing Result Alert",
+      "industry": "cannabis-hemp",
+      "category": "compliance-documents",
+      "role": "Quality Control Manager",
+      "summary": "When lab testing results come back for a product batch, this automation automatically checks the results against state potency and contaminant…",
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/batch-testing-result-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cannabis-hemp.json"
+    },
+    {
+      "id": "cannabis-hemp/license-renewal-deadline-tracker",
+      "title": "License Renewal Deadline Tracker",
+      "industry": "cannabis-hemp",
+      "category": "compliance-documents",
+      "role": "Operations Director",
+      "summary": "This automation tracks every state and local license and permit renewal deadline tied to the operation and automatically alerts ownership well ahead…",
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/license-renewal-deadline-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cannabis-hemp.json"
+    },
+    {
+      "id": "cannabis-hemp/purchase-limit-compliance-check",
+      "title": "Purchase Limit Compliance Check",
+      "industry": "cannabis-hemp",
+      "category": "compliance-documents",
+      "role": "Dispensary Manager",
+      "summary": "At checkout, this automation automatically checks a customer's same-day purchase history against state possession limits before the sale is completed.",
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/purchase-limit-compliance-check/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cannabis-hemp.json"
+    },
+    {
+      "id": "cannabis-hemp/vendor-compliance-document-tracker",
+      "title": "Vendor Compliance Document Tracker",
+      "industry": "cannabis-hemp",
+      "category": "compliance-documents",
+      "role": "Purchasing Manager",
+      "summary": "This automation tracks required compliance documentation, lab results, licensing, manifest records, for every incoming product from every vendor…",
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/vendor-compliance-document-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cannabis-hemp.json"
+    },
+    {
+      "id": "commercial-real-estate/tenant-lease-abstract-critical-date-alert-system",
+      "title": "Tenant Lease Abstract & Critical Date Alert System",
+      "industry": "commercial-real-estate",
+      "category": "compliance-documents",
+      "role": "Asset Manager",
+      "summary": "Every tenant lease in the portfolio is abstracted into a standardized database capturing rent commencement, rent escalations, option exercise…",
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/tenant-lease-abstract-critical-date-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/commercial-real-estate.json"
+    },
+    {
+      "id": "commercial-real-estate/property-tax-insurance-deadline-tracker",
+      "title": "Property Tax & Insurance Deadline Tracker",
+      "industry": "commercial-real-estate",
+      "category": "compliance-documents",
+      "role": "Asset Manager",
+      "summary": "This automation tracks payment and appeal deadlines for property taxes and insurance renewals across every property in a portfolio, automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/property-tax-insurance-deadline-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/commercial-real-estate.json"
+    },
+    {
+      "id": "construction-contracting/permit-application-inspection-scheduler",
+      "title": "Permit Application & Inspection Scheduler",
+      "industry": "construction-contracting",
+      "category": "compliance-documents",
+      "role": "Construction Office Manager",
+      "summary": "As soon as a project hits the permitting stage, this automation generates the correct permit application forms pre-filled with project details…",
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/permit-application-inspection-scheduler/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/construction-contracting.json"
+    },
+    {
+      "id": "construction-contracting/incident-report-osha-log-automation",
+      "title": "Incident Report & OSHA Log Automation",
+      "industry": "construction-contracting",
+      "category": "compliance-documents",
+      "role": "Safety Manager",
+      "summary": "The moment a field supervisor submits an incident report from the job site, this automation timestamps and logs it into the OSHA 300 log in the…",
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/incident-report-osha-log-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/construction-contracting.json"
+    },
+    {
+      "id": "construction-contracting/permit-expiration-inspection-deadline-tracker",
+      "title": "Permit Expiration & Inspection Deadline Tracker",
+      "industry": "construction-contracting",
+      "category": "compliance-documents",
+      "role": "Compliance Coordinator",
+      "summary": "Every open permit across every active job is tracked against its expiration date and required inspection windows in one central log, and the…",
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/permit-expiration-inspection-deadline-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/construction-contracting.json"
+    },
+    {
+      "id": "cybersecurity/policy-review-cycle-employee-attestation-system",
+      "title": "Policy Review Cycle & Employee Attestation System",
+      "industry": "cybersecurity",
+      "category": "compliance-documents",
+      "role": "Compliance Officer",
+      "summary": "Information security policies are tracked with annual review dates, and the assigned policy owner receives a review reminder 60 days before the…",
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/policy-review-cycle-employee-attestation-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cybersecurity.json"
+    },
+    {
+      "id": "cybersecurity/offboarded-account-access-review",
+      "title": "Offboarded Account Access Review",
+      "industry": "cybersecurity",
+      "category": "compliance-documents",
+      "role": "IT Security Administrator",
+      "summary": "This automation cross-checks the active employee list from HR against system access logs on a recurring weekly basis and automatically flags any…",
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/offboarded-account-access-review/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cybersecurity.json"
+    },
+    {
+      "id": "cybersecurity/client-incident-notification-draft",
+      "title": "Client Incident Notification Draft",
+      "industry": "cybersecurity",
+      "category": "compliance-documents",
+      "role": "Incident Response Lead",
+      "summary": "When a security incident affecting client data is confirmed, this automation automatically drafts the notification communication using the…",
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/client-incident-notification-draft/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cybersecurity.json"
+    },
+    {
+      "id": "dental-practices/insurance-verification-pre-auth-tracker",
+      "title": "Insurance Verification & Pre-Auth Tracker",
+      "industry": "dental-practices",
+      "category": "compliance-documents",
+      "role": "Dental Billing Specialist",
+      "summary": "For every patient scheduled more than 48 hours in advance, this automation runs an automated eligibility verification against the patient's listed…",
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/insurance-verification-pre-auth-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/dental-practices.json"
+    },
+    {
+      "id": "ecommerce-retail/international-customs-documentation-automation",
+      "title": "International Customs Documentation Automation",
+      "industry": "ecommerce-retail",
+      "category": "compliance-documents",
+      "role": "Logistics Manager",
+      "summary": "The moment an order ships to an international address, this automation automatically generates the required customs paperwork, commercial invoice…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/international-customs-documentation-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "financial-services/tax-season-document-collection-status-tracker",
+      "title": "Tax Season Document Collection & Status Tracker",
+      "industry": "financial-services",
+      "category": "compliance-documents",
+      "role": "Tax Preparer",
+      "summary": "At the start of tax season, every client on the roster automatically receives a personalized document request checklist via email, with a secure…",
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/tax-season-document-collection-status-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/financial-services.json"
+    },
+    {
+      "id": "financial-services/secure-document-collection-follow-up-system",
+      "title": "Secure Document Collection & Follow-Up System",
+      "industry": "financial-services",
+      "category": "compliance-documents",
+      "role": "Client Services Coordinator",
+      "summary": "When an advisor needs a client's tax documents, statements, or a signed form, this automation sends a secure, trackable request through the firm's…",
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/secure-document-collection-follow-up-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/financial-services.json"
+    },
+    {
+      "id": "fitness-wellness/annual-health-intake-renewal-reminder",
+      "title": "Annual Health Intake Renewal Reminder",
+      "industry": "fitness-wellness",
+      "category": "compliance-documents",
+      "role": "Compliance Coordinator",
+      "summary": "Clients with a health or medical intake form on file are automatically reminded on an annual basis to review and update it before their next…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/annual-health-intake-renewal-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "general-business/contract-e-signature-chase-sequence",
+      "title": "Contract E-Signature Chase Sequence",
+      "industry": "general-business",
+      "category": "compliance-documents",
+      "role": "Sales Enablement Manager",
+      "summary": "Once a contract goes out for signature through DocuSign, the system tracks whether the recipient has opened it, and if it sits unsigned past 48…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/contract-e-signature-chase-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/contract-expiration-alert-renewal-trigger",
+      "title": "Contract Expiration Alert & Renewal Trigger",
+      "industry": "general-business",
+      "category": "compliance-documents",
+      "role": "Contracts Administrator",
+      "summary": "Every signed contract stored in DocuSign carries its term length and expiration date, and 120 days before that date arrives, Zapier automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/contract-expiration-alert-renewal-trigger/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/sms-opt-in-compliance-tracking",
+      "title": "SMS Opt-In Compliance Tracking",
+      "industry": "general-business",
+      "category": "compliance-documents",
+      "role": "Compliance & Marketing Ops Manager",
+      "summary": "Every time a contact opts into SMS marketing, whether through a website form, a point-of-sale prompt, or a reply keyword, Twilio logs the exact…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/sms-opt-in-compliance-tracking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/safety-training-compliance-tracking",
+      "title": "Safety Training Compliance Tracking",
+      "industry": "general-business",
+      "category": "compliance-documents",
+      "role": "Compliance Officer",
+      "summary": "Every employee's required safety certifications, from OSHA basics to equipment-specific training, get tracked with expiration dates in an Airtable…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/safety-training-compliance-tracking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/contract-renewal-reminder-system",
+      "title": "Contract Renewal Reminder System",
+      "industry": "general-business",
+      "category": "compliance-documents",
+      "role": "Operations Coordinator",
+      "summary": "Every vendor and service contract gets logged into an Airtable database with its renewal date, auto-renewal terms, and contract owner, and 60 days…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/contract-renewal-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/vendor-w-9-and-insurance-certificate-collection",
+      "title": "Vendor W-9 and Insurance Certificate Collection",
+      "industry": "general-business",
+      "category": "compliance-documents",
+      "role": "Vendor Relations Manager",
+      "summary": "Before any new vendor gets set up for payment in Bill.com, they automatically receive a PandaDoc request for a signed W-9 and a current certificate…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/vendor-w-9-and-insurance-certificate-collection/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/software-license-renewal-tracking-and-alerts",
+      "title": "Software License Renewal Tracking and Alerts",
+      "industry": "general-business",
+      "category": "compliance-documents",
+      "role": "Systems Administrator",
+      "summary": "Every software license the company owns, from design tools to project management platforms, is logged in an Airtable base with its renewal date…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/software-license-renewal-tracking-and-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/board-meeting-document-distribution-system",
+      "title": "Board Meeting Document Distribution System",
+      "industry": "general-business",
+      "category": "compliance-documents",
+      "role": "Corporate Secretary",
+      "summary": "Once the board meeting agenda is finalized in Google Docs, the workflow assembles the full packet, financial statements, prior minutes, and…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/board-meeting-document-distribution-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/contract-renewal-deadline-tracking",
+      "title": "Contract Renewal Deadline Tracking",
+      "industry": "general-business",
+      "category": "compliance-documents",
+      "role": "Contracts Manager",
+      "summary": "Every signed contract, from client agreements to software terms, gets logged into an Airtable tracker the moment it's countersigned in DocuSign…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/contract-renewal-deadline-tracking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/vendor-contract-expiration-alerts",
+      "title": "Vendor Contract Expiration Alerts",
+      "industry": "general-business",
+      "category": "compliance-documents",
+      "role": "Procurement Manager",
+      "summary": "The procurement team's full vendor roster, service agreements, pricing terms, and expiration dates all live in a shared Airtable base instead of…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/vendor-contract-expiration-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/insurance-policy-renewal-reminders",
+      "title": "Insurance Policy Renewal Reminders",
+      "industry": "general-business",
+      "category": "compliance-documents",
+      "role": "Risk and Compliance Manager",
+      "summary": "General liability, cyber, workers' compensation, and property policies are all tracked in a central Google Sheets register along with their carrier…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/insurance-policy-renewal-reminders/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/document-e-signature-routing-workflow",
+      "title": "Document E-Signature Routing Workflow",
+      "industry": "general-business",
+      "category": "compliance-documents",
+      "role": "Legal Operations Coordinator",
+      "summary": "When a contract, NDA, or offer letter is finalized and ready to sign, the workflow pulls the correct template, populates it with the recipient's…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/document-e-signature-routing-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "government-public-sector/foia-public-records-request-tracking-response-system",
+      "title": "FOIA / Public Records Request Tracking & Response System",
+      "industry": "government-public-sector",
+      "category": "compliance-documents",
+      "role": "City / County Administrator",
+      "summary": "Every public records request submitted through the portal, by email, or in person is automatically assigned a unique tracking number, acknowledged…",
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/foia-public-records-request-tracking-response-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/government-public-sector.json"
+    },
+    {
+      "id": "government-public-sector/public-records-request-intake-deadline-tracker",
+      "title": "Public Records Request Intake & Deadline Tracker",
+      "industry": "government-public-sector",
+      "category": "compliance-documents",
+      "role": "Records Compliance Officer",
+      "summary": "When a public records request is submitted, this automation automatically logs it, calculates the legally required response deadline, routes it to…",
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/public-records-request-intake-deadline-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/government-public-sector.json"
+    },
+    {
+      "id": "government-public-sector/grant-compliance-reporting-reminder",
+      "title": "Grant Compliance Reporting Reminder",
+      "industry": "government-public-sector",
+      "category": "compliance-documents",
+      "role": "Grants Manager",
+      "summary": "For every grant a department has received, this automation tracks required reporting deadlines and spending milestones, automatically reminding the…",
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/grant-compliance-reporting-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/government-public-sector.json"
+    },
+    {
+      "id": "government-public-sector/public-meeting-agenda-notice-automation",
+      "title": "Public Meeting Agenda & Notice Automation",
+      "industry": "government-public-sector",
+      "category": "compliance-documents",
+      "role": "City Clerk",
+      "summary": "Ahead of each scheduled public meeting, this automation automatically compiles the submitted agenda items into the formatted agenda, posts it to the…",
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/public-meeting-agenda-notice-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/government-public-sector.json"
+    },
+    {
+      "id": "healthcare/eligibility-verification-prior-authorization-tracker",
+      "title": "Eligibility Verification & Prior Authorization Tracker",
+      "industry": "healthcare",
+      "category": "compliance-documents",
+      "role": "Medical Billing Specialist",
+      "summary": "For every appointment scheduled more than 48 hours out, this automation automatically verifies the patient's insurance eligibility and pulls their…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/eligibility-verification-prior-authorization-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/staff-credentialing-license-expiration-tracker",
+      "title": "Staff Credentialing & License Expiration Tracker",
+      "industry": "healthcare",
+      "category": "compliance-documents",
+      "role": "Practice Administrator",
+      "summary": "Every provider and licensed staff member's credentials (DEA license, state medical license, malpractice insurance, BLS certification, and board…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/staff-credentialing-license-expiration-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/automated-insurance-verification-pre-check",
+      "title": "Automated Insurance Verification Pre-Check",
+      "industry": "healthcare",
+      "category": "compliance-documents",
+      "role": "Patient Access Representative",
+      "summary": "Exactly 48 hours before every scheduled appointment, this automation pings the payer's eligibility API directly through the clearinghouse and pulls…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/automated-insurance-verification-pre-check/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/booking-triggered-insurance-eligibility-pre-check",
+      "title": "Booking-Triggered Insurance Eligibility Pre-Check",
+      "industry": "healthcare",
+      "category": "compliance-documents",
+      "role": "Front Office Supervisor",
+      "summary": "As soon as a patient books an appointment online or by phone, this automation automatically pings the practice's clearinghouse to run an eligibility…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/booking-triggered-insurance-eligibility-pre-check/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/referral-authorization-turnaround-tracking",
+      "title": "Referral Authorization Turnaround Tracking",
+      "industry": "healthcare",
+      "category": "compliance-documents",
+      "role": "Prior Authorization Specialist",
+      "summary": "Once a specialist referral requiring prior authorization is logged, this automation automatically starts a turnaround clock against the payer's…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/referral-authorization-turnaround-tracking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/consent-form-expiration-renewal-alerts",
+      "title": "Consent Form Expiration Renewal Alerts",
+      "industry": "healthcare",
+      "category": "compliance-documents",
+      "role": "Compliance Officer",
+      "summary": "Every consent document that carries an expiration date, including HIPAA acknowledgments, telehealth consents, and chronic care plans, is tracked…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/consent-form-expiration-renewal-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/sms-consent-capture-logging-system",
+      "title": "SMS Consent Capture & Logging System",
+      "industry": "healthcare",
+      "category": "compliance-documents",
+      "role": "Privacy Compliance Specialist",
+      "summary": "Before any patient is enrolled in text message communications of any kind, this automation automatically presents a clear opt-in request explaining…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/sms-consent-capture-logging-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/annual-insurance-re-verification-sweep",
+      "title": "Annual Insurance Re-Verification Sweep",
+      "industry": "healthcare",
+      "category": "compliance-documents",
+      "role": "Revenue Cycle Manager",
+      "summary": "At the start of each plan year, the automation automatically re-verifies insurance eligibility for every active patient ahead of their next…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/annual-insurance-re-verification-sweep/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/multi-location-record-transfer-coordination",
+      "title": "Multi-Location Record Transfer Coordination",
+      "industry": "healthcare",
+      "category": "compliance-documents",
+      "role": "Health Information Manager",
+      "summary": "When a patient's records need to move between practice locations, the automation automatically routes the transfer request and confirms it was…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/multi-location-record-transfer-coordination/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "home-services/permit-status-tracking",
+      "title": "Permit Status Tracking",
+      "industry": "home-services",
+      "category": "compliance-documents",
+      "role": "Permit Coordinator",
+      "summary": "For jobs that require a municipal permit, such as a panel upgrade or a full re-roof, this automation logs the application the moment it's submitted…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/permit-status-tracking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/annual-safety-system-inspection-reminder",
+      "title": "Annual Safety System Inspection Reminder",
+      "industry": "home-services",
+      "category": "compliance-documents",
+      "role": "Safety Compliance Coordinator",
+      "summary": "Customers with safety-critical installations, standby generators, sump pumps, gas line systems, are automatically flagged in the CRM with their…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/annual-safety-system-inspection-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/technician-license-certification-tracker",
+      "title": "Technician License & Certification Tracker",
+      "industry": "home-services",
+      "category": "compliance-documents",
+      "role": "HR & Compliance Manager",
+      "summary": "This automation maintains a running record of every technician's state license, EPA certification, and manufacturer credentials, with renewal…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/technician-license-certification-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/inspection-failure-remediation-workflow",
+      "title": "Inspection Failure Remediation Workflow",
+      "industry": "home-services",
+      "category": "compliance-documents",
+      "role": "Quality Assurance Coordinator",
+      "summary": "When a completed job fails a required inspection, the automation automatically creates a remediation task and schedules the re-inspection, keeping…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/inspection-failure-remediation-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "insurance/application-screening-risk-flag-report-generator",
+      "title": "Application Screening & Risk Flag Report Generator",
+      "industry": "insurance",
+      "category": "compliance-documents",
+      "role": "Insurance Underwriter",
+      "summary": "Incoming applications are automatically checked against underwriting guidelines (coverage limits, geographic risk, loss history, required…",
+      "url": "https://www.ljwebmanagement.com/automations/insurance/application-screening-risk-flag-report-generator/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/insurance.json"
+    },
+    {
+      "id": "insurance/certificate-of-insurance-auto-generator",
+      "title": "Certificate of Insurance Auto-Generator",
+      "industry": "insurance",
+      "category": "compliance-documents",
+      "role": "Commercial Lines Account Manager",
+      "summary": "When a commercial client requests a certificate of insurance, a routine ask from vendors and landlords, this automation automatically pulls the…",
+      "url": "https://www.ljwebmanagement.com/automations/insurance/certificate-of-insurance-auto-generator/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/insurance.json"
+    },
+    {
+      "id": "legal/discovery-request-tracker-response-deadline-system",
+      "title": "Discovery Request Tracker & Response Deadline System",
+      "industry": "legal",
+      "category": "compliance-documents",
+      "role": "Paralegal",
+      "summary": "When a discovery request is received and logged, this automation calculates the response deadline based on the applicable rules (federal, state, or…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/discovery-request-tracker-response-deadline-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/document-request-follow-up-system",
+      "title": "Document Request Follow-Up System",
+      "industry": "legal",
+      "category": "compliance-documents",
+      "role": "Litigation Support Specialist",
+      "summary": "When a client is asked for documents, whether it's financial records for a divorce, medical bills for a personal injury claim, or signed affidavits…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/document-request-follow-up-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/e-signature-follow-up-automation",
+      "title": "E-Signature Follow-Up Automation",
+      "industry": "legal",
+      "category": "compliance-documents",
+      "role": "Client Onboarding Coordinator",
+      "summary": "Once an engagement letter or other document is sent out for signature, this automation tracks its status in real time and automatically sends a…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/e-signature-follow-up-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/engagement-letter-e-signature-reminder-chain",
+      "title": "Engagement Letter E-Signature Reminder Chain",
+      "industry": "legal",
+      "category": "compliance-documents",
+      "role": "Legal Assistant",
+      "summary": "Once an engagement letter or other document is sent for signature through DocuSign, the automation automatically starts a reminder countdown: any…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/engagement-letter-e-signature-reminder-chain/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/statute-of-limitations-deadline-alert-system",
+      "title": "Statute of Limitations & Deadline Alert System",
+      "industry": "legal",
+      "category": "compliance-documents",
+      "role": "Docketing Clerk",
+      "summary": "As soon as a key date, whether a statute of limitations, a filing deadline, or a response due date, is entered into the case management system for a…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/statute-of-limitations-deadline-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/legal-document-expiration-tracking-system",
+      "title": "Legal Document Expiration Tracking System",
+      "industry": "legal",
+      "category": "compliance-documents",
+      "role": "Compliance Paralegal",
+      "summary": "Key documents with hard expiration dates, powers of attorney, business licenses, professional permits, and similar filings, are automatically logged…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/legal-document-expiration-tracking-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/new-matter-conflict-check-automation",
+      "title": "New Matter Conflict Check Automation",
+      "industry": "legal",
+      "category": "compliance-documents",
+      "role": "Conflicts Counsel",
+      "summary": "The instant a new matter is entered into the intake system through a Jotform submission or directly in Clio Grow, the automation automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/new-matter-conflict-check-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/discovery-production-deadline-tracker",
+      "title": "Discovery Production Deadline Tracker",
+      "industry": "legal",
+      "category": "compliance-documents",
+      "role": "Discovery Paralegal",
+      "summary": "In litigation matters, the automation automatically tracks every document production deadline tied to discovery requests entered into Clio…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/discovery-production-deadline-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/file-closure-archiving-automation",
+      "title": "File Closure & Archiving Automation",
+      "industry": "legal",
+      "category": "compliance-documents",
+      "role": "Records Manager",
+      "summary": "Once a matter is marked complete, the automation automatically triggers the file closure checklist and schedules the physical or digital file for…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/file-closure-archiving-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/case-type-statutory-deadline-bundle-automation",
+      "title": "Case-Type Statutory Deadline Bundle Automation",
+      "industry": "legal",
+      "category": "compliance-documents",
+      "role": "Docketing Clerk",
+      "summary": "When a new matter is entered as a specific case type, the automation automatically applies a pre-built bundle of the relevant statutory deadlines…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/case-type-statutory-deadline-bundle-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/client-document-return-automation",
+      "title": "Client Document Return Automation",
+      "industry": "legal",
+      "category": "compliance-documents",
+      "role": "Client Services Associate",
+      "summary": "At case closure, original documents that need to be returned to the client automatically trigger a return or pickup notification, ensuring nothing…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/client-document-return-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "locksmith-security/key-access-credential-audit-reminder",
+      "title": "Key/Access Credential Audit Reminder",
+      "industry": "locksmith-security",
+      "category": "compliance-documents",
+      "role": "Security Consultant",
+      "summary": "For commercial security clients, this automation automatically reminds facility managers on a recurring quarterly schedule to review who currently…",
+      "url": "https://www.ljwebmanagement.com/automations/locksmith-security/key-access-credential-audit-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/locksmith-security.json"
+    },
+    {
+      "id": "logistics-supply-chain/customs-documentation-assembler",
+      "title": "Customs Documentation Assembler",
+      "industry": "logistics-supply-chain",
+      "category": "compliance-documents",
+      "role": "Import/Export Coordinator",
+      "summary": "For every international shipment, this automation automatically pulls the commercial invoice, packing list, and certificate of origin directly from…",
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/customs-documentation-assembler/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/logistics-supply-chain.json"
+    },
+    {
+      "id": "manufacturing/safety-inspection-checklist-compliance-certificate-tracker",
+      "title": "Safety Inspection Checklist & Compliance Certificate Tracker",
+      "industry": "manufacturing",
+      "category": "compliance-documents",
+      "role": "EHS (Environment, Health & Safety) Manager",
+      "summary": "Weekly safety inspection checklists are assigned automatically to the designated inspector, completed via a mobile form on the floor, and routed to…",
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/safety-inspection-checklist-compliance-certificate-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/manufacturing.json"
+    },
+    {
+      "id": "manufacturing/safety-incident-documentation-osha-deadline-workflow",
+      "title": "Safety Incident Documentation & OSHA Deadline Workflow",
+      "industry": "manufacturing",
+      "category": "compliance-documents",
+      "role": "Safety Coordinator",
+      "summary": "When a worker reports a safety incident through a simple mobile form (near miss, injury, or property damage) the safety coordinator and plant…",
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/safety-incident-documentation-osha-deadline-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/manufacturing.json"
+    },
+    {
+      "id": "oil-gas/permit-to-work-daily-safety-check-in-system",
+      "title": "Permit to Work & Daily Safety Check-In System",
+      "industry": "oil-gas",
+      "category": "compliance-documents",
+      "role": "Field Operations Manager",
+      "summary": "Before any hazardous work begins on a well site, this automation issues the digital Permit to Work form to the requesting crew, routes it for…",
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/permit-to-work-daily-safety-check-in-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/oil-gas.json"
+    },
+    {
+      "id": "oil-gas/lease-expiration-delay-rental-payment-tracker",
+      "title": "Lease Expiration & Delay Rental Payment Tracker",
+      "industry": "oil-gas",
+      "category": "compliance-documents",
+      "role": "Land Manager",
+      "summary": "Every active lease in the land department's database is tracked against its primary term expiration date, continuous development obligation, and…",
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/lease-expiration-delay-rental-payment-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/oil-gas.json"
+    },
+    {
+      "id": "oil-gas/incident-near-miss-reporting-regulatory-compliance-system",
+      "title": "Incident & Near Miss Reporting & Regulatory Compliance System",
+      "industry": "oil-gas",
+      "category": "compliance-documents",
+      "role": "HSE Manager",
+      "summary": "The moment a field employee submits an incident or near miss report via mobile form, the system timestamps it, notifies the HSE manager and site…",
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/incident-near-miss-reporting-regulatory-compliance-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/oil-gas.json"
+    },
+    {
+      "id": "oil-gas/regulatory-filing-deadline-tracker",
+      "title": "Regulatory Filing Deadline Tracker",
+      "industry": "oil-gas",
+      "category": "compliance-documents",
+      "role": "Compliance Manager",
+      "summary": "For every well and facility, this automation tracks state and federal filing deadlines, production reports, environmental filings, permit renewals…",
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/regulatory-filing-deadline-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/oil-gas.json"
+    },
+    {
+      "id": "oil-gas/equipment-inspection-scheduling",
+      "title": "Equipment Inspection Scheduling",
+      "industry": "oil-gas",
+      "category": "compliance-documents",
+      "role": "Maintenance Supervisor",
+      "summary": "Based on regulatory requirements and manufacturer intervals, this automation automatically schedules required inspections for pressure vessels…",
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/equipment-inspection-scheduling/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/oil-gas.json"
+    },
+    {
+      "id": "oil-gas/safety-incident-near-miss-reporting-workflow",
+      "title": "Safety Incident & Near-Miss Reporting Workflow",
+      "industry": "oil-gas",
+      "category": "compliance-documents",
+      "role": "HSE Coordinator",
+      "summary": "When a field incident or near-miss is reported through a mobile form, this automation immediately notifies the safety manager, starts the required…",
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/safety-incident-near-miss-reporting-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/oil-gas.json"
+    },
+    {
+      "id": "pest-control/termite-inspection-follow-up",
+      "title": "Termite Inspection Follow-Up",
+      "industry": "pest-control",
+      "category": "compliance-documents",
+      "role": "Inspector",
+      "summary": "After an annual termite inspection is completed and logged, this automation automatically generates and sends the required inspection report to the…",
+      "url": "https://www.ljwebmanagement.com/automations/pest-control/termite-inspection-follow-up/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pest-control.json"
+    },
+    {
+      "id": "pharmaceutical-biotech/fda-submission-deadline-ectd-document-tracker",
+      "title": "FDA Submission Deadline & eCTD Document Tracker",
+      "industry": "pharmaceutical-biotech",
+      "category": "compliance-documents",
+      "role": "Regulatory Affairs Manager",
+      "summary": "Every active IND, NDA, BLA, or 510(k) submission has a complete calendar of required actions, annual report due dates, response deadlines for FDA…",
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/fda-submission-deadline-ectd-document-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pharmaceutical-biotech.json"
+    },
+    {
+      "id": "pharmaceutical-biotech/batch-record-review-deviation-escalation-system",
+      "title": "Batch Record Review & Deviation Escalation System",
+      "industry": "pharmaceutical-biotech",
+      "category": "compliance-documents",
+      "role": "Quality Assurance Manager",
+      "summary": "When a batch record is submitted for QA review, this automation assigns it to the appropriate QA reviewer based on product line and workload, starts…",
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/batch-record-review-deviation-escalation-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pharmaceutical-biotech.json"
+    },
+    {
+      "id": "pharmaceutical-biotech/sample-accountability-call-report-automation",
+      "title": "Sample Accountability & Call Report Automation",
+      "industry": "pharmaceutical-biotech",
+      "category": "compliance-documents",
+      "role": "Pharmaceutical Sales Representative",
+      "summary": "After each physician office call, the pharma rep submits a digital call report capturing the products detailed, samples left, signature obtained…",
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/sample-accountability-call-report-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pharmaceutical-biotech.json"
+    },
+    {
+      "id": "pharmaceutical-biotech/adverse-event-reporting-deadline-alert",
+      "title": "Adverse Event Reporting Deadline Alert",
+      "industry": "pharmaceutical-biotech",
+      "category": "compliance-documents",
+      "role": "Pharmacovigilance Specialist",
+      "summary": "When an adverse event is logged, this automation automatically calculates the required regulatory reporting deadline based on the event's severity…",
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/adverse-event-reporting-deadline-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pharmaceutical-biotech.json"
+    },
+    {
+      "id": "pharmaceutical-biotech/batch-record-deviation-escalation",
+      "title": "Batch Record Deviation Escalation",
+      "industry": "pharmaceutical-biotech",
+      "category": "compliance-documents",
+      "role": "Quality Assurance Specialist",
+      "summary": "When a manufacturing batch record shows a deviation from the approved process, this automation automatically routes it to quality assurance with the…",
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/batch-record-deviation-escalation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pharmaceutical-biotech.json"
+    },
+    {
+      "id": "pharmaceutical-biotech/sample-chain-of-custody-log",
+      "title": "Sample Chain-of-Custody Log",
+      "industry": "pharmaceutical-biotech",
+      "category": "compliance-documents",
+      "role": "Lab Operations Manager",
+      "summary": "As samples move between collection, storage, and testing, this automation automatically logs each handoff with a timestamp and the handler's name…",
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/sample-chain-of-custody-log/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pharmaceutical-biotech.json"
+    },
+    {
+      "id": "professional-services/tax-season-document-collection-deadline-tracker",
+      "title": "Tax Season Document Collection & Deadline Tracker",
+      "industry": "professional-services",
+      "category": "compliance-documents",
+      "role": "CPA / Accountant",
+      "summary": "At the start of tax season, every client automatically receives a personalized document request list tailored to their entity type, with a secure…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/tax-season-document-collection-deadline-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/client-document-request-reminder-loop",
+      "title": "Client Document Request & Reminder Loop",
+      "industry": "professional-services",
+      "category": "compliance-documents",
+      "role": "Client Relations Coordinator",
+      "summary": "At tax season or the start of any engagement requiring client documents, this automation automatically sends a checklist of exactly what's needed…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/client-document-request-reminder-loop/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/deadline-compliance-tracker",
+      "title": "Deadline Compliance Tracker",
+      "industry": "professional-services",
+      "category": "compliance-documents",
+      "role": "Tax Manager",
+      "summary": "For every recurring filing deadline tied to each client, payroll tax, sales tax, quarterly estimates, this automation tracks the due date and…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/deadline-compliance-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/escalating-document-request-reminder-chain",
+      "title": "Escalating Document Request Reminder Chain",
+      "industry": "professional-services",
+      "category": "compliance-documents",
+      "role": "Client Onboarding Specialist",
+      "summary": "Clients who haven't uploaded required documents, tax paperwork, claims forms, signed disclosures, automatically receive escalating reminders as the…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/escalating-document-request-reminder-chain/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/policy-filing-deadline-alert-system",
+      "title": "Policy & Filing Deadline Alert System",
+      "industry": "professional-services",
+      "category": "compliance-documents",
+      "role": "Insurance Account Manager",
+      "summary": "Both clients and staff automatically receive advance alerts ahead of key deadlines pulled directly from each client's file, tax filing dates, policy…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/policy-filing-deadline-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/unsigned-engagement-letter-follow-up-chain",
+      "title": "Unsigned Engagement Letter Follow-Up Chain",
+      "industry": "professional-services",
+      "category": "compliance-documents",
+      "role": "Practice Manager",
+      "summary": "Engagement letters or forms sent for signature that remain incomplete automatically trigger reminders at set intervals, a gentle nudge after two…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/unsigned-engagement-letter-follow-up-chain/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/audit-preparation-checklist-automation",
+      "title": "Audit Preparation Checklist Automation",
+      "industry": "professional-services",
+      "category": "compliance-documents",
+      "role": "Audit Manager",
+      "summary": "As an audit or annual review date approaches, the client automatically receives a checklist of the specific materials and documents that will…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/audit-preparation-checklist-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/secure-document-vault-review-reminder",
+      "title": "Secure Document Vault Review Reminder",
+      "industry": "professional-services",
+      "category": "compliance-documents",
+      "role": "Client Relations Coordinator",
+      "summary": "Documents stored in a client's secure vault, wills, insurance policies, trust documents, are automatically flagged with review dates, prompting a…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/secure-document-vault-review-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/internal-compliance-filing-deadline-tracker",
+      "title": "Internal Compliance Filing Deadline Tracker",
+      "industry": "professional-services",
+      "category": "compliance-documents",
+      "role": "Compliance Officer",
+      "summary": "Internal compliance filings, ADV updates, license renewals, required regulatory disclosures, are automatically tracked with alerts sent to the…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/internal-compliance-filing-deadline-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/e-delivery-consent-capture-logging",
+      "title": "E-Delivery Consent Capture & Logging",
+      "industry": "professional-services",
+      "category": "compliance-documents",
+      "role": "Compliance Officer",
+      "summary": "The automation automatically captures and logs a client's consent to receive statements and required disclosures electronically the moment they opt…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/e-delivery-consent-capture-logging/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/document-retention-compliance-sweep",
+      "title": "Document Retention Compliance Sweep",
+      "industry": "professional-services",
+      "category": "compliance-documents",
+      "role": "Records Manager",
+      "summary": "The automation automatically flags documents that have reached the end of their required retention period, routing them for archiving or destruction…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/document-retention-compliance-sweep/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/tax-document-delivery-confirmation-reminder",
+      "title": "Tax Document Delivery Confirmation & Reminder",
+      "industry": "professional-services",
+      "category": "compliance-documents",
+      "role": "Tax Manager",
+      "summary": "The automation tracks whether a client has actually downloaded or received their tax documents and automatically sends a reminder if they remain…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/tax-document-delivery-confirmation-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/claim-type-document-checklist-automation",
+      "title": "Claim-Type Document Checklist Automation",
+      "industry": "professional-services",
+      "category": "compliance-documents",
+      "role": "Claims Coordinator",
+      "summary": "Once a claim is opened, the client automatically receives the specific document checklist required for that claim type, reducing the back-and-forth…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/claim-type-document-checklist-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/annual-fee-disclosure-renewal-automation",
+      "title": "Annual Fee Disclosure Renewal Automation",
+      "industry": "professional-services",
+      "category": "compliance-documents",
+      "role": "Compliance Officer",
+      "summary": "Required annual fee and conflict-of-interest disclosures are automatically generated and sent to every client each year for acknowledgment, keeping…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/annual-fee-disclosure-renewal-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "property-management/renters-insurance-compliance-alert",
+      "title": "Renters Insurance Compliance Alert",
+      "industry": "property-management",
+      "category": "compliance-documents",
+      "role": "Compliance Coordinator",
+      "summary": "Tenants whose renters insurance policy is expiring soon or missing entirely from their file are automatically flagged and sent a reminder to upload…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/renters-insurance-compliance-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/periodic-unit-inspection-scheduling-automation",
+      "title": "Periodic Unit Inspection Scheduling Automation",
+      "industry": "property-management",
+      "category": "compliance-documents",
+      "role": "Compliance Coordinator",
+      "summary": "Required periodic unit inspections are automatically scheduled and reminders sent based on the local compliance calendar, so inspections don't get…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/periodic-unit-inspection-scheduling-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/pet-registration-fee-compliance-tracker",
+      "title": "Pet Registration & Fee Compliance Tracker",
+      "industry": "property-management",
+      "category": "compliance-documents",
+      "role": "Compliance Coordinator",
+      "summary": "Tenants identified as having an unregistered pet, whether flagged during an inspection or reported by a neighbor, are automatically sent a reminder…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/pet-registration-fee-compliance-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/state-compliant-rent-increase-notice-automation",
+      "title": "State-Compliant Rent Increase Notice Automation",
+      "industry": "property-management",
+      "category": "compliance-documents",
+      "role": "Compliance Coordinator",
+      "summary": "State-compliant rent increase notices are automatically generated and sent to tenants with the legally required advance notice period built directly…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/state-compliant-rent-increase-notice-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/vendor-insurance-certificate-expiration-tracker",
+      "title": "Vendor Insurance Certificate Expiration Tracker",
+      "industry": "property-management",
+      "category": "compliance-documents",
+      "role": "Vendor Relations Coordinator",
+      "summary": "Vendors' certificates of insurance on file are automatically tracked for their expiration dates, and any vendor whose coverage has lapsed is…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/vendor-insurance-certificate-expiration-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/eviction-filing-documentation-packet-preparation",
+      "title": "Eviction Filing Documentation Packet Preparation",
+      "industry": "property-management",
+      "category": "compliance-documents",
+      "role": "Accounts Receivable Coordinator",
+      "summary": "Once an overdue account reaches the final stage of the collections process, the automation automatically compiles the required documentation packet…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/eviction-filing-documentation-packet-preparation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/lease-violation-notice-tracking-automation",
+      "title": "Lease Violation Notice & Tracking Automation",
+      "industry": "property-management",
+      "category": "compliance-documents",
+      "role": "Compliance Coordinator",
+      "summary": "A documented lease violation automatically generates the legally compliant notice and creates the tracking record required before any further…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/lease-violation-notice-tracking-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-restoration/insurance-claim-documentation-assembler",
+      "title": "Insurance Claim Documentation Assembler",
+      "industry": "property-restoration",
+      "category": "compliance-documents",
+      "role": "Claims Coordinator",
+      "summary": "As technicians log moisture readings, photos, and scope of work in the field, this automation automatically compiles it into the documentation…",
+      "url": "https://www.ljwebmanagement.com/automations/property-restoration/insurance-claim-documentation-assembler/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-restoration.json"
+    },
+    {
+      "id": "real-estate/contract-deadline-contingency-tracking-system",
+      "title": "Contract Deadline & Contingency Tracking System",
+      "industry": "real-estate",
+      "category": "compliance-documents",
+      "role": "Escrow Coordinator",
+      "summary": "The moment a contract is entered into the transaction system, the automation reads every key date: inspection period, financing contingency…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/contract-deadline-contingency-tracking-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/hoa-document-request-automation",
+      "title": "HOA Document Request Automation",
+      "industry": "real-estate",
+      "category": "compliance-documents",
+      "role": "HOA Liaison",
+      "summary": "As soon as a property under an HOA goes under contract, the automation automatically identifies the governing association from the property record…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/hoa-document-request-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/escrow-title-document-handoff-automation",
+      "title": "Escrow & Title Document Handoff Automation",
+      "industry": "real-estate",
+      "category": "compliance-documents",
+      "role": "Title Coordinator",
+      "summary": "The moment a property goes under contract, the automation automatically sends the required transaction documents, the purchase agreement…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/escrow-title-document-handoff-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/buyer-loan-document-reminder-system",
+      "title": "Buyer Loan Document Reminder System",
+      "industry": "real-estate",
+      "category": "compliance-documents",
+      "role": "Loan Progress Coordinator",
+      "summary": "As a financing deadline approaches, buyers automatically receive reminders about outstanding documents their lender still needs, pay stubs, bank…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/buyer-loan-document-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "renewable-energy-solar/permit-interconnection-application-tracker",
+      "title": "Permit & Interconnection Application Tracker",
+      "industry": "renewable-energy-solar",
+      "category": "compliance-documents",
+      "role": "Project Coordinator",
+      "summary": "This automation tracks every project's permit and utility interconnection application status, automatically checking for updates and alerting the…",
+      "url": "https://www.ljwebmanagement.com/automations/renewable-energy-solar/permit-interconnection-application-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/renewable-energy-solar.json"
+    },
+    {
+      "id": "restaurants-food-service/health-inspection-self-check-reminder-sequence",
+      "title": "Health Inspection Self-Check Reminder Sequence",
+      "industry": "restaurants-food-service",
+      "category": "compliance-documents",
+      "role": "Compliance Manager",
+      "summary": "Staff automatically receive recurring reminders to complete the restaurant's self-inspection checklist, temperature logs, sanitation checks, date…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/health-inspection-self-check-reminder-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "senior-living-childcare/behavioral-incident-log-family-notification-system",
+      "title": "Behavioral Incident Log & Family Notification System",
+      "industry": "senior-living-childcare",
+      "category": "compliance-documents",
+      "role": "Memory Care Manager",
+      "summary": "When a memory care team member documents a behavioral incident (agitation, wandering, a fall, or a significant mood change) the system immediately…",
+      "url": "https://www.ljwebmanagement.com/automations/senior-living-childcare/behavioral-incident-log-family-notification-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/senior-living-childcare.json"
+    },
+    {
+      "id": "senior-living-childcare/incident-report-family-notification-workflow",
+      "title": "Incident Report & Family Notification Workflow",
+      "industry": "senior-living-childcare",
+      "category": "compliance-documents",
+      "role": "Compliance Manager",
+      "summary": "The moment a staff member logs any incident, a fall, a minor injury, a behavioral episode, this automation immediately alerts the affected resident…",
+      "url": "https://www.ljwebmanagement.com/automations/senior-living-childcare/incident-report-family-notification-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/senior-living-childcare.json"
+    },
+    {
+      "id": "senior-living-childcare/staff-to-resident-ratio-compliance-alert",
+      "title": "Staff-to-Resident Ratio Compliance Alert",
+      "industry": "senior-living-childcare",
+      "category": "compliance-documents",
+      "role": "Center Operations Manager",
+      "summary": "As staff and residents (or children) check in and out through the facility's time-tracking system, this automation continuously calculates the…",
+      "url": "https://www.ljwebmanagement.com/automations/senior-living-childcare/staff-to-resident-ratio-compliance-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/senior-living-childcare.json"
+    },
+    {
+      "id": "sports-recreation/athlete-eligibility-sports-physical-tracker",
+      "title": "Athlete Eligibility & Sports Physical Tracker",
+      "industry": "sports-recreation",
+      "category": "compliance-documents",
+      "role": "Athletic Director",
+      "summary": "Before each season, this automation sends every athlete and parent a checklist of required eligibility documents (physical form, concussion training…",
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/athlete-eligibility-sports-physical-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/sports-recreation.json"
+    },
+    {
+      "id": "sports-recreation/membership-renewal-auto-pay-failure-recovery",
+      "title": "Membership Renewal & Auto-Pay Failure Recovery",
+      "industry": "sports-recreation",
+      "category": "compliance-documents",
+      "role": "Membership Director",
+      "summary": "Before a membership auto-renews, this automation automatically notifies the member of the upcoming charge, and if the payment fails, automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/membership-renewal-auto-pay-failure-recovery/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/sports-recreation.json"
+    },
+    {
+      "id": "staffing-recruiting/i-9-e-verify-worker-certification-compliance-tracker",
+      "title": "I-9, E-Verify & Worker Certification Compliance Tracker",
+      "industry": "staffing-recruiting",
+      "category": "compliance-documents",
+      "role": "Compliance Manager",
+      "summary": "When a new contractor is placed, this automation initiates the I-9 process with a digital completion link sent to the worker before their first day…",
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/i-9-e-verify-worker-certification-compliance-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/staffing-recruiting.json"
+    },
+    {
+      "id": "technology-saas/incident-detection-alert-routing-postmortem-kickoff",
+      "title": "Incident Detection, Alert Routing & Postmortem Kickoff",
+      "industry": "technology-saas",
+      "category": "compliance-documents",
+      "role": "DevOps Engineer",
+      "summary": "When a monitoring alert fires, this automation classifies the incident severity, pages the on-call engineer via the escalation policy, creates a war…",
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/incident-detection-alert-routing-postmortem-kickoff/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/technology-saas.json"
+    },
+    {
+      "id": "veterinary-practices/pharmaceutical-inventory-controlled-substance-log-automation",
+      "title": "Pharmaceutical Inventory & Controlled Substance Log Automation",
+      "industry": "veterinary-practices",
+      "category": "compliance-documents",
+      "role": "Inventory Manager",
+      "summary": "As medications are dispensed or administered, inventory counts update automatically in the practice management system, and any item that falls below…",
+      "url": "https://www.ljwebmanagement.com/automations/veterinary-practices/pharmaceutical-inventory-controlled-substance-log-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/veterinary-practices.json"
+    }
+  ]
+}

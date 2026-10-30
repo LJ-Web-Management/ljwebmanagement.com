@@ -1,0 +1,1390 @@
+{
+  "slug": "operations-inventory",
+  "name": "Operations, Inventory & Vendors",
+  "summary": "Keep stock, equipment, vendors, projects, and work orders moving without the spreadsheet chase.",
+  "description": "Operations run on handoffs: a reorder that needs to happen, a vendor who needs to confirm, a work order that needs an owner, a project milestone that needs an update. Every handoff is a chance for something to sit. These automations watch the numbers and the calendar for you, reorder before stock runs out, confirm vendors and crews, log maintenance, and keep projects moving from one stage to the next.",
+  "url": "https://www.ljwebmanagement.com/automations/category/operations-inventory/",
+  "automationCount": 138,
+  "automations": [
+    {
+      "id": "addiction-treatment-behavioral-health/discharge-planning-aftercare-referral-coordination-system",
+      "title": "Discharge Planning & Aftercare Referral Coordination System",
+      "industry": "addiction-treatment-behavioral-health",
+      "category": "operations-inventory",
+      "role": "Case Manager",
+      "summary": "Beginning 14 days before a client's projected discharge date, this automation prompts the case manager to initiate the discharge planning checklist…",
+      "url": "https://www.ljwebmanagement.com/automations/addiction-treatment-behavioral-health/discharge-planning-aftercare-referral-coordination-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/addiction-treatment-behavioral-health.json"
+    },
+    {
+      "id": "addiction-treatment-behavioral-health/bed-availability-admission-coordination",
+      "title": "Bed Availability & Admission Coordination",
+      "industry": "addiction-treatment-behavioral-health",
+      "category": "operations-inventory",
+      "role": "Admissions Director",
+      "summary": "As beds open up and admissions are scheduled, this automation automatically updates a live availability count and notifies the admissions team and…",
+      "url": "https://www.ljwebmanagement.com/automations/addiction-treatment-behavioral-health/bed-availability-admission-coordination/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/addiction-treatment-behavioral-health.json"
+    },
+    {
+      "id": "addiction-treatment-behavioral-health/discharge-planning-checklist-automation",
+      "title": "Discharge Planning Checklist Automation",
+      "industry": "addiction-treatment-behavioral-health",
+      "category": "operations-inventory",
+      "role": "Case Manager",
+      "summary": "As a patient's discharge date approaches, this automation automatically triggers the discharge planning checklist, aftercare referral, medication…",
+      "url": "https://www.ljwebmanagement.com/automations/addiction-treatment-behavioral-health/discharge-planning-checklist-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/addiction-treatment-behavioral-health.json"
+    },
+    {
+      "id": "agriculture-farming/planting-harvest-schedule-builder-field-activity-log",
+      "title": "Planting & Harvest Schedule Builder & Field Activity Log",
+      "industry": "agriculture-farming",
+      "category": "operations-inventory",
+      "role": "Farm Manager",
+      "summary": "Based on crop selection, field acreage, seed population rates, and the planned planting window, this automation generates a field-by-field planting…",
+      "url": "https://www.ljwebmanagement.com/automations/agriculture-farming/planting-harvest-schedule-builder-field-activity-log/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/agriculture-farming.json"
+    },
+    {
+      "id": "agriculture-farming/pest-disease-alert-treatment-dispatch-system",
+      "title": "Pest & Disease Alert & Treatment Dispatch System",
+      "industry": "agriculture-farming",
+      "category": "operations-inventory",
+      "role": "Crop Scout",
+      "summary": "When a crop scout submits a scouting report identifying pest pressure or disease above economic threshold (whether aphids, corn rootworm, white…",
+      "url": "https://www.ljwebmanagement.com/automations/agriculture-farming/pest-disease-alert-treatment-dispatch-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/agriculture-farming.json"
+    },
+    {
+      "id": "agriculture-farming/weather-triggered-field-task-alerts",
+      "title": "Weather-Triggered Field Task Alerts",
+      "industry": "agriculture-farming",
+      "category": "operations-inventory",
+      "role": "Farm Manager",
+      "summary": "By pulling hyperlocal weather forecasts for each individual field, this automation automatically notifies the farm manager the moment conditions…",
+      "url": "https://www.ljwebmanagement.com/automations/agriculture-farming/weather-triggered-field-task-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/agriculture-farming.json"
+    },
+    {
+      "id": "agriculture-farming/equipment-maintenance-log-by-hours",
+      "title": "Equipment Maintenance Log by Hours",
+      "industry": "agriculture-farming",
+      "category": "operations-inventory",
+      "role": "Equipment Manager",
+      "summary": "Tied to hour-meter readings on tractors and other equipment, whether logged manually or pulled from onboard telematics, this automation…",
+      "url": "https://www.ljwebmanagement.com/automations/agriculture-farming/equipment-maintenance-log-by-hours/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/agriculture-farming.json"
+    },
+    {
+      "id": "agriculture-farming/crop-input-reorder-automation",
+      "title": "Crop Input Reorder Automation",
+      "industry": "agriculture-farming",
+      "category": "operations-inventory",
+      "role": "Farm Operations Manager",
+      "summary": "As seed, fertilizer, and chemical inventory is drawn down and logged against each field's application, this automation tracks usage against what's…",
+      "url": "https://www.ljwebmanagement.com/automations/agriculture-farming/crop-input-reorder-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/agriculture-farming.json"
+    },
+    {
+      "id": "agriculture-farming/livestock-health-monitoring-alert",
+      "title": "Livestock Health Monitoring Alert",
+      "industry": "agriculture-farming",
+      "category": "operations-inventory",
+      "role": "Herd Manager",
+      "summary": "Based on data from ear tags, automated feed intake logs, or manual health checks entered by staff on a mobile app, this automation automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/agriculture-farming/livestock-health-monitoring-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/agriculture-farming.json"
+    },
+    {
+      "id": "architecture-engineering/drawing-revision-control-submittal-tracker",
+      "title": "Drawing Revision Control & Submittal Tracker",
+      "industry": "architecture-engineering",
+      "category": "operations-inventory",
+      "role": "Project Architect",
+      "summary": "Every time a drawing set is revised and issued, this automation logs the revision number, date, and scope of changes, notifies all consultants and…",
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/drawing-revision-control-submittal-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/architecture-engineering.json"
+    },
+    {
+      "id": "architecture-engineering/rfi-log-change-order-tracking-automation",
+      "title": "RFI Log & Change Order Tracking Automation",
+      "industry": "architecture-engineering",
+      "category": "operations-inventory",
+      "role": "Project Engineer",
+      "summary": "Every RFI submitted by the contractor is automatically logged with the date received, the question posed, the discipline responsible for the…",
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/rfi-log-change-order-tracking-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/architecture-engineering.json"
+    },
+    {
+      "id": "architecture-engineering/model-coordination-clash-report-distribution-system",
+      "title": "Model Coordination & Clash Report Distribution System",
+      "industry": "architecture-engineering",
+      "category": "operations-inventory",
+      "role": "BIM Coordinator",
+      "summary": "After each coordination model run, this automation parses the clash detection report, categorizes clashes by discipline pair and severity, assigns…",
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/model-coordination-clash-report-distribution-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/architecture-engineering.json"
+    },
+    {
+      "id": "architecture-engineering/rfi-response-deadline-tracker",
+      "title": "RFI Response Deadline Tracker",
+      "industry": "architecture-engineering",
+      "category": "operations-inventory",
+      "role": "Project Architect",
+      "summary": "When a Request for Information comes in from a contractor on an active project, this automation automatically logs it along with its required…",
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/rfi-response-deadline-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/architecture-engineering.json"
+    },
+    {
+      "id": "architecture-engineering/drawing-revision-distribution-system",
+      "title": "Drawing Revision Distribution System",
+      "industry": "architecture-engineering",
+      "category": "operations-inventory",
+      "role": "Design Coordinator",
+      "summary": "When a drawing set is revised and marked final, this automation automatically distributes the updated version to every stakeholder on the project's…",
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/drawing-revision-distribution-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/architecture-engineering.json"
+    },
+    {
+      "id": "architecture-engineering/consultant-coordination-deadline-alerts",
+      "title": "Consultant Coordination Deadline Alerts",
+      "industry": "architecture-engineering",
+      "category": "operations-inventory",
+      "role": "Project Manager",
+      "summary": "For multi-disciplinary projects involving structural, mechanical, and other consultants, this automation tracks each consultant's deliverable…",
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/consultant-coordination-deadline-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/architecture-engineering.json"
+    },
+    {
+      "id": "automotive/lot-to-website-real-time-inventory-sync",
+      "title": "Lot-to-Website Real-Time Inventory Sync",
+      "industry": "automotive",
+      "category": "operations-inventory",
+      "role": "Inventory Manager",
+      "summary": "The instant a vehicle is added to or sold off the lot in the DMS, the website's inventory listings automatically update in real time, so a customer…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/lot-to-website-real-time-inventory-sync/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/extended-repair-rental-car-coordination",
+      "title": "Extended Repair Rental Car Coordination",
+      "industry": "automotive",
+      "category": "operations-inventory",
+      "role": "Rental Coordinator",
+      "summary": "When a repair estimate indicates a turnaround long enough to require a rental, the automation automatically flags the job and coordinates a rental…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/extended-repair-rental-car-coordination/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/certified-pre-owned-eligibility-alert",
+      "title": "Certified Pre-Owned Eligibility Alert",
+      "industry": "automotive",
+      "category": "operations-inventory",
+      "role": "Used Car Manager",
+      "summary": "When a trade-in or used vehicle in inventory becomes eligible for certified pre-owned status after passing the required inspection, the automation…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/certified-pre-owned-eligibility-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "cannabis-hemp/environmental-monitoring-alert-grow-log-system",
+      "title": "Environmental Monitoring Alert & Grow Log System",
+      "industry": "cannabis-hemp",
+      "category": "operations-inventory",
+      "role": "Cannabis Cultivator",
+      "summary": "Sensors in each grow room continuously monitor temperature, humidity, CO2, and light schedules, and any reading outside the set parameters triggers…",
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/environmental-monitoring-alert-grow-log-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cannabis-hemp.json"
+    },
+    {
+      "id": "catering/headcount-dietary-restriction-finalization-reminder",
+      "title": "Headcount & Dietary Restriction Finalization Reminder",
+      "industry": "catering",
+      "category": "operations-inventory",
+      "role": "Event Coordinator",
+      "summary": "As an event date approaches, this automation automatically reminds the client of the deadline to finalize their guest count and any dietary…",
+      "url": "https://www.ljwebmanagement.com/automations/catering/headcount-dietary-restriction-finalization-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/catering.json"
+    },
+    {
+      "id": "catering/ingredient-ordering-by-event-calendar",
+      "title": "Ingredient Ordering by Event Calendar",
+      "industry": "catering",
+      "category": "operations-inventory",
+      "role": "Kitchen Manager",
+      "summary": "Based on the confirmed menus and headcounts for all upcoming events in a given week, this automation automatically compiles the combined ingredient…",
+      "url": "https://www.ljwebmanagement.com/automations/catering/ingredient-ordering-by-event-calendar/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/catering.json"
+    },
+    {
+      "id": "commercial-real-estate/preventive-maintenance-scheduler-vendor-coordination-system",
+      "title": "Preventive Maintenance Scheduler & Vendor Coordination System",
+      "industry": "commercial-real-estate",
+      "category": "operations-inventory",
+      "role": "Facilities Manager",
+      "summary": "Every piece of major building equipment (HVAC units, elevators, fire suppression systems, generators, and plumbing infrastructure) is tracked in a…",
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/preventive-maintenance-scheduler-vendor-coordination-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/commercial-real-estate.json"
+    },
+    {
+      "id": "commercial-real-estate/tenant-maintenance-request-routing",
+      "title": "Tenant Maintenance Request Routing",
+      "industry": "commercial-real-estate",
+      "category": "operations-inventory",
+      "role": "Facilities Coordinator",
+      "summary": "When a tenant submits a maintenance request through the portal, this automation automatically routes it to the correct vendor based on the issue…",
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/tenant-maintenance-request-routing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/commercial-real-estate.json"
+    },
+    {
+      "id": "construction-contracting/subcontractor-bid-collection-comparison-system",
+      "title": "Subcontractor Bid Collection & Comparison System",
+      "industry": "construction-contracting",
+      "category": "operations-inventory",
+      "role": "General Contractor",
+      "summary": "When a new project goes out for bids, this automation sends a formatted bid request to the right subcontractors from a categorized vendor database…",
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/subcontractor-bid-collection-comparison-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/construction-contracting.json"
+    },
+    {
+      "id": "construction-contracting/daily-site-progress-report-punch-list-system",
+      "title": "Daily Site Progress Report & Punch List System",
+      "industry": "construction-contracting",
+      "category": "operations-inventory",
+      "role": "Project Manager",
+      "summary": "Field supervisors submit a simple daily report form from the job site, and the system automatically formats it into a branded progress report…",
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/daily-site-progress-report-punch-list-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/construction-contracting.json"
+    },
+    {
+      "id": "construction-contracting/subcontractor-confirmation-reminder-system",
+      "title": "Subcontractor Confirmation & Reminder System",
+      "industry": "construction-contracting",
+      "category": "operations-inventory",
+      "role": "Field Superintendent",
+      "summary": "As soon as a subcontractor's start date is confirmed for a job, this automation sends them an immediate text confirming the date, the site address…",
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/subcontractor-confirmation-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/construction-contracting.json"
+    },
+    {
+      "id": "cybersecurity/alert-triage-enrichment-incident-escalation-system",
+      "title": "Alert Triage, Enrichment & Incident Escalation System",
+      "industry": "cybersecurity",
+      "category": "operations-inventory",
+      "role": "SOC Manager",
+      "summary": "When the SIEM fires an alert, this automation immediately queries threat intelligence feeds to enrich the indicator with context (known malicious…",
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/alert-triage-enrichment-incident-escalation-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cybersecurity.json"
+    },
+    {
+      "id": "cybersecurity/engagement-scoping-rules-of-engagement-report-delivery-workflow",
+      "title": "Engagement Scoping, Rules of Engagement & Report Delivery Workflow",
+      "industry": "cybersecurity",
+      "category": "operations-inventory",
+      "role": "Penetration Tester",
+      "summary": "When a new penetration testing engagement is scoped and signed, this automation generates the Rules of Engagement document pre-populated with the…",
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/engagement-scoping-rules-of-engagement-report-delivery-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cybersecurity.json"
+    },
+    {
+      "id": "cybersecurity/vulnerability-scan-to-ticket-automation",
+      "title": "Vulnerability Scan-to-Ticket Automation",
+      "industry": "cybersecurity",
+      "category": "operations-inventory",
+      "role": "Security Analyst",
+      "summary": "When a scheduled vulnerability scan identifies a new critical or high-severity finding, this automation automatically creates a ticket in the IT…",
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/vulnerability-scan-to-ticket-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cybersecurity.json"
+    },
+    {
+      "id": "cybersecurity/ssl-domain-expiration-monitor",
+      "title": "SSL & Domain Expiration Monitor",
+      "industry": "cybersecurity",
+      "category": "operations-inventory",
+      "role": "IT Operations Manager",
+      "summary": "This automation continuously checks the expiration dates of SSL certificates and domain registrations across every client's environment and…",
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/ssl-domain-expiration-monitor/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cybersecurity.json"
+    },
+    {
+      "id": "driving-schools/vehicle-maintenance-inspection-scheduling",
+      "title": "Vehicle Maintenance & Inspection Scheduling",
+      "industry": "driving-schools",
+      "category": "operations-inventory",
+      "role": "Fleet Manager",
+      "summary": "For the fleet of training vehicles, this automation automatically schedules routine maintenance and required inspections based on mileage and…",
+      "url": "https://www.ljwebmanagement.com/automations/driving-schools/vehicle-maintenance-inspection-scheduling/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/driving-schools.json"
+    },
+    {
+      "id": "ecommerce-retail/supplier-lead-time-tracker-safety-stock-calculator",
+      "title": "Supplier Lead Time Tracker & Safety Stock Calculator",
+      "industry": "ecommerce-retail",
+      "category": "operations-inventory",
+      "role": "Inventory Manager",
+      "summary": "As purchase orders are placed and received, this automation tracks the actual lead time for each supplier and SKU, not the lead time the supplier…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/supplier-lead-time-tracker-safety-stock-calculator/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/returns-refund-processing-automation",
+      "title": "Returns & Refund Processing Automation",
+      "industry": "ecommerce-retail",
+      "category": "operations-inventory",
+      "role": "E-Commerce Operations Manager",
+      "summary": "When a customer submits a return request, this automation validates the order against return policy rules (window, product eligibility, condition)…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/returns-refund-processing-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/low-stock-auto-reorder-alerts",
+      "title": "Low Stock Auto-Reorder Alerts",
+      "industry": "ecommerce-retail",
+      "category": "operations-inventory",
+      "role": "Inventory Manager",
+      "summary": "Each SKU is assigned a reorder threshold based on its sales velocity and the supplier's typical lead time.",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/low-stock-auto-reorder-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/low-stock-internal-alert-routing",
+      "title": "Low Stock Internal Alert Routing",
+      "industry": "ecommerce-retail",
+      "category": "operations-inventory",
+      "role": "Purchasing Coordinator",
+      "summary": "Rather than relying on one person to periodically pull an inventory report, this automation watches stock levels across every SKU in Cin7 or Skubana…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/low-stock-internal-alert-routing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/return-exchange-automation-with-instant-swap-offer",
+      "title": "Return & Exchange Automation with Instant Swap Offer",
+      "industry": "ecommerce-retail",
+      "category": "operations-inventory",
+      "role": "Returns Manager",
+      "summary": "When a customer starts a return through the store's returns portal, this automation checks the reason given (wrong size, changed mind, defective)…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/return-exchange-automation-with-instant-swap-offer/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/fraud-risk-order-flagging-system",
+      "title": "Fraud & Risk Order Flagging System",
+      "industry": "ecommerce-retail",
+      "category": "operations-inventory",
+      "role": "Risk & Fraud Manager",
+      "summary": "As each order comes through checkout, this automation runs it against a risk model inside Signifyd or NoFraud, checking for mismatched billing and…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/fraud-risk-order-flagging-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/marketplace-inventory-sync-across-sales-channels",
+      "title": "Marketplace Inventory Sync Across Sales Channels",
+      "industry": "ecommerce-retail",
+      "category": "operations-inventory",
+      "role": "Operations Manager",
+      "summary": "As orders come in from the website, Amazon, and Etsy simultaneously, this automation keeps stock counts synced across every channel in real time…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/marketplace-inventory-sync-across-sales-channels/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/bundle-component-inventory-alert",
+      "title": "Bundle Component Inventory Alert",
+      "industry": "ecommerce-retail",
+      "category": "operations-inventory",
+      "role": "Supply Chain Manager",
+      "summary": "When a bundled product sells in Shopify or WooCommerce, this automation automatically deducts each individual component from its own inventory count…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/bundle-component-inventory-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "faith-based-organizations/event-registration-volunteer-assignment-system",
+      "title": "Event Registration & Volunteer Assignment System",
+      "industry": "faith-based-organizations",
+      "category": "operations-inventory",
+      "role": "Events Coordinator",
+      "summary": "Community events, conferences, and weekend service registrations are handled through a branded registration form that captures attendance…",
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/event-registration-volunteer-assignment-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/faith-based-organizations.json"
+    },
+    {
+      "id": "fitness-wellness/equipment-maintenance-scheduling-automation",
+      "title": "Equipment Maintenance Scheduling Automation",
+      "industry": "fitness-wellness",
+      "category": "operations-inventory",
+      "role": "Facilities Manager",
+      "summary": "Gym equipment is automatically flagged for scheduled maintenance based on usage hours or elapsed time since the last service, preventing breakdowns…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/equipment-maintenance-scheduling-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "general-business/purchase-order-approval-routing",
+      "title": "Purchase Order Approval Routing",
+      "industry": "general-business",
+      "category": "operations-inventory",
+      "role": "Procurement Manager",
+      "summary": "When a team member submits a purchase request through an Airtable intake form, the system automatically checks the dollar amount against a tiered…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/purchase-order-approval-routing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/equipment-and-asset-checkout-tracking",
+      "title": "Equipment and Asset Checkout Tracking",
+      "industry": "general-business",
+      "category": "operations-inventory",
+      "role": "Facilities Manager",
+      "summary": "When an employee checks out a company laptop, projector, or piece of field equipment using a simple Airtable form (scanning a QR code tag on the…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/equipment-and-asset-checkout-tracking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/self-service-password-reset-portal",
+      "title": "Self-Service Password Reset Portal",
+      "industry": "general-business",
+      "category": "operations-inventory",
+      "role": "Help Desk Coordinator",
+      "summary": "Employees who forget a password no longer have to open a ticket and wait for a technician; they answer two identity verification prompts through…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/self-service-password-reset-portal/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/nightly-backup-verification-alert-system",
+      "title": "Nightly Backup Verification Alert System",
+      "industry": "general-business",
+      "category": "operations-inventory",
+      "role": "Network Administrator",
+      "summary": "Instead of trusting that last night's backup job actually completed, the workflow checks the backup platform's job log every morning at seven and…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/nightly-backup-verification-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/domain-and-ssl-certificate-expiration-reminders",
+      "title": "Domain and SSL Certificate Expiration Reminders",
+      "industry": "general-business",
+      "category": "operations-inventory",
+      "role": "Web Operations Manager",
+      "summary": "Every domain and SSL certificate the company owns across its websites, subdomains, and internal tools is tracked in a central Airtable registry…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/domain-and-ssl-certificate-expiration-reminders/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/visitor-check-in-and-digital-badge-issuance",
+      "title": "Visitor Check-In and Digital Badge Issuance",
+      "industry": "general-business",
+      "category": "operations-inventory",
+      "role": "Front Desk Administrator",
+      "summary": "Guests arriving for a meeting check themselves in on an iPad kiosk running Envoy, entering their name, the employee they're visiting, and their…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/visitor-check-in-and-digital-badge-issuance/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/office-supply-auto-reorder-alerts",
+      "title": "Office Supply Auto-Reorder Alerts",
+      "industry": "general-business",
+      "category": "operations-inventory",
+      "role": "Office Administrator",
+      "summary": "A simple inventory count of recurring office supplies, paper, coffee, cleaning products, printer toner, lives in a Google Sheet that staff update…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/office-supply-auto-reorder-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/security-access-log-anomaly-alerts",
+      "title": "Security Access Log Anomaly Alerts",
+      "industry": "general-business",
+      "category": "operations-inventory",
+      "role": "Facilities Manager",
+      "summary": "Every badge swipe and camera-triggered motion event from the building's access control system streams into a monitoring workflow that watches for…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/security-access-log-anomaly-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/preventive-equipment-maintenance-scheduling",
+      "title": "Preventive Equipment Maintenance Scheduling",
+      "industry": "general-business",
+      "category": "operations-inventory",
+      "role": "Operations Manager",
+      "summary": "Every piece of shared equipment, from the office HVAC system to production machinery, is logged in UpKeep with its maintenance interval, last…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/preventive-equipment-maintenance-scheduling/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/it-equipment-checkout-and-inventory-tracking",
+      "title": "IT Equipment Checkout and Inventory Tracking",
+      "industry": "general-business",
+      "category": "operations-inventory",
+      "role": "IT Asset Manager",
+      "summary": "Every laptop, monitor, and piece of loaner equipment gets a QR code logged in an Airtable asset registry the day it's purchased, tracking its serial…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/it-equipment-checkout-and-inventory-tracking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/server-and-network-uptime-monitoring-alerts",
+      "title": "Server and Network Uptime Monitoring Alerts",
+      "industry": "general-business",
+      "category": "operations-inventory",
+      "role": "Infrastructure Engineer",
+      "summary": "Every critical server, router, and hosted application gets pinged on a rolling basis by an uptime monitoring service, checking response times and…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/server-and-network-uptime-monitoring-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/executive-travel-itinerary-compilation",
+      "title": "Executive Travel Itinerary Compilation",
+      "industry": "general-business",
+      "category": "operations-inventory",
+      "role": "Travel and Events Coordinator",
+      "summary": "When a flight, hotel, or car service is booked for an executive trip, the confirmation emails land automatically in a dedicated inbox that the…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/executive-travel-itinerary-compilation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/facilities-work-order-ticketing-and-tracking",
+      "title": "Facilities Work Order Ticketing and Tracking",
+      "industry": "general-business",
+      "category": "operations-inventory",
+      "role": "Building Operations Supervisor",
+      "summary": "Employees report a facilities issue, a broken thermostat, a flickering light, a jammed door, through a simple form in Slack or a QR code posted near…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/facilities-work-order-ticketing-and-tracking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "government-public-sector/infrastructure-work-order-inspection-scheduling-system",
+      "title": "Infrastructure Work Order & Inspection Scheduling System",
+      "industry": "government-public-sector",
+      "category": "operations-inventory",
+      "role": "Public Works Director",
+      "summary": "Citizen service requests submitted via the city website, 311, or in person are automatically categorized by type (pothole, streetlight, water main…",
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/infrastructure-work-order-inspection-scheduling-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/government-public-sector.json"
+    },
+    {
+      "id": "healthcare/referral-tracking-specialist-follow-up-system",
+      "title": "Referral Tracking & Specialist Follow-Up System",
+      "industry": "healthcare",
+      "category": "operations-inventory",
+      "role": "Patient Care Coordinator",
+      "summary": "When a provider refers a patient to a specialist, this automation logs the referral with the patient name, specialist, diagnosis code, and urgency…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/referral-tracking-specialist-follow-up-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/specialist-referral-out-confirmation-tracking",
+      "title": "Specialist Referral-Out Confirmation Tracking",
+      "industry": "healthcare",
+      "category": "operations-inventory",
+      "role": "Referral Coordinator",
+      "summary": "When a provider refers a patient out to an external specialist, this automation automatically sends the referral packet, including relevant history…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/specialist-referral-out-confirmation-tracking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "home-services/equipment-registration-automation",
+      "title": "Equipment Registration Automation",
+      "industry": "home-services",
+      "category": "operations-inventory",
+      "role": "Installation Coordinator",
+      "summary": "As soon as a technician logs a completed installation in the field app, this automation automatically pulls the equipment's model and serial number…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/equipment-registration-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/fleet-vehicle-maintenance-scheduling",
+      "title": "Fleet Vehicle Maintenance Scheduling",
+      "industry": "home-services",
+      "category": "operations-inventory",
+      "role": "Fleet Manager",
+      "summary": "This automation tracks mileage and elapsed time for every vehicle in the company's fleet using GPS telematics data, and automatically schedules…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/fleet-vehicle-maintenance-scheduling/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/service-address-property-history-log-automation",
+      "title": "Service Address Property History Log Automation",
+      "industry": "home-services",
+      "category": "operations-inventory",
+      "role": "Field Technician Manager",
+      "summary": "The automation automatically builds and maintains a running history log for every service address, past jobs, installed equipment, technician notes…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/service-address-property-history-log-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/maintenance-plan-visit-usage-tracking",
+      "title": "Maintenance Plan Visit Usage Tracking",
+      "industry": "home-services",
+      "category": "operations-inventory",
+      "role": "Membership Coordinator",
+      "summary": "The automation automatically tracks how many of a maintenance plan's included visits a customer has used and alerts them as they approach their…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/maintenance-plan-visit-usage-tracking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "hospitality-hotels/room-status-update-turn-assignment-system",
+      "title": "Room Status Update & Turn Assignment System",
+      "industry": "hospitality-hotels",
+      "category": "operations-inventory",
+      "role": "Housekeeping Manager",
+      "summary": "As guests check out, room status updates automatically from \"occupied\" to \"due out\" in the housekeeping system, and turn assignments are pushed…",
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/room-status-update-turn-assignment-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/hospitality-hotels.json"
+    },
+    {
+      "id": "interior-design-home-staging/client-project-milestone-approval-workflow-system",
+      "title": "Client Project Milestone & Approval Workflow System",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Interior Designer",
+      "summary": "When a new design project is onboarded, this automation generates a project timeline with milestones (concept presentation, design development…",
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/client-project-milestone-approval-workflow-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/interior-design-home-staging.json"
+    },
+    {
+      "id": "interior-design-home-staging/vendor-purchase-order-lead-time-tracker",
+      "title": "Vendor Purchase Order & Lead Time Tracker",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Design Firm Principal",
+      "summary": "When a product is specified and approved by the client, this automation generates a purchase order to the vendor, logs the item in the project's…",
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/vendor-purchase-order-lead-time-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/interior-design-home-staging.json"
+    },
+    {
+      "id": "interior-design-home-staging/installation-day-coordination-punch-list-system",
+      "title": "Installation Day Coordination & Punch List System",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Design Project Manager",
+      "summary": "The week before an installation, this automation sends a coordination email to every trade (furniture delivery crew, art installer, electrician…",
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/installation-day-coordination-punch-list-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/interior-design-home-staging.json"
+    },
+    {
+      "id": "interior-design-home-staging/mood-board-to-client-approval-portal",
+      "title": "Mood Board-to-Client Approval Portal",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Design Coordinator",
+      "summary": "Once a designer finalizes a mood board or design concept, this automation automatically sends it to the client through a branded approval portal and…",
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/mood-board-to-client-approval-portal/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/interior-design-home-staging.json"
+    },
+    {
+      "id": "interior-design-home-staging/furniture-materials-order-tracker",
+      "title": "Furniture & Materials Order Tracker",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Project Manager",
+      "summary": "As items are ordered from various vendors for a project, this automation automatically tracks each item's expected delivery date against the project…",
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/furniture-materials-order-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/interior-design-home-staging.json"
+    },
+    {
+      "id": "interior-design-home-staging/staging-inventory-availability-tracker",
+      "title": "Staging Inventory Availability Tracker",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Staging Operations Manager",
+      "summary": "For staging companies with a physical inventory of furniture and decor, this automation automatically tracks which pieces are currently deployed at…",
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/staging-inventory-availability-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/interior-design-home-staging.json"
+    },
+    {
+      "id": "interior-design-home-staging/post-install-walkthrough-invoice-trigger",
+      "title": "Post-Install Walkthrough & Invoice Trigger",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Design Director",
+      "summary": "When a project's install is marked complete, this automation automatically schedules the final client walkthrough, and once that walkthrough is…",
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/post-install-walkthrough-invoice-trigger/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/interior-design-home-staging.json"
+    },
+    {
+      "id": "interior-design-home-staging/vendor-lead-time-change-alert",
+      "title": "Vendor Lead Time Change Alert",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Procurement Coordinator",
+      "summary": "This automation monitors vendor-reported lead times for commonly ordered items, fabrics, furniture, fixtures, and automatically flags the design…",
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/vendor-lead-time-change-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/interior-design-home-staging.json"
+    },
+    {
+      "id": "laundry-dry-cleaning/unclaimed-order-aging-alert",
+      "title": "Unclaimed Order Aging Alert",
+      "industry": "laundry-dry-cleaning",
+      "category": "operations-inventory",
+      "role": "Store Manager",
+      "summary": "This automation tracks how long completed orders have sat unclaimed and automatically sends escalating reminders at set intervals, then flags orders…",
+      "url": "https://www.ljwebmanagement.com/automations/laundry-dry-cleaning/unclaimed-order-aging-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/laundry-dry-cleaning.json"
+    },
+    {
+      "id": "legal/trial-prep-countdown-task-automation",
+      "title": "Trial Prep Countdown Task Automation",
+      "industry": "legal",
+      "category": "operations-inventory",
+      "role": "Trial Attorney",
+      "summary": "Once a trial date is entered into Clio, the automation automatically generates a full trial-preparation checklist working backward from the trial…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/trial-prep-countdown-task-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/co-counsel-communication-log-automation",
+      "title": "Co-Counsel Communication Log Automation",
+      "industry": "legal",
+      "category": "operations-inventory",
+      "role": "Of Counsel Attorney",
+      "summary": "On matters shared with co-counsel or outside counsel firms, the automation automatically logs every key update, a filing, a settlement offer, a…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/co-counsel-communication-log-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/opposing-counsel-communication-log-automation",
+      "title": "Opposing Counsel Communication Log Automation",
+      "industry": "legal",
+      "category": "operations-inventory",
+      "role": "Litigation Paralegal",
+      "summary": "Every email and call log with opposing counsel is automatically captured and timestamped directly into the case file, creating a reliable…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/opposing-counsel-communication-log-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/paralegal-workload-balancing-alert",
+      "title": "Paralegal Workload Balancing Alert",
+      "industry": "legal",
+      "category": "operations-inventory",
+      "role": "Case Manager",
+      "summary": "The automation internally flags when a paralegal's assigned task load exceeds a healthy capacity threshold, prompting the case manager to reassign…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/paralegal-workload-balancing-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "logistics-supply-chain/shipment-tracking-delay-alert-system",
+      "title": "Shipment Tracking & Delay Alert System",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Logistics Manager",
+      "summary": "Every active shipment is monitored against its expected delivery date, and the moment a carrier scan indicates a delay (weather hold, missed scan…",
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/shipment-tracking-delay-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/logistics-supply-chain.json"
+    },
+    {
+      "id": "logistics-supply-chain/receiving-putaway-pick-pack-ship-task-assignment",
+      "title": "Receiving, Putaway & Pick-Pack-Ship Task Assignment",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Warehouse Manager",
+      "summary": "When a purchase order is marked received, the system automatically creates putaway tasks assigned to the correct zone team, updates inventory counts…",
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/receiving-putaway-pick-pack-ship-task-assignment/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/logistics-supply-chain.json"
+    },
+    {
+      "id": "logistics-supply-chain/vendor-quote-collection-purchase-order-generator",
+      "title": "Vendor Quote Collection & Purchase Order Generator",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Procurement Manager",
+      "summary": "When a requisition is approved, the system automatically sends a formatted request for quote to the preferred vendor list, tracks responses in a…",
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/vendor-quote-collection-purchase-order-generator/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/logistics-supply-chain.json"
+    },
+    {
+      "id": "logistics-supply-chain/vehicle-maintenance-schedule-compliance-tracker",
+      "title": "Vehicle Maintenance Schedule & Compliance Tracker",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Fleet Manager",
+      "summary": "Based on each vehicle's mileage data synced from the telematics system, this automation calculates when the next oil change, inspection, DOT…",
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/vehicle-maintenance-schedule-compliance-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/logistics-supply-chain.json"
+    },
+    {
+      "id": "logistics-supply-chain/demand-forecast-inventory-replenishment-alert-system",
+      "title": "Demand Forecast & Inventory Replenishment Alert System",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Supply Chain Analyst",
+      "summary": "Each week, the system pulls the last 13 weeks of sales velocity data, applies a seasonal adjustment model, and generates a replenishment…",
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/demand-forecast-inventory-replenishment-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/logistics-supply-chain.json"
+    },
+    {
+      "id": "logistics-supply-chain/shipment-delay-auto-notification-system",
+      "title": "Shipment Delay Auto-Notification System",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Customer Service Manager",
+      "summary": "This automation continuously checks carrier tracking data against each shipment's original expected delivery date.",
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/shipment-delay-auto-notification-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/logistics-supply-chain.json"
+    },
+    {
+      "id": "logistics-supply-chain/po-to-vendor-confirmation-loop",
+      "title": "PO-to-Vendor Confirmation Loop",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Procurement Specialist",
+      "summary": "When a purchase order is created in the system, this automation automatically emails it to the vendor and then monitors the vendor's inbox for a…",
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/po-to-vendor-confirmation-loop/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/logistics-supply-chain.json"
+    },
+    {
+      "id": "logistics-supply-chain/freight-cost-anomaly-detector",
+      "title": "Freight Cost Anomaly Detector",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Logistics Manager",
+      "summary": "Every invoice that comes in from a freight carrier is automatically compared line by line against the rate that was originally quoted for that…",
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/freight-cost-anomaly-detector/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/logistics-supply-chain.json"
+    },
+    {
+      "id": "logistics-supply-chain/inventory-reorder-point-automation",
+      "title": "Inventory Reorder Point Automation",
+      "industry": "logistics-supply-chain",
+      "category": "operations-inventory",
+      "role": "Inventory Planner",
+      "summary": "As inventory levels update in the warehouse management system with each pick and receipt, this automation continuously watches every SKU against a…",
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/inventory-reorder-point-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/logistics-supply-chain.json"
+    },
+    {
+      "id": "manufacturing/equipment-downtime-alert-preventive-maintenance-log",
+      "title": "Equipment Downtime Alert & Preventive Maintenance Log",
+      "industry": "manufacturing",
+      "category": "operations-inventory",
+      "role": "Plant Manager",
+      "summary": "Sensors or machine operator forms feed real-time equipment status into a central dashboard, and any unplanned downtime event immediately triggers an…",
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/equipment-downtime-alert-preventive-maintenance-log/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/manufacturing.json"
+    },
+    {
+      "id": "manufacturing/defect-report-root-cause-investigation-tracker",
+      "title": "Defect Report & Root Cause Investigation Tracker",
+      "industry": "manufacturing",
+      "category": "operations-inventory",
+      "role": "Quality Control Manager",
+      "summary": "When an inspector logs a quality defect (whether from an in-line check, customer return, or final inspection) the system immediately creates a CAPA…",
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/defect-report-root-cause-investigation-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/manufacturing.json"
+    },
+    {
+      "id": "manufacturing/work-order-creation-capacity-alert-system",
+      "title": "Work Order Creation & Capacity Alert System",
+      "industry": "manufacturing",
+      "category": "operations-inventory",
+      "role": "Production Scheduler",
+      "summary": "As sales orders are confirmed, this automation generates the corresponding work orders in the production schedule, checks available machine and…",
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/work-order-creation-capacity-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/manufacturing.json"
+    },
+    {
+      "id": "manufacturing/preventive-maintenance-work-order-automation",
+      "title": "Preventive Maintenance Work Order Automation",
+      "industry": "manufacturing",
+      "category": "operations-inventory",
+      "role": "Maintenance Manager",
+      "summary": "Running-hour data pulled from equipment PLCs (or logged manually by operators when a machine isn't networked) is checked daily against each asset's…",
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/preventive-maintenance-work-order-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/manufacturing.json"
+    },
+    {
+      "id": "manufacturing/real-time-quality-deviation-alert",
+      "title": "Real-Time Quality Deviation Alert",
+      "industry": "manufacturing",
+      "category": "operations-inventory",
+      "role": "Production Shift Supervisor",
+      "summary": "As in-line quality checks are logged, whether from an automated gauge feeding directly into the quality system or an inspector entering readings on…",
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/real-time-quality-deviation-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/manufacturing.json"
+    },
+    {
+      "id": "manufacturing/lead-time-based-material-reorder-system",
+      "title": "Lead-Time-Based Material Reorder System",
+      "industry": "manufacturing",
+      "category": "operations-inventory",
+      "role": "Procurement Manager",
+      "summary": "As raw materials are consumed on the production floor and logged against each work order in the inventory system, this automation tracks usage rate…",
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/lead-time-based-material-reorder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/manufacturing.json"
+    },
+    {
+      "id": "marketing-agencies/content-approval-follow-up-tracker",
+      "title": "Content Approval Follow-Up Tracker",
+      "industry": "marketing-agencies",
+      "category": "operations-inventory",
+      "role": "Creative Director",
+      "summary": "Every piece of content submitted for client approval, whether it's a blog post, an ad creative, or a social caption, gets a timestamp the moment…",
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/content-approval-follow-up-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/marketing-agencies.json"
+    },
+    {
+      "id": "media-publishing/editorial-calendar-contributor-deadline-management-system",
+      "title": "Editorial Calendar & Contributor Deadline Management System",
+      "industry": "media-publishing",
+      "category": "operations-inventory",
+      "role": "Editor-in-Chief",
+      "summary": "The editorial calendar lives in a shared project management tool, and every assigned story automatically generates a task for the contributor with…",
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/editorial-calendar-contributor-deadline-management-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/media-publishing.json"
+    },
+    {
+      "id": "media-publishing/guest-booking-episode-production-pipeline",
+      "title": "Guest Booking & Episode Production Pipeline",
+      "industry": "media-publishing",
+      "category": "operations-inventory",
+      "role": "Podcast Producer",
+      "summary": "When a guest is confirmed for the podcast, this automation sends them an automated prep packet (the recording link, technical requirements, topic…",
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/guest-booking-episode-production-pipeline/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/media-publishing.json"
+    },
+    {
+      "id": "media-publishing/broken-link-outdated-content-scanner",
+      "title": "Broken Link & Outdated Content Scanner",
+      "industry": "media-publishing",
+      "category": "operations-inventory",
+      "role": "Editorial Manager",
+      "summary": "This automation periodically scans every published article for broken outbound links and flags any article that hasn't been meaningfully updated in…",
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/broken-link-outdated-content-scanner/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/media-publishing.json"
+    },
+    {
+      "id": "oil-gas/well-production-anomaly-alert",
+      "title": "Well Production Anomaly Alert",
+      "industry": "oil-gas",
+      "category": "operations-inventory",
+      "role": "Field Operations Supervisor",
+      "summary": "This automation continuously compares real-time production data from each well against its expected output curve and automatically alerts the field…",
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/well-production-anomaly-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/oil-gas.json"
+    },
+    {
+      "id": "pest-control/technician-route-chemical-usage-log",
+      "title": "Technician Route & Chemical Usage Log",
+      "industry": "pest-control",
+      "category": "operations-inventory",
+      "role": "Compliance Manager",
+      "summary": "As technicians complete stops, this automation automatically logs the chemicals and quantities applied at each property, both for internal inventory…",
+      "url": "https://www.ljwebmanagement.com/automations/pest-control/technician-route-chemical-usage-log/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pest-control.json"
+    },
+    {
+      "id": "pharmaceutical-biotech/site-enrollment-tracker-protocol-deviation-alert-system",
+      "title": "Site Enrollment Tracker & Protocol Deviation Alert System",
+      "industry": "pharmaceutical-biotech",
+      "category": "operations-inventory",
+      "role": "Clinical Trial Manager",
+      "summary": "Every clinical site's enrollment progress is tracked against its committed recruitment target and the overall trial timeline, and the clinical trial…",
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/site-enrollment-tracker-protocol-deviation-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pharmaceutical-biotech.json"
+    },
+    {
+      "id": "pharmaceutical-biotech/clinical-trial-enrollment-tracker",
+      "title": "Clinical Trial Enrollment Tracker",
+      "industry": "pharmaceutical-biotech",
+      "category": "operations-inventory",
+      "role": "Clinical Trial Coordinator",
+      "summary": "This automation tracks enrollment numbers against target recruitment goals for each active trial site and automatically alerts the study coordinator…",
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/clinical-trial-enrollment-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pharmaceutical-biotech.json"
+    },
+    {
+      "id": "pharmaceutical-biotech/cold-chain-temperature-excursion-alert",
+      "title": "Cold Chain Temperature Excursion Alert",
+      "industry": "pharmaceutical-biotech",
+      "category": "operations-inventory",
+      "role": "Quality Assurance Manager",
+      "summary": "For temperature-sensitive shipments, this automation continuously monitors data from in-transit temperature loggers and immediately alerts the…",
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/cold-chain-temperature-excursion-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pharmaceutical-biotech.json"
+    },
+    {
+      "id": "photography-videography/booking-contract-gallery-delivery-pipeline",
+      "title": "Booking, Contract & Gallery Delivery Pipeline",
+      "industry": "photography-videography",
+      "category": "operations-inventory",
+      "role": "Photographer",
+      "summary": "When a photography inquiry is submitted through the website, the prospect receives an immediate availability confirmation, a pricing guide, and a…",
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/booking-contract-gallery-delivery-pipeline/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/photography-videography.json"
+    },
+    {
+      "id": "photography-videography/project-brief-collection-asset-delivery-pipeline",
+      "title": "Project Brief Collection & Asset Delivery Pipeline",
+      "industry": "photography-videography",
+      "category": "operations-inventory",
+      "role": "Video Production Manager",
+      "summary": "When a new video production is booked, the client receives a structured creative brief form capturing the video's goal, target audience, key…",
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/project-brief-collection-asset-delivery-pipeline/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/photography-videography.json"
+    },
+    {
+      "id": "photography-videography/revision-tracker-final-file-delivery-system",
+      "title": "Revision Tracker & Final File Delivery System",
+      "industry": "photography-videography",
+      "category": "operations-inventory",
+      "role": "Videographer",
+      "summary": "When a rough cut is shared with the client, this automation starts a revision clock based on the contract's revision window and sends the client a…",
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/revision-tracker-final-file-delivery-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/photography-videography.json"
+    },
+    {
+      "id": "pool-service/chemical-reading-trend-alert",
+      "title": "Chemical Reading Trend Alert",
+      "industry": "pool-service",
+      "category": "operations-inventory",
+      "role": "Service Manager",
+      "summary": "As technicians log chemical readings during each visit, this automation automatically tracks the trend over time per pool and flags any pool showing…",
+      "url": "https://www.ljwebmanagement.com/automations/pool-service/chemical-reading-trend-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pool-service.json"
+    },
+    {
+      "id": "professional-services/vendor-contract-management-event-timeline-system",
+      "title": "Vendor Contract Management & Event Timeline System",
+      "industry": "professional-services",
+      "category": "operations-inventory",
+      "role": "Event Planner",
+      "summary": "For every event, this automation builds a master timeline in the project management system based on the event date, working backward to populate due…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/vendor-contract-management-event-timeline-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/staff-capacity-deadline-load-alert",
+      "title": "Staff Capacity & Deadline Load Alert",
+      "industry": "professional-services",
+      "category": "operations-inventory",
+      "role": "Operations Manager",
+      "summary": "The automation flags internally when a staff member's assigned deadlines exceed a safe workload threshold for a given week, prompting the operations…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/staff-capacity-deadline-load-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/account-aggregation-sync-failure-alert",
+      "title": "Account Aggregation Sync Failure Alert",
+      "industry": "professional-services",
+      "category": "operations-inventory",
+      "role": "Wealth Management Associate",
+      "summary": "The automation automatically flags when a client's linked outside account data hasn't refreshed in a while, prompting a follow-up so the wealth…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/account-aggregation-sync-failure-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/advisor-book-of-business-handoff-workflow",
+      "title": "Advisor Book-of-Business Handoff Workflow",
+      "industry": "professional-services",
+      "category": "operations-inventory",
+      "role": "Operations Manager",
+      "summary": "When an advisor transitions roles or leaves the firm, the automation automatically triggers the client handoff communication and reassignment…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/advisor-book-of-business-handoff-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "property-management/maintenance-request-triage-vendor-dispatch-system",
+      "title": "Maintenance Request Triage & Vendor Dispatch System",
+      "industry": "property-management",
+      "category": "operations-inventory",
+      "role": "Maintenance Coordinator",
+      "summary": "A tenant-submitted maintenance request is automatically categorized by urgency and repair type, then routed to the appropriate vendor with the…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/maintenance-request-triage-vendor-dispatch-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/vendor-work-order-confirmation-follow-up",
+      "title": "Vendor Work Order Confirmation & Follow-Up",
+      "industry": "property-management",
+      "category": "operations-inventory",
+      "role": "Vendor Relations Coordinator",
+      "summary": "A vendor assigned to a work order automatically receives the full job details by text and is asked to confirm availability, with an automatic…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/vendor-work-order-confirmation-follow-up/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/after-hours-emergency-maintenance-routing",
+      "title": "After-Hours Emergency Maintenance Routing",
+      "industry": "property-management",
+      "category": "operations-inventory",
+      "role": "Emergency Dispatch Coordinator",
+      "summary": "Maintenance requests submitted after normal business hours and marked urgent, a burst pipe, no heat in winter, are automatically routed directly to…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/after-hours-emergency-maintenance-routing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/smart-water-leak-sensor-escalation",
+      "title": "Smart Water Leak Sensor Escalation",
+      "industry": "property-management",
+      "category": "operations-inventory",
+      "role": "Maintenance Coordinator",
+      "summary": "When a smart water sensor detects usage patterns consistent with a leak, the automation immediately escalates an alert to the maintenance…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/smart-water-leak-sensor-escalation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/common-area-maintenance-scheduling-vendor-confirmation",
+      "title": "Common Area Maintenance Scheduling & Vendor Confirmation",
+      "industry": "property-management",
+      "category": "operations-inventory",
+      "role": "Grounds & Facilities Manager",
+      "summary": "Recurring common-area tasks such as landscaping and pool service are automatically scheduled on their expected cadence, and vendor completion is…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/common-area-maintenance-scheduling-vendor-confirmation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/move-out-cleaning-turn-vendor-dispatch",
+      "title": "Move-Out Cleaning & Turn Vendor Dispatch",
+      "industry": "property-management",
+      "category": "operations-inventory",
+      "role": "Move Coordinator",
+      "summary": "Once a move-out date is confirmed, the automation automatically schedules the cleaning and turn vendor for that unit well ahead of time, keeping the…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/move-out-cleaning-turn-vendor-dispatch/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/cross-property-maintenance-dispatch-balancing",
+      "title": "Cross-Property Maintenance Dispatch Balancing",
+      "industry": "property-management",
+      "category": "operations-inventory",
+      "role": "Maintenance Coordinator",
+      "summary": "For companies with maintenance staff serving multiple properties, the automation balances and routes work orders based on each technician's current…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/cross-property-maintenance-dispatch-balancing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "real-estate/digital-offer-submission-routing-system",
+      "title": "Digital Offer Submission & Routing System",
+      "industry": "real-estate",
+      "category": "operations-inventory",
+      "role": "Offer Management Specialist",
+      "summary": "When an offer is submitted electronically through the transaction platform, this automation instantly routes the complete offer packet to the…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/digital-offer-submission-routing-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/lockbox-access-logging-real-time-alert-system",
+      "title": "Lockbox Access Logging & Real-Time Alert System",
+      "industry": "real-estate",
+      "category": "operations-inventory",
+      "role": "Security & Access Coordinator",
+      "summary": "Every time a lockbox on a listing is opened, the automation automatically logs the exact time, date, and the agent credentials used to access it…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/lockbox-access-logging-real-time-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/listing-syndication-error-monitoring",
+      "title": "Listing Syndication Error Monitoring",
+      "industry": "real-estate",
+      "category": "operations-inventory",
+      "role": "Digital Operations Coordinator",
+      "summary": "The automation continuously checks that a listing's photos, price, and status are displaying correctly across every syndicated portal, Zillow…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/listing-syndication-error-monitoring/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "restaurants-food-service/inventory-count-par-level-reorder-system",
+      "title": "Inventory Count & Par-Level Reorder System",
+      "industry": "restaurants-food-service",
+      "category": "operations-inventory",
+      "role": "Bar Manager",
+      "summary": "Weekly inventory counts submitted by bar staff through a simple mobile form are automatically compared against par levels set for each product, and…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/inventory-count-par-level-reorder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/pos-linked-ingredient-reorder-alerts",
+      "title": "POS-Linked Ingredient Reorder Alerts",
+      "industry": "restaurants-food-service",
+      "category": "operations-inventory",
+      "role": "Kitchen Manager",
+      "summary": "As menu items sell throughout the day, the POS deducts ingredient usage against a recipe-mapped inventory count, and once any ingredient's on-hand…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/pos-linked-ingredient-reorder-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/vendor-reorder-threshold-alert",
+      "title": "Vendor Reorder Threshold Alert",
+      "industry": "restaurants-food-service",
+      "category": "operations-inventory",
+      "role": "Purchasing Manager",
+      "summary": "When a key ingredient tracked in the POS inventory module drops below its set reorder threshold, a purchase order is automatically generated with…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/vendor-reorder-threshold-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/86d-item-real-time-menu-sync",
+      "title": "86'd Item Real-Time Menu Sync",
+      "industry": "restaurants-food-service",
+      "category": "operations-inventory",
+      "role": "Expo/Kitchen Lead",
+      "summary": "The instant the kitchen marks an item unavailable in the POS, that change is automatically pushed in real time to every front-of-house server…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/86d-item-real-time-menu-sync/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/real-time-table-turn-time-alert",
+      "title": "Real-Time Table Turn Time Alert",
+      "industry": "restaurants-food-service",
+      "category": "operations-inventory",
+      "role": "Service Manager",
+      "summary": "The system continuously tracks how long each table stays occupied against the shift's historical average turn time, and the moment a table is…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/real-time-table-turn-time-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/third-party-delivery-platform-order-sync",
+      "title": "Third-Party Delivery Platform Order Sync",
+      "industry": "restaurants-food-service",
+      "category": "operations-inventory",
+      "role": "Delivery Operations Manager",
+      "summary": "Orders placed through DoorDash, UberEats, and Grubhub are automatically synced directly into the POS and kitchen display system the instant they…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/third-party-delivery-platform-order-sync/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/ingredient-expiration-waste-prevention-alert",
+      "title": "Ingredient Expiration & Waste Prevention Alert",
+      "industry": "restaurants-food-service",
+      "category": "operations-inventory",
+      "role": "Sustainability Coordinator",
+      "summary": "Inventory items approaching their expiration date are automatically flagged in a daily kitchen report, giving the sustainability coordinator and the…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/ingredient-expiration-waste-prevention-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/guest-allergy-dietary-restriction-flagging-system",
+      "title": "Guest Allergy & Dietary Restriction Flagging System",
+      "industry": "restaurants-food-service",
+      "category": "operations-inventory",
+      "role": "Allergen Safety Coordinator",
+      "summary": "When a guest notes an allergy or dietary restriction while booking online, the note is automatically attached to the reservation and pushed to both…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/guest-allergy-dietary-restriction-flagging-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/pre-shift-briefing-sheet-automation",
+      "title": "Pre-Shift Briefing Sheet Automation",
+      "industry": "restaurants-food-service",
+      "category": "operations-inventory",
+      "role": "Kitchen Manager",
+      "summary": "The automation automatically compiles the day's specials, any 86'd items, and relevant service notes into a pre-shift briefing sheet, ready and…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/pre-shift-briefing-sheet-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/recurring-corporate-order-scheduling-automation",
+      "title": "Recurring Corporate Order Scheduling Automation",
+      "industry": "restaurants-food-service",
+      "category": "operations-inventory",
+      "role": "Catering Sales Coordinator",
+      "summary": "Corporate clients with a standing lunch order automatically have that order scheduled and confirmed on a recurring basis, without the client needing…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/recurring-corporate-order-scheduling-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "senior-living-childcare/medication-administration-reminder-confirmation-system",
+      "title": "Medication Administration Reminder & Confirmation System",
+      "industry": "senior-living-childcare",
+      "category": "operations-inventory",
+      "role": "Director of Nursing",
+      "summary": "Tied directly to each resident's medication administration record, this automation sends the assigned caregiver a reminder at the exact time a dose…",
+      "url": "https://www.ljwebmanagement.com/automations/senior-living-childcare/medication-administration-reminder-confirmation-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/senior-living-childcare.json"
+    },
+    {
+      "id": "telecommunications/equipment-return-unreturned-fee-automation",
+      "title": "Equipment Return & Unreturned Fee Automation",
+      "industry": "telecommunications",
+      "category": "operations-inventory",
+      "role": "Logistics Coordinator",
+      "summary": "When a customer cancels service, this automation immediately emails and texts equipment return instructions along with a prepaid shipping label…",
+      "url": "https://www.ljwebmanagement.com/automations/telecommunications/equipment-return-unreturned-fee-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/telecommunications.json"
+    },
+    {
+      "id": "vacation-rentals/guest-reported-maintenance-ticketing",
+      "title": "Guest-Reported Maintenance Ticketing",
+      "industry": "vacation-rentals",
+      "category": "operations-inventory",
+      "role": "Property Manager",
+      "summary": "When a guest reports an issue during their stay, a broken appliance, a maintenance need, this automation automatically creates a maintenance ticket…",
+      "url": "https://www.ljwebmanagement.com/automations/vacation-rentals/guest-reported-maintenance-ticketing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/vacation-rentals.json"
+    },
+    {
+      "id": "warehousing-distribution/order-wave-planning-pick-priority-automation",
+      "title": "Order Wave Planning & Pick Priority Automation",
+      "industry": "warehousing-distribution",
+      "category": "operations-inventory",
+      "role": "Distribution Center Manager",
+      "summary": "Two hours before each pick wave is released, this automation analyzes open orders by carrier cutoff time, order priority, pick zone, and available…",
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/order-wave-planning-pick-priority-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/warehousing-distribution.json"
+    },
+    {
+      "id": "warehousing-distribution/cycle-count-scheduling-variance-investigation-tracker",
+      "title": "Cycle Count Scheduling & Variance Investigation Tracker",
+      "industry": "warehousing-distribution",
+      "category": "operations-inventory",
+      "role": "Inventory Control Manager",
+      "summary": "The inventory control manager sets a cycle count schedule by location zone, and this automation assigns count tasks to the designated counters each…",
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/cycle-count-scheduling-variance-investigation-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/warehousing-distribution.json"
+    },
+    {
+      "id": "warehousing-distribution/rma-intake-inspection-disposition-workflow",
+      "title": "RMA Intake, Inspection & Disposition Workflow",
+      "industry": "warehousing-distribution",
+      "category": "operations-inventory",
+      "role": "Returns Processing Supervisor",
+      "summary": "When a return authorization is issued, this automation generates an RMA number, sends the customer a pre-paid label, and creates a pending receipt…",
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/rma-intake-inspection-disposition-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/warehousing-distribution.json"
+    },
+    {
+      "id": "warehousing-distribution/pick-pack-ship-exception-alert",
+      "title": "Pick-Pack-Ship Exception Alert",
+      "industry": "warehousing-distribution",
+      "category": "operations-inventory",
+      "role": "Warehouse Supervisor",
+      "summary": "As orders move through the fulfillment process, this automation continuously flags any order that's been sitting in the picked or packed stage…",
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/pick-pack-ship-exception-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/warehousing-distribution.json"
+    },
+    {
+      "id": "warehousing-distribution/cycle-count-discrepancy-resolver",
+      "title": "Cycle Count Discrepancy Resolver",
+      "industry": "warehousing-distribution",
+      "category": "operations-inventory",
+      "role": "Inventory Control Manager",
+      "summary": "When a scheduled cycle count finds a mismatch between the system's recorded inventory and the physical count on the shelf, this automation…",
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/cycle-count-discrepancy-resolver/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/warehousing-distribution.json"
+    },
+    {
+      "id": "warehousing-distribution/returns-intake-restocking-workflow",
+      "title": "Returns Intake & Restocking Workflow",
+      "industry": "warehousing-distribution",
+      "category": "operations-inventory",
+      "role": "Returns Processing Lead",
+      "summary": "When a returned item arrives at the warehouse, this automation automatically logs the return against the original order, routes it through a quality…",
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/returns-intake-restocking-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/warehousing-distribution.json"
+    },
+    {
+      "id": "wedding-event-planning/vendor-confirmation-checklist-tracker",
+      "title": "Vendor Confirmation Checklist Tracker",
+      "industry": "wedding-event-planning",
+      "category": "operations-inventory",
+      "role": "Client Services Coordinator",
+      "summary": "For every booked event, this automation builds a checklist of every vendor involved, caterer, florist, DJ, rental company, and tracks each one's…",
+      "url": "https://www.ljwebmanagement.com/automations/wedding-event-planning/vendor-confirmation-checklist-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/wedding-event-planning.json"
+    },
+    {
+      "id": "wedding-event-planning/day-of-timeline-distribution-system",
+      "title": "Day-Of Timeline Distribution System",
+      "industry": "wedding-event-planning",
+      "category": "operations-inventory",
+      "role": "Day-Of Coordinator",
+      "summary": "Seven days before the event, this automation automatically compiles the finalized day-of timeline, pulling confirmed arrival times, vendor contacts…",
+      "url": "https://www.ljwebmanagement.com/automations/wedding-event-planning/day-of-timeline-distribution-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/wedding-event-planning.json"
+    }
+  ]
+}

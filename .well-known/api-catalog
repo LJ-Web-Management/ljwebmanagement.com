@@ -1,0 +1,25 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://www.ljwebmanagement.com/api/v1/",
+      "service-desc": [
+        {
+          "href": "https://www.ljwebmanagement.com/openapi.json",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://www.ljwebmanagement.com/developers/",
+          "type": "text/html"
+        }
+      ],
+      "service-meta": [
+        {
+          "href": "https://www.ljwebmanagement.com/llms.txt",
+          "type": "text/plain"
+        }
+      ]
+    }
+  ]
+}

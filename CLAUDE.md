@@ -41,6 +41,15 @@ Sources:
 - `content/pages/`, `content/faq.json`: static page copy (legal text, FAQ,
   quiz script).
 - `build/`: the generator. `build/pages/*.js` render each page type.
+- Agent-facing output, all generated: the JSON API under `api/v1/`,
+  `openapi.json`, `.well-known/api-catalog` and `ai-plugin.json`
+  (`build/pages/api.js`, which also renders `/developers/`); a Markdown twin
+  `index.md` next to every `index.html` (`build/pages/twins.js`); and the
+  CloudFront Function `infra/cloudfront-functions/edge.js`, generated from
+  `edge.template.js`. Redeploy the function after adding or removing pages
+  (see `infra/README.md`).
+- `test/`: `npm test` (Node's built-in runner) checks the build output and
+  the edge function. Run it after `npm run build`.
 - `assets/css/site.css` and `assets/js/site.js`: the design system and site
   script.
 

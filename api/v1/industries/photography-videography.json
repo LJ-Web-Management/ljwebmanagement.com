@@ -1,0 +1,294 @@
+{
+  "slug": "photography-videography",
+  "name": "Photography & Videography",
+  "summary": "Inquiry response, booking and contracts, shoot prep, revisions, and gallery delivery.",
+  "url": "https://www.ljwebmanagement.com/automations/photography-videography/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "photography-videography/booking-contract-gallery-delivery-pipeline",
+      "slug": "booking-contract-gallery-delivery-pipeline",
+      "title": "Booking, Contract & Gallery Delivery Pipeline",
+      "industry": "photography-videography",
+      "category": "operations-inventory",
+      "role": "Photographer",
+      "summary": "When a photography inquiry is submitted through the website, the prospect receives an immediate availability confirmation, a pricing guide, and a…",
+      "steps": [
+        "When a photography inquiry is submitted through the website, the prospect receives an immediate availability confirmation, a pricing guide, and a link to book a discovery call.",
+        "After the call, the system sends a booking agreement and retainer invoice simultaneously, the session is not held until both are received.",
+        "A week before the session, the client gets a preparation guide with wardrobe tips, location details, and what to expect.",
+        "After the shoot, a gallery delivery notification is sent automatically when the edited gallery is ready, with a download link that expires in 30 days, triggering an extension request prompt if the client doesn't download within that window."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a photographer, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Honeybook or Dubsado (CRM and contract)",
+        "Zapier or Make.com",
+        "Calendly (discovery call scheduling)",
+        "Pixieset or ShootProof (gallery delivery)",
+        "Twilio (gallery ready SMS notification)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Calendly"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/booking-contract-gallery-delivery-pipeline/"
+    },
+    {
+      "id": "photography-videography/project-brief-collection-asset-delivery-pipeline",
+      "slug": "project-brief-collection-asset-delivery-pipeline",
+      "title": "Project Brief Collection & Asset Delivery Pipeline",
+      "industry": "photography-videography",
+      "category": "operations-inventory",
+      "role": "Video Production Manager",
+      "summary": "When a new video production is booked, the client receives a structured creative brief form capturing the video's goal, target audience, key…",
+      "steps": [
+        "When a new video production is booked, the client receives a structured creative brief form capturing the video's goal, target audience, key messages, tone, reference examples, and all brand assets.",
+        "Completed briefs are automatically routed to the assigned director and editor with a project folder pre-created in the shared drive.",
+        "At each production milestone (pre-production complete, rough cut ready, final cut delivered) the client receives an automated status update with a review link and a feedback deadline.",
+        "Feedback received after the deadline is flagged as a scope extension rather than incorporated silently, protecting the production timeline and the team's workload."
+      ],
+      "manualProcess": "The manual approach means a video production manager handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Jotform (creative brief and feedback forms)",
+        "Zapier or Make.com",
+        "Google Drive (project folder creation)",
+        "Frame.io (video review and feedback)",
+        "Email (milestone status updates and deadline reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/project-brief-collection-asset-delivery-pipeline/"
+    },
+    {
+      "id": "photography-videography/session-booking-pre-shoot-questionnaire-system",
+      "slug": "session-booking-pre-shoot-questionnaire-system",
+      "title": "Session Booking & Pre-Shoot Questionnaire System",
+      "industry": "photography-videography",
+      "category": "scheduling-dispatch",
+      "role": "Studio Owner",
+      "summary": "Studio booking requests are handled through an online form that captures the session type, preferred dates, the number of subjects, and any special…",
+      "steps": [
+        "Studio booking requests are handled through an online form that captures the session type, preferred dates, the number of subjects, and any special requirements, and the system checks studio calendar availability before confirming, no double-booking, no manual calendar management.",
+        "Confirmed bookings automatically receive a deposit invoice and a session prep questionnaire asking about wardrobe, desired image style, and any concerns.",
+        "Clients who don't submit their questionnaire within five days receive a reminder, and the studio owner has a complete preparation picture for every session before the day arrives, rather than discovering at the shoot that nobody told them it was a corporate headshot session for forty people."
+      ],
+      "manualProcess": "The manual approach means a studio owner handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Honeybook or a studio booking tool",
+        "Jotform (session questionnaire)",
+        "Zapier or Make.com",
+        "Stripe (deposit invoicing)",
+        "Twilio (booking confirmation and questionnaire reminder SMS)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/session-booking-pre-shoot-questionnaire-system/"
+    },
+    {
+      "id": "photography-videography/revision-tracker-final-file-delivery-system",
+      "slug": "revision-tracker-final-file-delivery-system",
+      "title": "Revision Tracker & Final File Delivery System",
+      "industry": "photography-videography",
+      "category": "operations-inventory",
+      "role": "Videographer",
+      "summary": "When a rough cut is shared with the client, this automation starts a revision clock based on the contract's revision window and sends the client a…",
+      "steps": [
+        "When a rough cut is shared with the client, this automation starts a revision clock based on the contract's revision window and sends the client a feedback form that captures timecoded notes in a structured format, eliminating the \"the music feels a bit off around 1:15\" email thread that makes revision cycles take twice as long.",
+        "When revision requests are submitted, they are automatically logged and sent to the editor as a structured list.",
+        "When the final approved file is delivered, a watermarked preview and a password-protected full-resolution download link are automatically generated and sent, protecting the final deliverable while making it easy for the client to share for approval before distribution."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a videographer, who has to track every step by hand across emails, spreadsheets, and sticky notes. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Frame.io (client review and feedback)",
+        "Jotform (structured revision request form)",
+        "Zapier or Make.com",
+        "Vimeo or Dropbox (watermarked preview and final delivery)",
+        "Email (revision tracking and final delivery notifications)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/revision-tracker-final-file-delivery-system/"
+    },
+    {
+      "id": "photography-videography/lead-inquiry-response-consultation-booking-system",
+      "slug": "lead-inquiry-response-consultation-booking-system",
+      "title": "Lead Inquiry Response & Consultation Booking System",
+      "industry": "photography-videography",
+      "category": "lead-follow-up-sales",
+      "role": "Photography Marketing Manager",
+      "summary": "Photography inquiries submitted through the website, Instagram DM, or Facebook are automatically captured in the CRM, acknowledged within five…",
+      "steps": [
+        "Photography inquiries submitted through the website, Instagram DM, or Facebook are automatically captured in the CRM, acknowledged within five minutes with a warm reply and a link to view pricing and availability, and enrolled in a nurture sequence if they don't book a consultation immediately.",
+        "Inquiries that don't book within 48 hours receive a follow-up with a specific availability offer and a limited-time booking incentive.",
+        "The marketing manager sees a lead source dashboard showing exactly which channels (SEO, Instagram, referral, Google Ads) are driving inquiries, consultations, and bookings, so the advertising budget is directed toward the channels producing actual revenue rather than just traffic."
+      ],
+      "manualProcess": "Without a system in place, a photography marketing manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.",
+      "tools": [
+        "CRM (e.g., Honeybook or HubSpot)",
+        "Zapier or Make.com",
+        "Twilio (5-minute inquiry acknowledgment SMS)",
+        "Mailchimp or ActiveCampaign (inquiry nurture sequence)",
+        "Google Sheets or Looker Studio (lead source attribution dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "HubSpot",
+        "Google Sheets",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/lead-inquiry-response-consultation-booking-system/"
+    },
+    {
+      "id": "photography-videography/booking-to-contract-deposit-automation",
+      "slug": "booking-to-contract-deposit-automation",
+      "title": "Booking-to-Contract & Deposit Automation",
+      "industry": "photography-videography",
+      "category": "onboarding-intake",
+      "role": "Studio Manager",
+      "summary": "When a client inquires and selects a package, this automation automatically sends the contract for e-signature along with a deposit invoice, and…",
+      "steps": [
+        "When a client inquires and selects a package, this automation automatically sends the contract for e-signature along with a deposit invoice, and only confirms the date on the studio's calendar once both are completed.",
+        "A date stops being held indefinitely for a client who expresses interest but never actually finalizes the booking, freeing that slot for someone ready to commit."
+      ],
+      "manualProcess": "Without this system, a studio manager manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "HoneyBook or Pixieset",
+        "DocuSign or PandaDoc",
+        "Stripe",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "DocuSign",
+        "PandaDoc",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/booking-to-contract-deposit-automation/"
+    },
+    {
+      "id": "photography-videography/gallery-delivery-download-reminder",
+      "slug": "gallery-delivery-download-reminder",
+      "title": "Gallery Delivery & Download Reminder",
+      "industry": "photography-videography",
+      "category": "customer-communication",
+      "role": "Photographer",
+      "summary": "Once a photo or video gallery is ready, this automation automatically emails the client their private gallery link, and if they haven't downloaded…",
+      "steps": [
+        "Once a photo or video gallery is ready, this automation automatically emails the client their private gallery link, and if they haven't downloaded their files within a set window, sends an automatic reminder before the gallery's access period actually expires.",
+        "Clients stop losing access to photos they paid for simply because they meant to download them \\\"later\\\" and forgot."
+      ],
+      "manualProcess": "Left unautomated, a photographer spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Pixieset or ShootProof",
+        "Mailchimp or email",
+        "Zapier or Make.com",
+        "Twilio (SMS reminder)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/gallery-delivery-download-reminder/"
+    },
+    {
+      "id": "photography-videography/print-album-upsell-sequence",
+      "slug": "print-album-upsell-sequence",
+      "title": "Print & Album Upsell Sequence",
+      "industry": "photography-videography",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Coordinator",
+      "summary": "A set number of days after gallery delivery, typically three to five, this automation automatically sends clients an email showcasing print and…",
+      "steps": [
+        "A set number of days after gallery delivery, typically three to five, this automation automatically sends clients an email showcasing print and album options built from their own actual photos, timed for when excitement about the images is still at its peak.",
+        "Passive gallery viewers who'd otherwise just download files and move on convert into print and album buyers because the offer arrives at the moment they're most emotionally invested."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a sales coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Pixieset or ShootProof",
+        "Mailchimp",
+        "Zapier or Make.com",
+        "Stripe"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/print-album-upsell-sequence/"
+    },
+    {
+      "id": "photography-videography/associate-shooter-scheduling-coordination",
+      "slug": "associate-shooter-scheduling-coordination",
+      "title": "Associate Shooter Scheduling Coordination",
+      "industry": "photography-videography",
+      "category": "scheduling-dispatch",
+      "role": "Studio Owner",
+      "summary": "When a booked shoot requires an associate photographer or second shooter, this automation automatically checks the associate's calendar for…",
+      "steps": [
+        "When a booked shoot requires an associate photographer or second shooter, this automation automatically checks the associate's calendar for availability, sends them the shoot details for confirmation, and flags the studio owner if no associate has confirmed within a set number of days of the shoot date.",
+        "A shoot never gets uncomfortably close to happening without a confirmed second shooter in place."
+      ],
+      "manualProcess": "Manually, a studio owner is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "HoneyBook",
+        "Google Calendar",
+        "Zapier or Make.com",
+        "Twilio or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/associate-shooter-scheduling-coordination/"
+    },
+    {
+      "id": "photography-videography/client-anniversary-re-engagement",
+      "slug": "client-anniversary-re-engagement",
+      "title": "Client Anniversary Re-Engagement",
+      "industry": "photography-videography",
+      "category": "marketing-retention",
+      "role": "Studio Owner",
+      "summary": "For portrait and family photographers, this automation automatically reaches out to past clients around the one-year mark from their last session…",
+      "steps": [
+        "For portrait and family photographers, this automation automatically reaches out to past clients around the one-year mark from their last session with a friendly reminder that it might be time for updated family photos.",
+        "Repeat bookings get generated on a predictable schedule instead of relying entirely on a past client happening to think of the studio again on their own."
+      ],
+      "manualProcess": "Without this system, a studio owner manually pieces together information from different places, then has to relay it to everyone who needs it.",
+      "tools": [
+        "HoneyBook or a CRM",
+        "Mailchimp",
+        "Zapier or Make.com",
+        "Google Sheets (session date tracker)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/client-anniversary-re-engagement/"
+    }
+  ]
+}

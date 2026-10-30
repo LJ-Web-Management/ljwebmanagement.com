@@ -1,0 +1,137 @@
+{
+  "slug": "car-wash-auto-detailing",
+  "name": "Car Wash & Auto Detailing",
+  "summary": "Membership renewals, failed payment recovery, mobile route booking, and review requests.",
+  "url": "https://www.ljwebmanagement.com/automations/car-wash-auto-detailing/",
+  "automationCount": 5,
+  "automations": [
+    {
+      "id": "car-wash-auto-detailing/membership-renewal-failed-payment-recovery",
+      "slug": "membership-renewal-failed-payment-recovery",
+      "title": "Membership Renewal & Failed Payment Recovery",
+      "industry": "car-wash-auto-detailing",
+      "category": "billing-finance",
+      "role": "Membership Manager",
+      "summary": "For unlimited wash club members, this automation automatically retries a failed monthly charge, texts the member a payment update link, and only…",
+      "steps": [
+        "For unlimited wash club members, this automation automatically retries a failed monthly charge, texts the member a payment update link, and only suspends access after a set number of failed attempts.",
+        "Memberships that would otherwise silently lapse the moment a card expires get recovered instead of quietly dropping off the books."
+      ],
+      "manualProcess": "Handled by hand, a membership manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A car wash membership platform (DRB or Washify)",
+        "Stripe",
+        "Twilio (SMS)",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/car-wash-auto-detailing/membership-renewal-failed-payment-recovery/"
+    },
+    {
+      "id": "car-wash-auto-detailing/mobile-detailing-route-time-slot-booking",
+      "slug": "mobile-detailing-route-time-slot-booking",
+      "title": "Mobile Detailing Route & Time-Slot Booking",
+      "industry": "car-wash-auto-detailing",
+      "category": "scheduling-dispatch",
+      "role": "Mobile Detailing Manager",
+      "summary": "For mobile detailing businesses, this automation lets customers book directly into open time slots based on their location and the technician's…",
+      "steps": [
+        "For mobile detailing businesses, this automation lets customers book directly into open time slots based on their location and the technician's route for the day, automatically optimizing the day's schedule to minimize drive time between jobs.",
+        "A day's bookings assemble themselves into an efficient route instead of a manager rearranging a schedule by hand every evening."
+      ],
+      "manualProcess": "Left to a person, this means a mobile detailing manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A booking platform (Squire or Booksy)",
+        "Google Maps API",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/car-wash-auto-detailing/mobile-detailing-route-time-slot-booking/"
+    },
+    {
+      "id": "car-wash-auto-detailing/rain-check-weather-guarantee-automation",
+      "slug": "rain-check-weather-guarantee-automation",
+      "title": "Rain Check / Weather Guarantee Automation",
+      "industry": "car-wash-auto-detailing",
+      "category": "customer-communication",
+      "role": "Location Manager",
+      "summary": "For car washes offering a rain-check guarantee, this automation automatically checks local weather data against wash dates and proactively texts…",
+      "steps": [
+        "For car washes offering a rain-check guarantee, this automation automatically checks local weather data against wash dates and proactively texts eligible customers with a free rewash code if rain falls within the guarantee window.",
+        "Customers stop having to remember and ask; the code just shows up when they've earned it."
+      ],
+      "manualProcess": "Done manually, a location manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.",
+      "tools": [
+        "A weather API",
+        "Twilio (SMS)",
+        "Zapier or Make.com",
+        "A car wash POS"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/car-wash-auto-detailing/rain-check-weather-guarantee-automation/"
+    },
+    {
+      "id": "car-wash-auto-detailing/fleet-account-usage-reporting",
+      "slug": "fleet-account-usage-reporting",
+      "title": "Fleet Account Usage Reporting",
+      "industry": "car-wash-auto-detailing",
+      "category": "reporting-analytics",
+      "role": "Fleet Accounts Manager",
+      "summary": "For commercial fleet accounts, this automation automatically compiles monthly usage and billing summaries by vehicle and sends them to the fleet…",
+      "steps": [
+        "For commercial fleet accounts, this automation automatically compiles monthly usage and billing summaries by vehicle and sends them to the fleet manager.",
+        "A manual report pulled together at invoice time becomes an automatic one that's ready before the fleet manager even asks for it."
+      ],
+      "manualProcess": "Handled by hand, a fleet accounts manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A car wash POS with fleet billing",
+        "Zapier or Make.com",
+        "Google Sheets",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/car-wash-auto-detailing/fleet-account-usage-reporting/"
+    },
+    {
+      "id": "car-wash-auto-detailing/post-wash-review-request",
+      "slug": "post-wash-review-request",
+      "title": "Post-Wash Review Request",
+      "industry": "car-wash-auto-detailing",
+      "category": "reviews-feedback",
+      "role": "Marketing Coordinator",
+      "summary": "A few hours after a wash or detail is completed, this automation automatically sends a review request timed to when the customer's vehicle looks its…",
+      "steps": [
+        "A few hours after a wash or detail is completed, this automation automatically sends a review request timed to when the customer's vehicle looks its best.",
+        "Timing the ask to the peak-satisfaction moment maximizes the odds of a positive review compared to a generic request sent days later."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a marketing coordinator remembering to check in, update records, and follow up, with no safety net if something slips.",
+      "tools": [
+        "Twilio or email",
+        "Zapier or Make.com",
+        "Google Business Profile"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/car-wash-auto-detailing/post-wash-review-request/"
+    }
+  ]
+}

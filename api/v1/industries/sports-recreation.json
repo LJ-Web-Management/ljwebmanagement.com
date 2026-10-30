@@ -1,0 +1,293 @@
+{
+  "slug": "sports-recreation",
+  "name": "Sports & Recreation",
+  "summary": "Registration and payments, facility booking, eligibility tracking, and weather cancellations.",
+  "url": "https://www.ljwebmanagement.com/automations/sports-recreation/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "sports-recreation/team-registration-payment-schedule-distribution-system",
+      "slug": "team-registration-payment-schedule-distribution-system",
+      "title": "Team Registration, Payment & Schedule Distribution System",
+      "industry": "sports-recreation",
+      "category": "onboarding-intake",
+      "role": "Youth Sports League Director",
+      "summary": "When registration opens, the online form captures team information, roster details, division preference, and payment, and the system automatically…",
+      "steps": [
+        "When registration opens, the online form captures team information, roster details, division preference, and payment, and the system automatically places the team in the correct division based on age and skill level, sends a registration confirmation with what to expect next, and issues the registration invoice.",
+        "Once all registrations close, the schedule is built based on team counts and field availability, and each team's coach receives their complete season schedule via email with calendar links for every game.",
+        "Reminder texts go to coaches and registered contacts 48 hours before each game, and game cancellations due to weather trigger automatic rescheduling notifications to all affected teams simultaneously."
+      ],
+      "manualProcess": "Done manually, a youth sports league director has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Sports registration platform (e.g., LeagueApps or TeamSnap)",
+        "Zapier or Make.com",
+        "Stripe (registration payment)",
+        "Twilio (game reminders and cancellation alerts)",
+        "Google Calendar (season schedule with calendar links)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Calendar",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/team-registration-payment-schedule-distribution-system/"
+    },
+    {
+      "id": "sports-recreation/court-field-booking-maintenance-scheduling-system",
+      "slug": "court-field-booking-maintenance-scheduling-system",
+      "title": "Court & Field Booking & Maintenance Scheduling System",
+      "industry": "sports-recreation",
+      "category": "scheduling-dispatch",
+      "role": "Sports Facility Manager",
+      "summary": "Teams and individual players book facility time through an online portal that shows real-time availability across all courts, fields, and training…",
+      "steps": [
+        "Teams and individual players book facility time through an online portal that shows real-time availability across all courts, fields, and training spaces, and confirmed bookings immediately block the calendar and send a confirmation with access codes or check-in instructions.",
+        "When a court is vacated, a quick-inspection prompt goes to the on-duty staff via text to confirm the space is clean and equipment is in place before the next booking.",
+        "Any facility damage or maintenance need reported by a user or staff member automatically creates a work order with priority level, assigned maintenance staff, and an estimated resolution timeline, keeping the facility's condition from degrading silently between scheduled maintenance cycles."
+      ],
+      "manualProcess": "Left unautomated, a sports facility manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Facility booking platform (e.g., EZFacility or CourtReserve)",
+        "Zapier or Make.com",
+        "Twilio (booking confirmation and inspection prompt)",
+        "Airtable or CMMS (maintenance work order tracker)",
+        "Jotform (damage report form)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/court-field-booking-maintenance-scheduling-system/"
+    },
+    {
+      "id": "sports-recreation/athlete-eligibility-sports-physical-tracker",
+      "slug": "athlete-eligibility-sports-physical-tracker",
+      "title": "Athlete Eligibility & Sports Physical Tracker",
+      "industry": "sports-recreation",
+      "category": "compliance-documents",
+      "role": "Athletic Director",
+      "summary": "Before each season, this automation sends every athlete and parent a checklist of required eligibility documents (physical form, concussion training…",
+      "steps": [
+        "Before each season, this automation sends every athlete and parent a checklist of required eligibility documents (physical form, concussion training completion, emergency contact form, and signed code of conduct) with a secure upload portal and a deadline keyed to the first day of tryouts.",
+        "The athletic director sees a real-time eligibility dashboard showing which athletes are cleared, which are missing specific documents, and which have not yet initiated their submission.",
+        "Any athlete attempting to participate with incomplete eligibility documentation triggers an automatic hold notification to the head coach before the athlete steps on the field, protecting the school's compliance and the athlete from participating with an undisclosed health risk."
+      ],
+      "manualProcess": "Manually, an athletic director is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background.",
+      "tools": [
+        "Athletic management platform (e.g., FinalForms or Dragonfly Athletics) or Jotform",
+        "Zapier or Make.com",
+        "Airtable (eligibility compliance tracker)",
+        "Email or Twilio (parent and athlete document reminders)",
+        "Slack (coach eligibility status alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/athlete-eligibility-sports-physical-tracker/"
+    },
+    {
+      "id": "sports-recreation/program-enrollment-class-waitlist-fill-system",
+      "slug": "program-enrollment-class-waitlist-fill-system",
+      "title": "Program Enrollment & Class Waitlist Fill System",
+      "industry": "sports-recreation",
+      "category": "scheduling-dispatch",
+      "role": "Recreation Center Director",
+      "summary": "When program registration opens (swim lessons, adult fitness classes, youth basketball) enrollment is captured through the online portal and…",
+      "steps": [
+        "When program registration opens (swim lessons, adult fitness classes, youth basketball) enrollment is captured through the online portal and capacity is tracked in real time.",
+        "When a class fills, additional sign-ups are added to the waitlist automatically and the registrant is notified of their waitlist position.",
+        "The moment a spot opens due to a cancellation or withdrawal, the first person on the waitlist is automatically texted with a 24-hour window to claim the spot before it moves to the next person.",
+        "The recreation center director sees current enrollment across all programs versus capacity targets in a single dashboard, making it easy to identify underpopulated programs that need a promotional push and overpopulated programs that need a second section."
+      ],
+      "manualProcess": "Without this system, a recreation center director manually pieces together information from different places, then has to relay it to everyone who needs it. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Recreation management software (e.g., ActiveNet, Rec1, or CivicRec)",
+        "Zapier or Make.com",
+        "Twilio (waitlist spot notification SMS)",
+        "Stripe (enrollment payment)",
+        "Google Sheets (enrollment dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Sheets",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/program-enrollment-class-waitlist-fill-system/"
+    },
+    {
+      "id": "sports-recreation/athlete-performance-tracking-parent-communication-system",
+      "slug": "athlete-performance-tracking-parent-communication-system",
+      "title": "Athlete Performance Tracking & Parent Communication System",
+      "industry": "sports-recreation",
+      "category": "customer-communication",
+      "role": "Sports Coach",
+      "summary": "After each practice or game, the coach submits a brief performance log for each athlete using a simple mobile form (effort, technical execution…",
+      "steps": [
+        "After each practice or game, the coach submits a brief performance log for each athlete using a simple mobile form (effort, technical execution, areas to address) and the system compiles individual athlete reports that are automatically shared with parents on a weekly basis.",
+        "Parents see their child's progress over time in a format that is informative without being overwhelming, and the coach builds a documented performance record without spending hours writing individual parent emails.",
+        "Athletes who miss practices without communication receive an automatic check-in to the parent within 24 hours, and those who hit a milestone (a personal best, a skills certification, a leadership recognition) receive a personalized congratulations message from the coach automatically."
+      ],
+      "manualProcess": "Without a system in place, a sports coach has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Jotform (coach performance log form)",
+        "Zapier or Make.com",
+        "Mailchimp or email (weekly athlete report to parents)",
+        "Airtable (athlete performance database)",
+        "Twilio (milestone congratulations SMS)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Airtable",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/athlete-performance-tracking-parent-communication-system/"
+    },
+    {
+      "id": "sports-recreation/league-registration-to-team-placement",
+      "slug": "league-registration-to-team-placement",
+      "title": "League Registration-to-Team Placement",
+      "industry": "sports-recreation",
+      "category": "onboarding-intake",
+      "role": "League Coordinator",
+      "summary": "When a player registers for a league, this automation automatically collects their info and stated preferences, places them onto a team roster based…",
+      "steps": [
+        "When a player registers for a league, this automation automatically collects their info and stated preferences, places them onto a team roster based on the league's own rules for age, skill level, and requested teammates, and sends the player their team assignment, schedule, and coach's contact info.",
+        "What used to be a manual draft-and-assign process handled over a long evening with spreadsheets now runs itself as registrations come in."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a league coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "LeagueApps or TeamSnap",
+        "Zapier or Make.com",
+        "Google Sheets",
+        "Mailchimp or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/league-registration-to-team-placement/"
+    },
+    {
+      "id": "sports-recreation/weather-cancellation-notification",
+      "slug": "weather-cancellation-notification",
+      "title": "Weather Cancellation Notification",
+      "industry": "sports-recreation",
+      "category": "customer-communication",
+      "role": "Facility Director",
+      "summary": "When weather conditions meet the facility's own cancellation criteria, checked automatically against a live forecast, this automation automatically…",
+      "steps": [
+        "When weather conditions meet the facility's own cancellation criteria, checked automatically against a live forecast, this automation automatically notifies every affected team and family via text before anyone heads to the field.",
+        "Families stop finding out a game is cancelled only after they've already driven to an empty, rained-out field."
+      ],
+      "manualProcess": "Handled by hand, a facility director spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "A weather API",
+        "Twilio (SMS)",
+        "Zapier or Make.com",
+        "TeamSnap or LeagueApps"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/weather-cancellation-notification/"
+    },
+    {
+      "id": "sports-recreation/facility-booking-conflict-prevention",
+      "slug": "facility-booking-conflict-prevention",
+      "title": "Facility Booking Conflict Prevention",
+      "industry": "sports-recreation",
+      "category": "scheduling-dispatch",
+      "role": "Operations Manager",
+      "summary": "As internal staff and outside groups request to book fields, courts, or rooms, this automation automatically checks each request against the master…",
+      "steps": [
+        "As internal staff and outside groups request to book fields, courts, or rooms, this automation automatically checks each request against the master facility calendar and instantly confirms or rejects it based on real-time availability.",
+        "The double-booking that happens when scheduling is spread across multiple spreadsheets and a shared inbox stops happening entirely."
+      ],
+      "manualProcess": "Manually, an operations manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A booking system (Skedda or similar)",
+        "Zapier or Make.com",
+        "Google Calendar",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/facility-booking-conflict-prevention/"
+    },
+    {
+      "id": "sports-recreation/membership-renewal-auto-pay-failure-recovery",
+      "slug": "membership-renewal-auto-pay-failure-recovery",
+      "title": "Membership Renewal & Auto-Pay Failure Recovery",
+      "industry": "sports-recreation",
+      "category": "compliance-documents",
+      "role": "Membership Director",
+      "summary": "Before a membership auto-renews, this automation automatically notifies the member of the upcoming charge, and if the payment fails, automatically…",
+      "steps": [
+        "Before a membership auto-renews, this automation automatically notifies the member of the upcoming charge, and if the payment fails, automatically retries it and sends the member a card-update link before access is suspended.",
+        "Renewals that would otherwise silently lapse the moment a card expires get recovered instead of quietly dropping off the books."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a membership director, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A membership management platform",
+        "Stripe",
+        "Zapier or Make.com",
+        "Twilio or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/membership-renewal-auto-pay-failure-recovery/"
+    },
+    {
+      "id": "sports-recreation/tournament-bracket-results-publishing",
+      "slug": "tournament-bracket-results-publishing",
+      "title": "Tournament Bracket & Results Publishing",
+      "industry": "sports-recreation",
+      "category": "customer-communication",
+      "role": "Tournament Director",
+      "summary": "As game results are entered by staff or referees, this automation automatically updates the tournament bracket in real time and publishes the…",
+      "steps": [
+        "As game results are entered by staff or referees, this automation automatically updates the tournament bracket in real time and publishes the results to the facility's website and social channels.",
+        "Someone no longer has to manually update a printed bracket taped to a wall while parents crowd around asking who plays next."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a tournament director remembering to check in, update records, and follow up, with no safety net if something slips.",
+      "tools": [
+        "A bracket management tool (Tourney Machine or similar)",
+        "Zapier or Make.com",
+        "A website CMS",
+        "Buffer or social scheduling tool"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/tournament-bracket-results-publishing/"
+    }
+  ]
+}

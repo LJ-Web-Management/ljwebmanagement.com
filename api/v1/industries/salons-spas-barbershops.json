@@ -1,0 +1,177 @@
+{
+  "slug": "salons-spas-barbershops",
+  "name": "Salons, Spas & Barbershops",
+  "summary": "Appointment confirmations, rebooking, slot fill, birthday offers, and retail restock.",
+  "url": "https://www.ljwebmanagement.com/automations/salons-spas-barbershops/",
+  "automationCount": 6,
+  "automations": [
+    {
+      "id": "salons-spas-barbershops/appointment-confirmation-no-show-reduction-system",
+      "slug": "appointment-confirmation-no-show-reduction-system",
+      "title": "Appointment Confirmation & No-Show Reduction System",
+      "industry": "salons-spas-barbershops",
+      "category": "scheduling-dispatch",
+      "role": "Front Desk Coordinator",
+      "summary": "When a client books online or by phone, this automation immediately sends a confirmation text and schedules two more touchpoints automatically: a…",
+      "steps": [
+        "When a client books online or by phone, this automation immediately sends a confirmation text and schedules two more touchpoints automatically: a reminder 48 hours out and a second one 3 hours before the appointment, each with a one-tap link to confirm, reschedule, or cancel.",
+        "Clients who cancel inside the 24-hour window are prompted to pick a new slot from the stylist's live calendar instead of just canceling outright, and any slot that opens up is fed straight into the waitlist system.",
+        "Front desk staff stop spending mornings dialing down a no-show list, and chairs stop sitting empty when a same-day reminder could have filled them."
+      ],
+      "manualProcess": "Done manually, a front desk coordinator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.",
+      "tools": [
+        "Vagaro, Mindbody, or Boulevard (booking/POS)",
+        "Twilio (SMS)",
+        "Zapier or Make.com",
+        "Google Calendar (stylist sync)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/salons-spas-barbershops/appointment-confirmation-no-show-reduction-system/"
+    },
+    {
+      "id": "salons-spas-barbershops/checkout-rebooking-visit-cadence-system",
+      "slug": "checkout-rebooking-visit-cadence-system",
+      "title": "Checkout Rebooking & Visit Cadence System",
+      "industry": "salons-spas-barbershops",
+      "category": "scheduling-dispatch",
+      "role": "Salon Manager",
+      "summary": "The moment a client's service is marked complete at checkout, this automation checks their service history to calculate their typical rebooking…",
+      "steps": [
+        "The moment a client's service is marked complete at checkout, this automation checks their service history to calculate their typical rebooking cadence (every 5 weeks for a color client, every 3 weeks for a fade) and immediately texts a personalized rebooking link with the exact date range they should return.",
+        "Clients who don't book within 48 hours get one gentle follow-up text before the sequence stops, so it never reads as nagging.",
+        "Because the prompt goes out while the client is still admiring their new look, rebooking rates run well ahead of hoping someone remembers to call in six weeks."
+      ],
+      "manualProcess": "Without a system in place, a salon manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Vagaro, Mindbody, or Boulevard",
+        "Twilio (SMS)",
+        "Zapier or Make.com",
+        "Google Sheets (cadence tracking)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/salons-spas-barbershops/checkout-rebooking-visit-cadence-system/"
+    },
+    {
+      "id": "salons-spas-barbershops/birthday-first-visit-anniversary-offer-system",
+      "slug": "birthday-first-visit-anniversary-offer-system",
+      "title": "Birthday & First-Visit Anniversary Offer System",
+      "industry": "salons-spas-barbershops",
+      "category": "marketing-retention",
+      "role": "Spa Director",
+      "summary": "Client birthdays and first-visit dates are pulled automatically from the booking platform each morning, and anyone with a birthday or first-visit…",
+      "steps": [
+        "Client birthdays and first-visit dates are pulled automatically from the booking platform each morning, and anyone with a birthday or first-visit anniversary in the coming week receives a personalized offer, such as a complimentary add-on or a percentage off their next service, valid for a 30-day window.",
+        "Redemptions are tracked automatically so the spa can see exactly how much return business the campaign drives, without anyone building a spreadsheet of dates by hand.",
+        "Clients feel remembered without staff having to keep a mental list of a few hundred birthdays."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a spa director remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Mindbody or Vagaro",
+        "Mailchimp or Klaviyo",
+        "Zapier or Make.com",
+        "Twilio (SMS)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/salons-spas-barbershops/birthday-first-visit-anniversary-offer-system/"
+    },
+    {
+      "id": "salons-spas-barbershops/last-minute-slot-fill-utilization-alert-system",
+      "slug": "last-minute-slot-fill-utilization-alert-system",
+      "title": "Last-Minute Slot Fill & Utilization Alert System",
+      "industry": "salons-spas-barbershops",
+      "category": "scheduling-dispatch",
+      "role": "Booking Coordinator",
+      "summary": "Every morning, this automation scans each stylist's or provider's calendar for the next 48 hours and flags any gap longer than 45 minutes.",
+      "steps": [
+        "Every morning, this automation scans each stylist's or provider's calendar for the next 48 hours and flags any gap longer than 45 minutes.",
+        "Those open slots are packaged into a same-day deal, typically 15-20% off, and pushed to a segmented list of clients who have booked that specific service before and live nearby, with a one-tap booking link.",
+        "The first client to respond claims the slot and everyone else's offer expires automatically, so there's no double-booking risk.",
+        "Chairs that used to sit empty on a slow Tuesday afternoon get filled without a manager scrambling to post on social media."
+      ],
+      "manualProcess": "Manually, a booking coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Vagaro or Mindbody",
+        "Twilio (SMS)",
+        "Mailchimp",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/salons-spas-barbershops/last-minute-slot-fill-utilization-alert-system/"
+    },
+    {
+      "id": "salons-spas-barbershops/retail-product-restock-reminder-system",
+      "slug": "retail-product-restock-reminder-system",
+      "title": "Retail Product Restock Reminder System",
+      "industry": "salons-spas-barbershops",
+      "category": "marketing-retention",
+      "role": "Retail Sales Associate",
+      "summary": "Based on the size of the product a client purchased and its average days-to-empty (a 2-ounce serum lasts about 60 days, a shampoo bottle about 45)…",
+      "steps": [
+        "Based on the size of the product a client purchased and its average days-to-empty (a 2-ounce serum lasts about 60 days, a shampoo bottle about 45), this automation calculates the date the client is likely running low and sends a friendly text about a week beforehand with a one-click reorder or in-store pickup option.",
+        "Clients who reorder are automatically re-enrolled in the next cycle, and the system tracks which products drive the most repeat retail revenue.",
+        "Instead of retail sales depending on a stylist remembering to ask how the shampoo is working out, the reminder does the asking right when the client is about to need it."
+      ],
+      "manualProcess": "Without this system, a retail sales associate manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Vagaro or Mindbody (retail/POS)",
+        "Shopify (online store)",
+        "Twilio (SMS)",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/salons-spas-barbershops/retail-product-restock-reminder-system/"
+    },
+    {
+      "id": "salons-spas-barbershops/cancellation-waitlist-auto-fill-system",
+      "slug": "cancellation-waitlist-auto-fill-system",
+      "title": "Cancellation Waitlist Auto-Fill System",
+      "industry": "salons-spas-barbershops",
+      "category": "scheduling-dispatch",
+      "role": "Front Desk Coordinator",
+      "summary": "When a client cancels or reschedules, this automation immediately texts the next person on that time slot's waitlist with a 15-minute window to…",
+      "steps": [
+        "When a client cancels or reschedules, this automation immediately texts the next person on that time slot's waitlist with a 15-minute window to claim it before it moves to the next person in line.",
+        "Clients can join the waitlist for a specific stylist or service directly from their booking confirmation text, so the list builds itself without front desk staff keeping a notepad of who wanted in.",
+        "A slot that used to sit empty for the rest of the day is typically refilled within minutes of the cancellation coming in."
+      ],
+      "manualProcess": "Left unautomated, a front desk coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Vagaro or Boulevard",
+        "Twilio (SMS)",
+        "Zapier or Make.com",
+        "Google Sheets (waitlist queue)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/salons-spas-barbershops/cancellation-waitlist-auto-fill-system/"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "name": "LJ Web Management API",
+  "version": "1.0.0",
+  "description": "Free, read-only JSON API for LJ Web Management's catalog of done-for-you AI automations, platform solutions, FAQ, and glossary. Responses are static JSON regenerated on every site build.",
+  "authentication": "None. No API key is needed.",
+  "docs": "https://www.ljwebmanagement.com/developers/",
+  "openapi": "https://www.ljwebmanagement.com/openapi.json",
+  "endpoints": [
+    {
+      "operationId": "getApiIndex",
+      "method": "GET",
+      "path": "/api/v1/index.json",
+      "description": "Entry point for the API. Returns the name, version, documentation links, and every endpoint."
+    },
+    {
+      "operationId": "getCompany",
+      "method": "GET",
+      "path": "/api/v1/company.json",
+      "description": "Returns LJ Web Management's description, contact email, phone, postal address, booking page, and pricing model."
+    },
+    {
+      "operationId": "listCategories",
+      "method": "GET",
+      "path": "/api/v1/categories.json",
+      "description": "Returns the 11 business-function categories that organize the automation catalog, with counts."
+    },
+    {
+      "operationId": "getCategory",
+      "method": "GET",
+      "path": "/api/v1/categories/{category}.json",
+      "description": "Returns one business-function category and a summary of every automation in it, across all industries."
+    },
+    {
+      "operationId": "listIndustries",
+      "method": "GET",
+      "path": "/api/v1/industries.json",
+      "description": "Returns the 57 industries the automation catalog covers, with counts."
+    },
+    {
+      "operationId": "getIndustry",
+      "method": "GET",
+      "path": "/api/v1/industries/{industry}.json",
+      "description": "Returns one industry and every automation for it in full: role, steps, the manual process it replaces, and the tools it connects."
+    },
+    {
+      "operationId": "listSolutions",
+      "method": "GET",
+      "path": "/api/v1/solutions.json",
+      "description": "Returns every platform solution (CRM, ERP, websites, billing, AI agents, and more) grouped by category, with features, integrations, and FAQs."
+    },
+    {
+      "operationId": "listIntegrations",
+      "method": "GET",
+      "path": "/api/v1/integrations.json",
+      "description": "Returns the tools and platforms the automations connect (for example Zapier, HubSpot, QuickBooks), with counts."
+    },
+    {
+      "operationId": "getFaq",
+      "method": "GET",
+      "path": "/api/v1/faq.json",
+      "description": "Returns every frequently asked question about pricing, process, tools, and industries, in plain text."
+    },
+    {
+      "operationId": "getGlossary",
+      "method": "GET",
+      "path": "/api/v1/glossary.json",
+      "description": "Returns plain-English definitions of automation and AI terms."
+    }
+  ]
+}

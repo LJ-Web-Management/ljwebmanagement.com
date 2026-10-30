@@ -53,6 +53,9 @@ function head(opts) {
     "<script>document.documentElement.classList.add('lj-js')</script>",
     '<script src="/assets/js/site.js?v=' + v.js + '" defer></script>'
   );
+  // Every page has a Markdown twin (build/pages/twins.js) for AI agents.
+  if (/\/$/.test(opts.path || "")) lines.push('<link rel="alternate" type="text/markdown" href="' + opts.path + 'index.md">');
+  lines.push('<link rel="sitemap" type="application/xml" href="/sitemap.xml">');
   if (opts.extraHead) lines.push(opts.extraHead);
   lines.push(jsonLd([chrome.ORGANIZATION].concat(opts.jsonLd || [])));
   lines.push(chrome.analytics(), "</head>");

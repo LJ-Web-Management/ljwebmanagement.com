@@ -1,0 +1,289 @@
+{
+  "slug": "commercial-real-estate",
+  "name": "Commercial Real Estate",
+  "summary": "Deal pipelines, lease abstracts, critical date alerts, listing syndication, and CAM reconciliation.",
+  "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "commercial-real-estate/deal-pipeline-tracker-loi-follow-up-system",
+      "slug": "deal-pipeline-tracker-loi-follow-up-system",
+      "title": "Deal Pipeline Tracker & LOI Follow-Up System",
+      "industry": "commercial-real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "CRE Broker",
+      "summary": "Every active deal in the broker's pipeline (from prospecting through letter of intent, due diligence, and close) lives in a CRM that updates…",
+      "steps": [
+        "Every active deal in the broker's pipeline (from prospecting through letter of intent, due diligence, and close) lives in a CRM that updates automatically as the deal progresses, and the broker receives a weekly pipeline summary showing deal count by stage, estimated commission value, and any deal that hasn't moved in 14 days.",
+        "When an LOI is sent, the system starts a response-clock and sends the broker a prompt to follow up if no response has been received in five business days.",
+        "Principals in a deal who go quiet during due diligence receive a structured check-in sequence from the broker, keeping communication open during the period when deals are most likely to quietly die without an obvious reason."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a cre broker, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.",
+      "tools": [
+        "CRM (e.g., Buildout, ClientLook, or HubSpot)",
+        "Zapier or Make.com",
+        "DocuSign (LOI delivery and tracking)",
+        "Email or Twilio (follow-up sequences)",
+        "Google Sheets (commission pipeline dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "DocuSign",
+        "HubSpot",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/deal-pipeline-tracker-loi-follow-up-system/"
+    },
+    {
+      "id": "commercial-real-estate/comparable-sales-report-investment-memo-generator",
+      "slug": "comparable-sales-report-investment-memo-generator",
+      "title": "Comparable Sales Report & Investment Memo Generator",
+      "industry": "commercial-real-estate",
+      "category": "reporting-analytics",
+      "role": "Property / Market Analyst",
+      "summary": "When an analyst is asked to underwrite a potential acquisition or lease transaction, this automation pulls comparable sales and lease transactions…",
+      "steps": [
+        "When an analyst is asked to underwrite a potential acquisition or lease transaction, this automation pulls comparable sales and lease transactions from connected data sources, formats them into a clean comp grid, and feeds the data into a standardized investment memo template, pre-populating the property description, market context, and comparable analysis sections.",
+        "The analyst focuses their time on the qualitative judgment, market narrative, and financial modeling rather than the data aggregation and document formatting that typically consumes 60% of memo preparation time.",
+        "Final memos are sent to the client or investment committee via a branded delivery link automatically when the analyst marks the memo complete."
+      ],
+      "manualProcess": "The manual approach means a property / market analyst handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "CoStar or CompStak API (comparable data)",
+        "Zapier or Make.com",
+        "Google Sheets (financial model template)",
+        "OpenAI API (market narrative draft)",
+        "PandaDoc or Google Docs (investment memo template)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets",
+        "PandaDoc"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/comparable-sales-report-investment-memo-generator/"
+    },
+    {
+      "id": "commercial-real-estate/tenant-lease-abstract-critical-date-alert-system",
+      "slug": "tenant-lease-abstract-critical-date-alert-system",
+      "title": "Tenant Lease Abstract & Critical Date Alert System",
+      "industry": "commercial-real-estate",
+      "category": "compliance-documents",
+      "role": "Asset Manager",
+      "summary": "Every tenant lease in the portfolio is abstracted into a standardized database capturing rent commencement, rent escalations, option exercise…",
+      "steps": [
+        "Every tenant lease in the portfolio is abstracted into a standardized database capturing rent commencement, rent escalations, option exercise windows, lease expiration, co-tenancy clauses, and renewal notice requirements.",
+        "Reminders are sent to the asset manager at 18, 12, 6, and 3 months before each critical date, because a renewal option that must be exercised in writing 12 months before expiration can be inadvertently waived if the notice date is missed, converting a renewing tenant into a lease-end negotiation.",
+        "When a tenant exercises a renewal option, the new lease terms are automatically updated in the database and the rent schedule is recalculated for the extended term."
+      ],
+      "manualProcess": "Left to a person, this means an asset manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Lease administration software (e.g., MRI Software, Yardi Voyager, or VTS)",
+        "Zapier or Make.com",
+        "Airtable (lease abstract database)",
+        "Google Calendar (critical date entries)",
+        "Slack or email (critical date alert system)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/tenant-lease-abstract-critical-date-alert-system/"
+    },
+    {
+      "id": "commercial-real-estate/property-listing-syndication-investor-update-system",
+      "slug": "property-listing-syndication-investor-update-system",
+      "title": "Property Listing Syndication & Investor Update System",
+      "industry": "commercial-real-estate",
+      "category": "marketing-retention",
+      "role": "CRE Marketing Manager",
+      "summary": "When a property is listed for sale or lease, this automation syncs the listing details, photos, floor plans, and offering memorandum to every…",
+      "steps": [
+        "When a property is listed for sale or lease, this automation syncs the listing details, photos, floor plans, and offering memorandum to every relevant listing platform (LoopNet, CoStar, Crexi) simultaneously, and emails the firm's investor and tenant database with the listing announcement segmented by property type and geography so recipients only receive relevant opportunities.",
+        "Investors who engage with the listing email receive an automatic follow-up from the broker with an invitation to schedule a property tour or request an OM.",
+        "Listings that have been on the market more than 60 days without a qualifying tour trigger a price-reduction evaluation prompt to the listing broker, building a systematic process for managing listing freshness."
+      ],
+      "manualProcess": "Without automation, a cre marketing manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "CRE listing syndication tool (e.g., Buildout or Brevitas)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign (investor and tenant database emails)",
+        "Calendly (property tour scheduling)",
+        "Airtable (listing activity and engagement tracker)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Calendly",
+        "Airtable",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/property-listing-syndication-investor-update-system/"
+    },
+    {
+      "id": "commercial-real-estate/preventive-maintenance-scheduler-vendor-coordination-system",
+      "slug": "preventive-maintenance-scheduler-vendor-coordination-system",
+      "title": "Preventive Maintenance Scheduler & Vendor Coordination System",
+      "industry": "commercial-real-estate",
+      "category": "operations-inventory",
+      "role": "Facilities Manager",
+      "summary": "Every piece of major building equipment (HVAC units, elevators, fire suppression systems, generators, and plumbing infrastructure) is tracked in a…",
+      "steps": [
+        "Every piece of major building equipment (HVAC units, elevators, fire suppression systems, generators, and plumbing infrastructure) is tracked in a preventive maintenance calendar with manufacturer-recommended service intervals.",
+        "Service work orders are automatically generated and sent to the appropriate contracted vendor at the required interval, and the vendor confirms the scheduled date directly in the system.",
+        "After service is completed, the vendor submits a digital service report, which is automatically filed to the equipment record and triggers the next service window calculation.",
+        "The facilities manager receives a monthly maintenance compliance report showing every PM completed, every one overdue, and every vendor response rate, managing the building's equipment health proactively rather than reactively."
+      ],
+      "manualProcess": "Left unautomated, a facilities manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "CMMS (e.g., UpKeep, Fiix, or Yardi Maintenance)",
+        "Jotform (vendor service report submission)",
+        "Zapier or Make.com",
+        "Email (automated vendor work order dispatch)",
+        "Google Sheets (PM compliance dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/preventive-maintenance-scheduler-vendor-coordination-system/"
+    },
+    {
+      "id": "commercial-real-estate/lease-expiration-renewal-pipeline",
+      "slug": "lease-expiration-renewal-pipeline",
+      "title": "Lease Expiration & Renewal Pipeline",
+      "industry": "commercial-real-estate",
+      "category": "marketing-retention",
+      "role": "Leasing Manager",
+      "summary": "This automation tracks every tenant lease's expiration date across a portfolio and automatically triggers a renewal outreach sequence starting 180…",
+      "steps": [
+        "This automation tracks every tenant lease's expiration date across a portfolio and automatically triggers a renewal outreach sequence starting 180 days out, escalating in urgency as the date approaches and flagging the property manager directly if a tenant hasn't responded within 90 days of expiration.",
+        "Renewals stop being discovered at the last minute and become a managed pipeline months in advance."
+      ],
+      "manualProcess": "The manual approach means a leasing manager handles each case reactively, after someone has already noticed something went wrong. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Yardi or AppFolio",
+        "Zapier or Make.com",
+        "Mailchimp or email",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/lease-expiration-renewal-pipeline/"
+    },
+    {
+      "id": "commercial-real-estate/cam-reconciliation-reminder",
+      "slug": "cam-reconciliation-reminder",
+      "title": "CAM Reconciliation Reminder",
+      "industry": "commercial-real-estate",
+      "category": "billing-finance",
+      "role": "Property Accountant",
+      "summary": "At year-end, this automation automatically compiles actual common area maintenance expenses against what tenants were billed throughout the year…",
+      "steps": [
+        "At year-end, this automation automatically compiles actual common area maintenance expenses against what tenants were billed throughout the year, flags variances for review, and generates the reconciliation statements to send to each tenant.",
+        "A manual spreadsheet exercise that often runs months behind schedule becomes an always-current process that closes out on time."
+      ],
+      "manualProcess": "Left unautomated, a property accountant spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Yardi or MRI Software",
+        "Zapier or Make.com",
+        "Google Sheets",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/cam-reconciliation-reminder/"
+    },
+    {
+      "id": "commercial-real-estate/vacancy-listing-syndication",
+      "slug": "vacancy-listing-syndication",
+      "title": "Vacancy Listing Syndication",
+      "industry": "commercial-real-estate",
+      "category": "marketing-retention",
+      "role": "Leasing Agent",
+      "summary": "The moment a space is marked vacant or a notice to vacate is logged, this automation automatically pushes the listing to commercial listing…",
+      "steps": [
+        "The moment a space is marked vacant or a notice to vacate is logged, this automation automatically pushes the listing to commercial listing platforms and notifies the leasing team's broker network.",
+        "The lag between a space going empty and it actually being marketed, which used to cost weeks of lost rent, shrinks to same-day."
+      ],
+      "manualProcess": "Without automation, a leasing agent has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "CoStar or LoopNet",
+        "Yardi or AppFolio",
+        "Zapier or Make.com",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/vacancy-listing-syndication/"
+    },
+    {
+      "id": "commercial-real-estate/tenant-maintenance-request-routing",
+      "slug": "tenant-maintenance-request-routing",
+      "title": "Tenant Maintenance Request Routing",
+      "industry": "commercial-real-estate",
+      "category": "operations-inventory",
+      "role": "Facilities Coordinator",
+      "summary": "When a tenant submits a maintenance request through the portal, this automation automatically routes it to the correct vendor based on the issue…",
+      "steps": [
+        "When a tenant submits a maintenance request through the portal, this automation automatically routes it to the correct vendor based on the issue category, HVAC, plumbing, electrical, sends the tenant a confirmation with an expected response time, and follows up automatically if the issue isn't marked resolved within the vendor's SLA window."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a facilities coordinator remembering to check in, update records, and follow up, with no safety net if something slips.",
+      "tools": [
+        "AppFolio or Yardi",
+        "Zapier or Make.com",
+        "Twilio or email",
+        "A vendor management system"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/tenant-maintenance-request-routing/"
+    },
+    {
+      "id": "commercial-real-estate/property-tax-insurance-deadline-tracker",
+      "slug": "property-tax-insurance-deadline-tracker",
+      "title": "Property Tax & Insurance Deadline Tracker",
+      "industry": "commercial-real-estate",
+      "category": "compliance-documents",
+      "role": "Asset Manager",
+      "summary": "This automation tracks payment and appeal deadlines for property taxes and insurance renewals across every property in a portfolio, automatically…",
+      "steps": [
+        "This automation tracks payment and appeal deadlines for property taxes and insurance renewals across every property in a portfolio, automatically alerting the asset manager well ahead of each date.",
+        "Nothing gets paid late, and no appeal window closes unnoticed across a portfolio too large to track by memory."
+      ],
+      "manualProcess": "Manually, an asset manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background.",
+      "tools": [
+        "Yardi or MRI Software",
+        "Zapier or Make.com",
+        "Google Calendar",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/property-tax-insurance-deadline-tracker/"
+    }
+  ]
+}

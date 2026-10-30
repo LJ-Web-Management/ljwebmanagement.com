@@ -1,0 +1,289 @@
+{
+  "slug": "cybersecurity",
+  "name": "Cybersecurity",
+  "summary": "Alert triage, phishing training, policy attestations, scan-to-ticket, and expiration monitoring.",
+  "url": "https://www.ljwebmanagement.com/automations/cybersecurity/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "cybersecurity/security-awareness-training-phishing-simulation-tracker",
+      "slug": "security-awareness-training-phishing-simulation-tracker",
+      "title": "Security Awareness Training & Phishing Simulation Tracker",
+      "industry": "cybersecurity",
+      "category": "hr-team",
+      "role": "CISO",
+      "summary": "Every new employee is automatically enrolled in the security awareness training curriculum the moment they are provisioned in the HR system, and…",
+      "steps": [
+        "Every new employee is automatically enrolled in the security awareness training curriculum the moment they are provisioned in the HR system, and completion is tracked against a 30-day onboarding deadline.",
+        "Monthly phishing simulation campaigns are automatically launched to all staff on a randomized schedule, and employees who click a simulated phishing link are immediately enrolled in a targeted micro-training without requiring the CISO to manually identify and enroll them.",
+        "The CISO receives a monthly organization-wide security posture report showing training completion rates, phishing click rates by department, and trend lines, making the human risk layer of the security program measurable and manageable rather than anecdotal."
+      ],
+      "manualProcess": "The manual approach means a ciso handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Security awareness platform (e.g., KnowBe4, Proofpoint Security Awareness, or Cofense)",
+        "Zapier or Make.com",
+        "HRIS integration (new employee auto-enrollment)",
+        "Slack or email (monthly security posture report)",
+        "Airtable (training completion and click rate tracker)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/security-awareness-training-phishing-simulation-tracker/"
+    },
+    {
+      "id": "cybersecurity/alert-triage-enrichment-incident-escalation-system",
+      "slug": "alert-triage-enrichment-incident-escalation-system",
+      "title": "Alert Triage, Enrichment & Incident Escalation System",
+      "industry": "cybersecurity",
+      "category": "operations-inventory",
+      "role": "SOC Manager",
+      "summary": "When the SIEM fires an alert, this automation immediately queries threat intelligence feeds to enrich the indicator with context (known malicious…",
+      "steps": [
+        "When the SIEM fires an alert, this automation immediately queries threat intelligence feeds to enrich the indicator with context (known malicious IP, related threat actor, prior incident history) and assigns the enriched alert to the on-duty analyst with a priority level based on asset criticality and threat severity.",
+        "Alerts that meet the escalation threshold are automatically converted into incidents, a war room channel is created in Slack, and the on-call engineer is paged.",
+        "The SOC manager receives a real-time dashboard showing alert volume, analyst workload, mean time to respond, and open incident count, managing the security operations function by metrics rather than by walking the floor and asking analysts what they're working on."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a soc manager remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "SIEM (e.g., Splunk, Microsoft Sentinel, or IBM QRadar)",
+        "Threat intelligence feed (e.g., VirusTotal API or Recorded Future)",
+        "Zapier or Make.com",
+        "PagerDuty (on-call escalation)",
+        "Slack (incident war room and SOC dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/alert-triage-enrichment-incident-escalation-system/"
+    },
+    {
+      "id": "cybersecurity/policy-review-cycle-employee-attestation-system",
+      "slug": "policy-review-cycle-employee-attestation-system",
+      "title": "Policy Review Cycle & Employee Attestation System",
+      "industry": "cybersecurity",
+      "category": "compliance-documents",
+      "role": "Compliance Officer",
+      "summary": "Information security policies are tracked with annual review dates, and the assigned policy owner receives a review reminder 60 days before the…",
+      "steps": [
+        "Information security policies are tracked with annual review dates, and the assigned policy owner receives a review reminder 60 days before the policy expires along with the current version for markup.",
+        "Once the updated policy is approved, it is automatically distributed to all required attestors (employees, contractors, or role-specific groups) with a digital acknowledgment link and a completion deadline.",
+        "The compliance officer tracks attestation completion rates in real time, and any employee who has not attested by the deadline triggers an escalation to their manager.",
+        "The compliance program maintains a complete, auditable record of every policy version and every attestation without anyone maintaining a manual spreadsheet."
+      ],
+      "manualProcess": "Without automation, a compliance officer has to notice problems after they've already happened, then scramble to fix them manually one at a time. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "GRC platform (e.g., OneTrust, Drata, or Vanta) or Jotform",
+        "Zapier or Make.com",
+        "DocuSign or HelloSign (digital attestation)",
+        "Airtable (policy version control and attestation tracker)",
+        "Slack or email (manager escalation for overdue attestations)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "DocuSign",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/policy-review-cycle-employee-attestation-system/"
+    },
+    {
+      "id": "cybersecurity/engagement-scoping-rules-of-engagement-report-delivery-workflow",
+      "slug": "engagement-scoping-rules-of-engagement-report-delivery-workflow",
+      "title": "Engagement Scoping, Rules of Engagement & Report Delivery Workflow",
+      "industry": "cybersecurity",
+      "category": "operations-inventory",
+      "role": "Penetration Tester",
+      "summary": "When a new penetration testing engagement is scoped and signed, this automation generates the Rules of Engagement document pre-populated with the…",
+      "steps": [
+        "When a new penetration testing engagement is scoped and signed, this automation generates the Rules of Engagement document pre-populated with the agreed scope, excluded systems, testing window, and emergency contact chain, and sends it for e-signature before any testing begins.",
+        "During the engagement, daily status updates are automatically sent to the client stakeholder at the agreed communication frequency.",
+        "When testing concludes, the report template is pre-built with the engagement metadata, timeline, and scope, so the pen tester fills in findings rather than reformatting a document from scratch.",
+        "Final report delivery triggers a remediation tracking workflow that sends each finding to the responsible technical owner with a risk-prioritized remediation timeline."
+      ],
+      "manualProcess": "The manual approach means a penetration tester handles each case reactively, after someone has already noticed something went wrong.",
+      "tools": [
+        "Jotform or DocuSign (ROE and engagement agreements)",
+        "Zapier or Make.com",
+        "Google Docs or a reporting template (pre-populated report framework)",
+        "Airtable (finding and remediation tracker)",
+        "Email (daily status updates and final report delivery)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "DocuSign",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/engagement-scoping-rules-of-engagement-report-delivery-workflow/"
+    },
+    {
+      "id": "cybersecurity/vulnerability-assessment-follow-up-proposal-system",
+      "slug": "vulnerability-assessment-follow-up-proposal-system",
+      "title": "Vulnerability Assessment Follow-Up & Proposal System",
+      "industry": "cybersecurity",
+      "category": "lead-follow-up-sales",
+      "role": "Cybersecurity Sales Representative",
+      "summary": "When a prospect completes a free vulnerability assessment or security posture review, this automation assembles a personalized findings brief…",
+      "steps": [
+        "When a prospect completes a free vulnerability assessment or security posture review, this automation assembles a personalized findings brief highlighting the three most critical risks identified, sends it to the prospect within 24 hours of the assessment completion, and follows up at three days and seven days with educational content addressing each risk category.",
+        "Prospects who engage with the findings brief receive a prioritized outreach from the sales rep with a customized proposal already built from the assessment data, so the rep arrives at the proposal conversation with a solution in hand, not a questionnaire.",
+        "Prospects who go cold after 21 days enter a long-nurture educational sequence rather than being abandoned."
+      ],
+      "manualProcess": "Without automation, a cybersecurity sales representative has to notice problems after they've already happened, then scramble to fix them manually one at a time.",
+      "tools": [
+        "CRM (e.g., HubSpot or Salesforce)",
+        "Assessment tool or Jotform (vulnerability assessment data collection)",
+        "Zapier or Make.com",
+        "OpenAI API (personalized findings brief generator)",
+        "PandaDoc (customized proposal)",
+        "Mailchimp or ActiveCampaign (nurture sequence)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Mailchimp",
+        "HubSpot",
+        "ActiveCampaign",
+        "Salesforce",
+        "PandaDoc"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/vulnerability-assessment-follow-up-proposal-system/"
+    },
+    {
+      "id": "cybersecurity/phishing-simulation-training-assignment",
+      "slug": "phishing-simulation-training-assignment",
+      "title": "Phishing Simulation & Training Assignment",
+      "industry": "cybersecurity",
+      "category": "hr-team",
+      "role": "Security Awareness Manager",
+      "summary": "On a recurring monthly schedule, this automation automatically sends simulated phishing emails to employees, and anyone who clicks is automatically…",
+      "steps": [
+        "On a recurring monthly schedule, this automation automatically sends simulated phishing emails to employees, and anyone who clicks is automatically enrolled in a short remedial training module due within a week.",
+        "Security awareness turns from an annual lecture no one remembers into an ongoing, measurable habit tracked at the individual level."
+      ],
+      "manualProcess": "Handled by hand, a security awareness manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "KnowBe4 or Proofpoint",
+        "Zapier or Make.com",
+        "Slack or email",
+        "A learning management system"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/phishing-simulation-training-assignment/"
+    },
+    {
+      "id": "cybersecurity/vulnerability-scan-to-ticket-automation",
+      "slug": "vulnerability-scan-to-ticket-automation",
+      "title": "Vulnerability Scan-to-Ticket Automation",
+      "industry": "cybersecurity",
+      "category": "operations-inventory",
+      "role": "Security Analyst",
+      "summary": "When a scheduled vulnerability scan identifies a new critical or high-severity finding, this automation automatically creates a ticket in the IT…",
+      "steps": [
+        "When a scheduled vulnerability scan identifies a new critical or high-severity finding, this automation automatically creates a ticket in the IT team's task system with the finding's details and remediation guidance already attached.",
+        "A scan report that used to sit unread in someone's inbox now becomes an assigned, tracked ticket the moment the scan completes."
+      ],
+      "manualProcess": "Without a system in place, a security analyst has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Tenable or Qualys",
+        "Jira or a similar ticketing system",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/vulnerability-scan-to-ticket-automation/"
+    },
+    {
+      "id": "cybersecurity/offboarded-account-access-review",
+      "slug": "offboarded-account-access-review",
+      "title": "Offboarded Account Access Review",
+      "industry": "cybersecurity",
+      "category": "compliance-documents",
+      "role": "IT Security Administrator",
+      "summary": "This automation cross-checks the active employee list from HR against system access logs on a recurring weekly basis and automatically flags any…",
+      "steps": [
+        "This automation cross-checks the active employee list from HR against system access logs on a recurring weekly basis and automatically flags any account still active for someone who's no longer employed.",
+        "A common and dangerous gap in offboarding, an ex-employee's access lingering for weeks, gets closed automatically instead of relying on IT to remember every departure."
+      ],
+      "manualProcess": "Without automation, this falls entirely on an it security administrator, who has to track every step by hand across emails, spreadsheets, and sticky notes. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "An identity/access management tool (Okta or JumpCloud)",
+        "BambooHR or a similar HRIS",
+        "Zapier or Make.com",
+        "Slack or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/offboarded-account-access-review/"
+    },
+    {
+      "id": "cybersecurity/client-incident-notification-draft",
+      "slug": "client-incident-notification-draft",
+      "title": "Client Incident Notification Draft",
+      "industry": "cybersecurity",
+      "category": "compliance-documents",
+      "role": "Incident Response Lead",
+      "summary": "When a security incident affecting client data is confirmed, this automation automatically drafts the notification communication using the…",
+      "steps": [
+        "When a security incident affecting client data is confirmed, this automation automatically drafts the notification communication using the pre-approved template and the timeline requirements for the relevant compliance framework.",
+        "The response team gets a head start with a compliant draft ready for review instead of writing one from scratch while already under pressure."
+      ],
+      "manualProcess": "Without automation, an incident response lead has to notice problems after they've already happened, then scramble to fix them manually one at a time. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "A document template tool (Google Docs)",
+        "Zapier or Make.com",
+        "Slack or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/client-incident-notification-draft/"
+    },
+    {
+      "id": "cybersecurity/ssl-domain-expiration-monitor",
+      "slug": "ssl-domain-expiration-monitor",
+      "title": "SSL & Domain Expiration Monitor",
+      "industry": "cybersecurity",
+      "category": "operations-inventory",
+      "role": "IT Operations Manager",
+      "summary": "This automation continuously checks the expiration dates of SSL certificates and domain registrations across every client's environment and…",
+      "steps": [
+        "This automation continuously checks the expiration dates of SSL certificates and domain registrations across every client's environment and automatically alerts the team 30 days ahead of each expiration.",
+        "The entirely avoidable \\\"certificate expired\\\" outage, the kind that's embarrassing precisely because it was so preventable, stops happening."
+      ],
+      "manualProcess": "Left to a person, this means an it operations manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "UptimeRobot or a certificate monitoring tool",
+        "Zapier or Make.com",
+        "Slack or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/ssl-domain-expiration-monitor/"
+    }
+  ]
+}

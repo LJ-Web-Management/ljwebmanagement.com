@@ -1,0 +1,286 @@
+{
+  "slug": "government-public-sector",
+  "name": "Government & Public Sector",
+  "summary": "Public records requests, service request routing, grant tracking, and public notices.",
+  "url": "https://www.ljwebmanagement.com/automations/government-public-sector/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "government-public-sector/foia-public-records-request-tracking-response-system",
+      "slug": "foia-public-records-request-tracking-response-system",
+      "title": "FOIA / Public Records Request Tracking & Response System",
+      "industry": "government-public-sector",
+      "category": "compliance-documents",
+      "role": "City / County Administrator",
+      "summary": "Every public records request submitted through the portal, by email, or in person is automatically assigned a unique tracking number, acknowledged…",
+      "steps": [
+        "Every public records request submitted through the portal, by email, or in person is automatically assigned a unique tracking number, acknowledged to the requester with a response timeline, and routed to the correct department for record retrieval.",
+        "The city administrator and department heads see a live dashboard of all open requests, their statutory due dates, and current status, so no request is discovered to be overdue when a journalist or attorney follows up.",
+        "Extensions are automatically documented and communicated to the requester before the original deadline, keeping the agency in compliance with open records statutes without anyone manually managing a spreadsheet."
+      ],
+      "manualProcess": "Done manually, a city / county administrator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "GovQA or a public records portal, or Jotform",
+        "Zapier or Make.com",
+        "Airtable or Google Sheets (request tracking dashboard)",
+        "Email (requester acknowledgment and status updates)",
+        "Slack (department routing and overdue alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/foia-public-records-request-tracking-response-system/"
+    },
+    {
+      "id": "government-public-sector/infrastructure-work-order-inspection-scheduling-system",
+      "slug": "infrastructure-work-order-inspection-scheduling-system",
+      "title": "Infrastructure Work Order & Inspection Scheduling System",
+      "industry": "government-public-sector",
+      "category": "operations-inventory",
+      "role": "Public Works Director",
+      "summary": "Citizen service requests submitted via the city website, 311, or in person are automatically categorized by type (pothole, streetlight, water main…",
+      "steps": [
+        "Citizen service requests submitted via the city website, 311, or in person are automatically categorized by type (pothole, streetlight, water main issue, sign damage) assigned to the appropriate crew, and logged in the work order system with a priority level and target completion date.",
+        "Requesters receive an automated acknowledgment with a service request number and expected response window.",
+        "Completed work orders trigger a close-out notification to the requester.",
+        "The public works director sees a real-time dashboard of open requests by type, aging, and crew workload, replacing the manual dispatch board that gives no visibility into whether requests are being resolved within the city's committed service levels."
+      ],
+      "manualProcess": "The manual approach means a public works director handles each case reactively, after someone has already noticed something went wrong.",
+      "tools": [
+        "CMMS or work order system (e.g., Cityworks, eSP, or UpKeep)",
+        "Zapier or Make.com",
+        "Jotform or 311 integration (citizen request intake)",
+        "Twilio (citizen status notification)",
+        "Google Sheets (work order dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/infrastructure-work-order-inspection-scheduling-system/"
+    },
+    {
+      "id": "government-public-sector/grant-application-pipeline-compliance-reporting-system",
+      "slug": "grant-application-pipeline-compliance-reporting-system",
+      "title": "Grant Application Pipeline & Compliance Reporting System",
+      "industry": "government-public-sector",
+      "category": "billing-finance",
+      "role": "Grant Administrator",
+      "summary": "Every active grant (federal, state, and foundation) lives in a single pipeline with key dates: application deadline, award notice, contract…",
+      "steps": [
+        "Every active grant (federal, state, and foundation) lives in a single pipeline with key dates: application deadline, award notice, contract execution, reporting periods, and closeout.",
+        "The grant administrator receives reminders 60, 30, and 7 days before each deadline, and department program managers are notified automatically when their performance data is needed for an upcoming report.",
+        "Awarded grants trigger a reporting calendar that pushes deadlines to the shared calendar and assigns data collection tasks to the appropriate staff, so quarterly and annual reports are assembled from collected data rather than built under a last-minute deadline with incomplete records."
+      ],
+      "manualProcess": "Without this system, a grant administrator manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Airtable or Google Sheets (grant pipeline and reporting calendar)",
+        "Zapier or Make.com",
+        "Google Calendar (deadline entries)",
+        "Email or Slack (staff data collection requests and deadline alerts)",
+        "Jotform (performance data collection form)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Airtable",
+        "Google Sheets",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/grant-application-pipeline-compliance-reporting-system/"
+    },
+    {
+      "id": "government-public-sector/budget-amendment-departmental-approval-workflow",
+      "slug": "budget-amendment-departmental-approval-workflow",
+      "title": "Budget Amendment & Departmental Approval Workflow",
+      "industry": "government-public-sector",
+      "category": "billing-finance",
+      "role": "Budget Analyst",
+      "summary": "When a department submits a budget amendment request, this automation routes it through the required approval chain (department head, finance…",
+      "steps": [
+        "When a department submits a budget amendment request, this automation routes it through the required approval chain (department head, finance director, city manager, and council notification as applicable) with each approver receiving a one-click approve or reject link and a summary of the requested transfer's impact on current year appropriations.",
+        "Approved amendments are logged automatically in the budget tracking system, and the budget analyst's monthly variance report is generated automatically from all processed amendments, giving leadership an accurate, always-current picture of how the adopted budget is tracking against actual appropriations."
+      ],
+      "manualProcess": "Left unautomated, a budget analyst spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "ERP or financial management system (e.g., Tyler Munis or NEOGOV)",
+        "Zapier or Make.com",
+        "Jotform (amendment request form)",
+        "Email (approval routing)",
+        "Google Sheets (budget variance tracker)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/budget-amendment-departmental-approval-workflow/"
+    },
+    {
+      "id": "government-public-sector/mass-notification-multi-agency-resource-deployment-system",
+      "slug": "mass-notification-multi-agency-resource-deployment-system",
+      "title": "Mass Notification & Multi-Agency Resource Deployment System",
+      "industry": "government-public-sector",
+      "category": "customer-communication",
+      "role": "Emergency Management Coordinator",
+      "summary": "When an emergency event is declared, this automation triggers a tiered mass notification sequence, text and email alerts to affected residents based…",
+      "steps": [
+        "When an emergency event is declared, this automation triggers a tiered mass notification sequence, text and email alerts to affected residents based on geographic zone, notifications to mutual aid partners and regional emergency management contacts, and a resource request form distributed to department heads for staffing, equipment, and supply commitments.",
+        "As resources are committed, the system updates a shared operational dashboard in real time so the coordinator knows exactly what is deployed, where, and for how long without chasing confirmations by radio and phone during the most stressful hours of the event."
+      ],
+      "manualProcess": "Handled by hand, an emergency management coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Mass notification platform (e.g., Everbridge, Rave Mobile Safety, or AlertSense)",
+        "Zapier or Make.com",
+        "Jotform (resource commitment form)",
+        "Google Sheets (resource deployment dashboard)",
+        "Slack (inter-agency coordination channel automation)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/mass-notification-multi-agency-resource-deployment-system/"
+    },
+    {
+      "id": "government-public-sector/public-records-request-intake-deadline-tracker",
+      "slug": "public-records-request-intake-deadline-tracker",
+      "title": "Public Records Request Intake & Deadline Tracker",
+      "industry": "government-public-sector",
+      "category": "compliance-documents",
+      "role": "Records Compliance Officer",
+      "summary": "When a public records request is submitted, this automation automatically logs it, calculates the legally required response deadline, routes it to…",
+      "steps": [
+        "When a public records request is submitted, this automation automatically logs it, calculates the legally required response deadline, routes it to the department that holds the relevant records, and escalates internally if the deadline is approaching without a response drafted.",
+        "A missed statutory deadline, which can carry real legal exposure, gets caught with days of lead time instead of discovered after the fact."
+      ],
+      "manualProcess": "Without automation, a records compliance officer has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "A records management system or Google Sheets",
+        "Zapier or Make.com",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/public-records-request-intake-deadline-tracker/"
+    },
+    {
+      "id": "government-public-sector/permit-application-status-notification",
+      "slug": "permit-application-status-notification",
+      "title": "Permit Application Status Notification",
+      "industry": "government-public-sector",
+      "category": "customer-communication",
+      "role": "Permit Technician",
+      "summary": "As a resident's or business's permit application moves through review stages, this automation automatically sends status update notifications by…",
+      "steps": [
+        "As a resident's or business's permit application moves through review stages, this automation automatically sends status update notifications by email or text at each stage change.",
+        "The volume of \\\"what's the status of my permit\\\" calls to the department drops sharply because applicants already know before they think to call."
+      ],
+      "manualProcess": "The manual approach means a permit technician handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A permitting software system (Accela or CityView)",
+        "Twilio or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/permit-application-status-notification/"
+    },
+    {
+      "id": "government-public-sector/citizen-service-request-routing",
+      "slug": "citizen-service-request-routing",
+      "title": "Citizen Service Request Routing",
+      "industry": "government-public-sector",
+      "category": "customer-communication",
+      "role": "311 Service Coordinator",
+      "summary": "When a resident submits a service request, a pothole, a streetlight outage, a code violation, this automation automatically routes it to the correct…",
+      "steps": [
+        "When a resident submits a service request, a pothole, a streetlight outage, a code violation, this automation automatically routes it to the correct department based on category and location, and sends the resident a confirmation with a tracking number and expected resolution timeframe.",
+        "Requests stop getting misrouted or lost between departments."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a 311 service coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A 311/CRM system",
+        "Zapier or Make.com",
+        "Twilio or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/citizen-service-request-routing/"
+    },
+    {
+      "id": "government-public-sector/grant-compliance-reporting-reminder",
+      "slug": "grant-compliance-reporting-reminder",
+      "title": "Grant Compliance Reporting Reminder",
+      "industry": "government-public-sector",
+      "category": "compliance-documents",
+      "role": "Grants Manager",
+      "summary": "For every grant a department has received, this automation tracks required reporting deadlines and spending milestones, automatically reminding the…",
+      "steps": [
+        "For every grant a department has received, this automation tracks required reporting deadlines and spending milestones, automatically reminding the grant manager well ahead of each deadline.",
+        "Future funding eligibility, which can be jeopardized by a single missed report, stops being put at risk by a deadline that simply slipped someone's mind."
+      ],
+      "manualProcess": "Left unautomated, a grants manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.",
+      "tools": [
+        "A grants management system or Google Sheets",
+        "Zapier or Make.com",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/grant-compliance-reporting-reminder/"
+    },
+    {
+      "id": "government-public-sector/public-meeting-agenda-notice-automation",
+      "slug": "public-meeting-agenda-notice-automation",
+      "title": "Public Meeting Agenda & Notice Automation",
+      "industry": "government-public-sector",
+      "category": "compliance-documents",
+      "role": "City Clerk",
+      "summary": "Ahead of each scheduled public meeting, this automation automatically compiles the submitted agenda items into the formatted agenda, posts it to the…",
+      "steps": [
+        "Ahead of each scheduled public meeting, this automation automatically compiles the submitted agenda items into the formatted agenda, posts it to the required public notice channels within the legally mandated timeframe, and distributes it to board or council members.",
+        "Statutory notice requirements, which carry real consequences if missed, are met automatically instead of depending on someone remembering the posting deadline."
+      ],
+      "manualProcess": "Done manually, a city clerk has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.",
+      "tools": [
+        "A meeting management platform (Granicus or PrimeGov)",
+        "Zapier or Make.com",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/public-meeting-agenda-notice-automation/"
+    }
+  ]
+}

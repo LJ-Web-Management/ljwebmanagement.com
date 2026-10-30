@@ -1,0 +1,137 @@
+{
+  "slug": "landscaping-lawn-care",
+  "name": "Landscaping & Lawn Care",
+  "summary": "Route optimization, weather rescheduling, seasonal upsells, and photo invoicing.",
+  "url": "https://www.ljwebmanagement.com/automations/landscaping-lawn-care/",
+  "automationCount": 5,
+  "automations": [
+    {
+      "id": "landscaping-lawn-care/route-optimization-for-recurring-service",
+      "slug": "route-optimization-for-recurring-service",
+      "title": "Route Optimization for Recurring Service",
+      "industry": "landscaping-lawn-care",
+      "category": "scheduling-dispatch",
+      "role": "Route Manager",
+      "summary": "Based on each customer's service day and location, this automation automatically builds the most efficient daily route for crews, and re-optimizes…",
+      "steps": [
+        "Based on each customer's service day and location, this automation automatically builds the most efficient daily route for crews, and re-optimizes automatically the moment a customer is added, cancelled, or rescheduled.",
+        "A route sheet that used to be built by hand every morning, and that fell apart the moment one customer called to reschedule, now updates itself."
+      ],
+      "manualProcess": "Left unautomated, a route manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.",
+      "tools": [
+        "Aspire or Service Autopilot",
+        "Google Maps API (route optimization)",
+        "Zapier or Make.com",
+        "Twilio (crew notifications)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/landscaping-lawn-care/route-optimization-for-recurring-service/"
+    },
+    {
+      "id": "landscaping-lawn-care/weather-based-service-rescheduling",
+      "slug": "weather-based-service-rescheduling",
+      "title": "Weather-Based Service Rescheduling",
+      "industry": "landscaping-lawn-care",
+      "category": "scheduling-dispatch",
+      "role": "Operations Manager",
+      "summary": "When rain or unsafe conditions are forecast for a scheduled service day, this automation automatically identifies every affected customer…",
+      "steps": [
+        "When rain or unsafe conditions are forecast for a scheduled service day, this automation automatically identifies every affected customer, reschedules their service to the next available slot, and sends them a notification explaining the change before the crew would have shown up.",
+        "Crews stop getting sent out only to turn around, and customers stop wondering why no one showed."
+      ],
+      "manualProcess": "Done manually, an operations manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "A weather API",
+        "Aspire or Service Autopilot",
+        "Twilio (SMS)",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/landscaping-lawn-care/weather-based-service-rescheduling/"
+    },
+    {
+      "id": "landscaping-lawn-care/seasonal-service-upsell-campaign",
+      "slug": "seasonal-service-upsell-campaign",
+      "title": "Seasonal Service Upsell Campaign",
+      "industry": "landscaping-lawn-care",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Coordinator",
+      "summary": "This automation automatically reaches out to existing mowing customers ahead of each season with relevant add-on offers, aeration in fall, mulching…",
+      "steps": [
+        "This automation automatically reaches out to existing mowing customers ahead of each season with relevant add-on offers, aeration in fall, mulching in spring, a fertilization program going into summer, timed for when the service is actually most needed and most likely to convert.",
+        "Upsells stop depending on a crew member remembering to mention it on-site."
+      ],
+      "manualProcess": "Without automation, a sales coordinator has to notice problems after they've already happened, then scramble to fix them manually one at a time. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Aspire or Service Autopilot",
+        "Mailchimp or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/landscaping-lawn-care/seasonal-service-upsell-campaign/"
+    },
+    {
+      "id": "landscaping-lawn-care/post-service-photo-invoice-automation",
+      "slug": "post-service-photo-invoice-automation",
+      "title": "Post-Service Photo & Invoice Automation",
+      "industry": "landscaping-lawn-care",
+      "category": "billing-finance",
+      "role": "Crew Leader",
+      "summary": "When a crew marks a job complete in the field app, this automation automatically attaches the before and after photos to the customer's record…",
+      "steps": [
+        "When a crew marks a job complete in the field app, this automation automatically attaches the before and after photos to the customer's record, generates the invoice, and sends both to the customer.",
+        "Visible proof of work goes out alongside the bill instead of the customer just receiving a charge with no context for what was done."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a crew leader remembering to check in, update records, and follow up, with no safety net if something slips. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Aspire or Service Autopilot",
+        "Zapier or Make.com",
+        "Stripe or QuickBooks"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "QuickBooks",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/landscaping-lawn-care/post-service-photo-invoice-automation/"
+    },
+    {
+      "id": "landscaping-lawn-care/seasonal-contract-renewal-automation",
+      "slug": "seasonal-contract-renewal-automation",
+      "title": "Seasonal Contract Renewal Automation",
+      "industry": "landscaping-lawn-care",
+      "category": "marketing-retention",
+      "role": "Account Manager",
+      "summary": "As a customer's seasonal service contract nears its end, this automation automatically sends a renewal offer with updated pricing, and flags the…",
+      "steps": [
+        "As a customer's seasonal service contract nears its end, this automation automatically sends a renewal offer with updated pricing, and flags the sales team to personally follow up with any customer who hasn't renewed within a set window before the season starts.",
+        "Renewals stop being a scramble every spring to reach everyone before the season is already underway."
+      ],
+      "manualProcess": "Left unautomated, an account manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Aspire or Service Autopilot",
+        "Mailchimp or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/landscaping-lawn-care/seasonal-contract-renewal-automation/"
+    }
+  ]
+}

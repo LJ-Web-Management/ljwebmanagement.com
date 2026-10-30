@@ -1,0 +1,550 @@
+{
+  "slug": "hr-team",
+  "name": "HR, Hiring & Team Management",
+  "summary": "Hire faster, onboard consistently, and keep certifications, shifts, and timesheets on track.",
+  "description": "People operations are full of repeatable steps that still get handled by hand: scheduling interviews, collecting new hire paperwork, chasing timesheets, tracking certifications, and routing time-off requests. These automations give every candidate and employee the same reliable process, alert managers before a license or certification lapses, and take the reminders off HR's plate.",
+  "url": "https://www.ljwebmanagement.com/automations/category/hr-team/",
+  "automationCount": 54,
+  "automations": [
+    {
+      "id": "cannabis-hemp/staff-training-compliance-product-knowledge-quiz-system",
+      "title": "Staff Training Compliance & Product Knowledge Quiz System",
+      "industry": "cannabis-hemp",
+      "category": "hr-team",
+      "role": "Dispensary Budtender Manager",
+      "summary": "When new products are added to the menu, this automation sends every budtender a product education brief and a short quiz to confirm they understand…",
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/staff-training-compliance-product-knowledge-quiz-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cannabis-hemp.json"
+    },
+    {
+      "id": "catering/event-crew-staffing-assignment",
+      "title": "Event Crew Staffing Assignment",
+      "industry": "catering",
+      "category": "hr-team",
+      "role": "Staffing Coordinator",
+      "summary": "Based on each event's size and service style, this automation automatically calculates the number of staff needed, checks availability among the…",
+      "url": "https://www.ljwebmanagement.com/automations/catering/event-crew-staffing-assignment/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/catering.json"
+    },
+    {
+      "id": "cybersecurity/security-awareness-training-phishing-simulation-tracker",
+      "title": "Security Awareness Training & Phishing Simulation Tracker",
+      "industry": "cybersecurity",
+      "category": "hr-team",
+      "role": "CISO",
+      "summary": "Every new employee is automatically enrolled in the security awareness training curriculum the moment they are provisioned in the HR system, and…",
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/security-awareness-training-phishing-simulation-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cybersecurity.json"
+    },
+    {
+      "id": "cybersecurity/phishing-simulation-training-assignment",
+      "title": "Phishing Simulation & Training Assignment",
+      "industry": "cybersecurity",
+      "category": "hr-team",
+      "role": "Security Awareness Manager",
+      "summary": "On a recurring monthly schedule, this automation automatically sends simulated phishing emails to employees, and anyone who clicks is automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/phishing-simulation-training-assignment/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cybersecurity.json"
+    },
+    {
+      "id": "education/course-completion-certification-tracker",
+      "title": "Course Completion & Certification Tracker",
+      "industry": "education",
+      "category": "hr-team",
+      "role": "Corporate Trainer",
+      "summary": "As employees complete training modules, their completion status syncs automatically to an HR dashboard, and any employee who hasn't completed a…",
+      "url": "https://www.ljwebmanagement.com/automations/education/course-completion-certification-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/education.json"
+    },
+    {
+      "id": "faith-based-organizations/ministry-team-volunteer-scheduling-communication-system",
+      "title": "Ministry Team Volunteer Scheduling & Communication System",
+      "industry": "faith-based-organizations",
+      "category": "hr-team",
+      "role": "Executive Pastor",
+      "summary": "Ministry team leaders submit their volunteer needs for each weekend service through a simple form, and the system automatically matches open roles…",
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/ministry-team-volunteer-scheduling-communication-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/faith-based-organizations.json"
+    },
+    {
+      "id": "fitness-wellness/staff-certification-expiration-tracker",
+      "title": "Staff Certification Expiration Tracker",
+      "industry": "fitness-wellness",
+      "category": "hr-team",
+      "role": "HR & Certification Manager",
+      "summary": "The automation internally tracks instructor and trainer certification expiration dates and alerts management well ahead of each renewal deadline…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/staff-certification-expiration-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/trainer-continuing-education-deadline-reminder",
+      "title": "Trainer Continuing Education Deadline Reminder",
+      "industry": "fitness-wellness",
+      "category": "hr-team",
+      "role": "HR & Certification Manager",
+      "summary": "Separate from license renewal itself, the automation reminds trainers of required continuing education hours ahead of their recertification…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/trainer-continuing-education-deadline-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "general-business/new-employee-onboarding-checklist-automation",
+      "title": "New Employee Onboarding Checklist Automation",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "HR Manager",
+      "summary": "The moment a new hire's signed offer letter lands in BambooHR, a multi-stage checklist kicks off automatically: IT gets a Slack task to provision a…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/new-employee-onboarding-checklist-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/pto-and-time-off-request-routing",
+      "title": "PTO and Time-Off Request Routing",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "People Operations Specialist",
+      "summary": "When an employee submits a time-off request through Gusto, the system automatically checks their remaining balance, routes the request to their…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/pto-and-time-off-request-routing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/employee-offboarding-workflow",
+      "title": "Employee Offboarding Workflow",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "HR Generalist",
+      "summary": "The instant a termination date is entered into Rippling, a coordinated offboarding sequence fires off: IT receives a Slack task to disable email…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/employee-offboarding-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/weekly-timesheet-reminder-system",
+      "title": "Weekly Timesheet Reminder System",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "Operations Manager",
+      "summary": "Every Friday afternoon, the system checks who has and hasn't submitted their weekly timesheet in Gusto, then automatically sends a Slack reminder to…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/weekly-timesheet-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/performance-review-scheduling-automation",
+      "title": "Performance Review Scheduling Automation",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "HR Business Partner",
+      "summary": "Based on each employee's hire date stored in BambooHR, the system automatically schedules 90-day, annual, and any interim performance review cycles…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/performance-review-scheduling-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/birthday-and-work-anniversary-recognition",
+      "title": "Birthday and Work Anniversary Recognition",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "Employee Experience Manager",
+      "summary": "Pulling birthdate and hire date directly from BambooHR, the system automatically posts a celebratory message in a dedicated Slack channel on each…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/birthday-and-work-anniversary-recognition/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/interview-scheduling-automation",
+      "title": "Interview Scheduling Automation",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "Recruiting Coordinator",
+      "summary": "Once a candidate is moved to the interview stage in Greenhouse, they automatically receive a Calendly link scoped to only the interview panel's open…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/interview-scheduling-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/reference-check-request-workflow",
+      "title": "Reference Check Request Workflow",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "Talent Acquisition Manager",
+      "summary": "When a candidate moves to the final offer stage in Greenhouse, they're automatically sent a Google Forms link asking for two to three professional…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/reference-check-request-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/benefits-open-enrollment-reminders",
+      "title": "Benefits Open Enrollment Reminders",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "Benefits Administrator",
+      "summary": "As soon as open enrollment opens in Gusto, every eligible employee is automatically enrolled in a staggered reminder sequence: an initial email…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/benefits-open-enrollment-reminders/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/employee-satisfaction-pulse-survey-automation",
+      "title": "Employee Satisfaction Pulse Survey Automation",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "People Operations Specialist",
+      "summary": "Every other Friday, a short five-question pulse survey goes out automatically through Typeform to the full team, with results feeding directly into…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/employee-satisfaction-pulse-survey-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/new-hire-paperwork-and-e-signature-collection",
+      "title": "New Hire Paperwork and E-Signature Collection",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "Payroll Administrator",
+      "summary": "As soon as a candidate accepts an offer in Greenhouse, the system automatically generates a complete new-hire packet, direct deposit authorization…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/new-hire-paperwork-and-e-signature-collection/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/employee-handbook-acknowledgment-tracking",
+      "title": "Employee Handbook Acknowledgment Tracking",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "Training and Development Coordinator",
+      "summary": "Whenever the employee handbook is updated in Google Drive, every employee automatically receives a PandaDoc link to review and digitally acknowledge…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/employee-handbook-acknowledgment-tracking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/90-day-probation-review-reminder",
+      "title": "90-Day Probation Review Reminder",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "HR Manager",
+      "summary": "Using each new hire's start date stored in BambooHR, the system automatically counts down to the 90-day probationary review and sends the manager a…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/90-day-probation-review-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/new-hire-it-account-provisioning-workflow",
+      "title": "New Hire IT Account Provisioning Workflow",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "IT Manager",
+      "summary": "The moment HR finalizes a start date in the applicant tracking system, the workflow fires and creates the new employee's accounts automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/new-hire-it-account-provisioning-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/company-wide-announcement-broadcast-system",
+      "title": "Company-Wide Announcement Broadcast System",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "Chief Operating Officer",
+      "summary": "When leadership needs to get an announcement in front of every employee at once, whether it's a policy change, a snow day closure, or a major…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/company-wide-announcement-broadcast-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/employee-offboarding-it-deprovisioning",
+      "title": "Employee Offboarding IT Deprovisioning",
+      "industry": "general-business",
+      "category": "hr-team",
+      "role": "HR Operations Manager",
+      "summary": "The moment HR marks an employee's last day in the HRIS, the workflow kicks off a full deprovisioning sequence instead of leaving a systems…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/employee-offboarding-it-deprovisioning/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "healthcare/provider-credentialing-expiration-tracker",
+      "title": "Provider Credentialing Expiration Tracker",
+      "industry": "healthcare",
+      "category": "hr-team",
+      "role": "Credentialing Coordinator",
+      "summary": "The automation internally tracks each provider's credentialing status and hospital privilege renewal dates, alerting administration well ahead of…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/provider-credentialing-expiration-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "home-services/technician-onboarding-certification-expiration-tracker",
+      "title": "Technician Onboarding & Certification Expiration Tracker",
+      "industry": "home-services",
+      "category": "hr-team",
+      "role": "Field Technician Manager",
+      "summary": "When a new technician is hired, this automation generates a 30-day onboarding checklist (safety training, equipment certifications, ride-along…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/technician-onboarding-certification-expiration-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/seasonal-crew-scheduling-automation",
+      "title": "Seasonal Crew Scheduling Automation",
+      "industry": "home-services",
+      "category": "hr-team",
+      "role": "Workforce Planning Manager",
+      "summary": "Six weeks ahead of the company's high season, this automation automatically sends every technician and crew member an availability request covering…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/seasonal-crew-scheduling-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "human-resources/job-posting-multi-platform-applicant-tracker",
+      "title": "Job Posting & Multi-Platform Applicant Tracker",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "HR Manager",
+      "summary": "When a new position is approved, the job description is automatically posted to LinkedIn, Indeed, and the company careers page simultaneously, and…",
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/job-posting-multi-platform-applicant-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/human-resources.json"
+    },
+    {
+      "id": "human-resources/interview-scheduling-candidate-communication-system",
+      "title": "Interview Scheduling & Candidate Communication System",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "Recruiter",
+      "summary": "Once a candidate advances to the interview stage, this automation sends them a self-scheduling link, confirms the interview time automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/interview-scheduling-candidate-communication-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/human-resources.json"
+    },
+    {
+      "id": "human-resources/new-hire-document-collection-orientation-workflow",
+      "title": "New Hire Document Collection & Orientation Workflow",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "Onboarding Specialist",
+      "summary": "The moment a new hire accepts an offer, they automatically receive a welcome email with a link to complete their I-9, direct deposit form, benefits…",
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/new-hire-document-collection-orientation-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/human-resources.json"
+    },
+    {
+      "id": "human-resources/timesheet-collection-exception-alert-system",
+      "title": "Timesheet Collection & Exception Alert System",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "Payroll Manager",
+      "summary": "A weekly reminder goes to every hourly employee on Monday morning to submit their timesheet, and a follow-up goes to anyone who hasn't submitted by…",
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/timesheet-collection-exception-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/human-resources.json"
+    },
+    {
+      "id": "human-resources/performance-review-cycle-manager",
+      "title": "Performance Review Cycle Manager",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "HR Business Partner",
+      "summary": "Ninety days before the annual review cycle, this automation sends managers a schedule of their direct reports' review dates with self-evaluation…",
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/performance-review-cycle-manager/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/human-resources.json"
+    },
+    {
+      "id": "human-resources/new-hire-paperwork-equipment-provisioning-sequence",
+      "title": "New Hire Paperwork & Equipment Provisioning Sequence",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "HR Coordinator",
+      "summary": "The instant a candidate accepts an offer inside the ATS, this automation triggers I-9, W-4, and benefits enrollment forms for e-signature, sent…",
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/new-hire-paperwork-equipment-provisioning-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/human-resources.json"
+    },
+    {
+      "id": "human-resources/pto-balance-request-auto-router",
+      "title": "PTO Balance & Request Auto-Router",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "People Operations Specialist",
+      "summary": "When an employee submits a time-off request, this automation immediately checks their current PTO balance in the HR system, cross-references the…",
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/pto-balance-request-auto-router/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/human-resources.json"
+    },
+    {
+      "id": "human-resources/performance-review-cycle-reminder-system",
+      "title": "Performance Review Cycle Reminder System",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "Performance Management Coordinator",
+      "summary": "Ninety, thirty, and seven days before each employee's scheduled review date, this automation reminds the manager to get it on the calendar, and…",
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/performance-review-cycle-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/human-resources.json"
+    },
+    {
+      "id": "human-resources/exit-interview-offboarding-checklist-automation",
+      "title": "Exit Interview & Offboarding Checklist Automation",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "Offboarding Coordinator",
+      "summary": "The moment a termination date is entered into the HR system, this automation schedules an exit interview on the departing employee's calendar, sends…",
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/exit-interview-offboarding-checklist-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/human-resources.json"
+    },
+    {
+      "id": "human-resources/employee-anniversary-milestone-recognition-system",
+      "title": "Employee Anniversary & Milestone Recognition System",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "Culture and Engagement Manager",
+      "summary": "Every morning, this automation checks employee start dates against today's date, and the moment someone hits a work anniversary, it automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/employee-anniversary-milestone-recognition-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/human-resources.json"
+    },
+    {
+      "id": "legal/cle-credit-tracking-renewal-reminder",
+      "title": "CLE Credit Tracking & Renewal Reminder",
+      "industry": "legal",
+      "category": "hr-team",
+      "role": "Bar Compliance Coordinator",
+      "summary": "The automation tracks each attorney's continuing legal education credits internally throughout the reporting period, logging completed courses as…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/cle-credit-tracking-renewal-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "nonprofit/volunteer-shift-signup-reminder-hour-tracking-system",
+      "title": "Volunteer Shift Signup, Reminder & Hour-Tracking System",
+      "industry": "nonprofit",
+      "category": "hr-team",
+      "role": "Volunteer Coordinator",
+      "summary": "Open volunteer shifts are automatically posted to the volunteer portal and distributed via email and text to the relevant volunteer pool, with a…",
+      "url": "https://www.ljwebmanagement.com/automations/nonprofit/volunteer-shift-signup-reminder-hour-tracking-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/nonprofit.json"
+    },
+    {
+      "id": "nonprofit/volunteer-shift-confirmation-no-show-reduction-system",
+      "title": "Volunteer Shift Confirmation & No-Show Reduction System",
+      "industry": "nonprofit",
+      "category": "hr-team",
+      "role": "Community Engagement Coordinator",
+      "summary": "When a volunteer signs up for a shift, they immediately receive an automatic confirmation text with the date, time, and location, followed by a…",
+      "url": "https://www.ljwebmanagement.com/automations/nonprofit/volunteer-shift-confirmation-no-show-reduction-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/nonprofit.json"
+    },
+    {
+      "id": "professional-services/advisor-licensing-ce-credit-tracker",
+      "title": "Advisor Licensing & CE Credit Tracker",
+      "industry": "professional-services",
+      "category": "hr-team",
+      "role": "HR & Licensing Coordinator",
+      "summary": "The automation internally tracks each advisor's required licensing and continuing education credits, alerting both the advisor and the HR and…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/advisor-licensing-ce-credit-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/new-regulation-training-assignment-automation",
+      "title": "New Regulation Training Assignment Automation",
+      "industry": "professional-services",
+      "category": "hr-team",
+      "role": "Compliance Officer",
+      "summary": "When a new compliance regulation is identified, the automation automatically assigns the required training module to relevant staff with a tracked…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/new-regulation-training-assignment-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "real-estate/new-agent-onboarding-workflow-automation",
+      "title": "New Agent Onboarding Workflow Automation",
+      "industry": "real-estate",
+      "category": "hr-team",
+      "role": "HR Onboarding Specialist",
+      "summary": "The moment a new agent signs their independent contractor agreement, this automation automatically triggers the brokerage's full onboarding…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/new-agent-onboarding-workflow-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "restaurants-food-service/staff-scheduling-open-shift-fill-system",
+      "title": "Staff Scheduling & Open-Shift Fill System",
+      "industry": "restaurants-food-service",
+      "category": "hr-team",
+      "role": "Restaurant Manager",
+      "summary": "When a team member calls out or a shift goes uncovered, the system automatically texts qualified, available staff in seniority order until someone…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/staff-scheduling-open-shift-fill-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/employee-shift-reminder-automation",
+      "title": "Employee Shift Reminder Automation",
+      "industry": "restaurants-food-service",
+      "category": "hr-team",
+      "role": "Scheduling Manager",
+      "summary": "Every staff member scheduled for an upcoming shift automatically receives a reminder text the afternoon before, and again a couple of hours ahead of…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/employee-shift-reminder-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/end-of-shift-tip-out-calculation-automation",
+      "title": "End-of-Shift Tip-Out Calculation Automation",
+      "industry": "restaurants-food-service",
+      "category": "hr-team",
+      "role": "Payroll Administrator",
+      "summary": "At the close of each shift, hours worked and role from the scheduling system are automatically matched against total tips collected in the POS, and…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/end-of-shift-tip-out-calculation-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/new-employee-onboarding-sequence",
+      "title": "New Employee Onboarding Sequence",
+      "industry": "restaurants-food-service",
+      "category": "hr-team",
+      "role": "HR Onboarding Coordinator",
+      "summary": "Marking a new hire as accepted in the scheduling system automatically triggers a sequence covering onboarding paperwork, a copy of the training…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/new-employee-onboarding-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/alcohol-service-certification-expiration-tracker",
+      "title": "Alcohol Service Certification Expiration Tracker",
+      "industry": "restaurants-food-service",
+      "category": "hr-team",
+      "role": "Compliance Manager",
+      "summary": "The automation automatically tracks each staff member's alcohol service certification expiration date and sends renewal reminders well ahead of the…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/alcohol-service-certification-expiration-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "staffing-recruiting/job-order-intake-rapid-candidate-submittal-system",
+      "title": "Job Order Intake & Rapid Candidate Submittal System",
+      "industry": "staffing-recruiting",
+      "category": "hr-team",
+      "role": "Account Executive",
+      "summary": "When a new job order is received from a client (via email, phone, or the client portal) this automation creates the order record in the ATS, formats…",
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/job-order-intake-rapid-candidate-submittal-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/staffing-recruiting.json"
+    },
+    {
+      "id": "staffing-recruiting/candidate-re-engagement-availability-check-system",
+      "title": "Candidate Re-Engagement & Availability Check System",
+      "industry": "staffing-recruiting",
+      "category": "hr-team",
+      "role": "Recruiter",
+      "summary": "Every candidate in the ATS who was placed more than six months ago, or who applied and wasn't placed more than 90 days ago, receives an automated…",
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/candidate-re-engagement-availability-check-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/staffing-recruiting.json"
+    },
+    {
+      "id": "staffing-recruiting/weekly-timesheet-collection-contractor-pay-processing",
+      "title": "Weekly Timesheet Collection & Contractor Pay Processing",
+      "industry": "staffing-recruiting",
+      "category": "hr-team",
+      "role": "Staffing Payroll Coordinator",
+      "summary": "Every Friday morning, all active contractors receive an automated timesheet submission reminder with a direct link to their timesheet form.",
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/weekly-timesheet-collection-contractor-pay-processing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/staffing-recruiting.json"
+    },
+    {
+      "id": "staffing-recruiting/candidate-pipeline-stale-alert",
+      "title": "Candidate Pipeline Stale Alert",
+      "industry": "staffing-recruiting",
+      "category": "hr-team",
+      "role": "Senior Recruiter",
+      "summary": "This automation tracks how long each candidate has sat in a given pipeline stage, submitted, interviewing, offer pending, and automatically flags…",
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/candidate-pipeline-stale-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/staffing-recruiting.json"
+    },
+    {
+      "id": "staffing-recruiting/job-order-to-candidate-matching-alert",
+      "title": "Job Order-to-Candidate Matching Alert",
+      "industry": "staffing-recruiting",
+      "category": "hr-team",
+      "role": "Recruiting Manager",
+      "summary": "When a new job order is opened, this automation automatically scans the existing candidate database for people matching the required skills…",
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/job-order-to-candidate-matching-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/staffing-recruiting.json"
+    },
+    {
+      "id": "staffing-recruiting/reference-check-automation",
+      "title": "Reference Check Automation",
+      "industry": "staffing-recruiting",
+      "category": "hr-team",
+      "role": "Recruiting Coordinator",
+      "summary": "Once a candidate reaches the offer stage, this automation automatically sends reference check request forms to the listed references, tracks who has…",
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/reference-check-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/staffing-recruiting.json"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "count": 11,
+  "categories": [
+    {
+      "slug": "lead-follow-up-sales",
+      "name": "Lead Follow-Up & Sales",
+      "summary": "Respond to every lead in minutes, chase quotes automatically, and keep deals from going quiet.",
+      "automationCount": 127,
+      "url": "https://www.ljwebmanagement.com/automations/category/lead-follow-up-sales/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/categories/lead-follow-up-sales.json"
+    },
+    {
+      "slug": "marketing-retention",
+      "name": "Marketing & Customer Retention",
+      "summary": "Win back lapsed customers, reward loyalty, and keep repeat business coming in on its own.",
+      "automationCount": 143,
+      "url": "https://www.ljwebmanagement.com/automations/category/marketing-retention/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/categories/marketing-retention.json"
+    },
+    {
+      "slug": "scheduling-dispatch",
+      "name": "Scheduling, Reminders & Dispatch",
+      "summary": "Fill calendars, cut no-shows, backfill cancellations, and route crews without phone tag.",
+      "automationCount": 101,
+      "url": "https://www.ljwebmanagement.com/automations/category/scheduling-dispatch/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/categories/scheduling-dispatch.json"
+    },
+    {
+      "slug": "customer-communication",
+      "name": "Customer Service & Communication",
+      "summary": "Proactive status updates, faster support routing, and far fewer \"just checking in\" calls.",
+      "automationCount": 113,
+      "url": "https://www.ljwebmanagement.com/automations/category/customer-communication/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/categories/customer-communication.json"
+    },
+    {
+      "slug": "reviews-feedback",
+      "name": "Reviews, Feedback & Reputation",
+      "summary": "Ask every customer for a review at the right moment, fix problems fast, and watch your reputation.",
+      "automationCount": 46,
+      "url": "https://www.ljwebmanagement.com/automations/category/reviews-feedback/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/categories/reviews-feedback.json"
+    },
+    {
+      "slug": "billing-finance",
+      "name": "Billing, Payments & Finance",
+      "summary": "Invoices that send themselves, payment reminders that get paid, and books that close on time.",
+      "automationCount": 69,
+      "url": "https://www.ljwebmanagement.com/automations/category/billing-finance/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/categories/billing-finance.json"
+    },
+    {
+      "slug": "onboarding-intake",
+      "name": "Client Onboarding & Intake",
+      "summary": "Turn a signed deal into a smooth start with forms, documents, welcome sequences, and kickoff.",
+      "automationCount": 38,
+      "url": "https://www.ljwebmanagement.com/automations/category/onboarding-intake/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/categories/onboarding-intake.json"
+    },
+    {
+      "slug": "hr-team",
+      "name": "HR, Hiring & Team Management",
+      "summary": "Hire faster, onboard consistently, and keep certifications, shifts, and timesheets on track.",
+      "automationCount": 54,
+      "url": "https://www.ljwebmanagement.com/automations/category/hr-team/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/categories/hr-team.json"
+    },
+    {
+      "slug": "compliance-documents",
+      "name": "Compliance, Documents & Deadlines",
+      "summary": "Track licenses, permits, contracts, signatures, and filing deadlines before they become problems.",
+      "automationCount": 122,
+      "url": "https://www.ljwebmanagement.com/automations/category/compliance-documents/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/categories/compliance-documents.json"
+    },
+    {
+      "slug": "operations-inventory",
+      "name": "Operations, Inventory & Vendors",
+      "summary": "Keep stock, equipment, vendors, projects, and work orders moving without the spreadsheet chase.",
+      "automationCount": 138,
+      "url": "https://www.ljwebmanagement.com/automations/category/operations-inventory/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/categories/operations-inventory.json"
+    },
+    {
+      "slug": "reporting-analytics",
+      "name": "Reporting & Analytics",
+      "summary": "Dashboards, digests, and alerts that show leaders what is happening without anyone building a report.",
+      "automationCount": 49,
+      "url": "https://www.ljwebmanagement.com/automations/category/reporting-analytics/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/categories/reporting-analytics.json"
+    }
+  ]
+}
