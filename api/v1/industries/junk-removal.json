@@ -1,0 +1,133 @@
+{
+  "slug": "junk-removal",
+  "name": "Junk Removal",
+  "summary": "Instant photo quotes, crew routing, same-day capacity, and before/after review requests.",
+  "url": "https://www.ljwebmanagement.com/automations/junk-removal/",
+  "automationCount": 5,
+  "automations": [
+    {
+      "id": "junk-removal/instant-quote-from-photo-upload",
+      "slug": "instant-quote-from-photo-upload",
+      "title": "Instant Quote from Photo Upload",
+      "industry": "junk-removal",
+      "category": "lead-follow-up-sales",
+      "role": "Customer Service Rep",
+      "summary": "When a customer uploads photos of the items they need removed through the website, this automation automatically generates a preliminary quote range…",
+      "steps": [
+        "When a customer uploads photos of the items they need removed through the website, this automation automatically generates a preliminary quote range based on volume and item type.",
+        "Customers get pricing without waiting for a callback, and the crew shows up with a realistic expectation of what the job involves instead of a blind guess."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a customer service rep remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "OpenAI API (image-based estimation)",
+        "A booking form",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/junk-removal/instant-quote-from-photo-upload/"
+    },
+    {
+      "id": "junk-removal/crew-route-job-sequencing",
+      "slug": "crew-route-job-sequencing",
+      "title": "Crew Route & Job Sequencing",
+      "industry": "junk-removal",
+      "category": "scheduling-dispatch",
+      "role": "Dispatcher",
+      "summary": "Based on each day's booked jobs, this automation automatically sequences the route to minimize drive time and dump run trips, and adjusts in real…",
+      "steps": [
+        "Based on each day's booked jobs, this automation automatically sequences the route to minimize drive time and dump run trips, and adjusts in real time if a job runs long or a same-day request comes in nearby.",
+        "A day's schedule stays efficient even as it changes throughout the morning instead of falling apart after the first delay."
+      ],
+      "manualProcess": "Handled by hand, a dispatcher spends time each day re-checking the same information across disconnected tools instead of doing higher-value work.",
+      "tools": [
+        "A field service platform (Housecall Pro)",
+        "Google Maps API",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/junk-removal/crew-route-job-sequencing/"
+    },
+    {
+      "id": "junk-removal/donation-vs-landfill-sorting-report",
+      "slug": "donation-vs-landfill-sorting-report",
+      "title": "Donation vs. Landfill Sorting Report",
+      "industry": "junk-removal",
+      "category": "reporting-analytics",
+      "role": "Crew Leader",
+      "summary": "As items are sorted during removal, this automation automatically logs what's donated versus landfilled, and generates a donation receipt for the…",
+      "steps": [
+        "As items are sorted during removal, this automation automatically logs what's donated versus landfilled, and generates a donation receipt for the customer for tax purposes.",
+        "Eco-conscious customers get a differentiator and useful documentation without any extra paperwork burden on the crew doing the physical work."
+      ],
+      "manualProcess": "Manually, a crew leader is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "A field service app",
+        "Zapier or Make.com",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/junk-removal/donation-vs-landfill-sorting-report/"
+    },
+    {
+      "id": "junk-removal/same-day-booking-capacity-alert",
+      "slug": "same-day-booking-capacity-alert",
+      "title": "Same-Day Booking Capacity Alert",
+      "industry": "junk-removal",
+      "category": "scheduling-dispatch",
+      "role": "Operations Manager",
+      "summary": "This automation monitors the day's remaining truck capacity and automatically closes off same-day booking on the website once trucks are full.",
+      "steps": [
+        "This automation monitors the day's remaining truck capacity and automatically closes off same-day booking on the website once trucks are full.",
+        "A crew that's already maxed out for the day never gets overbooked on top of a schedule it can't actually deliver."
+      ],
+      "manualProcess": "Without automation, an operations manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A booking platform",
+        "Zapier or Make.com",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/junk-removal/same-day-booking-capacity-alert/"
+    },
+    {
+      "id": "junk-removal/before-after-photo-review-request",
+      "slug": "before-after-photo-review-request",
+      "title": "Before/After Photo & Review Request",
+      "industry": "junk-removal",
+      "category": "reviews-feedback",
+      "role": "Marketing Coordinator",
+      "summary": "When a job is marked complete, this automation automatically pairs the before and after photos and sends a review request highlighting the…",
+      "steps": [
+        "When a job is marked complete, this automation automatically pairs the before and after photos and sends a review request highlighting the transformation.",
+        "This tends to perform far better than a generic review ask, since the visual contrast does most of the persuading on its own."
+      ],
+      "manualProcess": "Manually, a marketing coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "A field service app",
+        "Mailchimp or email",
+        "Zapier or Make.com",
+        "Google Business Profile"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/junk-removal/before-after-photo-review-request/"
+    }
+  ]
+}

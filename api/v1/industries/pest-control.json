@@ -1,0 +1,135 @@
+{
+  "slug": "pest-control",
+  "name": "Pest Control",
+  "summary": "Recurring treatment scheduling, inspection reports, chemical logs, and callback routing.",
+  "url": "https://www.ljwebmanagement.com/automations/pest-control/",
+  "automationCount": 5,
+  "automations": [
+    {
+      "id": "pest-control/recurring-treatment-scheduling-reminder",
+      "slug": "recurring-treatment-scheduling-reminder",
+      "title": "Recurring Treatment Scheduling & Reminder",
+      "industry": "pest-control",
+      "category": "scheduling-dispatch",
+      "role": "Service Coordinator",
+      "summary": "For customers on a quarterly or monthly treatment plan, this automation automatically schedules the next visit based on the service interval, sends…",
+      "steps": [
+        "For customers on a quarterly or monthly treatment plan, this automation automatically schedules the next visit based on the service interval, sends the customer a reminder with the technician's arrival window, and reschedules automatically if the customer requests a change.",
+        "The recurring revenue base runs on a predictable cadence instead of someone manually rebooking every account by hand."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a service coordinator remembering to check in, update records, and follow up, with no safety net if something slips. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "PestPac or Briostack",
+        "Twilio (SMS)",
+        "Zapier or Make.com",
+        "Google Calendar"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pest-control/recurring-treatment-scheduling-reminder/"
+    },
+    {
+      "id": "pest-control/termite-inspection-follow-up",
+      "slug": "termite-inspection-follow-up",
+      "title": "Termite Inspection Follow-Up",
+      "industry": "pest-control",
+      "category": "compliance-documents",
+      "role": "Inspector",
+      "summary": "After an annual termite inspection is completed and logged, this automation automatically generates and sends the required inspection report to the…",
+      "steps": [
+        "After an annual termite inspection is completed and logged, this automation automatically generates and sends the required inspection report to the customer, and to their lender or title company if the inspection is tied to a real estate transaction.",
+        "The report turnaround time these transactions usually require gets met without anyone manually drafting the same document from scratch each time."
+      ],
+      "manualProcess": "Without automation, this falls entirely on an inspector, who has to track every step by hand across emails, spreadsheets, and sticky notes. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "PestPac or Briostack",
+        "Zapier or Make.com",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pest-control/termite-inspection-follow-up/"
+    },
+    {
+      "id": "pest-control/technician-route-chemical-usage-log",
+      "slug": "technician-route-chemical-usage-log",
+      "title": "Technician Route & Chemical Usage Log",
+      "industry": "pest-control",
+      "category": "operations-inventory",
+      "role": "Compliance Manager",
+      "summary": "As technicians complete stops, this automation automatically logs the chemicals and quantities applied at each property, both for internal inventory…",
+      "steps": [
+        "As technicians complete stops, this automation automatically logs the chemicals and quantities applied at each property, both for internal inventory tracking and to maintain the application records required by state pesticide regulations.",
+        "A compliance audit stops being a scramble to reconstruct records from memory and paper tickets."
+      ],
+      "manualProcess": "Without automation, a compliance manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "PestPac or Briostack",
+        "A mobile technician app",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pest-control/technician-route-chemical-usage-log/"
+    },
+    {
+      "id": "pest-control/callback-request-priority-routing",
+      "slug": "callback-request-priority-routing",
+      "title": "Callback Request Priority Routing",
+      "industry": "pest-control",
+      "category": "customer-communication",
+      "role": "Dispatch Manager",
+      "summary": "When a customer reports the pest problem hasn't resolved after a treatment, this automation automatically flags it as a priority callback, routes it…",
+      "steps": [
+        "When a customer reports the pest problem hasn't resolved after a treatment, this automation automatically flags it as a priority callback, routes it to the original technician if available, and schedules it ahead of standard new appointments.",
+        "A customer with a return infestation is the highest churn risk in the pipeline, and this automation treats it that way instead of queuing it behind routine bookings."
+      ],
+      "manualProcess": "Handled by hand, a dispatch manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "PestPac or Briostack",
+        "Twilio or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pest-control/callback-request-priority-routing/"
+    },
+    {
+      "id": "pest-control/referral-review-request-after-service",
+      "slug": "referral-review-request-after-service",
+      "title": "Referral & Review Request After Service",
+      "industry": "pest-control",
+      "category": "reviews-feedback",
+      "role": "Marketing Coordinator",
+      "summary": "A few days after a completed service, this automation automatically sends a review request and a referral offer to the customer, timed for when the…",
+      "steps": [
+        "A few days after a completed service, this automation automatically sends a review request and a referral offer to the customer, timed for when the pest issue has visibly improved and satisfaction is at its peak.",
+        "The ask lands at the moment the customer is most likely to say yes instead of arriving as a generic follow-up weeks later."
+      ],
+      "manualProcess": "Manually, a marketing coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background.",
+      "tools": [
+        "PestPac",
+        "Mailchimp or email",
+        "Zapier or Make.com",
+        "Google Business Profile"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/pest-control/referral-review-request-after-service/"
+    }
+  ]
+}

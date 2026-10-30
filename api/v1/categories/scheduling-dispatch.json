@@ -1,0 +1,1020 @@
+{
+  "slug": "scheduling-dispatch",
+  "name": "Scheduling, Reminders & Dispatch",
+  "summary": "Fill calendars, cut no-shows, backfill cancellations, and route crews without phone tag.",
+  "description": "Every empty appointment slot and every wasted drive is revenue you cannot get back. Scheduling is also where small businesses lose the most time to back-and-forth messages. These automations handle booking, confirmations, reminders, waitlists, rebooking, and dispatch updates, so the calendar fills itself and your team spends its time serving customers instead of coordinating them.",
+  "url": "https://www.ljwebmanagement.com/automations/category/scheduling-dispatch/",
+  "automationCount": 101,
+  "automations": [
+    {
+      "id": "automotive/mileage-based-service-reminder-system",
+      "title": "Mileage-Based Service Reminder System",
+      "industry": "automotive",
+      "category": "scheduling-dispatch",
+      "role": "Service Scheduler",
+      "summary": "Using the mileage and date logged at each visit, this automation calculates when every customer is due for their next oil change, tire rotation, or…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/mileage-based-service-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/multi-touch-service-appointment-reminder-sequence",
+      "title": "Multi-Touch Service Appointment Reminder Sequence",
+      "industry": "automotive",
+      "category": "scheduling-dispatch",
+      "role": "Service Coordinator",
+      "summary": "Customers automatically receive a reminder text or email the day before their scheduled service appointment and again the morning of, including…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/multi-touch-service-appointment-reminder-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/inspection-to-pickup-service-status-texting",
+      "title": "Inspection-to-Pickup Service Status Texting",
+      "industry": "automotive",
+      "category": "scheduling-dispatch",
+      "role": "Service Advisor",
+      "summary": "Customers are automatically texted at each stage of their vehicle's visit, the moment the initial inspection is complete, whenever additional…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/inspection-to-pickup-service-status-texting/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/loaner-vehicle-return-reminder",
+      "title": "Loaner Vehicle Return Reminder",
+      "industry": "automotive",
+      "category": "scheduling-dispatch",
+      "role": "Rental Coordinator",
+      "summary": "Customers driving a loaner or rental vehicle automatically receive a reminder text as the scheduled return date approaches, and a second reminder if…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/loaner-vehicle-return-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/fleet-account-batch-service-scheduling",
+      "title": "Fleet Account Batch Service Scheduling",
+      "industry": "automotive",
+      "category": "scheduling-dispatch",
+      "role": "Fleet Sales Representative",
+      "summary": "When multiple vehicles belonging to the same business fleet account are coming due for service around the same time, the system automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/fleet-account-batch-service-scheduling/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/appraisal-appointment-confirmation-document-checklist",
+      "title": "Appraisal Appointment Confirmation & Document Checklist",
+      "industry": "automotive",
+      "category": "scheduling-dispatch",
+      "role": "Used Car Manager",
+      "summary": "A scheduled vehicle appraisal appointment automatically triggers a confirmation and reminder to the customer, including a clear list of documents to…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/appraisal-appointment-confirmation-document-checklist/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/driving-habit-based-service-reminder",
+      "title": "Driving-Habit-Based Service Reminder",
+      "industry": "automotive",
+      "category": "scheduling-dispatch",
+      "role": "Service Scheduler",
+      "summary": "For connected vehicles reporting live telematics data, the system uses actual mileage and driving patterns rather than just elapsed calendar time to…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/driving-habit-based-service-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/extended-test-drive-return-reminder",
+      "title": "Extended Test Drive Return Reminder",
+      "industry": "automotive",
+      "category": "scheduling-dispatch",
+      "role": "Sales Consultant",
+      "summary": "Customers given an extended, overnight test drive vehicle automatically receive a return reminder before the loaner is due back at the dealership…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/extended-test-drive-return-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "car-wash-auto-detailing/mobile-detailing-route-time-slot-booking",
+      "title": "Mobile Detailing Route & Time-Slot Booking",
+      "industry": "car-wash-auto-detailing",
+      "category": "scheduling-dispatch",
+      "role": "Mobile Detailing Manager",
+      "summary": "For mobile detailing businesses, this automation lets customers book directly into open time slots based on their location and the technician's…",
+      "url": "https://www.ljwebmanagement.com/automations/car-wash-auto-detailing/mobile-detailing-route-time-slot-booking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/car-wash-auto-detailing.json"
+    },
+    {
+      "id": "dental-practices/hygiene-recall-reminder-system",
+      "title": "Hygiene Recall Reminder System",
+      "industry": "dental-practices",
+      "category": "scheduling-dispatch",
+      "role": "Hygiene Department Lead",
+      "summary": "This automation checks every patient's last cleaning date against the practice's recommended recall interval (typically 6 months) and automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/hygiene-recall-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/dental-practices.json"
+    },
+    {
+      "id": "dental-practices/same-day-cancellation-fill-system",
+      "title": "Same-Day Cancellation Fill System",
+      "industry": "dental-practices",
+      "category": "scheduling-dispatch",
+      "role": "Scheduling Manager",
+      "summary": "The moment an appointment is cancelled with less than 24 hours' notice, this automation instantly texts a pre-built waitlist of patients who have…",
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/same-day-cancellation-fill-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/dental-practices.json"
+    },
+    {
+      "id": "driving-schools/lesson-scheduling-instructor-matching",
+      "title": "Lesson Scheduling & Instructor Matching",
+      "industry": "driving-schools",
+      "category": "scheduling-dispatch",
+      "role": "Scheduling Coordinator",
+      "summary": "When a student books a lesson, this automation automatically matches them with an available instructor based on location and vehicle type needed…",
+      "url": "https://www.ljwebmanagement.com/automations/driving-schools/lesson-scheduling-instructor-matching/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/driving-schools.json"
+    },
+    {
+      "id": "driving-schools/permit-license-test-date-reminder",
+      "title": "Permit/License Test Date Reminder",
+      "industry": "driving-schools",
+      "category": "scheduling-dispatch",
+      "role": "Student Services Coordinator",
+      "summary": "Based on each student's enrollment date and state-required practice hour minimums, this automation automatically tracks their progress and reminds…",
+      "url": "https://www.ljwebmanagement.com/automations/driving-schools/permit-license-test-date-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/driving-schools.json"
+    },
+    {
+      "id": "education/class-waitlist-notification-system",
+      "title": "Class Waitlist Notification System",
+      "industry": "education",
+      "category": "scheduling-dispatch",
+      "role": "Enrollment Coordinator",
+      "summary": "When a student withdraws or a spot otherwise opens in a full class or program, the waitlist automatically identifies the next eligible family in…",
+      "url": "https://www.ljwebmanagement.com/automations/education/class-waitlist-notification-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/education.json"
+    },
+    {
+      "id": "faith-based-organizations/volunteer-scheduling-reminder-system",
+      "title": "Volunteer Scheduling & Reminder System",
+      "industry": "faith-based-organizations",
+      "category": "scheduling-dispatch",
+      "role": "Volunteer Coordinator",
+      "summary": "For recurring volunteer roles, greeters, childcare, the tech team, this automation automatically fills the schedule based on each volunteer's stated…",
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/volunteer-scheduling-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/faith-based-organizations.json"
+    },
+    {
+      "id": "financial-services/annual-review-auto-scheduling-system",
+      "title": "Annual Review Auto-Scheduling System",
+      "industry": "financial-services",
+      "category": "scheduling-dispatch",
+      "role": "Wealth Manager",
+      "summary": "Every client account is tagged with the date of its last annual review, and 11 months after that date the client automatically receives an email…",
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/annual-review-auto-scheduling-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/financial-services.json"
+    },
+    {
+      "id": "fitness-wellness/class-waitlist-auto-fill-booking-system",
+      "title": "Class Waitlist & Auto-Fill Booking System",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Yoga Studio Owner",
+      "summary": "When a class reaches capacity, additional sign-ups automatically land on the waitlist and receive a confirmation with their position.",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/class-waitlist-auto-fill-booking-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/appointment-booking-intake-rebooking-system",
+      "title": "Appointment Booking, Intake & Rebooking System",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Massage Therapist",
+      "summary": "New clients complete a digital health intake form as part of the online booking process, so the therapist has a complete picture of the client's…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/appointment-booking-intake-rebooking-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/class-booking-reminder-system",
+      "title": "Class Booking Reminder System",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Studio Manager",
+      "summary": "Every member who books a class automatically receives a reminder text 24 hours before the session and a second reminder 2 hours out, each one…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/class-booking-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/class-appointment-booking-reminder-sequence",
+      "title": "Class & Appointment Booking Reminder Sequence",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Front Desk Lead",
+      "summary": "Members automatically receive a reminder 24 hours and again 2 hours before a booked class or appointment, reducing the empty spots caused by simple…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/class-appointment-booking-reminder-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/waitlist-auto-promotion-system",
+      "title": "Waitlist Auto-Promotion System",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Class Scheduling Coordinator",
+      "summary": "When a spot opens up in a fully booked class due to a cancellation, the next person on the waitlist is automatically notified and booked into the…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/waitlist-auto-promotion-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/post-appointment-review-rebooking-prompt",
+      "title": "Post-Appointment Review & Rebooking Prompt",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Spa Manager",
+      "summary": "After a salon or spa appointment, the client automatically receives a review request along with a \"book your next visit\" link timed to the typical…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/post-appointment-review-rebooking-prompt/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/instructor-stylist-schedule-change-alert",
+      "title": "Instructor/Stylist Schedule Change Alert",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Scheduling Manager",
+      "summary": "If an instructor or stylist's schedule changes, every client with a booking on that schedule is automatically notified with options to rebook…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/instructor-stylist-schedule-change-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/class-capacity-overflow-notification",
+      "title": "Class Capacity Overflow Notification",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Group Fitness Director",
+      "summary": "When a popular class nears full capacity, staff are automatically alerted to consider adding another session, and members on a related interest list…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/class-capacity-overflow-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "general-business/meeting-no-show-auto-rebooking",
+      "title": "Meeting No-Show Auto-Rebooking",
+      "industry": "general-business",
+      "category": "scheduling-dispatch",
+      "role": "Sales Coordinator",
+      "summary": "When a prospect fails to join a scheduled discovery or demo call booked through Calendly, the no-show status syncs into HubSpot within minutes, and…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/meeting-no-show-auto-rebooking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/pre-event-reminder-and-logistics-sequence",
+      "title": "Pre-Event Reminder and Logistics Sequence",
+      "industry": "general-business",
+      "category": "scheduling-dispatch",
+      "role": "Field Marketing Manager",
+      "summary": "Once a contact registers for an in-person event, trade show booth visit, or local workshop through Eventbrite, Zapier enrolls them in a countdown…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/pre-event-reminder-and-logistics-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/meeting-room-booking-conflict-alerts",
+      "title": "Meeting Room Booking Conflict Alerts",
+      "industry": "general-business",
+      "category": "scheduling-dispatch",
+      "role": "Executive Assistant",
+      "summary": "When two calendar invites land on the same conference room within the same time block, the workflow catches the double-booking the moment the second…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/meeting-room-booking-conflict-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "healthcare/front-desk-daily-briefing-schedule-gap-alert",
+      "title": "Front Desk Daily Briefing & Schedule Gap Alert",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Medical Office Manager",
+      "summary": "Each morning before the office opens, the office manager and front desk team receive an automated briefing: today's confirmed appointments, patients…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/front-desk-daily-briefing-schedule-gap-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/appointment-reminder-confirmation-system",
+      "title": "Appointment Reminder & Confirmation System",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Front Desk Coordinator",
+      "summary": "Every scheduled appointment triggers an automated reminder sequence: a text and email 72 hours out, a second text 24 hours out, and a final same-day…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/appointment-reminder-confirmation-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/recall-preventive-care-reminder-system",
+      "title": "Recall & Preventive Care Reminder System",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Patient Recall Coordinator",
+      "summary": "This automation scans the patient roster daily against each patient's last visit date and the recommended interval for their care type, whether…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/recall-preventive-care-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/telehealth-link-automation",
+      "title": "Telehealth Link Automation",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Telehealth Coordinator",
+      "summary": "When a telehealth visit is booked, this automation immediately generates a unique, secure video link through the practice's HIPAA-compliant platform…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/telehealth-link-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/cancellation-waitlist-fill-system",
+      "title": "Cancellation Waitlist Fill System",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Scheduling Coordinator",
+      "summary": "The moment an appointment is canceled, this automation checks the waitlist for that provider and appointment type, ranks patients by how long…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/cancellation-waitlist-fill-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/multi-touch-appointment-reminder-confirmation-sequence",
+      "title": "Multi-Touch Appointment Reminder & Confirmation Sequence",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Patient Communications Manager",
+      "summary": "Every time an appointment is booked in the practice management system, this automation enrolls the patient in a multi-touch reminder sequence: an…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/multi-touch-appointment-reminder-confirmation-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/no-show-recovery-rebooking-sequence",
+      "title": "No-Show Recovery & Rebooking Sequence",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Revenue Cycle Manager",
+      "summary": "The instant a scheduled visit is marked as a no-show in the practice management system, this automation fires a re-engagement text within minutes…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/no-show-recovery-rebooking-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/preventive-care-recall-reminder-automation",
+      "title": "Preventive Care Recall Reminder Automation",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Wellness Program Coordinator",
+      "summary": "Each night, this automation scans the patient roster against the recommended interval for annual physicals, cleanings, and standard screenings, and…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/preventive-care-recall-reminder-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/cancellation-waitlist-auto-fill-texting-system",
+      "title": "Cancellation Waitlist Auto-Fill Texting System",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Office Manager",
+      "summary": "The moment an appointment is canceled in the schedule, this automation automatically texts the next patient on the waitlist for that provider and…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/cancellation-waitlist-auto-fill-texting-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/telehealth-link-auto-delivery-tech-check-reminder",
+      "title": "Telehealth Link Auto-Delivery & Tech-Check Reminder",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Virtual Care Coordinator",
+      "summary": "As soon as a telehealth visit is booked, this automation generates a unique, secure video link through the practice's HIPAA-compliant platform and…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/telehealth-link-auto-delivery-tech-check-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/provider-unavailability-auto-reschedule-alert",
+      "title": "Provider Unavailability Auto-Reschedule Alert",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Scheduling Supervisor",
+      "summary": "When a provider is marked unavailable for a day, whether from illness, an emergency, or a schedule change, this automation immediately pulls every…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/provider-unavailability-auto-reschedule-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/immunization-due-date-reminder-system",
+      "title": "Immunization Due Date Reminder System",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Pediatric Care Coordinator",
+      "summary": "Based on each patient's date of birth and the standard immunization schedule, this automation automatically identifies children and adults who have…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/immunization-due-date-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/post-discharge-follow-up-scheduling-automation",
+      "title": "Post-Discharge Follow-Up Scheduling Automation",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Discharge Planning Coordinator",
+      "summary": "The moment a hospital discharge is logged for a patient, this automation automatically identifies the required follow-up visit type and window based…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/post-discharge-follow-up-scheduling-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/family-appointment-back-to-back-coordination",
+      "title": "Family Appointment Back-to-Back Coordination",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Family Practice Scheduler",
+      "summary": "When one family member books an appointment, this automation automatically checks the household record for other family members due for a visit and…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/family-appointment-back-to-back-coordination/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/complexity-based-appointment-duration-booking",
+      "title": "Complexity-Based Appointment Duration Booking",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Scheduling Analyst",
+      "summary": "Based on a patient's visit history, diagnosis complexity, and the stated reason for the visit entered at booking, this automation automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/complexity-based-appointment-duration-booking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/no-show-risk-scoring-extra-reminder-automation",
+      "title": "No-Show Risk Scoring & Extra Reminder Automation",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "No-Show Reduction Specialist",
+      "summary": "The automation flags patients with a documented history of missed appointments and automatically applies extra reminder touches, an additional text…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/no-show-risk-scoring-extra-reminder-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/same-day-cancellation-gap-fill-system",
+      "title": "Same-Day Cancellation Gap Fill System",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Scheduling Coordinator",
+      "summary": "When a same-day cancellation opens a gap in the schedule, the automation automatically texts patients on a short-notice waitlist offering the newly…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/same-day-cancellation-gap-fill-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/pediatric-well-visit-schedule-automation",
+      "title": "Pediatric Well-Visit Schedule Automation",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Pediatric Care Coordinator",
+      "summary": "The automation automatically tracks each child's age-based well-visit schedule and sends reminders timed to each milestone visit, the two-week…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/pediatric-well-visit-schedule-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/health-screening-event-signup-reminder",
+      "title": "Health Screening Event Signup & Reminder",
+      "industry": "healthcare",
+      "category": "scheduling-dispatch",
+      "role": "Community Outreach Coordinator",
+      "summary": "Signups for a community health screening event automatically trigger a confirmation message and a reminder the day before, reducing the no-show rate…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/health-screening-event-signup-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "home-services/multi-technician-schedule-optimizer-morning-briefing",
+      "title": "Multi-Technician Schedule Optimizer & Morning Briefing",
+      "industry": "home-services",
+      "category": "scheduling-dispatch",
+      "role": "Dispatcher",
+      "summary": "Each evening, this automation reviews the next day's job schedule across all technicians, flags any scheduling conflicts or double-bookings…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/multi-technician-schedule-optimizer-morning-briefing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/seasonal-tune-up-reminder-campaign",
+      "title": "Seasonal Tune-Up Reminder Campaign",
+      "industry": "home-services",
+      "category": "scheduling-dispatch",
+      "role": "Customer Care Coordinator",
+      "summary": "Six weeks before the start of cooling season and again before heating season, this automation pulls every customer whose equipment is due for a…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/seasonal-tune-up-reminder-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/seasonal-service-reminders",
+      "title": "Seasonal Service Reminders",
+      "industry": "home-services",
+      "category": "scheduling-dispatch",
+      "role": "Customer Retention Specialist",
+      "summary": "Based on each customer's equipment type and service history, this automation automatically segments the customer list and sends timed seasonal…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/seasonal-service-reminders/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/booking-confirmation-with-prep-checklist",
+      "title": "Booking Confirmation with Prep Checklist",
+      "industry": "home-services",
+      "category": "scheduling-dispatch",
+      "role": "Scheduling Coordinator",
+      "summary": "The moment a customer books a job online, this automation sends an immediate confirmation with the appointment window, technician name, and a short…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/booking-confirmation-with-prep-checklist/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/recurring-service-auto-scheduling",
+      "title": "Recurring Service Auto-Scheduling",
+      "industry": "home-services",
+      "category": "scheduling-dispatch",
+      "role": "Recurring Services Coordinator",
+      "summary": "For customers on a recurring service plan, such as quarterly pest control, lawn care, or seasonal HVAC maintenance, this automation automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/recurring-service-auto-scheduling/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/daily-route-optimization-dispatch-alerts",
+      "title": "Daily Route Optimization & Dispatch Alerts",
+      "industry": "home-services",
+      "category": "scheduling-dispatch",
+      "role": "Logistics Coordinator",
+      "summary": "Every morning before the first truck leaves the yard, this automation pulls the day's confirmed jobs, calculates the most efficient route order by…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/daily-route-optimization-dispatch-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "interior-design-home-staging/staging-appointment-booking-furniture-inventory-tracker",
+      "title": "Staging Appointment Booking & Furniture Inventory Tracker",
+      "industry": "interior-design-home-staging",
+      "category": "scheduling-dispatch",
+      "role": "Home Stager",
+      "summary": "When a real estate agent or homeowner requests a staging consultation, this automation books the consultation on the stager's calendar, sends a…",
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/staging-appointment-booking-furniture-inventory-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/interior-design-home-staging.json"
+    },
+    {
+      "id": "junk-removal/crew-route-job-sequencing",
+      "title": "Crew Route & Job Sequencing",
+      "industry": "junk-removal",
+      "category": "scheduling-dispatch",
+      "role": "Dispatcher",
+      "summary": "Based on each day's booked jobs, this automation automatically sequences the route to minimize drive time and dump run trips, and adjusts in real…",
+      "url": "https://www.ljwebmanagement.com/automations/junk-removal/crew-route-job-sequencing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/junk-removal.json"
+    },
+    {
+      "id": "junk-removal/same-day-booking-capacity-alert",
+      "title": "Same-Day Booking Capacity Alert",
+      "industry": "junk-removal",
+      "category": "scheduling-dispatch",
+      "role": "Operations Manager",
+      "summary": "This automation monitors the day's remaining truck capacity and automatically closes off same-day booking on the website once trucks are full.",
+      "url": "https://www.ljwebmanagement.com/automations/junk-removal/same-day-booking-capacity-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/junk-removal.json"
+    },
+    {
+      "id": "landscaping-lawn-care/route-optimization-for-recurring-service",
+      "title": "Route Optimization for Recurring Service",
+      "industry": "landscaping-lawn-care",
+      "category": "scheduling-dispatch",
+      "role": "Route Manager",
+      "summary": "Based on each customer's service day and location, this automation automatically builds the most efficient daily route for crews, and re-optimizes…",
+      "url": "https://www.ljwebmanagement.com/automations/landscaping-lawn-care/route-optimization-for-recurring-service/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/landscaping-lawn-care.json"
+    },
+    {
+      "id": "landscaping-lawn-care/weather-based-service-rescheduling",
+      "title": "Weather-Based Service Rescheduling",
+      "industry": "landscaping-lawn-care",
+      "category": "scheduling-dispatch",
+      "role": "Operations Manager",
+      "summary": "When rain or unsafe conditions are forecast for a scheduled service day, this automation automatically identifies every affected customer…",
+      "url": "https://www.ljwebmanagement.com/automations/landscaping-lawn-care/weather-based-service-rescheduling/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/landscaping-lawn-care.json"
+    },
+    {
+      "id": "laundry-dry-cleaning/recurring-pickup-delivery-scheduling",
+      "title": "Recurring Pickup/Delivery Scheduling",
+      "industry": "laundry-dry-cleaning",
+      "category": "scheduling-dispatch",
+      "role": "Route Coordinator",
+      "summary": "For subscription or recurring pickup-and-delivery customers, this automation automatically schedules the next pickup based on their chosen frequency…",
+      "url": "https://www.ljwebmanagement.com/automations/laundry-dry-cleaning/recurring-pickup-delivery-scheduling/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/laundry-dry-cleaning.json"
+    },
+    {
+      "id": "legal/court-date-hearing-reminder-automation",
+      "title": "Court Date & Hearing Reminder Automation",
+      "industry": "legal",
+      "category": "scheduling-dispatch",
+      "role": "Trial Paralegal",
+      "summary": "As soon as a hearing or court date is entered into the case management system, the automation automatically schedules a reminder sequence to both…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/court-date-hearing-reminder-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/deposition-scheduling-coordination-system",
+      "title": "Deposition Scheduling Coordination System",
+      "industry": "legal",
+      "category": "scheduling-dispatch",
+      "role": "Litigation Paralegal",
+      "summary": "When a deposition needs to be scheduled, the automation automatically checks availability across every party's calendar, opposing counsel, the…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/deposition-scheduling-coordination-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/expert-witness-scheduling-coordination",
+      "title": "Expert Witness Scheduling Coordination",
+      "industry": "legal",
+      "category": "scheduling-dispatch",
+      "role": "Trial Paralegal",
+      "summary": "The automation automatically coordinates and confirms an expert witness's availability against upcoming case deadlines and the firm's own calendar…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/expert-witness-scheduling-coordination/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "locksmith-security/recurring-maintenance-contract-scheduling",
+      "title": "Recurring Maintenance Contract Scheduling",
+      "industry": "locksmith-security",
+      "category": "scheduling-dispatch",
+      "role": "Account Manager",
+      "summary": "For commercial clients with access control or security system maintenance contracts, this automation automatically schedules the recurring service…",
+      "url": "https://www.ljwebmanagement.com/automations/locksmith-security/recurring-maintenance-contract-scheduling/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/locksmith-security.json"
+    },
+    {
+      "id": "marketing-agencies/content-calendar-builder-cross-platform-scheduler",
+      "title": "Content Calendar Builder & Cross-Platform Scheduler",
+      "industry": "marketing-agencies",
+      "category": "scheduling-dispatch",
+      "role": "Social Media Manager",
+      "summary": "A monthly content calendar built in Airtable or Notion feeds directly into a scheduling tool, automatically posting to Instagram, Facebook…",
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/content-calendar-builder-cross-platform-scheduler/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/marketing-agencies.json"
+    },
+    {
+      "id": "moving-storage/crew-assignment-route-optimization-system",
+      "title": "Crew Assignment & Route Optimization System",
+      "industry": "moving-storage",
+      "category": "scheduling-dispatch",
+      "role": "Dispatcher",
+      "summary": "Once a move is booked, this automation automatically assigns available crew members and a truck based on the job's estimated size and location…",
+      "url": "https://www.ljwebmanagement.com/automations/moving-storage/crew-assignment-route-optimization-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/moving-storage.json"
+    },
+    {
+      "id": "pest-control/recurring-treatment-scheduling-reminder",
+      "title": "Recurring Treatment Scheduling & Reminder",
+      "industry": "pest-control",
+      "category": "scheduling-dispatch",
+      "role": "Service Coordinator",
+      "summary": "For customers on a quarterly or monthly treatment plan, this automation automatically schedules the next visit based on the service interval, sends…",
+      "url": "https://www.ljwebmanagement.com/automations/pest-control/recurring-treatment-scheduling-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pest-control.json"
+    },
+    {
+      "id": "photography-videography/session-booking-pre-shoot-questionnaire-system",
+      "title": "Session Booking & Pre-Shoot Questionnaire System",
+      "industry": "photography-videography",
+      "category": "scheduling-dispatch",
+      "role": "Studio Owner",
+      "summary": "Studio booking requests are handled through an online form that captures the session type, preferred dates, the number of subjects, and any special…",
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/session-booking-pre-shoot-questionnaire-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/photography-videography.json"
+    },
+    {
+      "id": "photography-videography/associate-shooter-scheduling-coordination",
+      "title": "Associate Shooter Scheduling Coordination",
+      "industry": "photography-videography",
+      "category": "scheduling-dispatch",
+      "role": "Studio Owner",
+      "summary": "When a booked shoot requires an associate photographer or second shooter, this automation automatically checks the associate's calendar for…",
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/associate-shooter-scheduling-coordination/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/photography-videography.json"
+    },
+    {
+      "id": "pool-service/weekly-route-skip-notification",
+      "title": "Weekly Route & Skip Notification",
+      "industry": "pool-service",
+      "category": "scheduling-dispatch",
+      "role": "Route Manager",
+      "summary": "This automation automatically builds the weekly service route and, if a technician needs to skip a pool due to an access issue, a locked gate, a dog…",
+      "url": "https://www.ljwebmanagement.com/automations/pool-service/weekly-route-skip-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pool-service.json"
+    },
+    {
+      "id": "pool-service/seasonal-opening-closing-scheduling-campaign",
+      "title": "Seasonal Opening/Closing Scheduling Campaign",
+      "industry": "pool-service",
+      "category": "scheduling-dispatch",
+      "role": "Office Manager",
+      "summary": "Ahead of each season, this automation automatically reaches out to customers to book their pool opening or closing service, spreading bookings out…",
+      "url": "https://www.ljwebmanagement.com/automations/pool-service/seasonal-opening-closing-scheduling-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pool-service.json"
+    },
+    {
+      "id": "professional-services/meeting-no-show-rebooking-follow-up",
+      "title": "Meeting No-Show Rebooking Follow-Up",
+      "industry": "professional-services",
+      "category": "scheduling-dispatch",
+      "role": "Financial Advisor",
+      "summary": "A client who misses a scheduled consultation automatically receives a friendly follow-up message within the hour with an easy link to rebook, rather…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/meeting-no-show-rebooking-follow-up/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/annual-review-meeting-auto-scheduling",
+      "title": "Annual Review Meeting Auto-Scheduling",
+      "industry": "professional-services",
+      "category": "scheduling-dispatch",
+      "role": "Financial Advisor",
+      "summary": "As a client's required annual review date approaches, they automatically receive a prompt with a direct link to schedule the meeting themselves…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/annual-review-meeting-auto-scheduling/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "property-management/move-in-move-out-checklist-inspection-scheduler",
+      "title": "Move-In/Move-Out Checklist & Inspection Scheduler",
+      "industry": "property-management",
+      "category": "scheduling-dispatch",
+      "role": "Move Coordinator",
+      "summary": "Based on the move-in or move-out date already on file, tenants automatically receive a digital checklist covering exactly what's expected of them…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/move-in-move-out-checklist-inspection-scheduler/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/self-scheduled-prospective-tenant-tour-booking",
+      "title": "Self-Scheduled Prospective Tenant Tour Booking",
+      "industry": "property-management",
+      "category": "scheduling-dispatch",
+      "role": "Leasing Agent",
+      "summary": "An online tour request automatically checks the unit's live availability calendar and books a confirmed showing time on the spot, sending a…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/self-scheduled-prospective-tenant-tour-booking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/shared-amenity-reservation-confirmation",
+      "title": "Shared Amenity Reservation Confirmation",
+      "industry": "property-management",
+      "category": "scheduling-dispatch",
+      "role": "Amenities Coordinator",
+      "summary": "When a resident books a shared amenity, a clubhouse, a pool area, a rooftop deck, the reservation is automatically confirmed and added to a shared…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/shared-amenity-reservation-confirmation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/hoa-assessment-payment-reminder",
+      "title": "HOA Assessment Payment Reminder",
+      "industry": "property-management",
+      "category": "scheduling-dispatch",
+      "role": "Association Manager",
+      "summary": "Unit owners automatically receive a reminder ahead of HOA or condo assessment due dates, tracked and sent separately from any regular monthly rent…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/hoa-assessment-payment-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-restoration/first-notice-of-loss-response-automation",
+      "title": "First Notice of Loss Response Automation",
+      "industry": "property-restoration",
+      "category": "scheduling-dispatch",
+      "role": "Dispatch Manager",
+      "summary": "The moment a new loss is reported, by phone, web form, or insurance referral, this automation automatically dispatches the on-call crew, opens a job…",
+      "url": "https://www.ljwebmanagement.com/automations/property-restoration/first-notice-of-loss-response-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-restoration.json"
+    },
+    {
+      "id": "real-estate/self-scheduled-showing-booking-system",
+      "title": "Self-Scheduled Showing Booking System",
+      "industry": "real-estate",
+      "category": "scheduling-dispatch",
+      "role": "Showing Coordinator",
+      "summary": "Instead of buyers and agents trading four or five texts to find a time that works, this system publishes each agent's live availability to a public…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/self-scheduled-showing-booking-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/buyer-tour-day-itinerary-builder",
+      "title": "Buyer Tour Day Itinerary Builder",
+      "industry": "real-estate",
+      "category": "scheduling-dispatch",
+      "role": "Tour Logistics Coordinator",
+      "summary": "When a buyer has several showings scheduled in one day, the automation automatically compiles the addresses into an optimized driving route and…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/buyer-tour-day-itinerary-builder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "restaurants-food-service/reservation-confirmation-no-show-reducer",
+      "title": "Reservation Confirmation & No-Show Reducer",
+      "industry": "restaurants-food-service",
+      "category": "scheduling-dispatch",
+      "role": "Reservations Manager",
+      "summary": "The moment a guest books a table online or by phone, the system logs it in the reservation platform and immediately sends a text confirmation with…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/reservation-confirmation-no-show-reducer/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/text-based-waitlist-table-ready-alerts",
+      "title": "Text-Based Waitlist & Table-Ready Alerts",
+      "industry": "restaurants-food-service",
+      "category": "scheduling-dispatch",
+      "role": "Host Stand Lead",
+      "summary": "Guests join the waitlist at the host stand or by scanning a QR code from the sidewalk, entering their name, party size, and phone number instead of…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/text-based-waitlist-table-ready-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/same-day-reservation-confirmation-reminder-sequence",
+      "title": "Same-Day Reservation Confirmation & Reminder Sequence",
+      "industry": "restaurants-food-service",
+      "category": "scheduling-dispatch",
+      "role": "Front Desk Coordinator",
+      "summary": "The moment a reservation is booked online or by phone, the guest automatically receives a confirmation text and email, followed by a reminder the…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/same-day-reservation-confirmation-reminder-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/table-ready-waitlist-text-alert-system",
+      "title": "Table-Ready Waitlist Text Alert System",
+      "industry": "restaurants-food-service",
+      "category": "scheduling-dispatch",
+      "role": "Host Stand Lead",
+      "summary": "Guests who join the waitlist from a kiosk, the host stand tablet, or the restaurant's website are automatically texted the moment their table is…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/table-ready-waitlist-text-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/large-party-reservation-manager-approval-workflow",
+      "title": "Large Party Reservation Manager Approval Workflow",
+      "industry": "restaurants-food-service",
+      "category": "scheduling-dispatch",
+      "role": "Floor Manager",
+      "summary": "Any reservation request above a defined party size is automatically pulled out of the normal booking flow and flagged for the floor manager's review…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/large-party-reservation-manager-approval-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/credit-card-secured-no-show-fee-automation",
+      "title": "Credit-Card-Secured No-Show Fee Automation",
+      "industry": "restaurants-food-service",
+      "category": "scheduling-dispatch",
+      "role": "Reservations Manager",
+      "summary": "When a guest with a credit-card-secured reservation fails to show, the automation automatically charges the agreed no-show fee and sends the guest a…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/credit-card-secured-no-show-fee-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "salons-spas-barbershops/appointment-confirmation-no-show-reduction-system",
+      "title": "Appointment Confirmation & No-Show Reduction System",
+      "industry": "salons-spas-barbershops",
+      "category": "scheduling-dispatch",
+      "role": "Front Desk Coordinator",
+      "summary": "When a client books online or by phone, this automation immediately sends a confirmation text and schedules two more touchpoints automatically: a…",
+      "url": "https://www.ljwebmanagement.com/automations/salons-spas-barbershops/appointment-confirmation-no-show-reduction-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/salons-spas-barbershops.json"
+    },
+    {
+      "id": "salons-spas-barbershops/checkout-rebooking-visit-cadence-system",
+      "title": "Checkout Rebooking & Visit Cadence System",
+      "industry": "salons-spas-barbershops",
+      "category": "scheduling-dispatch",
+      "role": "Salon Manager",
+      "summary": "The moment a client's service is marked complete at checkout, this automation checks their service history to calculate their typical rebooking…",
+      "url": "https://www.ljwebmanagement.com/automations/salons-spas-barbershops/checkout-rebooking-visit-cadence-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/salons-spas-barbershops.json"
+    },
+    {
+      "id": "salons-spas-barbershops/last-minute-slot-fill-utilization-alert-system",
+      "title": "Last-Minute Slot Fill & Utilization Alert System",
+      "industry": "salons-spas-barbershops",
+      "category": "scheduling-dispatch",
+      "role": "Booking Coordinator",
+      "summary": "Every morning, this automation scans each stylist's or provider's calendar for the next 48 hours and flags any gap longer than 45 minutes.",
+      "url": "https://www.ljwebmanagement.com/automations/salons-spas-barbershops/last-minute-slot-fill-utilization-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/salons-spas-barbershops.json"
+    },
+    {
+      "id": "salons-spas-barbershops/cancellation-waitlist-auto-fill-system",
+      "title": "Cancellation Waitlist Auto-Fill System",
+      "industry": "salons-spas-barbershops",
+      "category": "scheduling-dispatch",
+      "role": "Front Desk Coordinator",
+      "summary": "When a client cancels or reschedules, this automation immediately texts the next person on that time slot's waitlist with a 15-minute window to…",
+      "url": "https://www.ljwebmanagement.com/automations/salons-spas-barbershops/cancellation-waitlist-auto-fill-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/salons-spas-barbershops.json"
+    },
+    {
+      "id": "senior-living-childcare/caregiver-client-matching-schedule-management-system",
+      "title": "Caregiver-Client Matching & Schedule Management System",
+      "industry": "senior-living-childcare",
+      "category": "scheduling-dispatch",
+      "role": "Home Care Agency Owner",
+      "summary": "When a new client is onboarded, this automation matches them to an available caregiver based on skills, certifications, availability, geographic…",
+      "url": "https://www.ljwebmanagement.com/automations/senior-living-childcare/caregiver-client-matching-schedule-management-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/senior-living-childcare.json"
+    },
+    {
+      "id": "sports-recreation/court-field-booking-maintenance-scheduling-system",
+      "title": "Court & Field Booking & Maintenance Scheduling System",
+      "industry": "sports-recreation",
+      "category": "scheduling-dispatch",
+      "role": "Sports Facility Manager",
+      "summary": "Teams and individual players book facility time through an online portal that shows real-time availability across all courts, fields, and training…",
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/court-field-booking-maintenance-scheduling-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/sports-recreation.json"
+    },
+    {
+      "id": "sports-recreation/program-enrollment-class-waitlist-fill-system",
+      "title": "Program Enrollment & Class Waitlist Fill System",
+      "industry": "sports-recreation",
+      "category": "scheduling-dispatch",
+      "role": "Recreation Center Director",
+      "summary": "When program registration opens (swim lessons, adult fitness classes, youth basketball) enrollment is captured through the online portal and…",
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/program-enrollment-class-waitlist-fill-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/sports-recreation.json"
+    },
+    {
+      "id": "sports-recreation/facility-booking-conflict-prevention",
+      "title": "Facility Booking Conflict Prevention",
+      "industry": "sports-recreation",
+      "category": "scheduling-dispatch",
+      "role": "Operations Manager",
+      "summary": "As internal staff and outside groups request to book fields, courts, or rooms, this automation automatically checks each request against the master…",
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/facility-booking-conflict-prevention/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/sports-recreation.json"
+    },
+    {
+      "id": "telecommunications/installation-appointment-booking-technician-dispatch-system",
+      "title": "Installation Appointment Booking & Technician Dispatch System",
+      "industry": "telecommunications",
+      "category": "scheduling-dispatch",
+      "role": "Field Technician Coordinator",
+      "summary": "When a new service order is created, this automation checks technician availability by geographic zone, books the installation appointment in the…",
+      "url": "https://www.ljwebmanagement.com/automations/telecommunications/installation-appointment-booking-technician-dispatch-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/telecommunications.json"
+    },
+    {
+      "id": "telecommunications/installation-confirmation-arrival-reminder-system",
+      "title": "Installation Confirmation & Arrival Reminder System",
+      "industry": "telecommunications",
+      "category": "scheduling-dispatch",
+      "role": "Customer Care Coordinator",
+      "summary": "As soon as a new service installation is scheduled, this automation sends the customer an immediate confirmation with the date, the assigned…",
+      "url": "https://www.ljwebmanagement.com/automations/telecommunications/installation-confirmation-arrival-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/telecommunications.json"
+    },
+    {
+      "id": "vacation-rentals/cleaning-turnover-scheduling",
+      "title": "Cleaning Turnover Scheduling",
+      "industry": "vacation-rentals",
+      "category": "scheduling-dispatch",
+      "role": "Operations Coordinator",
+      "summary": "The moment a guest checks out, this automation automatically notifies the cleaning team with the turnover deadline before the next guest arrives…",
+      "url": "https://www.ljwebmanagement.com/automations/vacation-rentals/cleaning-turnover-scheduling/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/vacation-rentals.json"
+    },
+    {
+      "id": "veterinary-practices/vaccination-wellness-reminder-system",
+      "title": "Vaccination & Wellness Reminder System",
+      "industry": "veterinary-practices",
+      "category": "scheduling-dispatch",
+      "role": "Practice Manager",
+      "summary": "Every patient in the practice management system is tracked against their vaccination schedule and wellness exam due dates, and automated reminders…",
+      "url": "https://www.ljwebmanagement.com/automations/veterinary-practices/vaccination-wellness-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/veterinary-practices.json"
+    },
+    {
+      "id": "veterinary-practices/online-appointment-request-confirmation-system",
+      "title": "Online Appointment Request & Confirmation System",
+      "industry": "veterinary-practices",
+      "category": "scheduling-dispatch",
+      "role": "Client Service Representative",
+      "summary": "Appointment requests submitted via the practice website are automatically screened against the schedule for the correct provider, visit type, and…",
+      "url": "https://www.ljwebmanagement.com/automations/veterinary-practices/online-appointment-request-confirmation-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/veterinary-practices.json"
+    },
+    {
+      "id": "veterinary-practices/appointment-reminder-self-reschedule-system",
+      "title": "Appointment Reminder & Self-Reschedule System",
+      "industry": "veterinary-practices",
+      "category": "scheduling-dispatch",
+      "role": "Front Desk Coordinator",
+      "summary": "Every confirmed appointment automatically triggers a reminder sequence: an email 72 hours out, a text 24 hours out, and a final text 2 hours before…",
+      "url": "https://www.ljwebmanagement.com/automations/veterinary-practices/appointment-reminder-self-reschedule-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/veterinary-practices.json"
+    },
+    {
+      "id": "veterinary-practices/grooming-boarding-rebooking-prompt-system",
+      "title": "Grooming & Boarding Rebooking Prompt System",
+      "industry": "veterinary-practices",
+      "category": "scheduling-dispatch",
+      "role": "Grooming Coordinator",
+      "summary": "Each pet's grooming or boarding history is used to calculate its typical rebooking cadence, whether that's every 6 weeks for a groom or every few…",
+      "url": "https://www.ljwebmanagement.com/automations/veterinary-practices/grooming-boarding-rebooking-prompt-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/veterinary-practices.json"
+    },
+    {
+      "id": "warehousing-distribution/inbound-shipment-pre-alert-dock-scheduling-system",
+      "title": "Inbound Shipment Pre-Alert & Dock Scheduling System",
+      "industry": "warehousing-distribution",
+      "category": "scheduling-dispatch",
+      "role": "Receiving Manager",
+      "summary": "When a supplier ships an order, this automation receives the ASN (Advanced Shipment Notice), cross-references it against the open PO, flags any…",
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/inbound-shipment-pre-alert-dock-scheduling-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/warehousing-distribution.json"
+    },
+    {
+      "id": "warehousing-distribution/dock-appointment-scheduling-automation",
+      "title": "Dock Appointment Scheduling Automation",
+      "industry": "warehousing-distribution",
+      "category": "scheduling-dispatch",
+      "role": "Dock Operations Coordinator",
+      "summary": "Carriers arriving to pick up or drop off freight can self-schedule a dock appointment through an automated booking link that checks real-time dock…",
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/dock-appointment-scheduling-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/warehousing-distribution.json"
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "slug": "manufacturing",
+  "name": "Manufacturing",
+  "summary": "Downtime alerts, preventive maintenance, quality deviations, reorders, and safety compliance.",
+  "url": "https://www.ljwebmanagement.com/automations/manufacturing/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "manufacturing/equipment-downtime-alert-preventive-maintenance-log",
+      "slug": "equipment-downtime-alert-preventive-maintenance-log",
+      "title": "Equipment Downtime Alert & Preventive Maintenance Log",
+      "industry": "manufacturing",
+      "category": "operations-inventory",
+      "role": "Plant Manager",
+      "summary": "Sensors or machine operator forms feed real-time equipment status into a central dashboard, and any unplanned downtime event immediately triggers an…",
+      "steps": [
+        "Sensors or machine operator forms feed real-time equipment status into a central dashboard, and any unplanned downtime event immediately triggers an alert to the maintenance team and plant manager with the machine ID, location, and last known status.",
+        "Simultaneously, a maintenance ticket is opened and the on-call technician is assigned.",
+        "Scheduled preventive maintenance windows are calculated from run-hour data and pushed to the maintenance calendar automatically, so the plant never discovers that a machine was overdue for service after it has already gone down."
+      ],
+      "manualProcess": "The manual approach means a plant manager handles each case reactively, after someone has already noticed something went wrong. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "CMMS (e.g., Fiix or UpKeep)",
+        "Zapier or Make.com",
+        "IoT sensor integration or Jotform (operator downtime reports)",
+        "Slack or SMS (maintenance team alerts)",
+        "Google Sheets (downtime trend dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/equipment-downtime-alert-preventive-maintenance-log/"
+    },
+    {
+      "id": "manufacturing/defect-report-root-cause-investigation-tracker",
+      "slug": "defect-report-root-cause-investigation-tracker",
+      "title": "Defect Report & Root Cause Investigation Tracker",
+      "industry": "manufacturing",
+      "category": "operations-inventory",
+      "role": "Quality Control Manager",
+      "summary": "When an inspector logs a quality defect (whether from an in-line check, customer return, or final inspection) the system immediately creates a CAPA…",
+      "steps": [
+        "When an inspector logs a quality defect (whether from an in-line check, customer return, or final inspection) the system immediately creates a CAPA (Corrective and Preventive Action) record, notifies the production supervisor and quality manager, and assigns a root cause investigation task with a 48-hour deadline.",
+        "If the defect rate on any product line exceeds a set threshold in a rolling 7-day period, the QC manager receives an escalation alert and the line is flagged for a detailed audit, turning reactive defect management into a proactive quality control system."
+      ],
+      "manualProcess": "Manually, a quality control manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "QMS or ERP quality module (e.g., MasterControl or ETQ)",
+        "Jotform (defect report form)",
+        "Zapier or Make.com",
+        "Airtable or Google Sheets (CAPA tracker)",
+        "Slack or email (escalation alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/defect-report-root-cause-investigation-tracker/"
+    },
+    {
+      "id": "manufacturing/work-order-creation-capacity-alert-system",
+      "slug": "work-order-creation-capacity-alert-system",
+      "title": "Work Order Creation & Capacity Alert System",
+      "industry": "manufacturing",
+      "category": "operations-inventory",
+      "role": "Production Scheduler",
+      "summary": "As sales orders are confirmed, this automation generates the corresponding work orders in the production schedule, checks available machine and…",
+      "steps": [
+        "As sales orders are confirmed, this automation generates the corresponding work orders in the production schedule, checks available machine and labor capacity for each required operation, and flags any work order that cannot be completed by the promised ship date given current capacity.",
+        "The scheduler sees conflicts before they become missed deliveries, and production supervisors receive a pre-shift briefing each morning with today's work orders sorted by priority, starting the day aligned rather than discovering the fire at noon."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a production scheduler remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "ERP or MES (e.g., NetSuite Manufacturing, Epicor, or Katana)",
+        "Zapier or Make.com",
+        "Google Sheets (capacity planning model)",
+        "Slack (daily pre-shift briefing)",
+        "Email (work order confirmations to supervisors)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/work-order-creation-capacity-alert-system/"
+    },
+    {
+      "id": "manufacturing/customer-reorder-reminder-account-growth-alert",
+      "slug": "customer-reorder-reminder-account-growth-alert",
+      "title": "Customer Reorder Reminder & Account Growth Alert",
+      "industry": "manufacturing",
+      "category": "marketing-retention",
+      "role": "Manufacturing Sales Representative",
+      "summary": "Based on each customer's historical purchase cycle, this automation calculates when they are likely due to reorder and sends the sales rep a prompt…",
+      "steps": [
+        "Based on each customer's historical purchase cycle, this automation calculates when they are likely due to reorder and sends the sales rep a prompt five days before that window, with a pre-drafted outreach message referencing the customer's last order details.",
+        "Accounts that haven't ordered in longer than their typical cycle receive an escalation to the regional sales manager.",
+        "When a customer's order volume grows significantly year over year, the sales rep receives an alert to schedule an account review and explore expanded capacity or new product categories."
+      ],
+      "manualProcess": "Manually, a manufacturing sales representative is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background.",
+      "tools": [
+        "CRM (e.g., Salesforce or HubSpot)",
+        "ERP (order history data)",
+        "Zapier or Make.com",
+        "OpenAI API (personalized outreach draft)",
+        "Slack or email (rep daily prompts and escalations)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "HubSpot",
+        "Salesforce"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/customer-reorder-reminder-account-growth-alert/"
+    },
+    {
+      "id": "manufacturing/safety-inspection-checklist-compliance-certificate-tracker",
+      "slug": "safety-inspection-checklist-compliance-certificate-tracker",
+      "title": "Safety Inspection Checklist & Compliance Certificate Tracker",
+      "industry": "manufacturing",
+      "category": "compliance-documents",
+      "role": "EHS (Environment, Health & Safety) Manager",
+      "summary": "Weekly safety inspection checklists are assigned automatically to the designated inspector, completed via a mobile form on the floor, and routed to…",
+      "steps": [
+        "Weekly safety inspection checklists are assigned automatically to the designated inspector, completed via a mobile form on the floor, and routed to the EHS manager for review the moment they are submitted.",
+        "Any failed item generates a corrective action task with an assigned owner and due date.",
+        "The system also tracks every compliance certificate, permit, and training requirement across the facility, sending renewal reminders 90 and 30 days before each expiration, ensuring the facility is never surprised by an expired permit or certification during an OSHA audit."
+      ],
+      "manualProcess": "Handled by hand, an ehs (environment, health & safety) manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "EHS management software (e.g., Intelex or Cority) or Jotform (inspection forms)",
+        "Zapier or Make.com",
+        "Airtable or Google Sheets (certificate and permit tracker)",
+        "Email or Slack (renewal reminders and corrective action assignments)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/safety-inspection-checklist-compliance-certificate-tracker/"
+    },
+    {
+      "id": "manufacturing/preventive-maintenance-work-order-automation",
+      "slug": "preventive-maintenance-work-order-automation",
+      "title": "Preventive Maintenance Work Order Automation",
+      "industry": "manufacturing",
+      "category": "operations-inventory",
+      "role": "Maintenance Manager",
+      "summary": "Running-hour data pulled from equipment PLCs (or logged manually by operators when a machine isn't networked) is checked daily against each asset's…",
+      "steps": [
+        "Running-hour data pulled from equipment PLCs (or logged manually by operators when a machine isn't networked) is checked daily against each asset's service interval, and once a machine crosses 90% of its due threshold this automation generates a maintenance work order in the CMMS, assigns it to the appropriate technician, and checks parts inventory to see whether the commonly needed filters, belts, or bearings are on the shelf.",
+        "If a part is below the reorder point, a purchase order draft is created automatically so the part arrives before the service date rather than after the machine has already gone down.",
+        "The maintenance manager receives a weekly view of every upcoming and overdue work order sorted by criticality, turning what used to be a wall calendar and a gut feeling into a system that catches the 30-day service window before it becomes an unplanned Tuesday-afternoon breakdown."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a maintenance manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Fiix or UpKeep (CMMS)",
+        "Epicor or Fishbowl (ERP/inventory)",
+        "Zapier or Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/preventive-maintenance-work-order-automation/"
+    },
+    {
+      "id": "manufacturing/real-time-quality-deviation-alert",
+      "slug": "real-time-quality-deviation-alert",
+      "title": "Real-Time Quality Deviation Alert",
+      "industry": "manufacturing",
+      "category": "operations-inventory",
+      "role": "Production Shift Supervisor",
+      "summary": "As in-line quality checks are logged, whether from an automated gauge feeding directly into the quality system or an inspector entering readings on…",
+      "steps": [
+        "As in-line quality checks are logged, whether from an automated gauge feeding directly into the quality system or an inspector entering readings on a tablet, each measurement is checked against the tolerance band set for that part number and station.",
+        "The moment a reading falls outside the acceptable range, the shift supervisor and quality manager receive an immediate alert naming the exact measurement, the machine or station involved, and the operator on the line at that moment, rather than finding out during the next scheduled audit.",
+        "Three consecutive out-of-tolerance readings on the same station automatically pause new work orders.",
+        "This closes the gap between the minute a part goes out of spec and the moment someone with the authority to stop the line actually finds out."
+      ],
+      "manualProcess": "Without this system, a production shift supervisor manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Epicor or Fishbowl",
+        "Zapier or Make.com",
+        "Slack",
+        "Twilio",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/real-time-quality-deviation-alert/"
+    },
+    {
+      "id": "manufacturing/lead-time-based-material-reorder-system",
+      "slug": "lead-time-based-material-reorder-system",
+      "title": "Lead-Time-Based Material Reorder System",
+      "industry": "manufacturing",
+      "category": "operations-inventory",
+      "role": "Procurement Manager",
+      "summary": "As raw materials are consumed on the production floor and logged against each work order in the inventory system, this automation tracks usage rate…",
+      "steps": [
+        "As raw materials are consumed on the production floor and logged against each work order in the inventory system, this automation tracks usage rate against a reorder point calculated specifically for each supplier's actual lead time rather than a flat number that treats a 3-day vendor the same as a 6-week vendor.",
+        "When projected consumption shows a material running out before the next scheduled delivery, a purchase order draft is generated automatically with the supplier's standard quantities and pricing pre-filled, and the procurement manager only needs to review and approve it.",
+        "Materials tied to suppliers with historically unreliable lead times get an extra buffer built into their trigger point automatically.",
+        "What used to be a Friday-afternoon spreadsheet review is now a live system that flags shortages 2 to 3 weeks out instead of the week production runs dry."
+      ],
+      "manualProcess": "Done manually, a procurement manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Epicor or Fishbowl",
+        "Zapier or Make.com",
+        "Google Sheets",
+        "Slack",
+        "QuickBooks or NetSuite"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "QuickBooks",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/lead-time-based-material-reorder-system/"
+    },
+    {
+      "id": "manufacturing/production-run-completion-report",
+      "slug": "production-run-completion-report",
+      "title": "Production Run Completion Report",
+      "industry": "manufacturing",
+      "category": "reporting-analytics",
+      "role": "Operations Director",
+      "summary": "The moment a production run is marked complete in the MES, this automation pulls the run's total output, scrap rate, downtime minutes, and total…",
+      "steps": [
+        "The moment a production run is marked complete in the MES, this automation pulls the run's total output, scrap rate, downtime minutes, and total time-to-complete, and compares each figure against the target set when the run was scheduled.",
+        "A summary report, highlighting any run that missed its output target by more than 5% or exceeded its scrap allowance, is compiled automatically and emailed to the plant manager within minutes of the run closing rather than waiting for the end-of-shift paperwork to be manually assembled.",
+        "Runs that hit or beat every target are flagged as a \"clean run\" for easy reference when building best-practice documentation.",
+        "The operations director starts each morning already knowing which lines need attention instead of piecing that picture together from three different shift reports."
+      ],
+      "manualProcess": "Handled by hand, an operations director spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Epicor or Fishbowl",
+        "Zapier or Make.com",
+        "Google Sheets",
+        "Email",
+        "Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/production-run-completion-report/"
+    },
+    {
+      "id": "manufacturing/safety-incident-documentation-osha-deadline-workflow",
+      "slug": "safety-incident-documentation-osha-deadline-workflow",
+      "title": "Safety Incident Documentation & OSHA Deadline Workflow",
+      "industry": "manufacturing",
+      "category": "compliance-documents",
+      "role": "Safety Coordinator",
+      "summary": "When a worker reports a safety incident through a simple mobile form (near miss, injury, or property damage) the safety coordinator and plant…",
+      "steps": [
+        "When a worker reports a safety incident through a simple mobile form (near miss, injury, or property damage) the safety coordinator and plant manager are notified within minutes with the location, description, and any photos attached.",
+        "The report automatically opens the required documentation packet, incident details, witness statements, and corrective action log, so nothing has to be assembled from scratch after the fact.",
+        "Because OSHA recordkeeping and reporting deadlines vary by severity (a recordable injury has different timelines than a fatality or hospitalization), the system reads the severity flagged on the intake form and sets the correct follow-up reminders automatically, at 24 hours, 5 days, and whatever window applies.",
+        "What used to depend on someone remembering the exact regulatory deadline now runs on its own clock, and no incident sits undocumented past the window that matters."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a safety coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Jotform",
+        "Zapier or Make.com",
+        "Slack",
+        "Google Sheets or Airtable",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/safety-incident-documentation-osha-deadline-workflow/"
+    }
+  ]
+}

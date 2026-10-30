@@ -2,9 +2,10 @@
   "name": "ljwebmanagement-site",
   "private": true,
   "version": "2.0.0",
-  "description": "Static site generator for www.ljwebmanagement.com. No dependencies; run `npm run build` and commit the output.",
+  "description": "Static site generator for www.ljwebmanagement.com. No dependencies; run `npm run build` and commit the output, and `npm test` to check it.",
   "scripts": {
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "test": "node --test test/*.test.js"
   },
   "engines": {
     "node": ">=18"

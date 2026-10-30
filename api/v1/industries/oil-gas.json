@@ -1,0 +1,285 @@
+{
+  "slug": "oil-gas",
+  "name": "Oil & Gas",
+  "summary": "Safety check-ins, drilling reports, lease payments, regulatory filings, and royalties.",
+  "url": "https://www.ljwebmanagement.com/automations/oil-gas/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "oil-gas/permit-to-work-daily-safety-check-in-system",
+      "slug": "permit-to-work-daily-safety-check-in-system",
+      "title": "Permit to Work & Daily Safety Check-In System",
+      "industry": "oil-gas",
+      "category": "compliance-documents",
+      "role": "Field Operations Manager",
+      "summary": "Before any hazardous work begins on a well site, this automation issues the digital Permit to Work form to the requesting crew, routes it for…",
+      "steps": [
+        "Before any hazardous work begins on a well site, this automation issues the digital Permit to Work form to the requesting crew, routes it for approval through the operations manager and safety officer, and logs the approved permit with a timestamp and expiration window.",
+        "At the start of every shift, field personnel submit a brief digital check-in confirming site conditions, hazard controls in place, and crew headcount, and any crew that hasn't checked in within 30 minutes of shift start triggers an immediate alert.",
+        "The operations manager knows the status of every active work site without making a single phone call."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a field operations manager, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Jotform (PTW form and daily check-in)",
+        "Zapier or Make.com",
+        "Airtable (permit log and approval workflow)",
+        "Twilio (crew check-in SMS and manager alerts)",
+        "Slack (escalation for missed check-ins)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/permit-to-work-daily-safety-check-in-system/"
+    },
+    {
+      "id": "oil-gas/daily-drilling-report-kpi-dashboard-automation",
+      "slug": "daily-drilling-report-kpi-dashboard-automation",
+      "title": "Daily Drilling Report & KPI Dashboard Automation",
+      "industry": "oil-gas",
+      "category": "reporting-analytics",
+      "role": "Drilling Supervisor",
+      "summary": "At the end of each tour, the driller submits a standardized digital daily drilling report (footage drilled, bit hours, mud weight, NPT events, and…",
+      "steps": [
+        "At the end of each tour, the driller submits a standardized digital daily drilling report (footage drilled, bit hours, mud weight, NPT events, and cost codes) and the system automatically compiles it into a formatted summary, calculates daily and cumulative KPIs against the AFE budget, and emails it to the drilling superintendent, company man, and finance team.",
+        "Cost overruns against the authorized AFE trigger an immediate flag before the well reaches the point where a budget conversation can no longer change the outcome."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a drilling supervisor remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Jotform or a drilling report app",
+        "Zapier or Make.com",
+        "Google Sheets (KPI calculator and AFE tracker)",
+        "OpenAI API (daily narrative summary)",
+        "Email (stakeholder distribution)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/daily-drilling-report-kpi-dashboard-automation/"
+    },
+    {
+      "id": "oil-gas/lease-expiration-delay-rental-payment-tracker",
+      "slug": "lease-expiration-delay-rental-payment-tracker",
+      "title": "Lease Expiration & Delay Rental Payment Tracker",
+      "industry": "oil-gas",
+      "category": "compliance-documents",
+      "role": "Land Manager",
+      "summary": "Every active lease in the land department's database is tracked against its primary term expiration date, continuous development obligation, and…",
+      "steps": [
+        "Every active lease in the land department's database is tracked against its primary term expiration date, continuous development obligation, and delay rental due dates, with automated reminders sent to the responsible landman at 180, 90, 30, and 7 days before each critical date.",
+        "Missed delay rental payments can void a lease worth millions, this automation ensures that no payment deadline is discovered after it has already passed.",
+        "When a lease is approaching expiration without a drilling commitment in the queue, the land manager receives a decision-point alert to evaluate whether to pay, negotiate an extension, or release the acreage."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a land manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Land management software (e.g., Quorum Land or WolfePak) or Airtable",
+        "Zapier or Make.com",
+        "Google Calendar (critical date entries)",
+        "Email or Slack (escalating deadline alerts)",
+        "QuickBooks (delay rental payment scheduling)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "QuickBooks",
+        "Slack",
+        "Airtable",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/lease-expiration-delay-rental-payment-tracker/"
+    },
+    {
+      "id": "oil-gas/incident-near-miss-reporting-regulatory-compliance-system",
+      "slug": "incident-near-miss-reporting-regulatory-compliance-system",
+      "title": "Incident & Near Miss Reporting & Regulatory Compliance System",
+      "industry": "oil-gas",
+      "category": "compliance-documents",
+      "role": "HSE Manager",
+      "summary": "The moment a field employee submits an incident or near miss report via mobile form, the system timestamps it, notifies the HSE manager and site…",
+      "steps": [
+        "The moment a field employee submits an incident or near miss report via mobile form, the system timestamps it, notifies the HSE manager and site supervisor immediately, assigns a root cause investigation task with a 24-hour deadline, and (based on the incident type and severity) automatically determines whether OSHA or state regulatory notification is required and populates the appropriate form pre-filled with available data.",
+        "The HSE manager's monthly compliance report is generated automatically from all logged incidents, turning a reactive documentation process into a proactive, always-current compliance record."
+      ],
+      "manualProcess": "The manual approach means a hse manager handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Jotform (incident and near miss form)",
+        "Zapier or Make.com",
+        "Airtable (incident log and CAPA tracker)",
+        "Twilio (immediate supervisor and HSE manager alerts)",
+        "OpenAI API (root cause investigation draft)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/incident-near-miss-reporting-regulatory-compliance-system/"
+    },
+    {
+      "id": "oil-gas/joint-interest-billing-revenue-distribution-system",
+      "slug": "joint-interest-billing-revenue-distribution-system",
+      "title": "Joint Interest Billing & Revenue Distribution System",
+      "industry": "oil-gas",
+      "category": "billing-finance",
+      "role": "Oil & Gas Accountant",
+      "summary": "At the close of each production month, this automation pulls lease operating expenses by cost code and working interest owner from the accounting…",
+      "steps": [
+        "At the close of each production month, this automation pulls lease operating expenses by cost code and working interest owner from the accounting system, calculates each partner's proportionate share of costs and revenue per the JOA, and generates formatted joint interest billing statements for each non-operator.",
+        "Partners who are past due on their JIB payment receive automated reminder notices on a set schedule, and the accountant sees a live aging dashboard showing which partners are current and which are in default, replacing the manual Excel process that typically occupies the first two weeks of every month."
+      ],
+      "manualProcess": "Done manually, an oil & gas accountant has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Oil and gas accounting software (e.g., WolfePak, Enertia, or Quorum)",
+        "Zapier or Make.com",
+        "Google Sheets or Airtable (JIB aging dashboard)",
+        "Email (automated JIB statements and past-due notices)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/joint-interest-billing-revenue-distribution-system/"
+    },
+    {
+      "id": "oil-gas/well-production-anomaly-alert",
+      "slug": "well-production-anomaly-alert",
+      "title": "Well Production Anomaly Alert",
+      "industry": "oil-gas",
+      "category": "operations-inventory",
+      "role": "Field Operations Supervisor",
+      "summary": "This automation continuously compares real-time production data from each well against its expected output curve and automatically alerts the field…",
+      "steps": [
+        "This automation continuously compares real-time production data from each well against its expected output curve and automatically alerts the field operator the moment a well's output drops outside the normal range.",
+        "Equipment issues or downhole problems get caught days earlier than a manual daily check would ever catch them."
+      ],
+      "manualProcess": "Without automation, a field operations supervisor has to notice problems after they've already happened, then scramble to fix them manually one at a time. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "A SCADA system",
+        "Zapier or Make.com",
+        "Twilio or email",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/well-production-anomaly-alert/"
+    },
+    {
+      "id": "oil-gas/regulatory-filing-deadline-tracker",
+      "slug": "regulatory-filing-deadline-tracker",
+      "title": "Regulatory Filing Deadline Tracker",
+      "industry": "oil-gas",
+      "category": "compliance-documents",
+      "role": "Compliance Manager",
+      "summary": "For every well and facility, this automation tracks state and federal filing deadlines, production reports, environmental filings, permit renewals…",
+      "steps": [
+        "For every well and facility, this automation tracks state and federal filing deadlines, production reports, environmental filings, permit renewals, and automatically alerts the compliance team with escalating urgency as each deadline approaches.",
+        "A missed regulatory filing, which can carry real financial and legal consequences, gets caught with weeks of runway instead of days."
+      ],
+      "manualProcess": "Left unautomated, a compliance manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "A compliance tracking tool or Google Sheets",
+        "Zapier or Make.com",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/regulatory-filing-deadline-tracker/"
+    },
+    {
+      "id": "oil-gas/equipment-inspection-scheduling",
+      "slug": "equipment-inspection-scheduling",
+      "title": "Equipment Inspection Scheduling",
+      "industry": "oil-gas",
+      "category": "compliance-documents",
+      "role": "Maintenance Supervisor",
+      "summary": "Based on regulatory requirements and manufacturer intervals, this automation automatically schedules required inspections for pressure vessels…",
+      "steps": [
+        "Based on regulatory requirements and manufacturer intervals, this automation automatically schedules required inspections for pressure vessels, tanks, and safety equipment, assigns them to the field crew, and flags any inspection that's gone overdue as a compliance risk.",
+        "Inspections stop slipping quietly past their required date."
+      ],
+      "manualProcess": "Handled by hand, a maintenance supervisor spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "A CMMS (computerized maintenance management system)",
+        "Zapier or Make.com",
+        "Google Calendar",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/equipment-inspection-scheduling/"
+    },
+    {
+      "id": "oil-gas/royalty-payment-calculation-statement-generator",
+      "slug": "royalty-payment-calculation-statement-generator",
+      "title": "Royalty Payment Calculation & Statement Generator",
+      "industry": "oil-gas",
+      "category": "billing-finance",
+      "role": "Land & Royalty Administrator",
+      "summary": "Based on production volumes and the ownership interests on file, this automation automatically calculates each royalty owner's payment for the…",
+      "steps": [
+        "Based on production volumes and the ownership interests on file, this automation automatically calculates each royalty owner's payment for the period and generates their statement.",
+        "What's often a manually maintained spreadsheet prone to costly calculation errors becomes an automated, auditable process."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a land & royalty administrator, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "A land management system (Enverus or P2 Energy Solutions)",
+        "Zapier or Make.com",
+        "Google Sheets",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/royalty-payment-calculation-statement-generator/"
+    },
+    {
+      "id": "oil-gas/safety-incident-near-miss-reporting-workflow",
+      "slug": "safety-incident-near-miss-reporting-workflow",
+      "title": "Safety Incident & Near-Miss Reporting Workflow",
+      "industry": "oil-gas",
+      "category": "compliance-documents",
+      "role": "HSE Coordinator",
+      "summary": "When a field incident or near-miss is reported through a mobile form, this automation immediately notifies the safety manager, starts the required…",
+      "steps": [
+        "When a field incident or near-miss is reported through a mobile form, this automation immediately notifies the safety manager, starts the required documentation, and sets follow-up reminders for any regulatory reporting deadlines tied to the incident.",
+        "Nothing about the reporting process depends on someone remembering to file the paperwork after a stressful moment in the field."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a hse coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A mobile safety reporting app (SafetyCulture)",
+        "Zapier or Make.com",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/safety-incident-near-miss-reporting-workflow/"
+    }
+  ]
+}

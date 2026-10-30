@@ -1,0 +1,134 @@
+{
+  "slug": "driving-schools",
+  "name": "Driving Schools",
+  "summary": "Lesson scheduling, instructor matching, test date reminders, and parent progress updates.",
+  "url": "https://www.ljwebmanagement.com/automations/driving-schools/",
+  "automationCount": 5,
+  "automations": [
+    {
+      "id": "driving-schools/lesson-scheduling-instructor-matching",
+      "slug": "lesson-scheduling-instructor-matching",
+      "title": "Lesson Scheduling & Instructor Matching",
+      "industry": "driving-schools",
+      "category": "scheduling-dispatch",
+      "role": "Scheduling Coordinator",
+      "summary": "When a student books a lesson, this automation automatically matches them with an available instructor based on location and vehicle type needed…",
+      "steps": [
+        "When a student books a lesson, this automation automatically matches them with an available instructor based on location and vehicle type needed, and confirms the booking on both the student's and instructor's calendars.",
+        "Matching stops depending on a coordinator manually cross-checking two calendars for every single lesson request."
+      ],
+      "manualProcess": "Without this system, a scheduling coordinator manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A driving school management platform",
+        "Google Calendar",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/driving-schools/lesson-scheduling-instructor-matching/"
+    },
+    {
+      "id": "driving-schools/permit-license-test-date-reminder",
+      "slug": "permit-license-test-date-reminder",
+      "title": "Permit/License Test Date Reminder",
+      "industry": "driving-schools",
+      "category": "scheduling-dispatch",
+      "role": "Student Services Coordinator",
+      "summary": "Based on each student's enrollment date and state-required practice hour minimums, this automation automatically tracks their progress and reminds…",
+      "steps": [
+        "Based on each student's enrollment date and state-required practice hour minimums, this automation automatically tracks their progress and reminds them when they're eligible to schedule their permit or road test.",
+        "The student never has to independently track state requirements themselves to figure out when they're actually ready."
+      ],
+      "manualProcess": "Handled by hand, a student services coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "A driving school management platform",
+        "Twilio or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/driving-schools/permit-license-test-date-reminder/"
+    },
+    {
+      "id": "driving-schools/vehicle-maintenance-inspection-scheduling",
+      "slug": "vehicle-maintenance-inspection-scheduling",
+      "title": "Vehicle Maintenance & Inspection Scheduling",
+      "industry": "driving-schools",
+      "category": "operations-inventory",
+      "role": "Fleet Manager",
+      "summary": "For the fleet of training vehicles, this automation automatically schedules routine maintenance and required inspections based on mileage and…",
+      "steps": [
+        "For the fleet of training vehicles, this automation automatically schedules routine maintenance and required inspections based on mileage and calendar intervals.",
+        "Vehicles go off the road for scheduled service on a predictable calendar rather than a surprise breakdown interrupting a lesson mid-session."
+      ],
+      "manualProcess": "Without this system, a fleet manager manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A fleet maintenance tracker",
+        "Google Calendar",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/driving-schools/vehicle-maintenance-inspection-scheduling/"
+    },
+    {
+      "id": "driving-schools/parent-guardian-progress-update",
+      "slug": "parent-guardian-progress-update",
+      "title": "Parent/Guardian Progress Update",
+      "industry": "driving-schools",
+      "category": "customer-communication",
+      "role": "Instructor Coordinator",
+      "summary": "For teen driving students, this automation automatically sends parents a periodic progress update summarizing completed hours and instructor notes.",
+      "steps": [
+        "For teen driving students, this automation automatically sends parents a periodic progress update summarizing completed hours and instructor notes.",
+        "Parents stay informed without the student having to relay it themselves, which in practice means parents actually stay informed."
+      ],
+      "manualProcess": "Handled by hand, an instructor coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "A driving school management platform",
+        "Mailchimp or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/driving-schools/parent-guardian-progress-update/"
+    },
+    {
+      "id": "driving-schools/package-hours-balance-renewal-reminder",
+      "slug": "package-hours-balance-renewal-reminder",
+      "title": "Package Hours Balance & Renewal Reminder",
+      "industry": "driving-schools",
+      "category": "marketing-retention",
+      "role": "Billing Coordinator",
+      "summary": "As a student uses lesson hours from a purchased package, this automation automatically tracks their remaining balance and sends a renewal reminder…",
+      "steps": [
+        "As a student uses lesson hours from a purchased package, this automation automatically tracks their remaining balance and sends a renewal reminder before the hours run out.",
+        "The booking pipeline stays full instead of a student's lessons quietly stalling out because no one flagged that their package was almost spent."
+      ],
+      "manualProcess": "Without this system, a billing coordinator manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A driving school management platform",
+        "Stripe or QuickBooks",
+        "Twilio or email"
+      ],
+      "integrations": [
+        "Twilio",
+        "QuickBooks",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/driving-schools/package-hours-balance-renewal-reminder/"
+    }
+  ]
+}

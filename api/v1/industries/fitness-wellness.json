@@ -1,0 +1,1406 @@
+{
+  "slug": "fitness-wellness",
+  "name": "Fitness & Wellness",
+  "summary": "Class booking, waitlists, trial conversion, member retention, renewals, and referrals.",
+  "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/",
+  "automationCount": 52,
+  "automations": [
+    {
+      "id": "fitness-wellness/member-check-in-retention-alert-system",
+      "slug": "member-check-in-retention-alert-system",
+      "title": "Member Check-In & Retention Alert System",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Gym / Studio Owner",
+      "summary": "Each day, this automation flags any active member who hasn't checked in for 14 days, adds them to a win-back sequence that starts with a \"we miss…",
+      "steps": [
+        "Each day, this automation flags any active member who hasn't checked in for 14 days, adds them to a win-back sequence that starts with a \"we miss you\" text, escalates to a personal outreach from a staff member, and offers a complimentary session or class if they return within a set window.",
+        "Members who hit streak milestones (30, 60, 90 days of consistent attendance) automatically receive a congratulations message and a referral incentive, turning the gym's most consistent members into its best recruiters."
+      ],
+      "manualProcess": "The manual approach means a gym / studio owner handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Twilio (SMS re-engagement)",
+        "Mailchimp or ActiveCampaign",
+        "Slack (staff outreach prompts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Slack",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/member-check-in-retention-alert-system/"
+    },
+    {
+      "id": "fitness-wellness/client-progress-check-in-workout-delivery-system",
+      "slug": "client-progress-check-in-workout-delivery-system",
+      "title": "Client Progress Check-In & Workout Delivery System",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Personal Trainer",
+      "summary": "Each week, active training clients receive an automated check-in form asking about sleep, energy, soreness, and how last week's workouts felt, and…",
+      "steps": [
+        "Each week, active training clients receive an automated check-in form asking about sleep, energy, soreness, and how last week's workouts felt, and their responses feed directly into a training log the trainer reviews before programming the next week's sessions.",
+        "Completed workouts are logged via the client app, and any client who skips more than two workouts in a row triggers a personal outreach from the trainer.",
+        "The trainer spends their time coaching, not chasing clients for updates or manually tracking adherence in a notebook."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a personal trainer remembering to check in, update records, and follow up, with no safety net if something slips.",
+      "tools": [
+        "Training app (e.g., Trainerize or TrueCoach)",
+        "Jotform or Typeform (weekly check-in)",
+        "Zapier or Make.com",
+        "Twilio (adherence check-in nudges)",
+        "Google Sheets (progress tracking dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/client-progress-check-in-workout-delivery-system/"
+    },
+    {
+      "id": "fitness-wellness/class-waitlist-auto-fill-booking-system",
+      "slug": "class-waitlist-auto-fill-booking-system",
+      "title": "Class Waitlist & Auto-Fill Booking System",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Yoga Studio Owner",
+      "summary": "When a class reaches capacity, additional sign-ups automatically land on the waitlist and receive a confirmation with their position.",
+      "steps": [
+        "When a class reaches capacity, additional sign-ups automatically land on the waitlist and receive a confirmation with their position.",
+        "The moment a registered student cancels, the next person on the waitlist is immediately texted with a booking link that expires in 30 minutes, keeping classes full without the studio owner or front desk manually managing the list throughout the day.",
+        "Students who cancel after the deadline receive an automatic late-cancel fee notification per the studio policy, removing the awkward conversation from the staff's plate."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a yoga studio owner remembering to check in, update records, and follow up, with no safety net if something slips. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Studio management software (e.g., Mindbody or Pike13)",
+        "Zapier or Make.com",
+        "Twilio (waitlist SMS notifications)",
+        "Stripe (late cancel fee processing)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/class-waitlist-auto-fill-booking-system/"
+    },
+    {
+      "id": "fitness-wellness/client-accountability-content-drip-system",
+      "slug": "client-accountability-content-drip-system",
+      "title": "Client Accountability & Content Drip System",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Health Coach",
+      "summary": "New coaching clients are automatically onboarded into a structured program: a welcome sequence with program expectations and the intake…",
+      "steps": [
+        "New coaching clients are automatically onboarded into a structured program: a welcome sequence with program expectations and the intake questionnaire, followed by weekly educational content drops tied to their program phase, daily habit tracking reminders, and a Friday accountability check-in form that routes their responses to the coach before their Monday call.",
+        "Clients who don't submit their check-in receive an automatic nudge, and coaches arrive at every call having already reviewed the week's data, making every session more productive from the first minute."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a health coach, who has to track every step by hand across emails, spreadsheets, and sticky notes. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Coaching platform (e.g., Practice or Paperbell)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign (content drip)",
+        "Jotform (accountability check-in form)",
+        "Twilio (daily habit reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/client-accountability-content-drip-system/"
+    },
+    {
+      "id": "fitness-wellness/appointment-booking-intake-rebooking-system",
+      "slug": "appointment-booking-intake-rebooking-system",
+      "title": "Appointment Booking, Intake & Rebooking System",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Massage Therapist",
+      "summary": "New clients complete a digital health intake form as part of the online booking process, so the therapist has a complete picture of the client's…",
+      "steps": [
+        "New clients complete a digital health intake form as part of the online booking process, so the therapist has a complete picture of the client's concerns and contraindications before they walk in.",
+        "Immediately after each session, the client receives an automated follow-up text asking how they feel and including a one-tap rebooking link for their next appointment at their preferred interval.",
+        "Clients who haven't rebooked within 30 days receive a gentle reminder, keeping the appointment book full without the therapist making phone calls between sessions."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a massage therapist, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.",
+      "tools": [
+        "Booking software (e.g., Jane App, Square Appointments, or Vagaro)",
+        "Jotform (health intake form)",
+        "Zapier or Make.com",
+        "Twilio (post-session rebooking SMS)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/appointment-booking-intake-rebooking-system/"
+    },
+    {
+      "id": "fitness-wellness/class-booking-reminder-system",
+      "slug": "class-booking-reminder-system",
+      "title": "Class Booking Reminder System",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Studio Manager",
+      "summary": "Every member who books a class automatically receives a reminder text 24 hours before the session and a second reminder 2 hours out, each one…",
+      "steps": [
+        "Every member who books a class automatically receives a reminder text 24 hours before the session and a second reminder 2 hours out, each one including the studio's cancellation cutoff so members know exactly how much time they have to free up their spot for someone else.",
+        "Members who cancel after the cutoff are automatically flagged for the studio's late-cancel policy instead of the front desk having to track it manually.",
+        "Classes that used to run with 3 or 4 empty seats from last-minute no-shows fill back up because the waitlist gets notified the second a spot opens, keeping instructor-to-student ratios where they should be."
+      ],
+      "manualProcess": "Left to a person, this means a studio manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.",
+      "tools": [
+        "Studio management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Twilio (SMS reminders)",
+        "Mailchimp (email reminder backup)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/class-booking-reminder-system/"
+    },
+    {
+      "id": "fitness-wellness/membership-renewal-notification-system",
+      "slug": "membership-renewal-notification-system",
+      "title": "Membership Renewal Notification System",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Gym Owner",
+      "summary": "Seven days before a membership auto-renews, the member receives a clear email showing the exact charge amount and date, along with an easy upgrade…",
+      "steps": [
+        "Seven days before a membership auto-renews, the member receives a clear email showing the exact charge amount and date, along with an easy upgrade path to a higher tier if their usage over the past month suggests they'd get more value from it.",
+        "This single notification eliminates the \"surprise charge\" complaints and chargeback disputes that come from members who forgot they were on an annual plan, and it gives the gym a natural, low-pressure moment to offer an upgrade instead of waiting for the member to ask.",
+        "Members who see the charge coming and understand what it's for are far less likely to cancel out of frustration."
+      ],
+      "manualProcess": "Without a system in place, a gym owner has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Klaviyo or Mailchimp (renewal notice email)",
+        "Stripe (billing data)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/membership-renewal-notification-system/"
+    },
+    {
+      "id": "fitness-wellness/lapsed-member-win-back-sequence",
+      "slug": "lapsed-member-win-back-sequence",
+      "title": "Lapsed Member Win-Back Sequence",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Gym / Studio Owner",
+      "summary": "When an active member goes 2 full weeks without a check-in, this automation triggers a \"come back\" text with a genuinely useful incentive, a free…",
+      "steps": [
+        "When an active member goes 2 full weeks without a check-in, this automation triggers a \"come back\" text with a genuinely useful incentive, a free guest pass, a complimentary session with a trainer, or a discounted month, rather than a generic guilt-trip reminder.",
+        "If the member still hasn't returned after 7 more days, a second message goes out with a stronger offer, and members who reactivate are automatically pulled out of the sequence.",
+        "Catching disengagement at 2 weeks instead of waiting for the eventual cancellation request means the gym is reaching members while they're still emotionally invested, not after they've already mentally checked out."
+      ],
+      "manualProcess": "Done manually, a gym / studio owner has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Twilio (SMS win-back)",
+        "Mailchimp or ActiveCampaign"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/lapsed-member-win-back-sequence/"
+    },
+    {
+      "id": "fitness-wellness/new-member-onboarding-drip-sequence",
+      "slug": "new-member-onboarding-drip-sequence",
+      "title": "New Member Onboarding Drip Sequence",
+      "industry": "fitness-wellness",
+      "category": "onboarding-intake",
+      "role": "Gym Owner",
+      "summary": "The moment a new sign-up completes their first payment, this automation kicks off a structured onboarding sequence: a welcome email with facility…",
+      "steps": [
+        "The moment a new sign-up completes their first payment, this automation kicks off a structured onboarding sequence: a welcome email with facility hours and app setup instructions on day 1, a nudge to book their first class or orientation session on day 2 if they haven't already, an app walkthrough on day 4, and a check-in message on day 10 asking how the first two weeks have gone.",
+        "New members who complete an orientation session and book a class within their first week stick around far longer than members who are left to figure things out on their own, so this sequence directly targets the highest-risk cancellation window."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a gym owner remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign (drip sequence)",
+        "Twilio (app setup and check-in texts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/new-member-onboarding-drip-sequence/"
+    },
+    {
+      "id": "fitness-wellness/trial-to-paid-conversion-nudge",
+      "slug": "trial-to-paid-conversion-nudge",
+      "title": "Trial-to-Paid Conversion Nudge",
+      "industry": "fitness-wellness",
+      "category": "lead-follow-up-sales",
+      "role": "Studio Owner",
+      "summary": "Three days before a free trial expires, the prospect automatically receives a limited-time join offer, priced and timed to create genuine urgency…",
+      "steps": [
+        "Three days before a free trial expires, the prospect automatically receives a limited-time join offer, priced and timed to create genuine urgency rather than a generic \"don't forget to subscribe\" reminder.",
+        "If they haven't converted by the last day of the trial, a final message goes out with a reminder of the offer's expiration and a direct signup link, and anyone who converts is instantly removed from the sequence.",
+        "Trials that end without any nudge convert at a noticeably lower rate than trials paired with a well-timed offer in the final days, since most people simply forget the trial is ending until it already has."
+      ],
+      "manualProcess": "Without automation, a studio owner has to notice problems after they've already happened, then scramble to fix them manually one at a time. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Studio management software (e.g., Mindbody or Pike13)",
+        "Zapier or Make.com",
+        "Twilio (SMS offer reminder)",
+        "Mailchimp or Klaviyo (email offer)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/trial-to-paid-conversion-nudge/"
+    },
+    {
+      "id": "fitness-wellness/member-referral-reward-automation",
+      "slug": "member-referral-reward-automation",
+      "title": "Member Referral Reward Automation",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Gym Owner",
+      "summary": "Each member gets a unique referral link they can text or share directly, and when a referred friend signs up and completes their first month, both…",
+      "steps": [
+        "Each member gets a unique referral link they can text or share directly, and when a referred friend signs up and completes their first month, both the referring member and the new member automatically receive a credit toward their next billing cycle, no manual tracking on a spreadsheet, no front desk staff remembering who referred whom.",
+        "The referring member gets an instant confirmation text the moment their friend joins, which reinforces the behavior and tends to prompt more referrals from the same member.",
+        "Automating the reward removes the single biggest reason referral programs quietly die: rewards that get forgotten or delayed long enough that members stop bothering to refer."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a gym owner remembering to check in, update records, and follow up, with no safety net if something slips. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Referral platform (e.g., ReferralCandy) or Zapier custom build",
+        "Zapier or Make.com",
+        "Twilio (referral confirmation texts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/member-referral-reward-automation/"
+    },
+    {
+      "id": "fitness-wellness/progress-milestone-celebration-system",
+      "slug": "progress-milestone-celebration-system",
+      "title": "Progress Milestone Celebration System",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Personal Trainer",
+      "summary": "As check-in data and workout logs come in, this automation watches for milestones, a 25th check-in, a 90-day attendance streak, a personal best on a…",
+      "steps": [
+        "As check-in data and workout logs come in, this automation watches for milestones, a 25th check-in, a 90-day attendance streak, a personal best on a tracked lift, and automatically sends a congratulations message the same day the milestone hits, along with a small reward like a branded shirt, a free session, or a shoutout in the studio's newsletter.",
+        "Recognizing progress in the moment it happens, rather than whenever someone gets around to noticing, keeps members emotionally invested in a program that can otherwise feel repetitive week to week.",
+        "Trainers get a running feed of member wins they can reference in sessions, making every \"congratulations\" feel personal instead of automated, even though the detection itself runs entirely on its own."
+      ],
+      "manualProcess": "Without this system, a personal trainer manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Training app (e.g., Trainerize or TrueCoach)",
+        "Zapier or Make.com",
+        "Twilio (milestone congratulations text)",
+        "Google Sheets (milestone tracking log)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/progress-milestone-celebration-system/"
+    },
+    {
+      "id": "fitness-wellness/class-appointment-booking-reminder-sequence",
+      "slug": "class-appointment-booking-reminder-sequence",
+      "title": "Class & Appointment Booking Reminder Sequence",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Front Desk Lead",
+      "summary": "Members automatically receive a reminder 24 hours and again 2 hours before a booked class or appointment, reducing the empty spots caused by simple…",
+      "steps": [
+        "Members automatically receive a reminder 24 hours and again 2 hours before a booked class or appointment, reducing the empty spots caused by simple forgetfulness instead of a front desk lead manually calling down a list of no-shows after the fact.",
+        "Reminders include a one-tap link to cancel or reschedule, so a genuine conflict frees the spot for someone on the waitlist instead of it just sitting empty, and class attendance rates climb noticeably once every booking gets a consistent two-step reminder instead of relying on members to remember on their own."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a front desk lead, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Studio management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/class-appointment-booking-reminder-sequence/"
+    },
+    {
+      "id": "fitness-wellness/membership-renewal-lapse-alert-system",
+      "slug": "membership-renewal-lapse-alert-system",
+      "title": "Membership Renewal & Lapse Alert System",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Membership Coordinator",
+      "summary": "Members are automatically notified before their renewal date with a one-click renew option, and staff are automatically flagged the moment a…",
+      "steps": [
+        "Members are automatically notified before their renewal date with a one-click renew option, and staff are automatically flagged the moment a membership actually lapses so the membership coordinator can reach out personally before the member drifts away entirely.",
+        "Catching a lapse the same day it happens, rather than discovering it weeks later in a monthly report, gives a real chance to win the member back with a personal call instead of a generic reactivation email sent long after they've already found another gym."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a membership coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Klaviyo or Mailchimp (renewal notice email)",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/membership-renewal-lapse-alert-system/"
+    },
+    {
+      "id": "fitness-wellness/new-lead-trial-offer-welcome-sequence",
+      "slug": "new-lead-trial-offer-welcome-sequence",
+      "title": "New Lead Trial Offer Welcome Sequence",
+      "industry": "fitness-wellness",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Coordinator",
+      "summary": "Anyone who signs up for a trial on the website automatically receives a welcome sequence with the class schedule, what to bring, and a reminder…",
+      "steps": [
+        "Anyone who signs up for a trial on the website automatically receives a welcome sequence with the class schedule, what to bring, and a reminder before their first visit, instead of the sales coordinator manually emailing each new trial signup the same basic information one at a time.",
+        "Trial members show up to their first visit already knowing what to expect instead of arriving unsure and self-conscious, and conversion from trial to paid membership improves once the entire first-visit experience feels prepared rather than improvised."
+      ],
+      "manualProcess": "Left unautomated, a sales coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Studio management software (e.g., Mindbody or Pike13)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/new-lead-trial-offer-welcome-sequence/"
+    },
+    {
+      "id": "fitness-wellness/missed-visit-win-back-automation",
+      "slug": "missed-visit-win-back-automation",
+      "title": "Missed-Visit Win-Back Automation",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Retention Specialist",
+      "summary": "A member who hasn't checked in for a defined number of days automatically receives a friendly re-engagement message, catching attrition before it…",
+      "steps": [
+        "A member who hasn't checked in for a defined number of days automatically receives a friendly re-engagement message, catching attrition before it becomes a cancellation instead of the retention specialist only noticing a disengaged member once they've already decided to quit and are calling to cancel.",
+        "Members who respond to an early check-in message return to their normal routine far more often than members left alone until the pattern is already entrenched, turning what used to be a purely reactive save attempt into a proactive one that actually works."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a retention specialist, who has to track every step by hand across emails, spreadsheets, and sticky notes. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Twilio (SMS re-engagement)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/missed-visit-win-back-automation/"
+    },
+    {
+      "id": "fitness-wellness/waitlist-auto-promotion-system",
+      "slug": "waitlist-auto-promotion-system",
+      "title": "Waitlist Auto-Promotion System",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Class Scheduling Coordinator",
+      "summary": "When a spot opens up in a fully booked class due to a cancellation, the next person on the waitlist is automatically notified and booked into the…",
+      "steps": [
+        "When a spot opens up in a fully booked class due to a cancellation, the next person on the waitlist is automatically notified and booked into the open slot, instead of the class scheduling coordinator manually working down a waitlist by phone every time a spot frees up.",
+        "The promotion happens within seconds of the cancellation, so a popular class never runs under capacity purely because nobody got around to filling the gap in time, and members on a waitlist trust it actually works instead of feeling like their name just disappears into a list nobody checks."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a class scheduling coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Studio management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Twilio (waitlist SMS notifications)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/waitlist-auto-promotion-system/"
+    },
+    {
+      "id": "fitness-wellness/post-appointment-review-rebooking-prompt",
+      "slug": "post-appointment-review-rebooking-prompt",
+      "title": "Post-Appointment Review & Rebooking Prompt",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Spa Manager",
+      "summary": "After a salon or spa appointment, the client automatically receives a review request along with a \"book your next visit\" link timed to the typical…",
+      "steps": [
+        "After a salon or spa appointment, the client automatically receives a review request along with a \"book your next visit\" link timed to the typical rebooking cycle for that specific service, instead of the spa manager relying on the client to remember to rebook on their own weeks later once the relaxation has worn off.",
+        "Clients who get a well-timed rebooking prompt convert to a repeat visit far more often than clients left to book whenever they happen to think of it, and the practice's calendar stays fuller with far less manual outreach."
+      ],
+      "manualProcess": "Without this system, a spa manager manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Booking software (e.g., Jane App, Square Appointments, or Vagaro)",
+        "Zapier or Make.com",
+        "Twilio (post-session rebooking SMS)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/post-appointment-review-rebooking-prompt/"
+    },
+    {
+      "id": "fitness-wellness/birthday-offer-automation",
+      "slug": "birthday-offer-automation",
+      "title": "Birthday Offer Automation",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Salon Owner",
+      "summary": "Members and clients automatically receive a personalized discount or offer during the week of their birthday, pulled directly from their profile…",
+      "steps": [
+        "Members and clients automatically receive a personalized discount or offer during the week of their birthday, pulled directly from their profile data, instead of the salon owner building a manual birthday list and remembering to send offers out every single month.",
+        "The offer arrives with enough lead time to actually plan a visit around it, and birthday campaigns consistently drive a noticeable spike in bookings during what would otherwise be an ordinary week, since the personal touch of being remembered genuinely moves clients to book."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a salon owner, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Booking software (e.g., Jane App, Square Appointments, or Vagaro)",
+        "Zapier or Make.com",
+        "Mailchimp or Klaviyo (email offer)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/birthday-offer-automation/"
+    },
+    {
+      "id": "fitness-wellness/referral-reward-tracking-automation",
+      "slug": "referral-reward-tracking-automation",
+      "title": "Referral Reward Tracking Automation",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Loyalty Coordinator",
+      "summary": "When a referred friend signs up, the system automatically detects the connection and triggers the promised reward, a free class or a discount, to…",
+      "steps": [
+        "When a referred friend signs up, the system automatically detects the connection and triggers the promised reward, a free class or a discount, to the referring member without the loyalty coordinator manually tracking referrals in a spreadsheet and remembering who's owed what.",
+        "Members who get their reward promptly and without having to ask for it are far more likely to refer again, and referral volume climbs measurably once the reward is reliable and automatic instead of an informal perk that quietly stops working once follow-through gets inconsistent."
+      ],
+      "manualProcess": "Handled by hand, a loyalty coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Referral platform (e.g., ReferralCandy) or Zapier custom build",
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Twilio (referral confirmation texts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/referral-reward-tracking-automation/"
+    },
+    {
+      "id": "fitness-wellness/failed-payment-recovery-sequence",
+      "slug": "failed-payment-recovery-sequence",
+      "title": "Failed Payment Recovery Sequence",
+      "industry": "fitness-wellness",
+      "category": "billing-finance",
+      "role": "Billing Coordinator",
+      "summary": "A declined membership payment automatically triggers a retry along with a notification to the member with a direct link to update their card, before…",
+      "steps": [
+        "A declined membership payment automatically triggers a retry along with a notification to the member with a direct link to update their card, before the account is suspended, instead of the billing coordinator manually chasing down every failed charge and calling members whose cards simply expired.",
+        "Most failed payments recover on their own once the member gets a clear, easy way to fix it, and the billing coordinator's time goes toward the small number of accounts that genuinely need a personal follow-up instead of every single declined charge in the batch."
+      ],
+      "manualProcess": "Without a system in place, a billing coordinator has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Stripe (billing data)",
+        "Zapier or Make.com",
+        "Twilio (SMS reminders)",
+        "Mailchimp (email reminder backup)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/failed-payment-recovery-sequence/"
+    },
+    {
+      "id": "fitness-wellness/instructor-stylist-schedule-change-alert",
+      "slug": "instructor-stylist-schedule-change-alert",
+      "title": "Instructor/Stylist Schedule Change Alert",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Scheduling Manager",
+      "summary": "If an instructor or stylist's schedule changes, every client with a booking on that schedule is automatically notified with options to rebook…",
+      "steps": [
+        "If an instructor or stylist's schedule changes, every client with a booking on that schedule is automatically notified with options to rebook, instead of a client finding out only when they arrive and discover their usual person isn't in.",
+        "The scheduling manager no longer has to manually cross-reference every affected booking against the schedule change and call each client individually, and clients consistently appreciate the heads-up even when the news itself, a swapped instructor, isn't what they were hoping for."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a scheduling manager remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Studio management software (e.g., Mindbody or Pike13)",
+        "Zapier or Make.com",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/instructor-stylist-schedule-change-alert/"
+    },
+    {
+      "id": "fitness-wellness/new-member-assessment-scheduling-prompt",
+      "slug": "new-member-assessment-scheduling-prompt",
+      "title": "New Member Assessment Scheduling Prompt",
+      "industry": "fitness-wellness",
+      "category": "onboarding-intake",
+      "role": "Onboarding Coordinator",
+      "summary": "New members are automatically prompted within their first week to schedule an initial fitness assessment or consultation, increasing the odds they…",
+      "steps": [
+        "New members are automatically prompted within their first week to schedule an initial fitness assessment or consultation, increasing the odds they stick with their membership instead of paying for a gym they never quite figure out how to use.",
+        "The onboarding coordinator gets a list of new members who haven't yet scheduled their assessment past the first week, flagging them for a personal nudge, and members who complete an early assessment show meaningfully better long-term retention than members who join and are simply left to figure it out on their own."
+      ],
+      "manualProcess": "Without automation, this falls entirely on an onboarding coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/new-member-assessment-scheduling-prompt/"
+    },
+    {
+      "id": "fitness-wellness/class-capacity-overflow-notification",
+      "slug": "class-capacity-overflow-notification",
+      "title": "Class Capacity Overflow Notification",
+      "industry": "fitness-wellness",
+      "category": "scheduling-dispatch",
+      "role": "Group Fitness Director",
+      "summary": "When a popular class nears full capacity, staff are automatically alerted to consider adding another session, and members on a related interest list…",
+      "steps": [
+        "When a popular class nears full capacity, staff are automatically alerted to consider adding another session, and members on a related interest list are notified of the option, instead of the group fitness director only realizing a class needs a second time slot after weeks of members complaining they can never get a spot.",
+        "Popular classes stop turning away eager members simply because nobody was tracking capacity trends closely enough to catch it, and adding a second session becomes a proactive, data-backed decision instead of a reactive scramble after losing members to frustration."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a group fitness director, who has to track every step by hand across emails, spreadsheets, and sticky notes.",
+      "tools": [
+        "Studio management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Slack (staff outreach prompts)",
+        "Mailchimp or ActiveCampaign"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/class-capacity-overflow-notification/"
+    },
+    {
+      "id": "fitness-wellness/training-package-expiration-renewal-alert",
+      "slug": "training-package-expiration-renewal-alert",
+      "title": "Training Package Expiration Renewal Alert",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Client Success Coordinator",
+      "summary": "Clients nearing the end of a purchased personal training package automatically receive a renewal offer before their sessions run out, instead of the…",
+      "steps": [
+        "Clients nearing the end of a purchased personal training package automatically receive a renewal offer before their sessions run out, instead of the client success coordinator only realizing a package expired once the client stops showing up because they assumed training had simply ended.",
+        "Renewal offers timed to land a few sessions before the package runs dry catch the client while training is still an active part of their routine, converting far more renewals than an offer sent cold after weeks of no contact."
+      ],
+      "manualProcess": "Handled by hand, a client success coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Training app (e.g., Trainerize or TrueCoach)",
+        "Zapier or Make.com",
+        "Mailchimp or Klaviyo (email offer)",
+        "Stripe (billing data)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/training-package-expiration-renewal-alert/"
+    },
+    {
+      "id": "fitness-wellness/retail-restock-notification-for-members",
+      "slug": "retail-restock-notification-for-members",
+      "title": "Retail Restock Notification for Members",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Retail Manager",
+      "summary": "Members who asked about an out-of-stock retail item, supplements, apparel, equipment, automatically receive a notification the moment it's back in…",
+      "steps": [
+        "Members who asked about an out-of-stock retail item, supplements, apparel, equipment, automatically receive a notification the moment it's back in stock, instead of the retail manager relying on the member to happen to check back on their own.",
+        "Interest captured at the point of the original ask converts into an actual sale once the item is available again, recovering revenue that would otherwise simply be lost the moment a member walked away from an empty shelf and never thought about it again."
+      ],
+      "manualProcess": "Without automation, a retail manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/retail-restock-notification-for-members/"
+    },
+    {
+      "id": "fitness-wellness/milestone-achievement-celebration-automation",
+      "slug": "milestone-achievement-celebration-automation",
+      "title": "Milestone Achievement Celebration Automation",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Member Experience Manager",
+      "summary": "The automation automatically detects member milestones, a 100th check-in, a one-year anniversary, and sends a congratulatory message, sometimes…",
+      "steps": [
+        "The automation automatically detects member milestones, a 100th check-in, a one-year anniversary, and sends a congratulatory message, sometimes paired with a small reward, instead of the member experience manager relying on staff to happen to notice and mention a milestone in passing.",
+        "Recognizing progress consistently, regardless of who's working the front desk that day, keeps members feeling genuinely seen at a gym or studio rather than treated as just another account, and milestone recognition consistently ranks as one of the most appreciated small touches members mention when asked what keeps them coming back."
+      ],
+      "manualProcess": "Manually, a member experience manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Google Sheets (milestone tracking log)",
+        "Twilio (milestone congratulations text)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/milestone-achievement-celebration-automation/"
+    },
+    {
+      "id": "fitness-wellness/corporate-wellness-partner-usage-reporting",
+      "slug": "corporate-wellness-partner-usage-reporting",
+      "title": "Corporate Wellness Partner Usage Reporting",
+      "industry": "fitness-wellness",
+      "category": "reporting-analytics",
+      "role": "Corporate Wellness Manager",
+      "summary": "For businesses with a corporate wellness partnership, usage reports showing employee engagement are automatically compiled and sent to the partner…",
+      "steps": [
+        "For businesses with a corporate wellness partnership, usage reports showing employee engagement are automatically compiled and sent to the partner company on a set schedule, instead of the corporate wellness manager manually pulling attendance data and building a report by hand every reporting period.",
+        "Partner companies get consistent, professional visibility into whether their wellness benefit is actually being used, which matters directly to whether they renew the partnership, and the studio's own team spends that time on member experience instead of spreadsheet work."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a corporate wellness manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Google Sheets (progress tracking dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/corporate-wellness-partner-usage-reporting/"
+    },
+    {
+      "id": "fitness-wellness/cancellation-retention-offer-automation",
+      "slug": "cancellation-retention-offer-automation",
+      "title": "Cancellation Retention Offer Automation",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Cancellation Specialist",
+      "summary": "When a member submits an online cancellation request, an automatic retention offer, a pause option or a discount, is presented before the…",
+      "steps": [
+        "When a member submits an online cancellation request, an automatic retention offer, a pause option or a discount, is presented before the cancellation is finalized, giving the cancellation specialist a real chance to save the membership instead of the request simply processing straight through with no opportunity to intervene.",
+        "A meaningful share of members canceling for temporary reasons, a busy season, a tight month, take the pause option once it's actually offered, and membership churn drops once every cancellation request runs through a genuine save attempt instead of a same-click confirmation."
+      ],
+      "manualProcess": "The manual approach means a cancellation specialist handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Stripe (billing data)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/cancellation-retention-offer-automation/"
+    },
+    {
+      "id": "fitness-wellness/new-program-launch-announcement",
+      "slug": "new-program-launch-announcement",
+      "title": "New Program Launch Announcement",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Program Director",
+      "summary": "When a new class or program is added to the schedule, members whose profile matches the relevant interest tags automatically receive an email or…",
+      "steps": [
+        "When a new class or program is added to the schedule, members whose profile matches the relevant interest tags automatically receive an email or text announcement, instead of the program director sending a single generic blast to the entire member list regardless of whether a given member has ever shown interest in that type of class.",
+        "A new yoga program reaches members who've actually favorited yoga classes before rather than getting lost in a general newsletter, and new program launches fill faster once the announcement lands specifically with the members most likely to actually show up."
+      ],
+      "manualProcess": "The manual approach means a program director handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/new-program-launch-announcement/"
+    },
+    {
+      "id": "fitness-wellness/annual-health-intake-renewal-reminder",
+      "slug": "annual-health-intake-renewal-reminder",
+      "title": "Annual Health Intake Renewal Reminder",
+      "industry": "fitness-wellness",
+      "category": "compliance-documents",
+      "role": "Compliance Coordinator",
+      "summary": "Clients with a health or medical intake form on file are automatically reminded on an annual basis to review and update it before their next…",
+      "steps": [
+        "Clients with a health or medical intake form on file are automatically reminded on an annual basis to review and update it before their next session, instead of the compliance coordinator relying on a client to remember to mention a new medication or injury on their own.",
+        "Keeping intake data current genuinely matters for client safety, especially in a training or spa setting where a new condition can change what's appropriate, and this simple annual reminder closes a gap that used to depend entirely on the client happening to think of it."
+      ],
+      "manualProcess": "Handled by hand, a compliance coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Jotform (health intake form)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/annual-health-intake-renewal-reminder/"
+    },
+    {
+      "id": "fitness-wellness/staff-certification-expiration-tracker",
+      "slug": "staff-certification-expiration-tracker",
+      "title": "Staff Certification Expiration Tracker",
+      "industry": "fitness-wellness",
+      "category": "hr-team",
+      "role": "HR & Certification Manager",
+      "summary": "The automation internally tracks instructor and trainer certification expiration dates and alerts management well ahead of each renewal deadline…",
+      "steps": [
+        "The automation internally tracks instructor and trainer certification expiration dates and alerts management well ahead of each renewal deadline, instead of the HR and certification manager discovering a lapsed certification only when a liability question comes up or an insurance audit asks for proof.",
+        "Every instructor's certification status is visible on a single dashboard rather than scattered across individual personnel files, and the studio avoids the real liability exposure of an instructor unknowingly teaching on an expired credential."
+      ],
+      "manualProcess": "Done manually, a hr & certification manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Google Sheets (progress tracking dashboard)",
+        "Slack (staff outreach prompts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/staff-certification-expiration-tracker/"
+    },
+    {
+      "id": "fitness-wellness/nutrition-coaching-check-in-automation",
+      "slug": "nutrition-coaching-check-in-automation",
+      "title": "Nutrition Coaching Check-In Automation",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Nutrition Coach",
+      "summary": "Clients enrolled in nutrition coaching automatically receive scheduled check-in prompts asking them to log meals or progress, keeping them engaged…",
+      "steps": [
+        "Clients enrolled in nutrition coaching automatically receive scheduled check-in prompts asking them to log meals or progress, keeping them engaged between sessions instead of a nutrition coach only hearing from a client once every couple of weeks at the scheduled appointment.",
+        "Consistent between-session engagement gives the nutrition coach far more data to actually work with, and clients who check in regularly show better adherence to their plan than clients whose only touchpoint is the session itself, exactly the kind of accountability nutrition coaching is supposed to provide."
+      ],
+      "manualProcess": "Done manually, a nutrition coach has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Coaching platform (e.g., Practice or Paperbell)",
+        "Zapier or Make.com",
+        "Jotform or Typeform (weekly check-in)",
+        "Twilio (adherence check-in nudges)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/nutrition-coaching-check-in-automation/"
+    },
+    {
+      "id": "fitness-wellness/guest-pass-follow-up-sequence",
+      "slug": "guest-pass-follow-up-sequence",
+      "title": "Guest Pass Follow-Up Sequence",
+      "industry": "fitness-wellness",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Manager",
+      "summary": "Someone who uses a guest pass automatically receives a follow-up offer a few days later inviting them to join as a full member, timed while their…",
+      "steps": [
+        "Someone who uses a guest pass automatically receives a follow-up offer a few days later inviting them to join as a full member, timed while their experience is still fresh, instead of the sales manager relying on the guest to walk back in on their own initiative.",
+        "A guest who had a genuinely good first visit is far more receptive to a join offer within the week than months later once the experience has faded, and guest pass conversion rates climb meaningfully once the follow-up happens automatically and on time every single time."
+      ],
+      "manualProcess": "The manual approach means a sales manager handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Mailchimp or Klaviyo (email offer)",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/guest-pass-follow-up-sequence/"
+    },
+    {
+      "id": "fitness-wellness/body-composition-progress-report-automation",
+      "slug": "body-composition-progress-report-automation",
+      "title": "Body Composition Progress Report Automation",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Health Coach",
+      "summary": "After a scheduled body composition scan, the results are automatically compiled into a simple, easy-to-read progress report and emailed to the…",
+      "steps": [
+        "After a scheduled body composition scan, the results are automatically compiled into a simple, easy-to-read progress report and emailed to the member, showing change over time instead of the health coach manually building a comparison report for every scanned member.",
+        "Members can see their own trend line building visit after visit rather than a single disconnected number each time, and visible progress delivered automatically and consistently is one of the strongest drivers of continued engagement a program like this has."
+      ],
+      "manualProcess": "Left to a person, this means a health coach re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.",
+      "tools": [
+        "Body composition scanner integration (e.g., InBody)",
+        "Zapier or Make.com",
+        "Google Sheets (progress tracking dashboard)",
+        "Mailchimp or ActiveCampaign"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "Google Sheets",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/body-composition-progress-report-automation/"
+    },
+    {
+      "id": "fitness-wellness/substitute-instructor-advance-notification",
+      "slug": "substitute-instructor-advance-notification",
+      "title": "Substitute Instructor Advance Notification",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Instructor Coordinator",
+      "summary": "If the regularly scheduled instructor for a class is swapped for a substitute, every member booked into that class automatically receives a heads-up…",
+      "steps": [
+        "If the regularly scheduled instructor for a class is swapped for a substitute, every member booked into that class automatically receives a heads-up notification ahead of time, instead of members finding out only when they arrive and discover someone unfamiliar teaching.",
+        "The instructor coordinator no longer has to manually track down and notify every affected booking by hand, and members consistently appreciate the advance notice, even when it doesn't change their decision to attend, simply because nobody likes an unexplained surprise at the front of the room."
+      ],
+      "manualProcess": "Without this system, an instructor coordinator manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Studio management software (e.g., Mindbody or Pike13)",
+        "Zapier or Make.com",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/substitute-instructor-advance-notification/"
+    },
+    {
+      "id": "fitness-wellness/membership-freeze-expiration-reminder",
+      "slug": "membership-freeze-expiration-reminder",
+      "title": "Membership Freeze Expiration Reminder",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Membership Coordinator",
+      "summary": "Members who placed their membership on a temporary freeze automatically receive a reminder before the freeze period ends and billing is set to…",
+      "steps": [
+        "Members who placed their membership on a temporary freeze automatically receive a reminder before the freeze period ends and billing is set to resume, instead of a member being surprised by a charge they'd forgotten was coming back.",
+        "The membership coordinator no longer has to manually track every active freeze and its end date, and members who get a clear heads-up before billing resumes are far less likely to call in confused or upset about a charge that was actually agreed to months earlier."
+      ],
+      "manualProcess": "Manually, a membership coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Twilio (SMS reminders)",
+        "Stripe (billing data)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/membership-freeze-expiration-reminder/"
+    },
+    {
+      "id": "fitness-wellness/group-challenge-progress-update-automation",
+      "slug": "group-challenge-progress-update-automation",
+      "title": "Group Challenge Progress Update Automation",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Group Fitness Director",
+      "summary": "Members enrolled in a fitness challenge automatically receive periodic updates on their progress and where they stand on the leaderboard, keeping…",
+      "steps": [
+        "Members enrolled in a fitness challenge automatically receive periodic updates on their progress and where they stand on the leaderboard, keeping motivation and engagement high instead of a challenge quietly losing steam once the initial excitement of signing up fades.",
+        "The group fitness director no longer has to manually calculate and post leaderboard standings, and challenges that used to see participation drop off sharply after the first week hold engagement much better once members get regular, automatic visibility into how close they are to the top."
+      ],
+      "manualProcess": "Left to a person, this means a group fitness director re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Google Sheets (progress tracking dashboard)",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/group-challenge-progress-update-automation/"
+    },
+    {
+      "id": "fitness-wellness/post-service-product-recommendation-automation",
+      "slug": "post-service-product-recommendation-automation",
+      "title": "Post-Service Product Recommendation Automation",
+      "industry": "fitness-wellness",
+      "category": "lead-follow-up-sales",
+      "role": "Retail Manager",
+      "summary": "Based on the specific service a client received, they automatically get a follow-up email recommending relevant retail products to help maintain the…",
+      "steps": [
+        "Based on the specific service a client received, they automatically get a follow-up email recommending relevant retail products to help maintain the results at home, instead of the retail manager relying on the service provider to remember to mention products during a rushed appointment.",
+        "Recommendations are tailored to the actual service performed, a specific shampoo for a color treatment or a particular recovery product for a deep tissue massage, and retail attach rates climb once the recommendation reaches the client at exactly the moment they're thinking about maintaining their results."
+      ],
+      "manualProcess": "The manual approach means a retail manager handles each case reactively, after someone has already noticed something went wrong. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Booking software (e.g., Jane App, Square Appointments, or Vagaro)",
+        "Zapier or Make.com",
+        "Mailchimp or Klaviyo (email offer)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/post-service-product-recommendation-automation/"
+    },
+    {
+      "id": "fitness-wellness/facility-tour-follow-up-sequence",
+      "slug": "facility-tour-follow-up-sequence",
+      "title": "Facility Tour Follow-Up Sequence",
+      "industry": "fitness-wellness",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Coordinator",
+      "summary": "After a prospect tours the facility but doesn't sign up on the spot, they automatically receive a follow-up sequence over the following week…",
+      "steps": [
+        "After a prospect tours the facility but doesn't sign up on the spot, they automatically receive a follow-up sequence over the following week addressing common hesitations, price, schedule flexibility, whether the classes are actually beginner-friendly, instead of the sales coordinator only following up once with a single generic email before giving up on the lead.",
+        "A tour that didn't convert immediately isn't necessarily a lost prospect, and a well-paced follow-up sequence consistently recovers a meaningful share of tours that would otherwise have simply gone cold."
+      ],
+      "manualProcess": "The manual approach means a sales coordinator handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/facility-tour-follow-up-sequence/"
+    },
+    {
+      "id": "fitness-wellness/equipment-maintenance-scheduling-automation",
+      "slug": "equipment-maintenance-scheduling-automation",
+      "title": "Equipment Maintenance Scheduling Automation",
+      "industry": "fitness-wellness",
+      "category": "operations-inventory",
+      "role": "Facilities Manager",
+      "summary": "Gym equipment is automatically flagged for scheduled maintenance based on usage hours or elapsed time since the last service, preventing breakdowns…",
+      "steps": [
+        "Gym equipment is automatically flagged for scheduled maintenance based on usage hours or elapsed time since the last service, preventing breakdowns from being caught only after a member reports a machine that's already broken.",
+        "The facilities manager gets a proactive maintenance schedule instead of a purely reactive one, and equipment downtime drops noticeably once servicing happens on a predictable schedule tied to actual usage rather than whenever someone happens to notice something's making an odd noise."
+      ],
+      "manualProcess": "Done manually, a facilities manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Slack (staff outreach prompts)",
+        "Google Sheets (progress tracking dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/equipment-maintenance-scheduling-automation/"
+    },
+    {
+      "id": "fitness-wellness/post-cancellation-exit-survey-automation",
+      "slug": "post-cancellation-exit-survey-automation",
+      "title": "Post-Cancellation Exit Survey Automation",
+      "industry": "fitness-wellness",
+      "category": "reviews-feedback",
+      "role": "Retention Specialist",
+      "summary": "Members who cancel automatically receive a short survey asking why, with the responses feeding directly into a report management uses to improve…",
+      "steps": [
+        "Members who cancel automatically receive a short survey asking why, with the responses feeding directly into a report management uses to improve retention, instead of a cancellation simply closing out with no insight into what actually drove the decision.",
+        "The retention specialist can spot real patterns, a specific class getting cut, a pricing complaint that keeps coming up, that a handful of individual cancellations would never reveal on their own, and those patterns turn into concrete fixes instead of the same churn reasons quietly repeating month after month unnoticed."
+      ],
+      "manualProcess": "Left to a person, this means a retention specialist re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.",
+      "tools": [
+        "Jotform or Typeform (weekly check-in)",
+        "Zapier or Make.com",
+        "Google Sheets (progress tracking dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/post-cancellation-exit-survey-automation/"
+    },
+    {
+      "id": "fitness-wellness/program-completion-certificate-automation",
+      "slug": "program-completion-certificate-automation",
+      "title": "Program Completion Certificate Automation",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Member Experience Manager",
+      "summary": "When a member finishes a multi-week program, such as a couch-to-5K series, they automatically receive a completion certificate along with a…",
+      "steps": [
+        "When a member finishes a multi-week program, such as a couch-to-5K series, they automatically receive a completion certificate along with a suggestion for their next program, instead of a member finishing a genuinely meaningful milestone with nothing but silence to mark it.",
+        "The member experience manager can see completion rates by program, and members who receive real recognition at the finish line, plus a clear next step to keep the momentum going, are far more likely to enroll in whatever comes next instead of quietly drifting away once the original goal is reached."
+      ],
+      "manualProcess": "Handled by hand, a member experience manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/program-completion-certificate-automation/"
+    },
+    {
+      "id": "fitness-wellness/personal-trainer-matching-automation",
+      "slug": "personal-trainer-matching-automation",
+      "title": "Personal Trainer Matching Automation",
+      "industry": "fitness-wellness",
+      "category": "onboarding-intake",
+      "role": "Sales Manager",
+      "summary": "New members interested in personal training are automatically matched and introduced to a trainer based on their stated goals and schedule…",
+      "steps": [
+        "New members interested in personal training are automatically matched and introduced to a trainer based on their stated goals and schedule availability, instead of a manual front-desk handoff that often depends entirely on which trainer happens to be standing around when the interested member walks up.",
+        "Matches based on actual goal alignment and real schedule overlap lead to a stronger first session and a better shot at a long-term training relationship than a match made purely on who was available in the moment."
+      ],
+      "manualProcess": "The manual approach means a sales manager handles each case reactively, after someone has already noticed something went wrong.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Jotform (accountability check-in form)",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/personal-trainer-matching-automation/"
+    },
+    {
+      "id": "fitness-wellness/studio-utilization-report-automation",
+      "slug": "studio-utilization-report-automation",
+      "title": "Studio Utilization Report Automation",
+      "industry": "fitness-wellness",
+      "category": "reporting-analytics",
+      "role": "Studio Manager",
+      "summary": "The automation automatically compiles room and studio usage data to identify underused time slots, giving management data-backed opportunities for…",
+      "steps": [
+        "The automation automatically compiles room and studio usage data to identify underused time slots, giving management data-backed opportunities for adding new classes instead of scheduling decisions being made purely on instinct about which times \"feel\" slow.",
+        "A studio manager can see exactly which rooms sit empty at which hours across the week, turning a vague sense that \"mornings feel quiet\" into a specific, actionable opportunity to test a new class in a slot that's actually available and underused."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a studio manager remembering to check in, update records, and follow up, with no safety net if something slips. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Studio management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Google Sheets (progress tracking dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/studio-utilization-report-automation/"
+    },
+    {
+      "id": "fitness-wellness/app-login-inactivity-re-engagement-nudge",
+      "slug": "app-login-inactivity-re-engagement-nudge",
+      "title": "App Login Inactivity Re-Engagement Nudge",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Retention Specialist",
+      "summary": "Members who haven't logged into the booking app in a while automatically receive a re-engagement message highlighting new classes or features they…",
+      "steps": [
+        "Members who haven't logged into the booking app in a while automatically receive a re-engagement message highlighting new classes or features they may have missed, catching a quietly disengaging member through their app behavior before it shows up as a missed check-in at the front door.",
+        "Reminding a member what's new, rather than a generic \"we miss you\" message, gives them an actual reason to open the app again, and this kind of early, specific nudge consistently recovers engagement that a later, blunter win-back message would have missed entirely."
+      ],
+      "manualProcess": "Left to a person, this means a retention specialist re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/app-login-inactivity-re-engagement-nudge/"
+    },
+    {
+      "id": "fitness-wellness/treatment-specific-prep-instruction-delivery",
+      "slug": "treatment-specific-prep-instruction-delivery",
+      "title": "Treatment-Specific Prep Instruction Delivery",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Spa Manager",
+      "summary": "Ahead of a specific spa treatment, clients automatically receive relevant prep instructions, arriving early, avoiding sun exposure, skipping certain…",
+      "steps": [
+        "Ahead of a specific spa treatment, clients automatically receive relevant prep instructions, arriving early, avoiding sun exposure, skipping certain products, tailored to that particular service, instead of the spa manager relying on the client to remember verbal instructions given weeks earlier at booking.",
+        "Clients who arrive properly prepped get a noticeably better treatment result and experience, and the spa avoids the awkward situation of a client showing up unprepared for a service that genuinely needed prep to go well."
+      ],
+      "manualProcess": "Without a system in place, a spa manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Booking software (e.g., Jane App, Square Appointments, or Vagaro)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/treatment-specific-prep-instruction-delivery/"
+    },
+    {
+      "id": "fitness-wellness/annual-health-screening-referral-reminder",
+      "slug": "annual-health-screening-referral-reminder",
+      "title": "Annual Health Screening Referral Reminder",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Wellness Director",
+      "summary": "Members due for a routine annual health screening automatically receive a referral reminder pointing them to a partnered health provider, instead of…",
+      "steps": [
+        "Members due for a routine annual health screening automatically receive a referral reminder pointing them to a partnered health provider, instead of the wellness director's outreach depending entirely on remembering which members are due and when.",
+        "Members appreciate a wellness-minded reminder that goes beyond just fitness, and a partnership referral program like this deepens the relationship between the studio and its health provider partners while genuinely helping members stay on top of care they might otherwise put off indefinitely."
+      ],
+      "manualProcess": "Left unautomated, a wellness director spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/annual-health-screening-referral-reminder/"
+    },
+    {
+      "id": "fitness-wellness/class-pack-balance-low-reminder",
+      "slug": "class-pack-balance-low-reminder",
+      "title": "Class Pack Balance Low Reminder",
+      "industry": "fitness-wellness",
+      "category": "marketing-retention",
+      "role": "Billing Coordinator",
+      "summary": "Members using a punch card or class pack automatically get notified as their remaining balance runs low, prompting a timely repurchase before it…",
+      "steps": [
+        "Members using a punch card or class pack automatically get notified as their remaining balance runs low, prompting a timely repurchase before it hits zero, instead of the billing coordinator only learning a pack is empty when the member is turned away at check-in with no credits left.",
+        "Members who get an early low-balance warning repurchase at a far higher rate than members who discover they're out mid-checkout, and revenue from pack renewals becomes far more predictable once the reminder happens automatically at the same threshold every time."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a billing coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Studio management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/class-pack-balance-low-reminder/"
+    },
+    {
+      "id": "fitness-wellness/first-30-days-engagement-tracker",
+      "slug": "first-30-days-engagement-tracker",
+      "title": "First 30 Days Engagement Tracker",
+      "industry": "fitness-wellness",
+      "category": "reporting-analytics",
+      "role": "Onboarding Coordinator",
+      "summary": "The automation tracks a new member's check-in frequency during their critical first 30 days and automatically triggers extra outreach if engagement…",
+      "steps": [
+        "The automation tracks a new member's check-in frequency during their critical first 30 days and automatically triggers extra outreach if engagement is low, since early inactivity is one of the strongest predictors of an eventual cancellation.",
+        "The onboarding coordinator gets a live list of new members trending toward disengagement while there's still real time to intervene, and catching a slow start in week two instead of discovering it in month three's cancellation report saves memberships that would otherwise quietly lapse without anyone noticing until it's too late."
+      ],
+      "manualProcess": "Handled by hand, an onboarding coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Twilio (SMS re-engagement)",
+        "Google Sheets (progress tracking dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/first-30-days-engagement-tracker/"
+    },
+    {
+      "id": "fitness-wellness/holiday-hours-mass-notification",
+      "slug": "holiday-hours-mass-notification",
+      "title": "Holiday Hours Mass Notification",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Front Desk Lead",
+      "summary": "Ahead of a holiday closure or reduced-hours schedule, every member automatically receives a mass notification so no one shows up to a locked door…",
+      "steps": [
+        "Ahead of a holiday closure or reduced-hours schedule, every member automatically receives a mass notification so no one shows up to a locked door, instead of the front desk lead posting a sign on the entrance that only reaches whoever happens to physically walk up and read it.",
+        "The notification goes out with enough lead time for members to actually plan around it, and complaints about showing up to a closed facility drop to essentially zero once every member gets the same clear notice well ahead of the actual closure."
+      ],
+      "manualProcess": "The manual approach means a front desk lead handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign",
+        "Twilio (SMS reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/holiday-hours-mass-notification/"
+    },
+    {
+      "id": "fitness-wellness/trainer-continuing-education-deadline-reminder",
+      "slug": "trainer-continuing-education-deadline-reminder",
+      "title": "Trainer Continuing Education Deadline Reminder",
+      "industry": "fitness-wellness",
+      "category": "hr-team",
+      "role": "HR & Certification Manager",
+      "summary": "Separate from license renewal itself, the automation reminds trainers of required continuing education hours ahead of their recertification…",
+      "steps": [
+        "Separate from license renewal itself, the automation reminds trainers of required continuing education hours ahead of their recertification deadline, giving the HR and certification manager a second layer of tracking beyond just the certification expiration date.",
+        "Trainers who fall behind on CE hours get flagged with enough lead time to actually catch up before the deadline arrives, instead of a last-minute scramble to cram in required hours, and the studio avoids the operational disruption of a trainer suddenly unable to teach because their CE requirement quietly lapsed unnoticed."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a hr & certification manager remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Gym management software (e.g., Mindbody or Glofox)",
+        "Zapier or Make.com",
+        "Google Sheets (progress tracking dashboard)",
+        "Slack (staff outreach prompts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/trainer-continuing-education-deadline-reminder/"
+    }
+  ]
+}

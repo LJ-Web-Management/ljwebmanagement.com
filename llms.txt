@@ -28,6 +28,15 @@ LJ Web Management is based in Lockport, Illinois, and works with businesses acro
 - [Contact Us](https://www.ljwebmanagement.com/contactus/): General contact information and inquiry form.
 - [Blog](https://blog.ljwebmanagement.com/): Daily articles on AI and business automation.
 
+## Developers and AI Agents
+
+- [LJ Web Management Developer API and Docs](https://www.ljwebmanagement.com/developers/): Free, read-only JSON API (no API key), example requests, error format, and every machine-readable file.
+- [API index](https://www.ljwebmanagement.com/api/v1/index.json): JSON list of every endpoint: company facts, categories, industries with full automation detail, solutions, integrations, FAQ, and glossary.
+- [OpenAPI description](https://www.ljwebmanagement.com/openapi.json): OpenAPI 3 spec with an operation ID and typed schema for every endpoint, ready to use as LLM function-calling tools.
+- [API catalog](https://www.ljwebmanagement.com/.well-known/api-catalog): RFC 9727 linkset pointing to the OpenAPI spec and docs.
+- Markdown: every page is available as Markdown. Send `Accept: text/markdown` to any page URL, or add `index.md` to it (for example https://www.ljwebmanagement.com/index.md).
+- [Sitemap](https://www.ljwebmanagement.com/sitemap.xml): every indexable page.
+
 ## Automations by Business Function
 
 - [Lead Follow-Up & Sales](https://www.ljwebmanagement.com/automations/category/lead-follow-up-sales/): Respond to every lead in minutes, chase quotes automatically, and keep deals from going quiet. (127 automations)
@@ -132,7 +141,7 @@ LJ Web Management is based in Lockport, Illinois, and works with businesses acro
 
 - [llms-full.txt](https://www.ljwebmanagement.com/llms-full.txt): Extended reference with every business function, industry, and integration in the catalog, the solution descriptions, and the full FAQ, in plain text for AI systems and answer engines.
 - [/crawl](https://www.ljwebmanagement.com/crawl/): Plain-text rendering of llms-full.txt for AI crawlers that request a specific crawl path.
-- [openapi.json](https://www.ljwebmanagement.com/openapi.json): OpenAPI description of this site's read-only reference endpoints (llms.txt, llms-full.txt, sitemap.xml, /crawl/, /faq/, /automations/).
+- [openapi.json](https://www.ljwebmanagement.com/openapi.json): OpenAPI description of the read-only JSON API at /api/v1/.
 - [/.well-known/ai-plugin.json](https://www.ljwebmanagement.com/.well-known/ai-plugin.json): AI tool manifest pointing to the OpenAPI description above.
 
 ## Company Info

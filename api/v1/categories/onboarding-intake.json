@@ -1,0 +1,390 @@
+{
+  "slug": "onboarding-intake",
+  "name": "Client Onboarding & Intake",
+  "summary": "Turn a signed deal into a smooth start with forms, documents, welcome sequences, and kickoff.",
+  "description": "The first two weeks of a relationship set the tone for everything after. They are also where most teams improvise, chasing paperwork by email and retyping intake details into three different systems. These automations collect what you need up front, sync it to the right places, send a welcome sequence that answers questions before they are asked, and schedule the kickoff, so every new client gets the same organized experience.",
+  "url": "https://www.ljwebmanagement.com/automations/category/onboarding-intake/",
+  "automationCount": 38,
+  "automations": [
+    {
+      "id": "automotive/sales-to-service-handoff-first-visit-pre-scheduling",
+      "title": "Sales-to-Service Handoff & First Visit Pre-Scheduling",
+      "industry": "automotive",
+      "category": "onboarding-intake",
+      "role": "Service Advisor",
+      "summary": "Right after a vehicle purchase closes, the new owner is automatically introduced to the service department by name, with their first maintenance…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/sales-to-service-handoff-first-visit-pre-scheduling/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "dental-practices/new-patient-onboarding-welcome-sequence",
+      "title": "New Patient Onboarding & Welcome Sequence",
+      "industry": "dental-practices",
+      "category": "onboarding-intake",
+      "role": "Practice Owner",
+      "summary": "When a new patient books their first appointment, this automation sends an immediate welcome email from the dentist with a personal introduction, a…",
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/new-patient-onboarding-welcome-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/dental-practices.json"
+    },
+    {
+      "id": "dental-practices/new-patient-paperwork-pre-fill-system",
+      "title": "New Patient Paperwork Pre-Fill System",
+      "industry": "dental-practices",
+      "category": "onboarding-intake",
+      "role": "Front Desk Supervisor",
+      "summary": "The moment a new patient books their first appointment online, this automation automatically sends them a digital intake packet, health history…",
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/new-patient-paperwork-pre-fill-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/dental-practices.json"
+    },
+    {
+      "id": "ecommerce-retail/first-time-buyer-welcome-series",
+      "title": "First-Time Buyer Welcome Series",
+      "industry": "ecommerce-retail",
+      "category": "onboarding-intake",
+      "role": "Customer Marketing Manager",
+      "summary": "The moment a customer completes their very first order in Shopify or WooCommerce, this automation enrolls them in a dedicated welcome series through…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/first-time-buyer-welcome-series/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "education/student-onboarding-drip-content-delivery-system",
+      "title": "Student Onboarding & Drip Content Delivery System",
+      "industry": "education",
+      "category": "onboarding-intake",
+      "role": "Online Course Creator",
+      "summary": "The moment a student purchases a course, they are automatically enrolled, sent a welcome email with getting-started instructions, and added to a…",
+      "url": "https://www.ljwebmanagement.com/automations/education/student-onboarding-drip-content-delivery-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/education.json"
+    },
+    {
+      "id": "faith-based-organizations/group-interest-matching-attendance-follow-up-system",
+      "title": "Group Interest Matching & Attendance Follow-Up System",
+      "industry": "faith-based-organizations",
+      "category": "onboarding-intake",
+      "role": "Small Groups Director",
+      "summary": "When someone expresses interest in joining a small group (through a weekend service card, the app, or the website) this automation captures their…",
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/group-interest-matching-attendance-follow-up-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/faith-based-organizations.json"
+    },
+    {
+      "id": "faith-based-organizations/small-group-sign-up-placement",
+      "title": "Small Group Sign-Up & Placement",
+      "industry": "faith-based-organizations",
+      "category": "onboarding-intake",
+      "role": "Small Groups Pastor",
+      "summary": "When someone signs up for a small group through the church's website, this automation automatically matches them to a group based on their stated…",
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/small-group-sign-up-placement/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/faith-based-organizations.json"
+    },
+    {
+      "id": "financial-services/new-client-welcome-coverage-gap-analysis-system",
+      "title": "New Client Welcome & Coverage Gap Analysis System",
+      "industry": "financial-services",
+      "category": "onboarding-intake",
+      "role": "Insurance Agent",
+      "summary": "When a new client's first policy is bound, this automation launches a welcome sequence that introduces the agency, explains how to file a claim, and…",
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/new-client-welcome-coverage-gap-analysis-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/financial-services.json"
+    },
+    {
+      "id": "fitness-wellness/new-member-onboarding-drip-sequence",
+      "title": "New Member Onboarding Drip Sequence",
+      "industry": "fitness-wellness",
+      "category": "onboarding-intake",
+      "role": "Gym Owner",
+      "summary": "The moment a new sign-up completes their first payment, this automation kicks off a structured onboarding sequence: a welcome email with facility…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/new-member-onboarding-drip-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/new-member-assessment-scheduling-prompt",
+      "title": "New Member Assessment Scheduling Prompt",
+      "industry": "fitness-wellness",
+      "category": "onboarding-intake",
+      "role": "Onboarding Coordinator",
+      "summary": "New members are automatically prompted within their first week to schedule an initial fitness assessment or consultation, increasing the odds they…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/new-member-assessment-scheduling-prompt/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/personal-trainer-matching-automation",
+      "title": "Personal Trainer Matching Automation",
+      "industry": "fitness-wellness",
+      "category": "onboarding-intake",
+      "role": "Sales Manager",
+      "summary": "New members interested in personal training are automatically matched and introduced to a trainer based on their stated goals and schedule…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/personal-trainer-matching-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "general-business/new-rep-onboarding-checklist-automation",
+      "title": "New Rep Onboarding Checklist Automation",
+      "industry": "general-business",
+      "category": "onboarding-intake",
+      "role": "Sales Trainer",
+      "summary": "The day a new sales hire's start date is entered into the HR system, Zapier spins up a full onboarding checklist: CRM and email accounts get…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/new-rep-onboarding-checklist-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/new-customer-onboarding-checklist-automation",
+      "title": "New Customer Onboarding Checklist Automation",
+      "industry": "general-business",
+      "category": "onboarding-intake",
+      "role": "Customer Success Manager",
+      "summary": "The moment a deal closes in the CRM, Zapier spins up a dedicated onboarding checklist in Asana or Trello covering every step from account setup to…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/new-customer-onboarding-checklist-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/automated-customer-onboarding-progress-nudges",
+      "title": "Automated Customer Onboarding Progress Nudges",
+      "industry": "general-business",
+      "category": "onboarding-intake",
+      "role": "Onboarding Specialist",
+      "summary": "Once a new customer's account is provisioned, a tracked onboarding checklist (profile setup, first key action, integration connected, first result…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/automated-customer-onboarding-progress-nudges/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "healthcare/new-patient-intake-ehr-sync-system",
+      "title": "New Patient Intake & EHR Sync System",
+      "industry": "healthcare",
+      "category": "onboarding-intake",
+      "role": "New Patient Coordinator",
+      "summary": "As soon as a new patient books their first appointment, this automation sends a secure digital intake packet 48 hours ahead of the visit, covering…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/new-patient-intake-ehr-sync-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/new-patient-intake-forms-insurance-pre-collection",
+      "title": "New Patient Intake Forms & Insurance Pre-Collection",
+      "industry": "healthcare",
+      "category": "onboarding-intake",
+      "role": "Intake Specialist",
+      "summary": "The moment a new patient books their first visit online, this automation immediately sends a secure digital intake packet covering demographics…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/new-patient-intake-forms-insurance-pre-collection/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/new-patient-welcome-orientation-sequence",
+      "title": "New Patient Welcome & Orientation Sequence",
+      "industry": "healthcare",
+      "category": "onboarding-intake",
+      "role": "Patient Engagement Specialist",
+      "summary": "Booking a first appointment automatically enrolls the new patient in a multi-touch welcome series managed by the patient engagement specialist: an…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/new-patient-welcome-orientation-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/patient-portal-registration-nudge-sequence",
+      "title": "Patient Portal Registration Nudge Sequence",
+      "industry": "healthcare",
+      "category": "onboarding-intake",
+      "role": "Patient Portal Administrator",
+      "summary": "Patients who complete a visit without activating their online portal account are automatically enrolled in a short nudge sequence managed by the…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/patient-portal-registration-nudge-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "home-services/post-first-job-customer-portal-access-automation",
+      "title": "Post-First-Job Customer Portal Access Automation",
+      "industry": "home-services",
+      "category": "onboarding-intake",
+      "role": "Customer Experience Manager",
+      "summary": "After a customer's first completed job, the automation automatically issues them access credentials to an online portal where they can view…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/post-first-job-customer-portal-access-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "legal/client-intake-to-crm-sync-system",
+      "title": "Client Intake to CRM Sync System",
+      "industry": "legal",
+      "category": "onboarding-intake",
+      "role": "New Client Coordinator",
+      "summary": "When a new client submits the firm's web intake form, this automation instantly creates a matching record in the CRM with their contact information…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/client-intake-to-crm-sync-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/client-intake-document-automation",
+      "title": "Client Intake Document Automation",
+      "industry": "legal",
+      "category": "onboarding-intake",
+      "role": "Case Manager",
+      "summary": "The moment a consultation is booked on Calendly, a Zapier workflow automatically sends the client a secure intake questionnaire through Jotform…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/client-intake-document-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/intake-to-task-checklist-automation",
+      "title": "Intake-to-Task Checklist Automation",
+      "industry": "legal",
+      "category": "onboarding-intake",
+      "role": "Office Administrator",
+      "summary": "The moment a new client completes an intake form in Jotform, the automation automatically generates a full checklist of internal setup tasks…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/intake-to-task-checklist-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/intake-decline-referral-notification",
+      "title": "Intake Decline & Referral Notification",
+      "industry": "legal",
+      "category": "onboarding-intake",
+      "role": "Intake Coordinator",
+      "summary": "When a prospective matter is declined during the conflict check or initial evaluation, the automation automatically sends a polite decline notice…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/intake-decline-referral-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "marketing-agencies/new-client-onboarding-sequence",
+      "title": "New Client Onboarding Sequence",
+      "industry": "marketing-agencies",
+      "category": "onboarding-intake",
+      "role": "New Business Coordinator",
+      "summary": "The moment a signed contract is detected through a DocuSign or PandaDoc webhook, this automation creates a new project folder in the shared drive…",
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/new-client-onboarding-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/marketing-agencies.json"
+    },
+    {
+      "id": "photography-videography/booking-to-contract-deposit-automation",
+      "title": "Booking-to-Contract & Deposit Automation",
+      "industry": "photography-videography",
+      "category": "onboarding-intake",
+      "role": "Studio Manager",
+      "summary": "When a client inquires and selects a package, this automation automatically sends the contract for e-signature along with a deposit invoice, and…",
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/booking-to-contract-deposit-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/photography-videography.json"
+    },
+    {
+      "id": "professional-services/client-onboarding-session-prep-automation",
+      "title": "Client Onboarding & Session Prep Automation",
+      "industry": "professional-services",
+      "category": "onboarding-intake",
+      "role": "Business Coach",
+      "summary": "New coaching clients are automatically sent a welcome packet, a discovery questionnaire, a pre-work assignment, and a self-scheduling link for their…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/client-onboarding-session-prep-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/engagement-letter-to-kickoff-automation",
+      "title": "Engagement Letter-to-Kickoff Automation",
+      "industry": "professional-services",
+      "category": "onboarding-intake",
+      "role": "Practice Manager",
+      "summary": "Once a client signs their engagement letter, this automation automatically creates the client's folder structure, schedules the kickoff call, sends…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/engagement-letter-to-kickoff-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/new-client-onboarding-welcome-sequence",
+      "title": "New Client Onboarding Welcome Sequence",
+      "industry": "professional-services",
+      "category": "onboarding-intake",
+      "role": "Client Success Manager",
+      "summary": "Once an engagement is signed, the client is automatically enrolled in a welcome sequence covering portal setup instructions, a document checklist…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/new-client-onboarding-welcome-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/new-client-risk-assessment-scheduling",
+      "title": "New Client Risk Assessment Scheduling",
+      "industry": "professional-services",
+      "category": "onboarding-intake",
+      "role": "Client Onboarding Specialist",
+      "summary": "A new client engagement automatically triggers scheduling of the required risk tolerance or needs assessment, ensuring it happens in the first week…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/new-client-risk-assessment-scheduling/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "property-management/new-resident-digital-welcome-packet",
+      "title": "New Resident Digital Welcome Packet",
+      "industry": "property-management",
+      "category": "onboarding-intake",
+      "role": "Resident Services Manager",
+      "summary": "As soon as a lease is signed, the new resident automatically receives a digital welcome packet covering move-in logistics, community rules, and key…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/new-resident-digital-welcome-packet/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/resident-portal-activation-reminder",
+      "title": "Resident Portal Activation Reminder",
+      "industry": "property-management",
+      "category": "onboarding-intake",
+      "role": "Resident Services Manager",
+      "summary": "New residents who haven't yet activated their online resident portal account automatically receive setup reminders with a direct activation link…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/resident-portal-activation-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "real-estate/move-in-coordination-new-resident-welcome-system",
+      "title": "Move-In Coordination & New Resident Welcome System",
+      "industry": "real-estate",
+      "category": "onboarding-intake",
+      "role": "Leasing Agent",
+      "summary": "Once a lease is signed, this automation sends the new resident a move-in checklist, utility setup instructions, parking and key pickup details, and…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/move-in-coordination-new-resident-welcome-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/instant-rental-application-screening-trigger",
+      "title": "Instant Rental Application Screening Trigger",
+      "industry": "real-estate",
+      "category": "onboarding-intake",
+      "role": "Leasing Manager",
+      "summary": "The moment a prospective tenant submits a rental application online, the automation instantly forwards the applicant's information to the screening…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/instant-rental-application-screening-trigger/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/landlord-rental-listing-onboarding-workflow",
+      "title": "Landlord Rental Listing Onboarding Workflow",
+      "industry": "real-estate",
+      "category": "onboarding-intake",
+      "role": "Rental Onboarding Specialist",
+      "summary": "When a landlord signs up to list a rental, the automation automatically walks them through a guided workflow collecting property details, photos…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/landlord-rental-listing-onboarding-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "senior-living-childcare/waitlist-to-enrollment-nurture-sequence",
+      "title": "Waitlist-to-Enrollment Nurture Sequence",
+      "industry": "senior-living-childcare",
+      "category": "onboarding-intake",
+      "role": "Enrollment Coordinator",
+      "summary": "Families who join a childcare or senior living waitlist are immediately enrolled in a periodic update sequence letting them know their approximate…",
+      "url": "https://www.ljwebmanagement.com/automations/senior-living-childcare/waitlist-to-enrollment-nurture-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/senior-living-childcare.json"
+    },
+    {
+      "id": "sports-recreation/team-registration-payment-schedule-distribution-system",
+      "title": "Team Registration, Payment & Schedule Distribution System",
+      "industry": "sports-recreation",
+      "category": "onboarding-intake",
+      "role": "Youth Sports League Director",
+      "summary": "When registration opens, the online form captures team information, roster details, division preference, and payment, and the system automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/team-registration-payment-schedule-distribution-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/sports-recreation.json"
+    },
+    {
+      "id": "sports-recreation/league-registration-to-team-placement",
+      "title": "League Registration-to-Team Placement",
+      "industry": "sports-recreation",
+      "category": "onboarding-intake",
+      "role": "League Coordinator",
+      "summary": "When a player registers for a league, this automation automatically collects their info and stated preferences, places them onto a team roster based…",
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/league-registration-to-team-placement/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/sports-recreation.json"
+    },
+    {
+      "id": "veterinary-practices/new-pet-owner-welcome-onboarding-series",
+      "title": "New Pet Owner Welcome & Onboarding Series",
+      "industry": "veterinary-practices",
+      "category": "onboarding-intake",
+      "role": "Client Care Specialist",
+      "summary": "The moment a new patient's first appointment is booked, the owner automatically enters a welcome series that sends a pre-visit email covering what…",
+      "url": "https://www.ljwebmanagement.com/automations/veterinary-practices/new-pet-owner-welcome-onboarding-series/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/veterinary-practices.json"
+    }
+  ]
+}

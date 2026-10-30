@@ -1,0 +1,143 @@
+{
+  "slug": "moving-storage",
+  "name": "Moving & Storage",
+  "summary": "Inventory-based quotes, crew routing, move-day updates, storage billing, and claims.",
+  "url": "https://www.ljwebmanagement.com/automations/moving-storage/",
+  "automationCount": 5,
+  "automations": [
+    {
+      "id": "moving-storage/instant-quote-from-inventory-list-system",
+      "slug": "instant-quote-from-inventory-list-system",
+      "title": "Instant Quote from Inventory List System",
+      "industry": "moving-storage",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Coordinator",
+      "summary": "When a customer fills out an online inventory of items to be moved, this automation automatically calculates an estimated quote based on total cubic…",
+      "steps": [
+        "When a customer fills out an online inventory of items to be moved, this automation automatically calculates an estimated quote based on total cubic footage, distance, and requested move date, and emails it to the customer within minutes instead of waiting on a callback from a sales rep.",
+        "Quotes above a certain size automatically flag a coordinator to follow up personally within the hour, since larger moves convert better with a human touch.",
+        "Customers get a real number to compare against competitors immediately, instead of bouncing to the next moving company's website while waiting for a callback."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a sales coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "MoveitPro or SmartMoving",
+        "Zapier or Make.com",
+        "Mailchimp or email",
+        "Google Sheets (rate calculator)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/moving-storage/instant-quote-from-inventory-list-system/"
+    },
+    {
+      "id": "moving-storage/crew-assignment-route-optimization-system",
+      "slug": "crew-assignment-route-optimization-system",
+      "title": "Crew Assignment & Route Optimization System",
+      "industry": "moving-storage",
+      "category": "scheduling-dispatch",
+      "role": "Dispatcher",
+      "summary": "Once a move is booked, this automation automatically assigns available crew members and a truck based on the job's estimated size and location…",
+      "steps": [
+        "Once a move is booked, this automation automatically assigns available crew members and a truck based on the job's estimated size and location, cross-checking crew certifications (piano moves, long-carry equipment) against what the job requires.",
+        "For days with multiple moves, it calculates the most efficient route between stops and sends the finalized schedule, including drive times and arrival windows, to the crew the night before.",
+        "What used to be an hour of manual scheduling and guesswork on a whiteboard now assembles itself as soon as a job is confirmed."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a dispatcher, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.",
+      "tools": [
+        "SmartMoving or MoveitPro",
+        "Google Maps API (route optimization)",
+        "Zapier or Make.com",
+        "Twilio (crew notifications)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/moving-storage/crew-assignment-route-optimization-system/"
+    },
+    {
+      "id": "moving-storage/move-day-status-update-system",
+      "slug": "move-day-status-update-system",
+      "title": "Move-Day Status Update System",
+      "industry": "moving-storage",
+      "category": "customer-communication",
+      "role": "Operations Manager",
+      "summary": "On move day, this automation automatically sends the customer status texts at key points, crew en route, loading started, loading complete, en route…",
+      "steps": [
+        "On move day, this automation automatically sends the customer status texts at key points, crew en route, loading started, loading complete, en route to destination, and unloading started, pulled directly from the crew's check-ins on their mobile app.",
+        "Customers who used to call the office every hour asking where their truck is now get the answer before they think to ask.",
+        "The office phone stops ringing with status-check calls during the busiest part of the day, freeing dispatch to actually manage the day's moves."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on an operations manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "SmartMoving",
+        "Twilio (SMS)",
+        "Zapier or Make.com",
+        "A crew mobile check-in app"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/moving-storage/move-day-status-update-system/"
+    },
+    {
+      "id": "moving-storage/storage-payment-lien-notice-automation",
+      "slug": "storage-payment-lien-notice-automation",
+      "title": "Storage Payment & Lien Notice Automation",
+      "industry": "moving-storage",
+      "category": "billing-finance",
+      "role": "Facility Manager",
+      "summary": "For storage facilities, this automation automatically sends a payment reminder five days before each unit's due date, and if payment is missed…",
+      "steps": [
+        "For storage facilities, this automation automatically sends a payment reminder five days before each unit's due date, and if payment is missed, escalates through a state-compliant notice sequence, a late notice at 10 days past due, then a formal lien notice at the legally required interval for that state, each generated and mailed or emailed automatically with the correct legal language.",
+        "The facility manager gets a dashboard of every account currently in the notice pipeline instead of manually tracking dozens of accounts on dozens of different timelines in a spreadsheet, and the facility stays compliant with state self-storage lien laws without anyone having to memorize the deadlines."
+      ],
+      "manualProcess": "Done manually, a facility manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "SiteLink or storEDGE",
+        "Zapier or Make.com",
+        "Stripe or a payment processor",
+        "Certified mail/email service for legal notices"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/moving-storage/storage-payment-lien-notice-automation/"
+    },
+    {
+      "id": "moving-storage/damaged-item-claims-intake-system",
+      "slug": "damaged-item-claims-intake-system",
+      "title": "Damaged Item Claims Intake System",
+      "industry": "moving-storage",
+      "category": "customer-communication",
+      "role": "Claims Coordinator",
+      "summary": "When a customer reports a damaged or lost item after a move, this automation automatically opens a claim file, sends the customer a simple form…",
+      "steps": [
+        "When a customer reports a damaged or lost item after a move, this automation automatically opens a claim file, sends the customer a simple form requesting photos and a description of the item and the damage, and routes the completed submission to the claims adjuster with the original move's date, crew, and inventory list already attached.",
+        "Claims that used to start as a scattered email thread with photos attached three messages deep now arrive as one structured file, and the adjuster can start the assessment immediately instead of chasing down move details from dispatch first."
+      ],
+      "manualProcess": "Left to a person, this means a claims coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "SmartMoving",
+        "Jotform (claims intake form)",
+        "Zapier or Make.com",
+        "Google Drive (claims file storage)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/moving-storage/damaged-item-claims-intake-system/"
+    }
+  ]
+}

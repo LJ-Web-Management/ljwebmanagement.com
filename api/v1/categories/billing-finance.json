@@ -1,0 +1,700 @@
+{
+  "slug": "billing-finance",
+  "name": "Billing, Payments & Finance",
+  "summary": "Invoices that send themselves, payment reminders that get paid, and books that close on time.",
+  "description": "Cash flow problems are often process problems: invoices that go out days late, reminders nobody sends, failed card payments nobody notices, and month-end closes built on spreadsheets. These automations connect the moment work is finished to the moment it is billed, follow up on unpaid balances politely and consistently, recover failed payments, and keep finance data reconciled as it happens.",
+  "url": "https://www.ljwebmanagement.com/automations/category/billing-finance/",
+  "automationCount": 69,
+  "automations": [
+    {
+      "id": "architecture-engineering/project-milestone-billing-trigger",
+      "title": "Project Milestone Billing Trigger",
+      "industry": "architecture-engineering",
+      "category": "billing-finance",
+      "role": "Principal",
+      "summary": "As a project reaches each contractually defined milestone, schematic design complete, design development complete, construction documents issued…",
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/project-milestone-billing-trigger/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/architecture-engineering.json"
+    },
+    {
+      "id": "automotive/body-shop-estimate-insurance-claims-coordination",
+      "title": "Body Shop Estimate & Insurance Claims Coordination",
+      "industry": "automotive",
+      "category": "billing-finance",
+      "role": "Body Shop Manager",
+      "summary": "Once a repair estimate is prepared in the body shop, it's automatically sent to the customer for review and, at the same time, submitted directly to…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/body-shop-estimate-insurance-claims-coordination/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "car-wash-auto-detailing/membership-renewal-failed-payment-recovery",
+      "title": "Membership Renewal & Failed Payment Recovery",
+      "industry": "car-wash-auto-detailing",
+      "category": "billing-finance",
+      "role": "Membership Manager",
+      "summary": "For unlimited wash club members, this automation automatically retries a failed monthly charge, texts the member a payment update link, and only…",
+      "url": "https://www.ljwebmanagement.com/automations/car-wash-auto-detailing/membership-renewal-failed-payment-recovery/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/car-wash-auto-detailing.json"
+    },
+    {
+      "id": "catering/final-invoice-gratuity-reconciliation",
+      "title": "Final Invoice & Gratuity Reconciliation",
+      "industry": "catering",
+      "category": "billing-finance",
+      "role": "Billing Coordinator",
+      "summary": "After an event, this automation automatically reconciles the final headcount and any day-of add-ons against the original contract, generates the…",
+      "url": "https://www.ljwebmanagement.com/automations/catering/final-invoice-gratuity-reconciliation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/catering.json"
+    },
+    {
+      "id": "commercial-real-estate/cam-reconciliation-reminder",
+      "title": "CAM Reconciliation Reminder",
+      "industry": "commercial-real-estate",
+      "category": "billing-finance",
+      "role": "Property Accountant",
+      "summary": "At year-end, this automation automatically compiles actual common area maintenance expenses against what tenants were billed throughout the year…",
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/cam-reconciliation-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/commercial-real-estate.json"
+    },
+    {
+      "id": "ecommerce-retail/subscription-renewal-failed-payment-recovery",
+      "title": "Subscription Renewal & Failed Payment Recovery",
+      "industry": "ecommerce-retail",
+      "category": "billing-finance",
+      "role": "Subscription Manager",
+      "summary": "When a recurring subscription charge fails inside Recharge or Stripe Billing, this automation doesn't just retry the card once and give up: it…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/subscription-renewal-failed-payment-recovery/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/affiliate-influencer-commission-tracking",
+      "title": "Affiliate & Influencer Commission Tracking",
+      "industry": "ecommerce-retail",
+      "category": "billing-finance",
+      "role": "Affiliate Marketing Manager",
+      "summary": "Every sale that comes through an affiliate or influencer's unique link is automatically tracked back to its source using Refersion or ReferralCandy…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/affiliate-influencer-commission-tracking/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/chargeback-dispute-alert-system",
+      "title": "Chargeback & Dispute Alert System",
+      "industry": "ecommerce-retail",
+      "category": "billing-finance",
+      "role": "Finance Manager",
+      "summary": "The moment a customer's bank initiates a chargeback through Stripe or PayPal, this automation immediately alerts the finance manager through Slack…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/chargeback-dispute-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "education/tuition-reminder-overdue-account-alert-system",
+      "title": "Tuition Reminder & Overdue Account Alert System",
+      "industry": "education",
+      "category": "billing-finance",
+      "role": "Business Office Manager",
+      "summary": "Five days before each tuition installment is due, families are automatically sent a reminder email and text with the amount owed and a direct…",
+      "url": "https://www.ljwebmanagement.com/automations/education/tuition-reminder-overdue-account-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/education.json"
+    },
+    {
+      "id": "faith-based-organizations/giving-statement-year-end-tax-receipt-system",
+      "title": "Giving Statement & Year-End Tax Receipt System",
+      "industry": "faith-based-organizations",
+      "category": "billing-finance",
+      "role": "Church Administrator",
+      "summary": "Throughout the year, first-time givers receive an automatic thank-you acknowledgment with a summary of how their gift is being used.",
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/giving-statement-year-end-tax-receipt-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/faith-based-organizations.json"
+    },
+    {
+      "id": "faith-based-organizations/giving-statement-tax-receipt-automation",
+      "title": "Giving Statement & Tax Receipt Automation",
+      "industry": "faith-based-organizations",
+      "category": "billing-finance",
+      "role": "Finance Administrator",
+      "summary": "At year-end, or whenever requested, this automation automatically compiles each donor's full giving history into a properly formatted tax statement…",
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/giving-statement-tax-receipt-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/faith-based-organizations.json"
+    },
+    {
+      "id": "financial-services/expense-categorization-monthly-close-system",
+      "title": "Expense Categorization & Monthly Close System",
+      "industry": "financial-services",
+      "category": "billing-finance",
+      "role": "Bookkeeper",
+      "summary": "Bank and credit card transactions sync automatically into the accounting system each night, and a categorization engine applies the correct chart of…",
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/expense-categorization-monthly-close-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/financial-services.json"
+    },
+    {
+      "id": "fitness-wellness/failed-payment-recovery-sequence",
+      "title": "Failed Payment Recovery Sequence",
+      "industry": "fitness-wellness",
+      "category": "billing-finance",
+      "role": "Billing Coordinator",
+      "summary": "A declined membership payment automatically triggers a retry along with a notification to the member with a direct link to update their card, before…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/failed-payment-recovery-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "general-business/commission-calculation-payout-automation",
+      "title": "Commission Calculation & Payout Automation",
+      "industry": "general-business",
+      "category": "billing-finance",
+      "role": "Revenue Operations Manager",
+      "summary": "Closed-won deals sync out of Salesforce the moment they're marked won, and Make.com runs each one against the rep's commission plan, factoring in…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/commission-calculation-payout-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/expense-report-submission-reminders",
+      "title": "Expense Report Submission Reminders",
+      "industry": "general-business",
+      "category": "billing-finance",
+      "role": "Controller",
+      "summary": "Every employee with a company card or reimbursable purchase gets tracked against a monthly expense submission deadline in Expensify, and anyone who…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/expense-report-submission-reminders/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/invoice-payment-reminder-sequence",
+      "title": "Invoice Payment Reminder Sequence",
+      "industry": "general-business",
+      "category": "billing-finance",
+      "role": "Accounts Receivable Specialist",
+      "summary": "Every invoice generated in QuickBooks Online is automatically enrolled in a staged reminder sequence: a polite email reminder goes out three days…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/invoice-payment-reminder-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/overdue-invoice-escalation-workflow",
+      "title": "Overdue Invoice Escalation Workflow",
+      "industry": "general-business",
+      "category": "billing-finance",
+      "role": "Accounts Payable Coordinator",
+      "summary": "When a customer invoice in Bill.com passes 30 days past due, the account is automatically flagged and a firmer follow-up email goes out referencing…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/overdue-invoice-escalation-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/vendor-payment-reminder-system",
+      "title": "Vendor Payment Reminder System",
+      "industry": "general-business",
+      "category": "billing-finance",
+      "role": "Vendor Relations Manager",
+      "summary": "Every vendor bill entered into Bill.com is automatically checked against its payment terms, and as the due date approaches, the accounts payable…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/vendor-payment-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/monthly-financial-close-checklist-automation",
+      "title": "Monthly Financial Close Checklist Automation",
+      "industry": "general-business",
+      "category": "billing-finance",
+      "role": "CFO",
+      "summary": "On the first business day of every month, a standardized close checklist automatically spins up in Asana with every task assigned to the right team…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/monthly-financial-close-checklist-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/budget-variance-alert-system",
+      "title": "Budget Variance Alert System",
+      "industry": "general-business",
+      "category": "billing-finance",
+      "role": "Financial Analyst",
+      "summary": "Actual spending data syncs out of QuickBooks Online into a live budget-versus-actual model in Google Sheets every night, and any department that…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/budget-variance-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/petty-cash-and-reimbursement-approval-routing",
+      "title": "Petty Cash and Reimbursement Approval Routing",
+      "industry": "general-business",
+      "category": "billing-finance",
+      "role": "Staff Accountant",
+      "summary": "When an employee submits a reimbursement request with a photo of the receipt through a simple Airtable form, the request is automatically checked…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/petty-cash-and-reimbursement-approval-routing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/saas-subscription-spend-audit-alerts",
+      "title": "SaaS Subscription Spend Audit Alerts",
+      "industry": "general-business",
+      "category": "billing-finance",
+      "role": "Finance Manager",
+      "summary": "Every software subscription the company pays for gets pulled automatically each month from the corporate card statement and cross-referenced against…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/saas-subscription-spend-audit-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/expense-report-approval-routing",
+      "title": "Expense Report Approval Routing",
+      "industry": "general-business",
+      "category": "billing-finance",
+      "role": "Accounts Payable Manager",
+      "summary": "Employees submit expenses with a photo of the receipt straight from their phone, and the workflow reads the amount and category automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/expense-report-approval-routing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "government-public-sector/grant-application-pipeline-compliance-reporting-system",
+      "title": "Grant Application Pipeline & Compliance Reporting System",
+      "industry": "government-public-sector",
+      "category": "billing-finance",
+      "role": "Grant Administrator",
+      "summary": "Every active grant (federal, state, and foundation) lives in a single pipeline with key dates: application deadline, award notice, contract…",
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/grant-application-pipeline-compliance-reporting-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/government-public-sector.json"
+    },
+    {
+      "id": "government-public-sector/budget-amendment-departmental-approval-workflow",
+      "title": "Budget Amendment & Departmental Approval Workflow",
+      "industry": "government-public-sector",
+      "category": "billing-finance",
+      "role": "Budget Analyst",
+      "summary": "When a department submits a budget amendment request, this automation routes it through the required approval chain (department head, finance…",
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/budget-amendment-departmental-approval-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/government-public-sector.json"
+    },
+    {
+      "id": "healthcare/session-notes-reminder-insurance-billing-trigger",
+      "title": "Session Notes Reminder & Insurance Billing Trigger",
+      "industry": "healthcare",
+      "category": "billing-finance",
+      "role": "Therapist / Mental Health Provider",
+      "summary": "Each time a session is marked complete in the calendar, the therapist receives an automated prompt to finalize their session notes within 24 hours.",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/session-notes-reminder-insurance-billing-trigger/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/outstanding-balance-payment-reminder-sequence",
+      "title": "Outstanding Balance Payment Reminder Sequence",
+      "industry": "healthcare",
+      "category": "billing-finance",
+      "role": "Billing Coordinator",
+      "summary": "Once a patient's account carries an outstanding balance past the insurance adjustment period, this automation automatically enrolls them in a…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/outstanding-balance-payment-reminder-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/financial-assistance-application-routing",
+      "title": "Financial Assistance Application Routing",
+      "industry": "healthcare",
+      "category": "billing-finance",
+      "role": "Financial Counselor",
+      "summary": "Patients who indicate financial hardship during intake automatically receive the financial assistance program application and are routed directly to…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/financial-assistance-application-routing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "home-services/job-completion-to-invoice-automation",
+      "title": "Job Completion to Invoice Automation",
+      "industry": "home-services",
+      "category": "billing-finance",
+      "role": "Billing Administrator",
+      "summary": "The moment a technician taps \"job complete\" in the field app, this automation pulls the line items, labor hours, and parts used directly from the…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/job-completion-to-invoice-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/financed-job-payment-reminder",
+      "title": "Financed Job Payment Reminder",
+      "industry": "home-services",
+      "category": "billing-finance",
+      "role": "Accounts Receivable Specialist",
+      "summary": "For customers who financed a larger job through a third-party lender, this automation syncs directly with the financing provider's payment schedule…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/financed-job-payment-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/rebate-tax-credit-paperwork-automation",
+      "title": "Rebate & Tax Credit Paperwork Automation",
+      "industry": "home-services",
+      "category": "billing-finance",
+      "role": "Rebate Program Coordinator",
+      "summary": "After a qualifying install, such as a high-efficiency HVAC system, a solar array, or a heat pump water heater, this automation automatically pulls…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/rebate-tax-credit-paperwork-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/subcontractor-invoice-reconciliation-automation",
+      "title": "Subcontractor Invoice Reconciliation Automation",
+      "industry": "home-services",
+      "category": "billing-finance",
+      "role": "Accounts Receivable Specialist",
+      "summary": "Subcontractor invoices are automatically matched against the corresponding completed work orders, flagging any discrepancy in scope, hours, or…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/subcontractor-invoice-reconciliation-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "landscaping-lawn-care/post-service-photo-invoice-automation",
+      "title": "Post-Service Photo & Invoice Automation",
+      "industry": "landscaping-lawn-care",
+      "category": "billing-finance",
+      "role": "Crew Leader",
+      "summary": "When a crew marks a job complete in the field app, this automation automatically attaches the before and after photos to the customer's record…",
+      "url": "https://www.ljwebmanagement.com/automations/landscaping-lawn-care/post-service-photo-invoice-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/landscaping-lawn-care.json"
+    },
+    {
+      "id": "legal/matter-profitability-unbilled-time-alert-system",
+      "title": "Matter Profitability & Unbilled Time Alert System",
+      "industry": "legal",
+      "category": "billing-finance",
+      "role": "Attorney",
+      "summary": "At the end of each week, this automation pulls every open matter the attorney has billed time to, compares total time captured against the retainer…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/matter-profitability-unbilled-time-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/vendor-invoice-approval-payment-scheduling-system",
+      "title": "Vendor Invoice Approval & Payment Scheduling System",
+      "industry": "legal",
+      "category": "billing-finance",
+      "role": "Law Firm Office Manager",
+      "summary": "Every vendor invoice received by the firm (court reporter, process server, expert witness, office supplies) is automatically routed to the…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/vendor-invoice-approval-payment-scheduling-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/retainer-balance-low-alert-system",
+      "title": "Retainer Balance Low Alert System",
+      "industry": "legal",
+      "category": "billing-finance",
+      "role": "Billing Coordinator",
+      "summary": "The automation continuously monitors each client's trust or retainer balance inside the billing platform, and the moment a balance drops below a…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/retainer-balance-low-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/monthly-billing-invoice-auto-generation",
+      "title": "Monthly Billing Invoice Auto-Generation",
+      "industry": "legal",
+      "category": "billing-finance",
+      "role": "Billing Manager",
+      "summary": "Throughout the month, as attorneys log billable time entries directly in Clio or TimeSolv, the automation automatically compiles every entry tied to…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/monthly-billing-invoice-auto-generation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/settlement-disbursement-checklist-automation",
+      "title": "Settlement Disbursement Checklist Automation",
+      "industry": "legal",
+      "category": "billing-finance",
+      "role": "Settlement Coordinator",
+      "summary": "Once a settlement is marked approved in Clio, the automation automatically generates a disbursement checklist specific to that matter type, covering…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/settlement-disbursement-checklist-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/trust-account-reconciliation-alert-system",
+      "title": "Trust Account Reconciliation Alert System",
+      "industry": "legal",
+      "category": "billing-finance",
+      "role": "Trust Accounting Manager",
+      "summary": "The automation runs a daily reconciliation check comparing trust account activity in the firm's accounting software against the ledger balances…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/trust-account-reconciliation-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/client-cost-advance-tracking-system",
+      "title": "Client Cost Advance Tracking System",
+      "industry": "legal",
+      "category": "billing-finance",
+      "role": "Costs & Disbursements Clerk",
+      "summary": "Every cost the firm advances on a client's behalf, filing fees, expert witness retainers, medical record requests, is automatically logged against…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/client-cost-advance-tracking-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/general-counsel-retainer-renewal-automation",
+      "title": "General Counsel Retainer Renewal Automation",
+      "industry": "legal",
+      "category": "billing-finance",
+      "role": "General Counsel Services Coordinator",
+      "summary": "For clients on an ongoing general counsel retainer, the automation automatically tracks each retainer's term end date in Clio and, 60 days ahead of…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/general-counsel-retainer-renewal-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/fee-dispute-early-warning-alert",
+      "title": "Fee Dispute Early Warning Alert",
+      "industry": "legal",
+      "category": "billing-finance",
+      "role": "Billing Manager",
+      "summary": "Late or partially disputed invoice payments automatically flag the account for a proactive conversation with the client before the situation grows…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/fee-dispute-early-warning-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "locksmith-security/job-completion-photo-invoice-automation",
+      "title": "Job Completion Photo & Invoice Automation",
+      "industry": "locksmith-security",
+      "category": "billing-finance",
+      "role": "Field Technician Supervisor",
+      "summary": "When a technician marks a job complete, this automation automatically attaches photos of the completed work, generates the invoice, and sends it to…",
+      "url": "https://www.ljwebmanagement.com/automations/locksmith-security/job-completion-photo-invoice-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/locksmith-security.json"
+    },
+    {
+      "id": "media-publishing/freelancer-invoice-payment-tracker",
+      "title": "Freelancer Invoice & Payment Tracker",
+      "industry": "media-publishing",
+      "category": "billing-finance",
+      "role": "Managing Editor",
+      "summary": "When a freelance contributor submits an invoice for a completed piece, this automation automatically checks it against the agreed rate and word…",
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/freelancer-invoice-payment-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/media-publishing.json"
+    },
+    {
+      "id": "moving-storage/storage-payment-lien-notice-automation",
+      "title": "Storage Payment & Lien Notice Automation",
+      "industry": "moving-storage",
+      "category": "billing-finance",
+      "role": "Facility Manager",
+      "summary": "For storage facilities, this automation automatically sends a payment reminder five days before each unit's due date, and if payment is missed…",
+      "url": "https://www.ljwebmanagement.com/automations/moving-storage/storage-payment-lien-notice-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/moving-storage.json"
+    },
+    {
+      "id": "nonprofit/grant-deadline-tracker-application-status-system",
+      "title": "Grant Deadline Tracker & Application Status System",
+      "industry": "nonprofit",
+      "category": "billing-finance",
+      "role": "Executive Director",
+      "summary": "Every active grant opportunity (prospect, applied, pending, awarded, declined) lives in a single pipeline that the executive director can see at a…",
+      "url": "https://www.ljwebmanagement.com/automations/nonprofit/grant-deadline-tracker-application-status-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/nonprofit.json"
+    },
+    {
+      "id": "nonprofit/instant-tax-compliant-donation-receipt-system",
+      "title": "Instant Tax-Compliant Donation Receipt System",
+      "industry": "nonprofit",
+      "category": "billing-finance",
+      "role": "Development Associate",
+      "summary": "The moment a donation is processed, whether through the website, a mail-in check entered manually, or a matching gift, the donor automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/nonprofit/instant-tax-compliant-donation-receipt-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/nonprofit.json"
+    },
+    {
+      "id": "oil-gas/joint-interest-billing-revenue-distribution-system",
+      "title": "Joint Interest Billing & Revenue Distribution System",
+      "industry": "oil-gas",
+      "category": "billing-finance",
+      "role": "Oil & Gas Accountant",
+      "summary": "At the close of each production month, this automation pulls lease operating expenses by cost code and working interest owner from the accounting…",
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/joint-interest-billing-revenue-distribution-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/oil-gas.json"
+    },
+    {
+      "id": "oil-gas/royalty-payment-calculation-statement-generator",
+      "title": "Royalty Payment Calculation & Statement Generator",
+      "industry": "oil-gas",
+      "category": "billing-finance",
+      "role": "Land & Royalty Administrator",
+      "summary": "Based on production volumes and the ownership interests on file, this automation automatically calculates each royalty owner's payment for the…",
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/royalty-payment-calculation-statement-generator/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/oil-gas.json"
+    },
+    {
+      "id": "professional-services/invoice-reminder-late-fee-sequence",
+      "title": "Invoice Reminder & Late Fee Sequence",
+      "industry": "professional-services",
+      "category": "billing-finance",
+      "role": "Billing Coordinator",
+      "summary": "This automation tracks every unpaid invoice and automatically sends a friendly reminder a few days ahead of the due date, a firmer reminder the day…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/invoice-reminder-late-fee-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/estimated-tax-payment-reminder-system",
+      "title": "Estimated Tax Payment Reminder System",
+      "industry": "professional-services",
+      "category": "billing-finance",
+      "role": "Tax Manager",
+      "summary": "Clients who make quarterly estimated tax payments automatically receive a reminder ahead of each deadline with their specific amount due and clear…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/estimated-tax-payment-reminder-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/recurring-fee-invoice-auto-generation",
+      "title": "Recurring Fee Invoice Auto-Generation",
+      "industry": "professional-services",
+      "category": "billing-finance",
+      "role": "Billing Coordinator",
+      "summary": "Recurring advisory or service fees are automatically calculated based on account value or an agreed schedule, and an invoice is generated and sent…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/recurring-fee-invoice-auto-generation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/fee-schedule-change-advance-notification",
+      "title": "Fee Schedule Change Advance Notification",
+      "industry": "professional-services",
+      "category": "billing-finance",
+      "role": "Billing Coordinator",
+      "summary": "When a firm updates its fee schedule, every affected client is automatically notified in advance with a clear explanation of what's changing and…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/fee-schedule-change-advance-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "property-management/rent-payment-reminder-late-fee-notice-system",
+      "title": "Rent Payment Reminder & Late Fee Notice System",
+      "industry": "property-management",
+      "category": "billing-finance",
+      "role": "Accounts Receivable Coordinator",
+      "summary": "Tenants automatically receive a reminder a few days before rent is due, and if payment hasn't posted after the grace period, an automatic late…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/rent-payment-reminder-late-fee-notice-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/delinquent-account-escalation-workflow",
+      "title": "Delinquent Account Escalation Workflow",
+      "industry": "property-management",
+      "category": "billing-finance",
+      "role": "Accounts Receivable Coordinator",
+      "summary": "Overdue accounts automatically move through a defined escalation sequence, an initial reminder, a formal late notice, and finally a referral to…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/delinquent-account-escalation-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/monthly-owner-statement-auto-generation",
+      "title": "Monthly Owner Statement Auto-Generation",
+      "industry": "property-management",
+      "category": "billing-finance",
+      "role": "Portfolio Accountant",
+      "summary": "Monthly financial statements for each property owner are automatically compiled from rent collected and expenses paid, then delivered on a…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/monthly-owner-statement-auto-generation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/security-deposit-return-calculation-system",
+      "title": "Security Deposit Return Calculation System",
+      "industry": "property-management",
+      "category": "billing-finance",
+      "role": "Move Coordinator",
+      "summary": "At move-out, the automation calculates deposit deductions directly from the move-out inspection data already on file and generates the itemized…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/security-deposit-return-calculation-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-restoration/subcontractor-invoice-reconciliation",
+      "title": "Subcontractor Invoice Reconciliation",
+      "industry": "property-restoration",
+      "category": "billing-finance",
+      "role": "Project Accountant",
+      "summary": "As subcontractor invoices come in for a restoration job, this automation automatically checks them against the original scope of work and flags any…",
+      "url": "https://www.ljwebmanagement.com/automations/property-restoration/subcontractor-invoice-reconciliation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-restoration.json"
+    },
+    {
+      "id": "real-estate/commission-disbursement-post-close-file-archiver",
+      "title": "Commission Disbursement & Post-Close File Archiver",
+      "industry": "real-estate",
+      "category": "billing-finance",
+      "role": "Transaction Coordinator",
+      "summary": "Once a transaction closes, this automation pulls the final settlement statement, calculates commission splits per the agreement on file, generates a…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/commission-disbursement-post-close-file-archiver/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/automatic-seller-net-proceeds-sheet-generator",
+      "title": "Automatic Seller Net Proceeds Sheet Generator",
+      "industry": "real-estate",
+      "category": "billing-finance",
+      "role": "Listing Coordinator",
+      "summary": "Once a listing agreement is signed, the automation pulls the agreed list price, existing mortgage payoff estimate, and typical local closing costs…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/automatic-seller-net-proceeds-sheet-generator/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/agent-commission-disbursement-tracking-system",
+      "title": "Agent Commission Disbursement Tracking System",
+      "industry": "real-estate",
+      "category": "billing-finance",
+      "role": "Accounting Manager",
+      "summary": "When a deal's status changes to closed in the transaction platform, the automation automatically pulls the final sale price and the agent's…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/agent-commission-disbursement-tracking-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "renewable-energy-solar/installation-milestone-payment-trigger",
+      "title": "Installation Milestone Payment Trigger",
+      "industry": "renewable-energy-solar",
+      "category": "billing-finance",
+      "role": "Finance Manager",
+      "summary": "As a project passes each contractually defined milestone, site survey, permit approval, installation complete, activation, this automation…",
+      "url": "https://www.ljwebmanagement.com/automations/renewable-energy-solar/installation-milestone-payment-trigger/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/renewable-energy-solar.json"
+    },
+    {
+      "id": "restaurants-food-service/private-event-deposit-deadline-reminder",
+      "title": "Private Event Deposit Deadline Reminder",
+      "industry": "restaurants-food-service",
+      "category": "billing-finance",
+      "role": "Events Coordinator",
+      "summary": "Once a private event or banquet is booked, the client automatically receives a payment reminder as the deposit deadline approaches, with the exact…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/private-event-deposit-deadline-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/supplier-invoice-discrepancy-alert",
+      "title": "Supplier Invoice Discrepancy Alert",
+      "industry": "restaurants-food-service",
+      "category": "billing-finance",
+      "role": "Accounts Payable Coordinator",
+      "summary": "Every delivered supplier invoice is automatically checked against the original purchase order line by line, and any mismatch in quantity or price is…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/supplier-invoice-discrepancy-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "senior-living-childcare/parent-communication-tuition-billing-system",
+      "title": "Parent Communication & Tuition Billing System",
+      "industry": "senior-living-childcare",
+      "category": "billing-finance",
+      "role": "Childcare Center Director",
+      "summary": "Parents receive automated daily updates from teachers via the parent app, and the center director's weekly newsletter is drafted from a simple form…",
+      "url": "https://www.ljwebmanagement.com/automations/senior-living-childcare/parent-communication-tuition-billing-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/senior-living-childcare.json"
+    },
+    {
+      "id": "staffing-recruiting/timesheet-to-billing-trigger",
+      "title": "Timesheet-to-Billing Trigger",
+      "industry": "staffing-recruiting",
+      "category": "billing-finance",
+      "role": "Accounts Coordinator",
+      "summary": "For placed contractors, this automation automatically sends a timesheet reminder at the end of each work week, and once the timesheet is submitted…",
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/timesheet-to-billing-trigger/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/staffing-recruiting.json"
+    },
+    {
+      "id": "technology-saas/failed-payment-recovery-sequence",
+      "title": "Failed Payment Recovery Sequence",
+      "industry": "technology-saas",
+      "category": "billing-finance",
+      "role": "Billing Operations Manager",
+      "summary": "When a subscription payment fails, this automation automatically retries the charge on a set schedule, typically at 1, 3, and 7 days, and emails the…",
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/failed-payment-recovery-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/technology-saas.json"
+    },
+    {
+      "id": "telecommunications/payment-failure-recovery-collections-workflow-system",
+      "title": "Payment Failure Recovery & Collections Workflow System",
+      "industry": "telecommunications",
+      "category": "billing-finance",
+      "role": "Billing Manager",
+      "summary": "When a payment fails, this automation immediately attempts a retry after 24 hours, sends the customer a payment failure notice with an update link…",
+      "url": "https://www.ljwebmanagement.com/automations/telecommunications/payment-failure-recovery-collections-workflow-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/telecommunications.json"
+    },
+    {
+      "id": "wedding-event-planning/payment-milestone-reminder-sequence",
+      "title": "Payment Milestone Reminder Sequence",
+      "industry": "wedding-event-planning",
+      "category": "billing-finance",
+      "role": "Studio Owner",
+      "summary": "Based on the payment schedule written into the contract, typically a deposit at booking, 50% at 90 days out, and the final balance at 30 days out…",
+      "url": "https://www.ljwebmanagement.com/automations/wedding-event-planning/payment-milestone-reminder-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/wedding-event-planning.json"
+    }
+  ]
+}

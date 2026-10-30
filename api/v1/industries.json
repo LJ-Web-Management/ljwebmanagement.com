@@ -1,0 +1,461 @@
+{
+  "count": 57,
+  "industries": [
+    {
+      "slug": "addiction-treatment-behavioral-health",
+      "name": "Addiction Treatment & Behavioral Health",
+      "summary": "Inquiry-to-intake conversion, authorization tracking, discharge planning, and alumni support.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/addiction-treatment-behavioral-health/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/addiction-treatment-behavioral-health.json"
+    },
+    {
+      "slug": "agriculture-farming",
+      "name": "Agriculture & Farming",
+      "summary": "Planting schedules, weather-triggered field tasks, input reorders, and crop insurance deadlines.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/agriculture-farming/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/agriculture-farming.json"
+    },
+    {
+      "slug": "architecture-engineering",
+      "name": "Architecture & Engineering",
+      "summary": "Drawing revisions, RFIs, permit tracking, consultant deadlines, and project budget variance.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/architecture-engineering/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/architecture-engineering.json"
+    },
+    {
+      "slug": "automotive",
+      "name": "Automotive",
+      "summary": "Lead response, service reminders, repair status texts, recall alerts, and trade-in follow-up.",
+      "automationCount": 51,
+      "url": "https://www.ljwebmanagement.com/automations/automotive/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "slug": "cannabis-hemp",
+      "name": "Cannabis & Hemp",
+      "summary": "Seed-to-sale compliance, license renewals, B2B reorders, grow monitoring, and loyalty.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cannabis-hemp.json"
+    },
+    {
+      "slug": "car-wash-auto-detailing",
+      "name": "Car Wash & Auto Detailing",
+      "summary": "Membership renewals, failed payment recovery, mobile route booking, and review requests.",
+      "automationCount": 5,
+      "url": "https://www.ljwebmanagement.com/automations/car-wash-auto-detailing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/car-wash-auto-detailing.json"
+    },
+    {
+      "slug": "catering",
+      "name": "Catering Companies",
+      "summary": "Event inquiry to proposal, headcount finalization, ingredient ordering, and crew staffing.",
+      "automationCount": 5,
+      "url": "https://www.ljwebmanagement.com/automations/catering/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/catering.json"
+    },
+    {
+      "slug": "commercial-real-estate",
+      "name": "Commercial Real Estate",
+      "summary": "Deal pipelines, lease abstracts, critical date alerts, listing syndication, and CAM reconciliation.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/commercial-real-estate.json"
+    },
+    {
+      "slug": "construction-contracting",
+      "name": "Construction & Contracting",
+      "summary": "Bid collection, daily site reports, permit and inspection tracking, and estimate follow-up.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/construction-contracting.json"
+    },
+    {
+      "slug": "cybersecurity",
+      "name": "Cybersecurity",
+      "summary": "Alert triage, phishing training, policy attestations, scan-to-ticket, and expiration monitoring.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cybersecurity.json"
+    },
+    {
+      "slug": "dental-practices",
+      "name": "Dental Practices",
+      "summary": "Hygiene recall, treatment plan follow-up, insurance verification, and same-day cancellation fill.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/dental-practices.json"
+    },
+    {
+      "slug": "driving-schools",
+      "name": "Driving Schools",
+      "summary": "Lesson scheduling, instructor matching, test date reminders, and parent progress updates.",
+      "automationCount": 5,
+      "url": "https://www.ljwebmanagement.com/automations/driving-schools/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/driving-schools.json"
+    },
+    {
+      "slug": "ecommerce-retail",
+      "name": "E-Commerce & Retail",
+      "summary": "Abandoned cart recovery, shipping updates, low-stock alerts, returns, reviews, and win-back.",
+      "automationCount": 53,
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "slug": "education",
+      "name": "Education & Training",
+      "summary": "Enrollment inquiries, waitlists, absence alerts, progress reports, and tuition reminders.",
+      "automationCount": 11,
+      "url": "https://www.ljwebmanagement.com/automations/education/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/education.json"
+    },
+    {
+      "slug": "faith-based-organizations",
+      "name": "Faith-Based Organizations",
+      "summary": "Volunteer scheduling, giving statements, new visitor follow-up, and small group placement.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/faith-based-organizations.json"
+    },
+    {
+      "slug": "financial-services",
+      "name": "Financial Services",
+      "summary": "Client onboarding, tax document collection, review scheduling, and life-event outreach.",
+      "automationCount": 8,
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/financial-services.json"
+    },
+    {
+      "slug": "fitness-wellness",
+      "name": "Fitness & Wellness",
+      "summary": "Class booking, waitlists, trial conversion, member retention, renewals, and referrals.",
+      "automationCount": 52,
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "slug": "general-business",
+      "name": "General Business",
+      "summary": "Missed-call text-back, lead routing, invoicing, HR workflows, contracts, and IT admin.",
+      "automationCount": 103,
+      "url": "https://www.ljwebmanagement.com/automations/general-business/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "slug": "government-public-sector",
+      "name": "Government & Public Sector",
+      "summary": "Public records requests, service request routing, grant tracking, and public notices.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/government-public-sector.json"
+    },
+    {
+      "slug": "healthcare",
+      "name": "Healthcare",
+      "summary": "Appointment reminders, waitlist fill, intake, eligibility checks, referrals, and recalls.",
+      "automationCount": 53,
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "slug": "home-services",
+      "name": "Home Services",
+      "summary": "Missed-call text-back, quote follow-up, technician ETAs, maintenance plans, and reviews.",
+      "automationCount": 53,
+      "url": "https://www.ljwebmanagement.com/automations/home-services/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "slug": "hospitality-hotels",
+      "name": "Hospitality & Hotels",
+      "summary": "Pre-arrival upsells, guest messaging, room status, review requests, and group proposals.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/hospitality-hotels.json"
+    },
+    {
+      "slug": "human-resources",
+      "name": "Human Resources",
+      "summary": "Applicant tracking, interview scheduling, new hire paperwork, timesheets, and offboarding.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/human-resources.json"
+    },
+    {
+      "slug": "insurance",
+      "name": "Insurance",
+      "summary": "Quote requests, renewals, claims status updates, certificates of insurance, and cross-sell.",
+      "automationCount": 12,
+      "url": "https://www.ljwebmanagement.com/automations/insurance/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/insurance.json"
+    },
+    {
+      "slug": "interior-design-home-staging",
+      "name": "Interior Design & Home Staging",
+      "summary": "Client approvals, vendor purchase orders, lead time tracking, and installation coordination.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/interior-design-home-staging.json"
+    },
+    {
+      "slug": "junk-removal",
+      "name": "Junk Removal",
+      "summary": "Instant photo quotes, crew routing, same-day capacity, and before/after review requests.",
+      "automationCount": 5,
+      "url": "https://www.ljwebmanagement.com/automations/junk-removal/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/junk-removal.json"
+    },
+    {
+      "slug": "landscaping-lawn-care",
+      "name": "Landscaping & Lawn Care",
+      "summary": "Route optimization, weather rescheduling, seasonal upsells, and photo invoicing.",
+      "automationCount": 5,
+      "url": "https://www.ljwebmanagement.com/automations/landscaping-lawn-care/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/landscaping-lawn-care.json"
+    },
+    {
+      "slug": "laundry-dry-cleaning",
+      "name": "Laundry & Dry Cleaning",
+      "summary": "Order-ready texts, pickup and delivery scheduling, unclaimed order alerts, and loyalty.",
+      "automationCount": 5,
+      "url": "https://www.ljwebmanagement.com/automations/laundry-dry-cleaning/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/laundry-dry-cleaning.json"
+    },
+    {
+      "slug": "legal",
+      "name": "Legal",
+      "summary": "After-hours lead recovery, intake, deadlines, case status updates, and billing.",
+      "automationCount": 52,
+      "url": "https://www.ljwebmanagement.com/automations/legal/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "slug": "locksmith-security",
+      "name": "Locksmith & Security Services",
+      "summary": "Emergency dispatch with ETAs, maintenance contracts, credential audits, and quote follow-up.",
+      "automationCount": 5,
+      "url": "https://www.ljwebmanagement.com/automations/locksmith-security/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/locksmith-security.json"
+    },
+    {
+      "slug": "logistics-supply-chain",
+      "name": "Logistics & Supply Chain",
+      "summary": "Shipment tracking, delay alerts, vendor quotes, reorder points, and customs paperwork.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/logistics-supply-chain/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/logistics-supply-chain.json"
+    },
+    {
+      "slug": "manufacturing",
+      "name": "Manufacturing",
+      "summary": "Downtime alerts, preventive maintenance, quality deviations, reorders, and safety compliance.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/manufacturing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/manufacturing.json"
+    },
+    {
+      "slug": "marketing-agencies",
+      "name": "Marketing Agencies",
+      "summary": "Client reporting, content calendars, budget pacing, SEO reports, and onboarding.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/marketing-agencies.json"
+    },
+    {
+      "slug": "media-publishing",
+      "name": "Media & Publishing",
+      "summary": "Editorial deadlines, subscription renewals, production pipelines, and content performance.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/media-publishing.json"
+    },
+    {
+      "slug": "moving-storage",
+      "name": "Moving & Storage",
+      "summary": "Inventory-based quotes, crew routing, move-day updates, storage billing, and claims.",
+      "automationCount": 5,
+      "url": "https://www.ljwebmanagement.com/automations/moving-storage/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/moving-storage.json"
+    },
+    {
+      "slug": "nonprofit",
+      "name": "Nonprofit",
+      "summary": "Donor acknowledgments, grant deadlines, volunteer shifts, events, and lapsed donor win-back.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/nonprofit/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/nonprofit.json"
+    },
+    {
+      "slug": "oil-gas",
+      "name": "Oil & Gas",
+      "summary": "Safety check-ins, drilling reports, lease payments, regulatory filings, and royalties.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/oil-gas/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/oil-gas.json"
+    },
+    {
+      "slug": "pest-control",
+      "name": "Pest Control",
+      "summary": "Recurring treatment scheduling, inspection reports, chemical logs, and callback routing.",
+      "automationCount": 5,
+      "url": "https://www.ljwebmanagement.com/automations/pest-control/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pest-control.json"
+    },
+    {
+      "slug": "pharmaceutical-biotech",
+      "name": "Pharmaceutical & Biotech",
+      "summary": "Submission deadlines, batch record deviations, trial enrollment, and sample accountability.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/pharmaceutical-biotech/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pharmaceutical-biotech.json"
+    },
+    {
+      "slug": "photography-videography",
+      "name": "Photography & Videography",
+      "summary": "Inquiry response, booking and contracts, shoot prep, revisions, and gallery delivery.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/photography-videography.json"
+    },
+    {
+      "slug": "pool-service",
+      "name": "Pool Service & Maintenance",
+      "summary": "Route skip notifications, chemical trend alerts, repair quotes, and seasonal openings.",
+      "automationCount": 5,
+      "url": "https://www.ljwebmanagement.com/automations/pool-service/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pool-service.json"
+    },
+    {
+      "slug": "professional-services",
+      "name": "Professional Services",
+      "summary": "Document requests, engagement letters, deadlines, client onboarding, and invoicing.",
+      "automationCount": 50,
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "slug": "property-management",
+      "name": "Property Management",
+      "summary": "Maintenance triage, rent reminders, lease renewals, vacancy listings, and owner statements.",
+      "automationCount": 40,
+      "url": "https://www.ljwebmanagement.com/automations/property-management/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "slug": "property-restoration",
+      "name": "Property & Fire Restoration",
+      "summary": "First notice of loss response, claim documentation, drying logs, and job updates.",
+      "automationCount": 5,
+      "url": "https://www.ljwebmanagement.com/automations/property-restoration/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-restoration.json"
+    },
+    {
+      "slug": "real-estate",
+      "name": "Real Estate",
+      "summary": "Instant lead response, showing follow-up, transaction deadlines, and past client nurture.",
+      "automationCount": 53,
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "slug": "renewable-energy-solar",
+      "name": "Renewable Energy & Solar",
+      "summary": "Utility bill lead qualification, permit tracking, milestone payments, and performance alerts.",
+      "automationCount": 5,
+      "url": "https://www.ljwebmanagement.com/automations/renewable-energy-solar/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/renewable-energy-solar.json"
+    },
+    {
+      "slug": "restaurants-food-service",
+      "name": "Restaurants & Food Service",
+      "summary": "Reservations, waitlists, review management, inventory reorders, and staff scheduling.",
+      "automationCount": 53,
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "slug": "salons-spas-barbershops",
+      "name": "Salons, Spas & Barbershops",
+      "summary": "Appointment confirmations, rebooking, slot fill, birthday offers, and retail restock.",
+      "automationCount": 6,
+      "url": "https://www.ljwebmanagement.com/automations/salons-spas-barbershops/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/salons-spas-barbershops.json"
+    },
+    {
+      "slug": "senior-living-childcare",
+      "name": "Senior Living & Childcare",
+      "summary": "Family updates, tuition billing, caregiver scheduling, incident reports, and ratio compliance.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/senior-living-childcare/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/senior-living-childcare.json"
+    },
+    {
+      "slug": "sports-recreation",
+      "name": "Sports & Recreation",
+      "summary": "Registration and payments, facility booking, eligibility tracking, and weather cancellations.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/sports-recreation.json"
+    },
+    {
+      "slug": "staffing-recruiting",
+      "name": "Staffing & Recruiting Agencies",
+      "summary": "Job order intake, candidate matching, re-engagement, timesheets, and compliance.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/staffing-recruiting.json"
+    },
+    {
+      "slug": "technology-saas",
+      "name": "Technology & SaaS",
+      "summary": "Trial conversion, churn signals, ticket routing, feature requests, and failed payments.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/technology-saas.json"
+    },
+    {
+      "slug": "telecommunications",
+      "name": "Telecommunications",
+      "summary": "Installation booking, outage communication, contract renewals, and usage alerts.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/telecommunications/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/telecommunications.json"
+    },
+    {
+      "slug": "vacation-rentals",
+      "name": "Vacation Rentals & Short-Term Rentals",
+      "summary": "Pre-arrival instructions, cleaning turnovers, pricing alerts, and guest reviews.",
+      "automationCount": 5,
+      "url": "https://www.ljwebmanagement.com/automations/vacation-rentals/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/vacation-rentals.json"
+    },
+    {
+      "slug": "veterinary-practices",
+      "name": "Veterinary Practices",
+      "summary": "Vaccination reminders, appointment requests, discharge follow-up, and lapsed patient recall.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/veterinary-practices/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/veterinary-practices.json"
+    },
+    {
+      "slug": "warehousing-distribution",
+      "name": "Warehousing & Distribution",
+      "summary": "Dock scheduling, wave planning, cycle counts, returns, and labor productivity.",
+      "automationCount": 10,
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/warehousing-distribution.json"
+    },
+    {
+      "slug": "wedding-event-planning",
+      "name": "Wedding & Event Planning",
+      "summary": "Inquiry to proposal, vendor confirmations, payment milestones, and day-of timelines.",
+      "automationCount": 5,
+      "url": "https://www.ljwebmanagement.com/automations/wedding-event-planning/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/wedding-event-planning.json"
+    }
+  ]
+}

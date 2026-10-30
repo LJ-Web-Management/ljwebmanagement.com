@@ -1,0 +1,309 @@
+{
+  "slug": "hospitality-hotels",
+  "name": "Hospitality & Hotels",
+  "summary": "Pre-arrival upsells, guest messaging, room status, review requests, and group proposals.",
+  "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "hospitality-hotels/guest-satisfaction-survey-service-recovery-system",
+      "slug": "guest-satisfaction-survey-service-recovery-system",
+      "title": "Guest Satisfaction Survey & Service Recovery System",
+      "industry": "hospitality-hotels",
+      "category": "reviews-feedback",
+      "role": "Hotel General Manager",
+      "summary": "Every guest who checks out receives an automated satisfaction survey via text within two hours of departure.",
+      "steps": [
+        "Every guest who checks out receives an automated satisfaction survey via text within two hours of departure.",
+        "Guests who rate their stay below a set threshold trigger an immediate alert to the general manager with the specific complaints flagged, along with a pre-drafted personal response and a recovery offer (a discount on a future stay or a points credit) that the GM can approve and send in one click.",
+        "Positive reviews from the survey automatically prompt the guest to post on TripAdvisor or Google, while negative feedback stays private and gets resolved directly.",
+        "The hotel's online reputation improves systematically because unhappy guests are intercepted before they reach a review site."
+      ],
+      "manualProcess": "Without automation, a hotel general manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Guest messaging platform (e.g., Revinate, Medallia, or Cloudbeds)",
+        "Zapier or Make.com",
+        "Twilio (post-checkout SMS survey)",
+        "OpenAI API (personalized recovery response draft)",
+        "Google Business Profile API (positive review redirect)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/guest-satisfaction-survey-service-recovery-system/"
+    },
+    {
+      "id": "hospitality-hotels/pre-arrival-upsell-check-in-preparation-system",
+      "slug": "pre-arrival-upsell-check-in-preparation-system",
+      "title": "Pre-Arrival Upsell & Check-In Preparation System",
+      "industry": "hospitality-hotels",
+      "category": "lead-follow-up-sales",
+      "role": "Front Desk Manager",
+      "summary": "Forty-eight hours before arrival, every guest receives a personalized pre-arrival message with their reservation summary, an early check-in upgrade…",
+      "steps": [
+        "Forty-eight hours before arrival, every guest receives a personalized pre-arrival message with their reservation summary, an early check-in upgrade offer, and add-on options tailored to their stay type, a romance package for anniversary bookings, a business kit for corporate travelers.",
+        "Responses flow directly into the PMS, updating the reservation and triggering any requested add-ons before the guest arrives.",
+        "On the morning of check-in, the front desk team receives a prepared briefing for every arriving guest (VIP status, special requests, pre-ordered upgrades, and any notes from previous stays) so every check-in feels personal rather than transactional."
+      ],
+      "manualProcess": "Left unautomated, a front desk manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "PMS (e.g., Opera, Mews, or Cloudbeds)",
+        "Zapier or Make.com",
+        "Twilio or email (pre-arrival guest message)",
+        "Airtable (VIP and special request log)",
+        "Slack (front desk morning arrival briefing)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/pre-arrival-upsell-check-in-preparation-system/"
+    },
+    {
+      "id": "hospitality-hotels/rate-parity-alert-competitor-pricing-monitor",
+      "slug": "rate-parity-alert-competitor-pricing-monitor",
+      "title": "Rate Parity Alert & Competitor Pricing Monitor",
+      "industry": "hospitality-hotels",
+      "category": "reporting-analytics",
+      "role": "Revenue Manager",
+      "summary": "This automation checks the hotel's live rates across all OTAs and the direct booking channel every morning and alerts the revenue manager to any…",
+      "steps": [
+        "This automation checks the hotel's live rates across all OTAs and the direct booking channel every morning and alerts the revenue manager to any rate disparity, instances where an OTA is selling below the agreed rate or where the hotel's rate on one channel is significantly higher than another.",
+        "A competitor rate scan runs simultaneously, pulling the rates of the three to five designated comp set properties, and the revenue manager receives a daily summary showing exactly where the hotel is priced relative to the market.",
+        "Rate decisions are made with real competitive context rather than a gut feeling about where the market is moving."
+      ],
+      "manualProcess": "Without automation, a revenue manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Rate shopping tool (e.g., OTA Insight or RateGain)",
+        "Zapier or Make.com",
+        "Google Sheets (rate parity and comp set tracker)",
+        "Slack or email (daily rate summary and parity alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/rate-parity-alert-competitor-pricing-monitor/"
+    },
+    {
+      "id": "hospitality-hotels/room-status-update-turn-assignment-system",
+      "slug": "room-status-update-turn-assignment-system",
+      "title": "Room Status Update & Turn Assignment System",
+      "industry": "hospitality-hotels",
+      "category": "operations-inventory",
+      "role": "Housekeeping Manager",
+      "summary": "As guests check out, room status updates automatically from \"occupied\" to \"due out\" in the housekeeping system, and turn assignments are pushed…",
+      "steps": [
+        "As guests check out, room status updates automatically from \"occupied\" to \"due out\" in the housekeeping system, and turn assignments are pushed immediately to the assigned room attendant's mobile device.",
+        "When a room is cleaned and inspected, the attendant marks it complete via the app, triggering an instant update in the PMS so the front desk can assign it to an arriving guest or sell an early check-in.",
+        "Rooms that have been marked ready but not inspected within 30 minutes generate an alert to the housekeeping manager.",
+        "The front desk and housekeeping team operate from the same live picture rather than calling each other all day to check availability."
+      ],
+      "manualProcess": "The manual approach means a housekeeping manager handles each case reactively, after someone has already noticed something went wrong.",
+      "tools": [
+        "PMS with housekeeping module (e.g., Opera, Mews, or HotSOS)",
+        "Zapier or Make.com",
+        "Mobile housekeeping app (e.g., Quore or Flexkeeping)",
+        "Twilio (attendant task push notifications)",
+        "Slack (inspection overdue alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/room-status-update-turn-assignment-system/"
+    },
+    {
+      "id": "hospitality-hotels/group-inquiry-qualification-proposal-generation-system",
+      "slug": "group-inquiry-qualification-proposal-generation-system",
+      "title": "Group Inquiry Qualification & Proposal Generation System",
+      "industry": "hospitality-hotels",
+      "category": "lead-follow-up-sales",
+      "role": "Catering & Events Sales Manager",
+      "summary": "Group and event inquiries submitted through the hotel website are automatically screened for date availability against the function space calendar…",
+      "steps": [
+        "Group and event inquiries submitted through the hotel website are automatically screened for date availability against the function space calendar, guest room block requirements, and minimum F&B spend.",
+        "Qualified leads receive an automated preliminary availability confirmation within minutes and are booked for a discovery call with the catering manager.",
+        "Once event details are confirmed, the system assembles the proposal document (with personalized room block pricing, menu options, and AV packages pre-populated) and sends it to the client for e-signature.",
+        "The catering manager spends their time selling and closing, not reformatting the same proposal template for every inquiry."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a catering & events sales manager remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Event management CRM (e.g., Cvent or Tripleseat)",
+        "Zapier or Make.com",
+        "Jotform (inquiry intake form)",
+        "PandaDoc (proposal generation)",
+        "Calendly (discovery call scheduling)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Calendly",
+        "PandaDoc"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/group-inquiry-qualification-proposal-generation-system/"
+    },
+    {
+      "id": "hospitality-hotels/pre-arrival-messaging-local-recommendations-system",
+      "slug": "pre-arrival-messaging-local-recommendations-system",
+      "title": "Pre-Arrival Messaging & Local Recommendations System",
+      "industry": "hospitality-hotels",
+      "category": "customer-communication",
+      "role": "Guest Experience Manager",
+      "summary": "Three days before arrival, every incoming guest automatically receives a personalized message with check-in instructions, parking details, and a…",
+      "steps": [
+        "Three days before arrival, every incoming guest automatically receives a personalized message with check-in instructions, parking details, and a curated list of local restaurants and activities based on their length of stay and room type.",
+        "The same message includes one or two relevant upsell offers, an early check-in upgrade or a spa credit, that the guest can accept with a single tap, with the response flowing directly into the PMS to update the reservation.",
+        "Guests arriving after 9pm are automatically flagged for a separate late-arrival instructions message so the front desk isn't fielding the same \"how do I get in\" calls every night.",
+        "Guests show up already knowing what to expect, and the property captures upsell revenue that used to depend on a front desk agent remembering to ask at check-in."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a guest experience manager, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Cloudbeds or Mews",
+        "Zapier or Make.com",
+        "Twilio",
+        "Mailchimp",
+        "OpenAI API (personalized recommendations)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/pre-arrival-messaging-local-recommendations-system/"
+    },
+    {
+      "id": "hospitality-hotels/perfectly-timed-review-request-system",
+      "slug": "perfectly-timed-review-request-system",
+      "title": "Perfectly Timed Review Request System",
+      "industry": "hospitality-hotels",
+      "category": "reviews-feedback",
+      "role": "Guest Relations Manager",
+      "summary": "At 9am the morning after a guest checks out, while the stay is still fresh in their mind, they automatically receive a friendly text or email asking…",
+      "steps": [
+        "At 9am the morning after a guest checks out, while the stay is still fresh in their mind, they automatically receive a friendly text or email asking about their experience.",
+        "Guests who respond positively are immediately routed to a direct link to leave a review on Google or TripAdvisor, while anyone who indicates a problem is routed instead to a private feedback form that alerts the guest relations manager before any negative review goes public.",
+        "Repeat guests get a slightly different message that also mentions a returning-guest perk, which nudges them toward booking direct on their next stay instead of going back through an OTA.",
+        "Review volume grows steadily every month, and the property has caught and resolved several complaints that would previously have shown up as one-star reviews."
+      ],
+      "manualProcess": "Without this system, a guest relations manager manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Cloudbeds or Revinate",
+        "Zapier or Make.com",
+        "Twilio",
+        "Google Business Profile API",
+        "Mailchimp"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/perfectly-timed-review-request-system/"
+    },
+    {
+      "id": "hospitality-hotels/automated-room-upgrade-add-on-offer-system",
+      "slug": "automated-room-upgrade-add-on-offer-system",
+      "title": "Automated Room Upgrade & Add-On Offer System",
+      "industry": "hospitality-hotels",
+      "category": "lead-follow-up-sales",
+      "role": "Reservations Manager",
+      "summary": "Based on booking data, room type, length of stay, and days until arrival, guests are automatically segmented and sent targeted upsell offers: a…",
+      "steps": [
+        "Based on booking data, room type, length of stay, and days until arrival, guests are automatically segmented and sent targeted upsell offers: a suite upgrade for a milestone anniversary booking, a late checkout add-on for a guest with a late flight, a breakfast package for a family reservation.",
+        "Offers are presented through a simple, mobile-friendly page where the guest can accept and pay in two taps, and any accepted upgrade updates the room assignment and folio automatically without a phone call to the front desk.",
+        "Offers that go unopened after 48 hours are automatically resent once with a slightly different subject line before the window closes.",
+        "Upsell revenue that used to depend entirely on a front desk agent remembering to pitch at check-in now runs continuously in the background."
+      ],
+      "manualProcess": "Done manually, a reservations manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.",
+      "tools": [
+        "Mews or Cloudbeds",
+        "Zapier or Make.com",
+        "Twilio",
+        "Stripe",
+        "Mailchimp"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/automated-room-upgrade-add-on-offer-system/"
+    },
+    {
+      "id": "hospitality-hotels/abandoned-booking-recovery-sequence",
+      "slug": "abandoned-booking-recovery-sequence",
+      "title": "Abandoned Booking Recovery Sequence",
+      "industry": "hospitality-hotels",
+      "category": "lead-follow-up-sales",
+      "role": "Digital Marketing Manager",
+      "summary": "When a website visitor starts a reservation, selecting dates and a room type, but leaves the booking engine before completing payment, the system…",
+      "steps": [
+        "When a website visitor starts a reservation, selecting dates and a room type, but leaves the booking engine before completing payment, the system automatically captures the session and sends a follow-up email within an hour with their selected dates pre-filled and a direct link back to checkout.",
+        "A second message goes out 24 hours later, and if the booking still hasn't been completed, a final message offers a small incentive, a complimentary breakfast or a room upgrade, to close the gap.",
+        "Visitors who abandon a booking during a rate spike are flagged separately so the revenue manager can see whether pricing, not indecision, is the real reason bookings are being lost.",
+        "Reservations that used to disappear the moment a guest closed the browser tab are now recovered at a meaningful rate every month."
+      ],
+      "manualProcess": "Without automation, a digital marketing manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Cloudbeds or SiteMinder",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign",
+        "Twilio",
+        "Google Analytics"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/abandoned-booking-recovery-sequence/"
+    },
+    {
+      "id": "hospitality-hotels/automated-weather-based-guest-alert-system",
+      "slug": "automated-weather-based-guest-alert-system",
+      "title": "Automated Weather-Based Guest Alert System",
+      "industry": "hospitality-hotels",
+      "category": "customer-communication",
+      "role": "Front Office Supervisor",
+      "summary": "The system checks the local forecast every morning and automatically triggers guest notifications whenever conditions cross a set threshold, heavy…",
+      "steps": [
+        "The system checks the local forecast every morning and automatically triggers guest notifications whenever conditions cross a set threshold, heavy rain that would close the pool, high winds affecting a scheduled outdoor event, or a heat advisory that changes shuttle timing.",
+        "Affected guests receive a text explaining the change and, where relevant, an alternative activity or rescheduled itinerary before they've made plans around the original schedule.",
+        "The front office supervisor gets a copy of every alert sent, so staff at the front desk and pool are already briefed and aligned before a single guest asks a question.",
+        "Weather disruptions that used to generate a flood of confused guests at the front desk are now handled proactively, hours ahead of the first complaint."
+      ],
+      "manualProcess": "Handled by hand, a front office supervisor spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Cloudbeds or Mews",
+        "Zapier or Make.com",
+        "Twilio",
+        "OpenWeather API",
+        "Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/automated-weather-based-guest-alert-system/"
+    }
+  ]
+}

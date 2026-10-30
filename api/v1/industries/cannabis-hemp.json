@@ -1,0 +1,281 @@
+{
+  "slug": "cannabis-hemp",
+  "name": "Cannabis & Hemp",
+  "summary": "Seed-to-sale compliance, license renewals, B2B reorders, grow monitoring, and loyalty.",
+  "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "cannabis-hemp/loyalty-program-high-value-customer-re-engagement-system",
+      "slug": "loyalty-program-high-value-customer-re-engagement-system",
+      "title": "Loyalty Program & High-Value Customer Re-Engagement System",
+      "industry": "cannabis-hemp",
+      "category": "marketing-retention",
+      "role": "Dispensary Owner",
+      "summary": "Every purchase automatically updates the customer's loyalty point balance, and customers who hit a tier milestone receive an automatic notification…",
+      "steps": [
+        "Every purchase automatically updates the customer's loyalty point balance, and customers who hit a tier milestone receive an automatic notification with their reward offer and an expiration date that creates urgency without being pushy.",
+        "Customers who haven't purchased in 30 days enter a re-engagement sequence, a \"we miss you\" message with a limited offer on a product category they've purchased before.",
+        "VIP customers identified by spend threshold receive early access announcements for new drops and limited menu items, giving the dispensary a direct revenue lever that doesn't depend on paid advertising every time a new product arrives."
+      ],
+      "manualProcess": "Without a system in place, a dispensary owner has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Dispensary POS (e.g., Dutchie, Treez, or Jane Technologies) with loyalty module",
+        "Zapier or Make.com",
+        "Twilio (loyalty milestone and re-engagement SMS, compliant channels only)",
+        "Mailchimp or email (VIP and lapsed customer sequences)",
+        "Airtable (customer segment tracker)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Airtable",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/loyalty-program-high-value-customer-re-engagement-system/"
+    },
+    {
+      "id": "cannabis-hemp/state-reporting-seed-to-sale-track-and-trace-automation",
+      "slug": "state-reporting-seed-to-sale-track-and-trace-automation",
+      "title": "State Reporting & Seed-to-Sale Track-and-Trace Automation",
+      "industry": "cannabis-hemp",
+      "category": "compliance-documents",
+      "role": "Compliance Manager",
+      "summary": "Every inventory movement (receiving, transfer, sale, destruction, or adjustment) is logged in real time and automatically synced to the state's…",
+      "steps": [
+        "Every inventory movement (receiving, transfer, sale, destruction, or adjustment) is logged in real time and automatically synced to the state's required track-and-trace system (METRC, BioTrack, or equivalent) so that the compliance manager's reporting obligation is met continuously rather than in a stressful end-of-month data dump.",
+        "Any inventory discrepancy identified between the POS and the track-and-trace system triggers an immediate compliance alert, and the compliance manager receives a daily reconciliation summary confirming that all movement is accounted for before the next state inspection catches what the internal process missed."
+      ],
+      "manualProcess": "Left unautomated, a compliance manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.",
+      "tools": [
+        "Dispensary or cultivation software with METRC/BioTrack integration (e.g., Leaf Trade or COVA)",
+        "Zapier or Make.com",
+        "Airtable (discrepancy log and compliance tracker)",
+        "Slack or email (daily reconciliation summary and discrepancy alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/state-reporting-seed-to-sale-track-and-trace-automation/"
+    },
+    {
+      "id": "cannabis-hemp/environmental-monitoring-alert-grow-log-system",
+      "slug": "environmental-monitoring-alert-grow-log-system",
+      "title": "Environmental Monitoring Alert & Grow Log System",
+      "industry": "cannabis-hemp",
+      "category": "operations-inventory",
+      "role": "Cannabis Cultivator",
+      "summary": "Sensors in each grow room continuously monitor temperature, humidity, CO2, and light schedules, and any reading outside the set parameters triggers…",
+      "steps": [
+        "Sensors in each grow room continuously monitor temperature, humidity, CO2, and light schedules, and any reading outside the set parameters triggers an immediate alert to the head grower and cultivation manager via text, because a HVAC failure that goes unnoticed for six hours during a critical flowering stage can destroy an entire room's yield.",
+        "Throughout the grow cycle, the cultivation team logs daily observations via mobile form (plant height, leaf color, pest sightings, watering notes) and the system builds a complete grow log by room, strain, and batch that is available for compliance inspection and internal quality review without anyone compiling it from handwritten notes after the fact."
+      ],
+      "manualProcess": "Left unautomated, a cannabis cultivator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.",
+      "tools": [
+        "Environmental sensors with API output (e.g., Trolmaster or Growlink)",
+        "Zapier or Make.com",
+        "Jotform (daily grow observation log)",
+        "Twilio (out-of-range environmental alerts)",
+        "Airtable (grow log by room and batch)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/environmental-monitoring-alert-grow-log-system/"
+    },
+    {
+      "id": "cannabis-hemp/b2b-dispensary-account-reorder-pricing-update-system",
+      "slug": "b2b-dispensary-account-reorder-pricing-update-system",
+      "title": "B2B Dispensary Account Reorder & Pricing Update System",
+      "industry": "cannabis-hemp",
+      "category": "lead-follow-up-sales",
+      "role": "Cannabis Wholesale Sales Rep",
+      "summary": "Each week, this automation checks every dispensary account's order history, identifies accounts that are typically on a weekly or bi-weekly reorder…",
+      "steps": [
+        "Each week, this automation checks every dispensary account's order history, identifies accounts that are typically on a weekly or bi-weekly reorder cycle and haven't placed a new order, and sends the account buyer a personalized reorder reminder with their standard product list and current pricing pre-populated in a simple order form.",
+        "When new products hit the menu or pricing is updated, all active accounts receive an automatic product sheet or price list update from their account rep, so the buyer is informed before they order from a competitor simply because they didn't know the product existed.",
+        "The sales rep spends time on relationships and new accounts rather than manually chasing reorders."
+      ],
+      "manualProcess": "Without automation, a cannabis wholesale sales rep has to notice problems after they've already happened, then scramble to fix them manually one at a time.",
+      "tools": [
+        "CRM (e.g., HubSpot or a cannabis B2B platform like Leaf Trade)",
+        "Zapier or Make.com",
+        "Jotform (digital order form)",
+        "Mailchimp or email (product announcements and reorder reminders)",
+        "Airtable (account order cycle tracker)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Airtable",
+        "Mailchimp",
+        "HubSpot"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/b2b-dispensary-account-reorder-pricing-update-system/"
+    },
+    {
+      "id": "cannabis-hemp/staff-training-compliance-product-knowledge-quiz-system",
+      "slug": "staff-training-compliance-product-knowledge-quiz-system",
+      "title": "Staff Training Compliance & Product Knowledge Quiz System",
+      "industry": "cannabis-hemp",
+      "category": "hr-team",
+      "role": "Dispensary Budtender Manager",
+      "summary": "When new products are added to the menu, this automation sends every budtender a product education brief and a short quiz to confirm they understand…",
+      "steps": [
+        "When new products are added to the menu, this automation sends every budtender a product education brief and a short quiz to confirm they understand the effects, recommended use cases, and any relevant compliance disclosures before they sell it to a customer.",
+        "Quiz results are logged per employee, and budtenders who score below the threshold receive the material again with a re-test prompt before they are cleared to sell the product.",
+        "The budtender manager sees a real-time training compliance dashboard showing who has completed required trainings and who has outstanding items, keeping customer service quality and compliance standards consistent across every shift."
+      ],
+      "manualProcess": "Without this system, a dispensary budtender manager manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Google Forms or Jotform (product quiz)",
+        "Zapier or Make.com",
+        "Google Sheets (training compliance tracker)",
+        "Slack (new product training announcement)",
+        "Email (quiz result notification and remediation prompts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/staff-training-compliance-product-knowledge-quiz-system/"
+    },
+    {
+      "id": "cannabis-hemp/seed-to-sale-compliance-sync",
+      "slug": "seed-to-sale-compliance-sync",
+      "title": "Seed-to-Sale Compliance Sync",
+      "industry": "cannabis-hemp",
+      "category": "compliance-documents",
+      "role": "Compliance Manager",
+      "summary": "This automation automatically syncs inventory movement between the point-of-sale system and the state's mandated seed-to-sale tracking system in…",
+      "steps": [
+        "This automation automatically syncs inventory movement between the point-of-sale system and the state's mandated seed-to-sale tracking system in real time.",
+        "The reporting gaps and manual data entry errors that lead directly to compliance violations, and potentially to a license being at risk, get eliminated at the source."
+      ],
+      "manualProcess": "Done manually, a compliance manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "METRC or BioTrack",
+        "A cannabis POS (Flowhub or Dutchie)",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/seed-to-sale-compliance-sync/"
+    },
+    {
+      "id": "cannabis-hemp/batch-testing-result-alert",
+      "slug": "batch-testing-result-alert",
+      "title": "Batch Testing Result Alert",
+      "industry": "cannabis-hemp",
+      "category": "compliance-documents",
+      "role": "Quality Control Manager",
+      "summary": "When lab testing results come back for a product batch, this automation automatically checks the results against state potency and contaminant…",
+      "steps": [
+        "When lab testing results come back for a product batch, this automation automatically checks the results against state potency and contaminant limits, and immediately flags any batch that fails so it's pulled from the sales floor before it can be sold.",
+        "A failed batch never has the chance to reach a customer because a result sat unread in an email."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a quality control manager, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "METRC or BioTrack",
+        "A lab results portal",
+        "Zapier or Make.com",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/batch-testing-result-alert/"
+    },
+    {
+      "id": "cannabis-hemp/license-renewal-deadline-tracker",
+      "slug": "license-renewal-deadline-tracker",
+      "title": "License Renewal Deadline Tracker",
+      "industry": "cannabis-hemp",
+      "category": "compliance-documents",
+      "role": "Operations Director",
+      "summary": "This automation tracks every state and local license and permit renewal deadline tied to the operation and automatically alerts ownership well ahead…",
+      "steps": [
+        "This automation tracks every state and local license and permit renewal deadline tied to the operation and automatically alerts ownership well ahead of each date.",
+        "A lapsed cannabis license typically can't be operated through the way a lapsed license in most other industries can, so this alert carries more weight than a routine reminder."
+      ],
+      "manualProcess": "The manual approach means an operations director handles each case reactively, after someone has already noticed something went wrong. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Google Sheets or a compliance tracking tool",
+        "Zapier or Make.com",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/license-renewal-deadline-tracker/"
+    },
+    {
+      "id": "cannabis-hemp/purchase-limit-compliance-check",
+      "slug": "purchase-limit-compliance-check",
+      "title": "Purchase Limit Compliance Check",
+      "industry": "cannabis-hemp",
+      "category": "compliance-documents",
+      "role": "Dispensary Manager",
+      "summary": "At checkout, this automation automatically checks a customer's same-day purchase history against state possession limits before the sale is completed.",
+      "steps": [
+        "At checkout, this automation automatically checks a customer's same-day purchase history against state possession limits before the sale is completed.",
+        "An inadvertent compliance violation at the register, one that can put the dispensary's license at risk, gets prevented before it happens rather than discovered during an audit."
+      ],
+      "manualProcess": "Done manually, a dispensary manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "A cannabis POS (Flowhub or Dutchie)",
+        "METRC",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/purchase-limit-compliance-check/"
+    },
+    {
+      "id": "cannabis-hemp/vendor-compliance-document-tracker",
+      "slug": "vendor-compliance-document-tracker",
+      "title": "Vendor Compliance Document Tracker",
+      "industry": "cannabis-hemp",
+      "category": "compliance-documents",
+      "role": "Purchasing Manager",
+      "summary": "This automation tracks required compliance documentation, lab results, licensing, manifest records, for every incoming product from every vendor…",
+      "steps": [
+        "This automation tracks required compliance documentation, lab results, licensing, manifest records, for every incoming product from every vendor, automatically flagging any incoming shipment missing required paperwork before it's accepted into inventory.",
+        "Product with incomplete documentation never quietly makes it onto the shelf."
+      ],
+      "manualProcess": "Left to a person, this means a purchasing manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.",
+      "tools": [
+        "METRC",
+        "Google Sheets or a document management tool",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/vendor-compliance-document-tracker/"
+    }
+  ]
+}

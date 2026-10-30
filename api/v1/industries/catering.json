@@ -1,0 +1,133 @@
+{
+  "slug": "catering",
+  "name": "Catering Companies",
+  "summary": "Event inquiry to proposal, headcount finalization, ingredient ordering, and crew staffing.",
+  "url": "https://www.ljwebmanagement.com/automations/catering/",
+  "automationCount": 5,
+  "automations": [
+    {
+      "id": "catering/event-inquiry-to-proposal-automation",
+      "slug": "event-inquiry-to-proposal-automation",
+      "title": "Event Inquiry-to-Proposal Automation",
+      "industry": "catering",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Coordinator",
+      "summary": "When an inquiry comes in with a guest count, date, and event type, this automation automatically generates a starter proposal with menu package…",
+      "steps": [
+        "When an inquiry comes in with a guest count, date, and event type, this automation automatically generates a starter proposal with menu package options and pricing based on those details.",
+        "The prospect gets something concrete within minutes instead of waiting for a callback to even find out a ballpark price."
+      ],
+      "manualProcess": "The manual approach means a sales coordinator handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A catering CRM (Total Party Planner or Caterease)",
+        "Zapier or Make.com",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/catering/event-inquiry-to-proposal-automation/"
+    },
+    {
+      "id": "catering/headcount-dietary-restriction-finalization-reminder",
+      "slug": "headcount-dietary-restriction-finalization-reminder",
+      "title": "Headcount & Dietary Restriction Finalization Reminder",
+      "industry": "catering",
+      "category": "operations-inventory",
+      "role": "Event Coordinator",
+      "summary": "As an event date approaches, this automation automatically reminds the client of the deadline to finalize their guest count and any dietary…",
+      "steps": [
+        "As an event date approaches, this automation automatically reminds the client of the deadline to finalize their guest count and any dietary restrictions, and locks in the kitchen's prep order the moment that information is confirmed.",
+        "The kitchen stops prepping off a stale headcount from three weeks earlier."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on an event coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Total Party Planner or Caterease",
+        "Twilio or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/catering/headcount-dietary-restriction-finalization-reminder/"
+    },
+    {
+      "id": "catering/ingredient-ordering-by-event-calendar",
+      "slug": "ingredient-ordering-by-event-calendar",
+      "title": "Ingredient Ordering by Event Calendar",
+      "industry": "catering",
+      "category": "operations-inventory",
+      "role": "Kitchen Manager",
+      "summary": "Based on the confirmed menus and headcounts for all upcoming events in a given week, this automation automatically compiles the combined ingredient…",
+      "steps": [
+        "Based on the confirmed menus and headcounts for all upcoming events in a given week, this automation automatically compiles the combined ingredient order needed and generates a purchase list for the kitchen manager.",
+        "Manual math done event-by-event, which is where ordering mistakes creep in during a busy week, gets replaced by one consolidated list."
+      ],
+      "manualProcess": "Manually, a kitchen manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Total Party Planner or Caterease",
+        "Google Sheets",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/catering/ingredient-ordering-by-event-calendar/"
+    },
+    {
+      "id": "catering/event-crew-staffing-assignment",
+      "slug": "event-crew-staffing-assignment",
+      "title": "Event Crew Staffing Assignment",
+      "industry": "catering",
+      "category": "hr-team",
+      "role": "Staffing Coordinator",
+      "summary": "Based on each event's size and service style, this automation automatically calculates the number of staff needed, checks availability among the…",
+      "steps": [
+        "Based on each event's size and service style, this automation automatically calculates the number of staff needed, checks availability among the on-call team, and sends shift confirmation requests, flagging the event manager if a shift goes unfilled close to the date.",
+        "An unfilled shift gets caught with enough lead time to actually solve it."
+      ],
+      "manualProcess": "Done manually, a staffing coordinator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.",
+      "tools": [
+        "A staffing/scheduling tool (When I Work)",
+        "Twilio or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/catering/event-crew-staffing-assignment/"
+    },
+    {
+      "id": "catering/final-invoice-gratuity-reconciliation",
+      "slug": "final-invoice-gratuity-reconciliation",
+      "title": "Final Invoice & Gratuity Reconciliation",
+      "industry": "catering",
+      "category": "billing-finance",
+      "role": "Billing Coordinator",
+      "summary": "After an event, this automation automatically reconciles the final headcount and any day-of add-ons against the original contract, generates the…",
+      "steps": [
+        "After an event, this automation automatically reconciles the final headcount and any day-of add-ons against the original contract, generates the final invoice reflecting the true totals, and processes it.",
+        "A manual reconciliation that often happens days after the event, when details are half-forgotten, becomes immediate and accurate."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a billing coordinator remembering to check in, update records, and follow up, with no safety net if something slips. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Total Party Planner or Caterease",
+        "QuickBooks Online",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "QuickBooks"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/catering/final-invoice-gratuity-reconciliation/"
+    }
+  ]
+}

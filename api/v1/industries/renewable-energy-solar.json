@@ -1,0 +1,133 @@
+{
+  "slug": "renewable-energy-solar",
+  "name": "Renewable Energy & Solar",
+  "summary": "Utility bill lead qualification, permit tracking, milestone payments, and performance alerts.",
+  "url": "https://www.ljwebmanagement.com/automations/renewable-energy-solar/",
+  "automationCount": 5,
+  "automations": [
+    {
+      "id": "renewable-energy-solar/system-performance-underperformance-alert",
+      "slug": "system-performance-underperformance-alert",
+      "title": "System Performance Underperformance Alert",
+      "industry": "renewable-energy-solar",
+      "category": "customer-communication",
+      "role": "Service Manager",
+      "summary": "This automation continuously compares each installed solar system's actual energy output against its modeled expected output and automatically…",
+      "steps": [
+        "This automation continuously compares each installed solar system's actual energy output against its modeled expected output and automatically alerts the service team when a system is underperforming beyond a normal range.",
+        "A failed panel or inverter often gets caught before the customer even notices their utility bill went up."
+      ],
+      "manualProcess": "Left to a person, this means a service manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A solar monitoring platform (SolarEdge or Enphase)",
+        "Zapier or Make.com",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/renewable-energy-solar/system-performance-underperformance-alert/"
+    },
+    {
+      "id": "renewable-energy-solar/permit-interconnection-application-tracker",
+      "slug": "permit-interconnection-application-tracker",
+      "title": "Permit & Interconnection Application Tracker",
+      "industry": "renewable-energy-solar",
+      "category": "compliance-documents",
+      "role": "Project Coordinator",
+      "summary": "This automation tracks every project's permit and utility interconnection application status, automatically checking for updates and alerting the…",
+      "steps": [
+        "This automation tracks every project's permit and utility interconnection application status, automatically checking for updates and alerting the project coordinator the moment a stage is approved.",
+        "Installation and activation move forward the same day approval posts instead of sitting delayed because no one checked the portal."
+      ],
+      "manualProcess": "Without automation, a project coordinator has to notice problems after they've already happened, then scramble to fix them manually one at a time. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A solar CRM (Aurora or SolarNexus)",
+        "Zapier or Make.com",
+        "Email or Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/renewable-energy-solar/permit-interconnection-application-tracker/"
+    },
+    {
+      "id": "renewable-energy-solar/installation-milestone-payment-trigger",
+      "slug": "installation-milestone-payment-trigger",
+      "title": "Installation Milestone Payment Trigger",
+      "industry": "renewable-energy-solar",
+      "category": "billing-finance",
+      "role": "Finance Manager",
+      "summary": "As a project passes each contractually defined milestone, site survey, permit approval, installation complete, activation, this automation…",
+      "steps": [
+        "As a project passes each contractually defined milestone, site survey, permit approval, installation complete, activation, this automation automatically generates the corresponding invoice tied to the finance agreement.",
+        "Billing stays synced to actual progress instead of trailing behind because a milestone was reached but nobody triggered the invoice."
+      ],
+      "manualProcess": "Without a system in place, a finance manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "A solar CRM",
+        "QuickBooks Online",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "QuickBooks"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/renewable-energy-solar/installation-milestone-payment-trigger/"
+    },
+    {
+      "id": "renewable-energy-solar/lead-qualification-from-utility-bill-upload",
+      "slug": "lead-qualification-from-utility-bill-upload",
+      "title": "Lead Qualification from Utility Bill Upload",
+      "industry": "renewable-energy-solar",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Development Rep",
+      "summary": "When a prospect uploads a copy of their utility bill during the quote request process, this automation automatically extracts their usage data to…",
+      "steps": [
+        "When a prospect uploads a copy of their utility bill during the quote request process, this automation automatically extracts their usage data to generate a preliminary system size and savings estimate.",
+        "The sales team gets a ready-made starting point instead of a blank lead that requires a full intake call before any real conversation can happen."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a sales development rep, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.",
+      "tools": [
+        "OpenAI API or a bill-parsing tool",
+        "A solar CRM (Aurora)",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/renewable-energy-solar/lead-qualification-from-utility-bill-upload/"
+    },
+    {
+      "id": "renewable-energy-solar/warranty-maintenance-renewal-reminder",
+      "slug": "warranty-maintenance-renewal-reminder",
+      "title": "Warranty & Maintenance Renewal Reminder",
+      "industry": "renewable-energy-solar",
+      "category": "marketing-retention",
+      "role": "Customer Success Manager",
+      "summary": "As equipment warranties approach expiration, this automation automatically reaches out to the homeowner with maintenance plan or extended warranty…",
+      "steps": [
+        "As equipment warranties approach expiration, this automation automatically reaches out to the homeowner with maintenance plan or extended warranty options.",
+        "The offer lands before coverage lapses rather than after something breaks and the homeowner is left paying full price for a repair that could have been covered."
+      ],
+      "manualProcess": "Handled by hand, a customer success manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work.",
+      "tools": [
+        "A solar CRM",
+        "Mailchimp or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/renewable-energy-solar/warranty-maintenance-renewal-reminder/"
+    }
+  ]
+}

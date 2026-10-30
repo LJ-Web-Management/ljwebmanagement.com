@@ -1,0 +1,292 @@
+{
+  "slug": "human-resources",
+  "name": "Human Resources",
+  "summary": "Applicant tracking, interview scheduling, new hire paperwork, timesheets, and offboarding.",
+  "url": "https://www.ljwebmanagement.com/automations/human-resources/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "human-resources/job-posting-multi-platform-applicant-tracker",
+      "slug": "job-posting-multi-platform-applicant-tracker",
+      "title": "Job Posting & Multi-Platform Applicant Tracker",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "HR Manager",
+      "summary": "When a new position is approved, the job description is automatically posted to LinkedIn, Indeed, and the company careers page simultaneously, and…",
+      "steps": [
+        "When a new position is approved, the job description is automatically posted to LinkedIn, Indeed, and the company careers page simultaneously, and all incoming applications are routed into a single ATS pipeline regardless of which platform they came from.",
+        "Applicants receive an immediate confirmation email with a timeline, and any applicant who hasn't received an update in 14 days is flagged for the HR manager, so no candidate is left waiting in silence while the hiring team deliberates."
+      ],
+      "manualProcess": "Done manually, a hr manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.",
+      "tools": [
+        "ATS (e.g., Greenhouse or Lever)",
+        "Zapier or Make.com",
+        "LinkedIn and Indeed APIs or job board integrations",
+        "Gmail or Outlook (automated applicant communications)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Outlook"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/job-posting-multi-platform-applicant-tracker/"
+    },
+    {
+      "id": "human-resources/interview-scheduling-candidate-communication-system",
+      "slug": "interview-scheduling-candidate-communication-system",
+      "title": "Interview Scheduling & Candidate Communication System",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "Recruiter",
+      "summary": "Once a candidate advances to the interview stage, this automation sends them a self-scheduling link, confirms the interview time automatically…",
+      "steps": [
+        "Once a candidate advances to the interview stage, this automation sends them a self-scheduling link, confirms the interview time automatically, sends a calendar invite to both the candidate and the hiring manager, and delivers a preparation email with the interview format and who they'll be meeting.",
+        "Post-interview, the hiring team is prompted to submit their feedback within 24 hours, and the candidate receives a status update before they have to follow up asking, keeping the best candidates engaged and the process moving."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a recruiter, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "ATS (e.g., Greenhouse or Lever)",
+        "Calendly (self-scheduling)",
+        "Zapier or Make.com",
+        "Gmail or Outlook",
+        "Slack (hiring team feedback reminder)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Calendly",
+        "Slack",
+        "Outlook"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/interview-scheduling-candidate-communication-system/"
+    },
+    {
+      "id": "human-resources/new-hire-document-collection-orientation-workflow",
+      "slug": "new-hire-document-collection-orientation-workflow",
+      "title": "New Hire Document Collection & Orientation Workflow",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "Onboarding Specialist",
+      "summary": "The moment a new hire accepts an offer, they automatically receive a welcome email with a link to complete their I-9, direct deposit form, benefits…",
+      "steps": [
+        "The moment a new hire accepts an offer, they automatically receive a welcome email with a link to complete their I-9, direct deposit form, benefits enrollment, and equipment request, with reminders sent until everything is finished.",
+        "On their first day, their accounts are pre-provisioned, their manager receives a day-one checklist, and the new hire receives a structured 30-60-90 day onboarding plan dripped over their first three months, so the onboarding experience is consistent regardless of who is managing it."
+      ],
+      "manualProcess": "Manually, an onboarding specialist is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "HRIS (e.g., BambooHR or Rippling)",
+        "Zapier or Make.com",
+        "DocuSign or HelloSign (offer and I-9)",
+        "Google Workspace or Microsoft 365 (account provisioning)",
+        "Slack (new hire welcome + team announcements)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "DocuSign",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/new-hire-document-collection-orientation-workflow/"
+    },
+    {
+      "id": "human-resources/timesheet-collection-exception-alert-system",
+      "slug": "timesheet-collection-exception-alert-system",
+      "title": "Timesheet Collection & Exception Alert System",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "Payroll Manager",
+      "summary": "A weekly reminder goes to every hourly employee on Monday morning to submit their timesheet, and a follow-up goes to anyone who hasn't submitted by…",
+      "steps": [
+        "A weekly reminder goes to every hourly employee on Monday morning to submit their timesheet, and a follow-up goes to anyone who hasn't submitted by the Wednesday deadline.",
+        "The payroll manager receives a consolidated exceptions report (missing timesheets, overtime flags, unusual punch patterns) rather than having to audit every submission manually.",
+        "Payroll processes on time every cycle because the data collection process is automated rather than dependent on employees and managers remembering on their own."
+      ],
+      "manualProcess": "Manually, a payroll manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Time-tracking software (e.g., Deputy or TSheets)",
+        "Zapier or Make.com",
+        "Payroll platform (e.g., Gusto or ADP)",
+        "Slack or email (reminder and exceptions report)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/timesheet-collection-exception-alert-system/"
+    },
+    {
+      "id": "human-resources/performance-review-cycle-manager",
+      "slug": "performance-review-cycle-manager",
+      "title": "Performance Review Cycle Manager",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "HR Business Partner",
+      "summary": "Ninety days before the annual review cycle, this automation sends managers a schedule of their direct reports' review dates with self-evaluation…",
+      "steps": [
+        "Ninety days before the annual review cycle, this automation sends managers a schedule of their direct reports' review dates with self-evaluation forms pre-attached.",
+        "Reminders escalate for overdue self-evaluations and manager reviews, and completed reviews are automatically compiled into a calibration-ready format for the HR business partner to use in talent planning sessions.",
+        "No one misses their window, and the HRBP doesn't spend two weeks chasing down forms from every department head."
+      ],
+      "manualProcess": "Left unautomated, a hr business partner spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.",
+      "tools": [
+        "HRIS (e.g., BambooHR, Lattice, or 15Five)",
+        "Zapier or Make.com",
+        "Google Forms or Jotform (self-evaluation)",
+        "Google Sheets (calibration rollup)",
+        "Email or Slack (escalating reminders)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/performance-review-cycle-manager/"
+    },
+    {
+      "id": "human-resources/new-hire-paperwork-equipment-provisioning-sequence",
+      "slug": "new-hire-paperwork-equipment-provisioning-sequence",
+      "title": "New Hire Paperwork & Equipment Provisioning Sequence",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "HR Coordinator",
+      "summary": "The instant a candidate accepts an offer inside the ATS, this automation triggers I-9, W-4, and benefits enrollment forms for e-signature, sent…",
+      "steps": [
+        "The instant a candidate accepts an offer inside the ATS, this automation triggers I-9, W-4, and benefits enrollment forms for e-signature, sent directly to the new hire's personal email so they can complete everything before day one.",
+        "At the same time, IT receives an automatic ticket to provision a laptop and set up accounts, and the new hire's first-week schedule (orientation, system training, meet-the-team sessions) is added to their calendar without anyone building it by hand.",
+        "What used to take an HR coordinator a full day of separate emails and follow-up calls now fires automatically the moment the offer is accepted, so new hires show up on day one with a working laptop and a filled-out benefits form instead of a stack of paperwork still to complete."
+      ],
+      "manualProcess": "Done manually, a hr coordinator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Zapier or Make.com",
+        "Greenhouse",
+        "BambooHR",
+        "DocuSign",
+        "Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "DocuSign",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/new-hire-paperwork-equipment-provisioning-sequence/"
+    },
+    {
+      "id": "human-resources/pto-balance-request-auto-router",
+      "slug": "pto-balance-request-auto-router",
+      "title": "PTO Balance & Request Auto-Router",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "People Operations Specialist",
+      "summary": "When an employee submits a time-off request, this automation immediately checks their current PTO balance in the HR system, cross-references the…",
+      "steps": [
+        "When an employee submits a time-off request, this automation immediately checks their current PTO balance in the HR system, cross-references the team calendar to see if anyone else on their team is already scheduled to be out that week, and routes the request straight to their manager with a one-click approve or deny button.",
+        "Conflicts, someone requesting time off when two teammates are already approved for the same week, are flagged automatically instead of surfacing three days later when someone notices the schedule doesn't work.",
+        "A process that used to require a people operations specialist to manually check a shared spreadsheet for every request now resolves in minutes, and managers get the full picture before they approve anything."
+      ],
+      "manualProcess": "Without this system, a people operations specialist manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Zapier or Make.com",
+        "BambooHR",
+        "Gusto",
+        "Google Calendar",
+        "Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/pto-balance-request-auto-router/"
+    },
+    {
+      "id": "human-resources/performance-review-cycle-reminder-system",
+      "slug": "performance-review-cycle-reminder-system",
+      "title": "Performance Review Cycle Reminder System",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "Performance Management Coordinator",
+      "summary": "Ninety, thirty, and seven days before each employee's scheduled review date, this automation reminds the manager to get it on the calendar, and…",
+      "steps": [
+        "Ninety, thirty, and seven days before each employee's scheduled review date, this automation reminds the manager to get it on the calendar, and sends the employee a self-assessment form to complete beforehand so the conversation starts with real input instead of a blank page.",
+        "If a review is still sitting incomplete seven days past its due date, the system automatically escalates to HR leadership with the employee's name, manager, and how overdue it is.",
+        "Review cycles that used to slip by weeks or months, quietly, until an employee asked why they hadn't had one, now stay on schedule because someone always gets a reminder before the deadline passes, not after."
+      ],
+      "manualProcess": "Without a system in place, a performance management coordinator has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Zapier or Make.com",
+        "BambooHR",
+        "Google Forms or Jotform",
+        "Slack",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/performance-review-cycle-reminder-system/"
+    },
+    {
+      "id": "human-resources/exit-interview-offboarding-checklist-automation",
+      "slug": "exit-interview-offboarding-checklist-automation",
+      "title": "Exit Interview & Offboarding Checklist Automation",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "Offboarding Coordinator",
+      "summary": "The moment a termination date is entered into the HR system, this automation schedules an exit interview on the departing employee's calendar, sends…",
+      "steps": [
+        "The moment a termination date is entered into the HR system, this automation schedules an exit interview on the departing employee's calendar, sends IT and facilities a checklist to disable system access and collect keys, badges, and equipment on the last day, and notifies payroll to process the final paycheck according to state requirements.",
+        "Nothing depends on the offboarding coordinator remembering to loop in three different departments by email.",
+        "Accounts that used to stay active for days or weeks after an employee's last day, a real security exposure, now get disabled on schedule every time, and the final paycheck goes out without a scramble."
+      ],
+      "manualProcess": "Left to a person, this means an offboarding coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Zapier or Make.com",
+        "BambooHR",
+        "Slack",
+        "Gusto"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/exit-interview-offboarding-checklist-automation/"
+    },
+    {
+      "id": "human-resources/employee-anniversary-milestone-recognition-system",
+      "slug": "employee-anniversary-milestone-recognition-system",
+      "title": "Employee Anniversary & Milestone Recognition System",
+      "industry": "human-resources",
+      "category": "hr-team",
+      "role": "Culture and Engagement Manager",
+      "summary": "Every morning, this automation checks employee start dates against today's date, and the moment someone hits a work anniversary, it automatically…",
+      "steps": [
+        "Every morning, this automation checks employee start dates against today's date, and the moment someone hits a work anniversary, it automatically notifies their manager and posts a personalized shoutout in the team's Slack channel, tagging the milestone (one year, five years, ten years) so the recognition feels specific rather than generic.",
+        "Anniversaries tied to a reward, an extra PTO day, a gift card, or a bonus, trigger that reward request automatically instead of relying on a manager to remember and submit it.",
+        "Milestones that used to get missed entirely or celebrated late with an apologetic \"sorry this is a few weeks overdue\" now get recognized on the exact day, every time, without HR maintaining a manual spreadsheet of dates."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a culture and engagement manager, who has to track every step by hand across emails, spreadsheets, and sticky notes.",
+      "tools": [
+        "Zapier or Make.com",
+        "BambooHR",
+        "Slack",
+        "Google Calendar"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/human-resources/employee-anniversary-milestone-recognition-system/"
+    }
+  ]
+}

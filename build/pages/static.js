@@ -184,6 +184,7 @@ function home(cat, guides, extra) {
       ${tile("/quizzes/", "listCheck", "Quizzes &amp; assessments", "AI readiness, automation IQ")}
       ${tile("/glossary/", "bookOpen", "Automation glossary", extra.glossary.terms.length + " terms in plain English")}
     </div>
+    <p class="lj-center lj-mt-lg"><a class="lj-link-arrow" href="/developers/">Building an AI agent or integration? Use the free LJ Web Management API and docs ${icon("arrowRight")}</a></p>
   </div>
 </section>
 
@@ -217,7 +218,8 @@ function home(cat, guides, extra) {
         faq.schema,
       ],
       extraHead:
-        '<link rel="preload" as="image" href="/assets/lj-logo-80.webp">' + '<link rel="preconnect" href="https://blog.ljwebmanagement.com">',
+        '<link rel="preload" as="image" href="/assets/lj-logo-80.webp">' + '<link rel="preconnect" href="https://blog.ljwebmanagement.com">' +
+        '<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">' + '<link rel="service-doc" type="text/html" href="/developers/">' + '<link rel="api-catalog" href="/.well-known/api-catalog">',
       endScripts: '<script src="https://blog.ljwebmanagement.com/assets/js/latest-posts.js" defer></script>',
       main,
     })

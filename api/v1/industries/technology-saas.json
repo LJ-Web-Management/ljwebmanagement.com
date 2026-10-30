@@ -1,0 +1,281 @@
+{
+  "slug": "technology-saas",
+  "name": "Technology & SaaS",
+  "summary": "Trial conversion, churn signals, ticket routing, feature requests, and failed payments.",
+  "url": "https://www.ljwebmanagement.com/automations/technology-saas/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "technology-saas/churn-risk-detection-intervention-playbook-system",
+      "slug": "churn-risk-detection-intervention-playbook-system",
+      "title": "Churn Risk Detection & Intervention Playbook System",
+      "industry": "technology-saas",
+      "category": "marketing-retention",
+      "role": "Customer Success Manager",
+      "summary": "Each week, this automation calculates a health score for every account based on login frequency, feature adoption, support ticket volume, and NPS…",
+      "steps": [
+        "Each week, this automation calculates a health score for every account based on login frequency, feature adoption, support ticket volume, and NPS response, and any account that drops below the risk threshold triggers a structured intervention playbook, a CSM task to reach out within 24 hours, a check-in email from the account executive, and an executive sponsor alert for high-value accounts.",
+        "Churn is identified and addressed weeks before the renewal conversation, not the day before the contract expires."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a customer success manager remembering to check in, update records, and follow up, with no safety net if something slips. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "CRM or CS platform (e.g., HubSpot, Gainsight, or ChurnZero)",
+        "Zapier or Make.com",
+        "Product analytics platform (e.g., Mixpanel or Amplitude API)",
+        "Slack (churn risk alerts)",
+        "OpenAI API (account summary for CSM)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "HubSpot"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/churn-risk-detection-intervention-playbook-system/"
+    },
+    {
+      "id": "technology-saas/feature-request-aggregation-roadmap-voting-system",
+      "slug": "feature-request-aggregation-roadmap-voting-system",
+      "title": "Feature Request Aggregation & Roadmap Voting System",
+      "industry": "technology-saas",
+      "category": "reviews-feedback",
+      "role": "Product Manager",
+      "summary": "Feature requests submitted through in-app widgets, support tickets, sales calls, and NPS follow-ups are all routed into a single product feedback…",
+      "steps": [
+        "Feature requests submitted through in-app widgets, support tickets, sales calls, and NPS follow-ups are all routed into a single product feedback repository, where they are automatically deduplicated, tagged by theme, and linked to the customer accounts that submitted them.",
+        "When a request on the roadmap ships, every customer who submitted it automatically receives a \"this feature is live\" email, closing the loop that typically never gets closed, and turning product feedback into a customer retention tool."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a product manager, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Product feedback tool (e.g., Canny or ProductBoard)",
+        "Zapier or Make.com",
+        "CRM (for customer linking)",
+        "Jira or Linear (roadmap)",
+        "Mailchimp or email (ship notifications)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/feature-request-aggregation-roadmap-voting-system/"
+    },
+    {
+      "id": "technology-saas/trial-to-paid-conversion-nurture-sequence",
+      "slug": "trial-to-paid-conversion-nurture-sequence",
+      "title": "Trial-to-Paid Conversion Nurture Sequence",
+      "industry": "technology-saas",
+      "category": "lead-follow-up-sales",
+      "role": "SaaS Sales Representative",
+      "summary": "The moment a new trial account is created, the user is enrolled in a behavior-driven nurture sequence: welcome email on day one, a setup checklist…",
+      "steps": [
+        "The moment a new trial account is created, the user is enrolled in a behavior-driven nurture sequence: welcome email on day one, a setup checklist prompt on day two, a \"have you tried this key feature?\" email on day four, a use-case webinar invite on day seven, and a conversion offer on day twelve.",
+        "Users who complete the key activation event (the \"aha moment\") move to a fast-track conversion sequence, while users who haven't logged in within five days get a re-engagement push, all without the sales rep manually monitoring each trial account."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a saas sales representative remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "CRM (e.g., HubSpot or Salesforce)",
+        "Product analytics (e.g., Mixpanel or Segment)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign (email sequence)",
+        "Calendly (demo scheduling for warm trials)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Calendly",
+        "Mailchimp",
+        "HubSpot",
+        "ActiveCampaign",
+        "Salesforce"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/trial-to-paid-conversion-nurture-sequence/"
+    },
+    {
+      "id": "technology-saas/ticket-routing-priority-assignment-sla-alert-system",
+      "slug": "ticket-routing-priority-assignment-sla-alert-system",
+      "title": "Ticket Routing, Priority Assignment & SLA Alert System",
+      "industry": "technology-saas",
+      "category": "customer-communication",
+      "role": "IT Help Desk Manager",
+      "summary": "Incoming support tickets from email, Slack, or the ticketing portal are automatically classified by category and severity, assigned to the correct…",
+      "steps": [
+        "Incoming support tickets from email, Slack, or the ticketing portal are automatically classified by category and severity, assigned to the correct technician or tier based on skill tags, and given an SLA clock that triggers escalation alerts if the ticket isn't acknowledged or resolved within the agreed window.",
+        "The help desk manager sees a real-time board of all open tickets with SLA status rather than finding out about a missed commitment from an angry VP, fixing the operational blind spot that exists in every manual ticketing process."
+      ],
+      "manualProcess": "The manual approach means an it help desk manager handles each case reactively, after someone has already noticed something went wrong. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "IT ticketing system (e.g., Jira Service Management, Freshservice, or Zendesk)",
+        "Zapier or Make.com",
+        "Slack (escalation alerts and technician assignments)",
+        "Google Sheets or dashboard (SLA compliance tracking)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/ticket-routing-priority-assignment-sla-alert-system/"
+    },
+    {
+      "id": "technology-saas/incident-detection-alert-routing-postmortem-kickoff",
+      "slug": "incident-detection-alert-routing-postmortem-kickoff",
+      "title": "Incident Detection, Alert Routing & Postmortem Kickoff",
+      "industry": "technology-saas",
+      "category": "compliance-documents",
+      "role": "DevOps Engineer",
+      "summary": "When a monitoring alert fires, this automation classifies the incident severity, pages the on-call engineer via the escalation policy, creates a war…",
+      "steps": [
+        "When a monitoring alert fires, this automation classifies the incident severity, pages the on-call engineer via the escalation policy, creates a war room channel in Slack, posts the current system status to the status page, and begins logging the timeline automatically so the postmortem document starts building itself from the first alert.",
+        "Once the incident is resolved, a postmortem template is auto-populated with the timeline, alerting chain, and initial impact data, turning the most stressful part of the job into a more structured, less chaotic response."
+      ],
+      "manualProcess": "Left to a person, this means a devops engineer re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Monitoring platform (e.g., Datadog, PagerDuty, or OpsGenie)",
+        "Zapier or Make.com",
+        "Slack (war room channel creation)",
+        "Statuspage.io (public status updates)",
+        "Notion or Confluence (auto-populated postmortem template)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/incident-detection-alert-routing-postmortem-kickoff/"
+    },
+    {
+      "id": "technology-saas/free-trial-conversion-nurture-sequence",
+      "slug": "free-trial-conversion-nurture-sequence",
+      "title": "Free Trial Conversion Nurture Sequence",
+      "industry": "technology-saas",
+      "category": "lead-follow-up-sales",
+      "role": "Growth Marketing Manager",
+      "summary": "From the moment someone signs up for a free trial, this automation tracks their in-app activity and automatically sends a tailored email sequence: a…",
+      "steps": [
+        "From the moment someone signs up for a free trial, this automation tracks their in-app activity and automatically sends a tailored email sequence: a getting-started tip on day one, a check-in nudge if they haven't logged back in by day three, and personal outreach from a sales rep if they've used a key feature but haven't upgraded by day 10.",
+        "Trial users get exactly the nudge that fits where they actually are in the product instead of one generic drip campaign sent to everyone regardless of behavior, turning passive signups into a guided path toward conversion."
+      ],
+      "manualProcess": "Without this system, a growth marketing manager manually pieces together information from different places, then has to relay it to everyone who needs it. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Intercom or Customer.io",
+        "Mixpanel or Amplitude",
+        "Zapier or Make.com",
+        "Stripe (upgrade tracking)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/free-trial-conversion-nurture-sequence/"
+    },
+    {
+      "id": "technology-saas/churn-signal-detection-save-sequence",
+      "slug": "churn-signal-detection-save-sequence",
+      "title": "Churn Signal Detection & Save Sequence",
+      "industry": "technology-saas",
+      "category": "marketing-retention",
+      "role": "Customer Success Manager",
+      "summary": "This automation continuously monitors usage data for signs a customer is disengaging: login frequency dropping below their normal baseline, key…",
+      "steps": [
+        "This automation continuously monitors usage data for signs a customer is disengaging: login frequency dropping below their normal baseline, key features going unused, or support tickets sitting unanswered.",
+        "The moment an account crosses the risk threshold, it automatically notifies the customer success manager with the specific warning signs that triggered the flag and fires off a \\\"we noticed\\\" outreach email to the customer.",
+        "Accounts that used to quietly let their subscription lapse get a save attempt while there's still time to turn it around."
+      ],
+      "manualProcess": "Left unautomated, a customer success manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Mixpanel or Amplitude",
+        "Intercom",
+        "Zapier or Make.com",
+        "A CRM (HubSpot or similar)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "HubSpot"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/churn-signal-detection-save-sequence/"
+    },
+    {
+      "id": "technology-saas/failed-payment-recovery-sequence",
+      "slug": "failed-payment-recovery-sequence",
+      "title": "Failed Payment Recovery Sequence",
+      "industry": "technology-saas",
+      "category": "billing-finance",
+      "role": "Billing Operations Manager",
+      "summary": "When a subscription payment fails, this automation automatically retries the charge on a set schedule, typically at 1, 3, and 7 days, and emails the…",
+      "steps": [
+        "When a subscription payment fails, this automation automatically retries the charge on a set schedule, typically at 1, 3, and 7 days, and emails the customer a direct link to update their card each time.",
+        "Account access is only paused after multiple failed attempts and clear advance warning, not on the first declined charge.",
+        "Revenue that used to quietly disappear to an expired card no one noticed gets recovered automatically instead of requiring a manual dunning process."
+      ],
+      "manualProcess": "The manual approach means a billing operations manager handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Stripe",
+        "Zapier or Make.com",
+        "Mailchimp or email",
+        "A CRM for at-risk account tracking"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/failed-payment-recovery-sequence/"
+    },
+    {
+      "id": "technology-saas/feature-request-to-roadmap-tracker",
+      "slug": "feature-request-to-roadmap-tracker",
+      "title": "Feature Request-to-Roadmap Tracker",
+      "industry": "technology-saas",
+      "category": "reviews-feedback",
+      "role": "Product Manager",
+      "summary": "When customers submit feature requests through support tickets, in-app feedback widgets, or sales calls, this automation automatically extracts and…",
+      "steps": [
+        "When customers submit feature requests through support tickets, in-app feedback widgets, or sales calls, this automation automatically extracts and tags the request by theme, adds it to a shared product roadmap board, and tallies how many distinct customers have asked for the same thing.",
+        "Product teams get real prioritization data, ranked by actual customer demand, instead of whoever complained loudest in the last team meeting driving the roadmap."
+      ],
+      "manualProcess": "The manual approach means a product manager handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Productboard or Canny",
+        "Zendesk or Intercom",
+        "Zapier or Make.com",
+        "OpenAI API (request tagging)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/feature-request-to-roadmap-tracker/"
+    },
+    {
+      "id": "technology-saas/uptime-incident-status-page-updater",
+      "slug": "uptime-incident-status-page-updater",
+      "title": "Uptime Incident Status Page Updater",
+      "industry": "technology-saas",
+      "category": "customer-communication",
+      "role": "Site Reliability Engineer",
+      "summary": "When a monitoring tool detects a service outage or degraded performance, this automation automatically updates the public status page with the…",
+      "steps": [
+        "When a monitoring tool detects a service outage or degraded performance, this automation automatically updates the public status page with the incident details, posts an update to the company's status account on social media, and pages the on-call engineer.",
+        "Customers find out about an issue from the company's own channels within minutes instead of flooding support with \\\"is this down\\\" tickets while the team is still investigating."
+      ],
+      "manualProcess": "Handled by hand, a site reliability engineer spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Datadog or PagerDuty",
+        "Statuspage or a similar status page tool",
+        "Zapier or Make.com",
+        "Slack"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/uptime-incident-status-page-updater/"
+    }
+  ]
+}

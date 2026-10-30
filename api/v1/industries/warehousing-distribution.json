@@ -1,0 +1,290 @@
+{
+  "slug": "warehousing-distribution",
+  "name": "Warehousing & Distribution",
+  "summary": "Dock scheduling, wave planning, cycle counts, returns, and labor productivity.",
+  "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "warehousing-distribution/labor-productivity-tracker-shift-performance-dashboard",
+      "slug": "labor-productivity-tracker-shift-performance-dashboard",
+      "title": "Labor Productivity Tracker & Shift Performance Dashboard",
+      "industry": "warehousing-distribution",
+      "category": "reporting-analytics",
+      "role": "Warehouse Director",
+      "summary": "Each shift, pick rates, pack rates, receiving throughput, and order accuracy metrics are automatically compiled from the WMS and presented in a…",
+      "steps": [
+        "Each shift, pick rates, pack rates, receiving throughput, and order accuracy metrics are automatically compiled from the WMS and presented in a real-time dashboard that the warehouse director can check from anywhere.",
+        "Shifts that fall below productivity targets trigger an alert during the shift (not in a report the next morning) so the director can intervene while there is still time to course-correct.",
+        "At week end, a performance summary is automatically distributed to shift supervisors comparing actual versus target across every key metric, building a culture of accountability without manual report-building from the director's team."
+      ],
+      "manualProcess": "The manual approach means a warehouse director handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "WMS (e.g., ShipHero, Deposco, or Manhattan Associates)",
+        "Zapier or Make.com",
+        "Google Sheets or a BI tool (performance dashboard)",
+        "Slack (real-time productivity alerts)",
+        "Email (weekly shift summary distribution)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/labor-productivity-tracker-shift-performance-dashboard/"
+    },
+    {
+      "id": "warehousing-distribution/inbound-shipment-pre-alert-dock-scheduling-system",
+      "slug": "inbound-shipment-pre-alert-dock-scheduling-system",
+      "title": "Inbound Shipment Pre-Alert & Dock Scheduling System",
+      "industry": "warehousing-distribution",
+      "category": "scheduling-dispatch",
+      "role": "Receiving Manager",
+      "summary": "When a supplier ships an order, this automation receives the ASN (Advanced Shipment Notice), cross-references it against the open PO, flags any…",
+      "steps": [
+        "When a supplier ships an order, this automation receives the ASN (Advanced Shipment Notice), cross-references it against the open PO, flags any quantity or item discrepancies before the truck arrives, and schedules a dock door and receiving crew window on the facility's dock management calendar.",
+        "Drivers receive a confirmation text with their scheduled arrival window and dock assignment, eliminating the unplanned arrivals that stack trucks in the parking lot and blow up the receiving team's day.",
+        "Any shipment arriving without a pre-scheduled appointment is flagged automatically for the receiving manager to route or reschedule."
+      ],
+      "manualProcess": "The manual approach means a receiving manager handles each case reactively, after someone has already noticed something went wrong. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "WMS or ERP with ASN integration",
+        "Zapier or Make.com",
+        "Google Calendar or dock scheduling tool",
+        "Twilio (driver dock appointment confirmation)",
+        "Slack (discrepancy and unscheduled arrival alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Slack",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/inbound-shipment-pre-alert-dock-scheduling-system/"
+    },
+    {
+      "id": "warehousing-distribution/order-wave-planning-pick-priority-automation",
+      "slug": "order-wave-planning-pick-priority-automation",
+      "title": "Order Wave Planning & Pick Priority Automation",
+      "industry": "warehousing-distribution",
+      "category": "operations-inventory",
+      "role": "Distribution Center Manager",
+      "summary": "Two hours before each pick wave is released, this automation analyzes open orders by carrier cutoff time, order priority, pick zone, and available…",
+      "steps": [
+        "Two hours before each pick wave is released, this automation analyzes open orders by carrier cutoff time, order priority, pick zone, and available labor, and builds an optimized wave plan that maximizes throughput and ensures on-time carrier departures.",
+        "The wave plan is automatically pushed to the WMS and pick task assignments are distributed to available pickers by zone, no supervisor manually building the plan or radio-ing assignments across the floor.",
+        "If an order is at risk of missing its carrier cutoff due to a staffing gap or pick exception, the DC manager receives an alert with enough lead time to reassign resources or expedite."
+      ],
+      "manualProcess": "The manual approach means a distribution center manager handles each case reactively, after someone has already noticed something went wrong. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "WMS (e.g., Deposco, HighJump, or 3PL Central)",
+        "Zapier or Make.com",
+        "Google Sheets (wave planning model)",
+        "Slack (cutoff risk alerts)",
+        "Email (wave plan distribution to supervisors)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/order-wave-planning-pick-priority-automation/"
+    },
+    {
+      "id": "warehousing-distribution/cycle-count-scheduling-variance-investigation-tracker",
+      "slug": "cycle-count-scheduling-variance-investigation-tracker",
+      "title": "Cycle Count Scheduling & Variance Investigation Tracker",
+      "industry": "warehousing-distribution",
+      "category": "operations-inventory",
+      "role": "Inventory Control Manager",
+      "summary": "The inventory control manager sets a cycle count schedule by location zone, and this automation assigns count tasks to the designated counters each…",
+      "steps": [
+        "The inventory control manager sets a cycle count schedule by location zone, and this automation assigns count tasks to the designated counters each morning, collects count results via mobile scan or a simple form, and immediately calculates variances against the system-on-hand quantity.",
+        "Any variance above the threshold triggers an investigation task assigned to the inventory control team, and the manager receives a daily variance summary showing total shrink, potential causes by zone, and the status of open investigations.",
+        "Inventory accuracy is monitored continuously rather than discovered annually during a physical count."
+      ],
+      "manualProcess": "Without this system, an inventory control manager manually pieces together information from different places, then has to relay it to everyone who needs it.",
+      "tools": [
+        "WMS or inventory management platform",
+        "Jotform or mobile scan app (count data collection)",
+        "Zapier or Make.com",
+        "Airtable or Google Sheets (variance tracker and investigation log)",
+        "Slack or email (daily variance summary)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/cycle-count-scheduling-variance-investigation-tracker/"
+    },
+    {
+      "id": "warehousing-distribution/rma-intake-inspection-disposition-workflow",
+      "slug": "rma-intake-inspection-disposition-workflow",
+      "title": "RMA Intake, Inspection & Disposition Workflow",
+      "industry": "warehousing-distribution",
+      "category": "operations-inventory",
+      "role": "Returns Processing Supervisor",
+      "summary": "When a return authorization is issued, this automation generates an RMA number, sends the customer a pre-paid label, and creates a pending receipt…",
+      "steps": [
+        "When a return authorization is issued, this automation generates an RMA number, sends the customer a pre-paid label, and creates a pending receipt record in the system.",
+        "When the return arrives and is scanned in at the returns dock, the supervisor receives a prompt to complete a condition inspection via a mobile form.",
+        "Based on the inspection result (sellable, refurbish, vendor credit, or destroy) the system automatically routes the unit to the correct disposition queue, initiates the appropriate credit or replacement, and notifies the customer that their return has been processed.",
+        "Returns that have been received but not inspected for more than 48 hours are flagged for immediate resolution."
+      ],
+      "manualProcess": "Left to a person, this means a returns processing supervisor re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "ERP or WMS (returns module)",
+        "Jotform (RMA inspection form)",
+        "Zapier or Make.com",
+        "EasyPost or ShipStation (return label generation)",
+        "Twilio (customer return status notification)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/rma-intake-inspection-disposition-workflow/"
+    },
+    {
+      "id": "warehousing-distribution/pick-pack-ship-exception-alert",
+      "slug": "pick-pack-ship-exception-alert",
+      "title": "Pick-Pack-Ship Exception Alert",
+      "industry": "warehousing-distribution",
+      "category": "operations-inventory",
+      "role": "Warehouse Supervisor",
+      "summary": "As orders move through the fulfillment process, this automation continuously flags any order that's been sitting in the picked or packed stage…",
+      "steps": [
+        "As orders move through the fulfillment process, this automation continuously flags any order that's been sitting in the picked or packed stage longer than the normal time threshold for that order type.",
+        "The warehouse supervisor is automatically notified the moment an order crosses that threshold, giving enough time to resolve whatever's stuck before it misses its shipping cutoff instead of finding out at the end of the day that a batch of orders didn't ship."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a warehouse supervisor, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A WMS (Fishbowl or NetSuite)",
+        "Zapier or Make.com",
+        "Slack or email",
+        "A barcode scanning app"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/pick-pack-ship-exception-alert/"
+    },
+    {
+      "id": "warehousing-distribution/cycle-count-discrepancy-resolver",
+      "slug": "cycle-count-discrepancy-resolver",
+      "title": "Cycle Count Discrepancy Resolver",
+      "industry": "warehousing-distribution",
+      "category": "operations-inventory",
+      "role": "Inventory Control Manager",
+      "summary": "When a scheduled cycle count finds a mismatch between the system's recorded inventory and the physical count on the shelf, this automation…",
+      "steps": [
+        "When a scheduled cycle count finds a mismatch between the system's recorded inventory and the physical count on the shelf, this automation automatically creates a discrepancy ticket and assigns it to the inventory team for investigation.",
+        "Any SKU that shows up with recurring discrepancies across multiple counts is automatically flagged for a deeper audit instead of each mismatch being treated as an isolated, one-off event."
+      ],
+      "manualProcess": "Manually, an inventory control manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A WMS",
+        "Zapier or Make.com",
+        "Google Sheets",
+        "Slack or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/cycle-count-discrepancy-resolver/"
+    },
+    {
+      "id": "warehousing-distribution/dock-appointment-scheduling-automation",
+      "slug": "dock-appointment-scheduling-automation",
+      "title": "Dock Appointment Scheduling Automation",
+      "industry": "warehousing-distribution",
+      "category": "scheduling-dispatch",
+      "role": "Dock Operations Coordinator",
+      "summary": "Carriers arriving to pick up or drop off freight can self-schedule a dock appointment through an automated booking link that checks real-time dock…",
+      "steps": [
+        "Carriers arriving to pick up or drop off freight can self-schedule a dock appointment through an automated booking link that checks real-time dock availability and automatically confirms the slot or suggests the next open one.",
+        "The phone-tag that used to eat up hours of a dispatcher's day manually scheduling every truck disappears, and the dock schedule stays accurate without anyone updating a shared spreadsheet by hand."
+      ],
+      "manualProcess": "Left unautomated, a dock operations coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "A dock scheduling tool (Opendock or C3 Reservations)",
+        "Zapier or Make.com",
+        "Email or SMS confirmation",
+        "Google Calendar"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/dock-appointment-scheduling-automation/"
+    },
+    {
+      "id": "warehousing-distribution/returns-intake-restocking-workflow",
+      "slug": "returns-intake-restocking-workflow",
+      "title": "Returns Intake & Restocking Workflow",
+      "industry": "warehousing-distribution",
+      "category": "operations-inventory",
+      "role": "Returns Processing Lead",
+      "summary": "When a returned item arrives at the warehouse, this automation automatically logs the return against the original order, routes it through a quality…",
+      "steps": [
+        "When a returned item arrives at the warehouse, this automation automatically logs the return against the original order, routes it through a quality check step, and automatically restocks the item to sellable inventory if it passes inspection, or flags it for disposal or refurbishment if it doesn't.",
+        "The gap between \\\"return received\\\" and \\\"back in stock and sellable\\\" closes from days to hours."
+      ],
+      "manualProcess": "Handled by hand, a returns processing lead spends time each day re-checking the same information across disconnected tools instead of doing higher-value work.",
+      "tools": [
+        "A WMS or ERP",
+        "Zapier or Make.com",
+        "A barcode scanner app",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/returns-intake-restocking-workflow/"
+    },
+    {
+      "id": "warehousing-distribution/labor-allocation-forecast-alert",
+      "slug": "labor-allocation-forecast-alert",
+      "title": "Labor Allocation Forecast Alert",
+      "industry": "warehousing-distribution",
+      "category": "reporting-analytics",
+      "role": "Warehouse Manager",
+      "summary": "By comparing tomorrow's expected order volume against current confirmed staffing levels, this automation automatically alerts the warehouse manager…",
+      "steps": [
+        "By comparing tomorrow's expected order volume against current confirmed staffing levels, this automation automatically alerts the warehouse manager if the forecast suggests the shift is understaffed for the volume coming in.",
+        "That alert lands with enough lead time to call in extra help before the volume actually hits, instead of the shortfall only becoming obvious once orders are already backing up on the floor."
+      ],
+      "manualProcess": "Left unautomated, a warehouse manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "A WMS",
+        "Zapier or Make.com",
+        "Google Sheets (staffing model)",
+        "Slack or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/warehousing-distribution/labor-allocation-forecast-alert/"
+    }
+  ]
+}

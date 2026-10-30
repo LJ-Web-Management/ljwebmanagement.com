@@ -1,0 +1,295 @@
+{
+  "slug": "construction-contracting",
+  "name": "Construction & Contracting",
+  "summary": "Bid collection, daily site reports, permit and inspection tracking, and estimate follow-up.",
+  "url": "https://www.ljwebmanagement.com/automations/construction-contracting/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "construction-contracting/subcontractor-bid-collection-comparison-system",
+      "slug": "subcontractor-bid-collection-comparison-system",
+      "title": "Subcontractor Bid Collection & Comparison System",
+      "industry": "construction-contracting",
+      "category": "operations-inventory",
+      "role": "General Contractor",
+      "summary": "When a new project goes out for bids, this automation sends a formatted bid request to the right subcontractors from a categorized vendor database…",
+      "steps": [
+        "When a new project goes out for bids, this automation sends a formatted bid request to the right subcontractors from a categorized vendor database, tracks who has and hasn't responded, follows up with a reminder at the deadline, and compiles all received bids into a side-by-side comparison sheet for the GC to review.",
+        "What used to be a week of email chasing becomes an organized, documented bid process that runs mostly on its own."
+      ],
+      "manualProcess": "Handled by hand, a general contractor spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Airtable or Google Sheets (vendor database and bid tracker)",
+        "Zapier or Make.com",
+        "Jotform (bid submission form)",
+        "Gmail or Outlook (bid request emails)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Airtable",
+        "Google Sheets",
+        "Outlook"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/subcontractor-bid-collection-comparison-system/"
+    },
+    {
+      "id": "construction-contracting/daily-site-progress-report-punch-list-system",
+      "slug": "daily-site-progress-report-punch-list-system",
+      "title": "Daily Site Progress Report & Punch List System",
+      "industry": "construction-contracting",
+      "category": "operations-inventory",
+      "role": "Project Manager",
+      "summary": "Field supervisors submit a simple daily report form from the job site, and the system automatically formats it into a branded progress report…",
+      "steps": [
+        "Field supervisors submit a simple daily report form from the job site, and the system automatically formats it into a branded progress report, appends any uploaded photos, and emails it to the owner, architect, and project manager, keeping all stakeholders informed without anyone having to manually format a report or remember to send it.",
+        "At project end, the punch list is built automatically from flagged items in those daily reports, with trades assigned to each item."
+      ],
+      "manualProcess": "Without this system, a project manager manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Jotform or Typeform (daily report form)",
+        "Zapier or Make.com",
+        "Google Drive (photo storage)",
+        "Airtable (punch list tracker)",
+        "Gmail or Outlook (stakeholder distribution)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Airtable",
+        "Outlook"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/daily-site-progress-report-punch-list-system/"
+    },
+    {
+      "id": "construction-contracting/material-cost-tracker-proposal-generator",
+      "slug": "material-cost-tracker-proposal-generator",
+      "title": "Material Cost Tracker & Proposal Generator",
+      "industry": "construction-contracting",
+      "category": "lead-follow-up-sales",
+      "role": "Construction Estimator",
+      "summary": "When an estimator finalizes a takeoff, the system checks current supplier pricing via API or a regularly updated price sheet, calculates material…",
+      "steps": [
+        "When an estimator finalizes a takeoff, the system checks current supplier pricing via API or a regularly updated price sheet, calculates material costs automatically, applies the configured labor and overhead markup, and generates a formatted proposal document ready to send.",
+        "Any material that has spiked significantly in price since the last update is flagged in red so the estimator knows before a proposal goes out the door at the wrong number."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a construction estimator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Estimating software (e.g., Buildxact or ProEst)",
+        "Zapier or Make.com",
+        "Google Sheets or Airtable (current pricing database)",
+        "PandaDoc or Proposify (proposal generation)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Airtable",
+        "Google Sheets",
+        "PandaDoc"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/material-cost-tracker-proposal-generator/"
+    },
+    {
+      "id": "construction-contracting/permit-application-inspection-scheduler",
+      "slug": "permit-application-inspection-scheduler",
+      "title": "Permit Application & Inspection Scheduler",
+      "industry": "construction-contracting",
+      "category": "compliance-documents",
+      "role": "Construction Office Manager",
+      "summary": "As soon as a project hits the permitting stage, this automation generates the correct permit application forms pre-filled with project details…",
+      "steps": [
+        "As soon as a project hits the permitting stage, this automation generates the correct permit application forms pre-filled with project details, sends reminders to the responsible party to submit them by the target date, and (once permits are in hand) schedules required inspections based on the project timeline.",
+        "The office manager gets an alert any time an inspection is coming up in the next 72 hours, so nothing gets missed in the middle of a busy job calendar."
+      ],
+      "manualProcess": "Without automation, a construction office manager has to notice problems after they've already happened, then scramble to fix them manually one at a time. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Project management software (e.g., Procore or Buildertrend)",
+        "Zapier or Make.com",
+        "Google Calendar (inspection scheduling)",
+        "Jotform or Google Forms (permit checklist)",
+        "Email or Slack (alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/permit-application-inspection-scheduler/"
+    },
+    {
+      "id": "construction-contracting/incident-report-osha-log-automation",
+      "slug": "incident-report-osha-log-automation",
+      "title": "Incident Report & OSHA Log Automation",
+      "industry": "construction-contracting",
+      "category": "compliance-documents",
+      "role": "Safety Manager",
+      "summary": "The moment a field supervisor submits an incident report from the job site, this automation timestamps and logs it into the OSHA 300 log in the…",
+      "steps": [
+        "The moment a field supervisor submits an incident report from the job site, this automation timestamps and logs it into the OSHA 300 log in the correct format, notifies the safety manager immediately, schedules a 24-hour follow-up for a root cause investigation form, and (if the severity meets the threshold) drafts the OSHA 301 form pre-filled with the available information.",
+        "Recordkeeping that used to lag by days is now complete within minutes of an incident occurring."
+      ],
+      "manualProcess": "Left to a person, this means a safety manager re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Jotform (incident report form)",
+        "Zapier or Make.com",
+        "Google Sheets or Airtable (OSHA 300 log)",
+        "Slack or email (safety manager alerts)",
+        "OpenAI API (root cause draft assistant)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/incident-report-osha-log-automation/"
+    },
+    {
+      "id": "construction-contracting/client-milestone-photo-status-update-system",
+      "slug": "client-milestone-photo-status-update-system",
+      "title": "Client Milestone Photo & Status Update System",
+      "industry": "construction-contracting",
+      "category": "customer-communication",
+      "role": "Client Relations Coordinator",
+      "summary": "At each major project milestone (foundation poured, framing complete, drywall up, final walkthrough scheduled) the field team snaps a few photos and…",
+      "steps": [
+        "At each major project milestone (foundation poured, framing complete, drywall up, final walkthrough scheduled) the field team snaps a few photos and marks the milestone complete in the project management system, and the client automatically receives a text with those photos and a short status update within minutes.",
+        "The message includes the percentage of the project now complete and the next milestone to expect, so clients aren't left guessing about progress between site visits or biweekly calls.",
+        "The client relations coordinator can see exactly which milestone messages have gone out for every active job from a single dashboard, and callback volume from anxious clients checking on progress drops noticeably once photo updates start arriving on their own."
+      ],
+      "manualProcess": "Left unautomated, a client relations coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Zapier or Make.com",
+        "Procore or Buildertrend",
+        "Twilio (milestone photo texts)",
+        "Google Drive (photo storage)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/client-milestone-photo-status-update-system/"
+    },
+    {
+      "id": "construction-contracting/permit-expiration-inspection-deadline-tracker",
+      "slug": "permit-expiration-inspection-deadline-tracker",
+      "title": "Permit Expiration & Inspection Deadline Tracker",
+      "industry": "construction-contracting",
+      "category": "compliance-documents",
+      "role": "Compliance Coordinator",
+      "summary": "Every open permit across every active job is tracked against its expiration date and required inspection windows in one central log, and the…",
+      "steps": [
+        "Every open permit across every active job is tracked against its expiration date and required inspection windows in one central log, and the compliance coordinator receives an automatic alert 14 days, 7 days, and 2 days before any permit is set to lapse or any inspection deadline is about to pass.",
+        "If a required inspection hasn't been scheduled within the alert window, the system automatically emails the responsible superintendent and copies the office so the gap doesn't sit unnoticed inside a single person's inbox.",
+        "Permits that do lapse trigger an immediate escalation to leadership rather than being discovered weeks later when a closing inspector rejects the paperwork, and chasing down expired permits after the fact is replaced by a compliance calendar the whole office can see at a glance."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a compliance coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Zapier or Make.com",
+        "Procore or Buildertrend",
+        "Google Sheets or Airtable (permit tracking log)",
+        "Slack or email (escalation alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/permit-expiration-inspection-deadline-tracker/"
+    },
+    {
+      "id": "construction-contracting/unsigned-estimate-follow-up-sequence",
+      "slug": "unsigned-estimate-follow-up-sequence",
+      "title": "Unsigned Estimate Follow-Up Sequence",
+      "industry": "construction-contracting",
+      "category": "lead-follow-up-sales",
+      "role": "Business Development Manager",
+      "summary": "Once an estimate or bid is sent to a prospective client, this automation starts a follow-up clock, and if the estimate hasn't been signed within 3…",
+      "steps": [
+        "Once an estimate or bid is sent to a prospective client, this automation starts a follow-up clock, and if the estimate hasn't been signed within 3 days, the prospect automatically receives a friendly check-in email asking if they have any questions.",
+        "A second follow-up goes out at 7 days with a direct link back to the proposal, and at 14 days the business development manager receives an internal alert to make a personal call before the lead goes cold.",
+        "Estimates that remain unsigned after 30 days are automatically moved to a nurture sequence rather than falling out of the pipeline entirely, and close rates improve simply because no signed-but-forgotten estimate is ever left to expire in silence."
+      ],
+      "manualProcess": "Done manually, a business development manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Zapier or Make.com",
+        "PandaDoc or Proposify",
+        "Twilio or email (follow-up sequence)",
+        "Procore or Buildertrend (pipeline tracking)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "PandaDoc"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/unsigned-estimate-follow-up-sequence/"
+    },
+    {
+      "id": "construction-contracting/subcontractor-confirmation-reminder-system",
+      "slug": "subcontractor-confirmation-reminder-system",
+      "title": "Subcontractor Confirmation & Reminder System",
+      "industry": "construction-contracting",
+      "category": "operations-inventory",
+      "role": "Field Superintendent",
+      "summary": "As soon as a subcontractor's start date is confirmed for a job, this automation sends them an immediate text confirming the date, the site address…",
+      "steps": [
+        "As soon as a subcontractor's start date is confirmed for a job, this automation sends them an immediate text confirming the date, the site address, and the scope expected on-site, and logs the confirmation in the project schedule.",
+        "A reminder text goes out automatically 48 hours before the confirmed date, and a second same-day reminder goes out the morning of, cutting down on the no-shows and last-minute reschedules that throw off an entire week's sequencing.",
+        "The field superintendent receives a daily digest showing exactly which subs are confirmed for the next three days and which haven't yet responded, so schedule gaps get caught and fixed days before they become a delay instead of hours before an empty job site."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a field superintendent, who has to track every step by hand across emails, spreadsheets, and sticky notes. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Zapier or Make.com",
+        "Procore or Buildertrend",
+        "Twilio (subcontractor SMS confirmations and reminders)",
+        "Google Calendar (schedule sync)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/subcontractor-confirmation-reminder-system/"
+    },
+    {
+      "id": "construction-contracting/warranty-expiration-follow-up-system",
+      "slug": "warranty-expiration-follow-up-system",
+      "title": "Warranty Expiration Follow-Up System",
+      "industry": "construction-contracting",
+      "category": "customer-communication",
+      "role": "Customer Care Manager",
+      "summary": "Every completed project is logged with its warranty start date, and as each project approaches the end of its one-year (or manufacturer-specified)…",
+      "steps": [
+        "Every completed project is logged with its warranty start date, and as each project approaches the end of its one-year (or manufacturer-specified) warranty window, the client automatically receives an outreach email offering a complimentary inspection before coverage runs out.",
+        "Clients who book the inspection are automatically scheduled, and those who don't respond receive a second reminder 30 days before expiration along with information on paid renewal or maintenance service plans available after the warranty ends.",
+        "The customer care manager sees a rolling 90-day view of every warranty expiring across the client base, turning what used to be a forgotten obligation into a reliable source of repeat inspection revenue and referral goodwill."
+      ],
+      "manualProcess": "The manual approach means a customer care manager handles each case reactively, after someone has already noticed something went wrong. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Zapier or Make.com",
+        "Procore or Buildertrend",
+        "Mailchimp or ActiveCampaign (warranty outreach sequence)",
+        "Google Sheets (warranty expiration tracker)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "Google Sheets",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/warranty-expiration-follow-up-system/"
+    }
+  ]
+}

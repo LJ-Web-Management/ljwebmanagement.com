@@ -1,0 +1,295 @@
+{
+  "slug": "faith-based-organizations",
+  "name": "Faith-Based Organizations",
+  "summary": "Volunteer scheduling, giving statements, new visitor follow-up, and small group placement.",
+  "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "faith-based-organizations/ministry-team-volunteer-scheduling-communication-system",
+      "slug": "ministry-team-volunteer-scheduling-communication-system",
+      "title": "Ministry Team Volunteer Scheduling & Communication System",
+      "industry": "faith-based-organizations",
+      "category": "hr-team",
+      "role": "Executive Pastor",
+      "summary": "Ministry team leaders submit their volunteer needs for each weekend service through a simple form, and the system automatically matches open roles…",
+      "steps": [
+        "Ministry team leaders submit their volunteer needs for each weekend service through a simple form, and the system automatically matches open roles to volunteers based on their team, availability, and frequency limits, then sends each volunteer their assignment via text and email the week before.",
+        "Volunteers who don't confirm their assignment by Wednesday receive an automatic reminder.",
+        "Last-minute cancellations trigger an immediate text to the next qualified volunteer on the waitlist so every role is covered before Sunday morning.",
+        "The executive pastor sees a complete weekend readiness dashboard on Thursday rather than fielding a cascade of calls from team leaders on Saturday night."
+      ],
+      "manualProcess": "Without a system in place, an executive pastor has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Planning Center Services or a church management system (ChMS)",
+        "Zapier or Make.com",
+        "Twilio (volunteer assignment and reminder SMS)",
+        "Email (scheduling confirmation)",
+        "Airtable (team capacity and availability tracking)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/ministry-team-volunteer-scheduling-communication-system/"
+    },
+    {
+      "id": "faith-based-organizations/giving-statement-year-end-tax-receipt-system",
+      "slug": "giving-statement-year-end-tax-receipt-system",
+      "title": "Giving Statement & Year-End Tax Receipt System",
+      "industry": "faith-based-organizations",
+      "category": "billing-finance",
+      "role": "Church Administrator",
+      "summary": "Throughout the year, first-time givers receive an automatic thank-you acknowledgment with a summary of how their gift is being used.",
+      "steps": [
+        "Throughout the year, first-time givers receive an automatic thank-you acknowledgment with a summary of how their gift is being used.",
+        "At year end, every donor automatically receives their complete annual giving statement as a PDF by email (formatted to meet IRS requirements for charitable contribution acknowledgment) with a personal note from the senior pastor.",
+        "Donors who gave their largest gift in the current year are flagged for a personal call from the executive pastor or development team before year end, turning a compliance requirement into a meaningful touchpoint that deepens the donor's relationship with the organization before they decide their next year's giving."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a church administrator remembering to check in, update records, and follow up, with no safety net if something slips. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "ChMS with giving module (e.g., Planning Center Giving, Breeze, or Pushpay)",
+        "Zapier or Make.com",
+        "Mailchimp or email (giving statement and thank-you delivery)",
+        "OpenAI API (personalized pastor note generation)",
+        "Google Sheets (major donor flagging dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/giving-statement-year-end-tax-receipt-system/"
+    },
+    {
+      "id": "faith-based-organizations/event-registration-volunteer-assignment-system",
+      "slug": "event-registration-volunteer-assignment-system",
+      "title": "Event Registration & Volunteer Assignment System",
+      "industry": "faith-based-organizations",
+      "category": "operations-inventory",
+      "role": "Events Coordinator",
+      "summary": "Community events, conferences, and weekend service registrations are handled through a branded registration form that captures attendance…",
+      "steps": [
+        "Community events, conferences, and weekend service registrations are handled through a branded registration form that captures attendance preference, meal choices, childcare needs, and volunteer interest.",
+        "Confirmed registrants receive an immediate confirmation with event details, a calendar invite, and a reminder 48 hours before the event.",
+        "Registrants who expressed volunteer interest are automatically routed to a volunteer coordinator for role assignment, and all assigned volunteers receive their instructions and check-in location automatically the day before.",
+        "Post-event, all attendees receive a digital follow-up with a recap, next steps for connection, and a giving opportunity, turning a one-time event into a relationship continuation."
+      ],
+      "manualProcess": "Done manually, an events coordinator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Planning Center Registrations or Jotform",
+        "Zapier or Make.com",
+        "Mailchimp or email (confirmation and follow-up sequences)",
+        "Twilio (event day reminder SMS)",
+        "Google Sheets (volunteer assignment roster)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Mailchimp",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/event-registration-volunteer-assignment-system/"
+    },
+    {
+      "id": "faith-based-organizations/group-interest-matching-attendance-follow-up-system",
+      "slug": "group-interest-matching-attendance-follow-up-system",
+      "title": "Group Interest Matching & Attendance Follow-Up System",
+      "industry": "faith-based-organizations",
+      "category": "onboarding-intake",
+      "role": "Small Groups Director",
+      "summary": "When someone expresses interest in joining a small group (through a weekend service card, the app, or the website) this automation captures their…",
+      "steps": [
+        "When someone expresses interest in joining a small group (through a weekend service card, the app, or the website) this automation captures their availability, neighborhood, life stage, and interest areas and matches them to up to three recommended groups.",
+        "The prospective member receives a personal introduction to each group leader, who is simultaneously notified of the new interested attendee with a prompt to reach out within 48 hours.",
+        "Groups that haven't logged attendance in two consecutive weeks receive a check-in from the small groups director, and groups that exceed their target attendance size are automatically prompted to consider launching a new group or adding a co-leader."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a small groups director, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "ChMS (e.g., Planning Center Groups, Breeze, or Rock RMS)",
+        "Jotform (interest form)",
+        "Zapier or Make.com",
+        "Twilio (leader connection prompt SMS)",
+        "Email (prospective member matching notification)",
+        "Airtable (group health and attendance dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/group-interest-matching-attendance-follow-up-system/"
+    },
+    {
+      "id": "faith-based-organizations/community-service-signup-quarterly-impact-report-system",
+      "slug": "community-service-signup-quarterly-impact-report-system",
+      "title": "Community Service Signup & Quarterly Impact Report System",
+      "industry": "faith-based-organizations",
+      "category": "reporting-analytics",
+      "role": "Outreach Director",
+      "summary": "Community service events are posted with a signup form that captures volunteer name, contact, and any applicable skills or background checks required.",
+      "steps": [
+        "Community service events are posted with a signup form that captures volunteer name, contact, and any applicable skills or background checks required.",
+        "As volunteers sign up, the outreach director sees a real-time capacity tracker and receives an alert when an event reaches its minimum viable volunteer count.",
+        "After each event, volunteers receive a thank-you message with a summary of what was accomplished (meals served, families helped, supplies distributed) and are invited to sign up for the next event.",
+        "Quarterly, a community impact report is auto-assembled from all logged service events and distributed to the congregation and community partners, giving the organization documented evidence of its community investment without anyone manually compiling statistics from a notebook."
+      ],
+      "manualProcess": "Without this system, an outreach director manually pieces together information from different places, then has to relay it to everyone who needs it. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Jotform (volunteer signup and event report form)",
+        "Zapier or Make.com",
+        "Mailchimp or email (thank-you and impact report distribution)",
+        "Airtable (volunteer and event tracker)",
+        "OpenAI API (quarterly impact report narrative generator)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Airtable",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/community-service-signup-quarterly-impact-report-system/"
+    },
+    {
+      "id": "faith-based-organizations/new-visitor-follow-up-sequence",
+      "slug": "new-visitor-follow-up-sequence",
+      "title": "New Visitor Follow-Up Sequence",
+      "industry": "faith-based-organizations",
+      "category": "lead-follow-up-sales",
+      "role": "Guest Services Coordinator",
+      "summary": "When a first-time visitor fills out a connect card, physical or digital, this automation automatically sends a warm welcome text and email within a…",
+      "steps": [
+        "When a first-time visitor fills out a connect card, physical or digital, this automation automatically sends a warm welcome text and email within a day, and creates a personal follow-up task assigned to a staff member or volunteer for a call within the week.",
+        "No new visitor's first Sunday goes unfollowed simply because the connect card sat in a basket until Wednesday."
+      ],
+      "manualProcess": "Left to a person, this means a guest services coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Planning Center or Church Community Builder",
+        "Twilio (SMS)",
+        "Zapier or Make.com",
+        "Mailchimp or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/new-visitor-follow-up-sequence/"
+    },
+    {
+      "id": "faith-based-organizations/volunteer-scheduling-reminder-system",
+      "slug": "volunteer-scheduling-reminder-system",
+      "title": "Volunteer Scheduling & Reminder System",
+      "industry": "faith-based-organizations",
+      "category": "scheduling-dispatch",
+      "role": "Volunteer Coordinator",
+      "summary": "For recurring volunteer roles, greeters, childcare, the tech team, this automation automatically fills the schedule based on each volunteer's stated…",
+      "steps": [
+        "For recurring volunteer roles, greeters, childcare, the tech team, this automation automatically fills the schedule based on each volunteer's stated availability, sends confirmation and reminder texts before every shift, and automatically reaches out to a backup list if someone can't make their assigned time.",
+        "Sunday mornings stop starting with a scramble to figure out who's actually showing up to serve."
+      ],
+      "manualProcess": "Left unautomated, a volunteer coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.",
+      "tools": [
+        "Planning Center",
+        "Twilio (SMS)",
+        "Zapier or Make.com",
+        "Google Calendar"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/volunteer-scheduling-reminder-system/"
+    },
+    {
+      "id": "faith-based-organizations/giving-statement-tax-receipt-automation",
+      "slug": "giving-statement-tax-receipt-automation",
+      "title": "Giving Statement & Tax Receipt Automation",
+      "industry": "faith-based-organizations",
+      "category": "billing-finance",
+      "role": "Finance Administrator",
+      "summary": "At year-end, or whenever requested, this automation automatically compiles each donor's full giving history into a properly formatted tax statement…",
+      "steps": [
+        "At year-end, or whenever requested, this automation automatically compiles each donor's full giving history into a properly formatted tax statement and sends it directly to them.",
+        "What's often a manual, error-prone spreadsheet process handled by one overworked volunteer every January becomes an automatic, accurate process that runs itself."
+      ],
+      "manualProcess": "Left to a person, this means a finance administrator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Planning Center Giving or Pushpay",
+        "Zapier or Make.com",
+        "Mailchimp or email",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/giving-statement-tax-receipt-automation/"
+    },
+    {
+      "id": "faith-based-organizations/small-group-sign-up-placement",
+      "slug": "small-group-sign-up-placement",
+      "title": "Small Group Sign-Up & Placement",
+      "industry": "faith-based-organizations",
+      "category": "onboarding-intake",
+      "role": "Small Groups Pastor",
+      "summary": "When someone signs up for a small group through the church's website, this automation automatically matches them to a group based on their stated…",
+      "steps": [
+        "When someone signs up for a small group through the church's website, this automation automatically matches them to a group based on their stated preferences, day, location, life stage, notifies the group leader of the new member, and sends the new member the group's meeting details.",
+        "A staff member no longer has to manually sort through sign-up forms trying to fit people into the right group by hand."
+      ],
+      "manualProcess": "Without automation, a small groups pastor has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Planning Center",
+        "Zapier or Make.com",
+        "Google Sheets",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/small-group-sign-up-placement/"
+    },
+    {
+      "id": "faith-based-organizations/prayer-request-routing-system",
+      "slug": "prayer-request-routing-system",
+      "title": "Prayer Request Routing System",
+      "industry": "faith-based-organizations",
+      "category": "customer-communication",
+      "role": "Pastoral Care Coordinator",
+      "summary": "When a prayer request is submitted online, this automation automatically routes it to the appropriate prayer team or pastor based on the category…",
+      "steps": [
+        "When a prayer request is submitted online, this automation automatically routes it to the appropriate prayer team or pastor based on the category selected, health, family, urgent, while keeping sensitive requests private and entirely separate from any request shared on a public prayer list.",
+        "Urgent requests reach a pastor within minutes instead of sitting in a shared inbox alongside routine church business."
+      ],
+      "manualProcess": "Done manually, a pastoral care coordinator has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Planning Center or a form tool (Jotform)",
+        "Zapier or Make.com",
+        "Slack or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/prayer-request-routing-system/"
+    }
+  ]
+}

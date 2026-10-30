@@ -1,0 +1,296 @@
+{
+  "slug": "interior-design-home-staging",
+  "name": "Interior Design & Home Staging",
+  "summary": "Client approvals, vendor purchase orders, lead time tracking, and installation coordination.",
+  "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "interior-design-home-staging/client-project-milestone-approval-workflow-system",
+      "slug": "client-project-milestone-approval-workflow-system",
+      "title": "Client Project Milestone & Approval Workflow System",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Interior Designer",
+      "summary": "When a new design project is onboarded, this automation generates a project timeline with milestones (concept presentation, design development…",
+      "steps": [
+        "When a new design project is onboarded, this automation generates a project timeline with milestones (concept presentation, design development, procurement, installation, and reveal) and sends the client a link to their personal project portal where they can track progress in real time.",
+        "At each milestone, the client receives a notification with what to expect, what decisions are needed, and any approvals required before the project can advance.",
+        "Client approvals are captured digitally with a timestamp, and any milestone where approval is delayed triggers an alert to the designer so the project timeline can be adjusted before the delay compounds into a procurement problem."
+      ],
+      "manualProcess": "Left to a person, this means an interior designer re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Project management platform (e.g., Studio Designer, Ivy, or Asana)",
+        "Zapier or Make.com",
+        "Jotform or DocuSign (digital client approvals)",
+        "Email or Twilio (milestone notifications)",
+        "Google Drive (project portal)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "DocuSign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/client-project-milestone-approval-workflow-system/"
+    },
+    {
+      "id": "interior-design-home-staging/staging-appointment-booking-furniture-inventory-tracker",
+      "slug": "staging-appointment-booking-furniture-inventory-tracker",
+      "title": "Staging Appointment Booking & Furniture Inventory Tracker",
+      "industry": "interior-design-home-staging",
+      "category": "scheduling-dispatch",
+      "role": "Home Stager",
+      "summary": "When a real estate agent or homeowner requests a staging consultation, this automation books the consultation on the stager's calendar, sends a…",
+      "steps": [
+        "When a real estate agent or homeowner requests a staging consultation, this automation books the consultation on the stager's calendar, sends a pre-consultation questionnaire capturing the home's size, listing timeline, and style preference, and confirms the appointment with directions and what to expect.",
+        "When staging is confirmed, the system cross-references the project's room list against the furniture inventory database to identify available pieces, flags any items that need to be sourced or rented, and generates a pick list for the installation crew.",
+        "Available inventory is never double-booked for overlapping projects because the system tracks what is deployed, where, and when it returns."
+      ],
+      "manualProcess": "Done manually, a home stager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.",
+      "tools": [
+        "Calendly (consultation booking)",
+        "Jotform (pre-consultation questionnaire)",
+        "Zapier or Make.com",
+        "Airtable (furniture inventory tracker)",
+        "Google Sheets (installation pick list generator)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Calendly",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/staging-appointment-booking-furniture-inventory-tracker/"
+    },
+    {
+      "id": "interior-design-home-staging/vendor-purchase-order-lead-time-tracker",
+      "slug": "vendor-purchase-order-lead-time-tracker",
+      "title": "Vendor Purchase Order & Lead Time Tracker",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Design Firm Principal",
+      "summary": "When a product is specified and approved by the client, this automation generates a purchase order to the vendor, logs the item in the project's…",
+      "steps": [
+        "When a product is specified and approved by the client, this automation generates a purchase order to the vendor, logs the item in the project's procurement tracker with the expected lead time, and sets a follow-up alert for the week the item is due to ship.",
+        "If an item hasn't shipped by its expected date, the principal is notified immediately so they can contact the vendor before a delayed sofa becomes a delayed installation reveal.",
+        "When an item arrives at the receiving warehouse, a confirmation is logged automatically, and the designer sees a real-time procurement board showing what has been ordered, what is in transit, what has been received, and what is still on back order across every active project."
+      ],
+      "manualProcess": "Without automation, a design firm principal has to notice problems after they've already happened, then scramble to fix them manually one at a time. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Studio design software (e.g., Studio Designer or Ivy)",
+        "Zapier or Make.com",
+        "Jotform (receiving confirmation form)",
+        "Airtable or Google Sheets (procurement tracker)",
+        "Email (automated PO generation to vendors)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/vendor-purchase-order-lead-time-tracker/"
+    },
+    {
+      "id": "interior-design-home-staging/installation-day-coordination-punch-list-system",
+      "slug": "installation-day-coordination-punch-list-system",
+      "title": "Installation Day Coordination & Punch List System",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Design Project Manager",
+      "summary": "The week before an installation, this automation sends a coordination email to every trade (furniture delivery crew, art installer, electrician…",
+      "steps": [
+        "The week before an installation, this automation sends a coordination email to every trade (furniture delivery crew, art installer, electrician, window treatment installer) with their scheduled arrival window, site address, access instructions, and the project manager's mobile number.",
+        "On installation day, trades check in via a quick text when they arrive, giving the project manager a live arrival status without standing at the door monitoring every delivery.",
+        "After installation, a digital punch list is completed via mobile form on site, and each incomplete item is automatically assigned to the responsible trade with a resolution deadline, so the reveal happens on time and every punch list item has an owner and a due date."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a design project manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Jotform (trade check-in and punch list form)",
+        "Zapier or Make.com",
+        "Twilio (trade coordination SMS)",
+        "Airtable (punch list and trade assignment tracker)",
+        "Slack (project manager live status updates)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/installation-day-coordination-punch-list-system/"
+    },
+    {
+      "id": "interior-design-home-staging/portfolio-content-pipeline-referral-outreach-system",
+      "slug": "portfolio-content-pipeline-referral-outreach-system",
+      "title": "Portfolio Content Pipeline & Referral Outreach System",
+      "industry": "interior-design-home-staging",
+      "category": "marketing-retention",
+      "role": "Design Marketing Manager",
+      "summary": "When a project is completed and the client has signed off, this automation sends a project photography consent form and (once approved) schedules a…",
+      "steps": [
+        "When a project is completed and the client has signed off, this automation sends a project photography consent form and (once approved) schedules a professional photographer through the firm's preferred vendor, adds the project to the content queue, and notifies the marketing manager that a new portfolio piece will be available on the scheduled photography date.",
+        "Simultaneously, the firm's top referral sources (interior architects, real estate agents, and luxury builders) receive a curated project highlight email showcasing completed work from the past quarter.",
+        "Referral partners who sent a client in the past 12 months receive a personal thank-you note from the principal automatically, keeping relationships warm between direct referrals."
+      ],
+      "manualProcess": "Manually, a design marketing manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Airtable (project portfolio and content queue)",
+        "Jotform (photography consent form)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign (referral partner highlight email)",
+        "Calendly (photographer scheduling)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Calendly",
+        "Airtable",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/portfolio-content-pipeline-referral-outreach-system/"
+    },
+    {
+      "id": "interior-design-home-staging/mood-board-to-client-approval-portal",
+      "slug": "mood-board-to-client-approval-portal",
+      "title": "Mood Board-to-Client Approval Portal",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Design Coordinator",
+      "summary": "Once a designer finalizes a mood board or design concept, this automation automatically sends it to the client through a branded approval portal and…",
+      "steps": [
+        "Once a designer finalizes a mood board or design concept, this automation automatically sends it to the client through a branded approval portal and tracks whether the client has actually viewed it.",
+        "If it's sitting unreviewed after a few days, an automatic reminder goes out, replacing the designer's own manual follow-up emails chasing a client sign-off that's holding up the next phase of the project."
+      ],
+      "manualProcess": "Handled by hand, a design coordinator spends time each day re-checking the same information across disconnected tools instead of doing higher-value work.",
+      "tools": [
+        "Studio Designer or Houzz Pro",
+        "Zapier or Make.com",
+        "Mailchimp or email",
+        "A client portal tool"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/mood-board-to-client-approval-portal/"
+    },
+    {
+      "id": "interior-design-home-staging/furniture-materials-order-tracker",
+      "slug": "furniture-materials-order-tracker",
+      "title": "Furniture & Materials Order Tracker",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Project Manager",
+      "summary": "As items are ordered from various vendors for a project, this automation automatically tracks each item's expected delivery date against the project…",
+      "steps": [
+        "As items are ordered from various vendors for a project, this automation automatically tracks each item's expected delivery date against the project timeline and flags any delay that would push back the planned install date.",
+        "The designer finds out about a vendor delay while there's still time to communicate proactively with the client, instead of discovering it the morning of install day when the sofa hasn't arrived."
+      ],
+      "manualProcess": "Left unautomated, a project manager spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Studio Designer",
+        "Zapier or Make.com",
+        "Google Sheets (order tracker)",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/furniture-materials-order-tracker/"
+    },
+    {
+      "id": "interior-design-home-staging/staging-inventory-availability-tracker",
+      "slug": "staging-inventory-availability-tracker",
+      "title": "Staging Inventory Availability Tracker",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Staging Operations Manager",
+      "summary": "For staging companies with a physical inventory of furniture and decor, this automation automatically tracks which pieces are currently deployed at…",
+      "steps": [
+        "For staging companies with a physical inventory of furniture and decor, this automation automatically tracks which pieces are currently deployed at which properties and which pieces are free, flagging what's genuinely available before a new project is scheduled.",
+        "Double-booking the same couch for two staging jobs on the same weekend, a surprisingly common and costly mistake, stops happening."
+      ],
+      "manualProcess": "Without a system in place, a staging operations manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.",
+      "tools": [
+        "A staging inventory system or Airtable",
+        "Zapier or Make.com",
+        "Google Sheets",
+        "A barcode/QR tagging system"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/staging-inventory-availability-tracker/"
+    },
+    {
+      "id": "interior-design-home-staging/post-install-walkthrough-invoice-trigger",
+      "slug": "post-install-walkthrough-invoice-trigger",
+      "title": "Post-Install Walkthrough & Invoice Trigger",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Design Director",
+      "summary": "When a project's install is marked complete, this automation automatically schedules the final client walkthrough, and once that walkthrough is…",
+      "steps": [
+        "When a project's install is marked complete, this automation automatically schedules the final client walkthrough, and once that walkthrough is confirmed as done, automatically generates and sends the final invoice.",
+        "Project completion connects directly to getting paid without a manual step waiting on someone to remember to bill it out."
+      ],
+      "manualProcess": "Without a system in place, a design director has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Studio Designer or QuickBooks Online",
+        "Zapier or Make.com",
+        "Google Calendar",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "QuickBooks",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/post-install-walkthrough-invoice-trigger/"
+    },
+    {
+      "id": "interior-design-home-staging/vendor-lead-time-change-alert",
+      "slug": "vendor-lead-time-change-alert",
+      "title": "Vendor Lead Time Change Alert",
+      "industry": "interior-design-home-staging",
+      "category": "operations-inventory",
+      "role": "Procurement Coordinator",
+      "summary": "This automation monitors vendor-reported lead times for commonly ordered items, fabrics, furniture, fixtures, and automatically flags the design…",
+      "steps": [
+        "This automation monitors vendor-reported lead times for commonly ordered items, fabrics, furniture, fixtures, and automatically flags the design team the moment a vendor's lead time changes significantly.",
+        "Quotes given to future clients reflect current, real lead times instead of outdated assumptions that end up embarrassing the designer when a \\\"12-week\\\" item turns out to actually take 20."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a procurement coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.",
+      "tools": [
+        "A vendor management spreadsheet or Airtable",
+        "Zapier or Make.com",
+        "Email",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/interior-design-home-staging/vendor-lead-time-change-alert/"
+    }
+  ]
+}

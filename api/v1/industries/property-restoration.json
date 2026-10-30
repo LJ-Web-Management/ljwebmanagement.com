@@ -1,0 +1,133 @@
+{
+  "slug": "property-restoration",
+  "name": "Property & Fire Restoration",
+  "summary": "First notice of loss response, claim documentation, drying logs, and job updates.",
+  "url": "https://www.ljwebmanagement.com/automations/property-restoration/",
+  "automationCount": 5,
+  "automations": [
+    {
+      "id": "property-restoration/first-notice-of-loss-response-automation",
+      "slug": "first-notice-of-loss-response-automation",
+      "title": "First Notice of Loss Response Automation",
+      "industry": "property-restoration",
+      "category": "scheduling-dispatch",
+      "role": "Dispatch Manager",
+      "summary": "The moment a new loss is reported, by phone, web form, or insurance referral, this automation automatically dispatches the on-call crew, opens a job…",
+      "steps": [
+        "The moment a new loss is reported, by phone, web form, or insurance referral, this automation automatically dispatches the on-call crew, opens a job file, and sends the customer a confirmation with the crew's estimated arrival time.",
+        "Response speed within the first hours affects both the extent of the damage and whether the job gets won over a competitor, and this automation removes the manual steps that eat into that window."
+      ],
+      "manualProcess": "Handled by hand, a dispatch manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "DASH or Encircle",
+        "Twilio (SMS)",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/property-restoration/first-notice-of-loss-response-automation/"
+    },
+    {
+      "id": "property-restoration/insurance-claim-documentation-assembler",
+      "slug": "insurance-claim-documentation-assembler",
+      "title": "Insurance Claim Documentation Assembler",
+      "industry": "property-restoration",
+      "category": "compliance-documents",
+      "role": "Claims Coordinator",
+      "summary": "As technicians log moisture readings, photos, and scope of work in the field, this automation automatically compiles it into the documentation…",
+      "steps": [
+        "As technicians log moisture readings, photos, and scope of work in the field, this automation automatically compiles it into the documentation package required by insurance adjusters.",
+        "The time between job completion and claim approval shrinks because the paperwork is already assembled instead of pieced together after the fact."
+      ],
+      "manualProcess": "Left unautomated, a claims coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Encircle or DASH",
+        "Zapier or Make.com",
+        "Google Drive"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/property-restoration/insurance-claim-documentation-assembler/"
+    },
+    {
+      "id": "property-restoration/drying-equipment-monitoring-log",
+      "slug": "drying-equipment-monitoring-log",
+      "title": "Drying Equipment Monitoring Log",
+      "industry": "property-restoration",
+      "category": "reporting-analytics",
+      "role": "Project Manager",
+      "summary": "For water damage jobs, this automation automatically tracks daily moisture readings against drying targets and flags any room not progressing on…",
+      "steps": [
+        "For water damage jobs, this automation automatically tracks daily moisture readings against drying targets and flags any room not progressing on schedule.",
+        "Equipment doesn't get left running, and billed, longer than the job actually requires simply because no one was watching the readings closely enough."
+      ],
+      "manualProcess": "The manual approach means a project manager handles each case reactively, after someone has already noticed something went wrong. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Encircle",
+        "Zapier or Make.com",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/property-restoration/drying-equipment-monitoring-log/"
+    },
+    {
+      "id": "property-restoration/job-milestone-customer-update",
+      "slug": "job-milestone-customer-update",
+      "title": "Job Milestone Customer Update",
+      "industry": "property-restoration",
+      "category": "customer-communication",
+      "role": "Customer Service Coordinator",
+      "summary": "As a restoration job moves through its stages, mitigation, demolition, reconstruction, this automation automatically sends the homeowner a status…",
+      "steps": [
+        "As a restoration job moves through its stages, mitigation, demolition, reconstruction, this automation automatically sends the homeowner a status update at each milestone.",
+        "The anxious \\\"what's happening with my house\\\" calls that pile up during a stressful time drop off because the homeowner already has the answer."
+      ],
+      "manualProcess": "Manually, a customer service coordinator is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "DASH or Encircle",
+        "Twilio or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/property-restoration/job-milestone-customer-update/"
+    },
+    {
+      "id": "property-restoration/subcontractor-invoice-reconciliation",
+      "slug": "subcontractor-invoice-reconciliation",
+      "title": "Subcontractor Invoice Reconciliation",
+      "industry": "property-restoration",
+      "category": "billing-finance",
+      "role": "Project Accountant",
+      "summary": "As subcontractor invoices come in for a restoration job, this automation automatically checks them against the original scope of work and flags any…",
+      "steps": [
+        "As subcontractor invoices come in for a restoration job, this automation automatically checks them against the original scope of work and flags any charges outside that scope for review before they're rolled into the final insurance billing.",
+        "Charges that don't belong in the claim get caught before they become a dispute with the insurer later."
+      ],
+      "manualProcess": "Left to a person, this means a project accountant re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "DASH or a job costing system",
+        "Zapier or Make.com",
+        "QuickBooks Online"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "QuickBooks"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/property-restoration/subcontractor-invoice-reconciliation/"
+    }
+  ]
+}

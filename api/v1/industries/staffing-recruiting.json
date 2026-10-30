@@ -1,0 +1,293 @@
+{
+  "slug": "staffing-recruiting",
+  "name": "Staffing & Recruiting Agencies",
+  "summary": "Job order intake, candidate matching, re-engagement, timesheets, and compliance.",
+  "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "staffing-recruiting/client-fill-rate-revenue-pipeline-dashboard",
+      "slug": "client-fill-rate-revenue-pipeline-dashboard",
+      "title": "Client Fill Rate & Revenue Pipeline Dashboard",
+      "industry": "staffing-recruiting",
+      "category": "reporting-analytics",
+      "role": "Agency Owner",
+      "summary": "Every open job order in the agency is tracked in real time against its fill deadline and fee value, and the agency owner receives a Monday morning…",
+      "steps": [
+        "Every open job order in the agency is tracked in real time against its fill deadline and fee value, and the agency owner receives a Monday morning digest showing orders by urgency, recruiter assignment, candidate pipeline depth, and estimated close probability.",
+        "Any job order that has been open for more than 14 days without a qualified submittal triggers an escalation alert, and orders approaching their client deadline with no placement imminent receive a priority flag with a suggested action.",
+        "The agency owner manages the revenue pipeline by data rather than intuition, and every recruiter knows exactly where their book of business stands before the week begins."
+      ],
+      "manualProcess": "Left unautomated, an agency owner spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand.",
+      "tools": [
+        "ATS (e.g., Bullhorn, JobAdder, or Crelate)",
+        "Zapier or Make.com",
+        "Google Sheets or a BI tool (revenue pipeline dashboard)",
+        "Slack (weekly digest and escalation alerts)",
+        "Email (client fill rate summary)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/client-fill-rate-revenue-pipeline-dashboard/"
+    },
+    {
+      "id": "staffing-recruiting/job-order-intake-rapid-candidate-submittal-system",
+      "slug": "job-order-intake-rapid-candidate-submittal-system",
+      "title": "Job Order Intake & Rapid Candidate Submittal System",
+      "industry": "staffing-recruiting",
+      "category": "hr-team",
+      "role": "Account Executive",
+      "summary": "When a new job order is received from a client (via email, phone, or the client portal) this automation creates the order record in the ATS, formats…",
+      "steps": [
+        "When a new job order is received from a client (via email, phone, or the client portal) this automation creates the order record in the ATS, formats the intake information into a structured job brief, sends it to the recruiting team with a notification and a deadline for first submittals, and fires a confirmation back to the client that the search has officially begun with an expected first-submittal timeline.",
+        "When the first candidates are submitted, the client receives an automatic notification with a portal link to review profiles and provide feedback, eliminating the delay between \"we have the job order\" and \"the recruiter knows about it and is working it.\""
+      ],
+      "manualProcess": "Manually, an account executive is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "ATS (e.g., Bullhorn or Crelate)",
+        "Zapier or Make.com",
+        "Jotform (job order intake form for standardized capture)",
+        "Email (client confirmation and submittal notification)",
+        "Slack (recruiting team job order alert)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/job-order-intake-rapid-candidate-submittal-system/"
+    },
+    {
+      "id": "staffing-recruiting/candidate-re-engagement-availability-check-system",
+      "slug": "candidate-re-engagement-availability-check-system",
+      "title": "Candidate Re-Engagement & Availability Check System",
+      "industry": "staffing-recruiting",
+      "category": "hr-team",
+      "role": "Recruiter",
+      "summary": "Every candidate in the ATS who was placed more than six months ago, or who applied and wasn't placed more than 90 days ago, receives an automated…",
+      "steps": [
+        "Every candidate in the ATS who was placed more than six months ago, or who applied and wasn't placed more than 90 days ago, receives an automated check-in message asking if they are currently open to opportunities, with a one-click \"yes, contact me\" or \"not right now\" response option.",
+        "Those who express interest are automatically moved to an active pipeline and the recruiter is notified immediately with the candidate's profile.",
+        "Passive candidates who respond with \"not right now\" are scheduled for another automated check-in 60 days later.",
+        "The recruiter's active pipeline grows continuously from the existing database rather than depending entirely on new sourcing every cycle."
+      ],
+      "manualProcess": "Without a system in place, a recruiter has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks.",
+      "tools": [
+        "ATS (e.g., Bullhorn, Lever, or Crelate)",
+        "Zapier or Make.com",
+        "Twilio (candidate re-engagement SMS)",
+        "Mailchimp or ActiveCampaign (email re-engagement sequence)",
+        "Airtable (re-engagement response tracker)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Airtable",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/candidate-re-engagement-availability-check-system/"
+    },
+    {
+      "id": "staffing-recruiting/weekly-timesheet-collection-contractor-pay-processing",
+      "slug": "weekly-timesheet-collection-contractor-pay-processing",
+      "title": "Weekly Timesheet Collection & Contractor Pay Processing",
+      "industry": "staffing-recruiting",
+      "category": "hr-team",
+      "role": "Staffing Payroll Coordinator",
+      "summary": "Every Friday morning, all active contractors receive an automated timesheet submission reminder with a direct link to their timesheet form.",
+      "steps": [
+        "Every Friday morning, all active contractors receive an automated timesheet submission reminder with a direct link to their timesheet form.",
+        "Timesheets submitted by the cutoff are automatically validated against the approved schedule and flagged for any overtime requiring client approval before they are processed.",
+        "Timesheets not submitted by the deadline trigger an escalating reminder sequence, and the payroll coordinator receives a list of missing timesheets with enough lead time to chase them before payroll locks.",
+        "Approved timesheets flow automatically into the payroll platform, eliminating manual data entry and the errors that come with it at the busiest moment of every week."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a staffing payroll coordinator remembering to check in, update records, and follow up, with no safety net if something slips. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "ATS with timesheet module or Jotform (timesheet collection)",
+        "Zapier or Make.com",
+        "Payroll platform (e.g., Gusto, ADP, or Paylocity)",
+        "Twilio (contractor timesheet reminders)",
+        "Google Sheets (timesheet exception tracker)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/weekly-timesheet-collection-contractor-pay-processing/"
+    },
+    {
+      "id": "staffing-recruiting/i-9-e-verify-worker-certification-compliance-tracker",
+      "slug": "i-9-e-verify-worker-certification-compliance-tracker",
+      "title": "I-9, E-Verify & Worker Certification Compliance Tracker",
+      "industry": "staffing-recruiting",
+      "category": "compliance-documents",
+      "role": "Compliance Manager",
+      "summary": "When a new contractor is placed, this automation initiates the I-9 process with a digital completion link sent to the worker before their first day…",
+      "steps": [
+        "When a new contractor is placed, this automation initiates the I-9 process with a digital completion link sent to the worker before their first day, monitors completion status with escalating reminders, and triggers E-Verify submission automatically upon I-9 completion.",
+        "Any reverification requirement for a worker with a temporary work authorization is calendared and the compliance manager receives a reminder 90 days before expiration.",
+        "Industry-specific certifications (OSHA 10, forklift, food handler) are tracked per worker, with renewal alerts sent before expiration.",
+        "A single compliance dashboard gives the compliance manager a real-time view of every worker's documentation status across the entire contractor base."
+      ],
+      "manualProcess": "Without a system in place, a compliance manager has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "I-9 compliance platform (e.g., Tracker I-9 or Equifax I-9 Anywhere)",
+        "Zapier or Make.com",
+        "Airtable (certification and reverification tracker)",
+        "Email or Twilio (worker and manager compliance alerts)",
+        "Google Sheets (compliance dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/i-9-e-verify-worker-certification-compliance-tracker/"
+    },
+    {
+      "id": "staffing-recruiting/candidate-pipeline-stale-alert",
+      "slug": "candidate-pipeline-stale-alert",
+      "title": "Candidate Pipeline Stale Alert",
+      "industry": "staffing-recruiting",
+      "category": "hr-team",
+      "role": "Senior Recruiter",
+      "summary": "This automation tracks how long each candidate has sat in a given pipeline stage, submitted, interviewing, offer pending, and automatically flags…",
+      "steps": [
+        "This automation tracks how long each candidate has sat in a given pipeline stage, submitted, interviewing, offer pending, and automatically flags anyone who's gone quiet past a set number of days, typically five for an active interview stage.",
+        "The recruiter gets a prompt to follow up before a strong candidate quietly accepts an offer elsewhere without anyone at the agency realizing the candidate had gone cold.",
+        "Pipelines that used to rely on a recruiter's memory to catch a stalled candidate now surface the problem automatically."
+      ],
+      "manualProcess": "Without this system, a senior recruiter manually pieces together information from different places, then has to relay it to everyone who needs it.",
+      "tools": [
+        "Bullhorn or JobDiva",
+        "Zapier or Make.com",
+        "Slack or email",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/candidate-pipeline-stale-alert/"
+    },
+    {
+      "id": "staffing-recruiting/timesheet-to-billing-trigger",
+      "slug": "timesheet-to-billing-trigger",
+      "title": "Timesheet-to-Billing Trigger",
+      "industry": "staffing-recruiting",
+      "category": "billing-finance",
+      "role": "Accounts Coordinator",
+      "summary": "For placed contractors, this automation automatically sends a timesheet reminder at the end of each work week, and once the timesheet is submitted…",
+      "steps": [
+        "For placed contractors, this automation automatically sends a timesheet reminder at the end of each work week, and once the timesheet is submitted and approved by the client contact, automatically generates the invoice tied to that contractor's bill rate.",
+        "The gap between hours actually worked and the agency getting paid closes from a manual, once-a-week reconciliation chore to something that happens the moment the client clicks approve."
+      ],
+      "manualProcess": "Without automation, this falls entirely on an accounts coordinator, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Bullhorn",
+        "Zapier or Make.com",
+        "QuickBooks Online",
+        "Twilio or email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "QuickBooks"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/timesheet-to-billing-trigger/"
+    },
+    {
+      "id": "staffing-recruiting/job-order-to-candidate-matching-alert",
+      "slug": "job-order-to-candidate-matching-alert",
+      "title": "Job Order-to-Candidate Matching Alert",
+      "industry": "staffing-recruiting",
+      "category": "hr-team",
+      "role": "Recruiting Manager",
+      "summary": "When a new job order is opened, this automation automatically scans the existing candidate database for people matching the required skills…",
+      "steps": [
+        "When a new job order is opened, this automation automatically scans the existing candidate database for people matching the required skills, location, and availability, and surfaces a ranked shortlist to the recruiter within minutes.",
+        "What used to be a manual search through hundreds of resumes now starts with a pre-built shortlist the recruiter can start calling immediately."
+      ],
+      "manualProcess": "Handled by hand, a recruiting manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Bullhorn or JobDiva",
+        "Zapier or Make.com",
+        "OpenAI API (skills matching)",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/job-order-to-candidate-matching-alert/"
+    },
+    {
+      "id": "staffing-recruiting/reference-check-automation",
+      "slug": "reference-check-automation",
+      "title": "Reference Check Automation",
+      "industry": "staffing-recruiting",
+      "category": "hr-team",
+      "role": "Recruiting Coordinator",
+      "summary": "Once a candidate reaches the offer stage, this automation automatically sends reference check request forms to the listed references, tracks who has…",
+      "steps": [
+        "Once a candidate reaches the offer stage, this automation automatically sends reference check request forms to the listed references, tracks who has and hasn't responded, and compiles the completed references directly into the candidate's file.",
+        "A recruiter no longer has to manually call each reference and type up notes between other calls."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a recruiting coordinator remembering to check in, update records, and follow up, with no safety net if something slips. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Bullhorn",
+        "Jotform or a reference-check tool",
+        "Zapier or Make.com",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/reference-check-automation/"
+    },
+    {
+      "id": "staffing-recruiting/placement-anniversary-check-in",
+      "slug": "placement-anniversary-check-in",
+      "title": "Placement Anniversary Check-In",
+      "industry": "staffing-recruiting",
+      "category": "marketing-retention",
+      "role": "Account Manager",
+      "summary": "At 30, 60, and 90 days after a candidate is placed, this automation automatically checks in with both the candidate and the client to confirm the…",
+      "steps": [
+        "At 30, 60, and 90 days after a candidate is placed, this automation automatically checks in with both the candidate and the client to confirm the placement is going well.",
+        "A mismatch gets caught and addressed while there's still time to act, instead of surfacing only once the replacement guarantee period has already expired."
+      ],
+      "manualProcess": "Without this system, an account manager manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Bullhorn",
+        "Twilio or email",
+        "Zapier or Make.com",
+        "A CRM"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/staffing-recruiting/placement-anniversary-check-in/"
+    }
+  ]
+}

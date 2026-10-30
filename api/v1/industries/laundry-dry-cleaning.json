@@ -1,0 +1,137 @@
+{
+  "slug": "laundry-dry-cleaning",
+  "name": "Laundry & Dry Cleaning",
+  "summary": "Order-ready texts, pickup and delivery scheduling, unclaimed order alerts, and loyalty.",
+  "url": "https://www.ljwebmanagement.com/automations/laundry-dry-cleaning/",
+  "automationCount": 5,
+  "automations": [
+    {
+      "id": "laundry-dry-cleaning/order-ready-notification",
+      "slug": "order-ready-notification",
+      "title": "Order Ready Notification",
+      "industry": "laundry-dry-cleaning",
+      "category": "customer-communication",
+      "role": "Store Manager",
+      "summary": "The moment an order is marked complete in the point-of-sale system, this automation automatically texts the customer that their order is ready for…",
+      "steps": [
+        "The moment an order is marked complete in the point-of-sale system, this automation automatically texts the customer that their order is ready for pickup.",
+        "Both premature pickup attempts and orders that sit forgotten on the rack for weeks drop sharply once the customer hears the moment it's actually ready."
+      ],
+      "manualProcess": "Manually, a store manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "A dry cleaning POS (Cleancloud or SPOT)",
+        "Twilio (SMS)",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/laundry-dry-cleaning/order-ready-notification/"
+    },
+    {
+      "id": "laundry-dry-cleaning/recurring-pickup-delivery-scheduling",
+      "slug": "recurring-pickup-delivery-scheduling",
+      "title": "Recurring Pickup/Delivery Scheduling",
+      "industry": "laundry-dry-cleaning",
+      "category": "scheduling-dispatch",
+      "role": "Route Coordinator",
+      "summary": "For subscription or recurring pickup-and-delivery customers, this automation automatically schedules the next pickup based on their chosen frequency…",
+      "steps": [
+        "For subscription or recurring pickup-and-delivery customers, this automation automatically schedules the next pickup based on their chosen frequency and sends a reminder the night before.",
+        "Customers stop having to remember to book each cycle manually, which keeps the recurring revenue base more predictable for the business too."
+      ],
+      "manualProcess": "Without a system in place, a route coordinator has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Cleancloud or SPOT",
+        "Twilio (SMS)",
+        "Zapier or Make.com",
+        "Google Calendar"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Calendar"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/laundry-dry-cleaning/recurring-pickup-delivery-scheduling/"
+    },
+    {
+      "id": "laundry-dry-cleaning/unclaimed-order-aging-alert",
+      "slug": "unclaimed-order-aging-alert",
+      "title": "Unclaimed Order Aging Alert",
+      "industry": "laundry-dry-cleaning",
+      "category": "operations-inventory",
+      "role": "Store Manager",
+      "summary": "This automation tracks how long completed orders have sat unclaimed and automatically sends escalating reminders at set intervals, then flags orders…",
+      "steps": [
+        "This automation tracks how long completed orders have sat unclaimed and automatically sends escalating reminders at set intervals, then flags orders approaching the store's abandonment policy cutoff so staff can follow the correct process before disposing of items.",
+        "Nothing gets disposed of, or forgotten indefinitely, without a documented trail of reminders sent."
+      ],
+      "manualProcess": "Done manually, a store manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Cleancloud or SPOT",
+        "Twilio or email",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/laundry-dry-cleaning/unclaimed-order-aging-alert/"
+    },
+    {
+      "id": "laundry-dry-cleaning/damage-complaint-intake-resolution-tracker",
+      "slug": "damage-complaint-intake-resolution-tracker",
+      "title": "Damage/Complaint Intake & Resolution Tracker",
+      "industry": "laundry-dry-cleaning",
+      "category": "customer-communication",
+      "role": "Customer Service Manager",
+      "summary": "When a customer reports a damaged or missing item, this automation automatically opens a claim, requests any needed details or photos, and tracks…",
+      "steps": [
+        "When a customer reports a damaged or missing item, this automation automatically opens a claim, requests any needed details or photos, and tracks the resolution through to a documented close.",
+        "A claim scribbled on a sticky note, easy to lose and impossible to audit later, gets replaced with a structured record."
+      ],
+      "manualProcess": "Without this system, a customer service manager manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Jotform",
+        "Cleancloud or SPOT",
+        "Zapier or Make.com",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/laundry-dry-cleaning/damage-complaint-intake-resolution-tracker/"
+    },
+    {
+      "id": "laundry-dry-cleaning/loyalty-punch-card-digital-tracker",
+      "slug": "loyalty-punch-card-digital-tracker",
+      "title": "Loyalty Punch Card Digital Tracker",
+      "industry": "laundry-dry-cleaning",
+      "category": "marketing-retention",
+      "role": "Store Owner",
+      "summary": "This automation automatically tracks each customer's order count toward a loyalty reward digitally, notifying them by text when they've earned a…",
+      "steps": [
+        "This automation automatically tracks each customer's order count toward a loyalty reward digitally, notifying them by text when they've earned a free or discounted service.",
+        "The physical punch card that's inevitably lost or forgotten at home stops being the thing standing between a loyal customer and their reward."
+      ],
+      "manualProcess": "Handled by hand, a store owner spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Cleancloud or SPOT",
+        "Twilio (SMS)",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/laundry-dry-cleaning/loyalty-punch-card-digital-tracker/"
+    }
+  ]
+}

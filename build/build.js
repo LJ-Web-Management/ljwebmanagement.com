@@ -10,6 +10,9 @@
 //   content/prompts.json       the AI prompt library
 //   content/glossary.json      glossary terms
 //   content/pages/*.html       static page bodies (legal pages, quiz script)
+// Besides the HTML pages, the build writes the JSON API under api/v1/,
+// openapi.json, a Markdown twin (index.md) of every page, and the edge
+// function in infra/cloudfront-functions/edge.js.
 // Output is written straight into the repo root, which the deploy workflow
 // syncs to S3 as is.
 
@@ -28,6 +31,9 @@ const tools = require("./pages/tools");
 const glossary = require("./pages/glossary");
 const resources = require("./pages/resources");
 const solutions = require("./pages/solutions");
+const api = require("./pages/api");
+const twins = require("./pages/twins");
+const edge = require("./lib/edge");
 const { latestPosts } = require("./lib/blogfeed");
 
 function checkNav() {
@@ -82,7 +88,10 @@ function main() {
   resources.build(Object.assign({ guides: guideList, latestPosts }, extra));
   solutions.build(solutionCats, catalog, guidesBySlug);
   pages.build(catalog, guideList, extra);
+  const apiFiles = api.build(catalog, extra);
   seo.build(catalog, guideList, auto, extra);
+  // Last: needs every page in place.
+  edge.build(twins.build().concat(apiFiles));
 
   writeFile(
     "assets/data/search-index.js",
@@ -90,6 +99,7 @@ function main() {
       JSON.stringify(
         []
           .concat(pages.searchEntries())
+          .concat(api.searchEntries())
           .concat(solutions.searchEntries(solutionCats))
           .concat(guides.searchEntries(guideList))
           .concat(learn.searchEntries(courseList))

@@ -1,0 +1,470 @@
+{
+  "slug": "reviews-feedback",
+  "name": "Reviews, Feedback & Reputation",
+  "summary": "Ask every customer for a review at the right moment, fix problems fast, and watch your reputation.",
+  "description": "Online reviews drive local buying decisions, and the businesses with the most recent, most numerous reviews tend to win. The hard part is not asking; it is asking every customer, at the right moment, without forgetting. These automations time review requests to the moment of delivery, ask every customer the same way, alert a manager the moment someone reports a problem so it can be fixed fast, and monitor what customers are saying across platforms.",
+  "url": "https://www.ljwebmanagement.com/automations/category/reviews-feedback/",
+  "automationCount": 46,
+  "automations": [
+    {
+      "id": "automotive/invoice-triggered-review-request",
+      "title": "Invoice-Triggered Review Request",
+      "industry": "automotive",
+      "category": "reviews-feedback",
+      "role": "Customer Experience Coordinator",
+      "summary": "The moment a repair invoice is marked paid in the shop management system, this automation waits roughly two hours (enough time for the customer to…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/invoice-triggered-review-request/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/post-service-pickup-review-request",
+      "title": "Post-Service Pickup Review Request",
+      "industry": "automotive",
+      "category": "reviews-feedback",
+      "role": "Customer Experience Coordinator",
+      "summary": "A review request goes out automatically a few hours after the repair order is marked picked up, timed to when the customer's experience with the…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/post-service-pickup-review-request/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/csi-survey-timing-automation",
+      "title": "CSI Survey Timing Automation",
+      "industry": "automotive",
+      "category": "reviews-feedback",
+      "role": "CSI Coordinator",
+      "summary": "The manufacturer-required Customer Satisfaction Index survey is automatically sent after a purchase or service visit, timed to the specific window…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/csi-survey-timing-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/review-response-time-tracker",
+      "title": "Review Response Time Tracker",
+      "industry": "automotive",
+      "category": "reviews-feedback",
+      "role": "Reputation Specialist",
+      "summary": "The automation tracks how quickly the dealership responds to online reviews and alerts management whenever response time falls behind the target…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/review-response-time-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "car-wash-auto-detailing/post-wash-review-request",
+      "title": "Post-Wash Review Request",
+      "industry": "car-wash-auto-detailing",
+      "category": "reviews-feedback",
+      "role": "Marketing Coordinator",
+      "summary": "A few hours after a wash or detail is completed, this automation automatically sends a review request timed to when the customer's vehicle looks its…",
+      "url": "https://www.ljwebmanagement.com/automations/car-wash-auto-detailing/post-wash-review-request/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/car-wash-auto-detailing.json"
+    },
+    {
+      "id": "ecommerce-retail/post-delivery-review-request-flow",
+      "title": "Post-Delivery Review Request Flow",
+      "industry": "ecommerce-retail",
+      "category": "reviews-feedback",
+      "role": "Ecommerce Manager",
+      "summary": "Instead of asking for a review the day an order ships, this automation waits until 4 days after the estimated delivery date, giving the customer…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/post-delivery-review-request-flow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/post-purchase-review-request-automation",
+      "title": "Post-Purchase Review Request Automation",
+      "industry": "ecommerce-retail",
+      "category": "reviews-feedback",
+      "role": "Brand Manager",
+      "summary": "Five days after a Shopify or WooCommerce order shows as delivered, this automation automatically sends a review request through Klaviyo, timed so…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/post-purchase-review-request-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/escalating-review-reminder-for-non-responders",
+      "title": "Escalating Review Reminder for Non-Responders",
+      "industry": "ecommerce-retail",
+      "category": "reviews-feedback",
+      "role": "Reviews & Reputation Manager",
+      "summary": "When a customer doesn't respond to the initial post-delivery review request sent through Klaviyo, this automation doesn't just resend the same…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/escalating-review-reminder-for-non-responders/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "fitness-wellness/post-cancellation-exit-survey-automation",
+      "title": "Post-Cancellation Exit Survey Automation",
+      "industry": "fitness-wellness",
+      "category": "reviews-feedback",
+      "role": "Retention Specialist",
+      "summary": "Members who cancel automatically receive a short survey asking why, with the responses feeding directly into a report management uses to improve…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/post-cancellation-exit-survey-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "general-business/real-time-review-monitoring-alert-system",
+      "title": "Real-Time Review Monitoring & Alert System",
+      "industry": "general-business",
+      "category": "reviews-feedback",
+      "role": "Marketing Coordinator",
+      "summary": "This automation checks Google, Yelp, and Facebook every 15 minutes for new reviews and instantly routes anything rated 3 stars or lower to a…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/real-time-review-monitoring-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/post-purchase-nps-and-csat-survey-dispatch",
+      "title": "Post-Purchase NPS and CSAT Survey Dispatch",
+      "industry": "general-business",
+      "category": "reviews-feedback",
+      "role": "Customer Experience Lead",
+      "summary": "Three days after an order ships or a service ticket closes, the CRM automatically triggers a short NPS survey through Delighted, asking customers to…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/post-purchase-nps-and-csat-survey-dispatch/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/review-request-timing-optimization",
+      "title": "Review Request Timing Optimization",
+      "industry": "general-business",
+      "category": "reviews-feedback",
+      "role": "CRM Manager",
+      "summary": "Rather than blasting every customer with a review request the moment an order closes, this workflow waits for the ideal window, calculated from…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/review-request-timing-optimization/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/press-mention-alerts-and-media-log",
+      "title": "Press Mention Alerts and Media Log",
+      "industry": "general-business",
+      "category": "reviews-feedback",
+      "role": "PR & Communications Manager",
+      "summary": "The moment the company, a spokesperson, or a named product appears in a news article, podcast, or industry publication, a Google Alerts and Mention…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/press-mention-alerts-and-media-log/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/customer-testimonial-collection-and-publishing",
+      "title": "Customer Testimonial Collection and Publishing",
+      "industry": "general-business",
+      "category": "reviews-feedback",
+      "role": "Community Manager",
+      "summary": "After a customer hits a positive milestone, a five-star support rating, a completed project, or a strong NPS score, Zapier automatically sends a…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/customer-testimonial-collection-and-publishing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "healthcare/hipaa-safe-patient-review-request-system",
+      "title": "HIPAA-Safe Patient Review Request System",
+      "industry": "healthcare",
+      "category": "reviews-feedback",
+      "role": "Patient Experience Coordinator",
+      "summary": "Three days after a completed visit, this automation sends a short review request that references only the fact that the patient visited the…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/hipaa-safe-patient-review-request-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/post-visit-satisfaction-survey-alert-routing",
+      "title": "Post-Visit Satisfaction Survey & Alert Routing",
+      "industry": "healthcare",
+      "category": "reviews-feedback",
+      "role": "Quality Improvement Coordinator",
+      "summary": "Within a few hours of every completed visit, this automation sends the patient a short two-question satisfaction survey by text or email asking how…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/post-visit-satisfaction-survey-alert-routing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/provider-specific-feedback-escalation-system",
+      "title": "Provider-Specific Feedback Escalation System",
+      "industry": "healthcare",
+      "category": "reviews-feedback",
+      "role": "Patient Relations Manager",
+      "summary": "Whenever patient feedback, whether from a post-visit survey, an online review, or a portal message, specifically names an individual provider, this…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/provider-specific-feedback-escalation-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "home-services/post-job-review-request-automation",
+      "title": "Post-Job Review Request Automation",
+      "industry": "home-services",
+      "category": "reviews-feedback",
+      "role": "Office Administrator",
+      "summary": "The second a technician marks a job complete in the field-service app, the customer receives a text thanking them for their business with a direct…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/post-job-review-request-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/automated-review-request-sequence",
+      "title": "Automated Review Request Sequence",
+      "industry": "home-services",
+      "category": "reviews-feedback",
+      "role": "Reputation Manager",
+      "summary": "As soon as an invoice is marked paid in the system, this automation sends the customer a text thanking them for their business with a direct link to…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/automated-review-request-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/negative-review-alert-recovery",
+      "title": "Negative Review Alert & Recovery",
+      "industry": "home-services",
+      "category": "reviews-feedback",
+      "role": "Customer Experience Manager",
+      "summary": "The instant a new review posts online rating three stars or below, this automation sends an immediate internal alert to the customer experience…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/negative-review-alert-recovery/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/technician-review-correlation-alert",
+      "title": "Technician-Review Correlation Alert",
+      "industry": "home-services",
+      "category": "reviews-feedback",
+      "role": "HR & Compliance Manager",
+      "summary": "The automation automatically correlates customer reviews back to the specific technician who performed the job, alerting the HR and compliance…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/technician-review-correlation-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "hospitality-hotels/guest-satisfaction-survey-service-recovery-system",
+      "title": "Guest Satisfaction Survey & Service Recovery System",
+      "industry": "hospitality-hotels",
+      "category": "reviews-feedback",
+      "role": "Hotel General Manager",
+      "summary": "Every guest who checks out receives an automated satisfaction survey via text within two hours of departure.",
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/guest-satisfaction-survey-service-recovery-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/hospitality-hotels.json"
+    },
+    {
+      "id": "hospitality-hotels/perfectly-timed-review-request-system",
+      "title": "Perfectly Timed Review Request System",
+      "industry": "hospitality-hotels",
+      "category": "reviews-feedback",
+      "role": "Guest Relations Manager",
+      "summary": "At 9am the morning after a guest checks out, while the stay is still fresh in their mind, they automatically receive a friendly text or email asking…",
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/perfectly-timed-review-request-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/hospitality-hotels.json"
+    },
+    {
+      "id": "junk-removal/before-after-photo-review-request",
+      "title": "Before/After Photo & Review Request",
+      "industry": "junk-removal",
+      "category": "reviews-feedback",
+      "role": "Marketing Coordinator",
+      "summary": "When a job is marked complete, this automation automatically pairs the before and after photos and sends a review request highlighting the…",
+      "url": "https://www.ljwebmanagement.com/automations/junk-removal/before-after-photo-review-request/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/junk-removal.json"
+    },
+    {
+      "id": "legal/review-testimonial-request-system",
+      "title": "Review & Testimonial Request System",
+      "industry": "legal",
+      "category": "reviews-feedback",
+      "role": "Client Success Manager",
+      "summary": "This automation checks the practice management system daily for matters that have moved to closed status, and once a matter closes, it waits 10 days…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/review-testimonial-request-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/post-case-closure-review-request-automation",
+      "title": "Post-Case-Closure Review Request Automation",
+      "industry": "legal",
+      "category": "reviews-feedback",
+      "role": "Marketing Coordinator",
+      "summary": "Once a matter is marked closed and successfully resolved in Clio, the automation automatically waits a set number of days, timed to when client…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/post-case-closure-review-request-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/mid-case-client-satisfaction-pulse-survey",
+      "title": "Mid-Case Client Satisfaction Pulse Survey",
+      "industry": "legal",
+      "category": "reviews-feedback",
+      "role": "Client Experience Coordinator",
+      "summary": "For matters that have been open longer than a set threshold, typically 90 days, the automation automatically sends the client a short two-question…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/mid-case-client-satisfaction-pulse-survey/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "pest-control/referral-review-request-after-service",
+      "title": "Referral & Review Request After Service",
+      "industry": "pest-control",
+      "category": "reviews-feedback",
+      "role": "Marketing Coordinator",
+      "summary": "A few days after a completed service, this automation automatically sends a review request and a referral offer to the customer, timed for when the…",
+      "url": "https://www.ljwebmanagement.com/automations/pest-control/referral-review-request-after-service/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pest-control.json"
+    },
+    {
+      "id": "professional-services/client-satisfaction-pulse-check",
+      "title": "Client Satisfaction Pulse Check",
+      "industry": "professional-services",
+      "category": "reviews-feedback",
+      "role": "Partner",
+      "summary": "After completing a major deliverable, a tax return, an audit, a financial model, this automation automatically sends the client a short satisfaction…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/client-satisfaction-pulse-check/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/post-engagement-review-request",
+      "title": "Post-Engagement Review Request",
+      "industry": "professional-services",
+      "category": "reviews-feedback",
+      "role": "Client Relations Coordinator",
+      "summary": "Once a filing, case, or policy is marked complete in the system, the client automatically receives a request to leave a review a few days later…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/post-engagement-review-request/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "property-management/post-service-tenant-satisfaction-survey-escalation",
+      "title": "Post-Service Tenant Satisfaction Survey & Escalation",
+      "industry": "property-management",
+      "category": "reviews-feedback",
+      "role": "Resident Services Manager",
+      "summary": "After a maintenance ticket is closed, the tenant automatically receives a short satisfaction survey asking how the repair went, and any low score is…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/post-service-tenant-satisfaction-survey-escalation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/satisfaction-trend-dashboard-alert",
+      "title": "Satisfaction Trend Dashboard Alert",
+      "industry": "property-management",
+      "category": "reviews-feedback",
+      "role": "Resident Services Manager",
+      "summary": "The automation tracks satisfaction survey results over time at the property level and automatically alerts the resident services manager the moment…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/satisfaction-trend-dashboard-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "real-estate/post-closing-review-request-system",
+      "title": "Post-Closing Review Request System",
+      "industry": "real-estate",
+      "category": "reviews-feedback",
+      "role": "Client Success Manager",
+      "summary": "Three days after a transaction records, once the excitement of moving has settled but the experience is still fresh, the client receives a…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/post-closing-review-request-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/post-closing-review-request-automation",
+      "title": "Post-Closing Review Request Automation",
+      "industry": "real-estate",
+      "category": "reviews-feedback",
+      "role": "Reputation Manager",
+      "summary": "The moment a deal's status changes to Closed in the CRM, a short countdown begins, and a few days later the client automatically receives a warm…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/post-closing-review-request-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "restaurants-food-service/online-review-response-reputation-management-system",
+      "title": "Online Review Response & Reputation Management System",
+      "industry": "restaurants-food-service",
+      "category": "reviews-feedback",
+      "role": "Restaurant Owner",
+      "summary": "Every time a new review is posted on Google, Yelp, or TripAdvisor, the system flags it, classifies the sentiment, and drafts a personalized response…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/online-review-response-reputation-management-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/post-visit-review-funnel-feedback-router",
+      "title": "Post-Visit Review Funnel & Feedback Router",
+      "industry": "restaurants-food-service",
+      "category": "reviews-feedback",
+      "role": "General Manager",
+      "summary": "When the POS detects a closed check, the system waits two hours, then sends the guest a text or email asking one simple question: how was your visit?",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/post-visit-review-funnel-feedback-router/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/third-party-delivery-review-aggregator",
+      "title": "Third-Party Delivery Review Aggregator",
+      "industry": "restaurants-food-service",
+      "category": "reviews-feedback",
+      "role": "Operations Manager",
+      "summary": "Reviews left on DoorDash, UberEats, and Grubhub rarely surface anywhere the restaurant actually looks every day, so this system pulls new reviews…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/third-party-delivery-review-aggregator/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/post-visit-review-timing-routing-system",
+      "title": "Post-Visit Review Timing & Routing System",
+      "industry": "restaurants-food-service",
+      "category": "reviews-feedback",
+      "role": "Guest Experience Lead",
+      "summary": "A review request goes out by text or email a few hours after the actual meal, not the booking time, timed to when the food and service are still…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/post-visit-review-timing-routing-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/new-review-response-speed-alert",
+      "title": "New Review Response Speed Alert",
+      "industry": "restaurants-food-service",
+      "category": "reviews-feedback",
+      "role": "Reputation Specialist",
+      "summary": "The instant a new review posts to Yelp or Google, the reputation specialist and the general manager automatically receive an alert with the review's…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/new-review-response-speed-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/weekly-review-aggregation-digest",
+      "title": "Weekly Review Aggregation Digest",
+      "industry": "restaurants-food-service",
+      "category": "reviews-feedback",
+      "role": "Reputation Specialist",
+      "summary": "A weekly summary pulling reviews from Google, Yelp, and TripAdvisor into a single digest is automatically compiled and sent to management, replacing…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/weekly-review-aggregation-digest/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/table-side-feedback-kiosk-real-time-alert",
+      "title": "Table-Side Feedback Kiosk Real-Time Alert",
+      "industry": "restaurants-food-service",
+      "category": "reviews-feedback",
+      "role": "Floor Manager",
+      "summary": "A low rating entered on a table-side feedback kiosk automatically alerts the floor manager in real time, giving them a genuine chance to walk over…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/table-side-feedback-kiosk-real-time-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/third-party-delivery-rating-drop-alert",
+      "title": "Third-Party Delivery Rating Drop Alert",
+      "industry": "restaurants-food-service",
+      "category": "reviews-feedback",
+      "role": "Delivery Operations Manager",
+      "summary": "The automation monitors ratings specifically on third-party delivery platforms and flags a drop in delivery-only scores separately from dine-in…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/third-party-delivery-rating-drop-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "technology-saas/feature-request-aggregation-roadmap-voting-system",
+      "title": "Feature Request Aggregation & Roadmap Voting System",
+      "industry": "technology-saas",
+      "category": "reviews-feedback",
+      "role": "Product Manager",
+      "summary": "Feature requests submitted through in-app widgets, support tickets, sales calls, and NPS follow-ups are all routed into a single product feedback…",
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/feature-request-aggregation-roadmap-voting-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/technology-saas.json"
+    },
+    {
+      "id": "technology-saas/feature-request-to-roadmap-tracker",
+      "title": "Feature Request-to-Roadmap Tracker",
+      "industry": "technology-saas",
+      "category": "reviews-feedback",
+      "role": "Product Manager",
+      "summary": "When customers submit feature requests through support tickets, in-app feedback widgets, or sales calls, this automation automatically extracts and…",
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/feature-request-to-roadmap-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/technology-saas.json"
+    },
+    {
+      "id": "vacation-rentals/guest-review-request-response-automation",
+      "title": "Guest Review Request & Response Automation",
+      "industry": "vacation-rentals",
+      "category": "reviews-feedback",
+      "role": "Guest Experience Manager",
+      "summary": "After checkout, this automation automatically requests a review from the guest, and separately drafts a suggested response to any review the host…",
+      "url": "https://www.ljwebmanagement.com/automations/vacation-rentals/guest-review-request-response-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/vacation-rentals.json"
+    },
+    {
+      "id": "wedding-event-planning/post-event-review-referral-request-system",
+      "title": "Post-Event Review & Referral Request System",
+      "industry": "wedding-event-planning",
+      "category": "reviews-feedback",
+      "role": "Planner",
+      "summary": "One week after the event, this automation automatically sends the couple a thank-you message along with a review request routed to Google and The…",
+      "url": "https://www.ljwebmanagement.com/automations/wedding-event-planning/post-event-review-referral-request-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/wedding-event-planning.json"
+    }
+  ]
+}

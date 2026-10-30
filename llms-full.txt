@@ -468,6 +468,7 @@ A free, six-lesson course on using AI at work: how language models work, writing
 - Find Your Match Quiz: https://www.ljwebmanagement.com/quiz/
 - Book a Consultation: https://www.ljwebmanagement.com/appointment/
 - Contact: https://www.ljwebmanagement.com/contactus/
+- Developer API and docs: https://www.ljwebmanagement.com/developers/
 - Blog: https://blog.ljwebmanagement.com/
 - Privacy Policy: https://www.ljwebmanagement.com/privacy-policy/
 - Terms of Service: https://www.ljwebmanagement.com/terms-of-service/

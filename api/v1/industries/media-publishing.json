@@ -1,0 +1,286 @@
+{
+  "slug": "media-publishing",
+  "name": "Media & Publishing",
+  "summary": "Editorial deadlines, subscription renewals, production pipelines, and content performance.",
+  "url": "https://www.ljwebmanagement.com/automations/media-publishing/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "media-publishing/editorial-calendar-contributor-deadline-management-system",
+      "slug": "editorial-calendar-contributor-deadline-management-system",
+      "title": "Editorial Calendar & Contributor Deadline Management System",
+      "industry": "media-publishing",
+      "category": "operations-inventory",
+      "role": "Editor-in-Chief",
+      "summary": "The editorial calendar lives in a shared project management tool, and every assigned story automatically generates a task for the contributor with…",
+      "steps": [
+        "The editorial calendar lives in a shared project management tool, and every assigned story automatically generates a task for the contributor with the due date, word count, style guide link, and editor contact.",
+        "As deadlines approach, contributors receive automated reminders at one week, three days, and the morning of their submission deadline.",
+        "Stories that miss their deadline trigger an immediate alert to the managing editor along with the contributor's history of on-time performance, so the editor can decide in seconds whether to chase the story or assign a replacement, rather than discovering the gap on the day the issue needs to close."
+      ],
+      "manualProcess": "Without automation, an editor-in-chief has to notice problems after they've already happened, then scramble to fix them manually one at a time. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Airtable or Notion (editorial calendar)",
+        "Zapier or Make.com",
+        "Email or Slack (contributor reminders and editor alerts)",
+        "Google Drive (submission portal)",
+        "OpenAI API (headline and lede suggestion for editor review)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/editorial-calendar-contributor-deadline-management-system/"
+    },
+    {
+      "id": "media-publishing/subscription-renewal-churn-prevention-campaign",
+      "slug": "subscription-renewal-churn-prevention-campaign",
+      "title": "Subscription Renewal & Churn Prevention Campaign",
+      "industry": "media-publishing",
+      "category": "marketing-retention",
+      "role": "Digital Publisher",
+      "summary": "Thirty days before a subscriber's renewal date, this automation sends a personalized renewal confirmation with a summary of what the subscription…",
+      "steps": [
+        "Thirty days before a subscriber's renewal date, this automation sends a personalized renewal confirmation with a summary of what the subscription includes and any new content added in the past year.",
+        "Subscribers who don't renew by the expiration date receive a three-part win-back sequence over 30 days, a reminder, a testimonial-driven value email, and a final limited-time discount offer.",
+        "Subscribers who have not opened any content in 90 days are identified as at-risk before their renewal and receive a re-engagement campaign highlighting the content most similar to what they engaged with historically, rather than a generic blast that lands in the same inbox they've been ignoring."
+      ],
+      "manualProcess": "Handled by hand, a digital publisher spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Subscription platform (e.g., Substack, Ghost, or Memberful)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign (renewal and win-back sequences)",
+        "Stripe (renewal payment processing)",
+        "OpenAI API (personalized re-engagement content suggestions)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp",
+        "ActiveCampaign",
+        "Stripe"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/subscription-renewal-churn-prevention-campaign/"
+    },
+    {
+      "id": "media-publishing/guest-booking-episode-production-pipeline",
+      "slug": "guest-booking-episode-production-pipeline",
+      "title": "Guest Booking & Episode Production Pipeline",
+      "industry": "media-publishing",
+      "category": "operations-inventory",
+      "role": "Podcast Producer",
+      "summary": "When a guest is confirmed for the podcast, this automation sends them an automated prep packet (the recording link, technical requirements, topic…",
+      "steps": [
+        "When a guest is confirmed for the podcast, this automation sends them an automated prep packet (the recording link, technical requirements, topic outline, and pre-interview questionnaire) and adds a calendar event to both the host and guest simultaneously.",
+        "After the episode records, the audio file triggers a production workflow: transcription is initiated, show notes are drafted from the transcript via AI, the episode is uploaded to the hosting platform, and a social media teaser asset is generated, all before the producer has to manually touch the file.",
+        "The week the episode airs, cross-promotion emails to the guest's audience and the pod's subscriber list go out automatically."
+      ],
+      "manualProcess": "Done manually, a podcast producer has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost.",
+      "tools": [
+        "Calendly (guest booking)",
+        "Zapier or Make.com",
+        "Descript or Riverside.fm (recording and transcription)",
+        "OpenAI API (show notes and social copy generation)",
+        "Mailchimp or Kit (episode announcement email)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Calendly",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/guest-booking-episode-production-pipeline/"
+    },
+    {
+      "id": "media-publishing/campaign-trafficking-proof-of-performance-report-system",
+      "slug": "campaign-trafficking-proof-of-performance-report-system",
+      "title": "Campaign Trafficking & Proof of Performance Report System",
+      "industry": "media-publishing",
+      "category": "reporting-analytics",
+      "role": "Ad Sales Manager",
+      "summary": "When an advertising insertion order is signed, this automation creates a campaign record with all flight dates, placements, and creative…",
+      "steps": [
+        "When an advertising insertion order is signed, this automation creates a campaign record with all flight dates, placements, and creative specifications, sends the client a creative asset upload request with a deadline, and alerts the ad operations team to traffic the campaign on the launch date.",
+        "Mid-campaign, a performance snapshot is automatically delivered to the client at the halfway point.",
+        "When the campaign ends, a complete proof of performance report (impressions, clicks, engagement, and delivery against contracted inventory) is generated automatically and sent within 24 hours of the campaign end date, rather than becoming a two-week manual data-pull project for the ad ops team."
+      ],
+      "manualProcess": "Manually, an ad sales manager is stuck doing repetitive follow-ups and data entry that could otherwise run quietly in the background.",
+      "tools": [
+        "Ad server or campaign management platform (e.g., Google Ad Manager or DFP)",
+        "Zapier or Make.com",
+        "Jotform (creative asset upload form)",
+        "Google Sheets or Looker Studio (PoP report template)",
+        "Email (automated mid-flight and end-of-campaign delivery)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/campaign-trafficking-proof-of-performance-report-system/"
+    },
+    {
+      "id": "media-publishing/content-performance-alert-repurposing-trigger-system",
+      "slug": "content-performance-alert-repurposing-trigger-system",
+      "title": "Content Performance Alert & Repurposing Trigger System",
+      "industry": "media-publishing",
+      "category": "marketing-retention",
+      "role": "Content Marketing Director",
+      "summary": "Every 24 hours, this automation checks performance data across the content library (page views, time on page, backlinks acquired, and social shares)…",
+      "steps": [
+        "Every 24 hours, this automation checks performance data across the content library (page views, time on page, backlinks acquired, and social shares) and flags any piece of content that has surpassed the top-performer threshold.",
+        "High-performing articles trigger a repurposing workflow: a prompt to the content team to adapt the piece into a LinkedIn carousel, a short-form video script, a newsletter feature, and a lead magnet PDF.",
+        "Content that was high-performing six months ago but has seen traffic drop is flagged for a refresh review, because a well-ranking article that gets updated and re-promoted often outperforms a brand-new piece of content at a fraction of the production cost."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a content marketing director remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Google Analytics API (performance data)",
+        "Zapier or Make.com",
+        "Airtable (content performance library)",
+        "OpenAI API (repurposing brief generator)",
+        "Slack (performance alert to content team)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/content-performance-alert-repurposing-trigger-system/"
+    },
+    {
+      "id": "media-publishing/content-calendar-to-multi-channel-publish",
+      "slug": "content-calendar-to-multi-channel-publish",
+      "title": "Content Calendar-to-Multi-Channel Publish",
+      "industry": "media-publishing",
+      "category": "marketing-retention",
+      "role": "Content Manager",
+      "summary": "Once a piece of content is marked approved in the editorial calendar, this automation automatically formats and schedules it for publishing across…",
+      "steps": [
+        "Once a piece of content is marked approved in the editorial calendar, this automation automatically formats and schedules it for publishing across the website, social channels, and the email newsletter, each at its own individually optimized time.",
+        "What used to require manually copy-pasting the same piece of content across five different platforms with five different formatting quirks now happens with one approval click."
+      ],
+      "manualProcess": "Handled by hand, a content manager spends time each day re-checking the same information across disconnected tools instead of doing higher-value work. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "WordPress or a CMS",
+        "Buffer or Hootsuite",
+        "Mailchimp",
+        "Zapier or Make.com"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/content-calendar-to-multi-channel-publish/"
+    },
+    {
+      "id": "media-publishing/broken-link-outdated-content-scanner",
+      "slug": "broken-link-outdated-content-scanner",
+      "title": "Broken Link & Outdated Content Scanner",
+      "industry": "media-publishing",
+      "category": "operations-inventory",
+      "role": "Editorial Manager",
+      "summary": "This automation periodically scans every published article for broken outbound links and flags any article that hasn't been meaningfully updated in…",
+      "steps": [
+        "This automation periodically scans every published article for broken outbound links and flags any article that hasn't been meaningfully updated in over a set number of months, especially ones still pulling meaningful search traffic.",
+        "A task is automatically created for the editorial team to review and refresh flagged articles, instead of stale, link-broken content quietly sitting on the site degrading both user experience and search rankings."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on an editorial manager remembering to check in, update records, and follow up, with no safety net if something slips. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "WordPress or a CMS",
+        "Screaming Frog or a link-checking tool",
+        "Zapier or Make.com",
+        "Google Analytics or Search Console"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/broken-link-outdated-content-scanner/"
+    },
+    {
+      "id": "media-publishing/subscriber-win-back-sequence",
+      "slug": "subscriber-win-back-sequence",
+      "title": "Subscriber Win-Back Sequence",
+      "industry": "media-publishing",
+      "category": "marketing-retention",
+      "role": "Newsletter Editor",
+      "summary": "When a subscriber's engagement, opens, clicks, site visits, drops to zero for a set period, this automation automatically enrolls them in a win-back…",
+      "steps": [
+        "When a subscriber's engagement, opens, clicks, site visits, drops to zero for a set period, this automation automatically enrolls them in a win-back email sequence highlighting recent standout content.",
+        "Subscribers who still don't re-engage after the sequence are automatically removed from the active list, protecting sender reputation instead of letting a growing pool of dead addresses drag down deliverability for everyone else."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a newsletter editor, who has to track every step by hand across emails, spreadsheets, and sticky notes. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Mailchimp or a similar ESP",
+        "Zapier or Make.com",
+        "Google Analytics",
+        "A CMS"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/subscriber-win-back-sequence/"
+    },
+    {
+      "id": "media-publishing/freelancer-invoice-payment-tracker",
+      "slug": "freelancer-invoice-payment-tracker",
+      "title": "Freelancer Invoice & Payment Tracker",
+      "industry": "media-publishing",
+      "category": "billing-finance",
+      "role": "Managing Editor",
+      "summary": "When a freelance contributor submits an invoice for a completed piece, this automation automatically checks it against the agreed rate and word…",
+      "steps": [
+        "When a freelance contributor submits an invoice for a completed piece, this automation automatically checks it against the agreed rate and word count on file, routes it for editorial approval, and automatically schedules the payment once approved.",
+        "The manual back-and-forth that used to happen over freelancer payments, and the late payments that damage relationships with good contributors, both disappear."
+      ],
+      "manualProcess": "Left unautomated, a managing editor spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "QuickBooks Online",
+        "Zapier or Make.com",
+        "Google Sheets (rate/word count reference)",
+        "Email"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "QuickBooks",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/freelancer-invoice-payment-tracker/"
+    },
+    {
+      "id": "media-publishing/ad-inventory-fill-rate-alert",
+      "slug": "ad-inventory-fill-rate-alert",
+      "title": "Ad Inventory Fill Rate Alert",
+      "industry": "media-publishing",
+      "category": "reporting-analytics",
+      "role": "Ad Operations Manager",
+      "summary": "This automation continuously monitors ad placements across the site and automatically alerts the ad ops team the moment fill rate for any placement…",
+      "steps": [
+        "This automation continuously monitors ad placements across the site and automatically alerts the ad ops team the moment fill rate for any placement drops below a set threshold.",
+        "An underperforming placement gets caught and addressed within a day or two instead of an entire week going by with unsold, revenue-losing ad space that no one noticed because no one was checking the dashboard."
+      ],
+      "manualProcess": "Without this system, an ad operations manager manually pieces together information from different places, then has to relay it to everyone who needs it.",
+      "tools": [
+        "Google Ad Manager",
+        "Zapier or Make.com",
+        "Slack or email",
+        "Google Sheets"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/media-publishing/ad-inventory-fill-rate-alert/"
+    }
+  ]
+}

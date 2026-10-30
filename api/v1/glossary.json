@@ -1,0 +1,413 @@
+{
+  "count": 68,
+  "terms": [
+    {
+      "slug": "accounts-payable-automation",
+      "term": "Accounts payable automation",
+      "definition": "Software that captures supplier invoices, extracts their details, matches them to purchase orders, routes them for approval, and schedules payment, so the bills you pay need far less manual data entry.",
+      "url": "https://www.ljwebmanagement.com/glossary/#accounts-payable-automation"
+    },
+    {
+      "slug": "agentic-workflow",
+      "term": "Agentic workflow",
+      "definition": "A workflow in which an AI agent plans and carries out some of the steps itself, usually inside limits set by a larger rule-based process and with human approval for risky actions.",
+      "url": "https://www.ljwebmanagement.com/glossary/#agentic-workflow"
+    },
+    {
+      "slug": "ai-agent",
+      "term": "AI agent",
+      "definition": "Software built around an AI model that is given a goal and a set of tools (such as a calendar, CRM, or email) and decides which steps to take to reach that goal, checking the results as it goes.",
+      "url": "https://www.ljwebmanagement.com/glossary/#ai-agent"
+    },
+    {
+      "slug": "api",
+      "term": "API",
+      "definition": "A defined way for one piece of software to request data or actions from another. Most modern business apps offer an API, which is what lets automation tools connect them.",
+      "url": "https://www.ljwebmanagement.com/glossary/#api"
+    },
+    {
+      "slug": "api-key",
+      "term": "API key",
+      "definition": "A secret code that identifies your account when software calls an API. Treat it like a password: store it securely, give each integration its own key, and never paste it anywhere public.",
+      "url": "https://www.ljwebmanagement.com/glossary/#api-key"
+    },
+    {
+      "slug": "approval-workflow",
+      "term": "Approval workflow",
+      "definition": "An automation that routes a request (an expense, a discount, a document) to the right person to approve or reject, then continues based on their decision.",
+      "url": "https://www.ljwebmanagement.com/glossary/#approval-workflow"
+    },
+    {
+      "slug": "artificial-intelligence-ai",
+      "term": "Artificial intelligence (AI)",
+      "definition": "Software that performs tasks that normally need human intelligence, such as understanding language, recognizing images, or making predictions. In business automation, AI most often reads, sorts, extracts, summarizes, and drafts text.",
+      "url": "https://www.ljwebmanagement.com/glossary/#artificial-intelligence-ai"
+    },
+    {
+      "slug": "automation-platform",
+      "term": "Automation platform",
+      "definition": "Software for building workflows that connect apps with little or no code, such as Zapier, Make, n8n, or Microsoft Power Automate. Also called an integration platform or iPaaS.",
+      "url": "https://www.ljwebmanagement.com/glossary/#automation-platform"
+    },
+    {
+      "slug": "batch-processing",
+      "term": "Batch processing",
+      "definition": "Handling records in groups on a schedule (for example, every night) instead of one at a time as they arrive. Common for large data loads, reports, and discounted AI jobs that are not urgent.",
+      "url": "https://www.ljwebmanagement.com/glossary/#batch-processing"
+    },
+    {
+      "slug": "business-process-automation-bpa",
+      "term": "Business process automation (BPA)",
+      "definition": "Using software to run multi-step business processes, such as onboarding, invoicing, or approvals, with little manual work. BPA usually spans several apps, people, and decisions.",
+      "url": "https://www.ljwebmanagement.com/glossary/#business-process-automation-bpa"
+    },
+    {
+      "slug": "business-process-management-bpm",
+      "term": "Business process management (BPM)",
+      "definition": "A discipline for designing, measuring, and improving how work gets done. Automation is one tool BPM uses; BPM also covers documentation, ownership, and continuous improvement.",
+      "url": "https://www.ljwebmanagement.com/glossary/#business-process-management-bpm"
+    },
+    {
+      "slug": "chatbot",
+      "term": "Chatbot",
+      "definition": "Software that holds a text conversation with people on a website, in a messaging app, or inside a product. Modern chatbots use AI language models; older ones follow scripted decision trees.",
+      "url": "https://www.ljwebmanagement.com/glossary/#chatbot"
+    },
+    {
+      "slug": "condition",
+      "term": "Condition",
+      "definition": "A rule inside a workflow that checks something (Is the order over $500? Did the lead reply?) and decides which steps run next. Also called a filter, branch, path, or router.",
+      "url": "https://www.ljwebmanagement.com/glossary/#condition"
+    },
+    {
+      "slug": "context-window",
+      "term": "Context window",
+      "definition": "The maximum amount of text an AI model can consider at once, including your instructions, any documents you provide, and its reply. It is measured in tokens.",
+      "url": "https://www.ljwebmanagement.com/glossary/#context-window"
+    },
+    {
+      "slug": "copilot",
+      "term": "Copilot",
+      "definition": "An AI assistant built into an app that helps a person do their work, such as drafting, summarizing, or suggesting next steps, while the person stays in control of the result.",
+      "url": "https://www.ljwebmanagement.com/glossary/#copilot"
+    },
+    {
+      "slug": "crm",
+      "term": "CRM",
+      "definition": "Software that keeps customer and prospect records, conversations, and deals in one place. A CRM is often the hub that business automations read from and write to.",
+      "url": "https://www.ljwebmanagement.com/glossary/#crm"
+    },
+    {
+      "slug": "data-entry-automation",
+      "term": "Data entry automation",
+      "definition": "Capturing information from forms, emails, documents, or other apps and entering it into your systems automatically instead of retyping it.",
+      "url": "https://www.ljwebmanagement.com/glossary/#data-entry-automation"
+    },
+    {
+      "slug": "data-mapping",
+      "term": "Data mapping",
+      "definition": "Matching fields in one app to fields in another (for example, a form's Phone field to the CRM's Mobile field) so data lands in the right place when an automation moves it.",
+      "url": "https://www.ljwebmanagement.com/glossary/#data-mapping"
+    },
+    {
+      "slug": "deduplication",
+      "term": "Deduplication",
+      "definition": "Finding and merging duplicate records, such as the same customer entered twice, so automations do not send double messages or build reports on conflicting data.",
+      "url": "https://www.ljwebmanagement.com/glossary/#deduplication"
+    },
+    {
+      "slug": "document-workflow-automation",
+      "term": "Document workflow automation",
+      "definition": "Automating how documents are requested, collected, generated, reviewed, approved, signed, and filed.",
+      "url": "https://www.ljwebmanagement.com/glossary/#document-workflow-automation"
+    },
+    {
+      "slug": "drip-campaign",
+      "term": "Drip campaign",
+      "definition": "A series of automated messages sent on a schedule or in response to what a person does, such as a welcome sequence or a lead nurture series.",
+      "url": "https://www.ljwebmanagement.com/glossary/#drip-campaign"
+    },
+    {
+      "slug": "embedding",
+      "term": "Embedding",
+      "definition": "A list of numbers that represents the meaning of a piece of text, letting software find content with similar meaning even when the wording differs. Embeddings power semantic search and retrieval-augmented generation.",
+      "url": "https://www.ljwebmanagement.com/glossary/#embedding"
+    },
+    {
+      "slug": "erp",
+      "term": "ERP",
+      "definition": "Software that runs core operations such as inventory, purchasing, accounting, and fulfillment in one connected system.",
+      "url": "https://www.ljwebmanagement.com/glossary/#erp"
+    },
+    {
+      "slug": "error-handling",
+      "term": "Error handling",
+      "definition": "How an automation responds when a step fails, such as retrying, skipping the record, logging the problem, or alerting a person to step in.",
+      "url": "https://www.ljwebmanagement.com/glossary/#error-handling"
+    },
+    {
+      "slug": "etl",
+      "term": "ETL",
+      "definition": "A process that pulls data out of source systems, cleans and reshapes it, and loads it into a destination such as a reporting database or spreadsheet.",
+      "url": "https://www.ljwebmanagement.com/glossary/#etl"
+    },
+    {
+      "slug": "fine-tuning",
+      "term": "Fine-tuning",
+      "definition": "Further training an existing AI model on your own examples so it adopts a specific style or task. Most small business needs are better served by good prompts and retrieval than by fine-tuning.",
+      "url": "https://www.ljwebmanagement.com/glossary/#fine-tuning"
+    },
+    {
+      "slug": "generative-ai",
+      "term": "Generative AI",
+      "definition": "AI that creates new content, such as text, images, audio, or code, in response to a prompt. Large language models are the type most used in business automation.",
+      "url": "https://www.ljwebmanagement.com/glossary/#generative-ai"
+    },
+    {
+      "slug": "guardrails",
+      "term": "Guardrails",
+      "definition": "Limits placed on an AI system to keep it safe and on task, such as restricting which tools it may use, what it may discuss, and which actions need human approval.",
+      "url": "https://www.ljwebmanagement.com/glossary/#guardrails"
+    },
+    {
+      "slug": "hallucination",
+      "term": "Hallucination",
+      "definition": "When an AI model produces information that sounds confident and plausible but is false. Grounding the model in your own data and reviewing its output reduces the risk.",
+      "url": "https://www.ljwebmanagement.com/glossary/#hallucination"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "term": "Human in the loop",
+      "definition": "A workflow design in which a person reviews or approves certain steps, such as an AI-drafted reply or a large refund, before the automation continues.",
+      "url": "https://www.ljwebmanagement.com/glossary/#human-in-the-loop"
+    },
+    {
+      "slug": "integration",
+      "term": "Integration",
+      "definition": "A connection that lets two apps share data or trigger actions in each other. It may be built into the apps (native), created with an automation platform, or written in code.",
+      "url": "https://www.ljwebmanagement.com/glossary/#integration"
+    },
+    {
+      "slug": "intelligent-document-processing-idp",
+      "term": "Intelligent document processing (IDP)",
+      "definition": "Using OCR and AI together to classify documents and extract their data, such as reading invoices, forms, receipts, and contracts.",
+      "url": "https://www.ljwebmanagement.com/glossary/#intelligent-document-processing-idp"
+    },
+    {
+      "slug": "ipaas",
+      "term": "iPaaS",
+      "definition": "Cloud software for connecting apps and automating the workflows between them. Zapier, Make, and Microsoft Power Automate are common examples.",
+      "url": "https://www.ljwebmanagement.com/glossary/#ipaas"
+    },
+    {
+      "slug": "json",
+      "term": "JSON",
+      "definition": "A simple text format for structured data, written as labeled fields inside curly braces. Most APIs and webhooks send data as JSON, and AI steps can be asked to reply in it so a workflow can read the answer.",
+      "url": "https://www.ljwebmanagement.com/glossary/#json"
+    },
+    {
+      "slug": "large-language-model-llm",
+      "term": "Large language model (LLM)",
+      "definition": "An AI model trained on large amounts of text to understand and generate language. LLMs power chat assistants and the AI steps in modern automations.",
+      "url": "https://www.ljwebmanagement.com/glossary/#large-language-model-llm"
+    },
+    {
+      "slug": "lead-nurturing",
+      "term": "Lead nurturing",
+      "definition": "Staying in touch with prospects who are not ready to buy yet, through helpful automated messages over time, so you are the obvious choice when they are.",
+      "url": "https://www.ljwebmanagement.com/glossary/#lead-nurturing"
+    },
+    {
+      "slug": "lead-routing",
+      "term": "Lead routing",
+      "definition": "Automatically assigning each new lead to the right salesperson or team based on rules such as location, service, or deal size.",
+      "url": "https://www.ljwebmanagement.com/glossary/#lead-routing"
+    },
+    {
+      "slug": "low-code",
+      "term": "Low-code",
+      "definition": "Building software or automations mostly with visual tools and settings, adding small amounts of code only where needed.",
+      "url": "https://www.ljwebmanagement.com/glossary/#low-code"
+    },
+    {
+      "slug": "machine-learning",
+      "term": "Machine learning",
+      "definition": "A branch of AI in which software learns patterns from data instead of following hand-written rules. It is used for predictions such as demand forecasting, lead scoring, or fraud detection.",
+      "url": "https://www.ljwebmanagement.com/glossary/#machine-learning"
+    },
+    {
+      "slug": "make",
+      "term": "Make",
+      "definition": "A visual automation platform (formerly called Integromat) for building multi-step workflows with branching, loops, and data transformation.",
+      "url": "https://www.ljwebmanagement.com/glossary/#make"
+    },
+    {
+      "slug": "missed-call-text-back",
+      "term": "Missed-call text-back",
+      "definition": "An automation that texts anyone whose call goes unanswered, so the conversation continues by message instead of the caller trying a competitor.",
+      "url": "https://www.ljwebmanagement.com/glossary/#missed-call-text-back"
+    },
+    {
+      "slug": "model-context-protocol-mcp",
+      "term": "Model Context Protocol (MCP)",
+      "definition": "An open standard for connecting AI assistants and agents to tools and data sources, so one integration can be used by many AI applications.",
+      "url": "https://www.ljwebmanagement.com/glossary/#model-context-protocol-mcp"
+    },
+    {
+      "slug": "multi-step-workflow",
+      "term": "Multi-step workflow",
+      "definition": "A workflow with several actions after its trigger, often across several apps, such as creating a contact, sending a message, and assigning a follow-up task.",
+      "url": "https://www.ljwebmanagement.com/glossary/#multi-step-workflow"
+    },
+    {
+      "slug": "n8n",
+      "term": "n8n",
+      "definition": "A source-available workflow automation tool that can be self-hosted or used in the cloud, popular with technical teams that want flexibility and control over their data.",
+      "url": "https://www.ljwebmanagement.com/glossary/#n8n"
+    },
+    {
+      "slug": "natural-language-processing-nlp",
+      "term": "Natural language processing (NLP)",
+      "definition": "The field of AI concerned with understanding and generating human language, including classification, extraction, translation, and summarization.",
+      "url": "https://www.ljwebmanagement.com/glossary/#natural-language-processing-nlp"
+    },
+    {
+      "slug": "no-code",
+      "term": "No-code",
+      "definition": "Building apps or automations entirely with visual tools and settings, without writing code.",
+      "url": "https://www.ljwebmanagement.com/glossary/#no-code"
+    },
+    {
+      "slug": "ocr",
+      "term": "OCR",
+      "definition": "Technology that turns images of text, such as scanned documents or photos of receipts, into machine-readable text. It is often paired with AI to pull out specific fields.",
+      "url": "https://www.ljwebmanagement.com/glossary/#ocr"
+    },
+    {
+      "slug": "orchestration",
+      "term": "Orchestration",
+      "definition": "Coordinating several automations, systems, or AI agents so they run in the right order and hand work to each other reliably.",
+      "url": "https://www.ljwebmanagement.com/glossary/#orchestration"
+    },
+    {
+      "slug": "polling",
+      "term": "Polling",
+      "definition": "Checking an app on a schedule (for example, every five minutes) for new or changed data. Simpler to set up than webhooks, but slower to react.",
+      "url": "https://www.ljwebmanagement.com/glossary/#polling"
+    },
+    {
+      "slug": "power-automate",
+      "term": "Power Automate",
+      "definition": "Microsoft's workflow automation platform, closely integrated with Microsoft 365 apps such as Outlook, Teams, SharePoint, and Excel.",
+      "url": "https://www.ljwebmanagement.com/glossary/#power-automate"
+    },
+    {
+      "slug": "prompt",
+      "term": "Prompt",
+      "definition": "The instructions and context you give an AI model. A clear prompt states the task, provides the information needed, specifies the output format, and sets rules.",
+      "url": "https://www.ljwebmanagement.com/glossary/#prompt"
+    },
+    {
+      "slug": "prompt-engineering",
+      "term": "Prompt engineering",
+      "definition": "The practice of designing and testing prompts so an AI model produces reliable, useful output for a specific task.",
+      "url": "https://www.ljwebmanagement.com/glossary/#prompt-engineering"
+    },
+    {
+      "slug": "rate-limit",
+      "term": "Rate limit",
+      "definition": "A cap on how many requests an app's API accepts in a given time. Well-built automations slow down and retry when they hit one instead of failing.",
+      "url": "https://www.ljwebmanagement.com/glossary/#rate-limit"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "term": "Retrieval-augmented generation (RAG)",
+      "definition": "A technique that finds relevant passages in your own documents and gives them to an AI model along with the question, so answers are grounded in your information rather than the model's general knowledge.",
+      "url": "https://www.ljwebmanagement.com/glossary/#retrieval-augmented-generation-rag"
+    },
+    {
+      "slug": "robotic-process-automation-rpa",
+      "term": "Robotic process automation (RPA)",
+      "definition": "Software bots that mimic a person clicking, typing, and copying in an application's screens. RPA is most useful when a system has no API or integration.",
+      "url": "https://www.ljwebmanagement.com/glossary/#robotic-process-automation-rpa"
+    },
+    {
+      "slug": "saas",
+      "term": "SaaS",
+      "definition": "Software you use over the internet on a subscription, rather than installing and maintaining it yourself.",
+      "url": "https://www.ljwebmanagement.com/glossary/#saas"
+    },
+    {
+      "slug": "scheduled-trigger",
+      "term": "Scheduled trigger",
+      "definition": "A trigger that starts a workflow at set times, such as every weekday at 8 a.m. or on the first of each month, rather than in response to an event.",
+      "url": "https://www.ljwebmanagement.com/glossary/#scheduled-trigger"
+    },
+    {
+      "slug": "self-hosted",
+      "term": "Self-hosted",
+      "definition": "Software that runs on servers you control rather than in the vendor's cloud. It offers more control over data in exchange for handling your own updates, security, and maintenance.",
+      "url": "https://www.ljwebmanagement.com/glossary/#self-hosted"
+    },
+    {
+      "slug": "single-source-of-truth",
+      "term": "Single source of truth",
+      "definition": "One system that holds the authoritative version of a type of data, such as customer records, so every other tool and automation reads from it instead of keeping its own copy.",
+      "url": "https://www.ljwebmanagement.com/glossary/#single-source-of-truth"
+    },
+    {
+      "slug": "sop",
+      "term": "SOP",
+      "definition": "Written, step-by-step instructions for how a task is done. A good SOP is often the blueprint for an automation.",
+      "url": "https://www.ljwebmanagement.com/glossary/#sop"
+    },
+    {
+      "slug": "sync",
+      "term": "Sync",
+      "definition": "Keeping the same records matching in two or more apps, so a change in one is reflected in the others, either one way or both ways.",
+      "url": "https://www.ljwebmanagement.com/glossary/#sync"
+    },
+    {
+      "slug": "token",
+      "term": "Token",
+      "definition": "The unit AI models use to read and write text, roughly three quarters of an English word. AI providers usually charge per million tokens in and out.",
+      "url": "https://www.ljwebmanagement.com/glossary/#token"
+    },
+    {
+      "slug": "trigger",
+      "term": "Trigger",
+      "definition": "The event that starts an automated workflow, such as a new form submission, an incoming email, a status change, or a scheduled time.",
+      "url": "https://www.ljwebmanagement.com/glossary/#trigger"
+    },
+    {
+      "slug": "vector-database",
+      "term": "Vector database",
+      "definition": "A database that stores embeddings so software can quickly find text with similar meaning. It is a common building block for retrieval-augmented generation.",
+      "url": "https://www.ljwebmanagement.com/glossary/#vector-database"
+    },
+    {
+      "slug": "webhook",
+      "term": "Webhook",
+      "definition": "An automatic message an app sends to a web address the moment something happens, so another system can react immediately instead of checking for changes.",
+      "url": "https://www.ljwebmanagement.com/glossary/#webhook"
+    },
+    {
+      "slug": "workflow",
+      "term": "Workflow",
+      "definition": "A defined sequence of steps that turns an input into an outcome, such as a new inquiry becoming a booked appointment.",
+      "url": "https://www.ljwebmanagement.com/glossary/#workflow"
+    },
+    {
+      "slug": "workflow-automation",
+      "term": "Workflow automation",
+      "definition": "Using software to run the steps of a workflow automatically, triggered by events and following rules you define, so work moves between people and apps without manual effort.",
+      "url": "https://www.ljwebmanagement.com/glossary/#workflow-automation"
+    },
+    {
+      "slug": "zapier",
+      "term": "Zapier",
+      "definition": "A popular no-code automation platform that connects thousands of apps through workflows called Zaps, each made of a trigger and one or more actions.",
+      "url": "https://www.ljwebmanagement.com/glossary/#zapier"
+    }
+  ]
+}

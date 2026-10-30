@@ -1,0 +1,245 @@
+{
+  "slug": "financial-services",
+  "name": "Financial Services",
+  "summary": "Client onboarding, tax document collection, review scheduling, and life-event outreach.",
+  "url": "https://www.ljwebmanagement.com/automations/financial-services/",
+  "automationCount": 8,
+  "automations": [
+    {
+      "id": "financial-services/birthday-milestone-life-event-outreach-system",
+      "slug": "birthday-milestone-life-event-outreach-system",
+      "title": "Birthday, Milestone & Life-Event Outreach System",
+      "industry": "financial-services",
+      "category": "marketing-retention",
+      "role": "Financial Advisor",
+      "summary": "Every client's birthday, portfolio anniversary, and logged life event (a retirement date, a child's college start date, a planned home purchase)…",
+      "steps": [
+        "Every client's birthday, portfolio anniversary, and logged life event (a retirement date, a child's college start date, a planned home purchase) triggers an automatic personalized outreach from the advisor.",
+        "Birthday messages are warm and non-sales-oriented.",
+        "Anniversary messages include a brief note on the account's performance and an invitation to review.",
+        "Life event triggers launch a financial planning conversation about the specific milestone approaching.",
+        "The advisor stays top of mind for every client throughout the year with touchpoints that feel personal and timely rather than scheduled and generic."
+      ],
+      "manualProcess": "Without this system, a financial advisor manually pieces together information from different places, then has to relay it to everyone who needs it. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "CRM (e.g., Wealthbox or Redtail)",
+        "Zapier or Make.com",
+        "Mailchimp or ActiveCampaign (personalized sequences)",
+        "Twilio (birthday text from advisor)",
+        "Google Sheets (milestone event tracker)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "Google Sheets",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/birthday-milestone-life-event-outreach-system/"
+    },
+    {
+      "id": "financial-services/new-client-welcome-coverage-gap-analysis-system",
+      "slug": "new-client-welcome-coverage-gap-analysis-system",
+      "title": "New Client Welcome & Coverage Gap Analysis System",
+      "industry": "financial-services",
+      "category": "onboarding-intake",
+      "role": "Insurance Agent",
+      "summary": "When a new client's first policy is bound, this automation launches a welcome sequence that introduces the agency, explains how to file a claim, and…",
+      "steps": [
+        "When a new client's first policy is bound, this automation launches a welcome sequence that introduces the agency, explains how to file a claim, and delivers the client's policy summary document automatically.",
+        "Thirty days after binding, the client receives a coverage review questionnaire asking about any changes in their home, vehicles, business activities, or life situation.",
+        "The agent receives a summary of any gaps identified (an uninsured vehicle, a home-based business, an umbrella policy need) turning the post-sale relationship into an opportunity to ensure the client is properly protected rather than simply properly sold."
+      ],
+      "manualProcess": "Left to a person, this means an insurance agent re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Agency management system (e.g., HawkSoft or Applied Epic)",
+        "Zapier or Make.com",
+        "Jotform (coverage review questionnaire)",
+        "Mailchimp or ActiveCampaign (welcome sequence)",
+        "Slack (gap analysis alert to agent)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Jotform",
+        "Slack",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/new-client-welcome-coverage-gap-analysis-system/"
+    },
+    {
+      "id": "financial-services/expense-categorization-monthly-close-system",
+      "slug": "expense-categorization-monthly-close-system",
+      "title": "Expense Categorization & Monthly Close System",
+      "industry": "financial-services",
+      "category": "billing-finance",
+      "role": "Bookkeeper",
+      "summary": "Bank and credit card transactions sync automatically into the accounting system each night, and a categorization engine applies the correct chart of…",
+      "steps": [
+        "Bank and credit card transactions sync automatically into the accounting system each night, and a categorization engine applies the correct chart of accounts code based on vendor name, amount, and memo, flagging only the exceptions that need a human decision.",
+        "At month end, the bookkeeper receives a pre-built close checklist with every reconciliation item already pre-populated, turning a two-day monthly close into a focused half-day review."
+      ],
+      "manualProcess": "Without a system in place, a bookkeeper has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "QuickBooks Online or Xero",
+        "Zapier or Make.com",
+        "OpenAI API (smart categorization)",
+        "Google Sheets (reconciliation checklist)",
+        "Bank connection via Plaid"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "QuickBooks",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/expense-categorization-monthly-close-system/"
+    },
+    {
+      "id": "financial-services/tax-season-document-collection-status-tracker",
+      "slug": "tax-season-document-collection-status-tracker",
+      "title": "Tax Season Document Collection & Status Tracker",
+      "industry": "financial-services",
+      "category": "compliance-documents",
+      "role": "Tax Preparer",
+      "summary": "At the start of tax season, every client on the roster automatically receives a personalized document request checklist via email, with a secure…",
+      "steps": [
+        "At the start of tax season, every client on the roster automatically receives a personalized document request checklist via email, with a secure upload portal link.",
+        "The system tracks what's been received versus what's outstanding, sends weekly nudges to clients with missing items, and gives the preparer a live dashboard showing which returns are ready to work and which are still waiting on a W-2 or K-1, eliminating the spreadsheet of sticky notes that usually passes for a tracking system."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a tax preparer, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "TaxDome or Canopy (client portal)",
+        "Zapier or Make.com",
+        "Twilio or email (reminders)",
+        "Google Sheets or Airtable (status dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Airtable",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/tax-season-document-collection-status-tracker/"
+    },
+    {
+      "id": "financial-services/loan-pipeline-follow-up-milestone-notification-system",
+      "slug": "loan-pipeline-follow-up-milestone-notification-system",
+      "title": "Loan Pipeline Follow-Up & Milestone Notification System",
+      "industry": "financial-services",
+      "category": "customer-communication",
+      "role": "Mortgage Loan Officer",
+      "summary": "As a loan moves through the pipeline (application received, appraisal ordered, conditions cleared, clear to close) both the borrower and the…",
+      "steps": [
+        "As a loan moves through the pipeline (application received, appraisal ordered, conditions cleared, clear to close) both the borrower and the referring real estate agent receive automatic milestone update texts and emails.",
+        "The loan officer never has to remember who to notify at each stage, borrowers feel informed throughout the process, and real estate agents get the proactive communication that turns one referral into many."
+      ],
+      "manualProcess": "Without automation, a mortgage loan officer has to notice problems after they've already happened, then scramble to fix them manually one at a time. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "LOS (Loan Origination Software, e.g., Encompass or BytePro)",
+        "Zapier or Make.com",
+        "Twilio (SMS milestone updates)",
+        "Mailchimp or email (agent notifications)",
+        "CRM (e.g., Jungo or Salesforce)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "Salesforce"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/loan-pipeline-follow-up-milestone-notification-system/"
+    },
+    {
+      "id": "financial-services/missed-call-instant-text-back-system",
+      "slug": "missed-call-instant-text-back-system",
+      "title": "Missed Call Instant Text-Back System",
+      "industry": "financial-services",
+      "category": "lead-follow-up-sales",
+      "role": "Office Manager",
+      "summary": "Every call to the office that goes unanswered, whether the team is with a client, on another line, or simply away from the desk, triggers an…",
+      "steps": [
+        "Every call to the office that goes unanswered, whether the team is with a client, on another line, or simply away from the desk, triggers an automatic text back to the caller within 60 seconds thanking them for calling and asking what they need help with.",
+        "The missed call and caller's number log directly into the firm's CRM (Redtail CRM or Wealthbox) so the advisor sees exactly who called and when, and if there's no reply within two hours, a second text invites the caller to book a time directly on the advisor's calendar.",
+        "Prospective clients who would have simply dialed the next firm on their list instead get an immediate, human-sounding response, and the office stops losing new business to a phone that rang at a busy moment."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on an office manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Zapier or Make.com",
+        "Twilio (missed call text-back)",
+        "Redtail CRM or Wealthbox",
+        "Calendly (booking link)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Calendly"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/missed-call-instant-text-back-system/"
+    },
+    {
+      "id": "financial-services/secure-document-collection-follow-up-system",
+      "slug": "secure-document-collection-follow-up-system",
+      "title": "Secure Document Collection & Follow-Up System",
+      "industry": "financial-services",
+      "category": "compliance-documents",
+      "role": "Client Services Coordinator",
+      "summary": "When an advisor needs a client's tax documents, statements, or a signed form, this automation sends a secure, trackable request through the firm's…",
+      "steps": [
+        "When an advisor needs a client's tax documents, statements, or a signed form, this automation sends a secure, trackable request through the firm's client portal rather than an email attachment that gets lost in an inbox.",
+        "The client receives a link, an upload deadline, and a checklist of exactly what's still outstanding, and the system sends a reminder every three days until every item is marked received.",
+        "The client services coordinator sees a live dashboard showing who has fully responded, who has partially responded, and who hasn't opened the request at all, and escalation texts go out to anyone still missing documents 48 hours before a filing or meeting deadline.",
+        "What used to be a manual chase through email threads becomes a fully tracked process where nothing is missed and nobody has to ask twice."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a client services coordinator, who has to juggle phone calls, emails, and spreadsheets just to keep things moving. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Zapier or Make.com",
+        "Redtail CRM or Wealthbox",
+        "TaxDome or SmartVault (secure client portal)",
+        "Twilio or email (reminder sequence)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/secure-document-collection-follow-up-system/"
+    },
+    {
+      "id": "financial-services/annual-review-auto-scheduling-system",
+      "slug": "annual-review-auto-scheduling-system",
+      "title": "Annual Review Auto-Scheduling System",
+      "industry": "financial-services",
+      "category": "scheduling-dispatch",
+      "role": "Wealth Manager",
+      "summary": "Every client account is tagged with the date of its last annual review, and 11 months after that date the client automatically receives an email…",
+      "steps": [
+        "Every client account is tagged with the date of its last annual review, and 11 months after that date the client automatically receives an email invitation to book the next review directly on the wealth manager's calendar.",
+        "If the client hasn't booked within 10 days, a follow-up text goes out, and if there's still no response after 30 days, the wealth manager gets an internal alert flagging the account as overdue for outreach by phone.",
+        "Clients approaching a policy or account anniversary are automatically bundled into the same outreach so the review conversation can also cover any renewal or rebalancing decision that's coming due.",
+        "Annual reviews that used to slip to 18 or even 24 months between meetings now happen reliably on schedule, protecting both the client relationship and the recurring revenue tied to it."
+      ],
+      "manualProcess": "Done manually, a wealth manager has to remember to follow up on every case individually, often relying on memory, phone calls, and whatever notes didn't get lost. It rarely feels urgent in the moment, but it adds up fast.",
+      "tools": [
+        "Zapier or Make.com",
+        "Redtail CRM or Wealthbox",
+        "Calendly (review booking)",
+        "Twilio (SMS follow-up)",
+        "Mailchimp or email (invitation sequence)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Calendly",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/annual-review-auto-scheduling-system/"
+    }
+  ]
+}

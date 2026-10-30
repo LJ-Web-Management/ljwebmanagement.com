@@ -1,0 +1,1280 @@
+{
+  "slug": "lead-follow-up-sales",
+  "name": "Lead Follow-Up & Sales",
+  "summary": "Respond to every lead in minutes, chase quotes automatically, and keep deals from going quiet.",
+  "description": "Most lost sales are not lost to a competitor. They are lost to silence: a web form that sits unanswered over a weekend, a quote nobody follows up on, a missed call that never gets a callback. These automations make the first response instant and the follow-up persistent, so every inquiry gets worked whether your team is on a job, in a meeting, or asleep. When a lead replies, the sequence stops and a person takes over.",
+  "url": "https://www.ljwebmanagement.com/automations/category/lead-follow-up-sales/",
+  "automationCount": 127,
+  "automations": [
+    {
+      "id": "addiction-treatment-behavioral-health/inquiry-to-intake-conversion-insurance-verification-system",
+      "title": "Inquiry-to-Intake Conversion & Insurance Verification System",
+      "industry": "addiction-treatment-behavioral-health",
+      "category": "lead-follow-up-sales",
+      "role": "Admissions Coordinator",
+      "summary": "Every inquiry (whether from a person seeking help, a concerned family member, or a referral source) triggers an immediate acknowledgment by text or…",
+      "url": "https://www.ljwebmanagement.com/automations/addiction-treatment-behavioral-health/inquiry-to-intake-conversion-insurance-verification-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/addiction-treatment-behavioral-health.json"
+    },
+    {
+      "id": "agriculture-farming/seed-input-reorder-campaign-pre-season-booking-system",
+      "title": "Seed & Input Reorder Campaign & Pre-Season Booking System",
+      "industry": "agriculture-farming",
+      "category": "lead-follow-up-sales",
+      "role": "Agricultural Sales Representative",
+      "summary": "Each fall, this automation sends every grower in the rep's territory a personalized pre-season booking offer for seed, crop protection, and…",
+      "url": "https://www.ljwebmanagement.com/automations/agriculture-farming/seed-input-reorder-campaign-pre-season-booking-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/agriculture-farming.json"
+    },
+    {
+      "id": "automotive/lead-follow-up-test-drive-scheduling-system",
+      "title": "Lead Follow-Up & Test Drive Scheduling System",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Dealership Sales Manager",
+      "summary": "Every new internet lead (from the website, third-party listing sites, or ad campaigns) is immediately acknowledged with a personalized text and…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/lead-follow-up-test-drive-scheduling-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/fleet-renewal-expansion-campaign-system",
+      "title": "Fleet Renewal & Expansion Campaign System",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Fleet Sales Representative",
+      "summary": "Twelve months before the end of a fleet account's vehicle replacement cycle, the system automatically triggers an outreach sequence from the fleet…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/fleet-renewal-expansion-campaign-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/trade-in-value-follow-up-campaign",
+      "title": "Trade-In Value Follow-Up Campaign",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Used Car Manager",
+      "summary": "Using current market data (auction results, regional listing prices, and the dealership's own acquisition needs), this automation runs a monthly…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/trade-in-value-follow-up-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/missed-call-instant-text-back-system",
+      "title": "Missed Call Instant Text-Back System",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "BDC Representative",
+      "summary": "Any inbound call to sales or service that goes unanswered automatically triggers a text to the caller within seconds, apologizing for missing them…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/missed-call-instant-text-back-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/trade-in-value-estimate-follow-up",
+      "title": "Trade-In Value Estimate Follow-Up",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Used Car Manager",
+      "summary": "A website visitor who requests a trade-in value automatically receives their estimate within minutes, pulled from live market valuation data, along…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/trade-in-value-estimate-follow-up/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/saved-search-new-inventory-match-alert",
+      "title": "Saved Search New Inventory Match Alert",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Inventory Manager",
+      "summary": "Leads who saved a specific vehicle search are automatically emailed and texted the moment a matching unit arrives on the lot, often before it's even…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/saved-search-new-inventory-match-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/finance-application-abandonment-recovery",
+      "title": "Finance Application Abandonment Recovery",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Credit Analyst",
+      "summary": "A customer who starts but doesn't finish an online credit application automatically triggers a follow-up within the hour offering help completing…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/finance-application-abandonment-recovery/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/warranty-expiration-extended-coverage-upsell",
+      "title": "Warranty Expiration Extended Coverage Upsell",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Warranty Administrator",
+      "summary": "As a factory or extended warranty approaches its expiration date, the affected customer automatically receives a notice explaining exactly what…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/warranty-expiration-extended-coverage-upsell/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/test-drive-follow-up-financing-options-sequence",
+      "title": "Test Drive Follow-Up & Financing Options Sequence",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Consultant",
+      "summary": "Once a scheduled test drive is marked complete, the customer automatically receives a follow-up sequence over the next few days with details on the…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/test-drive-follow-up-financing-options-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/instant-credit-pre-qualification-routing",
+      "title": "Instant Credit Pre-Qualification Routing",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Finance & Insurance Manager",
+      "summary": "The moment a customer submits an online credit pre-qualification form, the result is automatically routed to both the customer, with a clear next…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/instant-credit-pre-qualification-routing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/mileage-based-service-checkout-upsell-flagging",
+      "title": "Mileage-Based Service Checkout Upsell Flagging",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Assistant Service Manager",
+      "summary": "During checkout, the system automatically cross-references the vehicle's current mileage and service history against the manufacturer's maintenance…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/mileage-based-service-checkout-upsell-flagging/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/post-sale-accessories-add-on-follow-up",
+      "title": "Post-Sale Accessories & Add-On Follow-Up",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Consultant",
+      "summary": "A few weeks after taking delivery of a new vehicle, the customer automatically receives a follow-up offer for accessories or add-ons that complement…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/post-sale-accessories-add-on-follow-up/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/internet-lead-speed-to-contact-countdown-alert",
+      "title": "Internet Lead Speed-to-Contact Countdown Alert",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Internet Sales Coordinator",
+      "summary": "A new internet lead automatically alerts the assigned sales rep and the internet sales coordinator the instant it arrives, with an internal…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/internet-lead-speed-to-contact-countdown-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/saved-vehicle-price-drop-alert",
+      "title": "Saved Vehicle Price-Drop Alert",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Internet Sales Coordinator",
+      "summary": "Customers who saved a specific vehicle listing on the dealership website automatically get notified the moment its price is reduced, prompting a…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/saved-vehicle-price-drop-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/declined-service-follow-up-reminder",
+      "title": "Declined Service Follow-Up Reminder",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Service Advisor",
+      "summary": "When a customer declines a recommended repair during an inspection, the automation automatically follows up after a set interval to remind them of…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/declined-service-follow-up-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/positive-equity-trade-in-opportunity-alert",
+      "title": "Positive Equity Trade-In Opportunity Alert",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Used Car Manager",
+      "summary": "The automation automatically identifies customers who now have positive equity in their current loan and are strong trade-in candidates, alerting…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/positive-equity-trade-in-opportunity-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/showroom-kiosk-check-in-to-crm-automation",
+      "title": "Showroom Kiosk Check-In to CRM Automation",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "Internet Sales Coordinator",
+      "summary": "Visitors who check in at a showroom kiosk are automatically logged into the CRM with their visit reason, triggering an automatic follow-up if they…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/showroom-kiosk-check-in-to-crm-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/website-chat-to-appointment-conversion",
+      "title": "Website Chat-to-Appointment Conversion",
+      "industry": "automotive",
+      "category": "lead-follow-up-sales",
+      "role": "BDC Representative",
+      "summary": "A completed website chat conversation with a qualifying lead automatically converts into a scheduled appointment, with a confirmation sent to both…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/website-chat-to-appointment-conversion/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "cannabis-hemp/b2b-dispensary-account-reorder-pricing-update-system",
+      "title": "B2B Dispensary Account Reorder & Pricing Update System",
+      "industry": "cannabis-hemp",
+      "category": "lead-follow-up-sales",
+      "role": "Cannabis Wholesale Sales Rep",
+      "summary": "Each week, this automation checks every dispensary account's order history, identifies accounts that are typically on a weekly or bi-weekly reorder…",
+      "url": "https://www.ljwebmanagement.com/automations/cannabis-hemp/b2b-dispensary-account-reorder-pricing-update-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cannabis-hemp.json"
+    },
+    {
+      "id": "catering/event-inquiry-to-proposal-automation",
+      "title": "Event Inquiry-to-Proposal Automation",
+      "industry": "catering",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Coordinator",
+      "summary": "When an inquiry comes in with a guest count, date, and event type, this automation automatically generates a starter proposal with menu package…",
+      "url": "https://www.ljwebmanagement.com/automations/catering/event-inquiry-to-proposal-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/catering.json"
+    },
+    {
+      "id": "commercial-real-estate/deal-pipeline-tracker-loi-follow-up-system",
+      "title": "Deal Pipeline Tracker & LOI Follow-Up System",
+      "industry": "commercial-real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "CRE Broker",
+      "summary": "Every active deal in the broker's pipeline (from prospecting through letter of intent, due diligence, and close) lives in a CRM that updates…",
+      "url": "https://www.ljwebmanagement.com/automations/commercial-real-estate/deal-pipeline-tracker-loi-follow-up-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/commercial-real-estate.json"
+    },
+    {
+      "id": "construction-contracting/material-cost-tracker-proposal-generator",
+      "title": "Material Cost Tracker & Proposal Generator",
+      "industry": "construction-contracting",
+      "category": "lead-follow-up-sales",
+      "role": "Construction Estimator",
+      "summary": "When an estimator finalizes a takeoff, the system checks current supplier pricing via API or a regularly updated price sheet, calculates material…",
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/material-cost-tracker-proposal-generator/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/construction-contracting.json"
+    },
+    {
+      "id": "construction-contracting/unsigned-estimate-follow-up-sequence",
+      "title": "Unsigned Estimate Follow-Up Sequence",
+      "industry": "construction-contracting",
+      "category": "lead-follow-up-sales",
+      "role": "Business Development Manager",
+      "summary": "Once an estimate or bid is sent to a prospective client, this automation starts a follow-up clock, and if the estimate hasn't been signed within 3…",
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/unsigned-estimate-follow-up-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/construction-contracting.json"
+    },
+    {
+      "id": "cybersecurity/vulnerability-assessment-follow-up-proposal-system",
+      "title": "Vulnerability Assessment Follow-Up & Proposal System",
+      "industry": "cybersecurity",
+      "category": "lead-follow-up-sales",
+      "role": "Cybersecurity Sales Representative",
+      "summary": "When a prospect completes a free vulnerability assessment or security posture review, this automation assembles a personalized findings brief…",
+      "url": "https://www.ljwebmanagement.com/automations/cybersecurity/vulnerability-assessment-follow-up-proposal-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/cybersecurity.json"
+    },
+    {
+      "id": "dental-practices/treatment-plan-follow-up-financing-offer-system",
+      "title": "Treatment Plan Follow-Up & Financing Offer System",
+      "industry": "dental-practices",
+      "category": "lead-follow-up-sales",
+      "role": "Treatment Coordinator",
+      "summary": "When a patient receives a treatment plan but doesn't schedule before leaving the office, this automation sends a follow-up sequence over the next…",
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/treatment-plan-follow-up-financing-offer-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/dental-practices.json"
+    },
+    {
+      "id": "dental-practices/treatment-plan-follow-up-sequence",
+      "title": "Treatment Plan Follow-Up Sequence",
+      "industry": "dental-practices",
+      "category": "lead-follow-up-sales",
+      "role": "Case Acceptance Coordinator",
+      "summary": "When a patient leaves the office with an unscheduled treatment plan, whether it's a filling, a crown, or an extraction, this automation…",
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/treatment-plan-follow-up-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/dental-practices.json"
+    },
+    {
+      "id": "ecommerce-retail/abandoned-cart-recovery-sequence",
+      "title": "Abandoned Cart Recovery Sequence",
+      "industry": "ecommerce-retail",
+      "category": "lead-follow-up-sales",
+      "role": "Ecommerce Manager",
+      "summary": "The moment a shopper adds items to their cart and leaves the site without checking out, this automation starts a timed recovery sequence: a reminder…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/abandoned-cart-recovery-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/back-in-stock-alert-system",
+      "title": "Back-in-Stock Alert System",
+      "industry": "ecommerce-retail",
+      "category": "lead-follow-up-sales",
+      "role": "Ecommerce Manager",
+      "summary": "When a customer requests notification on a sold-out product page, their email is logged against that specific SKU.",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/back-in-stock-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/post-purchase-upsell-sequence",
+      "title": "Post-Purchase Upsell Sequence",
+      "industry": "ecommerce-retail",
+      "category": "lead-follow-up-sales",
+      "role": "Retention Marketing Manager",
+      "summary": "Rather than sending every customer the same generic follow-up email, this automation times its outreach to the actual consumption cycle of what they…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/post-purchase-upsell-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/abandoned-cart-recovery-email-sms-sequence",
+      "title": "Abandoned Cart Recovery Email & SMS Sequence",
+      "industry": "ecommerce-retail",
+      "category": "lead-follow-up-sales",
+      "role": "Growth Marketing Manager",
+      "summary": "When a shopper on Shopify or WooCommerce adds items to their cart and leaves without completing checkout, this automation splits the response by…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/abandoned-cart-recovery-email-sms-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/tiered-back-in-stock-notification-system",
+      "title": "Tiered Back-in-Stock Notification System",
+      "industry": "ecommerce-retail",
+      "category": "lead-follow-up-sales",
+      "role": "Merchandising Manager",
+      "summary": "When a product sells out, customers who click \"notify me\" on the product page are logged by SKU inside Swym or a Klaviyo back-in-stock form…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/tiered-back-in-stock-notification-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/browse-abandonment-follow-up-email",
+      "title": "Browse Abandonment Follow-Up Email",
+      "industry": "ecommerce-retail",
+      "category": "lead-follow-up-sales",
+      "role": "Digital Marketing Manager",
+      "summary": "When a visitor views the same product page three or more times in a session without adding it to their cart, this automation treats that as high…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/browse-abandonment-follow-up-email/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/checkout-cross-sell-automation",
+      "title": "Checkout Cross-Sell Automation",
+      "industry": "ecommerce-retail",
+      "category": "lead-follow-up-sales",
+      "role": "Ecommerce Manager",
+      "summary": "Based on the specific items already sitting in a shopper's cart, this automation surfaces complementary product suggestions directly on the checkout…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/checkout-cross-sell-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/wishlist-price-drop-alert",
+      "title": "Wishlist Price-Drop Alert",
+      "industry": "ecommerce-retail",
+      "category": "lead-follow-up-sales",
+      "role": "Pricing Manager",
+      "summary": "When a customer saves an item to their wishlist using Swym or a native wishlist app, this automation keeps watching that product's price in the…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/wishlist-price-drop-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/free-shipping-threshold-cart-nudge",
+      "title": "Free-Shipping Threshold Cart Nudge",
+      "industry": "ecommerce-retail",
+      "category": "lead-follow-up-sales",
+      "role": "Conversion Rate Manager",
+      "summary": "Customers whose cart total sits just below the free-shipping threshold automatically see a real-time nudge suggesting a specific, relevant item to…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/free-shipping-threshold-cart-nudge/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "education/enrollment-inquiry-waitlist-management-system",
+      "title": "Enrollment Inquiry & Waitlist Management System",
+      "industry": "education",
+      "category": "lead-follow-up-sales",
+      "role": "School Administrator",
+      "summary": "Prospective families who submit an inquiry are automatically sent a program overview, added to the CRM with a lead score based on their child's…",
+      "url": "https://www.ljwebmanagement.com/automations/education/enrollment-inquiry-waitlist-management-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/education.json"
+    },
+    {
+      "id": "education/instant-inquiry-response-scheduling-system",
+      "title": "Instant Inquiry Response & Scheduling System",
+      "industry": "education",
+      "category": "lead-follow-up-sales",
+      "role": "Admissions Coordinator",
+      "summary": "The moment a prospective family submits an inquiry form, whether from the school's website, a Facebook ad, or a directory listing, they receive an…",
+      "url": "https://www.ljwebmanagement.com/automations/education/instant-inquiry-response-scheduling-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/education.json"
+    },
+    {
+      "id": "faith-based-organizations/new-visitor-follow-up-sequence",
+      "title": "New Visitor Follow-Up Sequence",
+      "industry": "faith-based-organizations",
+      "category": "lead-follow-up-sales",
+      "role": "Guest Services Coordinator",
+      "summary": "When a first-time visitor fills out a connect card, physical or digital, this automation automatically sends a warm welcome text and email within a…",
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/new-visitor-follow-up-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/faith-based-organizations.json"
+    },
+    {
+      "id": "financial-services/missed-call-instant-text-back-system",
+      "title": "Missed Call Instant Text-Back System",
+      "industry": "financial-services",
+      "category": "lead-follow-up-sales",
+      "role": "Office Manager",
+      "summary": "Every call to the office that goes unanswered, whether the team is with a client, on another line, or simply away from the desk, triggers an…",
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/missed-call-instant-text-back-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/financial-services.json"
+    },
+    {
+      "id": "fitness-wellness/trial-to-paid-conversion-nudge",
+      "title": "Trial-to-Paid Conversion Nudge",
+      "industry": "fitness-wellness",
+      "category": "lead-follow-up-sales",
+      "role": "Studio Owner",
+      "summary": "Three days before a free trial expires, the prospect automatically receives a limited-time join offer, priced and timed to create genuine urgency…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/trial-to-paid-conversion-nudge/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/new-lead-trial-offer-welcome-sequence",
+      "title": "New Lead Trial Offer Welcome Sequence",
+      "industry": "fitness-wellness",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Coordinator",
+      "summary": "Anyone who signs up for a trial on the website automatically receives a welcome sequence with the class schedule, what to bring, and a reminder…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/new-lead-trial-offer-welcome-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/guest-pass-follow-up-sequence",
+      "title": "Guest Pass Follow-Up Sequence",
+      "industry": "fitness-wellness",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Manager",
+      "summary": "Someone who uses a guest pass automatically receives a follow-up offer a few days later inviting them to join as a full member, timed while their…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/guest-pass-follow-up-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/post-service-product-recommendation-automation",
+      "title": "Post-Service Product Recommendation Automation",
+      "industry": "fitness-wellness",
+      "category": "lead-follow-up-sales",
+      "role": "Retail Manager",
+      "summary": "Based on the specific service a client received, they automatically get a follow-up email recommending relevant retail products to help maintain the…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/post-service-product-recommendation-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/facility-tour-follow-up-sequence",
+      "title": "Facility Tour Follow-Up Sequence",
+      "industry": "fitness-wellness",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Coordinator",
+      "summary": "After a prospect tours the facility but doesn't sign up on the spot, they automatically receive a follow-up sequence over the following week…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/facility-tour-follow-up-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "general-business/universal-missed-call-text-back-system",
+      "title": "Universal Missed-Call Text-Back System",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Office Manager",
+      "summary": "Any call to the business line that goes unanswered after a set number of rings, whether the team is on another call, out of the office, or simply…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/universal-missed-call-text-back-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/inbound-lead-capture-scoring-round-robin-routing",
+      "title": "Inbound Lead Capture, Scoring & Round-Robin Routing",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Manager",
+      "summary": "Every form submission from the website, chat widget, or landing page flows straight into HubSpot, where a scoring model weighs company size, job…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/inbound-lead-capture-scoring-round-robin-routing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/cold-outreach-sequencing-with-automatic-reply-detection",
+      "title": "Cold Outreach Sequencing with Automatic Reply Detection",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Business Development Representative",
+      "summary": "A fresh list of prospects pulled from LinkedIn Sales Navigator or Apollo.io is enriched with verified emails and firmographic data, then loaded into…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/cold-outreach-sequencing-with-automatic-reply-detection/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/quote-sent-follow-up-cadence",
+      "title": "Quote-Sent Follow-Up Cadence",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Account Executive",
+      "summary": "The moment a quote is generated in PandaDoc and marked as sent, Zapier logs the timestamp against the opportunity in Salesforce and kicks off a…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/quote-sent-follow-up-cadence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/pipeline-stage-stall-alerts",
+      "title": "Pipeline Stage Stall Alerts",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Operations Coordinator",
+      "summary": "Every open opportunity in the CRM is monitored against expected time-in-stage benchmarks pulled from historical close data; the moment a deal sits…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/pipeline-stage-stall-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/discount-approval-routing-workflow",
+      "title": "Discount Approval Routing Workflow",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Deal Desk Analyst",
+      "summary": "When a rep requests a discount beyond their standard authority inside the CRM, whether it's 15 percent off list price or a custom payment schedule…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/discount-approval-routing-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/lead-to-territory-assignment-engine",
+      "title": "Lead-to-Territory Assignment Engine",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Territory Sales Manager",
+      "summary": "New leads landing in the CRM are matched against a territory map built on postal code, industry vertical, and account size, then automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/lead-to-territory-assignment-engine/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/win-loss-reason-capture-tagging",
+      "title": "Win/Loss Reason Capture & Tagging",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Inside Sales Representative",
+      "summary": "The instant an opportunity is marked Closed Won or Closed Lost in the CRM, a short structured survey link built in Typeform fires off to the rep…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/win-loss-reason-capture-tagging/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/upsell-cross-sell-trigger-detection",
+      "title": "Upsell & Cross-Sell Trigger Detection",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Account Manager",
+      "summary": "Product usage data and billing history sync nightly from Stripe and the product database into HubSpot, where a set of trigger rules watches for…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/upsell-cross-sell-trigger-detection/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/crm-data-hygiene-deduplication",
+      "title": "CRM Data Hygiene & Deduplication",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Operations Analyst",
+      "summary": "A nightly scheduled workflow scans every new and updated record in Salesforce for duplicate contacts and companies, missing required fields, and…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/crm-data-hygiene-deduplication/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/trade-show-lead-follow-up-automation",
+      "title": "Trade Show Lead Follow-Up Automation",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Event Marketing Manager",
+      "summary": "Badge scans and business card captures from the show floor, collected through a lead-retrieval app or a JotForm survey at the booth, sync…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/trade-show-lead-follow-up-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/proposal-expiration-follow-up-reminders",
+      "title": "Proposal Expiration & Follow-Up Reminders",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Proposal Manager",
+      "summary": "Every proposal generated in PandaDoc carries a built-in 14-day validity window, and as that expiration date approaches, Zapier automatically sends a…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/proposal-expiration-follow-up-reminders/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/partner-deal-registration-workflow",
+      "title": "Partner Deal Registration Workflow",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Channel Sales Manager",
+      "summary": "Partners submit new deal registrations through a branded form built in JotForm, which checks the account against existing records in Salesforce in…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/partner-deal-registration-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/stale-deal-cleanup-reassignment",
+      "title": "Stale Deal Cleanup & Reassignment",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Operations Specialist",
+      "summary": "Opportunities in Salesforce that haven't had any logged activity, no email, call, or meeting, in 30 days get automatically flagged by Make.com and…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/stale-deal-cleanup-reassignment/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/inbound-lead-scoring-prioritization",
+      "title": "Inbound Lead Scoring & Prioritization",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Lead Generation Specialist",
+      "summary": "Every inbound lead, whether it arrives through a website form, a chatbot conversation, or a content download, gets enriched automatically with…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/inbound-lead-scoring-prioritization/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/trigger-based-prospecting-from-company-news-funding-alerts",
+      "title": "Trigger-Based Prospecting from Company News & Funding Alerts",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Business Development Manager",
+      "summary": "A monitoring feed built on ZoomInfo and Clearbit watches target accounts for trigger events, a new funding round, a leadership change, or a job…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/trigger-based-prospecting-from-company-news-funding-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/trial-to-paid-conversion-drip-campaign",
+      "title": "Trial-to-Paid Conversion Drip Campaign",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Lifecycle Marketing Manager",
+      "summary": "From the day a prospect starts a free trial, ActiveCampaign enrolls them in a lifecycle sequence tuned to their behavior instead of a flat calendar…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/trial-to-paid-conversion-drip-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/abandoned-form-recovery",
+      "title": "Abandoned Form Recovery",
+      "industry": "general-business",
+      "category": "lead-follow-up-sales",
+      "role": "Demand Generation Manager",
+      "summary": "When a prospect starts filling out a multi-step quote request or demo signup form but exits before submitting, a partial-completion event captured…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/abandoned-form-recovery/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "home-services/missed-call-instant-text-back",
+      "title": "Missed Call Instant Text-Back",
+      "industry": "home-services",
+      "category": "lead-follow-up-sales",
+      "role": "Call Intake Specialist",
+      "summary": "When a call to the shop goes unanswered, whether the phones are slammed during a storm or it's after 6 p.m. and the office has gone home, this…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/missed-call-instant-text-back/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/quote-follow-up-sequence",
+      "title": "Quote Follow-Up Sequence",
+      "industry": "home-services",
+      "category": "lead-follow-up-sales",
+      "role": "Estimating Coordinator",
+      "summary": "The moment an estimate is marked sent but not accepted in the quoting tool, this automation starts a three-touch follow-up clock: a check-in text at…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/quote-follow-up-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/instant-quote-request-dispatch",
+      "title": "Instant Quote Request Dispatch",
+      "industry": "home-services",
+      "category": "lead-follow-up-sales",
+      "role": "Inside Sales Coordinator",
+      "summary": "When a homeowner submits a quote request through the website form, this automation immediately parses the job details, service type, and property…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/instant-quote-request-dispatch/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/missed-call-auto-text-back-for-new-inquiries",
+      "title": "Missed Call Auto Text-Back for New Inquiries",
+      "industry": "home-services",
+      "category": "lead-follow-up-sales",
+      "role": "Front Desk Coordinator",
+      "summary": "Every call that rings through to the office and isn't picked up, whether it's during a lunch rush or after the last technician has clocked out…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/missed-call-auto-text-back-for-new-inquiries/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/financing-application-follow-up",
+      "title": "Financing Application Follow-Up",
+      "industry": "home-services",
+      "category": "lead-follow-up-sales",
+      "role": "Finance Coordinator",
+      "summary": "When a customer starts an online financing application for a larger job, such as a new HVAC system or roof replacement, but abandons it before…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/financing-application-follow-up/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/unsigned-estimate-follow-up-sequence",
+      "title": "Unsigned Estimate Follow-Up Sequence",
+      "industry": "home-services",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Operations Coordinator",
+      "summary": "When an estimate is sent but sits unsigned for 48 hours, this automation kicks off a staged follow-up sequence: a check-in text asking if the…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/unsigned-estimate-follow-up-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/multi-bid-comparison-follow-up",
+      "title": "Multi-Bid Comparison Follow-Up",
+      "industry": "home-services",
+      "category": "lead-follow-up-sales",
+      "role": "Senior Estimator",
+      "summary": "When a large job's estimate is flagged as one of several bids the customer is weighing, this automation starts a week-long follow-up sequence built…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/multi-bid-comparison-follow-up/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/same-day-add-on-work-approval-request",
+      "title": "Same-Day Add-On Work Approval Request",
+      "industry": "home-services",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Estimator",
+      "summary": "When a technician on-site identifies additional necessary work, a corroded line the original job didn't cover, for example, the automation…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/same-day-add-on-work-approval-request/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/equipment-age-replacement-cross-sell-outreach",
+      "title": "Equipment Age Replacement Cross-Sell Outreach",
+      "industry": "home-services",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Operations Coordinator",
+      "summary": "Customers with equipment approaching its typical replacement age automatically receive a proactive outreach offering a replacement consultation…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/equipment-age-replacement-cross-sell-outreach/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "hospitality-hotels/pre-arrival-upsell-check-in-preparation-system",
+      "title": "Pre-Arrival Upsell & Check-In Preparation System",
+      "industry": "hospitality-hotels",
+      "category": "lead-follow-up-sales",
+      "role": "Front Desk Manager",
+      "summary": "Forty-eight hours before arrival, every guest receives a personalized pre-arrival message with their reservation summary, an early check-in upgrade…",
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/pre-arrival-upsell-check-in-preparation-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/hospitality-hotels.json"
+    },
+    {
+      "id": "hospitality-hotels/group-inquiry-qualification-proposal-generation-system",
+      "title": "Group Inquiry Qualification & Proposal Generation System",
+      "industry": "hospitality-hotels",
+      "category": "lead-follow-up-sales",
+      "role": "Catering & Events Sales Manager",
+      "summary": "Group and event inquiries submitted through the hotel website are automatically screened for date availability against the function space calendar…",
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/group-inquiry-qualification-proposal-generation-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/hospitality-hotels.json"
+    },
+    {
+      "id": "hospitality-hotels/automated-room-upgrade-add-on-offer-system",
+      "title": "Automated Room Upgrade & Add-On Offer System",
+      "industry": "hospitality-hotels",
+      "category": "lead-follow-up-sales",
+      "role": "Reservations Manager",
+      "summary": "Based on booking data, room type, length of stay, and days until arrival, guests are automatically segmented and sent targeted upsell offers: a…",
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/automated-room-upgrade-add-on-offer-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/hospitality-hotels.json"
+    },
+    {
+      "id": "hospitality-hotels/abandoned-booking-recovery-sequence",
+      "title": "Abandoned Booking Recovery Sequence",
+      "industry": "hospitality-hotels",
+      "category": "lead-follow-up-sales",
+      "role": "Digital Marketing Manager",
+      "summary": "When a website visitor starts a reservation, selecting dates and a room type, but leaves the booking engine before completing payment, the system…",
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/abandoned-booking-recovery-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/hospitality-hotels.json"
+    },
+    {
+      "id": "insurance/new-prospect-intake-instant-quote-request-system",
+      "title": "New Prospect Intake & Instant Quote Request System",
+      "industry": "insurance",
+      "category": "lead-follow-up-sales",
+      "role": "Insurance Agent",
+      "summary": "Prospects who reach the agency through ads, referrals, or the website fill out a dynamic intake form that captures coverage type, risk details, and…",
+      "url": "https://www.ljwebmanagement.com/automations/insurance/new-prospect-intake-instant-quote-request-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/insurance.json"
+    },
+    {
+      "id": "insurance/policy-anniversary-cross-sell-opportunity-system",
+      "title": "Policy Anniversary & Cross-Sell Opportunity System",
+      "industry": "insurance",
+      "category": "lead-follow-up-sales",
+      "role": "Insurance Account Manager",
+      "summary": "Thirty days before each policy anniversary, the account manager receives a prompt to reach out to the client with a coverage review, and the client…",
+      "url": "https://www.ljwebmanagement.com/automations/insurance/policy-anniversary-cross-sell-opportunity-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/insurance.json"
+    },
+    {
+      "id": "insurance/cross-sell-opportunity-flag",
+      "title": "Cross-Sell Opportunity Flag",
+      "industry": "insurance",
+      "category": "lead-follow-up-sales",
+      "role": "Personal Lines Agent",
+      "summary": "This automation reviews every client's current policies against a library of common coverage gaps, a homeowner's policy with no umbrella coverage…",
+      "url": "https://www.ljwebmanagement.com/automations/insurance/cross-sell-opportunity-flag/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/insurance.json"
+    },
+    {
+      "id": "junk-removal/instant-quote-from-photo-upload",
+      "title": "Instant Quote from Photo Upload",
+      "industry": "junk-removal",
+      "category": "lead-follow-up-sales",
+      "role": "Customer Service Rep",
+      "summary": "When a customer uploads photos of the items they need removed through the website, this automation automatically generates a preliminary quote range…",
+      "url": "https://www.ljwebmanagement.com/automations/junk-removal/instant-quote-from-photo-upload/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/junk-removal.json"
+    },
+    {
+      "id": "landscaping-lawn-care/seasonal-service-upsell-campaign",
+      "title": "Seasonal Service Upsell Campaign",
+      "industry": "landscaping-lawn-care",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Coordinator",
+      "summary": "This automation automatically reaches out to existing mowing customers ahead of each season with relevant add-on offers, aeration in fall, mulching…",
+      "url": "https://www.ljwebmanagement.com/automations/landscaping-lawn-care/seasonal-service-upsell-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/landscaping-lawn-care.json"
+    },
+    {
+      "id": "legal/missed-call-after-hours-lead-recovery-system",
+      "title": "Missed Call & After-Hours Lead Recovery System",
+      "industry": "legal",
+      "category": "lead-follow-up-sales",
+      "role": "Legal Intake Specialist",
+      "summary": "Every missed call to the firm's main line triggers an automatic text back to the caller within two minutes, acknowledging the call and asking what…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/missed-call-after-hours-lead-recovery-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/consultation-scheduling-qualification-bot",
+      "title": "Consultation Scheduling & Qualification Bot",
+      "industry": "legal",
+      "category": "lead-follow-up-sales",
+      "role": "Managing Partner",
+      "summary": "When a prospective client fills out the contact form or texts the firm's main number, this automation runs them through a short qualifying sequence…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/consultation-scheduling-qualification-bot/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/missed-call-text-back-system",
+      "title": "Missed Call Text-Back System",
+      "industry": "legal",
+      "category": "lead-follow-up-sales",
+      "role": "Solo Practice Attorney",
+      "summary": "Every call that rings through to voicemail, whether the attorney is in court, in a deposition, or simply on another line, triggers an automatic text…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/missed-call-text-back-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/consultation-request-triage-routing-system",
+      "title": "Consultation Request Triage & Routing System",
+      "industry": "legal",
+      "category": "lead-follow-up-sales",
+      "role": "Intake Coordinator",
+      "summary": "When a prospective client submits a consultation request through the firm's website form in Jotform, the automation reads the practice area field…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/consultation-request-triage-routing-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/missed-call-text-back-system-receptionist",
+      "title": "Missed Call Text-Back System",
+      "industry": "legal",
+      "category": "lead-follow-up-sales",
+      "role": "Receptionist",
+      "summary": "When an inbound call to the firm goes unanswered because every line is busy or it's after hours, the phone system automatically fires a webhook that…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/missed-call-text-back-system-receptionist/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/non-converted-consultation-nurture-sequence",
+      "title": "Non-Converted Consultation Nurture Sequence",
+      "industry": "legal",
+      "category": "lead-follow-up-sales",
+      "role": "Business Development Coordinator",
+      "summary": "When a prospect completes a paid or free consultation in Clio Grow but doesn't sign an engagement letter within a set window, the automation…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/non-converted-consultation-nurture-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/website-lead-pre-qualification-automation",
+      "title": "Website Lead Pre-Qualification Automation",
+      "industry": "legal",
+      "category": "lead-follow-up-sales",
+      "role": "Digital Intake Specialist",
+      "summary": "When a visitor submits the firm's website contact form in Jotform or Gravity Forms, the automation automatically walks them through a short series…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/website-lead-pre-qualification-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "locksmith-security/security-system-quote-follow-up-sequence",
+      "title": "Security System Quote Follow-Up Sequence",
+      "industry": "locksmith-security",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Manager",
+      "summary": "For unaccepted security system installation quotes, this automation automatically follows up at set intervals, three days, seven days, fourteen…",
+      "url": "https://www.ljwebmanagement.com/automations/locksmith-security/security-system-quote-follow-up-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/locksmith-security.json"
+    },
+    {
+      "id": "marketing-agencies/client-check-in-upsell-trigger-system",
+      "title": "Client Check-In & Upsell Trigger System",
+      "industry": "marketing-agencies",
+      "category": "lead-follow-up-sales",
+      "role": "Account Manager",
+      "summary": "Every client account is automatically scored monthly based on usage, results, and engagement, and accounts that meet the \"ready for upsell\" criteria…",
+      "url": "https://www.ljwebmanagement.com/automations/marketing-agencies/client-check-in-upsell-trigger-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/marketing-agencies.json"
+    },
+    {
+      "id": "moving-storage/instant-quote-from-inventory-list-system",
+      "title": "Instant Quote from Inventory List System",
+      "industry": "moving-storage",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Coordinator",
+      "summary": "When a customer fills out an online inventory of items to be moved, this automation automatically calculates an estimated quote based on total cubic…",
+      "url": "https://www.ljwebmanagement.com/automations/moving-storage/instant-quote-from-inventory-list-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/moving-storage.json"
+    },
+    {
+      "id": "photography-videography/lead-inquiry-response-consultation-booking-system",
+      "title": "Lead Inquiry Response & Consultation Booking System",
+      "industry": "photography-videography",
+      "category": "lead-follow-up-sales",
+      "role": "Photography Marketing Manager",
+      "summary": "Photography inquiries submitted through the website, Instagram DM, or Facebook are automatically captured in the CRM, acknowledged within five…",
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/lead-inquiry-response-consultation-booking-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/photography-videography.json"
+    },
+    {
+      "id": "photography-videography/print-album-upsell-sequence",
+      "title": "Print & Album Upsell Sequence",
+      "industry": "photography-videography",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Coordinator",
+      "summary": "A set number of days after gallery delivery, typically three to five, this automation automatically sends clients an email showcasing print and…",
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/print-album-upsell-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/photography-videography.json"
+    },
+    {
+      "id": "pool-service/equipment-repair-quote-to-approval-workflow",
+      "title": "Equipment Repair Quote-to-Approval Workflow",
+      "industry": "pool-service",
+      "category": "lead-follow-up-sales",
+      "role": "Service Technician",
+      "summary": "When a technician identifies needed equipment repair during a routine visit, this automation automatically generates a quote with photos of the…",
+      "url": "https://www.ljwebmanagement.com/automations/pool-service/equipment-repair-quote-to-approval-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pool-service.json"
+    },
+    {
+      "id": "professional-services/cross-sell-opportunity-alert",
+      "title": "Cross-Sell Opportunity Alert",
+      "industry": "professional-services",
+      "category": "lead-follow-up-sales",
+      "role": "Wealth Management Associate",
+      "summary": "When client data in the CRM suggests a relevant additional service, a new homeowner without a policy on file, a growing business without a…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/cross-sell-opportunity-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/free-consultation-non-converted-nurture-sequence",
+      "title": "Free Consultation Non-Converted Nurture Sequence",
+      "industry": "professional-services",
+      "category": "lead-follow-up-sales",
+      "role": "Business Development Manager",
+      "summary": "Prospects who complete a free consultation but don't become a client automatically enter a long-term educational nurture sequence, useful articles…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/free-consultation-non-converted-nurture-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/service-tier-review-automation",
+      "title": "Service Tier Review Automation",
+      "industry": "professional-services",
+      "category": "lead-follow-up-sales",
+      "role": "Practice Manager",
+      "summary": "The automation periodically reviews client accounts against service tier criteria, assets under management, engagement complexity, and flags…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/service-tier-review-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "property-management/post-showing-prospect-feedback-collection",
+      "title": "Post-Showing Prospect Feedback Collection",
+      "industry": "property-management",
+      "category": "lead-follow-up-sales",
+      "role": "Leasing Agent",
+      "summary": "After each showing of a vacant unit, the prospect automatically receives a quick feedback request asking what they liked and what gave them pause…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/post-showing-prospect-feedback-collection/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "real-estate/buyer-pipeline-nurture-showing-follow-up-system",
+      "title": "Buyer Pipeline Nurture & Showing Follow-Up System",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Real Estate Agent / Broker",
+      "summary": "When a buyer attends a showing, the agent receives an automatic post-showing survey to capture the buyer's reaction, and the buyer gets a follow-up…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/buyer-pipeline-nurture-showing-follow-up-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/off-market-deal-pipeline-underwriting-tracker",
+      "title": "Off-Market Deal Pipeline & Underwriting Tracker",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Real Estate Investor",
+      "summary": "As new properties are flagged from driving-for-dollars lists, direct mail responses, or wholesaler emails, this automation logs each deal into a…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/off-market-deal-pipeline-underwriting-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/instant-lead-response-booking-system",
+      "title": "Instant Lead Response & Booking System",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Internet Lead Coordinator",
+      "summary": "When a new inquiry lands from Zillow, Realtor.com, or the brokerage's own website, the system fires an automatic text and email within 60 seconds…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/instant-lead-response-booking-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/new-listing-match-alert-system",
+      "title": "New-Listing Match & Alert System",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Buyer's Agent",
+      "summary": "Every buyer's saved search criteria, price range, beds and baths, neighborhood, must-have features, is stored against a live MLS feed, and the…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/new-listing-match-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/open-house-check-in-follow-up-system",
+      "title": "Open House Check-In & Follow-Up System",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Listing Agent",
+      "summary": "Visitors scan a QR code at the door instead of signing a paper clipboard, entering their name, phone, email, and what first attracted them to the…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/open-house-check-in-follow-up-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/expired-listing-re-engagement-campaign",
+      "title": "Expired Listing Re-Engagement Campaign",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Business Development Agent",
+      "summary": "Each morning, the system pulls newly expired and withdrawn listings from the MLS for the agent's target zip codes, cross-references the owner's…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/expired-listing-re-engagement-campaign/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/instant-lead-response-smart-routing-system",
+      "title": "Instant Lead Response & Smart Routing System",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Inside Sales Agent (ISA)",
+      "summary": "The moment a visitor submits an inquiry on the website, this automation fires an instant text and email confirmation within seconds, letting the…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/instant-lead-response-smart-routing-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/saved-search-new-listing-alert-digest",
+      "title": "Saved Search New-Listing Alert Digest",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Client Concierge",
+      "summary": "Once a buyer saves a search on the website, specifying price range, bedroom count, and preferred area, this automation quietly watches the live MLS…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/saved-search-new-listing-alert-digest/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/listing-page-showing-request-booking-system",
+      "title": "Listing Page Showing Request & Booking System",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Showing Assistant",
+      "summary": "A buyer browsing a listing page can request a showing directly from the site instead of calling or texting the agent.",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/listing-page-showing-request-booking-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/digital-open-house-sign-in-follow-up-system",
+      "title": "Digital Open House Sign-In & Follow-Up System",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Open House Host",
+      "summary": "Instead of a paper clipboard at the door, visitors sign in on a tablet or scan a QR code, and their name, phone, email, and the listing they toured…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/digital-open-house-sign-in-follow-up-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/instant-home-valuation-cma-delivery-system",
+      "title": "Instant Home Valuation & CMA Delivery System",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Listing Specialist",
+      "summary": "When a website visitor requests a home valuation, this automation pulls recent comparable sales within the property's radius, price per square foot…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/instant-home-valuation-cma-delivery-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/mortgage-calculator-scenario-capture-nurture-system",
+      "title": "Mortgage Calculator Scenario Capture & Nurture System",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Web Lead Manager",
+      "summary": "When a visitor runs numbers through the website's mortgage calculator, entering a home price, down payment, and interest rate, the automation…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/mortgage-calculator-scenario-capture-nurture-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/abandoned-property-search-recovery-emails",
+      "title": "Abandoned Property Search Recovery Emails",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Digital Marketing Specialist",
+      "summary": "When a visitor searches active listings on the website, browsing by price, area, or property type, but leaves without saving the search or…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/abandoned-property-search-recovery-emails/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/buyer-pre-approval-follow-up-lender-referral-system",
+      "title": "Buyer Pre-Approval Follow-Up & Lender Referral System",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Mortgage Coordinator",
+      "summary": "Buyer leads who show ongoing activity, saved searches, showing requests, repeated site visits, but don't have a pre-approval letter on file are…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/buyer-pre-approval-follow-up-lender-referral-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/expired-listing-term-re-engagement-trigger",
+      "title": "Expired Listing Term Re-Engagement Trigger",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Listing Renewal Specialist",
+      "summary": "When a listing's term expires without a sale, the automation automatically detects the status change and triggers an outreach sequence to the seller…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/expired-listing-term-re-engagement-trigger/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/load-balanced-team-lead-distribution-system",
+      "title": "Load-Balanced Team Lead Distribution System",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Team Lead Dispatcher",
+      "summary": "Instead of routing new leads through a fixed round-robin, this automation continuously tracks each team agent's current open lead count and recent…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/load-balanced-team-lead-distribution-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/investor-buy-box-deal-alert-matching-system",
+      "title": "Investor Buy-Box Deal Alert Matching System",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "Investor Relations Manager",
+      "summary": "Every investor client's saved buy-box: price range, target cap rate, property type, and preferred zip codes, is stored against a live feed of new…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/investor-buy-box-deal-alert-matching-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/fsbo-lead-capture-objection-handling-nurture-system",
+      "title": "FSBO Lead Capture & Objection-Handling Nurture System",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "FSBO Outreach Specialist",
+      "summary": "Leads captured from for-sale-by-owner ad campaigns, whether from a landing page, a Facebook ad, or a direct mail response, are automatically tagged…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/fsbo-lead-capture-objection-handling-nurture-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/duplicate-lead-merge-automation",
+      "title": "Duplicate Lead Merge Automation",
+      "industry": "real-estate",
+      "category": "lead-follow-up-sales",
+      "role": "CRM Data Administrator",
+      "summary": "Incoming leads are automatically checked against existing CRM contacts, and duplicates are merged into a single record, preventing the same person…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/duplicate-lead-merge-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "renewable-energy-solar/lead-qualification-from-utility-bill-upload",
+      "title": "Lead Qualification from Utility Bill Upload",
+      "industry": "renewable-energy-solar",
+      "category": "lead-follow-up-sales",
+      "role": "Sales Development Rep",
+      "summary": "When a prospect uploads a copy of their utility bill during the quote request process, this automation automatically extracts their usage data to…",
+      "url": "https://www.ljwebmanagement.com/automations/renewable-energy-solar/lead-qualification-from-utility-bill-upload/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/renewable-energy-solar.json"
+    },
+    {
+      "id": "restaurants-food-service/event-inquiry-banquet-event-order-beo-generator",
+      "title": "Event Inquiry & Banquet Event Order (BEO) Generator",
+      "industry": "restaurants-food-service",
+      "category": "lead-follow-up-sales",
+      "role": "Catering & Events Manager",
+      "summary": "Catering inquiries submitted via the website are automatically qualified (guest count, date, event type, budget) and the system generates a…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/event-inquiry-banquet-event-order-beo-generator/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/instant-catering-inquiry-auto-quote-system",
+      "title": "Instant Catering Inquiry Auto-Quote System",
+      "industry": "restaurants-food-service",
+      "category": "lead-follow-up-sales",
+      "role": "Catering Sales Coordinator",
+      "summary": "A catering inquiry submitted through the website form, guest count, event date, menu preferences, is instantly parsed and matched against a standing…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/instant-catering-inquiry-auto-quote-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/catering-inquiry-instant-acknowledgment-assignment",
+      "title": "Catering Inquiry Instant Acknowledgment & Assignment",
+      "industry": "restaurants-food-service",
+      "category": "lead-follow-up-sales",
+      "role": "Banquet Sales Manager",
+      "summary": "A catering inquiry submitted through the website is automatically acknowledged within seconds with a friendly confirmation that the request was…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/catering-inquiry-instant-acknowledgment-assignment/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/private-dining-inquiry-re-engagement-follow-up",
+      "title": "Private Dining Inquiry Re-Engagement Follow-Up",
+      "industry": "restaurants-food-service",
+      "category": "lead-follow-up-sales",
+      "role": "Private Dining Manager",
+      "summary": "Any private dining or event inquiry that goes quiet without converting into a booked date automatically triggers a follow-up email about a week…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/private-dining-inquiry-re-engagement-follow-up/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "senior-living-childcare/inquiry-to-tour-booking-enrollment-nurture-system",
+      "title": "Inquiry-to-Tour Booking & Enrollment Nurture System",
+      "industry": "senior-living-childcare",
+      "category": "lead-follow-up-sales",
+      "role": "Childcare Marketing Manager",
+      "summary": "Families who reach out via the website, Google, or social media are immediately enrolled in a nurture sequence, a warm welcome email with a center…",
+      "url": "https://www.ljwebmanagement.com/automations/senior-living-childcare/inquiry-to-tour-booking-enrollment-nurture-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/senior-living-childcare.json"
+    },
+    {
+      "id": "technology-saas/trial-to-paid-conversion-nurture-sequence",
+      "title": "Trial-to-Paid Conversion Nurture Sequence",
+      "industry": "technology-saas",
+      "category": "lead-follow-up-sales",
+      "role": "SaaS Sales Representative",
+      "summary": "The moment a new trial account is created, the user is enrolled in a behavior-driven nurture sequence: welcome email on day one, a setup checklist…",
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/trial-to-paid-conversion-nurture-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/technology-saas.json"
+    },
+    {
+      "id": "technology-saas/free-trial-conversion-nurture-sequence",
+      "title": "Free Trial Conversion Nurture Sequence",
+      "industry": "technology-saas",
+      "category": "lead-follow-up-sales",
+      "role": "Growth Marketing Manager",
+      "summary": "From the moment someone signs up for a free trial, this automation tracks their in-app activity and automatically sends a tailored email sequence: a…",
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/free-trial-conversion-nurture-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/technology-saas.json"
+    },
+    {
+      "id": "wedding-event-planning/inquiry-to-proposal-automation-system",
+      "title": "Inquiry-to-Proposal Automation System",
+      "industry": "wedding-event-planning",
+      "category": "lead-follow-up-sales",
+      "role": "Lead Planner",
+      "summary": "The moment a couple submits an inquiry through the website form, this automation checks the requested date against the studio's live calendar and…",
+      "url": "https://www.ljwebmanagement.com/automations/wedding-event-planning/inquiry-to-proposal-automation-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/wedding-event-planning.json"
+    }
+  ]
+}

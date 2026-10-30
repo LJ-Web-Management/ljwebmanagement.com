@@ -1,0 +1,309 @@
+{
+  "slug": "dental-practices",
+  "name": "Dental Practices",
+  "summary": "Hygiene recall, treatment plan follow-up, insurance verification, and same-day cancellation fill.",
+  "url": "https://www.ljwebmanagement.com/automations/dental-practices/",
+  "automationCount": 10,
+  "automations": [
+    {
+      "id": "dental-practices/recall-reactivation-campaign-system",
+      "slug": "recall-reactivation-campaign-system",
+      "title": "Recall & Reactivation Campaign System",
+      "industry": "dental-practices",
+      "category": "marketing-retention",
+      "role": "Dental Office Manager",
+      "summary": "Patients who are overdue for their 6-month cleaning receive an automated outreach sequence (a text at the first overdue month, an email at two…",
+      "steps": [
+        "Patients who are overdue for their 6-month cleaning receive an automated outreach sequence (a text at the first overdue month, an email at two months, and a personal-feeling message from the hygienist at three months) with a one-tap booking link in every message.",
+        "Patients who haven't been seen in more than 18 months enter a reactivation campaign with a special welcome-back offer and a brief survey asking what prevented them from returning.",
+        "The office manager sees a live recall dashboard showing how many patients are overdue and what percentage have rebooked, turning a passive recall system into an active revenue recovery tool that runs every day without manual list management."
+      ],
+      "manualProcess": "The manual version of this puts the entire workload on a dental office manager, who has to juggle phone calls, emails, and spreadsheets just to keep things moving.",
+      "tools": [
+        "Dental practice management software (e.g., Dentrix, Eaglesoft, or Open Dental)",
+        "Zapier or Make.com",
+        "Twilio (SMS recall outreach)",
+        "Mailchimp or ActiveCampaign (reactivation sequence)",
+        "Google Sheets (recall dashboard)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "Google Sheets",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/recall-reactivation-campaign-system/"
+    },
+    {
+      "id": "dental-practices/treatment-plan-follow-up-financing-offer-system",
+      "slug": "treatment-plan-follow-up-financing-offer-system",
+      "title": "Treatment Plan Follow-Up & Financing Offer System",
+      "industry": "dental-practices",
+      "category": "lead-follow-up-sales",
+      "role": "Treatment Coordinator",
+      "summary": "When a patient receives a treatment plan but doesn't schedule before leaving the office, this automation sends a follow-up sequence over the next…",
+      "steps": [
+        "When a patient receives a treatment plan but doesn't schedule before leaving the office, this automation sends a follow-up sequence over the next three weeks, a same-day summary of the treatment plan with the provider's notes, a three-day check-in offering to answer any questions, and a ten-day message introducing financing options with a pre-qualification link.",
+        "Patients who pre-qualify for financing are flagged as warm leads for the treatment coordinator to call personally with a scheduling offer.",
+        "Unscheduled treatment that would otherwise go cold is systematically followed up, recovering thousands of dollars in revenue per month without any manual tracking by the coordinator."
+      ],
+      "manualProcess": "Left to a person, this means a treatment coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something. None of it is difficult, it's just slow, repetitive, and easy to fall behind on.",
+      "tools": [
+        "Practice management software",
+        "Zapier or Make.com",
+        "Twilio (treatment plan follow-up SMS)",
+        "Mailchimp or ActiveCampaign (follow-up sequence)",
+        "CareCredit or Sunbit (financing integration)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/treatment-plan-follow-up-financing-offer-system/"
+    },
+    {
+      "id": "dental-practices/insurance-verification-pre-auth-tracker",
+      "slug": "insurance-verification-pre-auth-tracker",
+      "title": "Insurance Verification & Pre-Auth Tracker",
+      "industry": "dental-practices",
+      "category": "compliance-documents",
+      "role": "Dental Billing Specialist",
+      "summary": "For every patient scheduled more than 48 hours in advance, this automation runs an automated eligibility verification against the patient's listed…",
+      "steps": [
+        "For every patient scheduled more than 48 hours in advance, this automation runs an automated eligibility verification against the patient's listed insurance plan, pulls their remaining annual maximum, deductible status, and applicable waiting periods, and saves the results to the patient account.",
+        "Any coverage finding that differs from what's on file (a lapsed plan, a changed carrier, or a reduced benefit) is flagged for the billing specialist before the patient arrives.",
+        "Procedures that require pre-authorization are identified based on procedure codes in the scheduled treatment plan, the auth request is initiated automatically, and status is tracked until approved, ensuring the billing specialist never discovers a missing auth after the procedure is complete."
+      ],
+      "manualProcess": "Without a system in place, a dental billing specialist has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Dental billing platform or clearinghouse (e.g., Dentrix, Eaglesoft, or Availity)",
+        "Zapier or Make.com",
+        "Airtable (pre-auth tracker)",
+        "Slack or email (eligibility discrepancy and pre-auth status alerts)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Slack",
+        "Airtable"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/insurance-verification-pre-auth-tracker/"
+    },
+    {
+      "id": "dental-practices/new-patient-onboarding-welcome-sequence",
+      "slug": "new-patient-onboarding-welcome-sequence",
+      "title": "New Patient Onboarding & Welcome Sequence",
+      "industry": "dental-practices",
+      "category": "onboarding-intake",
+      "role": "Practice Owner",
+      "summary": "When a new patient books their first appointment, this automation sends an immediate welcome email from the dentist with a personal introduction, a…",
+      "steps": [
+        "When a new patient books their first appointment, this automation sends an immediate welcome email from the dentist with a personal introduction, a link to complete intake forms before the visit, and instructions for the office location and parking.",
+        "Forty-eight hours before the appointment, a confirmation text goes out with a one-tap confirm or reschedule option.",
+        "After the first visit, the new patient receives a follow-up message asking about their experience, and those who respond positively receive an invitation to leave a Google review within 24 hours.",
+        "The patient's first impression of the practice is warm, organized, and professional from the moment they book, not just from the moment they walk in."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a practice owner, who has to track every step by hand across emails, spreadsheets, and sticky notes. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Dental practice management software",
+        "Jotform (HIPAA-compliant intake forms)",
+        "Zapier or Make.com",
+        "Twilio (appointment confirmation SMS)",
+        "Mailchimp or email (welcome and review request sequences)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform",
+        "Mailchimp"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/new-patient-onboarding-welcome-sequence/"
+    },
+    {
+      "id": "dental-practices/before-after-content-pipeline-review-generation-system",
+      "slug": "before-after-content-pipeline-review-generation-system",
+      "title": "Before/After Content Pipeline & Review Generation System",
+      "industry": "dental-practices",
+      "category": "marketing-retention",
+      "role": "Dental Marketing Manager",
+      "summary": "After a successful cosmetic or restorative case, the patient is automatically sent a satisfaction survey, and those who respond positively are…",
+      "steps": [
+        "After a successful cosmetic or restorative case, the patient is automatically sent a satisfaction survey, and those who respond positively are presented with a consent form to share their case as an educational example, with the resulting before/after content automatically queued in the content calendar for Instagram, the practice website, and Google Business.",
+        "On the review side, happy patients who complete the satisfaction survey receive a text within 24 hours with a direct link to the practice's Google or Yelp profile, boosting the review count with the patients most likely to leave a five-star review rather than blasting the entire patient list indiscriminately."
+      ],
+      "manualProcess": "The manual approach means a dental marketing manager handles each case reactively, after someone has already noticed something went wrong. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Jotform (patient satisfaction and photo consent form)",
+        "Zapier or Make.com",
+        "Buffer or Later (social media scheduling)",
+        "Twilio (review request SMS)",
+        "Google Business Profile API"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Jotform"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/before-after-content-pipeline-review-generation-system/"
+    },
+    {
+      "id": "dental-practices/hygiene-recall-reminder-system",
+      "slug": "hygiene-recall-reminder-system",
+      "title": "Hygiene Recall Reminder System",
+      "industry": "dental-practices",
+      "category": "scheduling-dispatch",
+      "role": "Hygiene Department Lead",
+      "summary": "This automation checks every patient's last cleaning date against the practice's recommended recall interval (typically 6 months) and automatically…",
+      "steps": [
+        "This automation checks every patient's last cleaning date against the practice's recommended recall interval (typically 6 months) and automatically sends a recall reminder by text and email the moment a patient becomes due.",
+        "Patients who don't respond within the first week receive a second reminder with a direct online booking link, removing the need for the front desk to manually pull a recall report and start dialing.",
+        "If a patient still hasn't booked within two weeks of the first reminder, the system automatically creates a phone-call task assigned to the front desk with the patient's contact details and recall history attached.",
+        "The hygiene department lead sees a live dashboard of overdue patients by how many reminders have gone out, turning recall from a monthly scramble into a daily, self-running queue that keeps the hygiene schedule full."
+      ],
+      "manualProcess": "Without automation, this falls entirely on a hygiene department lead, who has to track every step by hand across emails, spreadsheets, and sticky notes. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Dentrix or Open Dental",
+        "Zapier or Make.com",
+        "Twilio (recall SMS reminders)",
+        "Mailchimp or email (recall email sequence)",
+        "Google Sheets or Asana (front desk call task queue)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/hygiene-recall-reminder-system/"
+    },
+    {
+      "id": "dental-practices/treatment-plan-follow-up-sequence",
+      "slug": "treatment-plan-follow-up-sequence",
+      "title": "Treatment Plan Follow-Up Sequence",
+      "industry": "dental-practices",
+      "category": "lead-follow-up-sales",
+      "role": "Case Acceptance Coordinator",
+      "summary": "When a patient leaves the office with an unscheduled treatment plan, whether it's a filling, a crown, or an extraction, this automation…",
+      "steps": [
+        "When a patient leaves the office with an unscheduled treatment plan, whether it's a filling, a crown, or an extraction, this automation automatically enrolls them in a multi-week follow-up sequence rather than letting the plan sit untouched in the chart.",
+        "Over the following three to four weeks, the patient receives a series of texts and emails reminding them of the recommended treatment, why it matters, and a direct online booking link so scheduling takes one tap instead of a phone call.",
+        "Messages are spaced to feel like helpful check-ins rather than a sales pitch, and any patient who books during the sequence is automatically removed from the remaining messages.",
+        "The case acceptance coordinator sees exactly how much unscheduled treatment is in the pipeline and how much of it converts to booked appointments, recovering revenue that used to disappear the moment the patient walked out the door."
+      ],
+      "manualProcess": "Left to a person, this means a case acceptance coordinator re-enters the same data more than once, double-checks it by hand, and still occasionally misses something.",
+      "tools": [
+        "Dentrix or Open Dental",
+        "Zapier or Make.com",
+        "Twilio (follow-up SMS)",
+        "Mailchimp or ActiveCampaign (follow-up email sequence)",
+        "Online booking widget"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "ActiveCampaign"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/treatment-plan-follow-up-sequence/"
+    },
+    {
+      "id": "dental-practices/insurance-benefit-reset-reminder-system",
+      "slug": "insurance-benefit-reset-reminder-system",
+      "title": "Insurance Benefit Reset Reminder System",
+      "industry": "dental-practices",
+      "category": "marketing-retention",
+      "role": "Insurance Coordinator",
+      "summary": "Starting in early November, this automation scans every active patient's insurance benefit usage and remaining treatment needs for the calendar year…",
+      "steps": [
+        "Starting in early November, this automation scans every active patient's insurance benefit usage and remaining treatment needs for the calendar year and identifies anyone sitting on unused benefits or an incomplete treatment plan.",
+        "Those patients automatically receive a text and email reminder explaining that their insurance benefits reset on January 1st and any unused amount doesn't roll over, with a direct link to book before the end of the year.",
+        "Patients who don't respond to the first reminder get a second message in mid-December with the practice's remaining open appointment slots for the year.",
+        "The insurance coordinator sees exactly how many dollars in unused benefits are still on the table across the patient base, and December scheduling fills with patients using benefits they would have otherwise lost."
+      ],
+      "manualProcess": "Left unautomated, an insurance coordinator spends hours on the parts of this job that don't require judgment: copying data, sending reminders, and tracking status by hand. Over a month, those small manual steps add up to a significant amount of lost time.",
+      "tools": [
+        "Dentrix or Open Dental",
+        "Zapier or Make.com",
+        "Twilio (benefit reset SMS)",
+        "Mailchimp or email (year-end reminder)",
+        "Google Sheets (unused benefits tracker)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Mailchimp",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/insurance-benefit-reset-reminder-system/"
+    },
+    {
+      "id": "dental-practices/new-patient-paperwork-pre-fill-system",
+      "slug": "new-patient-paperwork-pre-fill-system",
+      "title": "New Patient Paperwork Pre-Fill System",
+      "industry": "dental-practices",
+      "category": "onboarding-intake",
+      "role": "Front Desk Supervisor",
+      "summary": "The moment a new patient books their first appointment online, this automation automatically sends them a digital intake packet, health history…",
+      "steps": [
+        "The moment a new patient books their first appointment online, this automation automatically sends them a digital intake packet, health history form, and insurance information request to complete before they ever arrive.",
+        "A reminder goes out 48 hours before the appointment to anyone who hasn't finished the forms yet, and completed forms sync directly into the practice management system so the information is already in the patient's chart when they check in.",
+        "Front desk staff no longer hand a clipboard to a new patient in the waiting room or spend ten minutes manually typing handwritten answers into the system.",
+        "The front desk supervisor sees which new patients have completed intake ahead of time, and same-day check-in for new patients now takes under two minutes instead of fifteen."
+      ],
+      "manualProcess": "Without a system in place, a front desk supervisor has to manually chase down updates, send reminders one by one, and hope nothing falls through the cracks. It's the kind of work that quietly eats hours every week.",
+      "tools": [
+        "Dentrix or Open Dental",
+        "Zapier or Make.com",
+        "Digital intake forms (e.g., Lighthouse 360 or Weave)",
+        "Twilio (form completion reminders)",
+        "Email (intake packet delivery)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/new-patient-paperwork-pre-fill-system/"
+    },
+    {
+      "id": "dental-practices/same-day-cancellation-fill-system",
+      "slug": "same-day-cancellation-fill-system",
+      "title": "Same-Day Cancellation Fill System",
+      "industry": "dental-practices",
+      "category": "scheduling-dispatch",
+      "role": "Scheduling Manager",
+      "summary": "The moment an appointment is cancelled with less than 24 hours' notice, this automation instantly texts a pre-built waitlist of patients who have…",
+      "steps": [
+        "The moment an appointment is cancelled with less than 24 hours' notice, this automation instantly texts a pre-built waitlist of patients who have opted into \"quick fill\" notifications, offering the newly open slot on a first-come, first-served basis.",
+        "Whoever responds first automatically claims the appointment, receives a confirmation text with the time and any prep instructions, and the rest of the waitlist is notified the slot has been filled so they aren't left waiting on a response.",
+        "If no one on the quick-fill list claims the slot within 30 minutes, the opening is automatically posted to the practice's broader recall list as well.",
+        "The scheduling manager no longer spends the morning calling down a list one patient at a time, and chair time that used to sit empty after a late cancellation is now filled within the hour most days."
+      ],
+      "manualProcess": "Done by hand, this depends entirely on a scheduling manager remembering to check in, update records, and follow up, with no safety net if something slips.",
+      "tools": [
+        "Dentrix or Open Dental",
+        "Zapier or Make.com",
+        "Twilio (quick-fill waitlist SMS)",
+        "Weave or Lighthouse 360 (patient communication platform)",
+        "Google Sheets (waitlist management)"
+      ],
+      "integrations": [
+        "Zapier",
+        "Make.com",
+        "Twilio",
+        "Google Sheets"
+      ],
+      "url": "https://www.ljwebmanagement.com/automations/dental-practices/same-day-cancellation-fill-system/"
+    }
+  ]
+}

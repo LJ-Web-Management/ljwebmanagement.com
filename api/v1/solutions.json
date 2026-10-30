@@ -1,0 +1,3475 @@
+{
+  "count": 50,
+  "categories": [
+    {
+      "slug": "websites-digital-presence",
+      "name": "Websites & Digital Presence",
+      "summary": "Custom websites, online stores, landing pages, local SEO, and AI chat built to rank, convert, and plug into the rest of your business.",
+      "url": "https://www.ljwebmanagement.com/solutions/websites-digital-presence/",
+      "solutions": [
+        {
+          "id": "custom-website",
+          "name": "Custom Website Design & Development",
+          "tagline": "A fully custom website built around how your business actually works, engineered to rank and convert.",
+          "description": "A fully custom-built website designed and developed around how your business actually operates, not a template with your logo swapped in. This offering covers UX and visual design, responsive development, and on-page and technical SEO (structured data, page speed optimization, keyword-mapped content, and search console setup) so the site is built to rank, not just to look good. For businesses that sell in person as well as online, we integrate the site with your POS system, booking software, CRM, and payment processor so orders, appointments, and customer records stay in sync across every channel. Hosting, security updates, analytics, and ongoing maintenance are included, so launch day is the starting point, not the finish line.",
+          "audience": [
+            "Service businesses whose site no longer reflects what they sell",
+            "Companies outgrowing a DIY builder or an aging WordPress theme",
+            "Teams that want web leads to land in the CRM automatically"
+          ],
+          "features": [
+            {
+              "title": "Custom UX and visual design",
+              "description": "Page layouts planned around your buyers' questions and the actions you want them to take."
+            },
+            {
+              "title": "Technical SEO built in",
+              "description": "Structured data, fast load times, clean URLs, sitemaps, and Search Console from day one."
+            },
+            {
+              "title": "Keyword-mapped content",
+              "description": "Every service and location page targets the searches your customers actually type."
+            },
+            {
+              "title": "Lead capture that routes itself",
+              "description": "Forms, calls, and chats flow into your CRM with source tracking and instant follow-up."
+            },
+            {
+              "title": "Accessible and mobile-first",
+              "description": "Built to WCAG 2.1 AA and tested on phones, tablets, and screen readers."
+            },
+            {
+              "title": "Hosting and care plan",
+              "description": "Managed hosting, backups, security patches, and content updates after launch."
+            }
+          ],
+          "problems": [
+            "The site looks dated and does not reflect the business you run today",
+            "Leads from the contact form sit in an inbox for hours",
+            "Pages load slowly and rank poorly for your core services",
+            "Every small change means waiting on a developer"
+          ],
+          "integrations": [
+            "WordPress",
+            "Webflow",
+            "HubSpot",
+            "Google Analytics 4",
+            "Google Search Console",
+            "Calendly",
+            "Stripe",
+            "Square"
+          ],
+          "faq": [
+            {
+              "question": "How is a custom website different from a template?",
+              "answer": "A template forces your content into someone else's layout. A custom site starts from your services, customers, and sales process, so every page is structured to answer buyer questions and move them toward booking or buying."
+            },
+            {
+              "question": "Will my new website rank on Google?",
+              "answer": "We build in the technical foundations search engines reward (speed, structured data, crawlable architecture, and keyword-mapped pages). Rankings also depend on competition and content over time, which is why ongoing care is part of the plan."
+            },
+            {
+              "question": "Can I edit the site myself after launch?",
+              "answer": "Yes. We build on a content management system you can update without code, and we train your team on it. Larger changes can be handled under the care plan."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/websites-digital-presence/custom-website/"
+        },
+        {
+          "id": "ecommerce-store",
+          "name": "E-Commerce Store Development",
+          "tagline": "An online store that syncs inventory, orders, and customers with the rest of your operation.",
+          "description": "A complete online store built on Shopify, WooCommerce, or a headless platform, designed to sell and to run without manual order handling. We set up your catalog, variants, shipping and tax rules, and payment options, then connect the store to your inventory, fulfillment, accounting, and email marketing so stock levels stay accurate, orders flow to the warehouse automatically, and every sale lands in your books. Abandoned cart recovery, post-purchase sequences, and review requests are configured from the start, so the store grows revenue on its own.",
+          "audience": [
+            "Retailers adding online sales to a physical store",
+            "Brands moving off a marketplace-only model",
+            "Wholesalers that want a B2B ordering portal"
+          ],
+          "features": [
+            {
+              "title": "Catalog and variant setup",
+              "description": "Products, options, bundles, and collections structured for search and filtering."
+            },
+            {
+              "title": "Inventory sync",
+              "description": "Stock levels shared between online, in-store, and marketplace channels."
+            },
+            {
+              "title": "Automated fulfillment",
+              "description": "Orders routed to your warehouse, 3PL, or dropship partner with tracking sent back to customers."
+            },
+            {
+              "title": "Accounting integration",
+              "description": "Sales, fees, refunds, and taxes posted to QuickBooks or Xero automatically."
+            },
+            {
+              "title": "Revenue recovery flows",
+              "description": "Abandoned cart, browse abandonment, and win-back sequences ready on day one."
+            },
+            {
+              "title": "Product SEO",
+              "description": "Optimized product and category pages with structured data for rich results."
+            }
+          ],
+          "problems": [
+            "Orders are re-keyed from the store into shipping and accounting tools",
+            "Items oversell because stock is not shared across channels",
+            "Abandoned carts are never followed up",
+            "Month-end reconciliation of store payouts takes days"
+          ],
+          "integrations": [
+            "Shopify",
+            "WooCommerce",
+            "Stripe",
+            "QuickBooks",
+            "ShipStation",
+            "Klaviyo",
+            "Amazon",
+            "Square"
+          ],
+          "faq": [
+            {
+              "question": "Which e-commerce platform should I use?",
+              "answer": "Shopify suits most retailers that want reliability and a large app ecosystem. WooCommerce fits businesses already on WordPress that want more control. Headless builds make sense for complex catalogs or custom buying experiences. We recommend based on your catalog, channels, and team."
+            },
+            {
+              "question": "Can you migrate my existing store?",
+              "answer": "Yes. We migrate products, customers, and order history, and set up redirects so you keep the search rankings your old URLs earned."
+            },
+            {
+              "question": "Do you connect the store to my point of sale?",
+              "answer": "Yes. We sync inventory and customers between your POS and online store so in-store and online sales draw from the same stock."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/websites-digital-presence/ecommerce-store/"
+        },
+        {
+          "id": "landing-pages-funnels",
+          "name": "Landing Pages & Conversion Funnels",
+          "tagline": "Focused campaign pages and follow-up funnels that turn ad clicks into booked calls.",
+          "description": "High-converting landing pages and multi-step funnels built for specific campaigns, offers, and audiences. Each page is designed around one action, tested for speed and clarity, and wired to automated follow-up so every lead gets a text and email within minutes, is tagged by campaign in your CRM, and is nudged toward booking until they convert or opt out. Conversion tracking is set up for Google Ads, Meta, and your analytics, so you can see exactly which campaigns produce revenue, not just clicks.",
+          "audience": [
+            "Businesses running paid ads to their homepage",
+            "Teams launching a new service, offer, or location",
+            "Marketers who need pages live without waiting on IT"
+          ],
+          "features": [
+            {
+              "title": "Single-goal page design",
+              "description": "Clear headline, proof, and one call to action per page."
+            },
+            {
+              "title": "Instant lead follow-up",
+              "description": "Text and email sent within minutes of every form fill."
+            },
+            {
+              "title": "Campaign attribution",
+              "description": "UTM and click ID capture so every lead is tied to its ad."
+            },
+            {
+              "title": "Conversion tracking",
+              "description": "Google Ads, Meta, and GA4 conversions configured correctly."
+            },
+            {
+              "title": "A/B testing",
+              "description": "Test headlines, offers, and layouts with clean reporting."
+            },
+            {
+              "title": "Booking built in",
+              "description": "Leads can pick a time on the spot instead of waiting for a call."
+            }
+          ],
+          "problems": [
+            "Ad traffic lands on a generic homepage and bounces",
+            "Nobody knows which campaigns produce paying customers",
+            "Leads wait hours or days for a first response",
+            "Building a new page takes weeks"
+          ],
+          "integrations": [
+            "Google Ads",
+            "Meta Ads",
+            "HubSpot",
+            "GoHighLevel",
+            "Unbounce",
+            "Calendly",
+            "Twilio",
+            "Google Analytics 4"
+          ],
+          "faq": [
+            {
+              "question": "Why not send ads to my homepage?",
+              "answer": "Homepages serve many audiences, so they convert poorly for any one campaign. A landing page matches the ad's promise and asks for one action, which usually lifts conversion rates noticeably."
+            },
+            {
+              "question": "How fast should leads be contacted?",
+              "answer": "As fast as possible. Response speed is one of the strongest predictors of whether a lead converts, which is why every funnel we build sends an automatic first touch within minutes."
+            },
+            {
+              "question": "Can you track leads all the way to revenue?",
+              "answer": "Yes. We capture campaign data on every lead and pass it into your CRM, so closed deals can be reported back by campaign and even sent to ad platforms as offline conversions."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/websites-digital-presence/landing-pages-funnels/"
+        },
+        {
+          "id": "local-seo-listings",
+          "name": "Local SEO & Listings Management",
+          "tagline": "Consistent listings, location pages, and review velocity that win the map pack.",
+          "description": "A system for ranking in local search and Google Maps across one or many locations. We clean up and sync your business listings across Google, Apple, Bing, Yelp, and industry directories, build optimized location and service-area pages, and automate review requests after every job so your rating and review count keep climbing. Google Business Profile posts, Q&A, and photo updates are scheduled, and a monthly report shows rankings, calls, direction requests, and leads by location.",
+          "audience": [
+            "Multi-location service businesses and franchises",
+            "Contractors and home service companies that live on map leads",
+            "Clinics, law firms, and agencies competing locally"
+          ],
+          "features": [
+            {
+              "title": "Listing cleanup and sync",
+              "description": "Name, address, phone, and hours consistent everywhere they appear."
+            },
+            {
+              "title": "Location and service-area pages",
+              "description": "Unique, useful pages for each city and service you target."
+            },
+            {
+              "title": "Automated review requests",
+              "description": "Requests sent after every completed job, with negative feedback routed privately first."
+            },
+            {
+              "title": "Google Business Profile management",
+              "description": "Scheduled posts, photos, products, and answered questions."
+            },
+            {
+              "title": "Local rank tracking",
+              "description": "Grid-based map rankings so you see visibility block by block."
+            },
+            {
+              "title": "Lead reporting by location",
+              "description": "Calls, forms, and direction requests tracked per location."
+            }
+          ],
+          "problems": [
+            "Competitors with worse service outrank you on the map",
+            "Listings show old phone numbers or hours",
+            "Happy customers never leave reviews",
+            "No visibility into which locations drive leads"
+          ],
+          "integrations": [
+            "Google Business Profile",
+            "Yelp",
+            "Apple Business Connect",
+            "Bing Places",
+            "BrightLocal",
+            "Podium",
+            "NiceJob",
+            "CallRail"
+          ],
+          "faq": [
+            {
+              "question": "What affects local search rankings most?",
+              "answer": "Relevance, distance, and prominence. In practice that means a complete and accurate Google Business Profile, consistent listings, strong on-site location pages, and a steady flow of genuine reviews."
+            },
+            {
+              "question": "Can you manage listings for many locations?",
+              "answer": "Yes. The system is designed for multi-location brands, with one dashboard for listings, reviews, and reporting across every location."
+            },
+            {
+              "question": "Do you write fake or incentivized reviews?",
+              "answer": "No. We automate honest review requests to real customers after real jobs, which is what platforms allow and what builds lasting trust."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/websites-digital-presence/local-seo-listings/"
+        },
+        {
+          "id": "website-ai-chat",
+          "name": "AI Website Chat & Lead Capture Assistant",
+          "tagline": "A trained AI assistant that answers questions, qualifies visitors, and books appointments 24/7.",
+          "description": "An AI chat assistant trained on your services, pricing guidelines, policies, and FAQs that answers website visitors instantly, day or night. It qualifies leads with the questions your team would ask, books appointments into your calendar, collects contact details into your CRM, and hands off to a human with the full conversation when a question needs one. Guardrails keep answers within approved information, and every conversation is logged so you can see what customers ask and improve the site and the assistant over time.",
+          "audience": [
+            "Businesses that get after-hours website traffic",
+            "Teams answering the same questions all day",
+            "Companies whose leads go cold waiting for a callback"
+          ],
+          "features": [
+            {
+              "title": "Trained on your content",
+              "description": "Answers grounded in your site, service details, and approved documents."
+            },
+            {
+              "title": "Lead qualification",
+              "description": "Asks your qualifying questions and scores the lead before handoff."
+            },
+            {
+              "title": "Appointment booking",
+              "description": "Books directly into your calendar or scheduling software."
+            },
+            {
+              "title": "Human handoff",
+              "description": "Routes to live staff by text, email, or chat with full context."
+            },
+            {
+              "title": "Guardrails",
+              "description": "Stays on approved topics and declines to guess on pricing or advice."
+            },
+            {
+              "title": "Conversation analytics",
+              "description": "See top questions, drop-off points, and conversion rate."
+            }
+          ],
+          "problems": [
+            "Visitors leave because nobody answers chat after hours",
+            "Staff answer the same basic questions repeatedly",
+            "Leads from chat are never entered into the CRM",
+            "Generic chatbots frustrate customers with canned replies"
+          ],
+          "integrations": [
+            "OpenAI",
+            "Claude",
+            "HubSpot",
+            "Calendly",
+            "Intercom",
+            "Tawk.to",
+            "Slack",
+            "Twilio"
+          ],
+          "faq": [
+            {
+              "question": "Will an AI assistant give customers wrong answers?",
+              "answer": "We ground the assistant in your approved content and set guardrails so it declines rather than guesses on topics like pricing exceptions, legal, or medical advice. Anything outside scope goes to a person."
+            },
+            {
+              "question": "Can it book appointments?",
+              "answer": "Yes. It checks real availability in your calendar or booking system and confirms the appointment in the chat, with reminders sent automatically."
+            },
+            {
+              "question": "How is this different from a regular chatbot?",
+              "answer": "Older chatbots follow rigid scripts. An AI assistant understands free-form questions, answers in natural language, and still follows the rules and handoff paths you set."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/websites-digital-presence/website-ai-chat/"
+        },
+        {
+          "id": "web-accessibility",
+          "name": "Website Accessibility (ADA & WCAG) Remediation",
+          "tagline": "Audit and fix your site to WCAG 2.1 AA so every visitor can use it and legal risk goes down.",
+          "description": "A hands-on accessibility program that audits your website against WCAG 2.1 AA, fixes the issues in code and content, and keeps the site compliant as it changes. We combine automated scanning with manual keyboard and screen reader testing, remediate navigation, forms, color contrast, images, video captions, and documents, and publish an accessibility statement. Ongoing monitoring flags new issues introduced by content updates before they become a problem, and training helps your team publish accessible content by default.",
+          "audience": [
+            "Businesses that received an accessibility demand letter",
+            "Organizations with public sector or education customers",
+            "Any company that wants its site usable by everyone"
+          ],
+          "features": [
+            {
+              "title": "WCAG 2.1 AA audit",
+              "description": "Automated and manual testing with a prioritized issue list."
+            },
+            {
+              "title": "Code remediation",
+              "description": "Fixes made in your templates, not an overlay widget."
+            },
+            {
+              "title": "Keyboard and screen reader testing",
+              "description": "Real-world checks with NVDA, VoiceOver, and keyboard-only use."
+            },
+            {
+              "title": "Captions and documents",
+              "description": "Video captions and accessible PDFs and forms."
+            },
+            {
+              "title": "Accessibility statement",
+              "description": "A clear public statement with a way to request help."
+            },
+            {
+              "title": "Ongoing monitoring",
+              "description": "Scheduled scans that catch regressions after content changes."
+            }
+          ],
+          "problems": [
+            "Visitors using screen readers cannot complete forms",
+            "Overlay widgets did not fix the underlying issues",
+            "No one knows whether new pages meet the standard",
+            "Accessibility complaints or demand letters"
+          ],
+          "integrations": [
+            "axe-core",
+            "WordPress",
+            "Webflow",
+            "Shopify",
+            "YouTube",
+            "Adobe Acrobat"
+          ],
+          "faq": [
+            {
+              "question": "Do accessibility overlay widgets make a site compliant?",
+              "answer": "No. Overlays do not fix the underlying code and can interfere with assistive technology. Real compliance comes from fixing templates, content, and components directly, which is what we do."
+            },
+            {
+              "question": "What standard should my website meet?",
+              "answer": "WCAG 2.1 Level AA is the widely used benchmark referenced in many legal settlements and procurement requirements, and it is what we build and test to."
+            },
+            {
+              "question": "How do we stay compliant after remediation?",
+              "answer": "Ongoing monitoring scans new and changed pages, and we train your content editors on headings, alt text, link text, and accessible documents."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/websites-digital-presence/web-accessibility/"
+        }
+      ]
+    },
+    {
+      "slug": "sales-marketing",
+      "name": "Sales, CRM & Marketing",
+      "summary": "CRMs, marketing automation, quoting, reviews, and loyalty programs that keep every lead and customer moving without manual chasing.",
+      "url": "https://www.ljwebmanagement.com/solutions/sales-marketing/",
+      "solutions": [
+        {
+          "id": "custom-crm",
+          "name": "Custom CRM Platform",
+          "tagline": "A CRM built around your real sales process, with every interaction captured automatically.",
+          "description": "A fully custom-built customer relationship management platform designed around your actual sales process instead of forcing it into someone else's rigid workflow. This includes pipeline and deal-stage tracking, contact and account management, activity logging, and role-based access for sales, support, and leadership teams. The platform integrates with your existing email, calendar, phone system, and marketing tools so every interaction is captured automatically instead of relying on manual data entry. Custom reporting dashboards give leadership real visibility into pipeline health and rep performance, and the system scales with the business instead of charging per-seat fees that grow faster than your team does.",
+          "audience": [
+            "Sales teams fighting a CRM that does not fit their process",
+            "Businesses tracking deals in spreadsheets and inboxes",
+            "Companies paying for per-seat licenses they barely use"
+          ],
+          "features": [
+            {
+              "title": "Pipelines that match your process",
+              "description": "Stages, fields, and rules designed around how you actually sell."
+            },
+            {
+              "title": "Automatic activity capture",
+              "description": "Emails, calls, meetings, and texts logged without manual entry."
+            },
+            {
+              "title": "Lead routing and assignment",
+              "description": "New leads assigned by territory, product, or round robin in seconds."
+            },
+            {
+              "title": "Tasks and stalled-deal alerts",
+              "description": "Reminders and escalations so no deal goes quiet unnoticed."
+            },
+            {
+              "title": "Role-based access",
+              "description": "Sales, support, and leadership each see what they need."
+            },
+            {
+              "title": "Pipeline and rep dashboards",
+              "description": "Forecast, win rate, and activity reporting in real time."
+            }
+          ],
+          "problems": [
+            "Deals are tracked in spreadsheets, notes, and memory",
+            "Reps skip CRM updates because entry is tedious",
+            "Leadership cannot trust the forecast",
+            "Per-seat pricing grows faster than the team"
+          ],
+          "integrations": [
+            "HubSpot",
+            "Salesforce",
+            "Pipedrive",
+            "Gmail",
+            "Outlook",
+            "RingCentral",
+            "Twilio",
+            "Zapier"
+          ],
+          "faq": [
+            {
+              "question": "Should we build a custom CRM or customize HubSpot or Salesforce?",
+              "answer": "Most businesses are best served by configuring and automating an established CRM. A fully custom CRM makes sense when your process is unusual, you need deep integration with operational systems, or per-seat costs have become hard to justify. We help you decide on a free call."
+            },
+            {
+              "question": "Can you migrate our existing contacts and deals?",
+              "answer": "Yes. We clean, deduplicate, and migrate contacts, companies, deals, and activity history so your team starts with trustworthy data."
+            },
+            {
+              "question": "How do you get reps to actually use the CRM?",
+              "answer": "By removing the busywork. When emails, calls, and meetings log themselves and tasks are created automatically, reps only enter what only they know."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/sales-marketing/custom-crm/"
+        },
+        {
+          "id": "marketing-automation",
+          "name": "Marketing Automation Platform",
+          "tagline": "Nurture, segment, and score every lead automatically across email, SMS, and ads.",
+          "description": "A marketing automation system that captures leads from every channel, segments them by interest and behavior, and nurtures them with timely email, SMS, and retargeting until they are ready to buy. We design the lifecycle stages, build the nurture journeys, set up lead scoring so sales only talks to warm prospects, and connect everything to your CRM so marketing and sales share one view of each contact. Reporting ties campaigns to pipeline and revenue, so budget goes where it works.",
+          "audience": [
+            "Businesses with leads that are not ready to buy yet",
+            "Marketing teams sending one-off blasts to the whole list",
+            "Companies that cannot connect marketing spend to revenue"
+          ],
+          "features": [
+            {
+              "title": "Lifecycle stages",
+              "description": "Clear definitions from subscriber to customer, enforced automatically."
+            },
+            {
+              "title": "Behavior-based nurture journeys",
+              "description": "Messages triggered by page visits, downloads, and email engagement."
+            },
+            {
+              "title": "Lead scoring",
+              "description": "Fit and engagement scores that alert sales at the right moment."
+            },
+            {
+              "title": "Segmentation",
+              "description": "Dynamic lists by industry, interest, location, and purchase history."
+            },
+            {
+              "title": "Multichannel delivery",
+              "description": "Email, SMS, and ad audiences coordinated from one journey."
+            },
+            {
+              "title": "Revenue attribution",
+              "description": "See which campaigns created pipeline and closed deals."
+            }
+          ],
+          "problems": [
+            "Leads go cold after the first contact",
+            "Everyone gets the same newsletter regardless of interest",
+            "Sales complains marketing leads are not ready",
+            "No one can say which campaigns produce revenue"
+          ],
+          "integrations": [
+            "HubSpot",
+            "ActiveCampaign",
+            "Klaviyo",
+            "Mailchimp",
+            "Salesforce",
+            "Google Ads",
+            "Meta Ads",
+            "Twilio"
+          ],
+          "faq": [
+            {
+              "question": "What is the difference between marketing automation and email marketing?",
+              "answer": "Email marketing sends messages to lists. Marketing automation reacts to each person's behavior across channels, scores their interest, and coordinates with sales, so the right message goes out at the right time without manual effort."
+            },
+            {
+              "question": "Do we need a big list for marketing automation to work?",
+              "answer": "No. Even a few hundred leads a month benefit from fast follow-up, nurture sequences, and scoring. The system scales as the list grows."
+            },
+            {
+              "question": "Which platform do you recommend?",
+              "answer": "HubSpot, ActiveCampaign, and Klaviyo cover most needs depending on whether you sell B2B, services, or e-commerce. We recommend based on your channels, CRM, and budget."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/sales-marketing/marketing-automation/"
+        },
+        {
+          "id": "email-sms-marketing",
+          "name": "Email & SMS Marketing System",
+          "tagline": "Compliant, branded campaigns and automated flows that drive repeat business.",
+          "description": "A complete email and text messaging program set up for deliverability, compliance, and repeat revenue. We authenticate your sending domain, design branded templates, build welcome, reminder, re-engagement, and post-purchase flows, and set up two-way SMS with proper consent capture and opt-out handling. Your list is segmented so each campaign reaches the right customers, and reporting shows revenue per message, not just opens and clicks.",
+          "audience": [
+            "Local businesses that want customers coming back more often",
+            "E-commerce brands relying on discounts to drive sales",
+            "Teams whose emails land in spam"
+          ],
+          "features": [
+            {
+              "title": "Deliverability setup",
+              "description": "SPF, DKIM, DMARC, and warm-up so messages reach the inbox."
+            },
+            {
+              "title": "Branded templates",
+              "description": "Mobile-friendly, accessible templates your team can reuse."
+            },
+            {
+              "title": "Automated flows",
+              "description": "Welcome, reminder, birthday, win-back, and post-purchase sequences."
+            },
+            {
+              "title": "Two-way SMS",
+              "description": "Texts customers can reply to, routed to the right staff member."
+            },
+            {
+              "title": "Consent and compliance",
+              "description": "Opt-in capture and opt-out handling built for TCPA and CAN-SPAM."
+            },
+            {
+              "title": "Revenue reporting",
+              "description": "Results measured in bookings and sales per campaign."
+            }
+          ],
+          "problems": [
+            "Emails land in spam or promotions",
+            "No regular contact with past customers",
+            "Texting customers from personal phones",
+            "Unsure whether SMS consent is handled correctly"
+          ],
+          "integrations": [
+            "Klaviyo",
+            "Mailchimp",
+            "ActiveCampaign",
+            "Twilio",
+            "Postscript",
+            "Attentive",
+            "Shopify",
+            "Square"
+          ],
+          "faq": [
+            {
+              "question": "Is SMS marketing legal for my business?",
+              "answer": "Yes, with proper consent. We set up clear opt-in capture, keep consent records, honor STOP replies automatically, and follow quiet-hours rules to keep your program compliant."
+            },
+            {
+              "question": "Why do my emails go to spam?",
+              "answer": "Usually missing domain authentication, poor list hygiene, or sudden volume spikes. We fix authentication, clean the list, and warm up sending so inbox placement improves."
+            },
+            {
+              "question": "How often should we email customers?",
+              "answer": "Enough to stay top of mind without fatigue, typically weekly or every other week for campaigns, plus automated flows triggered by each customer's actions."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/sales-marketing/email-sms-marketing/"
+        },
+        {
+          "id": "quote-proposal",
+          "name": "Quoting & Proposal Software (CPQ)",
+          "tagline": "Accurate quotes and polished proposals in minutes, with e-signature and deposit collection.",
+          "description": "A configure-price-quote system that turns your pricing rules, product options, and templates into fast, accurate quotes and professional proposals. Sales staff pick options and the system calculates pricing, discounts, and margins, then generates a branded proposal the customer can review, sign, and pay a deposit on online. Approval rules catch discounts outside policy, accepted quotes convert into jobs, orders, or invoices automatically, and follow-up reminders go out for proposals that have not been opened or signed.",
+          "audience": [
+            "Contractors and installers building quotes by hand",
+            "Manufacturers and distributors with complex pricing",
+            "Agencies and consultants sending custom proposals"
+          ],
+          "features": [
+            {
+              "title": "Pricing rules engine",
+              "description": "Options, bundles, tiers, and margins calculated automatically."
+            },
+            {
+              "title": "Branded proposal templates",
+              "description": "Professional documents generated in one click."
+            },
+            {
+              "title": "E-signature and deposits",
+              "description": "Customers sign and pay online without printing anything."
+            },
+            {
+              "title": "Discount approvals",
+              "description": "Manager sign-off required when pricing falls outside policy."
+            },
+            {
+              "title": "Automatic follow-up",
+              "description": "Reminders for proposals not yet viewed or signed."
+            },
+            {
+              "title": "Quote-to-job conversion",
+              "description": "Accepted quotes become jobs, orders, or invoices instantly."
+            }
+          ],
+          "problems": [
+            "Quotes take days and contain pricing mistakes",
+            "Every rep formats proposals differently",
+            "Signed quotes are re-entered into scheduling and billing",
+            "Nobody follows up on unsigned proposals"
+          ],
+          "integrations": [
+            "PandaDoc",
+            "DocuSign",
+            "QuickBooks",
+            "Salesforce",
+            "HubSpot",
+            "Stripe",
+            "Jobber",
+            "ServiceTitan"
+          ],
+          "faq": [
+            {
+              "question": "What does CPQ stand for?",
+              "answer": "Configure, price, quote. CPQ software lets sales staff select products or services, applies your pricing rules automatically, and produces a finished quote or proposal."
+            },
+            {
+              "question": "Can customers accept and pay online?",
+              "answer": "Yes. Proposals include e-signature and an optional deposit or full payment through your processor, so jobs can be scheduled the moment they are accepted."
+            },
+            {
+              "question": "Will this work for custom or project-based pricing?",
+              "answer": "Yes. We model labor rates, materials, markups, and optional line items so even custom projects are priced consistently."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/sales-marketing/quote-proposal/"
+        },
+        {
+          "id": "reputation-management",
+          "name": "Review & Reputation Management Platform",
+          "tagline": "More five-star reviews, faster responses, and early warning on unhappy customers.",
+          "description": "A reputation system that asks every happy customer for a review at the right moment, routes unhappy feedback to a manager before it goes public, and monitors reviews across Google, Facebook, Yelp, and industry sites in one inbox. AI-drafted replies help your team respond quickly in your voice, sentiment reporting surfaces recurring complaints by location or staff member, and review widgets put fresh social proof on your website automatically.",
+          "audience": [
+            "Local service businesses competing on star rating",
+            "Multi-location brands managing many profiles",
+            "Healthcare, legal, and hospitality teams with sensitive feedback"
+          ],
+          "features": [
+            {
+              "title": "Automated review requests",
+              "description": "Texts and emails sent after each completed visit or job."
+            },
+            {
+              "title": "Private feedback first",
+              "description": "Unhappy customers reach a manager before a public review."
+            },
+            {
+              "title": "Unified review inbox",
+              "description": "Google, Facebook, Yelp, and niche sites in one place."
+            },
+            {
+              "title": "AI-assisted replies",
+              "description": "Draft responses in your brand voice, approved by staff."
+            },
+            {
+              "title": "Sentiment trends",
+              "description": "Recurring themes by location, service, or employee."
+            },
+            {
+              "title": "Website review widgets",
+              "description": "Fresh reviews displayed on your site automatically."
+            }
+          ],
+          "problems": [
+            "Only unhappy customers bother to leave reviews",
+            "Reviews go unanswered for weeks",
+            "No early warning when service quality slips",
+            "Review requests depend on staff remembering to ask"
+          ],
+          "integrations": [
+            "Google Business Profile",
+            "Facebook",
+            "Yelp",
+            "Podium",
+            "Birdeye",
+            "NiceJob",
+            "Twilio",
+            "Slack"
+          ],
+          "faq": [
+            {
+              "question": "Is it allowed to filter who gets asked for a review?",
+              "answer": "Platforms like Google prohibit selectively soliciting only positive reviews. Our setup asks every customer, while giving anyone with a problem an easy way to reach a manager first."
+            },
+            {
+              "question": "How quickly should we respond to reviews?",
+              "answer": "Within a day or two is a good standard. Prompt, specific replies show prospects you care and can soften the impact of a negative review."
+            },
+            {
+              "question": "Can this work across multiple locations?",
+              "answer": "Yes. Each location gets its own request flow and reporting, with a combined view for leadership."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/sales-marketing/reputation-management/"
+        },
+        {
+          "id": "loyalty-referral",
+          "name": "Loyalty & Referral Program Platform",
+          "tagline": "Reward repeat customers and turn them into your best source of new ones.",
+          "description": "A loyalty and referral platform that rewards customers for repeat purchases, visits, and introductions, without punch cards or manual tracking. Points, tiers, or perks are earned automatically from your POS, booking, or e-commerce data, referral links track who sent whom, and rewards are issued the moment they are earned. Automated reminders tell customers about unused rewards and approaching tier upgrades, and reporting shows how much revenue the program drives compared with its cost.",
+          "audience": [
+            "Restaurants, salons, and retailers with repeat customers",
+            "Service businesses that grow by word of mouth",
+            "Brands replacing paper punch cards"
+          ],
+          "features": [
+            {
+              "title": "Points, tiers, and perks",
+              "description": "Program rules that fit your margins and customer behavior."
+            },
+            {
+              "title": "Automatic earning",
+              "description": "Rewards credited from POS, booking, or online orders."
+            },
+            {
+              "title": "Referral tracking",
+              "description": "Unique links and codes with rewards for both sides."
+            },
+            {
+              "title": "Reward reminders",
+              "description": "Nudges about unused points and upcoming tier upgrades."
+            },
+            {
+              "title": "Fraud controls",
+              "description": "Limits that stop self-referrals and reward abuse."
+            },
+            {
+              "title": "Program ROI reporting",
+              "description": "Repeat rate, referral revenue, and reward cost side by side."
+            }
+          ],
+          "problems": [
+            "Repeat customers get nothing for their loyalty",
+            "Referrals happen but are never tracked or thanked",
+            "Paper punch cards get lost",
+            "No idea whether discounts actually drive return visits"
+          ],
+          "integrations": [
+            "Square",
+            "Toast",
+            "Shopify",
+            "Smile.io",
+            "ReferralCandy",
+            "Stripe",
+            "Klaviyo",
+            "Twilio"
+          ],
+          "faq": [
+            {
+              "question": "Do loyalty programs actually increase revenue?",
+              "answer": "When rewards are tied to behavior you want (more visits, higher spend, referrals) and members are reminded of their progress, programs typically increase visit frequency. We set up reporting so you can see the real effect."
+            },
+            {
+              "question": "Can customers join without downloading an app?",
+              "answer": "Yes. Members can sign up and track rewards by phone number, email, or a web wallet, with no app required."
+            },
+            {
+              "question": "How are referrals tracked?",
+              "answer": "Each customer gets a unique link or code. When a new customer uses it, both are credited automatically and the referral is recorded in your CRM."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/sales-marketing/loyalty-referral/"
+        }
+      ]
+    },
+    {
+      "slug": "customer-experience",
+      "name": "Customer Experience & Support",
+      "summary": "Booking, help desks, customer portals, shared inboxes, AI phone answering, and knowledge bases that make you easy to do business with.",
+      "url": "https://www.ljwebmanagement.com/solutions/customer-experience/",
+      "solutions": [
+        {
+          "id": "booking-scheduling",
+          "name": "Booking & Scheduling Platform",
+          "tagline": "Online booking with live availability, deposits, and reminders that cut no-shows.",
+          "description": "A custom booking and scheduling system built for businesses that run on appointments, reservations, or service calls: real estate showings, salon bookings, consultations, rentals, or facility reservations. Clients see live availability and book directly online, automated confirmations and reminders cut down on no-shows, and staff get a centralized calendar with buffer times, resource assignment, and conflict prevention built in. The platform integrates with your existing calendar (Google, Outlook) and payment processor for deposits or full prepayment, and reporting dashboards show booking volume, cancellation rates, and staff utilization so managers can plan capacity instead of guessing.",
+          "audience": [
+            "Appointment-based businesses booking by phone",
+            "Rental and facility operators managing resources",
+            "Teams with frequent no-shows and last-minute cancellations"
+          ],
+          "features": [
+            {
+              "title": "Live online booking",
+              "description": "Customers pick an open time from your website, Google, or social profiles."
+            },
+            {
+              "title": "Smart availability rules",
+              "description": "Buffers, travel time, staff skills, and resource limits enforced automatically."
+            },
+            {
+              "title": "Deposits and prepayment",
+              "description": "Collect payment at booking to protect your schedule."
+            },
+            {
+              "title": "Reminders and confirmations",
+              "description": "Text and email reminders with one-tap confirm or reschedule."
+            },
+            {
+              "title": "Waitlist and fill-in",
+              "description": "Open slots offered to waitlisted customers automatically."
+            },
+            {
+              "title": "Utilization reporting",
+              "description": "Bookings, cancellations, and staff utilization at a glance."
+            }
+          ],
+          "problems": [
+            "Phone tag to find a time that works",
+            "No-shows and late cancellations cost revenue",
+            "Double bookings across staff calendars",
+            "No visibility into capacity and demand"
+          ],
+          "integrations": [
+            "Google Calendar",
+            "Outlook",
+            "Calendly",
+            "Acuity",
+            "Square Appointments",
+            "Stripe",
+            "Twilio",
+            "Zoom"
+          ],
+          "faq": [
+            {
+              "question": "How much do reminders reduce no-shows?",
+              "answer": "Automated text and email reminders with easy confirm and reschedule options typically reduce no-shows significantly, and deposits reduce them further for high-value appointments."
+            },
+            {
+              "question": "Can customers book specific staff or rooms?",
+              "answer": "Yes. The system handles staff preferences, skills, rooms, equipment, and travel time so bookings are always feasible."
+            },
+            {
+              "question": "Will it sync with our existing calendars?",
+              "answer": "Yes. Bookings sync two-way with Google and Outlook calendars so personal commitments block availability automatically."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/customer-experience/booking-scheduling/"
+        },
+        {
+          "id": "help-desk-ticketing",
+          "name": "Help Desk & Support Ticketing Platform",
+          "tagline": "One shared queue with routing, SLAs, and a knowledge base instead of a flooded inbox.",
+          "description": "A branded support and ticketing platform that gives customers one place to submit issues, track status, and get answers, and gives your support team a shared queue instead of a flooded inbox. Tickets route automatically by category or priority, canned responses and a searchable knowledge base cut down repetitive replies, and SLA timers flag tickets at risk of breaching response commitments before they slip. Built-in reporting shows ticket volume, resolution time, and agent performance, giving support leads the data to staff appropriately instead of reacting to whatever inbox looks worst that day.",
+          "audience": [
+            "Support teams working out of a shared email inbox",
+            "Software and product companies with growing user bases",
+            "Service businesses handling warranty and repair requests"
+          ],
+          "features": [
+            {
+              "title": "Shared ticket queue",
+              "description": "Every request tracked with an owner, status, and history."
+            },
+            {
+              "title": "Automatic routing",
+              "description": "Tickets assigned by topic, customer tier, or language."
+            },
+            {
+              "title": "SLA timers",
+              "description": "Warnings before response and resolution targets are missed."
+            },
+            {
+              "title": "Macros and AI drafts",
+              "description": "Saved replies and suggested answers for common questions."
+            },
+            {
+              "title": "Customer status page",
+              "description": "Customers see ticket progress without emailing for updates."
+            },
+            {
+              "title": "Support analytics",
+              "description": "Volume, first response, resolution time, and satisfaction."
+            }
+          ],
+          "problems": [
+            "Requests get lost or answered twice in a shared inbox",
+            "Customers email repeatedly asking for updates",
+            "No way to measure response times",
+            "Agents retype the same answers all day"
+          ],
+          "integrations": [
+            "Zendesk",
+            "Freshdesk",
+            "Help Scout",
+            "Jira",
+            "Slack",
+            "Intercom",
+            "HubSpot",
+            "Gmail"
+          ],
+          "faq": [
+            {
+              "question": "When should a business move from email to a help desk?",
+              "answer": "As soon as more than one person answers customer emails, or when requests start slipping. A help desk prevents duplicates, shows ownership, and measures response times."
+            },
+            {
+              "question": "Can tickets come from phone, chat, and email?",
+              "answer": "Yes. Email, web forms, chat, social messages, and call notes all become tickets in the same queue."
+            },
+            {
+              "question": "Do you set up the knowledge base too?",
+              "answer": "Yes. We draft articles from your most common tickets so customers can solve simple issues on their own."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/customer-experience/help-desk-ticketing/"
+        },
+        {
+          "id": "customer-portal",
+          "name": "Customer Portal & Self-Service Platform",
+          "tagline": "A branded login where clients see orders, invoices, projects, and documents on their own.",
+          "description": "A branded customer portal where clients can log in to view order history, account status, invoices, project progress, or service history without calling or emailing your team for updates they could see themselves. Self-service actions (updating payment methods, downloading documents, submitting requests) are handled directly in the portal, cutting down the volume of routine inbound contact your team fields every week. The platform integrates with your existing billing, CRM, or project management system so the data shown is always current, and role-based access supports multiple contacts per account for larger clients.",
+          "audience": [
+            "B2B companies whose clients ask for status updates",
+            "Professional services firms sharing documents securely",
+            "Contractors and agencies managing ongoing projects"
+          ],
+          "features": [
+            {
+              "title": "Secure client login",
+              "description": "Single sign-on or passwordless login with multi-user accounts."
+            },
+            {
+              "title": "Live account data",
+              "description": "Orders, invoices, projects, and service history pulled from your systems."
+            },
+            {
+              "title": "Self-service actions",
+              "description": "Pay invoices, update cards, download files, and submit requests."
+            },
+            {
+              "title": "Secure document exchange",
+              "description": "Upload and share files without email attachments."
+            },
+            {
+              "title": "Notifications",
+              "description": "Clients alerted when something needs their attention."
+            },
+            {
+              "title": "Branded experience",
+              "description": "Your logo, colors, and domain throughout."
+            }
+          ],
+          "problems": [
+            "Staff spend hours answering where is my order or project",
+            "Sensitive documents are emailed back and forth",
+            "Clients cannot pay or update billing on their own",
+            "Updates live in several systems clients cannot see"
+          ],
+          "integrations": [
+            "QuickBooks",
+            "Stripe",
+            "HubSpot",
+            "Salesforce",
+            "Asana",
+            "Google Drive",
+            "SharePoint",
+            "DocuSign"
+          ],
+          "faq": [
+            {
+              "question": "What can customers do in a portal?",
+              "answer": "Typical portals let customers check order or project status, view and pay invoices, download documents, submit requests, and manage account contacts."
+            },
+            {
+              "question": "Is a customer portal secure?",
+              "answer": "Yes. We use encrypted connections, role-based permissions, and secure authentication, and sensitive files are stored with access controls rather than sent by email."
+            },
+            {
+              "question": "Does the portal replace our existing software?",
+              "answer": "No. It sits on top of your billing, CRM, and project tools and shows customers the right slice of that data."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/customer-experience/customer-portal/"
+        },
+        {
+          "id": "omnichannel-inbox",
+          "name": "Omnichannel Shared Inbox",
+          "tagline": "Email, texts, web chat, and social messages answered from one team inbox.",
+          "description": "A shared inbox that brings email, SMS, website chat, Facebook, Instagram, WhatsApp, and Google Business messages into one place your whole team can work from. Conversations are assigned to the right person, internal notes keep context in the thread, and every customer's history across channels appears in one timeline. Automations handle after-hours replies, tag and route conversations by topic, and push leads into your CRM, while reporting shows response time by channel and team member.",
+          "audience": [
+            "Businesses juggling messages across many apps",
+            "Front desks and sales teams sharing customer conversations",
+            "Teams that miss social and text messages"
+          ],
+          "features": [
+            {
+              "title": "Every channel in one place",
+              "description": "Email, SMS, chat, social, and WhatsApp in a single inbox."
+            },
+            {
+              "title": "Assignment and collision detection",
+              "description": "Clear ownership so two people never reply at once."
+            },
+            {
+              "title": "Unified customer timeline",
+              "description": "Full history across channels on every conversation."
+            },
+            {
+              "title": "Internal notes and mentions",
+              "description": "Discuss a reply without leaving the thread."
+            },
+            {
+              "title": "After-hours automation",
+              "description": "Instant replies, routing, and follow-up scheduling."
+            },
+            {
+              "title": "Response time reporting",
+              "description": "Speed and volume by channel and team member."
+            }
+          ],
+          "problems": [
+            "Messages are missed because they arrive in different apps",
+            "Staff text customers from personal phones",
+            "No shared history when a coworker takes over",
+            "Slow replies on social channels"
+          ],
+          "integrations": [
+            "Front",
+            "Missive",
+            "Podium",
+            "WhatsApp Business",
+            "Facebook Messenger",
+            "Instagram",
+            "Twilio",
+            "HubSpot"
+          ],
+          "faq": [
+            {
+              "question": "What is an omnichannel inbox?",
+              "answer": "It is one workspace where messages from email, text, chat, and social platforms arrive together, so the team can assign, answer, and track every conversation in one place."
+            },
+            {
+              "question": "Can we keep our existing business phone number for texting?",
+              "answer": "In most cases yes. Landlines and VoIP numbers can usually be text-enabled so customers keep reaching you at the number they know."
+            },
+            {
+              "question": "Does it work with our CRM?",
+              "answer": "Yes. Conversations and new contacts sync to your CRM so sales and support share the same history."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/customer-experience/omnichannel-inbox/"
+        },
+        {
+          "id": "ai-phone-receptionist",
+          "name": "AI Phone Receptionist & Call Routing",
+          "tagline": "Every call answered, qualified, booked, or routed, even after hours.",
+          "description": "An AI-powered phone system that answers every call in a natural voice, handles common questions, books appointments, takes detailed messages, and routes urgent or high-value calls to the right person. Missed calls trigger an instant text back so callers are never left hanging, call summaries and recordings are logged to your CRM, and smart routing sends callers to the right department, location, or on-call technician. Reporting shows call volume, missed call rate, and how many calls turned into booked work.",
+          "audience": [
+            "Service businesses that miss calls while on jobs",
+            "Practices and offices with busy front desks",
+            "Companies paying for an answering service"
+          ],
+          "features": [
+            {
+              "title": "Natural AI voice answering",
+              "description": "Answers questions about hours, services, and policies."
+            },
+            {
+              "title": "Appointment booking by phone",
+              "description": "Books into your calendar during the call."
+            },
+            {
+              "title": "Missed call text back",
+              "description": "An instant text to any caller you could not answer."
+            },
+            {
+              "title": "Smart routing and escalation",
+              "description": "Urgent calls forwarded to on-call staff immediately."
+            },
+            {
+              "title": "Call summaries in your CRM",
+              "description": "Transcripts, summaries, and next steps logged automatically."
+            },
+            {
+              "title": "Call analytics",
+              "description": "Volume, peak times, missed calls, and conversion to bookings."
+            }
+          ],
+          "problems": [
+            "Calls go to voicemail and callers phone a competitor",
+            "Front desk staff are overwhelmed at peak times",
+            "Answering services take incomplete messages",
+            "No record of what was discussed on calls"
+          ],
+          "integrations": [
+            "Twilio",
+            "RingCentral",
+            "Aircall",
+            "OpenPhone",
+            "Vapi",
+            "Google Calendar",
+            "HubSpot",
+            "ServiceTitan"
+          ],
+          "faq": [
+            {
+              "question": "Do callers know they are speaking with AI?",
+              "answer": "We recommend being transparent. A short disclosure is standard, and modern voice AI is natural enough that most callers simply get their question answered or their appointment booked."
+            },
+            {
+              "question": "What happens with calls the AI cannot handle?",
+              "answer": "They are transferred to a person or, after hours, the AI takes a detailed message and alerts the right staff member immediately."
+            },
+            {
+              "question": "Can we keep our current phone number?",
+              "answer": "Yes. Calls can be forwarded from your existing number, or the number can be ported, so nothing changes for your customers."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/customer-experience/ai-phone-receptionist/"
+        },
+        {
+          "id": "knowledge-base",
+          "name": "Knowledge Base & Self-Service Help Center",
+          "tagline": "Searchable answers for customers and staff, kept current and connected to support.",
+          "description": "A searchable help center that answers customer questions before they become tickets and gives your staff one trusted source for procedures and policies. We structure the content, write or migrate articles from your most common support requests, and connect the knowledge base to your help desk and AI chat so suggested answers appear as customers type. Article analytics show what people search for and cannot find, review reminders keep content accurate, and an internal section holds SOPs and training material for your team.",
+          "audience": [
+            "Support teams answering the same questions daily",
+            "Software and product companies onboarding users",
+            "Businesses whose processes live in people's heads"
+          ],
+          "features": [
+            {
+              "title": "Structured help center",
+              "description": "Categories, search, and related articles that make answers easy to find."
+            },
+            {
+              "title": "Article writing and migration",
+              "description": "Content drafted from real tickets and existing documents."
+            },
+            {
+              "title": "Help desk and chat integration",
+              "description": "Suggested articles in ticket forms and AI chat."
+            },
+            {
+              "title": "Internal SOP library",
+              "description": "Private procedures and training for staff."
+            },
+            {
+              "title": "Search gap reporting",
+              "description": "See what customers search for and cannot find."
+            },
+            {
+              "title": "Content review workflow",
+              "description": "Owners and review dates keep articles accurate."
+            }
+          ],
+          "problems": [
+            "Support volume grows with every new customer",
+            "Answers differ depending on who replies",
+            "New hires learn by interrupting coworkers",
+            "Help content is outdated or scattered across files"
+          ],
+          "integrations": [
+            "Zendesk Guide",
+            "Help Scout Docs",
+            "Notion",
+            "Confluence",
+            "Intercom",
+            "Document360",
+            "Google Drive",
+            "Slack"
+          ],
+          "faq": [
+            {
+              "question": "How much can a knowledge base reduce support tickets?",
+              "answer": "A well-organized knowledge base connected to your ticket form and chat can deflect a meaningful share of simple questions. The exact reduction depends on how repetitive your requests are."
+            },
+            {
+              "question": "Should internal and customer documentation live together?",
+              "answer": "They can share one platform with separate permissions, which keeps answers consistent while protecting internal procedures."
+            },
+            {
+              "question": "Who keeps the articles up to date?",
+              "answer": "Each article gets an owner and review date, and the system reminds owners when content is due for review or when related tickets suggest it is wrong."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/customer-experience/knowledge-base/"
+        }
+      ]
+    },
+    {
+      "slug": "operations-field-service",
+      "name": "Operations & Field Service",
+      "summary": "Field service dispatch, inventory, project management, fleet tracking, procurement, and lifecycle management for teams that keep things running.",
+      "url": "https://www.ljwebmanagement.com/solutions/operations-field-service/",
+      "solutions": [
+        {
+          "id": "field-service",
+          "name": "Field Service Management Platform",
+          "tagline": "Dispatch, routing, mobile work orders, and job costing for crews in the field.",
+          "description": "A dispatch and work-order management platform for businesses that send technicians, crews, or inspectors into the field: home services, pest control, HVAC, landscaping, or property maintenance. Jobs are created, assigned, and routed automatically based on technician location and availability, field staff get a mobile-friendly view of job details, photos, and digital sign-off, and customers receive automatic on-my-way and completion notifications. The platform tracks parts and labor for accurate job costing, and real-time dashboards give dispatchers full visibility into every crew's status without a single phone call.",
+          "audience": [
+            "HVAC, plumbing, electrical, and pest control companies",
+            "Landscaping, cleaning, and maintenance crews",
+            "Inspection and installation teams"
+          ],
+          "features": [
+            {
+              "title": "Drag-and-drop dispatch board",
+              "description": "See every tech, job, and status on one live board."
+            },
+            {
+              "title": "Route optimization",
+              "description": "Jobs assigned by location, skill, and availability to cut drive time."
+            },
+            {
+              "title": "Mobile work orders",
+              "description": "Job details, checklists, photos, and signatures on any phone."
+            },
+            {
+              "title": "Customer notifications",
+              "description": "On-my-way texts, arrival windows, and completion summaries."
+            },
+            {
+              "title": "Job costing",
+              "description": "Parts, labor, and travel tracked against every job."
+            },
+            {
+              "title": "Invoice on completion",
+              "description": "Invoices sent and paid from the field the moment work is done."
+            }
+          ],
+          "problems": [
+            "Dispatchers spend the day on the phone",
+            "Paper work orders get lost or are unreadable",
+            "Customers call asking when the tech will arrive",
+            "Nobody knows which jobs actually make money"
+          ],
+          "integrations": [
+            "ServiceTitan",
+            "Jobber",
+            "Housecall Pro",
+            "QuickBooks",
+            "Google Maps",
+            "Twilio",
+            "Stripe",
+            "Samsara"
+          ],
+          "faq": [
+            {
+              "question": "What is field service management software?",
+              "answer": "It is software that schedules, dispatches, and tracks work done at customer locations, combining job scheduling, mobile work orders, customer notifications, and invoicing in one system."
+            },
+            {
+              "question": "Can technicians use it offline?",
+              "answer": "Yes. Mobile apps cache job details and sync photos, notes, and signatures once a connection returns."
+            },
+            {
+              "question": "Should we use ServiceTitan or Jobber or a custom system?",
+              "answer": "Off-the-shelf platforms fit most trades. We implement and automate them, and build custom systems only when your workflow, compliance, or integrations require it."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/operations-field-service/field-service/"
+        },
+        {
+          "id": "inventory-warehouse",
+          "name": "Inventory & Warehouse Management Platform",
+          "tagline": "Real-time stock, barcode scanning, and automatic reordering across every location.",
+          "description": "A real-time inventory and warehouse management platform that tracks stock levels, locations, and movement across one or multiple warehouses instead of relying on spreadsheets that are out of date the moment they're saved. Barcode and QR scanning speeds receiving and picking, low-stock and reorder-point alerts trigger purchase orders automatically, and the platform integrates with your e-commerce storefront, POS, or ERP so stock counts stay accurate across every sales channel. Batch and lot tracking is available for businesses with expiration dates or compliance requirements, and reporting dashboards flag slow-moving stock before it ties up working capital.",
+          "audience": [
+            "Distributors and wholesalers",
+            "Retailers and e-commerce brands selling across channels",
+            "Manufacturers managing raw materials and finished goods"
+          ],
+          "features": [
+            {
+              "title": "Multi-location stock tracking",
+              "description": "Quantities by warehouse, bin, and channel in real time."
+            },
+            {
+              "title": "Barcode and QR scanning",
+              "description": "Faster, more accurate receiving, picking, and counts."
+            },
+            {
+              "title": "Automatic reordering",
+              "description": "Reorder points and purchase orders generated from demand."
+            },
+            {
+              "title": "Lot, batch, and serial tracking",
+              "description": "Traceability for expiration dates and recalls."
+            },
+            {
+              "title": "Channel sync",
+              "description": "Stock shared with your store, POS, marketplaces, and ERP."
+            },
+            {
+              "title": "Inventory analytics",
+              "description": "Turnover, dead stock, and carrying cost reports."
+            }
+          ],
+          "problems": [
+            "Stock counts never match the spreadsheet",
+            "Stockouts on best sellers and overstock on slow movers",
+            "Manual purchase orders based on guesswork",
+            "Hours spent on physical counts"
+          ],
+          "integrations": [
+            "NetSuite",
+            "Cin7",
+            "Fishbowl",
+            "Shopify",
+            "QuickBooks",
+            "ShipStation",
+            "Amazon",
+            "Zebra scanners"
+          ],
+          "faq": [
+            {
+              "question": "When do we need an inventory system instead of spreadsheets?",
+              "answer": "When you sell across more than one channel, hold stock in more than one location, or regularly oversell or run out. At that point spreadsheets cannot keep up with real-time changes."
+            },
+            {
+              "question": "Can it handle lot and expiration tracking?",
+              "answer": "Yes. Lot, batch, and serial tracking with expiration alerts is available for food, health, and regulated products."
+            },
+            {
+              "question": "Does it integrate with our accounting software?",
+              "answer": "Yes. Purchases, receipts, and cost of goods sync to QuickBooks, Xero, or your ERP."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/operations-field-service/inventory-warehouse/"
+        },
+        {
+          "id": "project-management",
+          "name": "Project & Job Management Platform",
+          "tagline": "Every project's tasks, budget, schedule, and client updates in one connected system.",
+          "description": "A project and job management system configured around how your team delivers work, whether that is construction jobs, client engagements, or production runs. Projects are created from signed quotes with templates for tasks, milestones, and budgets, team members see what is due and blocked, and time and expenses are tracked against the budget in real time. Clients receive automatic progress updates and approvals, change orders are captured and billed, and dashboards show utilization, profitability, and at-risk projects across the portfolio.",
+          "audience": [
+            "Contractors and builders running multiple jobs",
+            "Agencies, consultancies, and professional services firms",
+            "Production and installation teams"
+          ],
+          "features": [
+            {
+              "title": "Project templates",
+              "description": "Standard tasks, milestones, and budgets created automatically from a signed quote."
+            },
+            {
+              "title": "Schedules and dependencies",
+              "description": "Timelines that update when a task slips."
+            },
+            {
+              "title": "Time and expense tracking",
+              "description": "Actuals compared with budget as work happens."
+            },
+            {
+              "title": "Change order management",
+              "description": "Scope changes approved, tracked, and billed."
+            },
+            {
+              "title": "Client updates and approvals",
+              "description": "Automatic progress reports and sign-offs."
+            },
+            {
+              "title": "Portfolio dashboards",
+              "description": "Utilization, margin, and at-risk projects in one view."
+            }
+          ],
+          "problems": [
+            "Project status lives in someone's head or inbox",
+            "Budgets overrun before anyone notices",
+            "Change orders are done but never billed",
+            "Clients ask for updates constantly"
+          ],
+          "integrations": [
+            "Asana",
+            "Monday.com",
+            "ClickUp",
+            "Procore",
+            "Buildertrend",
+            "QuickBooks",
+            "Harvest",
+            "Slack"
+          ],
+          "faq": [
+            {
+              "question": "Which project management tool should we use?",
+              "answer": "It depends on the work. Asana, Monday.com, and ClickUp suit services teams, while Procore and Buildertrend fit construction. We configure the right tool and connect it to sales and billing."
+            },
+            {
+              "question": "Can projects be created automatically from sales?",
+              "answer": "Yes. When a deal closes or a quote is signed, the project, tasks, budget, and client portal access can be created automatically."
+            },
+            {
+              "question": "How do we track project profitability?",
+              "answer": "By logging time, materials, and expenses against each project's budget and comparing them with what was billed, which the system does in real time."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/operations-field-service/project-management/"
+        },
+        {
+          "id": "fleet-asset-tracking",
+          "name": "Fleet & Asset Tracking System",
+          "tagline": "Know where vehicles and equipment are, how they are used, and when they need service.",
+          "description": "A fleet and asset tracking system that combines GPS telematics, equipment tags, and maintenance scheduling in one view. Vehicles and high-value equipment are tracked in real time, preventive maintenance is scheduled automatically by mileage, engine hours, or date, and driver inspections are completed digitally. Alerts flag speeding, idling, after-hours use, and equipment leaving a job site, and reports show utilization so you can right-size the fleet and stop renting equipment you already own.",
+          "audience": [
+            "Contractors with vehicles and heavy equipment",
+            "Delivery and logistics operators",
+            "Rental companies and municipalities"
+          ],
+          "features": [
+            {
+              "title": "Live GPS tracking",
+              "description": "Vehicle and asset locations on one map."
+            },
+            {
+              "title": "Preventive maintenance scheduling",
+              "description": "Service due by mileage, hours, or calendar."
+            },
+            {
+              "title": "Digital inspections",
+              "description": "Pre-trip and post-trip checklists with photos."
+            },
+            {
+              "title": "Geofence and usage alerts",
+              "description": "Notifications for unauthorized use or equipment leaving a site."
+            },
+            {
+              "title": "Fuel and idle reporting",
+              "description": "Spot waste and coach drivers with data."
+            },
+            {
+              "title": "Utilization reports",
+              "description": "Know which assets earn their keep."
+            }
+          ],
+          "problems": [
+            "Equipment goes missing between job sites",
+            "Maintenance is missed until something breaks",
+            "Paper inspection forms are incomplete",
+            "Paying for vehicles and equipment that sit idle"
+          ],
+          "integrations": [
+            "Samsara",
+            "Motive",
+            "Geotab",
+            "Fleetio",
+            "Verizon Connect",
+            "QuickBooks",
+            "Google Maps",
+            "Slack"
+          ],
+          "faq": [
+            {
+              "question": "Can we track equipment that does not have an engine?",
+              "answer": "Yes. Battery-powered GPS tags and Bluetooth beacons track trailers, tools, and attachments."
+            },
+            {
+              "question": "Does fleet tracking help with insurance?",
+              "answer": "Many insurers offer discounts for telematics, and dashcam footage and driving data can help resolve claims."
+            },
+            {
+              "question": "How does preventive maintenance scheduling work?",
+              "answer": "Mileage and engine hours come from telematics automatically, and work orders are created when service thresholds are reached."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/operations-field-service/fleet-asset-tracking/"
+        },
+        {
+          "id": "procurement-vendor",
+          "name": "Procurement & Vendor Management Platform",
+          "tagline": "Purchase requests, approvals, vendor records, and three-way matching without paper.",
+          "description": "A procurement system that standardizes how your organization requests, approves, orders, and pays for goods and services. Employees submit purchase requests from a catalog or form, approvals route by amount and department, purchase orders go to vendors automatically, and receipts are matched against invoices before payment. Vendor records hold contracts, insurance certificates, W-9s, and performance history with expiration alerts, and spend reporting reveals where to consolidate suppliers and negotiate better terms.",
+          "audience": [
+            "Growing companies without a formal purchasing process",
+            "Multi-location operators buying from many suppliers",
+            "Manufacturers and contractors managing subcontractors"
+          ],
+          "features": [
+            {
+              "title": "Purchase requests and approvals",
+              "description": "Rules by amount, department, and budget."
+            },
+            {
+              "title": "Automatic purchase orders",
+              "description": "POs generated and sent to approved vendors."
+            },
+            {
+              "title": "Three-way matching",
+              "description": "PO, receipt, and invoice reconciled before payment."
+            },
+            {
+              "title": "Vendor onboarding and compliance",
+              "description": "W-9s, insurance, and contracts tracked with renewal alerts."
+            },
+            {
+              "title": "Vendor scorecards",
+              "description": "On-time delivery, quality, and price history."
+            },
+            {
+              "title": "Spend analytics",
+              "description": "Spend by category, vendor, and department."
+            }
+          ],
+          "problems": [
+            "Purchases happen without approval or budget checks",
+            "Invoices are paid for goods never received",
+            "Vendor insurance certificates expire unnoticed",
+            "No visibility into total spend by supplier"
+          ],
+          "integrations": [
+            "NetSuite",
+            "Procurify",
+            "Coupa",
+            "QuickBooks",
+            "Bill.com",
+            "DocuSign",
+            "Microsoft Teams",
+            "Slack"
+          ],
+          "faq": [
+            {
+              "question": "What is three-way matching?",
+              "answer": "It compares the purchase order, the receiving record, and the vendor invoice before payment, so you only pay for what was ordered and delivered at the agreed price."
+            },
+            {
+              "question": "Is a procurement system only for large companies?",
+              "answer": "No. Even a 20-person company benefits from simple request and approval rules, especially when several people can spend company money."
+            },
+            {
+              "question": "Can vendors submit documents themselves?",
+              "answer": "Yes. A vendor portal lets suppliers upload W-9s, insurance certificates, and invoices directly."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/operations-field-service/procurement-vendor/"
+        },
+        {
+          "id": "obsolescence-management",
+          "name": "Obsolescence Management Platform",
+          "tagline": "Catch end-of-life parts and equipment long before they stop your production line.",
+          "description": "A centralized system that tracks the lifecycle status of every component, part, or piece of equipment a business relies on, flagging items approaching end-of-life or end-of-support long before they become a supply chain emergency. The platform continuously cross-references bill-of-materials data against manufacturer lifecycle notices, alerts procurement and engineering teams to at-risk parts, and recommends qualified alternatives, giving manufacturing, defense, aerospace, and industrial clients a proactive way to avoid costly last-time-buy scrambles and unplanned production line stoppages.",
+          "audience": [
+            "Electronics, aerospace, and defense manufacturers",
+            "Industrial operators maintaining long-lived equipment",
+            "IT teams managing hardware and software lifecycles"
+          ],
+          "features": [
+            {
+              "title": "BOM lifecycle monitoring",
+              "description": "Every part checked against manufacturer status data."
+            },
+            {
+              "title": "End-of-life alerts",
+              "description": "Early warning on discontinuation and last-time-buy notices."
+            },
+            {
+              "title": "Alternate part recommendations",
+              "description": "Form, fit, and function replacements surfaced for review."
+            },
+            {
+              "title": "Risk scoring",
+              "description": "Parts ranked by supply risk and production impact."
+            },
+            {
+              "title": "Last-time-buy planning",
+              "description": "Quantities calculated from demand and remaining life."
+            },
+            {
+              "title": "Audit-ready records",
+              "description": "History of every decision for customers and regulators."
+            }
+          ],
+          "problems": [
+            "Discontinued parts discovered only when an order fails",
+            "Emergency redesigns and broker purchases at premium prices",
+            "Lifecycle data tracked by hand in spreadsheets",
+            "No early warning for software and hardware end of support"
+          ],
+          "integrations": [
+            "SAP",
+            "Oracle",
+            "Siemens Teamcenter",
+            "Arena PLM",
+            "SiliconExpert",
+            "Octopart",
+            "Power BI",
+            "Excel"
+          ],
+          "faq": [
+            {
+              "question": "What is obsolescence management?",
+              "answer": "It is the practice of tracking when components, equipment, and software will be discontinued or lose support, and planning replacements or last-time buys before shortages disrupt operations."
+            },
+            {
+              "question": "Which industries need obsolescence management?",
+              "answer": "Any business with long product lifecycles or critical equipment, especially electronics, aerospace, defense, medical devices, industrial automation, and utilities."
+            },
+            {
+              "question": "Can it monitor software end of support too?",
+              "answer": "Yes. Operating systems, firmware, and business software can be tracked alongside physical components."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/operations-field-service/obsolescence-management/"
+        }
+      ]
+    },
+    {
+      "slug": "finance-billing",
+      "name": "Finance, Billing & Payments",
+      "summary": "Recurring billing, invoicing and collections, payables, online payments, and month-end close automation that keep cash flowing.",
+      "url": "https://www.ljwebmanagement.com/solutions/finance-billing/",
+      "solutions": [
+        {
+          "id": "membership-billing",
+          "name": "Membership & Subscription Billing Platform",
+          "tagline": "Recurring billing, dunning, and self-service plan changes that protect monthly revenue.",
+          "description": "A recurring billing and membership management platform for businesses that run on subscriptions, memberships, or recurring service plans: gyms, subscription boxes, SaaS products, or membership-based clubs. The platform handles plan tiers, automated recurring billing, failed-payment retry logic, and self-service upgrade, downgrade, and cancel flows so members manage their own accounts without generating support tickets. Dunning sequences recover failed payments automatically, usage-based billing is supported for metered plans, and revenue dashboards break down MRR, churn, and lifetime value so leadership always knows where recurring revenue stands.",
+          "audience": [
+            "Gyms, studios, and clubs",
+            "Subscription box and SaaS businesses",
+            "Service companies selling maintenance plans"
+          ],
+          "features": [
+            {
+              "title": "Plans and tiers",
+              "description": "Monthly, annual, family, and usage-based pricing."
+            },
+            {
+              "title": "Automated recurring billing",
+              "description": "Charges run on schedule with receipts sent automatically."
+            },
+            {
+              "title": "Smart dunning",
+              "description": "Retries and reminders that recover failed payments."
+            },
+            {
+              "title": "Member self-service",
+              "description": "Upgrade, pause, update cards, or cancel without calling."
+            },
+            {
+              "title": "Retention offers",
+              "description": "Pause and downgrade options shown before cancellation."
+            },
+            {
+              "title": "Recurring revenue dashboards",
+              "description": "MRR, churn, and lifetime value by plan."
+            }
+          ],
+          "problems": [
+            "Failed payments quietly turn into lost members",
+            "Staff process plan changes by hand",
+            "Cancellations require a phone call and frustrate members",
+            "No reliable view of recurring revenue"
+          ],
+          "integrations": [
+            "Stripe Billing",
+            "Chargebee",
+            "Recurly",
+            "Mindbody",
+            "QuickBooks",
+            "Xero",
+            "HubSpot",
+            "Mailchimp"
+          ],
+          "faq": [
+            {
+              "question": "What is dunning?",
+              "answer": "Dunning is the process of recovering failed recurring payments through automatic retries, card updater services, and reminder messages asking the customer to update their payment details."
+            },
+            {
+              "question": "Can members manage their own subscriptions?",
+              "answer": "Yes. A self-service portal lets members upgrade, downgrade, pause, update payment methods, and cancel according to your policies."
+            },
+            {
+              "question": "Does it support usage-based or metered billing?",
+              "answer": "Yes. Usage can be recorded automatically and billed on top of or instead of a base plan."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/finance-billing/membership-billing/"
+        },
+        {
+          "id": "invoicing-accounts-receivable",
+          "name": "Invoicing & Accounts Receivable Automation",
+          "tagline": "Invoices out the same day, reminders on autopilot, and payments matched automatically.",
+          "description": "An accounts receivable system that creates invoices from completed jobs, shipped orders, or billable time, sends them immediately with online payment links, and follows up on unpaid balances with a polite, escalating reminder schedule. Payments are matched to invoices and posted to your accounting system automatically, customers can pay by card, ACH, or saved payment method, and an aging dashboard shows who owes what so your team only calls the accounts that truly need attention.",
+          "audience": [
+            "Service businesses invoicing after each job",
+            "B2B companies with net-30 and net-60 terms",
+            "Firms billing hourly or by milestone"
+          ],
+          "features": [
+            {
+              "title": "Automatic invoice creation",
+              "description": "Invoices generated from jobs, orders, or approved time."
+            },
+            {
+              "title": "Online payment links",
+              "description": "Card and ACH payments in one click."
+            },
+            {
+              "title": "Reminder schedules",
+              "description": "Friendly to firm reminders before and after the due date."
+            },
+            {
+              "title": "Automatic cash application",
+              "description": "Payments matched and posted to the right invoice."
+            },
+            {
+              "title": "Autopay and saved methods",
+              "description": "Customers can opt into automatic payment."
+            },
+            {
+              "title": "AR aging dashboard",
+              "description": "Overdue balances and collection priorities at a glance."
+            }
+          ],
+          "problems": [
+            "Invoices go out days or weeks after the work",
+            "Staff chase late payers by hand",
+            "Payments are posted to the wrong invoices",
+            "Cash flow is unpredictable"
+          ],
+          "integrations": [
+            "QuickBooks",
+            "Xero",
+            "Stripe",
+            "Bill.com",
+            "Melio",
+            "Square",
+            "Salesforce",
+            "HubSpot"
+          ],
+          "faq": [
+            {
+              "question": "How much faster do customers pay with automated reminders?",
+              "answer": "Most businesses see invoices paid sooner once invoices go out immediately with a payment link and reminders run on a consistent schedule, because nothing depends on someone remembering to follow up."
+            },
+            {
+              "question": "Will automated reminders upset customers?",
+              "answer": "Not when they are courteous and accurate. We write reminders in your voice and stop them the moment payment arrives or a dispute is noted."
+            },
+            {
+              "question": "Does it work with QuickBooks?",
+              "answer": "Yes. Invoices, payments, and customers sync with QuickBooks Online or Desktop, Xero, and most ERPs."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/finance-billing/invoicing-accounts-receivable/"
+        },
+        {
+          "id": "accounts-payable-expense",
+          "name": "Accounts Payable & Expense Management",
+          "tagline": "Bills captured, coded, approved, and paid on time without paper or re-keying.",
+          "description": "A payables and expense system that captures vendor bills from email, reads them with AI document extraction, codes them to the right accounts, and routes them for approval before scheduling payment. Employee expenses are submitted from a phone with receipt photos and checked against policy, corporate card transactions are reconciled automatically, and every approval is logged for audit. Finance gets a clear view of upcoming obligations, and vendors are paid on time without late fees or duplicate payments.",
+          "audience": [
+            "Companies processing dozens to thousands of bills a month",
+            "Teams with employees spending on company cards",
+            "Businesses that need audit-ready approval trails"
+          ],
+          "features": [
+            {
+              "title": "Bill capture from email",
+              "description": "Invoices forwarded to one address are read automatically."
+            },
+            {
+              "title": "AI data extraction and coding",
+              "description": "Vendor, amounts, and GL codes filled in for review."
+            },
+            {
+              "title": "Approval workflows",
+              "description": "Routing by amount, department, or project."
+            },
+            {
+              "title": "Scheduled payments",
+              "description": "ACH, check, and card payments timed to terms."
+            },
+            {
+              "title": "Expense reports from a phone",
+              "description": "Receipt photos matched to card transactions."
+            },
+            {
+              "title": "Duplicate and fraud checks",
+              "description": "Alerts on duplicate invoices and bank detail changes."
+            }
+          ],
+          "problems": [
+            "Bills are keyed in by hand",
+            "Approvals stall in email threads",
+            "Late fees and missed early-pay discounts",
+            "Expense reports take hours each month"
+          ],
+          "integrations": [
+            "Bill.com",
+            "Ramp",
+            "Expensify",
+            "QuickBooks",
+            "Xero",
+            "NetSuite",
+            "Brex",
+            "Dext"
+          ],
+          "faq": [
+            {
+              "question": "Can AI read our vendor invoices accurately?",
+              "answer": "Modern document AI extracts vendor, dates, amounts, and line items with high accuracy, and anything below a confidence threshold is flagged for a quick human check before posting."
+            },
+            {
+              "question": "How do approvals work?",
+              "answer": "Rules route each bill to the right approver based on amount, vendor, department, or project, with reminders and escalation if it sits too long."
+            },
+            {
+              "question": "Does this help prevent payment fraud?",
+              "answer": "Yes. Duplicate invoice detection, vendor bank detail change alerts, and separation of duties reduce common payables fraud risks."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/finance-billing/accounts-payable-expense/"
+        },
+        {
+          "id": "online-payments-checkout",
+          "name": "Online Payments & Checkout Integration",
+          "tagline": "Take card, ACH, and wallet payments anywhere, with every transaction synced to your books.",
+          "description": "A payments setup that lets customers pay the way they prefer, online, in person, by text link, or on recurring autopay, with every transaction flowing cleanly into your accounting and CRM. We select and configure the right processor, build secure checkout into your website, invoices, and booking flows, set up text-to-pay and saved payment methods, and automate payout reconciliation so fees, refunds, and deposits match your bank statements without manual work.",
+          "audience": [
+            "Businesses still taking payments over the phone",
+            "Companies with several disconnected payment tools",
+            "Teams spending hours reconciling processor payouts"
+          ],
+          "features": [
+            {
+              "title": "Processor selection and setup",
+              "description": "The right fit for your volume, industry, and fees."
+            },
+            {
+              "title": "Website and invoice checkout",
+              "description": "Secure, branded payment pages."
+            },
+            {
+              "title": "Text-to-pay links",
+              "description": "Customers pay from a text in seconds."
+            },
+            {
+              "title": "Saved cards and autopay",
+              "description": "Tokenized payment methods for repeat billing."
+            },
+            {
+              "title": "Payout reconciliation",
+              "description": "Fees, refunds, and deposits matched to the bank."
+            },
+            {
+              "title": "PCI-conscious design",
+              "description": "Card data handled by the processor, never stored by you."
+            }
+          ],
+          "problems": [
+            "Taking card numbers over the phone",
+            "Deposits that do not match sales reports",
+            "Several payment apps that do not talk to each other",
+            "High processing fees nobody has reviewed"
+          ],
+          "integrations": [
+            "Stripe",
+            "Square",
+            "PayPal",
+            "Authorize.net",
+            "Clover",
+            "QuickBooks Payments",
+            "Plaid",
+            "Xero"
+          ],
+          "faq": [
+            {
+              "question": "Is it safe to take payments on our website?",
+              "answer": "Yes, when card data is handled by a PCI-compliant processor through hosted fields or checkout pages, so sensitive card numbers never touch your servers."
+            },
+            {
+              "question": "What is text-to-pay?",
+              "answer": "A secure payment link sent by SMS. Customers tap it, pay with a card or wallet, and the payment is recorded against their invoice automatically."
+            },
+            {
+              "question": "Can you help lower our processing fees?",
+              "answer": "We review your volume and mix of transactions and recommend processor and pricing options, including ACH for larger invoices."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/finance-billing/online-payments-checkout/"
+        },
+        {
+          "id": "month-end-close",
+          "name": "Month-End Close & Reconciliation Automation",
+          "tagline": "Close the books in days, not weeks, with automated reconciliations and checklists.",
+          "description": "A close management system that turns month-end from a scramble into a checklist. Bank and card transactions are reconciled automatically against your ledger, recurring journal entries and accruals are posted on schedule, intercompany and clearing accounts are matched, and exceptions are routed to the right person with supporting documents attached. A close checklist tracks every task, owner, and due date, and management reports are generated and delivered as soon as the books are final.",
+          "audience": [
+            "Finance teams taking two weeks or more to close",
+            "Multi-entity and multi-location businesses",
+            "Owners who want timely monthly financials"
+          ],
+          "features": [
+            {
+              "title": "Automated bank reconciliation",
+              "description": "Transactions matched to the ledger with rules and AI."
+            },
+            {
+              "title": "Recurring entries and accruals",
+              "description": "Posted automatically every period."
+            },
+            {
+              "title": "Close checklist",
+              "description": "Tasks, owners, dependencies, and due dates tracked."
+            },
+            {
+              "title": "Exception routing",
+              "description": "Unmatched items sent to the right reviewer with context."
+            },
+            {
+              "title": "Multi-entity consolidation",
+              "description": "Intercompany eliminations and combined reporting."
+            },
+            {
+              "title": "Automatic financial reports",
+              "description": "P&L, balance sheet, and KPIs delivered at close."
+            }
+          ],
+          "problems": [
+            "Closing the books takes most of the following month",
+            "Reconciliations live in fragile spreadsheets",
+            "Leadership makes decisions on outdated numbers",
+            "Audit prep means hunting for support documents"
+          ],
+          "integrations": [
+            "QuickBooks",
+            "Xero",
+            "NetSuite",
+            "BlackLine",
+            "FloQast",
+            "Plaid",
+            "Excel",
+            "Power BI"
+          ],
+          "faq": [
+            {
+              "question": "How long should a month-end close take?",
+              "answer": "Many small and midsize businesses aim for five to ten business days. Automating reconciliations and recurring entries is usually the biggest lever for getting there."
+            },
+            {
+              "question": "Can reconciliations be fully automated?",
+              "answer": "Most matching can be automated with rules and AI. A person still reviews exceptions and signs off, which keeps controls intact."
+            },
+            {
+              "question": "Does this work with our accountant or bookkeeper?",
+              "answer": "Yes. External accountants can work inside the same checklist and reconciliation tools, which usually speeds up their work too."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/finance-billing/month-end-close/"
+        }
+      ]
+    },
+    {
+      "slug": "erp-enterprise-systems",
+      "name": "ERP & Enterprise Systems",
+      "summary": "ERP implementation, systems integration, legacy modernization, document management, and compliance platforms for one source of truth.",
+      "url": "https://www.ljwebmanagement.com/solutions/erp-enterprise-systems/",
+      "solutions": [
+        {
+          "id": "erp-integration",
+          "name": "ERP Implementation & Integration",
+          "tagline": "Finance, inventory, procurement, HR, and reporting unified in one integrated backbone.",
+          "description": "End-to-end enterprise resource planning services covering selection, implementation, customization, and integration of ERP systems (such as NetSuite, SAP Business One, Microsoft Dynamics, or Odoo) into a client's existing operations. This offering unifies finance, inventory, procurement, HR, and reporting into a single source of truth, and includes data migration from legacy systems, workflow configuration, staff training, and ongoing support so growing businesses can replace disconnected spreadsheets and standalone tools with one integrated backbone.",
+          "audience": [
+            "Businesses that have outgrown QuickBooks and spreadsheets",
+            "Manufacturers and distributors with complex operations",
+            "Multi-entity companies needing consolidated reporting"
+          ],
+          "features": [
+            {
+              "title": "ERP selection",
+              "description": "Requirements gathered and vendors compared objectively."
+            },
+            {
+              "title": "Implementation and configuration",
+              "description": "Modules set up around your processes and controls."
+            },
+            {
+              "title": "Data migration",
+              "description": "Customers, vendors, items, and balances cleaned and loaded."
+            },
+            {
+              "title": "Integrations",
+              "description": "CRM, e-commerce, WMS, and payroll connected to the ERP."
+            },
+            {
+              "title": "Training and change management",
+              "description": "Role-based training so the team actually adopts it."
+            },
+            {
+              "title": "Post-launch support",
+              "description": "Optimization, new workflows, and upgrades over time."
+            }
+          ],
+          "problems": [
+            "Data is re-entered across accounting, inventory, and sales tools",
+            "No single, trusted view of the business",
+            "Month-end close and reporting take too long",
+            "Growth is limited by manual processes"
+          ],
+          "integrations": [
+            "NetSuite",
+            "SAP Business One",
+            "Microsoft Dynamics 365",
+            "Odoo",
+            "Acumatica",
+            "Salesforce",
+            "Shopify",
+            "Power BI"
+          ],
+          "faq": [
+            {
+              "question": "How do I know if my business needs an ERP?",
+              "answer": "Common signs are re-keying data between systems, slow month-end close, inventory inaccuracies, multiple entities or locations, and leadership unable to get timely reports."
+            },
+            {
+              "question": "Which ERP is best for a small or midsize business?",
+              "answer": "NetSuite, Microsoft Dynamics 365 Business Central, Acumatica, SAP Business One, and Odoo all serve this market. The right choice depends on industry, complexity, budget, and integrations."
+            },
+            {
+              "question": "What makes ERP projects fail?",
+              "answer": "Unclear requirements, poor data migration, and low user adoption. We address all three with structured discovery, careful data cleanup, and hands-on training."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/erp-enterprise-systems/erp-integration/"
+        },
+        {
+          "id": "systems-integration-api",
+          "name": "Systems Integration & API Development",
+          "tagline": "Make the software you already own share data reliably, in real time.",
+          "description": "Custom integrations that connect your CRM, ERP, accounting, e-commerce, scheduling, and industry software so data moves between them automatically and accurately. We map how records should flow, build integrations using native connectors, iPaaS platforms like Zapier, Make, and n8n, or custom API code where needed, and add error handling, retries, and monitoring so problems are caught and fixed before they cause bad data. Documentation and alerting mean integrations keep working as your systems change.",
+          "audience": [
+            "Teams re-keying data between systems",
+            "Businesses with industry software that lacks native integrations",
+            "Companies whose Zapier setup has become fragile"
+          ],
+          "features": [
+            {
+              "title": "Integration architecture",
+              "description": "Systems of record and data flows mapped before building."
+            },
+            {
+              "title": "Native, iPaaS, or custom API",
+              "description": "The simplest reliable approach for each connection."
+            },
+            {
+              "title": "Two-way sync",
+              "description": "Records kept consistent across systems with conflict rules."
+            },
+            {
+              "title": "Error handling and retries",
+              "description": "Failures caught, retried, and reported automatically."
+            },
+            {
+              "title": "Monitoring and alerts",
+              "description": "Know immediately if an integration stops working."
+            },
+            {
+              "title": "Documentation",
+              "description": "Clear records of every flow for future changes."
+            }
+          ],
+          "problems": [
+            "Copying data between apps by hand",
+            "Integrations that silently break",
+            "Duplicate and conflicting records across systems",
+            "Vendors say their software cannot connect"
+          ],
+          "integrations": [
+            "Zapier",
+            "Make.com",
+            "n8n",
+            "Workato",
+            "REST APIs",
+            "Webhooks",
+            "Salesforce",
+            "NetSuite"
+          ],
+          "faq": [
+            {
+              "question": "What is an API integration?",
+              "answer": "An API integration connects two software systems through their programming interfaces so they can exchange data automatically, such as sending new orders from a store to an ERP."
+            },
+            {
+              "question": "Should we use Zapier or custom code?",
+              "answer": "Zapier and Make are fast and affordable for many workflows. Custom code is better for high volume, complex logic, or systems without connectors. We often combine them."
+            },
+            {
+              "question": "What if our software has no API?",
+              "answer": "We can often use webhooks, scheduled file exports, database connections, or robotic process automation as a fallback."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/erp-enterprise-systems/systems-integration-api/"
+        },
+        {
+          "id": "legacy-modernization",
+          "name": "Legacy System Modernization & Data Migration",
+          "tagline": "Move off aging software and Access databases without losing data or disrupting work.",
+          "description": "A structured program for replacing outdated software, Access databases, on-premise servers, and spreadsheet-based systems with modern cloud platforms. We document what the old system does (including the undocumented workarounds), choose or build the replacement, clean and migrate the data, and run old and new in parallel until results match. Cutover is planned around your busy periods, users are trained before go-live, and historical data stays accessible for reporting and compliance.",
+          "audience": [
+            "Businesses running on unsupported or end-of-life software",
+            "Teams dependent on one person who understands the old system",
+            "Companies moving from on-premise servers to the cloud"
+          ],
+          "features": [
+            {
+              "title": "System discovery",
+              "description": "Every feature, report, and workaround documented."
+            },
+            {
+              "title": "Replacement selection or build",
+              "description": "Off-the-shelf where it fits, custom where it does not."
+            },
+            {
+              "title": "Data cleanup and migration",
+              "description": "Duplicates removed, formats standardized, history preserved."
+            },
+            {
+              "title": "Parallel running",
+              "description": "Old and new compared until results match."
+            },
+            {
+              "title": "Phased cutover",
+              "description": "Go-live planned around your calendar to limit disruption."
+            },
+            {
+              "title": "Archive access",
+              "description": "Historical records kept searchable for reporting and audits."
+            }
+          ],
+          "problems": [
+            "Critical software is no longer supported",
+            "Only one employee knows how the system works",
+            "Remote access to an old server is slow and risky",
+            "Data is trapped in formats nothing else can read"
+          ],
+          "integrations": [
+            "Microsoft Access",
+            "SQL Server",
+            "Azure",
+            "AWS",
+            "Google Cloud",
+            "Airtable",
+            "Salesforce",
+            "NetSuite"
+          ],
+          "faq": [
+            {
+              "question": "How do you avoid losing data during migration?",
+              "answer": "We profile and clean the data first, run trial migrations, reconcile record counts and totals, and keep the legacy system available until the new one is verified."
+            },
+            {
+              "question": "Can we migrate in phases?",
+              "answer": "Yes. Phased migrations by module, location, or team reduce risk and let users adapt gradually."
+            },
+            {
+              "question": "What happens to our old reports?",
+              "answer": "We rebuild the reports people rely on in the new system or a BI tool, and archive historical data so it stays accessible."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/erp-enterprise-systems/legacy-modernization/"
+        },
+        {
+          "id": "document-management-esignature",
+          "name": "Document Management & E-Signature Platform",
+          "tagline": "Generate, sign, file, and find documents automatically, with full version history.",
+          "description": "A document system that generates contracts, agreements, and forms from templates using data already in your CRM or ERP, sends them for e-signature, and files the signed copy in the right folder with consistent naming. Documents are searchable by content, permissions control who sees what, retention rules archive or delete records on schedule, and reminders chase unsigned documents and upcoming renewals so nothing expires unnoticed.",
+          "audience": [
+            "Professional services and legal teams",
+            "Real estate, lending, and insurance businesses",
+            "HR teams managing employee paperwork"
+          ],
+          "features": [
+            {
+              "title": "Template-based generation",
+              "description": "Documents filled from CRM, ERP, or form data."
+            },
+            {
+              "title": "E-signature workflows",
+              "description": "Signing order, reminders, and audit trails."
+            },
+            {
+              "title": "Automatic filing",
+              "description": "Signed documents named and stored in the right place."
+            },
+            {
+              "title": "Full-text search",
+              "description": "Find any document by its contents."
+            },
+            {
+              "title": "Permissions and retention",
+              "description": "Access controls and retention schedules enforced."
+            },
+            {
+              "title": "Renewal and expiration alerts",
+              "description": "Reminders before contracts and documents lapse."
+            }
+          ],
+          "problems": [
+            "Contracts are drafted by copying old ones",
+            "Signed documents saved in random folders",
+            "Unsigned agreements stall deals and onboarding",
+            "Contract renewals are missed"
+          ],
+          "integrations": [
+            "DocuSign",
+            "Adobe Acrobat Sign",
+            "PandaDoc",
+            "SharePoint",
+            "Google Drive",
+            "Box",
+            "Dropbox",
+            "Salesforce"
+          ],
+          "faq": [
+            {
+              "question": "Are electronic signatures legally binding?",
+              "answer": "In the United States, electronic signatures are generally valid under the ESIGN Act and UETA for most business documents. Some documents have special requirements, which we account for."
+            },
+            {
+              "question": "Can documents be generated automatically from our CRM?",
+              "answer": "Yes. Templates pull names, pricing, terms, and other details directly from CRM or ERP records."
+            },
+            {
+              "question": "How do retention policies work?",
+              "answer": "Each document type gets a retention period. The system archives or flags documents for deletion when the period ends, keeping you compliant without manual cleanup."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/erp-enterprise-systems/document-management-esignature/"
+        },
+        {
+          "id": "compliance-risk-management",
+          "name": "Compliance & Risk Management Platform",
+          "tagline": "Track obligations, certifications, inspections, and incidents before deadlines slip.",
+          "description": "A compliance system that keeps every regulatory obligation, license, certification, inspection, and policy acknowledgment on a schedule with an owner. Deadlines trigger reminders and escalations, evidence is collected and stored with each task, incidents and corrective actions are tracked to closure, and dashboards show compliance status by location, team, or regulation. Audit packages can be generated in minutes because the documentation is captured as the work happens.",
+          "audience": [
+            "Healthcare, construction, and food businesses",
+            "Financial services and insurance firms",
+            "Multi-location operators with licenses and inspections"
+          ],
+          "features": [
+            {
+              "title": "Obligation register",
+              "description": "Every requirement mapped to an owner and schedule."
+            },
+            {
+              "title": "License and certification tracking",
+              "description": "Expiration alerts for the business and every employee."
+            },
+            {
+              "title": "Inspections and checklists",
+              "description": "Mobile inspections with photos and signatures."
+            },
+            {
+              "title": "Incident and corrective action tracking",
+              "description": "Issues logged, assigned, and followed to closure."
+            },
+            {
+              "title": "Policy acknowledgments",
+              "description": "Staff sign off on policies with automatic reminders."
+            },
+            {
+              "title": "Audit-ready reporting",
+              "description": "Evidence packaged for auditors and regulators on demand."
+            }
+          ],
+          "problems": [
+            "Deadlines tracked in calendars and memory",
+            "Expired licenses and certifications discovered too late",
+            "Audits mean days of gathering evidence",
+            "Incidents are logged but never followed up"
+          ],
+          "integrations": [
+            "Vanta",
+            "Drata",
+            "SafetyCulture",
+            "Microsoft 365",
+            "Google Workspace",
+            "DocuSign",
+            "Slack",
+            "Power BI"
+          ],
+          "faq": [
+            {
+              "question": "What does a compliance management system do?",
+              "answer": "It tracks regulatory requirements, deadlines, licenses, inspections, policies, and incidents, assigns owners, sends reminders, and stores evidence so you can prove compliance."
+            },
+            {
+              "question": "Can it track employee certifications?",
+              "answer": "Yes. Each employee's licenses and training are tracked with expiration reminders to them and their manager."
+            },
+            {
+              "question": "Does this replace legal advice?",
+              "answer": "No. It operationalizes the requirements your advisors identify, making sure the work gets done and documented."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/erp-enterprise-systems/compliance-risk-management/"
+        }
+      ]
+    },
+    {
+      "slug": "hr-people-training",
+      "name": "HR, People & Training",
+      "summary": "HR and payroll, recruiting, staff scheduling, employee portals, and learning platforms that take paperwork off your managers' plates.",
+      "url": "https://www.ljwebmanagement.com/solutions/hr-people-training/",
+      "solutions": [
+        {
+          "id": "hr-payroll",
+          "name": "HR & Payroll Management Platform",
+          "tagline": "Employee records, time, benefits, and payroll consolidated into one system.",
+          "description": "A centralized HR and payroll platform that consolidates employee records, time tracking, benefits administration, and payroll processing into one system instead of five disconnected tools. Employee self-service lets staff request time off, view pay stubs, and update their own information, automated payroll runs handle tax calculations and direct deposit, and compliance tracking flags expiring certifications or required documentation before it becomes a liability. The platform integrates with your existing time clock or scheduling system, and reporting dashboards give HR and leadership visibility into headcount, labor cost, and turnover without exporting data from four different logins.",
+          "audience": [
+            "Growing teams with HR spread across several tools",
+            "Multi-state employers managing payroll tax",
+            "Businesses with hourly staff and complex time rules"
+          ],
+          "features": [
+            {
+              "title": "Single employee record",
+              "description": "Personal, job, pay, and document data in one place."
+            },
+            {
+              "title": "Automated payroll",
+              "description": "Taxes, deductions, and direct deposit on schedule."
+            },
+            {
+              "title": "Time and attendance sync",
+              "description": "Hours flow from the time clock into payroll."
+            },
+            {
+              "title": "Benefits administration",
+              "description": "Enrollment, changes, and carrier feeds."
+            },
+            {
+              "title": "Employee self-service",
+              "description": "Pay stubs, time off, and personal updates without HR."
+            },
+            {
+              "title": "Workforce reporting",
+              "description": "Headcount, labor cost, overtime, and turnover."
+            }
+          ],
+          "problems": [
+            "HR data spread across spreadsheets and logins",
+            "Payroll errors from manual time entry",
+            "Time-off requests lost in email",
+            "No clear view of labor costs"
+          ],
+          "integrations": [
+            "Gusto",
+            "ADP",
+            "Rippling",
+            "Paychex",
+            "BambooHR",
+            "QuickBooks",
+            "Deputy",
+            "When I Work"
+          ],
+          "faq": [
+            {
+              "question": "Should HR and payroll be in the same system?",
+              "answer": "Usually yes. A single system removes duplicate data entry between HR records and payroll, which is where many payroll errors begin."
+            },
+            {
+              "question": "Can you connect our existing time clock?",
+              "answer": "Yes. We connect most time clock and scheduling systems so approved hours flow directly into payroll."
+            },
+            {
+              "question": "Do you replace our payroll provider?",
+              "answer": "Not necessarily. We often keep a trusted provider like Gusto or ADP and connect it to the rest of your systems."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/hr-people-training/hr-payroll/"
+        },
+        {
+          "id": "recruiting-ats",
+          "name": "Applicant Tracking & Recruiting Platform",
+          "tagline": "Post once, screen faster, schedule interviews automatically, and hire before competitors do.",
+          "description": "An applicant tracking system that posts jobs to your careers page and major job boards, collects applications in one pipeline, and moves candidates forward automatically. Knockout questions and AI-assisted screening surface qualified applicants, interview scheduling happens through self-booking links, and candidates get timely status updates so none are left wondering. Offer letters are generated and signed electronically, and hired candidates flow straight into onboarding and payroll.",
+          "audience": [
+            "High-volume hourly employers",
+            "Growing companies hiring across many roles",
+            "Teams losing candidates to slow responses"
+          ],
+          "features": [
+            {
+              "title": "Multi-board job posting",
+              "description": "One posting distributed to Indeed, LinkedIn, and more."
+            },
+            {
+              "title": "Branded careers page",
+              "description": "Mobile-friendly applications in minutes."
+            },
+            {
+              "title": "Screening and scoring",
+              "description": "Knockout questions and AI-assisted resume review."
+            },
+            {
+              "title": "Self-scheduled interviews",
+              "description": "Candidates book open times on the hiring team's calendars."
+            },
+            {
+              "title": "Candidate communication",
+              "description": "Automatic status updates by email and text."
+            },
+            {
+              "title": "Offer to onboarding handoff",
+              "description": "E-signed offers that create the new hire record."
+            }
+          ],
+          "problems": [
+            "Applications scattered across job boards and inboxes",
+            "Good candidates accept other offers while you schedule",
+            "Hiring managers screen resumes by hand",
+            "Applicants never hear back"
+          ],
+          "integrations": [
+            "Indeed",
+            "LinkedIn",
+            "Greenhouse",
+            "Lever",
+            "Workable",
+            "BambooHR",
+            "Google Calendar",
+            "DocuSign"
+          ],
+          "faq": [
+            {
+              "question": "What is an applicant tracking system?",
+              "answer": "An ATS collects job applications from every source into one pipeline and helps the hiring team screen, interview, communicate with, and hire candidates efficiently."
+            },
+            {
+              "question": "Is AI resume screening fair?",
+              "answer": "AI should assist, not decide. We configure screening around job-related criteria, keep humans in charge of decisions, and review outcomes for bias."
+            },
+            {
+              "question": "Can candidates apply by text?",
+              "answer": "Yes. Text-to-apply and short mobile applications are especially effective for hourly roles."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/hr-people-training/recruiting-ats/"
+        },
+        {
+          "id": "staff-scheduling-time-clock",
+          "name": "Staff Scheduling & Time Clock System",
+          "tagline": "Build schedules in minutes, fill open shifts fast, and pay exactly the hours worked.",
+          "description": "A scheduling and time tracking system for hourly teams that builds schedules from templates and forecasted demand, publishes them to employees' phones, and lets staff swap shifts and pick up open ones with manager approval. Mobile clock-in with geofencing or kiosk photo verification prevents buddy punching, overtime and break rules are enforced as the schedule is built, and approved timesheets flow straight into payroll.",
+          "audience": [
+            "Restaurants, retail, and hospitality",
+            "Healthcare and home care agencies",
+            "Field crews and multi-location teams"
+          ],
+          "features": [
+            {
+              "title": "Schedule templates and forecasting",
+              "description": "Build shifts around expected demand."
+            },
+            {
+              "title": "Mobile schedules and alerts",
+              "description": "Staff see shifts and changes on their phones."
+            },
+            {
+              "title": "Shift swaps and open shifts",
+              "description": "Coverage handled by staff with manager approval."
+            },
+            {
+              "title": "Verified clock-in",
+              "description": "Geofencing, photo, or kiosk clock-in."
+            },
+            {
+              "title": "Labor rule enforcement",
+              "description": "Overtime, breaks, and predictive scheduling rules."
+            },
+            {
+              "title": "Payroll-ready timesheets",
+              "description": "Approved hours sent straight to payroll."
+            }
+          ],
+          "problems": [
+            "Schedules built in spreadsheets and posted on a wall",
+            "Managers spend hours finding shift coverage",
+            "Buddy punching and timesheet errors",
+            "Surprise overtime costs"
+          ],
+          "integrations": [
+            "7shifts",
+            "Deputy",
+            "When I Work",
+            "Homebase",
+            "Toast",
+            "Gusto",
+            "ADP",
+            "QuickBooks Time"
+          ],
+          "faq": [
+            {
+              "question": "How does geofenced clock-in work?",
+              "answer": "Employees can only clock in on their phone when they are within a set distance of the work location, which reduces time theft without extra hardware."
+            },
+            {
+              "question": "Can the system help control overtime?",
+              "answer": "Yes. Managers see projected overtime while building the schedule and get alerts before an employee crosses the threshold."
+            },
+            {
+              "question": "Does it work for multiple locations?",
+              "answer": "Yes. Each location has its own schedule, with staff able to work across locations and combined labor reporting."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/hr-people-training/staff-scheduling-time-clock/"
+        },
+        {
+          "id": "employee-portal-intranet",
+          "name": "Employee Portal & Intranet",
+          "tagline": "One home for company news, policies, forms, requests, and the tools staff use daily.",
+          "description": "A branded employee portal that gives every team member one place to find announcements, policies, procedures, forms, benefits information, and links to the tools they use. Requests for IT help, equipment, time off, or reimbursements are submitted through simple forms that route to the right approver, onboarding checklists guide new hires through their first weeks, and a searchable directory helps people find who does what. Mobile access means frontline staff stay informed too.",
+          "audience": [
+            "Companies with remote, hybrid, or frontline staff",
+            "Growing teams where information lives in email",
+            "Organizations onboarding employees frequently"
+          ],
+          "features": [
+            {
+              "title": "Company news and announcements",
+              "description": "Targeted by location, team, or role."
+            },
+            {
+              "title": "Policy and SOP library",
+              "description": "Searchable documents with acknowledgment tracking."
+            },
+            {
+              "title": "Request forms and approvals",
+              "description": "IT, HR, facilities, and finance requests routed automatically."
+            },
+            {
+              "title": "Onboarding checklists",
+              "description": "Step-by-step tasks for new hires and their managers."
+            },
+            {
+              "title": "People directory",
+              "description": "Find colleagues by team, skill, or location."
+            },
+            {
+              "title": "Mobile access",
+              "description": "Frontline staff included without company email."
+            }
+          ],
+          "problems": [
+            "Employees cannot find the latest policy or form",
+            "Requests get lost in email and chat",
+            "New hires ask the same questions repeatedly",
+            "Frontline workers miss company updates"
+          ],
+          "integrations": [
+            "SharePoint",
+            "Microsoft Teams",
+            "Google Sites",
+            "Slack",
+            "Notion",
+            "Connecteam",
+            "BambooHR",
+            "Okta"
+          ],
+          "faq": [
+            {
+              "question": "What is the difference between an intranet and an employee portal?",
+              "answer": "The terms overlap. An intranet usually focuses on news and documents, while a portal adds self-service requests, onboarding, and links into HR and IT systems. We typically build both together."
+            },
+            {
+              "question": "Can frontline employees without email use it?",
+              "answer": "Yes. Mobile apps and SMS login let deskless workers access the portal on their phones."
+            },
+            {
+              "question": "Can we build it on Microsoft 365?",
+              "answer": "Yes. SharePoint and Teams are a strong foundation for companies already using Microsoft 365."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/hr-people-training/employee-portal-intranet/"
+        },
+        {
+          "id": "lms-deployment",
+          "name": "Learning Management System (LMS) Deployment",
+          "tagline": "Onboarding, compliance, and certification training delivered and tracked automatically.",
+          "description": "A fully configured learning management platform used to onboard new employees, deliver ongoing compliance training, or run certification programs, complete with course-building tools, progress tracking, automated reminders for incomplete training, and reporting dashboards for managers and HR. This offering includes initial setup, custom branding, content migration or creation, and integration with existing HR systems so training completion data flows automatically into employee records.",
+          "audience": [
+            "Companies with mandatory compliance training",
+            "Franchises and multi-location brands standardizing training",
+            "Organizations selling courses or certifications"
+          ],
+          "features": [
+            {
+              "title": "Branded learning portal",
+              "description": "Your logo, colors, and domain."
+            },
+            {
+              "title": "Course building and migration",
+              "description": "Videos, quizzes, and documents organized into paths."
+            },
+            {
+              "title": "Automatic enrollment",
+              "description": "Courses assigned by role, location, or hire date."
+            },
+            {
+              "title": "Reminders and escalations",
+              "description": "Learners and managers nudged on overdue training."
+            },
+            {
+              "title": "Certificates and recertification",
+              "description": "Expirations tracked with automatic re-enrollment."
+            },
+            {
+              "title": "HR integration and reporting",
+              "description": "Completion data synced to employee records."
+            }
+          ],
+          "problems": [
+            "Training tracked on paper sign-in sheets",
+            "No proof of compliance training during audits",
+            "Every location trains differently",
+            "Managers chase employees to finish courses"
+          ],
+          "integrations": [
+            "TalentLMS",
+            "LearnDash",
+            "Docebo",
+            "Moodle",
+            "Thinkific",
+            "BambooHR",
+            "Zoom",
+            "SCORM"
+          ],
+          "faq": [
+            {
+              "question": "What is an LMS?",
+              "answer": "A learning management system delivers online courses, tracks who completed what, and reports on training across your organization."
+            },
+            {
+              "question": "Can we sell courses to customers with an LMS?",
+              "answer": "Yes. Many LMS platforms support e-commerce, so you can sell courses, memberships, or certifications to external learners."
+            },
+            {
+              "question": "Can you create the course content?",
+              "answer": "Yes. We can convert existing manuals and slide decks into online courses, or produce new content with your subject matter experts."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/hr-people-training/lms-deployment/"
+        }
+      ]
+    },
+    {
+      "slug": "data-ai-analytics",
+      "name": "Data, AI & Analytics",
+      "summary": "Dashboards, data warehouses, custom AI agents, document AI, and forecasting that turn your data into decisions and your busywork into automation.",
+      "url": "https://www.ljwebmanagement.com/solutions/data-ai-analytics/",
+      "solutions": [
+        {
+          "id": "bi-reporting",
+          "name": "Business Intelligence & Reporting Dashboards",
+          "tagline": "Live dashboards built from every system, instead of a monthly spreadsheet someone rebuilds by hand.",
+          "description": "A centralized reporting and business intelligence platform that pulls data from your CRM, ERP, POS, marketing tools, and financial systems into live dashboards instead of a monthly spreadsheet someone has to manually rebuild. Custom dashboards are built around the metrics that actually matter to your business (revenue, margin, customer acquisition cost, pipeline velocity, whatever leadership needs to see) with drill-down detail available on demand. Automated report delivery pushes key numbers to stakeholders' inboxes on a schedule, and role-based access means every team sees the data relevant to them without wading through everyone else's.",
+          "audience": [
+            "Leadership teams making decisions on stale numbers",
+            "Operations managers tracking KPIs across locations",
+            "Finance teams rebuilding the same reports monthly"
+          ],
+          "features": [
+            {
+              "title": "Data connectors",
+              "description": "CRM, ERP, POS, ads, and accounting data combined."
+            },
+            {
+              "title": "KPI definitions",
+              "description": "Agreed formulas so everyone uses the same numbers."
+            },
+            {
+              "title": "Interactive dashboards",
+              "description": "Filter, drill down, and compare periods."
+            },
+            {
+              "title": "Scheduled delivery",
+              "description": "Reports emailed or posted to Slack automatically."
+            },
+            {
+              "title": "Threshold alerts",
+              "description": "Notifications when a metric moves outside its range."
+            },
+            {
+              "title": "Role-based access",
+              "description": "Each team sees the data relevant to them."
+            }
+          ],
+          "problems": [
+            "Reports take days to compile each month",
+            "Departments argue over whose numbers are right",
+            "Decisions made on outdated data",
+            "Nobody notices a problem until it is expensive"
+          ],
+          "integrations": [
+            "Power BI",
+            "Looker Studio",
+            "Tableau",
+            "Databox",
+            "QuickBooks",
+            "Salesforce",
+            "Google Analytics 4",
+            "BigQuery"
+          ],
+          "faq": [
+            {
+              "question": "Which BI tool should we use?",
+              "answer": "Power BI is a strong default for Microsoft shops, Looker Studio suits Google-centric and budget-conscious teams, and Tableau excels at complex analysis. We recommend based on your data sources and users."
+            },
+            {
+              "question": "Do we need a data warehouse for dashboards?",
+              "answer": "Not always. Simple dashboards can connect directly to source systems. A warehouse becomes worthwhile when you combine many sources or need historical trends."
+            },
+            {
+              "question": "How do we make sure the numbers are right?",
+              "answer": "We document KPI definitions with your leadership, reconcile dashboard totals to source systems, and add data quality checks."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/data-ai-analytics/bi-reporting/"
+        },
+        {
+          "id": "data-warehouse-pipelines",
+          "name": "Data Warehouse & Pipeline Setup",
+          "tagline": "One clean, historical home for all your business data, refreshed automatically.",
+          "description": "A modern data stack that extracts data from your business systems, loads it into a cloud warehouse, and transforms it into clean, documented tables ready for reporting, analysis, and AI. Pipelines refresh on a schedule or in near real time, history is preserved even when source systems overwrite records, and data quality tests catch problems before they reach a dashboard. Your team gets a single source of truth that every report, model, and integration can rely on.",
+          "audience": [
+            "Companies combining data from five or more systems",
+            "Teams that need historical trend analysis",
+            "Businesses preparing data for AI and forecasting"
+          ],
+          "features": [
+            {
+              "title": "Automated extraction",
+              "description": "Managed connectors for SaaS apps, databases, and files."
+            },
+            {
+              "title": "Cloud warehouse",
+              "description": "BigQuery, Snowflake, or Azure set up and secured."
+            },
+            {
+              "title": "Transformation models",
+              "description": "Clean, joined, documented business tables."
+            },
+            {
+              "title": "Historical snapshots",
+              "description": "Track how records change over time."
+            },
+            {
+              "title": "Data quality tests",
+              "description": "Alerts on missing, duplicate, or unexpected data."
+            },
+            {
+              "title": "Access controls",
+              "description": "Permissions and auditing for sensitive data."
+            }
+          ],
+          "problems": [
+            "Analysts spend most of their time cleaning data",
+            "Historical data is lost when systems overwrite records",
+            "Every report pulls data a different way",
+            "AI projects stall on messy data"
+          ],
+          "integrations": [
+            "BigQuery",
+            "Snowflake",
+            "Azure Synapse",
+            "Fivetran",
+            "Airbyte",
+            "dbt",
+            "PostgreSQL",
+            "Power BI"
+          ],
+          "faq": [
+            {
+              "question": "What is a data warehouse?",
+              "answer": "A central database optimized for analysis that stores cleaned, combined data from your business systems, including history, so reporting and analytics run from one trusted source."
+            },
+            {
+              "question": "Is a data warehouse expensive to run?",
+              "answer": "For most small and midsize businesses, cloud warehouse costs are modest because you pay for storage and queries used. We design to keep costs predictable."
+            },
+            {
+              "question": "How often is the data refreshed?",
+              "answer": "Anywhere from daily to every few minutes, depending on how current the reports need to be and what the source systems allow."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/data-ai-analytics/data-warehouse-pipelines/"
+        },
+        {
+          "id": "custom-ai-agents",
+          "name": "Custom AI Agents & Assistants",
+          "tagline": "AI that takes real actions in your systems, with guardrails and human approval where it matters.",
+          "description": "Custom AI agents built to handle multi-step work that used to require a person: researching leads, triaging inboxes, drafting replies and proposals, updating records, answering staff questions from internal documents, and coordinating tasks across your tools. Each agent is connected to the systems it needs through secure, permissioned integrations, grounded in your data, and given clear limits, with human approval on actions that carry risk. Logs and evaluations show what each agent did and how well, so you can expand its responsibilities with confidence.",
+          "audience": [
+            "Teams buried in repetitive, judgment-light work",
+            "Businesses with knowledge spread across many documents",
+            "Leaders exploring AI beyond chat"
+          ],
+          "features": [
+            {
+              "title": "Use case discovery",
+              "description": "Find the tasks where an agent saves the most time safely."
+            },
+            {
+              "title": "Tool and system access",
+              "description": "Agents read and update your CRM, inbox, and apps through secure integrations."
+            },
+            {
+              "title": "Grounded in your knowledge",
+              "description": "Answers and actions based on your documents and data."
+            },
+            {
+              "title": "Human-in-the-loop approvals",
+              "description": "People approve sensitive actions before they happen."
+            },
+            {
+              "title": "Guardrails and permissions",
+              "description": "Clear limits on what each agent can see and do."
+            },
+            {
+              "title": "Monitoring and evaluation",
+              "description": "Logs, quality checks, and cost tracking."
+            }
+          ],
+          "problems": [
+            "Skilled staff spend hours on repetitive research and admin",
+            "Internal knowledge is hard to find",
+            "Off-the-shelf chatbots cannot take action",
+            "Concern about AI making unchecked mistakes"
+          ],
+          "integrations": [
+            "Claude",
+            "OpenAI",
+            "Microsoft Copilot",
+            "n8n",
+            "Make.com",
+            "Zapier",
+            "Slack",
+            "Google Workspace"
+          ],
+          "faq": [
+            {
+              "question": "What is an AI agent?",
+              "answer": "An AI agent is a system that uses a language model to plan and complete multi-step tasks, using tools like your CRM, email, or databases, rather than only answering questions in a chat window."
+            },
+            {
+              "question": "Is it safe to let AI update our systems?",
+              "answer": "With the right design, yes. Agents get only the permissions they need, risky actions require human approval, and every action is logged."
+            },
+            {
+              "question": "Will AI agents replace our staff?",
+              "answer": "In practice, agents remove repetitive work so people can focus on customers, judgment calls, and growth. Most clients redeploy time rather than reduce headcount."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/data-ai-analytics/custom-ai-agents/"
+        },
+        {
+          "id": "document-ai-extraction",
+          "name": "AI Document Processing & Data Extraction",
+          "tagline": "Turn invoices, forms, IDs, and PDFs into clean data in your systems, without typing.",
+          "description": "An AI document processing pipeline that reads incoming documents (invoices, purchase orders, applications, intake forms, bills of lading, contracts, and scanned paperwork), extracts the fields you need, validates them against your rules and records, and posts the results into your ERP, CRM, or database. Documents arrive from email, upload portals, or scanners, low-confidence fields are sent to a quick human review queue, and every document is filed with its extracted data for audit.",
+          "audience": [
+            "Teams keying data from PDFs and paper forms",
+            "Logistics, insurance, healthcare, and finance operations",
+            "Businesses processing hundreds of documents a week"
+          ],
+          "features": [
+            {
+              "title": "Multi-source intake",
+              "description": "Email inboxes, portals, scanners, and shared drives."
+            },
+            {
+              "title": "Field extraction",
+              "description": "Header fields, tables, and line items captured accurately."
+            },
+            {
+              "title": "Validation rules",
+              "description": "Checks against vendors, customers, POs, and math."
+            },
+            {
+              "title": "Human review queue",
+              "description": "Only uncertain fields need a person."
+            },
+            {
+              "title": "System posting",
+              "description": "Data written to your ERP, CRM, or database automatically."
+            },
+            {
+              "title": "Searchable archive",
+              "description": "Every document stored with its extracted data."
+            }
+          ],
+          "problems": [
+            "Staff retype data from PDFs all day",
+            "Typos cause billing and shipping errors",
+            "Paper backlogs build up at busy times",
+            "Hiring more people to keep up with volume"
+          ],
+          "integrations": [
+            "Azure Document Intelligence",
+            "Google Document AI",
+            "AWS Textract",
+            "Claude",
+            "OpenAI",
+            "SharePoint",
+            "NetSuite",
+            "QuickBooks"
+          ],
+          "faq": [
+            {
+              "question": "How accurate is AI document extraction?",
+              "answer": "Accuracy is high on typed documents and improves with consistent layouts. Every field gets a confidence score, and anything below the threshold goes to a person, so errors are caught before posting."
+            },
+            {
+              "question": "Can it read handwriting?",
+              "answer": "Modern models handle clear handwriting reasonably well. For critical handwritten fields we route to human review."
+            },
+            {
+              "question": "What happens to our documents and data?",
+              "answer": "We use enterprise AI services with data protection terms, store documents in your environment where possible, and restrict access to those who need it."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/data-ai-analytics/document-ai-extraction/"
+        },
+        {
+          "id": "forecasting-predictive-analytics",
+          "name": "Forecasting & Predictive Analytics",
+          "tagline": "Predict demand, revenue, churn, and staffing needs so you can act before it happens.",
+          "description": "Forecasting and predictive models built on your historical data to answer the questions that drive planning: how much will we sell, how much stock and staff will we need, which customers are likely to leave, and which leads are most likely to close. Models are trained and validated on your data, refreshed automatically, and delivered inside the tools your team already uses, such as reorder suggestions in your inventory system or churn-risk flags in your CRM, with plain-language explanations of what drives each prediction.",
+          "audience": [
+            "Retailers and distributors planning inventory",
+            "Subscription businesses fighting churn",
+            "Service businesses planning staffing and capacity"
+          ],
+          "features": [
+            {
+              "title": "Demand and sales forecasting",
+              "description": "Projections by product, location, and week."
+            },
+            {
+              "title": "Churn prediction",
+              "description": "At-risk customers flagged early for outreach."
+            },
+            {
+              "title": "Lead and opportunity scoring",
+              "description": "Win likelihood based on your historical deals."
+            },
+            {
+              "title": "Staffing forecasts",
+              "description": "Labor needs matched to expected demand."
+            },
+            {
+              "title": "Delivered in your tools",
+              "description": "Predictions inside your CRM, ERP, or dashboards."
+            },
+            {
+              "title": "Explainable results",
+              "description": "Plain-language drivers behind every forecast."
+            }
+          ],
+          "problems": [
+            "Planning based on gut feel and last year's numbers",
+            "Overstock and stockouts at the same time",
+            "Customers leave without warning",
+            "Overstaffed slow days and understaffed busy ones"
+          ],
+          "integrations": [
+            "BigQuery ML",
+            "Azure Machine Learning",
+            "Python",
+            "Power BI",
+            "Salesforce",
+            "NetSuite",
+            "Shopify",
+            "Snowflake"
+          ],
+          "faq": [
+            {
+              "question": "How much data do we need for forecasting?",
+              "answer": "Generally at least one to two years of consistent history for seasonal forecasting. Simpler models can work with less, and we assess your data before committing to an approach."
+            },
+            {
+              "question": "How accurate will the forecasts be?",
+              "answer": "Accuracy depends on your data and how predictable your business is. We measure accuracy on held-out history and report it honestly before you rely on the model."
+            },
+            {
+              "question": "Do we need a data scientist to use the results?",
+              "answer": "No. Predictions are delivered as simple numbers, flags, and suggestions inside the tools your team already uses."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/data-ai-analytics/forecasting-predictive-analytics/"
+        }
+      ]
+    },
+    {
+      "slug": "industry-platforms-saas",
+      "name": "Industry Platforms, Apps & SaaS",
+      "summary": "Restaurant POS, marketplaces, property management platforms, custom SaaS products, mobile apps, and managed hosting for your software.",
+      "url": "https://www.ljwebmanagement.com/solutions/industry-platforms-saas/",
+      "solutions": [
+        {
+          "id": "restaurant-pos",
+          "name": "Restaurant Point of Sale (POS) System",
+          "tagline": "Order entry, tabs, kitchen display, and real-time reporting in one connected system.",
+          "description": "A complete point-of-sale platform built for restaurants, cafes, and quick-service operations, covering order entry, table and tab management, and kitchen display integration in one connected system. Checkout closes out tabs and records how each guest paid (cash, card, or other) for clean bookkeeping, and it pairs with your existing card processor or terminal rather than handling card charges itself. The platform also includes menu management, role-based staff logins, and real-time reporting dashboards, giving owners and managers accurate visibility into top-selling items, average tab size, and daily revenue without reconciling numbers across separate tools. This offering includes hardware setup, menu configuration, and staff training to get your team live fast.",
+          "audience": [
+            "Full-service restaurants and bars",
+            "Cafes and quick-service counters",
+            "Food trucks and multi-concept operators"
+          ],
+          "features": [
+            {
+              "title": "Order entry and modifiers",
+              "description": "Fast ordering with modifiers, courses, and notes."
+            },
+            {
+              "title": "Tables, tabs, and splits",
+              "description": "Floor plans, open tabs, and split checks."
+            },
+            {
+              "title": "Kitchen display integration",
+              "description": "Orders routed to the right station instantly."
+            },
+            {
+              "title": "Menu management",
+              "description": "Update items, prices, and availability everywhere at once."
+            },
+            {
+              "title": "Role-based staff logins",
+              "description": "Permissions for servers, managers, and owners."
+            },
+            {
+              "title": "Real-time reporting",
+              "description": "Sales, item mix, and average tab by shift."
+            }
+          ],
+          "problems": [
+            "Orders lost between the counter and the kitchen",
+            "End-of-night reconciliation takes too long",
+            "Menu changes made in several places",
+            "No clear view of what sells and when"
+          ],
+          "integrations": [
+            "Toast",
+            "Square",
+            "Clover",
+            "Stripe Terminal",
+            "DoorDash",
+            "Uber Eats",
+            "7shifts",
+            "QuickBooks"
+          ],
+          "faq": [
+            {
+              "question": "Does the POS process card payments itself?",
+              "answer": "No. It pairs with your existing card processor or terminal and records how each guest paid, which keeps payment processing flexible and bookkeeping clean."
+            },
+            {
+              "question": "Can it connect to delivery apps?",
+              "answer": "Yes. Orders from DoorDash, Uber Eats, and online ordering can flow into the same kitchen queue and reporting."
+            },
+            {
+              "question": "How long does it take to go live?",
+              "answer": "Timing depends on menu size and hardware, and includes menu configuration, hardware setup, and staff training before your first service."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/industry-platforms-saas/restaurant-pos/"
+        },
+        {
+          "id": "marketplace-platform",
+          "name": "Marketplace & Multi-Vendor Platform",
+          "tagline": "Connect vendors and customers with routing, commissions, and split payouts handled automatically.",
+          "description": "A multi-vendor marketplace platform for businesses connecting multiple sellers, providers, or contractors with customers through a single storefront: a local services marketplace, a multi-brand e-commerce platform, or a vendor network. The platform handles vendor onboarding and profile management, order or booking routing to the correct vendor, commission calculation, and split payouts, all without manual reconciliation. Vendors get their own dashboard for managing listings, orders, and payouts, and platform admins get oversight tools for approving vendors, resolving disputes, and monitoring marketplace-wide performance from one place.",
+          "audience": [
+            "Entrepreneurs launching a services or product marketplace",
+            "Associations and networks connecting members with buyers",
+            "Retailers adding third-party sellers"
+          ],
+          "features": [
+            {
+              "title": "Vendor onboarding",
+              "description": "Applications, verification, and profile setup."
+            },
+            {
+              "title": "Listings and search",
+              "description": "Products or services searchable by category and location."
+            },
+            {
+              "title": "Order and booking routing",
+              "description": "Every order sent to the right vendor automatically."
+            },
+            {
+              "title": "Commissions and split payouts",
+              "description": "Fees calculated and payouts sent without reconciliation."
+            },
+            {
+              "title": "Vendor dashboards",
+              "description": "Listings, orders, reviews, and payouts in one place."
+            },
+            {
+              "title": "Admin oversight",
+              "description": "Approvals, disputes, and marketplace analytics."
+            }
+          ],
+          "problems": [
+            "Coordinating vendors by email and spreadsheets",
+            "Paying vendors manually after every sale",
+            "No way to scale beyond a handful of sellers",
+            "Disputes with no record of what happened"
+          ],
+          "integrations": [
+            "Stripe Connect",
+            "Sharetribe",
+            "Shopify",
+            "Algolia",
+            "Twilio",
+            "SendGrid",
+            "Google Maps",
+            "QuickBooks"
+          ],
+          "faq": [
+            {
+              "question": "How do split payouts work?",
+              "answer": "Using a payments platform like Stripe Connect, each customer payment is divided automatically between the vendor and the marketplace commission, and vendors are paid out on schedule."
+            },
+            {
+              "question": "Should we build a marketplace from scratch?",
+              "answer": "Not always. Platforms like Sharetribe can launch a marketplace quickly, and custom development makes sense when your workflows or scale require it."
+            },
+            {
+              "question": "Who handles vendor taxes and verification?",
+              "answer": "Payment platforms collect tax information and verify vendor identity as part of onboarding, which we configure for your marketplace."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/industry-platforms-saas/marketplace-platform/"
+        },
+        {
+          "id": "property-management-platform",
+          "name": "Property Management Platform",
+          "tagline": "Leasing, rent collection, maintenance, and owner reporting in one connected system.",
+          "description": "A property management system for residential, commercial, and short-term rental operators that connects listings, applications, leases, rent collection, maintenance, and owner reporting. Applicants apply and screen online, leases are generated and e-signed, rent is collected by ACH with automatic late fees and reminders, and maintenance requests are triaged and dispatched to vendors with photos and updates sent back to tenants. Owners get monthly statements and a portal, and accounting stays reconciled by property.",
+          "audience": [
+            "Residential property managers and landlords",
+            "Commercial and mixed-use portfolios",
+            "Short-term and vacation rental operators"
+          ],
+          "features": [
+            {
+              "title": "Listings and online applications",
+              "description": "Syndicated listings with online screening."
+            },
+            {
+              "title": "Lease generation and e-signature",
+              "description": "Leases created from templates and signed online."
+            },
+            {
+              "title": "Online rent collection",
+              "description": "ACH and card payments with automatic late fees."
+            },
+            {
+              "title": "Maintenance requests and dispatch",
+              "description": "Tenant requests routed to vendors with status updates."
+            },
+            {
+              "title": "Owner portal and statements",
+              "description": "Monthly statements and documents for every owner."
+            },
+            {
+              "title": "Property-level accounting",
+              "description": "Income and expenses tracked by unit and property."
+            }
+          ],
+          "problems": [
+            "Chasing rent payments and late fees by hand",
+            "Maintenance requests lost in texts and calls",
+            "Owner statements built manually every month",
+            "Leases and documents scattered across folders"
+          ],
+          "integrations": [
+            "AppFolio",
+            "Buildium",
+            "Rent Manager",
+            "Yardi",
+            "Guesty",
+            "QuickBooks",
+            "Zillow",
+            "DocuSign"
+          ],
+          "faq": [
+            {
+              "question": "Should we use AppFolio or Buildium or a custom system?",
+              "answer": "AppFolio and Buildium fit most residential portfolios. We implement and automate them, and build custom tools for unique workflows or integrations they do not cover."
+            },
+            {
+              "question": "Can tenants pay rent online automatically?",
+              "answer": "Yes. Tenants can set up autopay by ACH or card, and reminders and late fees are applied according to the lease."
+            },
+            {
+              "question": "How are maintenance vendors managed?",
+              "answer": "Requests are categorized and dispatched to approved vendors, who update status and upload photos and invoices for owner approval and billing."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/industry-platforms-saas/property-management-platform/"
+        },
+        {
+          "id": "custom-saas-development",
+          "name": "Custom SaaS Product Development",
+          "tagline": "Turn your expertise or internal tool into a subscription software product.",
+          "description": "End-to-end development of a software-as-a-service product, from validating the idea and defining a focused first version through design, development, launch, and growth. We build secure multi-tenant applications with user accounts, roles, subscription billing, onboarding, and admin tools, on modern cloud infrastructure that scales as customers sign up. Analytics show how customers use the product, and an iterative roadmap keeps development focused on what drives retention and revenue.",
+          "audience": [
+            "Founders with a validated software idea",
+            "Businesses productizing an internal tool",
+            "Industry experts building software for their niche"
+          ],
+          "features": [
+            {
+              "title": "Product discovery",
+              "description": "Users, problems, and a focused first version defined."
+            },
+            {
+              "title": "UX and interface design",
+              "description": "Clickable prototypes tested before development."
+            },
+            {
+              "title": "Multi-tenant architecture",
+              "description": "Secure data separation between customers."
+            },
+            {
+              "title": "Accounts, roles, and billing",
+              "description": "Sign-up, permissions, and subscriptions built in."
+            },
+            {
+              "title": "Admin and support tools",
+              "description": "Manage customers, plans, and issues."
+            },
+            {
+              "title": "Product analytics",
+              "description": "Usage, activation, and retention tracking."
+            }
+          ],
+          "problems": [
+            "A great idea with no technical team",
+            "An internal tool other companies want to buy",
+            "A prototype that cannot scale or be secured",
+            "Unclear what to build first"
+          ],
+          "integrations": [
+            "AWS",
+            "Google Cloud",
+            "Azure",
+            "Stripe Billing",
+            "Auth0",
+            "PostgreSQL",
+            "React",
+            "PostHog"
+          ],
+          "faq": [
+            {
+              "question": "How do you keep the first version from getting too big?",
+              "answer": "We define the smallest product that solves the core problem for a specific customer, launch it, and expand based on real usage rather than assumptions."
+            },
+            {
+              "question": "Who owns the code?",
+              "answer": "You do. We deliver the source code and infrastructure in accounts you control."
+            },
+            {
+              "question": "Can you run the product after launch?",
+              "answer": "Yes. Our managed SaaS service covers hosting, monitoring, security, and ongoing development."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/industry-platforms-saas/custom-saas-development/"
+        },
+        {
+          "id": "mobile-app-development",
+          "name": "Mobile App Development",
+          "tagline": "iPhone and Android apps for customers or staff, connected to your existing systems.",
+          "description": "Design and development of mobile apps for iPhone and Android, whether customer-facing (ordering, booking, loyalty, account management) or internal (field data collection, inspections, inventory scanning, employee communication). We build cross-platform apps that share one codebase, connect them to your CRM, ERP, and back-office systems through secure APIs, and handle app store submission, push notifications, offline support, and analytics. Ongoing updates keep the app compatible with new OS releases.",
+          "audience": [
+            "Brands whose customers order or book repeatedly",
+            "Field teams collecting data on site",
+            "Businesses replacing paper forms with mobile workflows"
+          ],
+          "features": [
+            {
+              "title": "Cross-platform development",
+              "description": "One codebase for iPhone and Android."
+            },
+            {
+              "title": "Back-office integration",
+              "description": "Live data from your CRM, ERP, and databases."
+            },
+            {
+              "title": "Push notifications",
+              "description": "Targeted alerts, reminders, and offers."
+            },
+            {
+              "title": "Offline support",
+              "description": "Work continues without a connection and syncs later."
+            },
+            {
+              "title": "Device features",
+              "description": "Camera, barcode scanning, GPS, and signatures."
+            },
+            {
+              "title": "App store launch and updates",
+              "description": "Submission, review, and OS compatibility handled."
+            }
+          ],
+          "problems": [
+            "Customers want to order or book from their phone",
+            "Field staff fill out paper forms and retype them",
+            "Generic apps do not fit your workflow",
+            "Low engagement after the first purchase"
+          ],
+          "integrations": [
+            "React Native",
+            "Flutter",
+            "Firebase",
+            "Apple App Store",
+            "Google Play",
+            "Stripe",
+            "Salesforce",
+            "OneSignal"
+          ],
+          "faq": [
+            {
+              "question": "Should we build a mobile app or a mobile website?",
+              "answer": "A mobile-friendly website covers most needs. An app makes sense when customers use it often, or when you need push notifications, offline access, or device features like scanning."
+            },
+            {
+              "question": "Do you build for both iPhone and Android?",
+              "answer": "Yes. We typically use a cross-platform framework so one codebase serves both, reducing cost and keeping features in sync."
+            },
+            {
+              "question": "Who publishes the app to the app stores?",
+              "answer": "We handle submission under your developer accounts so you own the listing and the app."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/industry-platforms-saas/mobile-app-development/"
+        },
+        {
+          "id": "managed-saas",
+          "name": "Managed SaaS Delivery & Support",
+          "tagline": "Your custom software hosted, monitored, secured, and improved, without an in-house DevOps team.",
+          "description": "A subscription-based service where a business's custom software, internal tools, or automation stack is hosted, monitored, secured, and maintained on the client's behalf. This includes uptime monitoring, security patching, feature updates, technical support, and scaling infrastructure as usage grows, allowing clients to treat their internal software the same way they'd treat any other reliable SaaS product, without needing an in-house DevOps or IT team.",
+          "audience": [
+            "Businesses with custom software but no IT team",
+            "Companies whose original developer has moved on",
+            "Teams running critical automations that cannot fail quietly"
+          ],
+          "features": [
+            {
+              "title": "Managed cloud hosting",
+              "description": "Reliable infrastructure in accounts you own."
+            },
+            {
+              "title": "24/7 uptime monitoring",
+              "description": "Alerts and response when something goes down."
+            },
+            {
+              "title": "Security patching",
+              "description": "Dependencies, servers, and certificates kept current."
+            },
+            {
+              "title": "Backups and recovery",
+              "description": "Tested backups and a documented recovery plan."
+            },
+            {
+              "title": "Support and small changes",
+              "description": "A team to call for issues and improvements."
+            },
+            {
+              "title": "Scaling and cost optimization",
+              "description": "Infrastructure sized to usage."
+            }
+          ],
+          "problems": [
+            "Nobody maintains the custom software you depend on",
+            "Outages are discovered by customers",
+            "Security updates are years behind",
+            "Hosting costs keep climbing"
+          ],
+          "integrations": [
+            "AWS",
+            "Google Cloud",
+            "Azure",
+            "Cloudflare",
+            "GitHub",
+            "Datadog",
+            "Sentry",
+            "PagerDuty"
+          ],
+          "faq": [
+            {
+              "question": "What does managed SaaS include?",
+              "answer": "Hosting, monitoring, security patching, backups, support, and ongoing improvements for your custom software or automations, for a predictable monthly fee."
+            },
+            {
+              "question": "Can you take over software another developer built?",
+              "answer": "Yes. We start with a technical review, document the system, fix urgent risks, and then bring it under ongoing management."
+            },
+            {
+              "question": "Do we keep ownership of our software and data?",
+              "answer": "Yes. Code, infrastructure, and data remain in accounts you own."
+            }
+          ],
+          "url": "https://www.ljwebmanagement.com/solutions/industry-platforms-saas/managed-saas/"
+        }
+      ]
+    }
+  ]
+}

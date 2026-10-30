@@ -1,0 +1,1140 @@
+{
+  "slug": "customer-communication",
+  "name": "Customer Service & Communication",
+  "summary": "Proactive status updates, faster support routing, and far fewer \"just checking in\" calls.",
+  "description": "Customers rarely complain about waiting. They complain about not knowing. Most inbound \"where are we on this?\" calls are a symptom of updates that never went out. These automations send the update before the customer has to ask: job and order status, delays, results, care instructions, outage notices, and check-ins. They also route support requests to the right person with context attached, so nothing sits unanswered in a shared inbox.",
+  "url": "https://www.ljwebmanagement.com/automations/category/customer-communication/",
+  "automationCount": 113,
+  "automations": [
+    {
+      "id": "addiction-treatment-behavioral-health/recovery-support-check-in-relapse-prevention-system",
+      "title": "Recovery Support Check-In & Relapse Prevention System",
+      "industry": "addiction-treatment-behavioral-health",
+      "category": "customer-communication",
+      "role": "Alumni Coordinator",
+      "summary": "After discharge, alumni receive a structured check-in sequence (a 30-day, 60-day, 90-day, 6-month, and 1-year message) celebrating their recovery…",
+      "url": "https://www.ljwebmanagement.com/automations/addiction-treatment-behavioral-health/recovery-support-check-in-relapse-prevention-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/addiction-treatment-behavioral-health.json"
+    },
+    {
+      "id": "addiction-treatment-behavioral-health/alumni-check-in-relapse-prevention-outreach",
+      "title": "Alumni Check-In & Relapse Prevention Outreach",
+      "industry": "addiction-treatment-behavioral-health",
+      "category": "customer-communication",
+      "role": "Alumni Coordinator",
+      "summary": "At set intervals after discharge, 30, 90, and 180 days, this automation automatically reaches out to alumni with a check-in message and connects…",
+      "url": "https://www.ljwebmanagement.com/automations/addiction-treatment-behavioral-health/alumni-check-in-relapse-prevention-outreach/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/addiction-treatment-behavioral-health.json"
+    },
+    {
+      "id": "automotive/repair-order-status-vehicle-ready-notification-system",
+      "title": "Repair Order Status & Vehicle Ready Notification System",
+      "industry": "automotive",
+      "category": "customer-communication",
+      "role": "Service Advisor",
+      "summary": "From the moment a vehicle is dropped off, the customer receives automated status updates at each stage of the repair process (vehicle received…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/repair-order-status-vehicle-ready-notification-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/diagnostic-approval-pickup-alert-texts",
+      "title": "Diagnostic Approval & Pickup Alert Texts",
+      "industry": "automotive",
+      "category": "customer-communication",
+      "role": "Assistant Service Manager",
+      "summary": "Once a technician finishes the diagnostic scan, this automation texts the customer a link to a digital estimate broken down by recommended…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/diagnostic-approval-pickup-alert-texts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/vin-recall-cross-check-notification",
+      "title": "VIN Recall Cross-Check & Notification",
+      "industry": "automotive",
+      "category": "customer-communication",
+      "role": "Warranty Administrator",
+      "summary": "Once a week, this automation runs every customer VIN in the shop's database against the NHTSA recall API and manufacturer recall feeds, flagging any…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/vin-recall-cross-check-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/digital-vehicle-inspection-delivery",
+      "title": "Digital Vehicle Inspection Delivery",
+      "industry": "automotive",
+      "category": "customer-communication",
+      "role": "Shop Foreman",
+      "summary": "As soon as a technician completes a multi-point inspection using a tablet-based digital inspection tool, photos and short video clips of any flagged…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/digital-vehicle-inspection-delivery/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/recall-maintenance-due-cross-reference-alert",
+      "title": "Recall & Maintenance Due Cross-Reference Alert",
+      "industry": "automotive",
+      "category": "customer-communication",
+      "role": "Fixed Ops Director",
+      "summary": "The system cross-references each customer's vehicle service history and estimated current mileage against manufacturer maintenance schedules and the…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/recall-maintenance-due-cross-reference-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/special-order-parts-arrival-notification",
+      "title": "Special-Order Parts Arrival Notification",
+      "industry": "automotive",
+      "category": "customer-communication",
+      "role": "Parts Manager",
+      "summary": "Customers who ordered a special-order part automatically receive a text the moment it arrives at the parts counter, along with a direct link to…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/special-order-parts-arrival-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/vehicle-delivery-day-reminder-document-checklist",
+      "title": "Vehicle Delivery Day Reminder & Document Checklist",
+      "industry": "automotive",
+      "category": "customer-communication",
+      "role": "Delivery Coordinator",
+      "summary": "The day before a scheduled vehicle delivery or pickup, the customer automatically receives a reminder along with a checklist of exactly what to…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/vehicle-delivery-day-reminder-document-checklist/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/digital-multi-point-inspection-report-delivery",
+      "title": "Digital Multi-Point Inspection Report Delivery",
+      "industry": "automotive",
+      "category": "customer-communication",
+      "role": "Shop Foreman",
+      "summary": "A completed multi-point inspection, including time-stamped photos of anything flagged, is automatically compiled and sent directly to the customer's…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/digital-multi-point-inspection-report-delivery/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "automotive/recall-parts-availability-waitlist-notification",
+      "title": "Recall Parts Availability Waitlist Notification",
+      "industry": "automotive",
+      "category": "customer-communication",
+      "role": "Parts Manager",
+      "summary": "Once a needed recall part becomes available for a customer who was previously placed on a waitlist, they're automatically notified and offered a…",
+      "url": "https://www.ljwebmanagement.com/automations/automotive/recall-parts-availability-waitlist-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/automotive.json"
+    },
+    {
+      "id": "car-wash-auto-detailing/rain-check-weather-guarantee-automation",
+      "title": "Rain Check / Weather Guarantee Automation",
+      "industry": "car-wash-auto-detailing",
+      "category": "customer-communication",
+      "role": "Location Manager",
+      "summary": "For car washes offering a rain-check guarantee, this automation automatically checks local weather data against wash dates and proactively texts…",
+      "url": "https://www.ljwebmanagement.com/automations/car-wash-auto-detailing/rain-check-weather-guarantee-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/car-wash-auto-detailing.json"
+    },
+    {
+      "id": "construction-contracting/client-milestone-photo-status-update-system",
+      "title": "Client Milestone Photo & Status Update System",
+      "industry": "construction-contracting",
+      "category": "customer-communication",
+      "role": "Client Relations Coordinator",
+      "summary": "At each major project milestone (foundation poured, framing complete, drywall up, final walkthrough scheduled) the field team snaps a few photos and…",
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/client-milestone-photo-status-update-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/construction-contracting.json"
+    },
+    {
+      "id": "construction-contracting/warranty-expiration-follow-up-system",
+      "title": "Warranty Expiration Follow-Up System",
+      "industry": "construction-contracting",
+      "category": "customer-communication",
+      "role": "Customer Care Manager",
+      "summary": "Every completed project is logged with its warranty start date, and as each project approaches the end of its one-year (or manufacturer-specified)…",
+      "url": "https://www.ljwebmanagement.com/automations/construction-contracting/warranty-expiration-follow-up-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/construction-contracting.json"
+    },
+    {
+      "id": "driving-schools/parent-guardian-progress-update",
+      "title": "Parent/Guardian Progress Update",
+      "industry": "driving-schools",
+      "category": "customer-communication",
+      "role": "Instructor Coordinator",
+      "summary": "For teen driving students, this automation automatically sends parents a periodic progress update summarizing completed hours and instructor notes.",
+      "url": "https://www.ljwebmanagement.com/automations/driving-schools/parent-guardian-progress-update/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/driving-schools.json"
+    },
+    {
+      "id": "ecommerce-retail/proactive-order-delay-notification-resolution-system",
+      "title": "Proactive Order Delay Notification & Resolution System",
+      "industry": "ecommerce-retail",
+      "category": "customer-communication",
+      "role": "Customer Service Manager",
+      "summary": "When a fulfillment delay is detected (a carrier scan gap, an out-of-stock item, or a warehouse hold) this automation identifies every affected…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/proactive-order-delay-notification-resolution-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/automated-shipping-status-notifications",
+      "title": "Automated Shipping Status Notifications",
+      "industry": "ecommerce-retail",
+      "category": "customer-communication",
+      "role": "Customer Experience Manager",
+      "summary": "As a package moves through fulfillment, this automation watches the carrier tracking feed and fires an SMS at each real milestone: order shipped…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/automated-shipping-status-notifications/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/order-status-shipping-update-automation",
+      "title": "Order Status & Shipping Update Automation",
+      "industry": "ecommerce-retail",
+      "category": "customer-communication",
+      "role": "Customer Support Lead",
+      "summary": "As an order moves from confirmed to packed to shipped to delivered, this automation pulls each fulfillment event from Shopify or WooCommerce and…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/order-status-shipping-update-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/support-ticket-auto-routing-system",
+      "title": "Support Ticket Auto-Routing System",
+      "industry": "ecommerce-retail",
+      "category": "customer-communication",
+      "role": "Customer Support Manager",
+      "summary": "As inquiries land in Gorgias or Zendesk, this automation reads the subject line and message content and automatically categorizes each ticket…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/support-ticket-auto-routing-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/out-of-stock-substitute-suggestion",
+      "title": "Out-of-Stock Substitute Suggestion",
+      "industry": "ecommerce-retail",
+      "category": "customer-communication",
+      "role": "Conversion Rate Manager",
+      "summary": "When a customer tries to purchase an item that's sold out, instead of hitting a dead \"out of stock\" page, this automation automatically surfaces a…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/out-of-stock-substitute-suggestion/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/post-purchase-warranty-registration-prompt",
+      "title": "Post-Purchase Warranty Registration Prompt",
+      "industry": "ecommerce-retail",
+      "category": "customer-communication",
+      "role": "Customer Support Manager",
+      "summary": "After a purchase, customers are automatically prompted to register their product's warranty, building a clean database that makes future service or…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/post-purchase-warranty-registration-prompt/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/damaged-in-transit-claim-automation",
+      "title": "Damaged-in-Transit Claim Automation",
+      "industry": "ecommerce-retail",
+      "category": "customer-communication",
+      "role": "Returns Manager",
+      "summary": "A customer reporting a damaged item automatically receives the claims form along with clear next steps, and the shipment is simultaneously flagged…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/damaged-in-transit-claim-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "ecommerce-retail/local-pickup-ready-notification",
+      "title": "Local Pickup Ready Notification",
+      "industry": "ecommerce-retail",
+      "category": "customer-communication",
+      "role": "Ecommerce Manager",
+      "summary": "Orders placed for local pickup automatically notify the customer the moment the order is packed and waiting at the counter, instead of the customer…",
+      "url": "https://www.ljwebmanagement.com/automations/ecommerce-retail/local-pickup-ready-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/ecommerce-retail.json"
+    },
+    {
+      "id": "education/parent-communication-grade-alert-system",
+      "title": "Parent Communication & Grade Alert System",
+      "industry": "education",
+      "category": "customer-communication",
+      "role": "K-12 Teacher",
+      "summary": "When a student's grade in the gradebook drops below a set threshold, a parent communication is automatically drafted and sent from the teacher's…",
+      "url": "https://www.ljwebmanagement.com/automations/education/parent-communication-grade-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/education.json"
+    },
+    {
+      "id": "education/student-progress-report-parent-update-system",
+      "title": "Student Progress Report & Parent Update System",
+      "industry": "education",
+      "category": "customer-communication",
+      "role": "Tutoring Business Owner",
+      "summary": "After each tutoring session, tutors submit a brief session summary through a mobile-friendly form, and the system automatically formats it into a…",
+      "url": "https://www.ljwebmanagement.com/automations/education/student-progress-report-parent-update-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/education.json"
+    },
+    {
+      "id": "education/real-time-absence-notification-system",
+      "title": "Real-Time Absence Notification System",
+      "industry": "education",
+      "category": "customer-communication",
+      "role": "Attendance Coordinator",
+      "summary": "When a teacher marks a student absent in the attendance system each morning, a notification goes out automatically to the parent or guardian within…",
+      "url": "https://www.ljwebmanagement.com/automations/education/real-time-absence-notification-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/education.json"
+    },
+    {
+      "id": "education/automated-progress-report-delivery-system",
+      "title": "Automated Progress Report Delivery System",
+      "industry": "education",
+      "category": "customer-communication",
+      "role": "Academic Dean",
+      "summary": "At the midpoint of each grading period, the system automatically pulls current grades, missing assignment counts, and teacher comments from the…",
+      "url": "https://www.ljwebmanagement.com/automations/education/automated-progress-report-delivery-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/education.json"
+    },
+    {
+      "id": "faith-based-organizations/prayer-request-routing-system",
+      "title": "Prayer Request Routing System",
+      "industry": "faith-based-organizations",
+      "category": "customer-communication",
+      "role": "Pastoral Care Coordinator",
+      "summary": "When a prayer request is submitted online, this automation automatically routes it to the appropriate prayer team or pastor based on the category…",
+      "url": "https://www.ljwebmanagement.com/automations/faith-based-organizations/prayer-request-routing-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/faith-based-organizations.json"
+    },
+    {
+      "id": "financial-services/loan-pipeline-follow-up-milestone-notification-system",
+      "title": "Loan Pipeline Follow-Up & Milestone Notification System",
+      "industry": "financial-services",
+      "category": "customer-communication",
+      "role": "Mortgage Loan Officer",
+      "summary": "As a loan moves through the pipeline (application received, appraisal ordered, conditions cleared, clear to close) both the borrower and the…",
+      "url": "https://www.ljwebmanagement.com/automations/financial-services/loan-pipeline-follow-up-milestone-notification-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/financial-services.json"
+    },
+    {
+      "id": "fitness-wellness/client-progress-check-in-workout-delivery-system",
+      "title": "Client Progress Check-In & Workout Delivery System",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Personal Trainer",
+      "summary": "Each week, active training clients receive an automated check-in form asking about sleep, energy, soreness, and how last week's workouts felt, and…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/client-progress-check-in-workout-delivery-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/client-accountability-content-drip-system",
+      "title": "Client Accountability & Content Drip System",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Health Coach",
+      "summary": "New coaching clients are automatically onboarded into a structured program: a welcome sequence with program expectations and the intake…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/client-accountability-content-drip-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/nutrition-coaching-check-in-automation",
+      "title": "Nutrition Coaching Check-In Automation",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Nutrition Coach",
+      "summary": "Clients enrolled in nutrition coaching automatically receive scheduled check-in prompts asking them to log meals or progress, keeping them engaged…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/nutrition-coaching-check-in-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/body-composition-progress-report-automation",
+      "title": "Body Composition Progress Report Automation",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Health Coach",
+      "summary": "After a scheduled body composition scan, the results are automatically compiled into a simple, easy-to-read progress report and emailed to the…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/body-composition-progress-report-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/substitute-instructor-advance-notification",
+      "title": "Substitute Instructor Advance Notification",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Instructor Coordinator",
+      "summary": "If the regularly scheduled instructor for a class is swapped for a substitute, every member booked into that class automatically receives a heads-up…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/substitute-instructor-advance-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/membership-freeze-expiration-reminder",
+      "title": "Membership Freeze Expiration Reminder",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Membership Coordinator",
+      "summary": "Members who placed their membership on a temporary freeze automatically receive a reminder before the freeze period ends and billing is set to…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/membership-freeze-expiration-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/group-challenge-progress-update-automation",
+      "title": "Group Challenge Progress Update Automation",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Group Fitness Director",
+      "summary": "Members enrolled in a fitness challenge automatically receive periodic updates on their progress and where they stand on the leaderboard, keeping…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/group-challenge-progress-update-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/program-completion-certificate-automation",
+      "title": "Program Completion Certificate Automation",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Member Experience Manager",
+      "summary": "When a member finishes a multi-week program, such as a couch-to-5K series, they automatically receive a completion certificate along with a…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/program-completion-certificate-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/treatment-specific-prep-instruction-delivery",
+      "title": "Treatment-Specific Prep Instruction Delivery",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Spa Manager",
+      "summary": "Ahead of a specific spa treatment, clients automatically receive relevant prep instructions, arriving early, avoiding sun exposure, skipping certain…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/treatment-specific-prep-instruction-delivery/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "fitness-wellness/holiday-hours-mass-notification",
+      "title": "Holiday Hours Mass Notification",
+      "industry": "fitness-wellness",
+      "category": "customer-communication",
+      "role": "Front Desk Lead",
+      "summary": "Ahead of a holiday closure or reduced-hours schedule, every member automatically receives a mass notification so no one shows up to a locked door…",
+      "url": "https://www.ljwebmanagement.com/automations/fitness-wellness/holiday-hours-mass-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/fitness-wellness.json"
+    },
+    {
+      "id": "general-business/chatbot-to-human-handoff-system",
+      "title": "Chatbot-to-Human Handoff System",
+      "industry": "general-business",
+      "category": "customer-communication",
+      "role": "Customer Support Lead",
+      "summary": "The website chatbot handles the repetitive questions on its own (hours, pricing ranges, appointment availability, return policy) and answers them…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/chatbot-to-human-handoff-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/high-value-customer-flagging-and-concierge-alerts",
+      "title": "High-Value Customer Flagging and Concierge Alerts",
+      "industry": "general-business",
+      "category": "customer-communication",
+      "role": "VIP Experience Manager",
+      "summary": "Every time a customer's lifetime order value, booking frequency, or referral count crosses a defined threshold in the CRM, Zapier automatically tags…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/high-value-customer-flagging-and-concierge-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "general-business/help-desk-ticket-routing-and-escalation",
+      "title": "Help Desk Ticket Routing and Escalation",
+      "industry": "general-business",
+      "category": "customer-communication",
+      "role": "IT Support Specialist",
+      "summary": "Incoming help desk requests, whether submitted through email, a Slack form, or the self-service portal, are parsed automatically and routed to the…",
+      "url": "https://www.ljwebmanagement.com/automations/general-business/help-desk-ticket-routing-and-escalation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/general-business.json"
+    },
+    {
+      "id": "government-public-sector/mass-notification-multi-agency-resource-deployment-system",
+      "title": "Mass Notification & Multi-Agency Resource Deployment System",
+      "industry": "government-public-sector",
+      "category": "customer-communication",
+      "role": "Emergency Management Coordinator",
+      "summary": "When an emergency event is declared, this automation triggers a tiered mass notification sequence, text and email alerts to affected residents based…",
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/mass-notification-multi-agency-resource-deployment-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/government-public-sector.json"
+    },
+    {
+      "id": "government-public-sector/permit-application-status-notification",
+      "title": "Permit Application Status Notification",
+      "industry": "government-public-sector",
+      "category": "customer-communication",
+      "role": "Permit Technician",
+      "summary": "As a resident's or business's permit application moves through review stages, this automation automatically sends status update notifications by…",
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/permit-application-status-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/government-public-sector.json"
+    },
+    {
+      "id": "government-public-sector/citizen-service-request-routing",
+      "title": "Citizen Service Request Routing",
+      "industry": "government-public-sector",
+      "category": "customer-communication",
+      "role": "311 Service Coordinator",
+      "summary": "When a resident submits a service request, a pothole, a streetlight outage, a code violation, this automation automatically routes it to the correct…",
+      "url": "https://www.ljwebmanagement.com/automations/government-public-sector/citizen-service-request-routing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/government-public-sector.json"
+    },
+    {
+      "id": "healthcare/post-visit-care-instruction-automation",
+      "title": "Post-Visit Care Instruction Automation",
+      "industry": "healthcare",
+      "category": "customer-communication",
+      "role": "Clinical Care Coordinator",
+      "summary": "The moment a visit is marked complete in the schedule, this automation matches the visit type, whether it's a wellness check, a minor procedure, or…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/post-visit-care-instruction-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/prescription-refill-request-routing-status-updates",
+      "title": "Prescription Refill Request Routing & Status Updates",
+      "industry": "healthcare",
+      "category": "customer-communication",
+      "role": "Medical Assistant",
+      "summary": "When a patient submits a refill request through the online form, this automation automatically routes it to the correct provider's queue based on…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/prescription-refill-request-routing-status-updates/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/lab-result-ready-notification-system",
+      "title": "Lab Result Ready Notification System",
+      "industry": "healthcare",
+      "category": "customer-communication",
+      "role": "Clinical Support Specialist",
+      "summary": "The moment new lab results are uploaded and finalized in the system, this automation automatically sends the patient a portal notification and a…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/lab-result-ready-notification-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/chronic-care-management-check-in-automation",
+      "title": "Chronic Care Management Check-In Automation",
+      "industry": "healthcare",
+      "category": "customer-communication",
+      "role": "Chronic Care Manager",
+      "summary": "Patients enrolled in a chronic care management program are automatically placed on a scheduled check-in cadence between visits, receiving a brief…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/chronic-care-management-check-in-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/new-provider-introduction-to-patient-panel",
+      "title": "New Provider Introduction to Patient Panel",
+      "industry": "healthcare",
+      "category": "customer-communication",
+      "role": "Provider Relations Manager",
+      "summary": "When a new provider joins the practice and is assigned an existing patient panel, this automation automatically sends every affected patient an…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/new-provider-introduction-to-patient-panel/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/pre-surgical-instruction-prep-reminder-delivery",
+      "title": "Pre-Surgical Instruction & Prep Reminder Delivery",
+      "industry": "healthcare",
+      "category": "customer-communication",
+      "role": "Surgical Scheduler",
+      "summary": "Once a surgery is scheduled in the system, this automation automatically identifies the correct pre-operative instruction set for that procedure…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/pre-surgical-instruction-prep-reminder-delivery/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/medication-adherence-check-in-sequence",
+      "title": "Medication Adherence Check-In Sequence",
+      "industry": "healthcare",
+      "category": "customer-communication",
+      "role": "Care Management Nurse",
+      "summary": "Patients on medications that require close monitoring, such as anticoagulants or insulin, are automatically enrolled in a periodic check-in sequence…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/medication-adherence-check-in-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/care-plan-task-reminder-sequence",
+      "title": "Care Plan Task Reminder Sequence",
+      "industry": "healthcare",
+      "category": "customer-communication",
+      "role": "Chronic Care Manager",
+      "summary": "Patients with a documented care plan automatically receive reminders for specific between-visit tasks, logging a blood pressure reading, completing…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/care-plan-task-reminder-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "healthcare/portal-message-response-sla-escalation-alert",
+      "title": "Portal Message Response SLA Escalation Alert",
+      "industry": "healthcare",
+      "category": "customer-communication",
+      "role": "Patient Portal Administrator",
+      "summary": "A patient portal message that hasn't received a staff response within the practice's target time window automatically escalates to a supervisor…",
+      "url": "https://www.ljwebmanagement.com/automations/healthcare/portal-message-response-sla-escalation-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/healthcare.json"
+    },
+    {
+      "id": "home-services/technician-eta-on-my-way-texts",
+      "title": "Technician ETA & On-My-Way Texts",
+      "industry": "home-services",
+      "category": "customer-communication",
+      "role": "Route Coordinator",
+      "summary": "As soon as a technician marks themselves en route in the field service app, this automation calculates a live ETA from GPS location and sends the…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/technician-eta-on-my-way-texts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/after-hours-emergency-call-routing",
+      "title": "After-Hours Emergency Call Routing",
+      "industry": "home-services",
+      "category": "customer-communication",
+      "role": "On-Call Coordinator",
+      "summary": "When a call or text comes in outside business hours, this automation scans the message for emergency keywords (no heat, flooding, no AC in extreme…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/after-hours-emergency-call-routing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/technician-dispatch-eta-updates",
+      "title": "Technician Dispatch ETA Updates",
+      "industry": "home-services",
+      "category": "customer-communication",
+      "role": "Customer Communications Specialist",
+      "summary": "The instant a technician is dispatched to a job, this automation pulls their real-time GPS location from the field app and sends the customer a text…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/technician-dispatch-eta-updates/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/emergency-call-routing-escalation",
+      "title": "Emergency Call Routing & Escalation",
+      "industry": "home-services",
+      "category": "customer-communication",
+      "role": "Emergency Dispatch Lead",
+      "summary": "When an inquiry comes in after hours through the website chat, a missed call, or a text, this automation scans the message for emergency language…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/emergency-call-routing-escalation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/warranty-expiration-alerts",
+      "title": "Warranty Expiration Alerts",
+      "industry": "home-services",
+      "category": "customer-communication",
+      "role": "Warranty Administrator",
+      "summary": "As each piece of installed equipment approaches the end of its manufacturer or labor warranty, this automation automatically notifies both the…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/warranty-expiration-alerts/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/before-after-photo-report-automation",
+      "title": "Before/After Photo Report Automation",
+      "industry": "home-services",
+      "category": "customer-communication",
+      "role": "Quality Assurance Coordinator",
+      "summary": "Photos a technician snaps on their phone before starting and after finishing a job automatically upload into the work order and compile into a…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/before-after-photo-report-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/weather-delay-notification",
+      "title": "Weather Delay Notification",
+      "industry": "home-services",
+      "category": "customer-communication",
+      "role": "Operations Coordinator",
+      "summary": "For jobs scheduled outdoors, a roof replacement, a gutter install, an exterior electrical run, this automation checks the forecast automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/weather-delay-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/customer-complaint-resolution-workflow",
+      "title": "Customer Complaint Resolution Workflow",
+      "industry": "home-services",
+      "category": "customer-communication",
+      "role": "Customer Success Manager",
+      "summary": "The moment a complaint is logged, whether through a phone call, a text reply, or a low rating on a post-job survey, this automation automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/customer-complaint-resolution-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "home-services/storm-response-surge-communication-plan",
+      "title": "Storm Response Surge Communication Plan",
+      "industry": "home-services",
+      "category": "customer-communication",
+      "role": "Emergency Dispatch Lead",
+      "summary": "During a major weather event, the automation automatically triggers a surge communication plan notifying every affected customer of expected delays…",
+      "url": "https://www.ljwebmanagement.com/automations/home-services/storm-response-surge-communication-plan/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/home-services.json"
+    },
+    {
+      "id": "hospitality-hotels/pre-arrival-messaging-local-recommendations-system",
+      "title": "Pre-Arrival Messaging & Local Recommendations System",
+      "industry": "hospitality-hotels",
+      "category": "customer-communication",
+      "role": "Guest Experience Manager",
+      "summary": "Three days before arrival, every incoming guest automatically receives a personalized message with check-in instructions, parking details, and a…",
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/pre-arrival-messaging-local-recommendations-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/hospitality-hotels.json"
+    },
+    {
+      "id": "hospitality-hotels/automated-weather-based-guest-alert-system",
+      "title": "Automated Weather-Based Guest Alert System",
+      "industry": "hospitality-hotels",
+      "category": "customer-communication",
+      "role": "Front Office Supervisor",
+      "summary": "The system checks the local forecast every morning and automatically triggers guest notifications whenever conditions cross a set threshold, heavy…",
+      "url": "https://www.ljwebmanagement.com/automations/hospitality-hotels/automated-weather-based-guest-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/hospitality-hotels.json"
+    },
+    {
+      "id": "insurance/claim-assignment-documentation-request-status-update-system",
+      "title": "Claim Assignment, Documentation Request & Status Update System",
+      "industry": "insurance",
+      "category": "customer-communication",
+      "role": "Claims Adjuster",
+      "summary": "New claims submitted through the portal are automatically assigned to the correct adjuster based on coverage type and workload, and the claimant…",
+      "url": "https://www.ljwebmanagement.com/automations/insurance/claim-assignment-documentation-request-status-update-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/insurance.json"
+    },
+    {
+      "id": "insurance/claims-status-update-automation",
+      "title": "Claims Status Update Automation",
+      "industry": "insurance",
+      "category": "customer-communication",
+      "role": "Claims Coordinator",
+      "summary": "As a claim moves through each stage, filed, under review, adjuster assigned, approved, paid, this automation automatically texts and emails the…",
+      "url": "https://www.ljwebmanagement.com/automations/insurance/claims-status-update-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/insurance.json"
+    },
+    {
+      "id": "laundry-dry-cleaning/order-ready-notification",
+      "title": "Order Ready Notification",
+      "industry": "laundry-dry-cleaning",
+      "category": "customer-communication",
+      "role": "Store Manager",
+      "summary": "The moment an order is marked complete in the point-of-sale system, this automation automatically texts the customer that their order is ready for…",
+      "url": "https://www.ljwebmanagement.com/automations/laundry-dry-cleaning/order-ready-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/laundry-dry-cleaning.json"
+    },
+    {
+      "id": "laundry-dry-cleaning/damage-complaint-intake-resolution-tracker",
+      "title": "Damage/Complaint Intake & Resolution Tracker",
+      "industry": "laundry-dry-cleaning",
+      "category": "customer-communication",
+      "role": "Customer Service Manager",
+      "summary": "When a customer reports a damaged or missing item, this automation automatically opens a claim, requests any needed details or photos, and tracks…",
+      "url": "https://www.ljwebmanagement.com/automations/laundry-dry-cleaning/damage-complaint-intake-resolution-tracker/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/laundry-dry-cleaning.json"
+    },
+    {
+      "id": "legal/case-status-update-text-system",
+      "title": "Case Status Update Text System",
+      "industry": "legal",
+      "category": "customer-communication",
+      "role": "Client Relations Coordinator",
+      "summary": "As a matter moves through its key stages, filing, discovery, mediation, settlement, or a trial date being set, this automation fires a…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/case-status-update-text-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/automated-case-status-update-notifications",
+      "title": "Automated Case Status Update Notifications",
+      "industry": "legal",
+      "category": "customer-communication",
+      "role": "Client Services Associate",
+      "summary": "Every time a case's status field changes inside the practice management system, whether it moves from \"filed\" to \"discovery\" or \"in negotiation\" to…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/automated-case-status-update-notifications/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/client-portal-activity-alert-system",
+      "title": "Client Portal Activity Alert System",
+      "industry": "legal",
+      "category": "customer-communication",
+      "role": "Practice Administrator",
+      "summary": "The moment a client uploads a document or sends a message through the firm's secure client portal in Clio or NetDocuments, the automation…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/client-portal-activity-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/regulatory-change-client-alert-system",
+      "title": "Regulatory Change Client Alert System",
+      "industry": "legal",
+      "category": "customer-communication",
+      "role": "Regulatory Affairs Attorney",
+      "summary": "The automation monitors legal and regulatory updates relevant to the firm's practice areas through a legal research alert service, and when a…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/regulatory-change-client-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "legal/client-portal-self-service-password-reset",
+      "title": "Client Portal Self-Service Password Reset",
+      "industry": "legal",
+      "category": "customer-communication",
+      "role": "Client Services Associate",
+      "summary": "Clients who forget their portal password can automatically reset it themselves through a secure automated flow, cutting down on support calls that…",
+      "url": "https://www.ljwebmanagement.com/automations/legal/client-portal-self-service-password-reset/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/legal.json"
+    },
+    {
+      "id": "locksmith-security/emergency-dispatch-eta-texting",
+      "title": "Emergency Dispatch & ETA Texting",
+      "industry": "locksmith-security",
+      "category": "customer-communication",
+      "role": "Dispatcher",
+      "summary": "When an emergency lockout call comes in, this automation automatically identifies the nearest available technician, dispatches the job, and texts…",
+      "url": "https://www.ljwebmanagement.com/automations/locksmith-security/emergency-dispatch-eta-texting/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/locksmith-security.json"
+    },
+    {
+      "id": "moving-storage/move-day-status-update-system",
+      "title": "Move-Day Status Update System",
+      "industry": "moving-storage",
+      "category": "customer-communication",
+      "role": "Operations Manager",
+      "summary": "On move day, this automation automatically sends the customer status texts at key points, crew en route, loading started, loading complete, en route…",
+      "url": "https://www.ljwebmanagement.com/automations/moving-storage/move-day-status-update-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/moving-storage.json"
+    },
+    {
+      "id": "moving-storage/damaged-item-claims-intake-system",
+      "title": "Damaged Item Claims Intake System",
+      "industry": "moving-storage",
+      "category": "customer-communication",
+      "role": "Claims Coordinator",
+      "summary": "When a customer reports a damaged or lost item after a move, this automation automatically opens a claim file, sends the customer a simple form…",
+      "url": "https://www.ljwebmanagement.com/automations/moving-storage/damaged-item-claims-intake-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/moving-storage.json"
+    },
+    {
+      "id": "pest-control/callback-request-priority-routing",
+      "title": "Callback Request Priority Routing",
+      "industry": "pest-control",
+      "category": "customer-communication",
+      "role": "Dispatch Manager",
+      "summary": "When a customer reports the pest problem hasn't resolved after a treatment, this automation automatically flags it as a priority callback, routes it…",
+      "url": "https://www.ljwebmanagement.com/automations/pest-control/callback-request-priority-routing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pest-control.json"
+    },
+    {
+      "id": "photography-videography/gallery-delivery-download-reminder",
+      "title": "Gallery Delivery & Download Reminder",
+      "industry": "photography-videography",
+      "category": "customer-communication",
+      "role": "Photographer",
+      "summary": "Once a photo or video gallery is ready, this automation automatically emails the client their private gallery link, and if they haven't downloaded…",
+      "url": "https://www.ljwebmanagement.com/automations/photography-videography/gallery-delivery-download-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/photography-videography.json"
+    },
+    {
+      "id": "pool-service/service-visit-photo-log",
+      "title": "Service Visit Photo Log",
+      "industry": "pool-service",
+      "category": "customer-communication",
+      "role": "Service Technician",
+      "summary": "After each visit, this automation automatically sends the customer a quick summary with a photo of the pool and the chemical readings taken.",
+      "url": "https://www.ljwebmanagement.com/automations/pool-service/service-visit-photo-log/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/pool-service.json"
+    },
+    {
+      "id": "professional-services/project-deliverable-tracker-client-status-report",
+      "title": "Project Deliverable Tracker & Client Status Report",
+      "industry": "professional-services",
+      "category": "customer-communication",
+      "role": "Management Consultant",
+      "summary": "Every active engagement's deliverable schedule lives in a project management system that automatically alerts the project lead five days before each…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/project-deliverable-tracker-client-status-report/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/claims-status-update-automation",
+      "title": "Claims Status Update Automation",
+      "industry": "professional-services",
+      "category": "customer-communication",
+      "role": "Claims Coordinator",
+      "summary": "Clients automatically receive a notification whenever their claim status changes, pulled directly from the carrier or claims system rather than a…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/claims-status-update-automation/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/portfolio-drift-rebalancing-alert",
+      "title": "Portfolio Drift Rebalancing Alert",
+      "industry": "professional-services",
+      "category": "customer-communication",
+      "role": "Investment Analyst",
+      "summary": "When a client's investment portfolio drifts beyond its target allocation, whether from market movement or a large contribution or withdrawal, the…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/portfolio-drift-rebalancing-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/regulatory-change-client-notification-system",
+      "title": "Regulatory Change Client Notification System",
+      "industry": "professional-services",
+      "category": "customer-communication",
+      "role": "Compliance Officer",
+      "summary": "The automation monitors relevant regulatory or tax law changes and automatically notifies affected clients with a brief, plain-language explanation…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/regulatory-change-client-notification-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/beneficiary-designation-review-reminder",
+      "title": "Beneficiary Designation Review Reminder",
+      "industry": "professional-services",
+      "category": "customer-communication",
+      "role": "Paraplanner",
+      "summary": "Clients automatically receive a periodic reminder to review and update the beneficiary designations on their policies and accounts, catching an…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/beneficiary-designation-review-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/multi-advisor-household-coordination-alert",
+      "title": "Multi-Advisor Household Coordination Alert",
+      "industry": "professional-services",
+      "category": "customer-communication",
+      "role": "Wealth Management Associate",
+      "summary": "When multiple advisors serve the same household, a change made by one advisor, an updated address, a new account, a revised goal, automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/multi-advisor-household-coordination-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/market-volatility-client-reassurance-communication",
+      "title": "Market Volatility Client Reassurance Communication",
+      "industry": "professional-services",
+      "category": "customer-communication",
+      "role": "Financial Advisor",
+      "summary": "During a significant market move, the automation automatically sends a pre-approved reassurance communication to clients explaining the context in…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/market-volatility-client-reassurance-communication/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/post-life-event-check-in-survey",
+      "title": "Post-Life-Event Check-In Survey",
+      "industry": "professional-services",
+      "category": "customer-communication",
+      "role": "Financial Advisor",
+      "summary": "After a major transaction such as a home purchase, a retirement, or an inheritance, the client automatically receives a check-in survey designed to…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/post-life-event-check-in-survey/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "professional-services/client-complaint-escalation-workflow",
+      "title": "Client Complaint Escalation Workflow",
+      "industry": "professional-services",
+      "category": "customer-communication",
+      "role": "Compliance Officer",
+      "summary": "A logged client complaint automatically triggers a defined escalation workflow, notifying compliance immediately and setting a tracked resolution…",
+      "url": "https://www.ljwebmanagement.com/automations/professional-services/client-complaint-escalation-workflow/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/professional-services.json"
+    },
+    {
+      "id": "property-management/rental-application-status-update-sequence",
+      "title": "Rental Application Status Update Sequence",
+      "industry": "property-management",
+      "category": "customer-communication",
+      "role": "Leasing Agent",
+      "summary": "Prospective tenants automatically receive an update at each stage of the application process, received, screening in progress, approved, or denied…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/rental-application-status-update-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/move-date-utility-transfer-reminder",
+      "title": "Move-Date Utility Transfer Reminder",
+      "industry": "property-management",
+      "category": "customer-communication",
+      "role": "Move Coordinator",
+      "summary": "Tenants automatically receive a reminder ahead of their move-in or move-out date to set up or transfer their utilities, reducing the service gaps…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/move-date-utility-transfer-reminder/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/building-wide-notice-communication-blast",
+      "title": "Building-Wide Notice Communication Blast",
+      "industry": "property-management",
+      "category": "customer-communication",
+      "role": "Community Manager",
+      "summary": "Property-wide notices, a scheduled water shutoff, elevator maintenance, a parking lot closure, are automatically sent to every affected unit at once…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/building-wide-notice-communication-blast/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-management/package-delivery-pickup-notification",
+      "title": "Package Delivery Pickup Notification",
+      "industry": "property-management",
+      "category": "customer-communication",
+      "role": "Front Desk Coordinator",
+      "summary": "When a package arrives at the front desk or a smart locker, the resident automatically receives a notification letting them know it's ready for…",
+      "url": "https://www.ljwebmanagement.com/automations/property-management/package-delivery-pickup-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-management.json"
+    },
+    {
+      "id": "property-restoration/job-milestone-customer-update",
+      "title": "Job Milestone Customer Update",
+      "industry": "property-restoration",
+      "category": "customer-communication",
+      "role": "Customer Service Coordinator",
+      "summary": "As a restoration job moves through its stages, mitigation, demolition, reconstruction, this automation automatically sends the homeowner a status…",
+      "url": "https://www.ljwebmanagement.com/automations/property-restoration/job-milestone-customer-update/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/property-restoration.json"
+    },
+    {
+      "id": "real-estate/closing-countdown-milestone-update-system",
+      "title": "Closing Countdown & Milestone Update System",
+      "industry": "real-estate",
+      "category": "customer-communication",
+      "role": "Closing Coordinator",
+      "summary": "From the day a contract is ratified, buyers and sellers are enrolled in an automated milestone sequence tied to the actual dates in the contract…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/closing-countdown-milestone-update-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/post-showing-feedback-collection-seller-reporting-system",
+      "title": "Post-Showing Feedback Collection & Seller Reporting System",
+      "industry": "real-estate",
+      "category": "customer-communication",
+      "role": "Feedback Coordinator",
+      "summary": "After each showing wraps up, the buyer's agent or the buyer directly automatically receives a short feedback request text asking about their honest…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/post-showing-feedback-collection-seller-reporting-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/property-tax-assessment-change-alert",
+      "title": "Property Tax Assessment Change Alert",
+      "industry": "real-estate",
+      "category": "customer-communication",
+      "role": "Farming & Prospecting Specialist",
+      "summary": "When public records show an updated tax assessment on a home, the automation automatically notifies the owner, often a past client, with the new…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/property-tax-assessment-change-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "real-estate/new-construction-progress-update-sequence",
+      "title": "New Construction Progress Update Sequence",
+      "industry": "real-estate",
+      "category": "customer-communication",
+      "role": "New Construction Liaison",
+      "summary": "Buyers under contract on a new-build home automatically receive stage-based updates, framing complete, drywall, final walkthrough scheduled, pulled…",
+      "url": "https://www.ljwebmanagement.com/automations/real-estate/new-construction-progress-update-sequence/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/real-estate.json"
+    },
+    {
+      "id": "renewable-energy-solar/system-performance-underperformance-alert",
+      "title": "System Performance Underperformance Alert",
+      "industry": "renewable-energy-solar",
+      "category": "customer-communication",
+      "role": "Service Manager",
+      "summary": "This automation continuously compares each installed solar system's actual energy output against its modeled expected output and automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/renewable-energy-solar/system-performance-underperformance-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/renewable-energy-solar.json"
+    },
+    {
+      "id": "restaurants-food-service/online-order-status-text-update-system",
+      "title": "Online Order Status Text Update System",
+      "industry": "restaurants-food-service",
+      "category": "customer-communication",
+      "role": "Digital Ordering Manager",
+      "summary": "Every online order automatically triggers a text the moment it's received, again when the kitchen marks it in preparation, and a final message the…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/online-order-status-text-update-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "restaurants-food-service/vip-guest-recognition-preference-alert",
+      "title": "VIP Guest Recognition & Preference Alert",
+      "industry": "restaurants-food-service",
+      "category": "customer-communication",
+      "role": "VIP Host",
+      "summary": "The moment a guest flagged as a VIP or frequent regular books a reservation, host stand staff are automatically notified with that guest's dining…",
+      "url": "https://www.ljwebmanagement.com/automations/restaurants-food-service/vip-guest-recognition-preference-alert/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/restaurants-food-service.json"
+    },
+    {
+      "id": "senior-living-childcare/family-communication-care-update-system",
+      "title": "Family Communication & Care Update System",
+      "industry": "senior-living-childcare",
+      "category": "customer-communication",
+      "role": "Senior Living Administrator",
+      "summary": "Family members of residents receive an automated weekly update summarizing notable activities, wellness check-ins, and any care plan changes…",
+      "url": "https://www.ljwebmanagement.com/automations/senior-living-childcare/family-communication-care-update-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/senior-living-childcare.json"
+    },
+    {
+      "id": "senior-living-childcare/daily-family-update-digest",
+      "title": "Daily Family Update Digest",
+      "industry": "senior-living-childcare",
+      "category": "customer-communication",
+      "role": "Resident Care Coordinator",
+      "summary": "Throughout the day, caregivers log short notes on each resident or child, meals eaten, activities joined, nap times, and any mood observations…",
+      "url": "https://www.ljwebmanagement.com/automations/senior-living-childcare/daily-family-update-digest/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/senior-living-childcare.json"
+    },
+    {
+      "id": "sports-recreation/athlete-performance-tracking-parent-communication-system",
+      "title": "Athlete Performance Tracking & Parent Communication System",
+      "industry": "sports-recreation",
+      "category": "customer-communication",
+      "role": "Sports Coach",
+      "summary": "After each practice or game, the coach submits a brief performance log for each athlete using a simple mobile form (effort, technical execution…",
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/athlete-performance-tracking-parent-communication-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/sports-recreation.json"
+    },
+    {
+      "id": "sports-recreation/weather-cancellation-notification",
+      "title": "Weather Cancellation Notification",
+      "industry": "sports-recreation",
+      "category": "customer-communication",
+      "role": "Facility Director",
+      "summary": "When weather conditions meet the facility's own cancellation criteria, checked automatically against a live forecast, this automation automatically…",
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/weather-cancellation-notification/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/sports-recreation.json"
+    },
+    {
+      "id": "sports-recreation/tournament-bracket-results-publishing",
+      "title": "Tournament Bracket & Results Publishing",
+      "industry": "sports-recreation",
+      "category": "customer-communication",
+      "role": "Tournament Director",
+      "summary": "As game results are entered by staff or referees, this automation automatically updates the tournament bracket in real time and publishes the…",
+      "url": "https://www.ljwebmanagement.com/automations/sports-recreation/tournament-bracket-results-publishing/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/sports-recreation.json"
+    },
+    {
+      "id": "technology-saas/ticket-routing-priority-assignment-sla-alert-system",
+      "title": "Ticket Routing, Priority Assignment & SLA Alert System",
+      "industry": "technology-saas",
+      "category": "customer-communication",
+      "role": "IT Help Desk Manager",
+      "summary": "Incoming support tickets from email, Slack, or the ticketing portal are automatically classified by category and severity, assigned to the correct…",
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/ticket-routing-priority-assignment-sla-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/technology-saas.json"
+    },
+    {
+      "id": "technology-saas/uptime-incident-status-page-updater",
+      "title": "Uptime Incident Status Page Updater",
+      "industry": "technology-saas",
+      "category": "customer-communication",
+      "role": "Site Reliability Engineer",
+      "summary": "When a monitoring tool detects a service outage or degraded performance, this automation automatically updates the public status page with the…",
+      "url": "https://www.ljwebmanagement.com/automations/technology-saas/uptime-incident-status-page-updater/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/technology-saas.json"
+    },
+    {
+      "id": "telecommunications/network-outage-alert-proactive-customer-communication-system",
+      "title": "Network Outage Alert & Proactive Customer Communication System",
+      "industry": "telecommunications",
+      "category": "customer-communication",
+      "role": "Network Operations Center Manager",
+      "summary": "When a network monitoring alert fires indicating a service-affecting outage, this automation identifies which customer accounts are in the impacted…",
+      "url": "https://www.ljwebmanagement.com/automations/telecommunications/network-outage-alert-proactive-customer-communication-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/telecommunications.json"
+    },
+    {
+      "id": "telecommunications/outage-notification-eta-update-system",
+      "title": "Outage Notification & ETA Update System",
+      "industry": "telecommunications",
+      "category": "customer-communication",
+      "role": "Customer Experience Manager",
+      "summary": "The moment the network monitoring platform flags an outage in a specific service area, this automation cross-references the affected node or circuit…",
+      "url": "https://www.ljwebmanagement.com/automations/telecommunications/outage-notification-eta-update-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/telecommunications.json"
+    },
+    {
+      "id": "telecommunications/real-time-usage-overage-alert-system",
+      "title": "Real-Time Usage Overage Alert System",
+      "industry": "telecommunications",
+      "category": "customer-communication",
+      "role": "Usage Analytics Manager",
+      "summary": "This automation continuously monitors every customer's data or usage against their plan's allotment in near real time, checking usage totals against…",
+      "url": "https://www.ljwebmanagement.com/automations/telecommunications/real-time-usage-overage-alert-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/telecommunications.json"
+    },
+    {
+      "id": "vacation-rentals/pre-arrival-check-in-instructions",
+      "title": "Pre-Arrival Check-In Instructions",
+      "industry": "vacation-rentals",
+      "category": "customer-communication",
+      "role": "Property Manager",
+      "summary": "A set number of days and hours before a guest's arrival, this automation automatically sends check-in instructions, door codes, and local…",
+      "url": "https://www.ljwebmanagement.com/automations/vacation-rentals/pre-arrival-check-in-instructions/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/vacation-rentals.json"
+    },
+    {
+      "id": "veterinary-practices/discharge-instructions-post-visit-follow-up-system",
+      "title": "Discharge Instructions & Post-Visit Follow-Up System",
+      "industry": "veterinary-practices",
+      "category": "customer-communication",
+      "role": "Veterinarian",
+      "summary": "After every appointment, the veterinarian's discharge instructions are automatically formatted and texted to the pet owner as a clean, readable…",
+      "url": "https://www.ljwebmanagement.com/automations/veterinary-practices/discharge-instructions-post-visit-follow-up-system/",
+      "apiUrl": "https://www.ljwebmanagement.com/api/v1/industries/veterinary-practices.json"
+    }
+  ]
+}

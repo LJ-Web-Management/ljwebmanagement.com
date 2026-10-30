@@ -1,87 +1,1356 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "LJ Web Management Content Reference",
-    "description": "Read-only reference endpoints that describe LJ Web Management: a company that builds custom, done-for-you AI automation systems for businesses. These are static content resources for AI agents and answer engines, not a transactional API. To engage LJ Web Management directly, use the Book a Consultation page.",
+    "title": "LJ Web Management API",
     "version": "1.0.0",
+    "description": "Free, read-only JSON API for LJ Web Management, a company that builds custom, done-for-you AI automation systems for businesses. Look up the automation catalog by industry or business function, platform solutions, integrations, the FAQ, and the glossary. No authentication. Every response is static JSON regenerated on each site build. Errors use the Error schema. Plain-text references for AI systems are also available at /llms.txt and /llms-full.txt, and every HTML page has a Markdown version (send Accept: text/markdown).",
     "contact": {
       "name": "LJ Web Management",
       "email": "info@ljwebmanagement.com",
       "url": "https://www.ljwebmanagement.com/contactus/"
-    }
+    },
+    "termsOfService": "https://www.ljwebmanagement.com/terms-of-service/"
+  },
+  "externalDocs": {
+    "description": "LJ Web Management developer docs",
+    "url": "https://www.ljwebmanagement.com/developers/"
   },
   "servers": [
-    {"url": "https://www.ljwebmanagement.com"}
+    {
+      "url": "https://www.ljwebmanagement.com"
+    }
   ],
+  "tags": [
+    {
+      "name": "catalog",
+      "description": "Read-only catalog data."
+    }
+  ],
+  "security": [],
   "paths": {
-    "/llms.txt": {
+    "/api/v1/index.json": {
       "get": {
-        "summary": "Short company and site overview for AI agents",
-        "operationId": "getLlmsSummary",
+        "operationId": "getApiIndex",
+        "summary": "List every API endpoint",
+        "description": "Entry point for the API. Returns the name, version, documentation links, and every endpoint.",
+        "tags": [
+          "catalog"
+        ],
         "responses": {
           "200": {
-            "description": "Plain text overview of LJ Web Management and its core pages",
-            "content": {"text/plain": {"schema": {"type": "string"}}}
+            "description": "List every API endpoint",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No resource at this path. The body explains why and links to the docs.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         }
       }
     },
-    "/llms-full.txt": {
+    "/api/v1/company.json": {
       "get": {
-        "summary": "Full reference: company facts, all platform solutions, all automation categories, and the complete FAQ",
-        "operationId": "getLlmsFull",
+        "operationId": "getCompany",
+        "summary": "Get company facts and contact details",
+        "description": "Returns LJ Web Management's description, contact email, phone, postal address, booking page, and pricing model.",
+        "tags": [
+          "catalog"
+        ],
         "responses": {
           "200": {
-            "description": "Plain text full reference document",
-            "content": {"text/plain": {"schema": {"type": "string"}}}
+            "description": "Get company facts and contact details",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Company"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No resource at this path. The body explains why and links to the docs.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         }
       }
     },
-    "/crawl/": {
+    "/api/v1/categories.json": {
       "get": {
-        "summary": "Markdown-formatted company and services summary for AI crawlers",
-        "operationId": "getCrawlSummary",
+        "operationId": "listCategories",
+        "summary": "List business-function categories",
+        "description": "Returns the 11 business-function categories that organize the automation catalog, with counts.",
+        "tags": [
+          "catalog"
+        ],
         "responses": {
           "200": {
-            "description": "Markdown content summarizing LJ Web Management's services",
-            "content": {"text/markdown": {"schema": {"type": "string"}}}
+            "description": "List business-function categories",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CategoryList"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No resource at this path. The body explains why and links to the docs.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         }
       }
     },
-    "/sitemap.xml": {
+    "/api/v1/categories/{category}.json": {
       "get": {
-        "summary": "XML sitemap of all indexable pages",
-        "operationId": "getSitemap",
+        "operationId": "getCategory",
+        "summary": "Get one category and its automations",
+        "description": "Returns one business-function category and a summary of every automation in it, across all industries.",
+        "tags": [
+          "catalog"
+        ],
         "responses": {
           "200": {
-            "description": "XML sitemap",
-            "content": {"application/xml": {"schema": {"type": "string"}}}
+            "description": "Get one category and its automations",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CategoryDetail"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No resource at this path. The body explains why and links to the docs.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "category",
+            "in": "path",
+            "required": true,
+            "description": "Category slug from listCategories.",
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9-]+$",
+              "enum": [
+                "lead-follow-up-sales",
+                "marketing-retention",
+                "scheduling-dispatch",
+                "customer-communication",
+                "reviews-feedback",
+                "billing-finance",
+                "onboarding-intake",
+                "hr-team",
+                "compliance-documents",
+                "operations-inventory",
+                "reporting-analytics"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/industries.json": {
+      "get": {
+        "operationId": "listIndustries",
+        "summary": "List industries",
+        "description": "Returns the 57 industries the automation catalog covers, with counts.",
+        "tags": [
+          "catalog"
+        ],
+        "responses": {
+          "200": {
+            "description": "List industries",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IndustryList"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No resource at this path. The body explains why and links to the docs.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         }
       }
     },
-    "/faq/": {
+    "/api/v1/industries/{industry}.json": {
       "get": {
-        "summary": "Frequently asked questions about pricing, process, tools, and industries served",
+        "operationId": "getIndustry",
+        "summary": "Get one industry and the full detail of its automations",
+        "description": "Returns one industry and every automation for it in full: role, steps, the manual process it replaces, and the tools it connects.",
+        "tags": [
+          "catalog"
+        ],
+        "responses": {
+          "200": {
+            "description": "Get one industry and the full detail of its automations",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IndustryDetail"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No resource at this path. The body explains why and links to the docs.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "industry",
+            "in": "path",
+            "required": true,
+            "description": "Industry slug from listIndustries.",
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-z0-9-]+$",
+              "enum": [
+                "addiction-treatment-behavioral-health",
+                "agriculture-farming",
+                "architecture-engineering",
+                "automotive",
+                "cannabis-hemp",
+                "car-wash-auto-detailing",
+                "catering",
+                "commercial-real-estate",
+                "construction-contracting",
+                "cybersecurity",
+                "dental-practices",
+                "driving-schools",
+                "ecommerce-retail",
+                "education",
+                "faith-based-organizations",
+                "financial-services",
+                "fitness-wellness",
+                "general-business",
+                "government-public-sector",
+                "healthcare",
+                "home-services",
+                "hospitality-hotels",
+                "human-resources",
+                "insurance",
+                "interior-design-home-staging",
+                "junk-removal",
+                "landscaping-lawn-care",
+                "laundry-dry-cleaning",
+                "legal",
+                "locksmith-security",
+                "logistics-supply-chain",
+                "manufacturing",
+                "marketing-agencies",
+                "media-publishing",
+                "moving-storage",
+                "nonprofit",
+                "oil-gas",
+                "pest-control",
+                "pharmaceutical-biotech",
+                "photography-videography",
+                "pool-service",
+                "professional-services",
+                "property-management",
+                "property-restoration",
+                "real-estate",
+                "renewable-energy-solar",
+                "restaurants-food-service",
+                "salons-spas-barbershops",
+                "senior-living-childcare",
+                "sports-recreation",
+                "staffing-recruiting",
+                "technology-saas",
+                "telecommunications",
+                "vacation-rentals",
+                "veterinary-practices",
+                "warehousing-distribution",
+                "wedding-event-planning"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/solutions.json": {
+      "get": {
+        "operationId": "listSolutions",
+        "summary": "List platform-scale solutions",
+        "description": "Returns every platform solution (CRM, ERP, websites, billing, AI agents, and more) grouped by category, with features, integrations, and FAQs.",
+        "tags": [
+          "catalog"
+        ],
+        "responses": {
+          "200": {
+            "description": "List platform-scale solutions",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SolutionCatalog"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No resource at this path. The body explains why and links to the docs.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/integrations.json": {
+      "get": {
+        "operationId": "listIntegrations",
+        "summary": "List integrations",
+        "description": "Returns the tools and platforms the automations connect (for example Zapier, HubSpot, QuickBooks), with counts.",
+        "tags": [
+          "catalog"
+        ],
+        "responses": {
+          "200": {
+            "description": "List integrations",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IntegrationList"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No resource at this path. The body explains why and links to the docs.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/faq.json": {
+      "get": {
         "operationId": "getFaq",
+        "summary": "Get the FAQ",
+        "description": "Returns every frequently asked question about pricing, process, tools, and industries, in plain text.",
+        "tags": [
+          "catalog"
+        ],
         "responses": {
           "200": {
-            "description": "HTML page containing FAQPage structured data",
-            "content": {"text/html": {"schema": {"type": "string"}}}
+            "description": "Get the FAQ",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Faq"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No resource at this path. The body explains why and links to the docs.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
           }
         }
       }
     },
-    "/automations/": {
+    "/api/v1/glossary.json": {
       "get": {
-        "summary": "Catalog of 1000+ done-for-you automations across 57+ industries",
-        "operationId": "getAutomationsCatalog",
+        "operationId": "getGlossary",
+        "summary": "Get the automation and AI glossary",
+        "description": "Returns plain-English definitions of automation and AI terms.",
+        "tags": [
+          "catalog"
+        ],
         "responses": {
           "200": {
-            "description": "HTML catalog page containing an ItemList of automation categories",
-            "content": {"text/html": {"schema": {"type": "string"}}}
+            "description": "Get the automation and AI glossary",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Glossary"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No resource at this path. The body explains why and links to the docs.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "description": "Error response returned for any failed /api/ request.",
+        "required": [
+          "error"
+        ],
+        "properties": {
+          "error": {
+            "type": "object",
+            "description": "Error details.",
+            "required": [
+              "status",
+              "code",
+              "message",
+              "hint",
+              "docs"
+            ],
+            "properties": {
+              "status": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "HTTP status code, repeated in the body."
+              },
+              "code": {
+                "type": "string",
+                "description": "Stable, machine-readable error code.",
+                "enum": [
+                  "not_found",
+                  "method_not_allowed"
+                ]
+              },
+              "message": {
+                "type": "string",
+                "description": "Human-readable explanation of what went wrong."
+              },
+              "hint": {
+                "type": "string",
+                "description": "How to fix the request."
+              },
+              "docs": {
+                "type": "string",
+                "format": "uri",
+                "description": "Developer documentation."
+              }
+            }
+          }
+        }
+      },
+      "Endpoint": {
+        "type": "object",
+        "description": "One API endpoint.",
+        "required": [
+          "operationId",
+          "method",
+          "path",
+          "description"
+        ],
+        "properties": {
+          "operationId": {
+            "type": "string",
+            "description": "Operation ID, matching openapi.json."
+          },
+          "method": {
+            "type": "string",
+            "description": "HTTP method.",
+            "enum": [
+              "GET"
+            ]
+          },
+          "path": {
+            "type": "string",
+            "description": "Path template relative to the site root."
+          },
+          "description": {
+            "type": "string",
+            "description": "What the endpoint returns."
+          }
+        }
+      },
+      "ApiIndex": {
+        "type": "object",
+        "description": "Entry point listing every endpoint.",
+        "required": [
+          "name",
+          "version",
+          "description",
+          "authentication",
+          "docs",
+          "openapi",
+          "endpoints"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "API name."
+          },
+          "version": {
+            "type": "string",
+            "description": "API version."
+          },
+          "description": {
+            "type": "string",
+            "description": "What the API offers."
+          },
+          "authentication": {
+            "type": "string",
+            "description": "Authentication requirements."
+          },
+          "docs": {
+            "type": "string",
+            "format": "uri",
+            "description": "Developer documentation."
+          },
+          "openapi": {
+            "type": "string",
+            "format": "uri",
+            "description": "OpenAPI 3 description of this API."
+          },
+          "endpoints": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Endpoint"
+            },
+            "description": "Every endpoint in the API."
+          }
+        }
+      },
+      "Address": {
+        "type": "object",
+        "description": "Postal address.",
+        "required": [
+          "streetAddress",
+          "addressLocality",
+          "addressRegion",
+          "postalCode",
+          "addressCountry"
+        ],
+        "properties": {
+          "streetAddress": {
+            "type": "string",
+            "description": "Street address."
+          },
+          "addressLocality": {
+            "type": "string",
+            "description": "City."
+          },
+          "addressRegion": {
+            "type": "string",
+            "description": "State."
+          },
+          "postalCode": {
+            "type": "string",
+            "description": "ZIP code."
+          },
+          "addressCountry": {
+            "type": "string",
+            "description": "ISO 3166-1 country code."
+          }
+        }
+      },
+      "Company": {
+        "type": "object",
+        "description": "Company facts and contact details.",
+        "required": [
+          "name",
+          "description",
+          "url",
+          "email",
+          "telephone",
+          "address",
+          "bookingUrl",
+          "contactUrl",
+          "pricingModel",
+          "sameAs"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Company name."
+          },
+          "description": {
+            "type": "string",
+            "description": "What the company does."
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "Website."
+          },
+          "email": {
+            "type": "string",
+            "description": "Contact email.",
+            "format": "email"
+          },
+          "telephone": {
+            "type": "string",
+            "description": "Contact phone number in E.164-style format."
+          },
+          "address": {
+            "$ref": "#/components/schemas/Address"
+          },
+          "bookingUrl": {
+            "type": "string",
+            "format": "uri",
+            "description": "Page for booking a free consultation."
+          },
+          "contactUrl": {
+            "type": "string",
+            "format": "uri",
+            "description": "Contact page."
+          },
+          "pricingModel": {
+            "type": "string",
+            "description": "How engagements are priced."
+          },
+          "sameAs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri",
+              "description": "Profile URL."
+            },
+            "description": "Official social profiles."
+          }
+        }
+      },
+      "CategorySummary": {
+        "type": "object",
+        "description": "A business-function category.",
+        "required": [
+          "slug",
+          "name",
+          "summary",
+          "automationCount",
+          "url",
+          "apiUrl"
+        ],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "Category slug."
+          },
+          "name": {
+            "type": "string",
+            "description": "Category name."
+          },
+          "summary": {
+            "type": "string",
+            "description": "One-sentence summary."
+          },
+          "automationCount": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of automations in the category."
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "HTML page for the category."
+          },
+          "apiUrl": {
+            "type": "string",
+            "format": "uri",
+            "description": "JSON detail for the category."
+          }
+        }
+      },
+      "CategoryList": {
+        "type": "object",
+        "description": "All business-function categories.",
+        "required": [
+          "count",
+          "categories"
+        ],
+        "properties": {
+          "count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of categories."
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CategorySummary"
+            },
+            "description": "Every category."
+          }
+        }
+      },
+      "AutomationSummary": {
+        "type": "object",
+        "description": "Short form of an automation.",
+        "required": [
+          "id",
+          "title",
+          "industry",
+          "category",
+          "role",
+          "summary",
+          "url",
+          "apiUrl"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID: <industry>/<slug>."
+          },
+          "title": {
+            "type": "string",
+            "description": "Automation name."
+          },
+          "industry": {
+            "type": "string",
+            "description": "Industry slug."
+          },
+          "category": {
+            "type": "string",
+            "description": "Business-function category slug."
+          },
+          "role": {
+            "type": "string",
+            "description": "Job role the automation is built for."
+          },
+          "summary": {
+            "type": "string",
+            "description": "Short teaser of what it does."
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "HTML page for the automation."
+          },
+          "apiUrl": {
+            "type": "string",
+            "format": "uri",
+            "description": "JSON for the automation's industry, which includes its full detail."
+          }
+        }
+      },
+      "Automation": {
+        "type": "object",
+        "description": "Full detail of a done-for-you automation.",
+        "required": [
+          "id",
+          "slug",
+          "title",
+          "industry",
+          "category",
+          "role",
+          "summary",
+          "steps",
+          "manualProcess",
+          "tools",
+          "integrations",
+          "url"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique ID: <industry>/<slug>."
+          },
+          "slug": {
+            "type": "string",
+            "description": "Automation slug, unique within its industry."
+          },
+          "title": {
+            "type": "string",
+            "description": "Automation name."
+          },
+          "industry": {
+            "type": "string",
+            "description": "Industry slug."
+          },
+          "category": {
+            "type": "string",
+            "description": "Business-function category slug."
+          },
+          "role": {
+            "type": "string",
+            "description": "Job role the automation is built for."
+          },
+          "summary": {
+            "type": "string",
+            "description": "Short teaser of what it does."
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "One step."
+            },
+            "description": "What the automation does, step by step."
+          },
+          "manualProcess": {
+            "type": "string",
+            "description": "The manual process it replaces."
+          },
+          "tools": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Tool description."
+            },
+            "description": "Tools and systems it connects."
+          },
+          "integrations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Integration name."
+            },
+            "description": "Normalized integration names, matching /api/v1/integrations.json."
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "HTML page for the automation."
+          }
+        }
+      },
+      "CategoryDetail": {
+        "type": "object",
+        "description": "A category with its automations.",
+        "required": [
+          "slug",
+          "name",
+          "summary",
+          "description",
+          "url",
+          "automationCount",
+          "automations"
+        ],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "Category slug."
+          },
+          "name": {
+            "type": "string",
+            "description": "Category name."
+          },
+          "summary": {
+            "type": "string",
+            "description": "One-sentence summary."
+          },
+          "description": {
+            "type": "string",
+            "description": "Longer description."
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "HTML page for the category."
+          },
+          "automationCount": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of automations."
+          },
+          "automations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AutomationSummary"
+            },
+            "description": "Every automation in the category."
+          }
+        }
+      },
+      "IndustrySummary": {
+        "type": "object",
+        "description": "An industry.",
+        "required": [
+          "slug",
+          "name",
+          "summary",
+          "automationCount",
+          "url",
+          "apiUrl"
+        ],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "Industry slug."
+          },
+          "name": {
+            "type": "string",
+            "description": "Industry name."
+          },
+          "summary": {
+            "type": "string",
+            "description": "One-sentence summary."
+          },
+          "automationCount": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of automations for the industry."
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "HTML page for the industry."
+          },
+          "apiUrl": {
+            "type": "string",
+            "format": "uri",
+            "description": "JSON detail for the industry."
+          }
+        }
+      },
+      "IndustryList": {
+        "type": "object",
+        "description": "All industries.",
+        "required": [
+          "count",
+          "industries"
+        ],
+        "properties": {
+          "count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of industries."
+          },
+          "industries": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IndustrySummary"
+            },
+            "description": "Every industry."
+          }
+        }
+      },
+      "IndustryDetail": {
+        "type": "object",
+        "description": "An industry with the full detail of its automations.",
+        "required": [
+          "slug",
+          "name",
+          "summary",
+          "url",
+          "automationCount",
+          "automations"
+        ],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "Industry slug."
+          },
+          "name": {
+            "type": "string",
+            "description": "Industry name."
+          },
+          "summary": {
+            "type": "string",
+            "description": "One-sentence summary."
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "HTML page for the industry."
+          },
+          "automationCount": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of automations."
+          },
+          "automations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Automation"
+            },
+            "description": "Every automation for the industry, in full."
+          }
+        }
+      },
+      "Feature": {
+        "type": "object",
+        "description": "A solution feature.",
+        "required": [
+          "title",
+          "description"
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Feature name."
+          },
+          "description": {
+            "type": "string",
+            "description": "What it does."
+          }
+        }
+      },
+      "Question": {
+        "type": "object",
+        "description": "A question and answer.",
+        "required": [
+          "question",
+          "answer"
+        ],
+        "properties": {
+          "question": {
+            "type": "string",
+            "description": "The question."
+          },
+          "answer": {
+            "type": "string",
+            "description": "The answer, in plain text."
+          }
+        }
+      },
+      "Solution": {
+        "type": "object",
+        "description": "A platform-scale solution.",
+        "required": [
+          "id",
+          "name",
+          "tagline",
+          "description",
+          "audience",
+          "features",
+          "problems",
+          "integrations",
+          "faq",
+          "url"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Solution ID, unique across all categories."
+          },
+          "name": {
+            "type": "string",
+            "description": "Solution name."
+          },
+          "tagline": {
+            "type": "string",
+            "description": "One-line summary."
+          },
+          "description": {
+            "type": "string",
+            "description": "Full description."
+          },
+          "audience": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Audience."
+            },
+            "description": "Who it is for."
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Feature"
+            },
+            "description": "Main features."
+          },
+          "problems": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Problem."
+            },
+            "description": "Manual pain points it removes."
+          },
+          "integrations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Tool name."
+            },
+            "description": "Tools it commonly connects."
+          },
+          "faq": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Question"
+            },
+            "description": "Questions about this solution."
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "HTML page for the solution."
+          }
+        }
+      },
+      "SolutionCategory": {
+        "type": "object",
+        "description": "A solution category.",
+        "required": [
+          "slug",
+          "name",
+          "summary",
+          "url",
+          "solutions"
+        ],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "Category slug."
+          },
+          "name": {
+            "type": "string",
+            "description": "Category name."
+          },
+          "summary": {
+            "type": "string",
+            "description": "One-sentence summary."
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "HTML page for the category."
+          },
+          "solutions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Solution"
+            },
+            "description": "Solutions in the category."
+          }
+        }
+      },
+      "SolutionCatalog": {
+        "type": "object",
+        "description": "All platform solutions.",
+        "required": [
+          "count",
+          "categories"
+        ],
+        "properties": {
+          "count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of solutions."
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SolutionCategory"
+            },
+            "description": "Every solution category."
+          }
+        }
+      },
+      "Integration": {
+        "type": "object",
+        "description": "A tool or platform the automations connect.",
+        "required": [
+          "slug",
+          "name",
+          "tag",
+          "description",
+          "automationCount",
+          "url"
+        ],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "Integration slug."
+          },
+          "name": {
+            "type": "string",
+            "description": "Display name."
+          },
+          "tag": {
+            "type": "string",
+            "description": "Name used in Automation.integrations."
+          },
+          "description": {
+            "type": "string",
+            "description": "How the integration is used."
+          },
+          "automationCount": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Automations that use it."
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "HTML page listing those automations."
+          }
+        }
+      },
+      "IntegrationList": {
+        "type": "object",
+        "description": "All integrations.",
+        "required": [
+          "count",
+          "integrations"
+        ],
+        "properties": {
+          "count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of integrations."
+          },
+          "integrations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Integration"
+            },
+            "description": "Every integration."
+          }
+        }
+      },
+      "FaqGroup": {
+        "type": "object",
+        "description": "A group of FAQ entries.",
+        "required": [
+          "id",
+          "title",
+          "questions"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Group ID."
+          },
+          "title": {
+            "type": "string",
+            "description": "Group title."
+          },
+          "questions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Question"
+            },
+            "description": "Questions in the group."
+          }
+        }
+      },
+      "Faq": {
+        "type": "object",
+        "description": "The full FAQ.",
+        "required": [
+          "count",
+          "groups"
+        ],
+        "properties": {
+          "count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of questions."
+          },
+          "groups": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FaqGroup"
+            },
+            "description": "FAQ groups."
+          }
+        }
+      },
+      "GlossaryTerm": {
+        "type": "object",
+        "description": "A glossary term.",
+        "required": [
+          "slug",
+          "term",
+          "definition",
+          "url"
+        ],
+        "properties": {
+          "slug": {
+            "type": "string",
+            "description": "Anchor on the glossary page."
+          },
+          "term": {
+            "type": "string",
+            "description": "The term."
+          },
+          "definition": {
+            "type": "string",
+            "description": "Plain-English definition."
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "Link to the term on the glossary page."
+          }
+        }
+      },
+      "Glossary": {
+        "type": "object",
+        "description": "Automation and AI glossary.",
+        "required": [
+          "count",
+          "terms"
+        ],
+        "properties": {
+          "count": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of terms."
+          },
+          "terms": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GlossaryTerm"
+            },
+            "description": "Every term."
           }
         }
       }
