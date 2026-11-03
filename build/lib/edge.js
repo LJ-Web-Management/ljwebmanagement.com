@@ -6,6 +6,7 @@
 const fs = require("fs");
 const path = require("path");
 const { ROOT, SITE_URL } = require("./util");
+const { API_HEADERS } = require("./apipolicy");
 
 const DIR = path.join(ROOT, "infra", "cloudfront-functions");
 // CloudFront Functions reject code over 10 KB.
@@ -66,7 +67,8 @@ function build(keys) {
       .replace("__BLOOM_BITS__", String(f.m))
       .replace("__BLOOM_HASHES__", String(HASHES))
       .replace("__BLOOM__", f.data)
-      .replace("__MARKDOWN_404__", () => JSON.stringify(MARKDOWN_404));
+      .replace("__MARKDOWN_404__", () => JSON.stringify(MARKDOWN_404))
+      .replace("__API_HEADERS__", () => JSON.stringify(API_HEADERS));
   if (/__[A-Z0-9_]+__/.test(code)) throw new Error("edge.template.js has an unfilled placeholder");
   const bytes = Buffer.byteLength(code);
   if (bytes > MAX_BYTES) throw new Error("CloudFront Function is " + bytes + " bytes; the limit is " + MAX_BYTES);

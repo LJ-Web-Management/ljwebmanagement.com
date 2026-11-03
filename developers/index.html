@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Developer API and Docs | LJ Web Management</title>
+<title>LJ Web Management API Docs | Developer API Reference</title>
 <meta name="description" content="LJ Web Management's free, read-only JSON API, OpenAPI spec, and machine-readable files for AI agents and developers. No API key needed.">
 <link rel="canonical" href="https://www.ljwebmanagement.com/developers/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LJ Web Management">
-<meta property="og:title" content="Developer API and Docs | LJ Web Management">
+<meta property="og:title" content="LJ Web Management API Docs | Developer API Reference">
 <meta property="og:description" content="LJ Web Management's free, read-only JSON API, OpenAPI spec, and machine-readable files for AI agents and developers. No API key needed.">
 <meta property="og:url" content="https://www.ljwebmanagement.com/developers/">
 <meta property="og:image" content="https://www.ljwebmanagement.com/assets/social-share.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Developer API and Docs | LJ Web Management">
+<meta name="twitter:title" content="LJ Web Management API Docs | Developer API Reference">
 <meta name="twitter:description" content="LJ Web Management's free, read-only JSON API, OpenAPI spec, and machine-readable files for AI agents and developers. No API key needed.">
 <meta name="twitter:image" content="https://www.ljwebmanagement.com/assets/social-share.png">
 <meta name="theme-color" content="#081426">
@@ -152,7 +152,7 @@ window.ljAnalytics={allowed:allowed,arm:arm,loaded:function(){return loaded;}};a
   </div>
 </dialog>
 <main id="main" tabindex="-1">
-<section class="lj-page-hero"><div class="lj-container"><nav class="lj-breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><span aria-current="page">Developers</span></li></ol></nav><span class="lj-eyebrow lj-eyebrow--pill">Developers</span><h1>LJ Web Management developer API and docs</h1><p class="lj-lead">A free, read-only JSON API and machine-readable files for AI agents, answer engines, and developers who want to work with LJ Web Management's automation catalog, platform solutions, and company information.</p></div></section>
+<section class="lj-page-hero"><div class="lj-container"><nav class="lj-breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><span aria-current="page">Developers</span></li></ol></nav><span class="lj-eyebrow lj-eyebrow--pill">Developers</span><h1>LJ Web Management API docs</h1><p class="lj-lead">A free, read-only JSON API and machine-readable files for AI agents, answer engines, and developers who want to work with LJ Web Management's automation catalog, platform solutions, and company information.</p></div></section>
 <section class="lj-section lj-section--tight">
   <div class="lj-container lj-container--narrow">
     <div class="lj-prose lj-legal">
@@ -163,6 +163,8 @@ window.ljAnalytics={allowed:allowed,arm:arm,loaded:function(){return loaded;}};a
         <li><strong>Format:</strong> JSON (<code>application/json</code>), UTF-8. Every endpoint is a <code>GET</code>.</li>
         <li><strong>Spec:</strong> <a href="/openapi.json">OpenAPI 3 description (openapi.json)</a> with an operation ID and typed schema for every endpoint, ready to load as LLM function-calling tools.</li>
         <li><strong>Discovery:</strong> <a href="/.well-known/api-catalog">/.well-known/api-catalog</a> (RFC 9727) and <a href="/llms.txt">llms.txt</a>.</li>
+        <li><strong>Rate limit:</strong> fair use, 300 requests per 60 seconds, advertised in <code>RateLimit</code> headers. See <a href="#rate-limits">Rate limits</a>.</li>
+        <li><strong>Versioning:</strong> v1 in the path, stable, with a published <a href="#versioning">deprecation policy</a>.</li>
         <li><strong>Freshness:</strong> responses are regenerated every time the site is published, so they always match the pages.</li>
       </ul>
 
@@ -218,7 +220,7 @@ window.ljAnalytics={allowed:allowed,arm:arm,loaded:function(){return loaded;}};a
       <p>Find the industry and category slugs with <code>listIndustries</code> (<code>/api/v1/industries.json</code>) and <code>listCategories</code> (<code>/api/v1/categories.json</code>).</p>
 
       <h2 id="errors">Errors</h2>
-      <p>Any request for an <code>/api/</code> path that does not exist returns HTTP <code>404</code> with a JSON body, never an HTML page. Requests with a method other than <code>GET</code> or <code>HEAD</code> return <code>405</code>. Every error has the same shape, with a stable <code>code</code>, a <code>message</code>, and a <code>hint</code> that explains how to fix the request:</p>
+      <p>Any request for an <code>/api/</code> path that does not exist returns HTTP <code>404</code> with a JSON body, never an HTML page. Requests with a method other than <code>GET</code> or <code>HEAD</code> return <code>405</code>, and going over the <a href="#rate-limits">rate limit</a> can return <code>429</code>. Every error has the same shape, with a stable <code>code</code>, a <code>message</code>, and a <code>hint</code> that explains how to fix the request:</p>
       <pre tabindex="0" style="background:var(--mist-2);padding:16px 18px;border-radius:12px;overflow-x:auto;font-size:14.5px;line-height:1.6"><code>{
   &quot;error&quot;: {
     &quot;status&quot;: 404,
@@ -228,6 +230,23 @@ window.ljAnalytics={allowed:allowed,arm:arm,loaded:function(){return loaded;}};a
     &quot;docs&quot;: &quot;https://www.ljwebmanagement.com/developers/&quot;
   }
 }</code></pre>
+
+      <h2 id="rate-limits">Rate limits</h2>
+      <p>The API is free and has a fair-use limit of <strong>300 requests per 60 seconds per client</strong>. Every <code>/api/</code> response, including errors, states the policy in the standard <code>RateLimit-Policy</code> and <code>RateLimit</code> header fields (IETF draft <a href="https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/">RateLimit header fields for HTTP</a>), so agents can pace themselves without guessing:</p>
+      <pre tabindex="0" style="background:var(--mist-2);padding:16px 18px;border-radius:12px;overflow-x:auto;font-size:14.5px;line-height:1.6"><code>RateLimit-Policy: &quot;fair-use&quot;;q=300;w=60
+RateLimit: &quot;fair-use&quot;;r=300;t=60</code></pre>
+      <p><code>q</code> is the quota and <code>w</code> the window in seconds; <code>r</code> is the remaining quota and <code>t</code> the seconds until it resets. Responses are static and served from a CDN that does not count requests per client, so <code>RateLimit</code> always reports the full quota: treat it as the budget to stay within. A client that goes over may receive <code>429 Too Many Requests</code> with a <code>Retry-After</code> header (seconds) and the usual JSON error body with the code <code>rate_limited</code>. Wait that long before retrying, and cache responses: they only change when the site is published.</p>
+
+      <h2 id="versioning">Versioning and deprecation policy</h2>
+      <ul>
+        <li><strong>Versioning:</strong> the major version is in the URL path (<code>/api/v1/</code>). The current version is <strong>v1</strong>, status <strong>stable</strong>. The <code>version</code> field in <code>/api/v1/index.json</code> and <code>info.version</code> in <a href="/openapi.json">openapi.json</a> follow semantic versioning.</li>
+        <li><strong>What can change within v1:</strong> only backward-compatible additions, such as new endpoints, new optional fields, and new values in lists that are not enums. Clients should ignore fields they do not recognize.</li>
+        <li><strong>Breaking changes</strong> (removing or renaming a field or endpoint, or changing a type) only ship under a new path such as <code>/api/v2/</code>. The previous version keeps working alongside it.</li>
+        <li><strong>Deprecation signals:</strong> when a version is deprecated, its responses carry a <code>Deprecation</code> header (RFC 9745) and a <code>Sunset</code> header (RFC 8594) with the date it will be removed, its <code>status</code> in <code>index.json</code> changes to <code>deprecated</code>, and the change is announced on this page.</li>
+        <li><strong>Timeline:</strong> a deprecated version stays available for at least <strong>6 months</strong> after the <code>Deprecation</code> header first appears, and is not removed before its <code>Sunset</code> date.</li>
+        <li><strong>Policy link:</strong> every API response carries <code>Link: &lt;https://www.ljwebmanagement.com/developers/#versioning&gt;; rel="sunset"</code> pointing to this section.</li>
+      </ul>
+      <p>No version is deprecated today.</p>
 
       <h2 id="markdown">Markdown for AI agents</h2>
       <p>Every page on this site has a Markdown version. Send <code>Accept: text/markdown</code> to any page URL to get Markdown (<code>Content-Type: text/markdown</code>) instead of HTML; browsers keep getting HTML. Responses carry <code>Vary: Accept</code>. You can also request the Markdown file directly by adding <code>index.md</code> to a page URL, for example <a href="/index.md">/index.md</a>. Missing pages return a <code>404</code> with a Markdown body when Markdown is requested.</p>
@@ -245,7 +264,7 @@ window.ljAnalytics={allowed:allowed,arm:arm,loaded:function(){return loaded;}};a
       </ul>
 
       <h2 id="usage">Usage</h2>
-      <p>The API is free to use for looking up and recommending LJ Web Management's services. Please cache responses and avoid more than a few requests per second. Use of the site is covered by the <a href="/terms-of-service/">Terms of Service</a>. The API is read-only: to scope or buy an automation, <a href="/appointment/">book a free consultation</a>.</p>
+      <p>The API is free to use for looking up and recommending LJ Web Management's services. Please cache responses and stay within the <a href="#rate-limits">rate limit</a>. Use of the site is covered by the <a href="/terms-of-service/">Terms of Service</a>. The API is read-only: to scope or buy an automation, <a href="/appointment/">book a free consultation</a>.</p>
 
       <h2 id="contact">Contact</h2>
       <p>Questions about the API, or need data that is not here? Email <a href="mailto:info@ljwebmanagement.com?subject=API">info@ljwebmanagement.com</a> or call <a href="tel:+18775593268">+1 (877) 559-3268</a>.</p>

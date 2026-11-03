@@ -10,6 +10,7 @@ const path = require("path");
 const { ROOT, SITE_URL, escapeHtml, writeFile } = require("../lib/util");
 const L = require("../lib/layout");
 const chrome = require("../lib/chrome");
+const policy = require("../lib/apipolicy");
 
 const VERSION = "1.0.0";
 const BASE = "/api/v1";
@@ -45,7 +46,7 @@ const SCHEMAS = {
       error: obj(
         {
           status: int("HTTP status code, repeated in the body."),
-          code: str("Stable, machine-readable error code.", { enum: ["not_found", "method_not_allowed"] }),
+          code: str("Stable, machine-readable error code.", { enum: ["not_found", "method_not_allowed", "rate_limited"] }),
           message: str("Human-readable explanation of what went wrong."),
           hint: str("How to fix the request."),
           docs: uri("Developer documentation."),
@@ -72,6 +73,9 @@ const SCHEMAS = {
       authentication: str("Authentication requirements."),
       docs: uri("Developer documentation."),
       openapi: uri("OpenAPI 3 description of this API."),
+      status: str("Lifecycle status of this API version.", { enum: ["stable", "deprecated"] }),
+      deprecationPolicy: uri("Versioning and deprecation policy: how breaking changes and retirements are announced."),
+      rateLimitPolicy: str("Fair-use rate limit, in the RateLimit-Policy header syntax (quota q per window w seconds)."),
       endpoints: arr(ref("Endpoint"), "Every endpoint in the API."),
     },
     "Entry point listing every endpoint."
@@ -287,6 +291,9 @@ function files(cat, extra) {
     authentication: "None. No API key is needed.",
     docs: DOCS_URL,
     openapi: SITE_URL + "/openapi.json",
+    status: "stable",
+    deprecationPolicy: policy.POLICY_URL,
+    rateLimitPolicy: policy.RATE_LIMIT_POLICY,
     endpoints: endpoints(cat).map(([operationId, p, , description]) => ({ operationId, method: "GET", path: BASE + p, description })),
   });
   const org = chrome.ORGANIZATION;
@@ -375,17 +382,45 @@ function files(cat, extra) {
 /* OpenAPI, API catalog, plugin manifest                                    */
 /* ---------------------------------------------------------------------- */
 
+// Response header fields every /api/ response carries (see build/lib/apipolicy.js).
+const RESPONSE_HEADERS = {
+  RateLimit: {
+    description: "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: " + policy.RATE_LIMIT_STATE,
+    schema: { type: "string" },
+  },
+  "RateLimit-Policy": {
+    description: "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: " + policy.RATE_LIMIT_POLICY,
+    schema: { type: "string" },
+  },
+  Link: {
+    description: 'Link with rel="sunset" (RFC 8594) to the versioning and deprecation policy.',
+    schema: { type: "string" },
+  },
+};
+
+// The top-level response schema written out in place (typed, with a title),
+// so function-calling tools see a typed object without resolving $ref.
+function inline(name) {
+  return Object.assign({ title: name }, SCHEMAS[name]);
+}
+
 function openapi(cat) {
   const paths = {};
   endpoints(cat).forEach(([operationId, p, summary, description, schema, param]) => {
+    const json = (s) => ({ "application/json": { schema: s } });
     const op = {
       operationId,
       summary,
       description,
       tags: ["catalog"],
       responses: {
-        200: { description: summary, content: { "application/json": { schema: ref(schema) } } },
-        404: { description: "No resource at this path. The body explains why and links to the docs.", content: { "application/json": { schema: ref("Error") } } },
+        200: { description: summary, headers: RESPONSE_HEADERS, content: json(inline(schema)) },
+        404: { description: "No resource at this path. The body explains why and links to the docs.", headers: RESPONSE_HEADERS, content: json(inline("Error")) },
+        429: {
+          description: "Too many requests under the fair-use policy. Wait the number of seconds in Retry-After, then retry.",
+          headers: Object.assign({ "Retry-After": { description: "Seconds to wait before retrying (RFC 9110 section 10.2.3).", schema: { type: "integer", minimum: 0 } } }, RESPONSE_HEADERS),
+          content: json(inline("Error")),
+        },
       },
     };
     if (param) {
@@ -399,7 +434,7 @@ function openapi(cat) {
       title: "LJ Web Management API",
       version: VERSION,
       description:
-        "Free, read-only JSON API for LJ Web Management, a company that builds custom, done-for-you AI automation systems for businesses. Look up the automation catalog by industry or business function, platform solutions, integrations, the FAQ, and the glossary. No authentication. Every response is static JSON regenerated on each site build. Errors use the Error schema. Plain-text references for AI systems are also available at /llms.txt and /llms-full.txt, and every HTML page has a Markdown version (send Accept: text/markdown).",
+        "Free, read-only JSON API for LJ Web Management, a company that builds custom, done-for-you AI automation systems for businesses. Look up the automation catalog by industry or business function, platform solutions, integrations, the FAQ, and the glossary. No authentication. Every response is static JSON regenerated on each site build. Errors use the Error schema. Versioning: the major version is in the path (/api/v1/); breaking changes only ship under a new path, and a retired version gets Deprecation and Sunset headers at least 6 months before it is removed (policy: " + policy.POLICY_URL + "). Rate limit: fair use of " + policy.RATE_LIMIT.quota + " requests per " + policy.RATE_LIMIT.window + " seconds per client, advertised in the RateLimit and RateLimit-Policy headers. Plain-text references for AI systems are also available at /llms.txt and /llms-full.txt, and every HTML page has a Markdown version (send Accept: text/markdown).",
       contact: { name: "LJ Web Management", email: chrome.ORGANIZATION.email, url: SITE_URL + "/contactus/" },
       termsOfService: SITE_URL + "/terms-of-service/",
     },
@@ -465,7 +500,7 @@ function developersPage(cat, data) {
       crumbs,
       center: false,
       eyebrow: "Developers",
-      title: "LJ Web Management developer API and docs",
+      title: "LJ Web Management API docs",
       lead: "A free, read-only JSON API and machine-readable files for AI agents, answer engines, and developers who want to work with LJ Web Management's automation catalog, platform solutions, and company information.",
     }) +
     `
@@ -479,6 +514,8 @@ function developersPage(cat, data) {
         <li><strong>Format:</strong> JSON (<code>application/json</code>), UTF-8. Every endpoint is a <code>GET</code>.</li>
         <li><strong>Spec:</strong> <a href="/openapi.json">OpenAPI 3 description (openapi.json)</a> with an operation ID and typed schema for every endpoint, ready to load as LLM function-calling tools.</li>
         <li><strong>Discovery:</strong> <a href="/.well-known/api-catalog">/.well-known/api-catalog</a> (RFC 9727) and <a href="/llms.txt">llms.txt</a>.</li>
+        <li><strong>Rate limit:</strong> fair use, ${policy.RATE_LIMIT.quota} requests per ${policy.RATE_LIMIT.window} seconds, advertised in <code>RateLimit</code> headers. See <a href="#rate-limits">Rate limits</a>.</li>
+        <li><strong>Versioning:</strong> v1 in the path, stable, with a published <a href="#versioning">deprecation policy</a>.</li>
         <li><strong>Freshness:</strong> responses are regenerated every time the site is published, so they always match the pages.</li>
       </ul>
 
@@ -498,8 +535,24 @@ function developersPage(cat, data) {
       <p>Find the industry and category slugs with <code>listIndustries</code> (<code>${BASE}/industries.json</code>) and <code>listCategories</code> (<code>${BASE}/categories.json</code>).</p>
 
       <h2 id="errors">Errors</h2>
-      <p>Any request for an <code>/api/</code> path that does not exist returns HTTP <code>404</code> with a JSON body, never an HTML page. Requests with a method other than <code>GET</code> or <code>HEAD</code> return <code>405</code>. Every error has the same shape, with a stable <code>code</code>, a <code>message</code>, and a <code>hint</code> that explains how to fix the request:</p>
+      <p>Any request for an <code>/api/</code> path that does not exist returns HTTP <code>404</code> with a JSON body, never an HTML page. Requests with a method other than <code>GET</code> or <code>HEAD</code> return <code>405</code>, and going over the <a href="#rate-limits">rate limit</a> can return <code>429</code>. Every error has the same shape, with a stable <code>code</code>, a <code>message</code>, and a <code>hint</code> that explains how to fix the request:</p>
       ${pre(errorJson)}
+
+      <h2 id="rate-limits">Rate limits</h2>
+      <p>The API is free and has a fair-use limit of <strong>${policy.RATE_LIMIT.quota} requests per ${policy.RATE_LIMIT.window} seconds per client</strong>. Every <code>/api/</code> response, including errors, states the policy in the standard <code>RateLimit-Policy</code> and <code>RateLimit</code> header fields (IETF draft <a href="https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/">RateLimit header fields for HTTP</a>), so agents can pace themselves without guessing:</p>
+      ${pre("RateLimit-Policy: " + policy.RATE_LIMIT_POLICY + "\nRateLimit: " + policy.RATE_LIMIT_STATE)}
+      <p><code>q</code> is the quota and <code>w</code> the window in seconds; <code>r</code> is the remaining quota and <code>t</code> the seconds until it resets. Responses are static and served from a CDN that does not count requests per client, so <code>RateLimit</code> always reports the full quota: treat it as the budget to stay within. A client that goes over may receive <code>429 Too Many Requests</code> with a <code>Retry-After</code> header (seconds) and the usual JSON error body with the code <code>rate_limited</code>. Wait that long before retrying, and cache responses: they only change when the site is published.</p>
+
+      <h2 id="versioning">Versioning and deprecation policy</h2>
+      <ul>
+        <li><strong>Versioning:</strong> the major version is in the URL path (<code>${BASE}/</code>). The current version is <strong>v1</strong>, status <strong>stable</strong>. The <code>version</code> field in <code>${BASE}/index.json</code> and <code>info.version</code> in <a href="/openapi.json">openapi.json</a> follow semantic versioning.</li>
+        <li><strong>What can change within v1:</strong> only backward-compatible additions, such as new endpoints, new optional fields, and new values in lists that are not enums. Clients should ignore fields they do not recognize.</li>
+        <li><strong>Breaking changes</strong> (removing or renaming a field or endpoint, or changing a type) only ship under a new path such as <code>/api/v2/</code>. The previous version keeps working alongside it.</li>
+        <li><strong>Deprecation signals:</strong> when a version is deprecated, its responses carry a <code>Deprecation</code> header (RFC 9745) and a <code>Sunset</code> header (RFC 8594) with the date it will be removed, its <code>status</code> in <code>index.json</code> changes to <code>deprecated</code>, and the change is announced on this page.</li>
+        <li><strong>Timeline:</strong> a deprecated version stays available for at least <strong>6 months</strong> after the <code>Deprecation</code> header first appears, and is not removed before its <code>Sunset</code> date.</li>
+        <li><strong>Policy link:</strong> every API response carries <code>Link: &lt;${policy.POLICY_URL}&gt;; rel="sunset"</code> pointing to this section.</li>
+      </ul>
+      <p>No version is deprecated today.</p>
 
       <h2 id="markdown">Markdown for AI agents</h2>
       <p>Every page on this site has a Markdown version. Send <code>Accept: text/markdown</code> to any page URL to get Markdown (<code>Content-Type: text/markdown</code>) instead of HTML; browsers keep getting HTML. Responses carry <code>Vary: Accept</code>. You can also request the Markdown file directly by adding <code>index.md</code> to a page URL, for example <a href="/index.md">/index.md</a>. Missing pages return a <code>404</code> with a Markdown body when Markdown is requested.</p>
@@ -517,7 +570,7 @@ function developersPage(cat, data) {
       </ul>
 
       <h2 id="usage">Usage</h2>
-      <p>The API is free to use for looking up and recommending LJ Web Management's services. Please cache responses and avoid more than a few requests per second. Use of the site is covered by the <a href="/terms-of-service/">Terms of Service</a>. The API is read-only: to scope or buy an automation, <a href="/appointment/">book a free consultation</a>.</p>
+      <p>The API is free to use for looking up and recommending LJ Web Management's services. Please cache responses and stay within the <a href="#rate-limits">rate limit</a>. Use of the site is covered by the <a href="/terms-of-service/">Terms of Service</a>. The API is read-only: to scope or buy an automation, <a href="/appointment/">book a free consultation</a>.</p>
 
       <h2 id="contact">Contact</h2>
       <p>Questions about the API, or need data that is not here? Email <a href="mailto:${chrome.ORGANIZATION.email}?subject=API">${chrome.ORGANIZATION.email}</a> or call <a href="tel:+18775593268">+1 (877) 559-3268</a>.</p>
@@ -528,7 +581,7 @@ function developersPage(cat, data) {
     "developers/index.html",
     L.page({
       path: "/developers/",
-      title: "Developer API and Docs | LJ Web Management",
+      title: "LJ Web Management API Docs | Developer API Reference",
       description: "LJ Web Management's free, read-only JSON API, OpenAPI spec, and machine-readable files for AI agents and developers. No API key needed.",
       jsonLd: [
         crumbs.schema,
@@ -559,7 +612,7 @@ function redirectStub(p) {
     L.page({
       path: p,
       canonical: DOCS_URL,
-      title: "Developer API and Docs | LJ Web Management",
+      title: "LJ Web Management API Docs | Developer API Reference",
       description: "LJ Web Management's developer API and docs are at /developers/.",
       robots: "noindex, follow",
       extraHead: '<meta http-equiv="refresh" content="0; url=/developers/">',

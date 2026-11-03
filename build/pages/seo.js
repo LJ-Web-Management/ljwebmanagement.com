@@ -96,7 +96,7 @@ function llms(cat, guides, extra) {
     "",
     "## Developers and AI Agents",
     "",
-    "- [LJ Web Management Developer API and Docs](" + SITE_URL + "/developers/): Free, read-only JSON API (no API key), example requests, error format, and every machine-readable file.",
+    "- [LJ Web Management API Docs (Developer API)](" + SITE_URL + "/developers/): Free, read-only JSON API (no API key), example requests, error format, rate limits, versioning and deprecation policy, and every machine-readable file.",
     "- [API index](" + SITE_URL + "/api/v1/index.json): JSON list of every endpoint: company facts, categories, industries with full automation detail, solutions, integrations, FAQ, and glossary.",
     "- [OpenAPI description](" + SITE_URL + "/openapi.json): OpenAPI 3 spec with an operation ID and typed schema for every endpoint, ready to use as LLM function-calling tools.",
     "- [API catalog](" + SITE_URL + "/.well-known/api-catalog): RFC 9727 linkset pointing to the OpenAPI spec and docs.",

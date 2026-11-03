@@ -3,7 +3,7 @@
   "info": {
     "title": "LJ Web Management API",
     "version": "1.0.0",
-    "description": "Free, read-only JSON API for LJ Web Management, a company that builds custom, done-for-you AI automation systems for businesses. Look up the automation catalog by industry or business function, platform solutions, integrations, the FAQ, and the glossary. No authentication. Every response is static JSON regenerated on each site build. Errors use the Error schema. Plain-text references for AI systems are also available at /llms.txt and /llms-full.txt, and every HTML page has a Markdown version (send Accept: text/markdown).",
+    "description": "Free, read-only JSON API for LJ Web Management, a company that builds custom, done-for-you AI automation systems for businesses. Look up the automation catalog by industry or business function, platform solutions, integrations, the FAQ, and the glossary. No authentication. Every response is static JSON regenerated on each site build. Errors use the Error schema. Versioning: the major version is in the path (/api/v1/); breaking changes only ship under a new path, and a retired version gets Deprecation and Sunset headers at least 6 months before it is removed (policy: https://www.ljwebmanagement.com/developers/#versioning). Rate limit: fair use of 300 requests per 60 seconds per client, advertised in the RateLimit and RateLimit-Policy headers. Plain-text references for AI systems are also available at /llms.txt and /llms-full.txt, and every HTML page has a Markdown version (send Accept: text/markdown).",
     "contact": {
       "name": "LJ Web Management",
       "email": "info@ljwebmanagement.com",
@@ -39,20 +39,257 @@
         "responses": {
           "200": {
             "description": "List every API endpoint",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ApiIndex"
+                  "title": "ApiIndex",
+                  "type": "object",
+                  "description": "Entry point listing every endpoint.",
+                  "required": [
+                    "name",
+                    "version",
+                    "description",
+                    "authentication",
+                    "docs",
+                    "openapi",
+                    "status",
+                    "deprecationPolicy",
+                    "rateLimitPolicy",
+                    "endpoints"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "API name."
+                    },
+                    "version": {
+                      "type": "string",
+                      "description": "API version."
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "What the API offers."
+                    },
+                    "authentication": {
+                      "type": "string",
+                      "description": "Authentication requirements."
+                    },
+                    "docs": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "Developer documentation."
+                    },
+                    "openapi": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "OpenAPI 3 description of this API."
+                    },
+                    "status": {
+                      "type": "string",
+                      "description": "Lifecycle status of this API version.",
+                      "enum": [
+                        "stable",
+                        "deprecated"
+                      ]
+                    },
+                    "deprecationPolicy": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "Versioning and deprecation policy: how breaking changes and retirements are announced."
+                    },
+                    "rateLimitPolicy": {
+                      "type": "string",
+                      "description": "Fair-use rate limit, in the RateLimit-Policy header syntax (quota q per window w seconds)."
+                    },
+                    "endpoints": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Endpoint"
+                      },
+                      "description": "Every endpoint in the API."
+                    }
+                  }
                 }
               }
             }
           },
           "404": {
             "description": "No resource at this path. The body explains why and links to the docs.",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Error"
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too many requests under the fair-use policy. Wait the number of seconds in Retry-After, then retry.",
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds to wait before retrying (RFC 9110 section 10.2.3).",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -71,20 +308,255 @@
         "responses": {
           "200": {
             "description": "Get company facts and contact details",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Company"
+                  "title": "Company",
+                  "type": "object",
+                  "description": "Company facts and contact details.",
+                  "required": [
+                    "name",
+                    "description",
+                    "url",
+                    "email",
+                    "telephone",
+                    "address",
+                    "bookingUrl",
+                    "contactUrl",
+                    "pricingModel",
+                    "sameAs"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "Company name."
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "What the company does."
+                    },
+                    "url": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "Website."
+                    },
+                    "email": {
+                      "type": "string",
+                      "description": "Contact email.",
+                      "format": "email"
+                    },
+                    "telephone": {
+                      "type": "string",
+                      "description": "Contact phone number in E.164-style format."
+                    },
+                    "address": {
+                      "$ref": "#/components/schemas/Address"
+                    },
+                    "bookingUrl": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "Page for booking a free consultation."
+                    },
+                    "contactUrl": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "Contact page."
+                    },
+                    "pricingModel": {
+                      "type": "string",
+                      "description": "How engagements are priced."
+                    },
+                    "sameAs": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "Profile URL."
+                      },
+                      "description": "Official social profiles."
+                    }
+                  }
                 }
               }
             }
           },
           "404": {
             "description": "No resource at this path. The body explains why and links to the docs.",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Error"
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too many requests under the fair-use policy. Wait the number of seconds in Retry-After, then retry.",
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds to wait before retrying (RFC 9110 section 10.2.3).",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -103,20 +575,211 @@
         "responses": {
           "200": {
             "description": "List business-function categories",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CategoryList"
+                  "title": "CategoryList",
+                  "type": "object",
+                  "description": "All business-function categories.",
+                  "required": [
+                    "count",
+                    "categories"
+                  ],
+                  "properties": {
+                    "count": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Number of categories."
+                    },
+                    "categories": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/CategorySummary"
+                      },
+                      "description": "Every category."
+                    }
+                  }
                 }
               }
             }
           },
           "404": {
             "description": "No resource at this path. The body explains why and links to the docs.",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Error"
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too many requests under the fair-use policy. Wait the number of seconds in Retry-After, then retry.",
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds to wait before retrying (RFC 9110 section 10.2.3).",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -135,20 +798,237 @@
         "responses": {
           "200": {
             "description": "Get one category and its automations",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CategoryDetail"
+                  "title": "CategoryDetail",
+                  "type": "object",
+                  "description": "A category with its automations.",
+                  "required": [
+                    "slug",
+                    "name",
+                    "summary",
+                    "description",
+                    "url",
+                    "automationCount",
+                    "automations"
+                  ],
+                  "properties": {
+                    "slug": {
+                      "type": "string",
+                      "description": "Category slug."
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "Category name."
+                    },
+                    "summary": {
+                      "type": "string",
+                      "description": "One-sentence summary."
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "Longer description."
+                    },
+                    "url": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "HTML page for the category."
+                    },
+                    "automationCount": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Number of automations."
+                    },
+                    "automations": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/AutomationSummary"
+                      },
+                      "description": "Every automation in the category."
+                    }
+                  }
                 }
               }
             }
           },
           "404": {
             "description": "No resource at this path. The body explains why and links to the docs.",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Error"
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too many requests under the fair-use policy. Wait the number of seconds in Retry-After, then retry.",
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds to wait before retrying (RFC 9110 section 10.2.3).",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -192,20 +1072,211 @@
         "responses": {
           "200": {
             "description": "List industries",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/IndustryList"
+                  "title": "IndustryList",
+                  "type": "object",
+                  "description": "All industries.",
+                  "required": [
+                    "count",
+                    "industries"
+                  ],
+                  "properties": {
+                    "count": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Number of industries."
+                    },
+                    "industries": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/IndustrySummary"
+                      },
+                      "description": "Every industry."
+                    }
+                  }
                 }
               }
             }
           },
           "404": {
             "description": "No resource at this path. The body explains why and links to the docs.",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Error"
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too many requests under the fair-use policy. Wait the number of seconds in Retry-After, then retry.",
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds to wait before retrying (RFC 9110 section 10.2.3).",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -224,20 +1295,232 @@
         "responses": {
           "200": {
             "description": "Get one industry and the full detail of its automations",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/IndustryDetail"
+                  "title": "IndustryDetail",
+                  "type": "object",
+                  "description": "An industry with the full detail of its automations.",
+                  "required": [
+                    "slug",
+                    "name",
+                    "summary",
+                    "url",
+                    "automationCount",
+                    "automations"
+                  ],
+                  "properties": {
+                    "slug": {
+                      "type": "string",
+                      "description": "Industry slug."
+                    },
+                    "name": {
+                      "type": "string",
+                      "description": "Industry name."
+                    },
+                    "summary": {
+                      "type": "string",
+                      "description": "One-sentence summary."
+                    },
+                    "url": {
+                      "type": "string",
+                      "format": "uri",
+                      "description": "HTML page for the industry."
+                    },
+                    "automationCount": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Number of automations."
+                    },
+                    "automations": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Automation"
+                      },
+                      "description": "Every automation for the industry, in full."
+                    }
+                  }
                 }
               }
             }
           },
           "404": {
             "description": "No resource at this path. The body explains why and links to the docs.",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Error"
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too many requests under the fair-use policy. Wait the number of seconds in Retry-After, then retry.",
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds to wait before retrying (RFC 9110 section 10.2.3).",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -327,20 +1610,211 @@
         "responses": {
           "200": {
             "description": "List platform-scale solutions",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SolutionCatalog"
+                  "title": "SolutionCatalog",
+                  "type": "object",
+                  "description": "All platform solutions.",
+                  "required": [
+                    "count",
+                    "categories"
+                  ],
+                  "properties": {
+                    "count": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Number of solutions."
+                    },
+                    "categories": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/SolutionCategory"
+                      },
+                      "description": "Every solution category."
+                    }
+                  }
                 }
               }
             }
           },
           "404": {
             "description": "No resource at this path. The body explains why and links to the docs.",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Error"
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too many requests under the fair-use policy. Wait the number of seconds in Retry-After, then retry.",
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds to wait before retrying (RFC 9110 section 10.2.3).",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -359,20 +1833,211 @@
         "responses": {
           "200": {
             "description": "List integrations",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/IntegrationList"
+                  "title": "IntegrationList",
+                  "type": "object",
+                  "description": "All integrations.",
+                  "required": [
+                    "count",
+                    "integrations"
+                  ],
+                  "properties": {
+                    "count": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Number of integrations."
+                    },
+                    "integrations": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Integration"
+                      },
+                      "description": "Every integration."
+                    }
+                  }
                 }
               }
             }
           },
           "404": {
             "description": "No resource at this path. The body explains why and links to the docs.",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Error"
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too many requests under the fair-use policy. Wait the number of seconds in Retry-After, then retry.",
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds to wait before retrying (RFC 9110 section 10.2.3).",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -391,20 +2056,211 @@
         "responses": {
           "200": {
             "description": "Get the FAQ",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Faq"
+                  "title": "Faq",
+                  "type": "object",
+                  "description": "The full FAQ.",
+                  "required": [
+                    "count",
+                    "groups"
+                  ],
+                  "properties": {
+                    "count": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Number of questions."
+                    },
+                    "groups": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/FaqGroup"
+                      },
+                      "description": "FAQ groups."
+                    }
+                  }
                 }
               }
             }
           },
           "404": {
             "description": "No resource at this path. The body explains why and links to the docs.",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Error"
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too many requests under the fair-use policy. Wait the number of seconds in Retry-After, then retry.",
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds to wait before retrying (RFC 9110 section 10.2.3).",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -423,20 +2279,211 @@
         "responses": {
           "200": {
             "description": "Get the automation and AI glossary",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Glossary"
+                  "title": "Glossary",
+                  "type": "object",
+                  "description": "Automation and AI glossary.",
+                  "required": [
+                    "count",
+                    "terms"
+                  ],
+                  "properties": {
+                    "count": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Number of terms."
+                    },
+                    "terms": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/GlossaryTerm"
+                      },
+                      "description": "Every term."
+                    }
+                  }
                 }
               }
             }
           },
           "404": {
             "description": "No resource at this path. The body explains why and links to the docs.",
+            "headers": {
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Error"
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too many requests under the fair-use policy. Wait the number of seconds in Retry-After, then retry.",
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds to wait before retrying (RFC 9110 section 10.2.3).",
+                "schema": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "RateLimit": {
+                "description": "Remaining quota (r) and seconds until it resets (t) under the fair-use policy, per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";r=300;t=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "RateLimit-Policy": {
+                "description": "The fair-use quota (q requests per w seconds), per draft-ietf-httpapi-ratelimit-headers. Example: \"fair-use\";q=300;w=60",
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "Link": {
+                "description": "Link with rel=\"sunset\" (RFC 8594) to the versioning and deprecation policy.",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "Error",
+                  "type": "object",
+                  "description": "Error response returned for any failed /api/ request.",
+                  "required": [
+                    "error"
+                  ],
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "description": "Error details.",
+                      "required": [
+                        "status",
+                        "code",
+                        "message",
+                        "hint",
+                        "docs"
+                      ],
+                      "properties": {
+                        "status": {
+                          "type": "integer",
+                          "minimum": 0,
+                          "description": "HTTP status code, repeated in the body."
+                        },
+                        "code": {
+                          "type": "string",
+                          "description": "Stable, machine-readable error code.",
+                          "enum": [
+                            "not_found",
+                            "method_not_allowed",
+                            "rate_limited"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of what went wrong."
+                        },
+                        "hint": {
+                          "type": "string",
+                          "description": "How to fix the request."
+                        },
+                        "docs": {
+                          "type": "string",
+                          "format": "uri",
+                          "description": "Developer documentation."
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -475,7 +2522,8 @@
                 "description": "Stable, machine-readable error code.",
                 "enum": [
                   "not_found",
-                  "method_not_allowed"
+                  "method_not_allowed",
+                  "rate_limited"
                 ]
               },
               "message": {
@@ -536,6 +2584,9 @@
           "authentication",
           "docs",
           "openapi",
+          "status",
+          "deprecationPolicy",
+          "rateLimitPolicy",
           "endpoints"
         ],
         "properties": {
@@ -564,6 +2615,23 @@
             "type": "string",
             "format": "uri",
             "description": "OpenAPI 3 description of this API."
+          },
+          "status": {
+            "type": "string",
+            "description": "Lifecycle status of this API version.",
+            "enum": [
+              "stable",
+              "deprecated"
+            ]
+          },
+          "deprecationPolicy": {
+            "type": "string",
+            "format": "uri",
+            "description": "Versioning and deprecation policy: how breaking changes and retirements are announced."
+          },
+          "rateLimitPolicy": {
+            "type": "string",
+            "description": "Fair-use rate limit, in the RateLimit-Policy header syntax (quota q per window w seconds)."
           },
           "endpoints": {
             "type": "array",
