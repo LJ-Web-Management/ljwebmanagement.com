@@ -4,6 +4,7 @@ var BLOOM_BITS = 13302;
 var BLOOM_HASHES = 7;
 var BLOOM = "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";
 var B64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+var API_HEADERS = {"access-control-allow-origin":"*","access-control-expose-headers":"RateLimit, RateLimit-Policy, Retry-After, Link, Deprecation, Sunset","ratelimit-policy":"\"fair-use\";q=300;w=60","ratelimit":"\"fair-use\";r=300;t=60","link":"<https://www.ljwebmanagement.com/developers/#versioning>; rel=\"sunset\"; type=\"text/html\""};
 
 function fnv(s, seed) {
   var h = seed >>> 0;
@@ -85,8 +86,9 @@ function apiError(status, code, message, extra) {
       docs: SITE + "/developers/",
     },
   };
-  var headers = { "access-control-allow-origin": "*" };
-  for (var k in extra) headers[k] = extra[k];
+  var headers = {};
+  for (var k in API_HEADERS) headers[k] = API_HEADERS[k];
+  for (k in extra) headers[k] = extra[k];
   return reply(status, text, "application/json; charset=utf-8", JSON.stringify(body, null, 2) + "\n", headers);
 }
 
@@ -141,7 +143,7 @@ function onResponse(request, response) {
     headers.link = { value: "<" + SITE + page + '>; rel="canonical"' };
   } else if (uri.indexOf("/api/") === 0) {
     if (/\.json$/.test(uri)) headers["content-type"] = { value: "application/json; charset=utf-8" };
-    headers["access-control-allow-origin"] = { value: "*" };
+    for (var k in API_HEADERS) headers[k] = { value: API_HEADERS[k] };
   } else if (uri === "/.well-known/api-catalog") {
     headers["content-type"] = { value: 'application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"' };
     headers["access-control-allow-origin"] = { value: "*" };

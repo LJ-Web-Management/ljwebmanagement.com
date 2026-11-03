@@ -13,6 +13,12 @@
 // Viewer response:
 //   - Vary: Accept on every negotiable page (HTML or Markdown).
 //   - Correct Content-Type for Markdown twins, the API, and the API catalog.
+//   - API responses (and API errors) carry the IETF RateLimit and
+//     RateLimit-Policy fields (draft-ietf-httpapi-ratelimit-headers) for the
+//     published fair-use policy, and a Link with rel="sunset" (RFC 8594) to
+//     the versioning and deprecation policy. The function keeps no state,
+//     so RateLimit reports the policy's full quota rather than a per-client
+//     count; see /developers/#rate-limits.
 //
 // Whether a path exists is checked against a Bloom filter of every Markdown
 // twin and API file, built from the site at build time. A false positive
@@ -24,6 +30,7 @@ var BLOOM_BITS = __BLOOM_BITS__;
 var BLOOM_HASHES = __BLOOM_HASHES__;
 var BLOOM = "__BLOOM__";
 var B64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+var API_HEADERS = __API_HEADERS__;
 
 function fnv(s, seed) {
   var h = seed >>> 0;
@@ -105,8 +112,9 @@ function apiError(status, code, message, extra) {
       docs: SITE + "/developers/",
     },
   };
-  var headers = { "access-control-allow-origin": "*" };
-  for (var k in extra) headers[k] = extra[k];
+  var headers = {};
+  for (var k in API_HEADERS) headers[k] = API_HEADERS[k];
+  for (k in extra) headers[k] = extra[k];
   return reply(status, text, "application/json; charset=utf-8", JSON.stringify(body, null, 2) + "\n", headers);
 }
 
@@ -161,7 +169,7 @@ function onResponse(request, response) {
     headers.link = { value: "<" + SITE + page + '>; rel="canonical"' };
   } else if (uri.indexOf("/api/") === 0) {
     if (/\.json$/.test(uri)) headers["content-type"] = { value: "application/json; charset=utf-8" };
-    headers["access-control-allow-origin"] = { value: "*" };
+    for (var k in API_HEADERS) headers[k] = { value: API_HEADERS[k] };
   } else if (uri === "/.well-known/api-catalog") {
     headers["content-type"] = { value: 'application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"' };
     headers["access-control-allow-origin"] = { value: "*" };

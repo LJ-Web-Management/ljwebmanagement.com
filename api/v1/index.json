@@ -5,6 +5,9 @@
   "authentication": "None. No API key is needed.",
   "docs": "https://www.ljwebmanagement.com/developers/",
   "openapi": "https://www.ljwebmanagement.com/openapi.json",
+  "status": "stable",
+  "deprecationPolicy": "https://www.ljwebmanagement.com/developers/#versioning",
+  "rateLimitPolicy": "\"fair-use\";q=300;w=60",
   "endpoints": [
     {
       "operationId": "getApiIndex",

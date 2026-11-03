@@ -65,7 +65,11 @@ test("API: known files pass, unknown paths get a JSON 404, writes get a JSON 405
   assert.strictEqual(body.error.status, 404);
   assert.strictEqual(body.error.code, "not_found");
   assert.match(body.error.hint, /index\.json/);
+  assert.strictEqual(nf.headers["ratelimit-policy"].value, '"fair-use";q=300;w=60');
+  assert.strictEqual(nf.headers.ratelimit.value, '"fair-use";r=300;t=60');
+  assert.strictEqual(nf.headers["access-control-allow-origin"].value, "*");
   const post = req("/api/v1/index.json", "", "POST");
+  assert.ok(post.headers["ratelimit-policy"]);
   assert.strictEqual(post.statusCode, 405);
   assert.strictEqual(post.headers.allow.value, "GET, HEAD, OPTIONS");
   assert.strictEqual(JSON.parse(post.body.data).error.code, "method_not_allowed");
@@ -100,6 +104,11 @@ test("viewer response adds Vary: Accept and fixes content types", () => {
   const api = resp("/api/v1/index.json", "binary/octet-stream");
   assert.strictEqual(api["content-type"].value, "application/json; charset=utf-8");
   assert.strictEqual(api["access-control-allow-origin"].value, "*");
+  assert.strictEqual(api["ratelimit-policy"].value, '"fair-use";q=300;w=60');
+  assert.strictEqual(api.ratelimit.value, '"fair-use";r=300;t=60');
+  assert.strictEqual(api.link.value, '<https://www.ljwebmanagement.com/developers/#versioning>; rel="sunset"; type="text/html"');
+  assert.match(api["access-control-expose-headers"].value, /\bRateLimit-Policy\b/);
+  assert.strictEqual(html.ratelimit, undefined, "rate-limit fields only on the API");
   assert.match(resp("/.well-known/api-catalog", "binary/octet-stream")["content-type"].value, /^application\/linkset\+json/);
   assert.strictEqual(resp("/assets/css/site.css", "text/css").vary, undefined);
 });
@@ -128,11 +137,16 @@ test("end to end through a local CloudFront + S3 stand-in", async () => {
 
     const apiNf = await fetch(base + "/api/v1/missing.json");
     assert.strictEqual(apiNf.status, 404);
+    assert.match(apiNf.headers.get("content-type"), /^application\/json/);
+    assert.ok(apiNf.headers.get("ratelimit-policy"));
     assert.strictEqual((await apiNf.json()).error.code, "not_found");
 
     const idx = await fetch(base + "/api/v1/index.json");
     assert.strictEqual(idx.status, 200);
     assert.strictEqual(idx.headers.get("access-control-allow-origin"), "*");
+    assert.match(idx.headers.get("ratelimit-policy"), /^"fair-use";q=\d+;w=\d+$/);
+    assert.match(idx.headers.get("ratelimit"), /^"fair-use";r=\d+;t=\d+$/);
+    assert.match(idx.headers.get("link"), /rel="sunset"/);
     assert.ok((await idx.json()).endpoints.length >= 10);
   } finally {
     server.closeAllConnections();

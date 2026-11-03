@@ -21,6 +21,16 @@ it must be redeployed whenever pages are added or removed). It handles:
 - **Headers.** Content types for `.md`, `/api/` JSON and
   `/.well-known/api-catalog`, CORS for the API, and a `Link` header to each
   page's Markdown twin.
+- **API policy headers.** Every `/api/` response and JSON error carries
+  `RateLimit-Policy` and `RateLimit` (IETF draft
+  `draft-ietf-httpapi-ratelimit-headers`) for the published fair-use limit,
+  and `Link: <.../developers/#versioning>; rel="sunset"` (RFC 8594) to the
+  versioning and deprecation policy. The values come from
+  `build/lib/apipolicy.js`, which also feeds `openapi.json` and the
+  `/developers/` page. The function is stateless, so it cannot count
+  requests: to enforce the limit, add an AWS WAF rate-based rule whose
+  custom response is a `429` with `Retry-After` and the JSON error body
+  (`"code": "rate_limited"`).
 
 ### Deploying
 

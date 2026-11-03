@@ -80,10 +80,15 @@ test("openapi.json: unique operation IDs, typed schemas, every API file valid", 
     assert.ok(!ids.has(op.operationId), "duplicate " + op.operationId);
     ids.add(op.operationId);
     assert.ok(op.summary && op.description, p);
-    const ok = op.responses["200"].content["application/json"].schema.$ref;
-    const err = op.responses["404"].content["application/json"].schema.$ref;
-    assert.ok(spec.components.schemas[ok.split("/").pop()], ok);
-    assert.strictEqual(err, "#/components/schemas/Error");
+    // Response schemas are typed inline (no top-level $ref) so function-calling
+    // tools see the shape directly, and match the named component.
+    const ok = op.responses["200"].content["application/json"].schema;
+    assert.strictEqual(ok.type, "object", p);
+    assert.ok(ok.title && spec.components.schemas[ok.title], p);
+    assert.deepStrictEqual(Object.assign({}, ok, { title: undefined }), Object.assign({ title: undefined }, spec.components.schemas[ok.title]));
+    ["404", "429"].forEach((code) => assert.strictEqual(op.responses[code].content["application/json"].schema.title, "Error", p + " " + code));
+    ["200", "404", "429"].forEach((code) => ["RateLimit", "RateLimit-Policy", "Link"].forEach((h) => assert.strictEqual(op.responses[code].headers[h].schema.type, "string", p + " " + code + " " + h)));
+    assert.strictEqual(op.responses["429"].headers["Retry-After"].schema.type, "integer");
     (p.match(/\{(\w+)\}/g) || []).forEach((name) => {
       const prm = op.parameters.find((x) => "{" + x.name + "}" === name);
       assert.ok(prm && prm.required && prm.schema.type === "string" && prm.schema.enum.length, p + " " + name);
@@ -133,7 +138,7 @@ test("discovery files point at the API and docs", () => {
   assert.strictEqual(plugin.api.url, SITE + "/openapi.json");
   const llms = read("llms.txt");
   ["/developers/", "/api/v1/index.json", "/openapi.json", "/.well-known/api-catalog", "/sitemap.xml"].forEach((p) => assert.ok(llms.includes("](" + SITE + p + ")"), p));
-  assert.match(llms, /LJ Web Management Developer API/);
+  assert.match(llms, /LJ Web Management API Docs \(Developer API\)/);
 });
 
 test("homepage links the docs and carries complete Organization JSON-LD", () => {
@@ -157,10 +162,30 @@ test("homepage links the docs and carries complete Organization JSON-LD", () => 
 
 test("developers page documents auth, endpoints, examples and errors", () => {
   const html = read("developers/index.html");
-  assert.match(html, /<h1>LJ Web Management developer API and docs<\/h1>/);
+  assert.match(html, /<title>LJ Web Management API Docs \| Developer API Reference<\/title>/);
+  assert.match(html, /<h1>LJ Web Management API docs<\/h1>/);
   ["Authentication", "Endpoints", "Example requests", "Errors", "Markdown for AI agents"].forEach((t) => assert.ok(html.includes(t), t));
   JSON.parse(read("openapi.json")) && Object.values(JSON.parse(read("openapi.json")).paths).forEach((x) => assert.ok(html.includes("<code>" + x.get.operationId + "</code>")));
   assert.match(read("docs/index.html"), /url=\/developers\//);
+});
+
+test("rate limits and the versioning and deprecation policy are published and consistent", () => {
+  const policy = require("../build/lib/apipolicy");
+  assert.match(policy.RATE_LIMIT_POLICY, /^"[a-z-]+";q=\d+;w=\d+$/);
+  assert.match(policy.RATE_LIMIT_STATE, /^"[a-z-]+";r=\d+;t=\d+$/);
+  const html = read("developers/index.html");
+  assert.match(html, /<h2 id="rate-limits">Rate limits<\/h2>/);
+  assert.match(html, /<h2 id="versioning">Versioning and deprecation policy<\/h2>/);
+  ["RateLimit-Policy: " + policy.RATE_LIMIT_POLICY, "Retry-After", "Deprecation", "Sunset", "6 months"].forEach((t) => assert.ok(html.includes(t.replace(/"/g, "&quot;")) || html.includes(t), t));
+  assert.strictEqual(policy.POLICY_URL, SITE + "/developers/#versioning");
+  const index = JSON.parse(read("api/v1/index.json"));
+  assert.strictEqual(index.status, "stable");
+  assert.strictEqual(index.deprecationPolicy, policy.POLICY_URL);
+  assert.strictEqual(index.rateLimitPolicy, policy.RATE_LIMIT_POLICY);
+  const spec = JSON.parse(read("openapi.json"));
+  assert.ok(spec.info.description.includes(policy.POLICY_URL));
+  assert.ok(spec.components.schemas.Error.properties.error.properties.code.enum.includes("rate_limited"));
+  assert.match(read("llms.txt"), /\[LJ Web Management API Docs[^\]]*\]\(https:\/\/www\.ljwebmanagement\.com\/developers\/\)/);
 });
 
 test("no em dashes in generated agent-facing files", () => {
