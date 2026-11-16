@@ -4,11 +4,19 @@
 
 # Automation Directory: Page 9 of 20
 
-> Done-for-you business automations A to Z, page 9 of 20: Instant Lead Response & Booking System through Large Party Reservation Manager Approval Workflow.
+> Done-for-you business automations A to Z, page 9 of 20: Instant Inquiry Response & Scheduling System through Lapsed Policy Win-Back Campaign.
 
-Instant Lead Response & Booking System through Large Party Reservation Manager Approval Workflow. Prefer to browse by topic? Start from a [business function](https://www.ljwebmanagement.com/automations/#functions) or [industry](https://www.ljwebmanagement.com/automations/#industries).
+Instant Inquiry Response & Scheduling System through Lapsed Policy Win-Back Campaign. Prefer to browse by topic? Start from a [business function](https://www.ljwebmanagement.com/automations/#functions) or [industry](https://www.ljwebmanagement.com/automations/#industries).
 
 ## Automations on this page
+
+Admissions Coordinator
+
+### [Instant Inquiry Response & Scheduling System](https://www.ljwebmanagement.com/automations/education/instant-inquiry-response-scheduling-system/)
+
+The moment a prospective family submits an inquiry form, whether from the school's website, a Facebook ad, or a directory listing, they receive an…
+
+Education & Training
 
 Internet Lead Coordinator
 
@@ -401,14 +409,6 @@ Retention Specialist
 When a policy lapses due to non-payment or non-renewal, this automation automatically enrolls the former client in a 90-day win-back sequence that…
 
 Insurance
-
-Floor Manager
-
-### [Large Party Reservation Manager Approval Workflow](https://www.ljwebmanagement.com/automations/restaurants-food-service/large-party-reservation-manager-approval-workflow/)
-
-Any reservation request above a defined party size is automatically pulled out of the normal booking flow and flagged for the floor manager's review…
-
-Restaurants & Food Service
 
 [1](https://www.ljwebmanagement.com/automations/#directory) [2](https://www.ljwebmanagement.com/automations/page/2/) [3](https://www.ljwebmanagement.com/automations/page/3/) [4](https://www.ljwebmanagement.com/automations/page/4/) [5](https://www.ljwebmanagement.com/automations/page/5/) [6](https://www.ljwebmanagement.com/automations/page/6/) [7](https://www.ljwebmanagement.com/automations/page/7/) [8](https://www.ljwebmanagement.com/automations/page/8/) 9 [10](https://www.ljwebmanagement.com/automations/page/10/) [11](https://www.ljwebmanagement.com/automations/page/11/) [12](https://www.ljwebmanagement.com/automations/page/12/) [13](https://www.ljwebmanagement.com/automations/page/13/) [14](https://www.ljwebmanagement.com/automations/page/14/) [15](https://www.ljwebmanagement.com/automations/page/15/) [16](https://www.ljwebmanagement.com/automations/page/16/) [17](https://www.ljwebmanagement.com/automations/page/17/) [18](https://www.ljwebmanagement.com/automations/page/18/) [19](https://www.ljwebmanagement.com/automations/page/19/) [20](https://www.ljwebmanagement.com/automations/page/20/)
 

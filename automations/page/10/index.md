@@ -4,11 +4,19 @@
 
 # Automation Directory: Page 10 of 20
 
-> Done-for-you business automations A to Z, page 10 of 20: Last-Minute Slot Fill & Utilization Alert System through Member Referral Reward Automation.
+> Done-for-you business automations A to Z, page 10 of 20: Large Party Reservation Manager Approval Workflow through Member Check-In & Retention Alert System.
 
-Last-Minute Slot Fill & Utilization Alert System through Member Referral Reward Automation. Prefer to browse by topic? Start from a [business function](https://www.ljwebmanagement.com/automations/#functions) or [industry](https://www.ljwebmanagement.com/automations/#industries).
+Large Party Reservation Manager Approval Workflow through Member Check-In & Retention Alert System. Prefer to browse by topic? Start from a [business function](https://www.ljwebmanagement.com/automations/#functions) or [industry](https://www.ljwebmanagement.com/automations/#industries).
 
 ## Automations on this page
+
+Floor Manager
+
+### [Large Party Reservation Manager Approval Workflow](https://www.ljwebmanagement.com/automations/restaurants-food-service/large-party-reservation-manager-approval-workflow/)
+
+Any reservation request above a defined party size is automatically pulled out of the normal booking flow and flagged for the floor manager's review…
+
+Restaurants & Food Service
 
 Booking Coordinator
 
@@ -399,14 +407,6 @@ Gym / Studio Owner
 ### [Member Check-In & Retention Alert System](https://www.ljwebmanagement.com/automations/fitness-wellness/member-check-in-retention-alert-system/)
 
 Each day, this automation flags any active member who hasn't checked in for 14 days, adds them to a win-back sequence that starts with a "we miss…
-
-Fitness & Wellness
-
-Gym Owner
-
-### [Member Referral Reward Automation](https://www.ljwebmanagement.com/automations/fitness-wellness/member-referral-reward-automation/)
-
-Each member gets a unique referral link they can text or share directly, and when a referred friend signs up and completes their first month, both…
 
 Fitness & Wellness
 

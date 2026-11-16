@@ -4,9 +4,9 @@
 
 # Automation Directory: Page 7 of 20
 
-> Done-for-you business automations A to Z, page 7 of 20: Expired Listing Re-Engagement Campaign through Grant Deadline Tracker & Application Status System.
+> Done-for-you business automations A to Z, page 7 of 20: Expired Listing Re-Engagement Campaign through Grant Compliance Reporting Reminder.
 
-Expired Listing Re-Engagement Campaign through Grant Deadline Tracker & Application Status System. Prefer to browse by topic? Start from a [business function](https://www.ljwebmanagement.com/automations/#functions) or [industry](https://www.ljwebmanagement.com/automations/#industries).
+Expired Listing Re-Engagement Campaign through Grant Compliance Reporting Reminder. Prefer to browse by topic? Start from a [business function](https://www.ljwebmanagement.com/automations/#functions) or [industry](https://www.ljwebmanagement.com/automations/#industries).
 
 ## Automations on this page
 
@@ -306,6 +306,14 @@ Each morning before the office opens, the office manager and front desk team rec
 
 Healthcare
 
+Receptionist
+
+### [Front Desk Missed Call Text-Back System](https://www.ljwebmanagement.com/automations/legal/missed-call-text-back-system-receptionist/)
+
+When an inbound call to the firm goes unanswered because every line is busy or it's after hours, the phone system automatically fires a webhook that…
+
+Legal
+
 FSBO Outreach Specialist
 
 ### [FSBO Lead Capture & Objection-Handling Nurture System](https://www.ljwebmanagement.com/automations/real-estate/fsbo-lead-capture-objection-handling-nurture-system/)
@@ -401,14 +409,6 @@ Grants Manager
 For every grant a department has received, this automation tracks required reporting deadlines and spending milestones, automatically reminding the…
 
 Government & Public Sector
-
-Executive Director
-
-### [Grant Deadline Tracker & Application Status System](https://www.ljwebmanagement.com/automations/nonprofit/grant-deadline-tracker-application-status-system/)
-
-Every active grant opportunity (prospect, applied, pending, awarded, declined) lives in a single pipeline that the executive director can see at a…
-
-Nonprofit
 
 [1](https://www.ljwebmanagement.com/automations/#directory) [2](https://www.ljwebmanagement.com/automations/page/2/) [3](https://www.ljwebmanagement.com/automations/page/3/) [4](https://www.ljwebmanagement.com/automations/page/4/) [5](https://www.ljwebmanagement.com/automations/page/5/) [6](https://www.ljwebmanagement.com/automations/page/6/) 7 [8](https://www.ljwebmanagement.com/automations/page/8/) [9](https://www.ljwebmanagement.com/automations/page/9/) [10](https://www.ljwebmanagement.com/automations/page/10/) [11](https://www.ljwebmanagement.com/automations/page/11/) [12](https://www.ljwebmanagement.com/automations/page/12/) [13](https://www.ljwebmanagement.com/automations/page/13/) [14](https://www.ljwebmanagement.com/automations/page/14/) [15](https://www.ljwebmanagement.com/automations/page/15/) [16](https://www.ljwebmanagement.com/automations/page/16/) [17](https://www.ljwebmanagement.com/automations/page/17/) [18](https://www.ljwebmanagement.com/automations/page/18/) [19](https://www.ljwebmanagement.com/automations/page/19/) [20](https://www.ljwebmanagement.com/automations/page/20/)
 

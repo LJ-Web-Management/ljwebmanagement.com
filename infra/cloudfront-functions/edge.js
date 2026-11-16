@@ -104,6 +104,10 @@ function onRequest(request) {
     return { statusCode: 301, statusDescription: "Moved Permanently", headers: { location: { value: "/developers/" }, "cache-control": { value: "public, max-age=3600" } } };
   }
 
+  if (/^\/(pricing|investments|pre-made-automations)(\/|$)/.test(uri)) {
+    return { statusCode: 301, statusDescription: "Moved Permanently", headers: { location: { value: "/automations/" }, "cache-control": { value: "public, max-age=3600" } } };
+  }
+
   if (uri === "/api/v1" || uri === "/api/v1/") uri = request.uri = "/api/v1/index.json";
   if (uri.indexOf("/api/") === 0) {
     if (request.method !== "GET" && request.method !== "HEAD" && request.method !== "OPTIONS") {

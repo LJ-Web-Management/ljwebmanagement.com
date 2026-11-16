@@ -1652,7 +1652,7 @@ Legal
 
 Receptionist
 
-### [Missed Call Text-Back System](https://www.ljwebmanagement.com/automations/legal/missed-call-text-back-system-receptionist/)
+### [Front Desk Missed Call Text-Back System](https://www.ljwebmanagement.com/automations/legal/missed-call-text-back-system-receptionist/)
 
 When an inbound call to the firm goes unanswered because every line is busy or it's after hours, the phone system automatically fires a webhook that…
 

@@ -4,11 +4,19 @@
 
 # Automation Directory: Page 8 of 20
 
-> Done-for-you business automations A to Z, page 8 of 20: Grooming & Boarding Rebooking Prompt System through Instant Inquiry Response & Scheduling System.
+> Done-for-you business automations A to Z, page 8 of 20: Grant Deadline Tracker & Application Status System through Instant Home Valuation & CMA Delivery…
 
-Grooming & Boarding Rebooking Prompt System through Instant Inquiry Response & Scheduling System. Prefer to browse by topic? Start from a [business function](https://www.ljwebmanagement.com/automations/#functions) or [industry](https://www.ljwebmanagement.com/automations/#industries).
+Grant Deadline Tracker & Application Status System through Instant Home Valuation & CMA Delivery System. Prefer to browse by topic? Start from a [business function](https://www.ljwebmanagement.com/automations/#functions) or [industry](https://www.ljwebmanagement.com/automations/#industries).
 
 ## Automations on this page
+
+Executive Director
+
+### [Grant Deadline Tracker & Application Status System](https://www.ljwebmanagement.com/automations/nonprofit/grant-deadline-tracker-application-status-system/)
+
+Every active grant opportunity (prospect, applied, pending, awarded, declined) lives in a single pipeline that the executive director can see at a…
+
+Nonprofit
 
 Grooming Coordinator
 
@@ -401,14 +409,6 @@ Listing Specialist
 When a website visitor requests a home valuation, this automation pulls recent comparable sales within the property's radius, price per square foot…
 
 Real Estate
-
-Admissions Coordinator
-
-### [Instant Inquiry Response & Scheduling System](https://www.ljwebmanagement.com/automations/education/instant-inquiry-response-scheduling-system/)
-
-The moment a prospective family submits an inquiry form, whether from the school's website, a Facebook ad, or a directory listing, they receive an…
-
-Education & Training
 
 [1](https://www.ljwebmanagement.com/automations/#directory) [2](https://www.ljwebmanagement.com/automations/page/2/) [3](https://www.ljwebmanagement.com/automations/page/3/) [4](https://www.ljwebmanagement.com/automations/page/4/) [5](https://www.ljwebmanagement.com/automations/page/5/) [6](https://www.ljwebmanagement.com/automations/page/6/) [7](https://www.ljwebmanagement.com/automations/page/7/) 8 [9](https://www.ljwebmanagement.com/automations/page/9/) [10](https://www.ljwebmanagement.com/automations/page/10/) [11](https://www.ljwebmanagement.com/automations/page/11/) [12](https://www.ljwebmanagement.com/automations/page/12/) [13](https://www.ljwebmanagement.com/automations/page/13/) [14](https://www.ljwebmanagement.com/automations/page/14/) [15](https://www.ljwebmanagement.com/automations/page/15/) [16](https://www.ljwebmanagement.com/automations/page/16/) [17](https://www.ljwebmanagement.com/automations/page/17/) [18](https://www.ljwebmanagement.com/automations/page/18/) [19](https://www.ljwebmanagement.com/automations/page/19/) [20](https://www.ljwebmanagement.com/automations/page/20/)
 

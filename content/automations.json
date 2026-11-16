@@ -12320,7 +12320,7 @@
  {
   "industry": "legal",
   "slug": "missed-call-text-back-system-receptionist",
-  "title": "Missed Call Text-Back System",
+  "title": "Front Desk Missed Call Text-Back System",
   "role": "Receptionist",
   "category": "lead-follow-up-sales",
   "automated": "When an inbound call to the firm goes unanswered because every line is busy or it's after hours, the phone system automatically fires a webhook that triggers a Zapier workflow to send the caller a text message within seconds through Twilio, apologizing for missing the call and offering a Calendly link to book a consultation directly. The text also gives callers the option to reply with their legal issue in a few words, which automatically creates a lead record in Clio Grow tagged by practice area for the intake team to review first thing. The receptionist gets a morning Slack digest of every missed call and how each one was handled overnight. Firms running this recover leads that would otherwise call a competitor while waiting on hold, and it's common to convert 15 to 20 percent of missed calls into booked consultations that never would have called back.",

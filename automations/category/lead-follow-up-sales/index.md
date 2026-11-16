@@ -703,6 +703,14 @@ When a prospective client fills out the contact form or texts the firm's main nu
 
 Legal
 
+Receptionist
+
+### [Front Desk Missed Call Text-Back System](https://www.ljwebmanagement.com/automations/legal/missed-call-text-back-system-receptionist/)
+
+When an inbound call to the firm goes unanswered because every line is busy or it's after hours, the phone system automatically fires a webhook that…
+
+Legal
+
 Legal Intake Specialist
 
 ### [Missed Call & After-Hours Lead Recovery System](https://www.ljwebmanagement.com/automations/legal/missed-call-after-hours-lead-recovery-system/)
@@ -716,14 +724,6 @@ Solo Practice Attorney
 ### [Missed Call Text-Back System](https://www.ljwebmanagement.com/automations/legal/missed-call-text-back-system/)
 
 Every call that rings through to voicemail, whether the attorney is in court, in a deposition, or simply on another line, triggers an automatic text…
-
-Legal
-
-Receptionist
-
-### [Missed Call Text-Back System](https://www.ljwebmanagement.com/automations/legal/missed-call-text-back-system-receptionist/)
-
-When an inbound call to the firm goes unanswered because every line is busy or it's after hours, the phone system automatically fires a webhook that…
 
 Legal
 

@@ -1,13 +1,13 @@
 1. [Home](https://www.ljwebmanagement.com/)
 2. [Automations](https://www.ljwebmanagement.com/automations/)
 3. [Legal](https://www.ljwebmanagement.com/automations/legal/)
-4. Missed Call Text-Back System
+4. Front Desk Missed Call Text-Back System
 
 Legal automation
 
-# Missed Call Text-Back System
+# Front Desk Missed Call Text-Back System
 
-> Missed Call Text-Back System for legal: When an inbound call to the firm goes unanswered because every line is busy or it's after hours, the phone system…
+> Front Desk Missed Call Text-Back System for legal: When an inbound call to the firm goes unanswered because every line is busy or it's after hours, the…
 
 A done-for-you law firm automation built for the Receptionist, connecting Twilio, Clio, and Slack so the work below happens on its own.
 

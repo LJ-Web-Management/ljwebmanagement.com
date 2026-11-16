@@ -4,11 +4,19 @@
 
 # Automation Directory: Page 11 of 20
 
-> Done-for-you business automations A to Z, page 11 of 20: Membership Freeze Expiration Reminder through New Client Welcome & Coverage Gap Analysis System.
+> Done-for-you business automations A to Z, page 11 of 20: Member Referral Reward Automation through New Client Welcome & Coverage Gap Analysis System.
 
-Membership Freeze Expiration Reminder through New Client Welcome & Coverage Gap Analysis System. Prefer to browse by topic? Start from a [business function](https://www.ljwebmanagement.com/automations/#functions) or [industry](https://www.ljwebmanagement.com/automations/#industries).
+Member Referral Reward Automation through New Client Welcome & Coverage Gap Analysis System. Prefer to browse by topic? Start from a [business function](https://www.ljwebmanagement.com/automations/#functions) or [industry](https://www.ljwebmanagement.com/automations/#industries).
 
 ## Automations on this page
+
+Gym Owner
+
+### [Member Referral Reward Automation](https://www.ljwebmanagement.com/automations/fitness-wellness/member-referral-reward-automation/)
+
+Each member gets a unique referral link they can text or share directly, and when a referred friend signs up and completes their first month, both…
+
+Fitness & Wellness
 
 Membership Coordinator
 
@@ -143,14 +151,6 @@ Solo Practice Attorney
 ### [Missed Call Text-Back System](https://www.ljwebmanagement.com/automations/legal/missed-call-text-back-system/)
 
 Every call that rings through to voicemail, whether the attorney is in court, in a deposition, or simply on another line, triggers an automatic text…
-
-Legal
-
-Receptionist
-
-### [Missed Call Text-Back System](https://www.ljwebmanagement.com/automations/legal/missed-call-text-back-system-receptionist/)
-
-When an inbound call to the firm goes unanswered because every line is busy or it's after hours, the phone system automatically fires a webhook that…
 
 Legal
 

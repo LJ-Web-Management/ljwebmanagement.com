@@ -18,6 +18,9 @@ it must be redeployed whenever pages are added or removed). It handles:
   with a Markdown body linking to llms.txt, the sitemap and the docs. A
   missing `/api/` path gets a 404 with a JSON body; a write gets a JSON 405.
 - **Docs redirects.** `/docs` and `/api` redirect (301) to `/developers/`.
+- **Retired sections.** `/pricing`, `/investments` and `/pre-made-automations`
+  (and anything under them) redirect (301) to `/automations/`, which replaced
+  them. Until the function is associated these addresses answer 404.
 - **Headers.** Content types for `.md`, `/api/` JSON and
   `/.well-known/api-catalog`, CORS for the API, and a `Link` header to each
   page's Markdown twin.

@@ -6,6 +6,8 @@
 //
 // Viewer request:
 //   - /docs and /api answer with a 301 to /developers/.
+//   - Retired sections (/pricing, /investments, /pre-made-automations)
+//     answer with a 301 to /automations/, which replaced them.
 //   - /api/v1/ serves the API index.
 //   - Unknown /api/ paths get a JSON 404 (or 405 for non-GET methods).
 //   - Accept: text/markdown is served the page's Markdown twin
@@ -128,6 +130,10 @@ function onRequest(request) {
 
   if (/^\/(docs|api)\/?$/.test(uri)) {
     return { statusCode: 301, statusDescription: "Moved Permanently", headers: { location: { value: "/developers/" }, "cache-control": { value: "public, max-age=3600" } } };
+  }
+
+  if (/^\/(pricing|investments|pre-made-automations)(\/|$)/.test(uri)) {
+    return { statusCode: 301, statusDescription: "Moved Permanently", headers: { location: { value: "/automations/" }, "cache-control": { value: "public, max-age=3600" } } };
   }
 
   if (uri === "/api/v1" || uri === "/api/v1/") uri = request.uri = "/api/v1/index.json";

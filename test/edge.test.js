@@ -83,6 +83,16 @@ test("conventional docs URLs redirect to /developers/", () => {
   });
 });
 
+test("retired sections redirect to the automation catalog that replaced them", () => {
+  ["/pricing", "/pricing/", "/investments/", "/pre-made-automations/", "/pre-made-automations/lead-qualification/"].forEach((u) => {
+    const r = req(u, BROWSER);
+    assert.strictEqual(r.statusCode, 301, u);
+    assert.strictEqual(r.headers.location.value, "/automations/");
+  });
+  // A live page whose name only starts the same way is left alone.
+  assert.notStrictEqual(req("/pricing-guide/", BROWSER).statusCode, 301);
+});
+
 test("Bloom filter knows every real path and few fake ones", () => {
   const { twinKeys, apiKeys } = require("./site-keys");
   twinKeys().concat(apiKeys()).forEach((k) => assert.ok(edge.known(k), k));
