@@ -76,7 +76,6 @@ function home(cat, guides, extra) {
 <section class="lj-hero lj-hero--home">
   <div class="lj-container lj-hero-stage">
     <h1 class="lj-hero-title"><span class="lj-hero-l1"><span>The future</span></span> <span class="lj-hero-l2"><span>of business</span></span> <span class="lj-hero-l3"><span>is <span class="lj-hero-ic" aria-hidden="true">${icon("user")}</span> human <span class="lj-hero-plus">+</span> machine <span class="lj-hero-ic" aria-hidden="true">${chip}</span></span></span></h1>
-    <a class="lj-hero-book" href="/appointment/">Book a free consultation ${arrow}</a>
     <span class="lj-hero-cue" aria-hidden="true">Scroll</span>
   </div>
 </section>
