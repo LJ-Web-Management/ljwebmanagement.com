@@ -212,7 +212,7 @@ function llmsFull(cat, guides, extra) {
       '<meta name="description" content="Plain-text reference for AI systems and answer engines: LJ Web Management company facts, solutions, automation catalog, and FAQ.">\n' +
       '<link rel="icon" href="/assets/favicon.ico">\n<meta name="robots" content="noindex, follow">\n<title>Crawl Reference | LJ Web Management</title>\n' +
       '<link rel="canonical" href="' + SITE_URL + '/crawl/">\n' +
-      "<style>body{font-family:monospace;font-size:16px;white-space:pre-wrap;max-width:860px;margin:40px auto;padding:0 20px;line-height:1.5;color:#16202e;}</style>\n</head>\n<body>\n" +
+      "<style>body{font-family:monospace;font-size:16px;white-space:pre-wrap;overflow-wrap:anywhere;max-width:860px;margin:40px auto;padding:0 20px;line-height:1.5;color:#16202e;}</style>\n</head>\n<body>\n" +
       escapeHtml(body).replace(/'/g, "&#x27;") +
       "</body>\n</html>\n"
   );
