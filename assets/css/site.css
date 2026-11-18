@@ -340,9 +340,30 @@ a.lj-tag:hover { background: var(--ink); color: #fff; }
 /* Home hero: a centered statement that fades from gray to white, with inline icons. */
 .lj-hero--home { text-align: center; }
 .lj-hero-kicker { margin: 0 0 28px; font-family: var(--font-display); font-size: 15px; font-weight: 500; letter-spacing: -0.01em; color: var(--night-text); }
-.lj-hero-kicker span { color: var(--cyan); }
+.lj-hero-kicker > span { display: inline-block; }
+.lj-hero-kicker span span { color: var(--cyan); }
 .lj-hero-title { font-size: clamp(2.6rem, 7.4vw, 5.9rem); line-height: 1.02; letter-spacing: -0.05em; margin: 0 auto 30px; }
 .lj-hero-title > span { display: block; }
+.lj-hero-title > span > span { display: inline-block; }
+/* On load, the hero builds in: kicker, then each heading line, then the rest. */
+.lj-hero-kicker > span, .lj-hero-title > span > span, .lj-hero--home .lj-lead, .lj-hero--home .lj-hero-actions, .lj-hero-assure { animation: lj-line-in 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.lj-hero-l1 > span { animation-delay: 0.08s; }
+.lj-hero-l2 > span { animation-delay: 0.2s; }
+.lj-hero-l3 > span { animation-delay: 0.32s; }
+.lj-hero--home .lj-lead, .lj-hero--home .lj-hero-actions, .lj-hero-assure { animation-delay: 0.5s; }
+@keyframes lj-line-in { from { opacity: 0; transform: translateY(24px); filter: blur(6px); } }
+/* On scroll, the lines drift up and fade at different speeds as the white sheet slides over.
+   Browsers without scroll-driven animations (Firefox for now) keep the hero still. */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .lj-hero-kicker, .lj-hero-title > span { animation: lj-line-out linear both; animation-timeline: scroll(root); animation-range: 0 var(--out, 600px); }
+    .lj-hero-kicker { --drift: -60px; --out: 200px; }
+    .lj-hero-l1 { --drift: -56px; --out: 300px; }
+    .lj-hero-l2 { --drift: -36px; --out: 420px; }
+    .lj-hero-l3 { --drift: -18px; --out: 560px; }
+    @keyframes lj-line-out { to { transform: translateY(var(--drift)); opacity: 0; } }
+  }
+}
 .lj-hero-title .lj-hero-l1 { color: #8a8f99; }
 .lj-hero-title .lj-hero-l2 { color: #b5b9c1; }
 .lj-hero-title .lj-hero-l3 { color: #fff; white-space: nowrap; }
@@ -1074,6 +1095,7 @@ main p a:not([class]) { text-decoration: underline; text-decoration-thickness: 1
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
   .lj-js .lj-reveal { opacity: 1; transform: none; }
+  .lj-hero-kicker > span, .lj-hero-title > span > span, .lj-hero--home .lj-lead, .lj-hero--home .lj-hero-actions, .lj-hero-assure { animation: none; }
   .lj-marquee-track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; }
   .lj-marquee { -webkit-mask-image: none; mask-image: none; }
 }

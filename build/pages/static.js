@@ -75,8 +75,8 @@ function home(cat, guides, extra) {
   const main = `
 <section class="lj-hero lj-hero--home">
   <div class="lj-container">
-    <p class="lj-hero-kicker">Custom business automation for <span>small and mid-size teams</span></p>
-    <h1 class="lj-hero-title"><span class="lj-hero-l1">The future</span> <span class="lj-hero-l2">of business</span> <span class="lj-hero-l3">is <span class="lj-hero-ic" aria-hidden="true">${icon("user")}</span> human <span class="lj-hero-plus">+</span> machine <span class="lj-hero-ic" aria-hidden="true">${chip}</span></span></h1>
+    <p class="lj-hero-kicker"><span>Custom business automation for <span>small and mid-size teams</span></span></p>
+    <h1 class="lj-hero-title"><span class="lj-hero-l1"><span>The future</span></span> <span class="lj-hero-l2"><span>of business</span></span> <span class="lj-hero-l3"><span>is <span class="lj-hero-ic" aria-hidden="true">${icon("user")}</span> human <span class="lj-hero-plus">+</span> machine <span class="lj-hero-ic" aria-hidden="true">${chip}</span></span></span></h1>
     <p class="lj-lead">Automation takes the repetitive work off your team's plate. Your people keep the judgment, the relationships, and the decisions; they just get hours back every week. We build it around the tools you already use.</p>
     <div class="lj-hero-actions">
       <a class="lj-btn lj-btn-glow lj-btn-lg" href="/appointment/">Book a Free Consultation ${arrow}</a>
