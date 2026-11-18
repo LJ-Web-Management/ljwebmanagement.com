@@ -2,6 +2,8 @@
 
 > LJ Web Management builds custom AI and business automation systems that remove repetitive work. Browse 1,000+ done-for-you automations and get a flat quote.
 
+[Book a free consultation](https://www.ljwebmanagement.com/appointment/)
+
 Custom business automation for small and mid-size teams
 
 Automation takes the repetitive work off your team's plate. Your people keep the judgment, the relationships, and the decisions; they just get hours back every week.
