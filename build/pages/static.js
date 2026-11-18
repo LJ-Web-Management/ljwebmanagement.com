@@ -74,13 +74,19 @@ function home(cat, guides, extra) {
   // does it fit my tools, does it work, is it for me, what's the catch, how do I start.
   const main = `
 <section class="lj-hero lj-hero--home">
-  <div class="lj-container">
-    <p class="lj-hero-kicker"><span>Custom business automation for <span>small and mid-size teams</span></span></p>
+  <div class="lj-container lj-hero-stage">
     <h1 class="lj-hero-title"><span class="lj-hero-l1"><span>The future</span></span> <span class="lj-hero-l2"><span>of business</span></span> <span class="lj-hero-l3"><span>is <span class="lj-hero-ic" aria-hidden="true">${icon("user")}</span> human <span class="lj-hero-plus">+</span> machine <span class="lj-hero-ic" aria-hidden="true">${chip}</span></span></span></h1>
-    <p class="lj-lead">Automation takes the repetitive work off your team's plate. Your people keep the judgment, the relationships, and the decisions; they just get hours back every week. We build it around the tools you already use.</p>
-    <div class="lj-hero-actions">
-      <a class="lj-btn lj-btn-glow lj-btn-lg" href="/appointment/">Book a Free Consultation ${arrow}</a>
-      <a class="lj-btn lj-btn-text lj-btn-lg" href="/automations/">Browse Automations</a>
+    <span class="lj-hero-cue" aria-hidden="true">Scroll</span>
+  </div>
+</section>
+
+<section class="lj-section lj-intro">
+  <div class="lj-container">
+    <p class="lj-intro-kicker">Custom business automation for <span>small and mid-size teams</span></p>
+    <p class="lj-intro-lead">Automation takes the repetitive work off your team's plate. Your people keep the judgment, the relationships, and the decisions; they just get hours back every week.</p>
+    <div class="lj-btn-row">
+      <a class="lj-btn lj-btn-primary lj-btn-lg" href="/appointment/">Book a Free Consultation ${arrow}</a>
+      <a class="lj-btn lj-btn-ghost lj-btn-lg" href="/automations/">Browse Automations</a>
     </div>
     <ul class="lj-hero-assure">
       <li>Free consultation</li>
@@ -91,7 +97,7 @@ function home(cat, guides, extra) {
   </div>
 </section>
 
-<section class="lj-section lj-section--tight" aria-label="Integrations">
+<section class="lj-section lj-section--tight lj-section--flush-top" aria-label="Integrations">
   <div class="lj-container">
     <p class="lj-center lj-muted" style="margin-bottom:18px;font-size:15px">Built around the tools you already use, no rip-and-replace</p>
     <div class="lj-marquee"><div class="lj-marquee-track">${marquee}</div></div>
