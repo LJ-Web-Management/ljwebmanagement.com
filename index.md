@@ -1,6 +1,6 @@
 Custom business automation for small and mid-size teams
 
-# The future of business is human and machine
+# The future of business is human + machine
 
 > LJ Web Management builds custom AI and business automation systems that remove repetitive work. Browse 1,000+ done-for-you automations and get a flat quote.
 
