@@ -1,10 +1,12 @@
-Custom business automation for small and mid-size teams
-
 # The future of business is human + machine
 
 > LJ Web Management builds custom AI and business automation systems that remove repetitive work. Browse 1,000+ done-for-you automations and get a flat quote.
 
-Automation takes the repetitive work off your team's plate. Your people keep the judgment, the relationships, and the decisions; they just get hours back every week. We build it around the tools you already use.
+[Book a free consultation](https://www.ljwebmanagement.com/appointment/)
+
+Custom business automation for small and mid-size teams
+
+Automation takes the repetitive work off your team's plate. Your people keep the judgment, the relationships, and the decisions; they just get hours back every week.
 
 [Book a Free Consultation](https://www.ljwebmanagement.com/appointment/) [Browse Automations](https://www.ljwebmanagement.com/automations/)
 
