@@ -130,7 +130,7 @@ test("end to end through a local CloudFront + S3 stand-in", async () => {
     assert.strictEqual(md.status, 200);
     assert.match(md.headers.get("content-type"), /^text\/markdown/);
     assert.match(md.headers.get("vary"), /\bAccept\b/);
-    assert.match(await md.text(), /^Custom business automation[\s\S]*# The future of business is human and machine/);
+    assert.match(await md.text(), /^Custom business automation[\s\S]*# The future of business is human \+ machine/);
 
     const html = await fetch(base + "/", { headers: { accept: BROWSER } });
     assert.match(html.headers.get("content-type"), /^text\/html/);

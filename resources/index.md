@@ -159,6 +159,8 @@ From the blog
 
 [Visit the blog](https://blog.ljwebmanagement.com/)
 
+[Tech Skills for Beginners November 17, 2026 AI Output Review for Beginners: Check an Answer Before You Use It at Work AI can produce a useful first draft in seconds, but a fast answer is not automatically a reliable answer. Beginners and busy… Read article](https://blog.ljwebmanagement.com/posts/ai-output-review-for-beginners-check-an-answer-before-you-use-it-at-work.html) [Tech Skills for Beginners November 16, 2026 What to Put in a Beginner Coding Portfolio: Three Projects You Can Finish and Explain Many beginners think a coding portfolio has to contain a large app, a polished startup idea, or a long list of technologies… Read article](https://blog.ljwebmanagement.com/posts/what-to-put-in-a-beginner-coding-portfolio-three-projects-you-can-finish-and-explain.html) [Marketing & Website November 15, 2026 First JavaScript Form Validation Project: Check User Input Before It Reaches Your App A contact form can look finished long before it behaves like a useful part of a website. A visitor can leave a required field… Read article](https://blog.ljwebmanagement.com/posts/first-javascript-form-validation-project-check-user-input-before-it-reaches-your-app.html)
+
 ---
 
 Source: https://www.ljwebmanagement.com/resources/
