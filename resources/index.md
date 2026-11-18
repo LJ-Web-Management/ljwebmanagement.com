@@ -159,8 +159,6 @@ From the blog
 
 [Visit the blog](https://blog.ljwebmanagement.com/)
 
-[Marketing & Website November 15, 2026 First JavaScript Form Validation Project: Check User Input Before It Reaches Your App A contact form can look finished long before it behaves like a useful part of a website. A visitor can leave a required field… Read article](https://blog.ljwebmanagement.com/posts/first-javascript-form-validation-project-check-user-input-before-it-reaches-your-app.html) [Tech Skills for Beginners November 14, 2026 JavaScript Objects for Beginners: Organize Related Data in a Small App Many beginners learn JavaScript variables and arrays, then reach a small project where a single item has several facts: a name… Read article](https://blog.ljwebmanagement.com/posts/javascript-objects-for-beginners-organize-related-data-in-a-small-app.html) [Tech Skills for Beginners November 13, 2026 React Components for Beginners: Build a Reusable Profile Card From Scratch React can feel abstract when a beginner sees components, props, state, and files before building anything visible. A small… Read article](https://blog.ljwebmanagement.com/posts/react-components-for-beginners-build-a-reusable-profile-card-from-scratch.html)
-
 ---
 
 Source: https://www.ljwebmanagement.com/resources/
