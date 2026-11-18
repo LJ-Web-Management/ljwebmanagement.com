@@ -371,7 +371,9 @@ a.lj-tag:hover { background: var(--ink); color: #fff; }
 }
 
 /* Home intro, just under the hero: what we do, the pitch, and the first call to action. */
-.lj-intro { text-align: center; padding-bottom: clamp(24px, 3vw, 40px); }
+.lj-intro { text-align: center; padding-block: clamp(36px, 4.5vw, 56px) clamp(64px, 8vw, 104px); }
+/* The tools strip after the intro gets room below it before the next story. */
+.lj-intro + .lj-section--tight { padding-bottom: clamp(72px, 9vw, 128px); }
 .lj-intro-kicker { margin: 0 0 18px; font-family: var(--font-display); font-size: 15px; font-weight: 500; letter-spacing: -0.01em; color: var(--muted); }
 .lj-intro-kicker span { color: var(--cyan-ink); }
 .lj-intro-lead { max-width: 720px; margin: 0 auto 32px; font-family: var(--font-display); font-size: clamp(1.35rem, 2.4vw, 1.85rem); font-weight: 400; letter-spacing: -0.03em; line-height: 1.35; color: var(--ink); }
