@@ -49,7 +49,6 @@ function head(opts) {
     '<link rel="alternate" type="application/rss+xml" title="LJ Web Management Blog" href="' + chrome.BLOG_URL + '/feed.xml">',
     '<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>',
     '<link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>',
-    '<link rel="preload" href="/assets/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin>',
     '<link rel="stylesheet" href="/assets/css/site.css?v=' + v.css + '">',
     "<script>document.documentElement.classList.add('lj-js')</script>",
     '<script src="/assets/js/site.js?v=' + v.js + '" defer></script>'

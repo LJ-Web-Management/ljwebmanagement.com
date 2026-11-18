@@ -427,7 +427,7 @@ function footer(opts) {
   <div class="lj-container">
     <div class="lj-footer-cta">
       <div>
-        <h2>Ready to cut through the delay?</h2>
+        <h2>Ready to give your team <span>their hours back?</span></h2>
         <p>Book a free consultation. We'll map the workflow, recommend what to automate first, and give you a flat, upfront quote.</p>
       </div>
       <div class="lj-footer-cta-actions">

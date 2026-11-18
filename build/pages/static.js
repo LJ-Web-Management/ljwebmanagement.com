@@ -8,7 +8,6 @@ const { ROOT, SITE_URL, escapeHtml, writeFile, readFile, fileHash, formatNumber 
 const L = require("../lib/layout");
 const { icon } = L;
 const { categoryCard, industrySvg } = require("./automations");
-const { latestPosts } = require("../lib/blogfeed");
 
 const content = (f) => JSON.parse(fs.readFileSync(path.join(ROOT, "content", f), "utf8"));
 const legal = (f) => fs.readFileSync(path.join(ROOT, "content", "pages", f), "utf8");
@@ -56,56 +55,74 @@ function home(cat, guides, extra) {
   const tile = (href, ic, title, sub) => '<a class="lj-itile" href="' + href + '"><span class="lj-itile-icon">' + icon(ic) + "</span><span><strong>" + title + "</strong><small>" + sub + "</small></span></a>";
   const faq = L.faq(content("faq.json")[0].items.slice(0, 5));
 
+  const arrow = icon("arrowRight");
+  // Inline chip icon for "machine" in the hero heading.
+  const chip = '<svg class="lj-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>';
+  const steps = [
+    ["Trigger &middot; 9:42 PM", "New quote request from your website", ""],
+    ["0:04", "Text sent to the lead", "Personal reply with a booking link"],
+    ["0:05", "Contact created in your CRM", "Source, service, and notes attached"],
+    ["0:06", "Estimator alerted in Slack", "Assigned by service area"],
+    ["0:06", "Follow-up sequence scheduled", "Stops the moment they reply"],
+    ["Next morning", "Call booked for 8:30 AM", "While your team was offline"],
+  ];
+  const timeline = steps
+    .map(([t, title, sub], i) => "<li" + (i === steps.length - 1 ? ' class="is-done"' : "") + '><span class="lj-timeline-time">' + t + "</span><strong>" + title + "</strong>" + (sub ? "<span>" + sub + "</span>" : "") + "</li>")
+    .join("");
+
+  // Section order follows the questions a visitor asks: is this safe, what is it,
+  // does it fit my tools, does it work, is it for me, what's the catch, how do I start.
   const main = `
-<section class="lj-hero">
-  <div class="lj-container lj-hero-grid">
-    <div>
-      <p class="lj-hero-call">Questions? Call <a href="tel:+18775593268">(877) 559-3268</a></p>
-      <h1>Cut through the delay. <span class="lj-gradient-text">Automate the busywork.</span></h1>
-      <p class="lj-lead">We build custom business automation and AI workflow systems that remove repetitive tasks and bottlenecks, connecting the tools you already use so your team can focus on the work that actually grows the business.</p>
-      <div class="lj-hero-actions">
-        <a class="lj-btn lj-btn-accent lj-btn-lg" href="/appointment/">Book a Free Consultation ${icon("arrowRight")}</a>
-        <a class="lj-btn lj-btn-light lj-btn-lg" href="/automations/">Browse Automations</a>
-      </div>
-      <div class="lj-stat-row">
-        <div class="lj-stat"><strong>${total}+</strong><span>Pre-scoped automations</span></div>
-        <div class="lj-stat"><strong>${cat.industries.length}</strong><span>Industries covered</span></div>
-        <div class="lj-stat"><strong>$0</strong><span>Discovery consultation</span></div>
-        <div class="lj-stat"><strong>Flat</strong><span>Upfront pricing</span></div>
-      </div>
+<section class="lj-hero lj-hero--home">
+  <div class="lj-container">
+    <p class="lj-hero-kicker">Custom business automation for <span>small and mid-size teams</span></p>
+    <h1 class="lj-hero-title"><span class="lj-hero-l1">The future</span> <span class="lj-hero-l2">of business</span> <span class="lj-hero-l3">is <span class="lj-hero-ic" aria-hidden="true">${icon("user")}</span> human <span class="lj-hero-ic lj-hero-bolt">${icon("zap")}<span class="lj-sr-only">and</span></span> machine <span class="lj-hero-ic" aria-hidden="true">${chip}</span></span></h1>
+    <p class="lj-lead">Automation takes the repetitive work off your team's plate. Your people keep the judgment, the relationships, and the decisions; they just get hours back every week. We build it around the tools you already use.</p>
+    <div class="lj-hero-actions">
+      <a class="lj-btn lj-btn-glow lj-btn-lg" href="/appointment/">Book a Free Consultation ${arrow}</a>
+      <a class="lj-btn lj-btn-text lj-btn-lg" href="/automations/">Browse Automations</a>
     </div>
-    <div class="lj-flow" aria-label="Example: an automation handling a new lead">
-      <div class="lj-flow-head"><span>Lead follow-up automation</span><span class="lj-flow-live">Running</span></div>
-      <div class="lj-flow-trigger"><span class="lj-flow-badge">${icon("zap")}</span><span><small>Trigger &middot; 9:42 PM</small><strong>New quote request from your website</strong></span></div>
-      <ol class="lj-flow-steps">
-        <li class="lj-flow-step"><div class="lj-flow-step-body">${icon("checkCircle")}<span><strong>Text sent to the lead</strong><small>Personal reply with a booking link</small></span><span class="lj-flow-time">0:04</span></div></li>
-        <li class="lj-flow-step"><div class="lj-flow-step-body">${icon("checkCircle")}<span><strong>Contact created in your CRM</strong><small>Source, service, and notes attached</small></span><span class="lj-flow-time">0:05</span></div></li>
-        <li class="lj-flow-step"><div class="lj-flow-step-body">${icon("checkCircle")}<span><strong>Estimator alerted in Slack</strong><small>Assigned by service area</small></span><span class="lj-flow-time">0:06</span></div></li>
-        <li class="lj-flow-step"><div class="lj-flow-step-body">${icon("checkCircle")}<span><strong>Follow-up sequence scheduled</strong><small>Stops the moment they reply</small></span><span class="lj-flow-time">0:06</span></div></li>
-      </ol>
-      <div class="lj-flow-result">${icon("calendar")}<span><strong>Call booked for 8:30 AM</strong> while your team was offline</span></div>
-    </div>
+    <ul class="lj-hero-assure">
+      <li>Free consultation</li>
+      <li>Flat, upfront quote</li>
+      <li>Nothing starts until you approve</li>
+      <li>Or call <a href="tel:+18775593268">(877) 559-3268</a></li>
+    </ul>
   </div>
 </section>
 
 <section class="lj-section lj-section--tight" aria-label="Integrations">
   <div class="lj-container">
-    <p class="lj-center lj-muted" style="margin-bottom:22px;font-size:15px">Built around the tools you already use, no rip-and-replace</p>
+    <p class="lj-center lj-muted" style="margin-bottom:18px;font-size:15px">Built around the tools you already use, no rip-and-replace</p>
     <div class="lj-marquee"><div class="lj-marquee-track">${marquee}</div></div>
   </div>
 </section>
 
-<section class="lj-section lj-section--mist">
+<section class="lj-section lj-section--flush-top">
   <div class="lj-container">
-    ${L.sectionHead("Automations by business function", "What do you want to stop doing by hand?", "Every automation in the catalog is filed under the part of the business it improves. Pick one to see real workflows from every industry.")}
-    <div class="lj-grid lj-grid-3">${cat.categories.map(categoryCard).join("")}
-      <a class="lj-card lj-card--dark" href="/automations/">
-        <span class="lj-card-icon">${icon("search")}</span>
-        <h3>Not sure where it fits?</h3>
-        <p>Search all ${total} automations by task, role, tool, or industry.</p>
-        <div class="lj-card-foot"><span class="lj-link-arrow">Open the catalog ${icon("arrowRight")}</span></div>
-      </a>
+    ${L.sectionHead("", 'A lead at 9:42 PM. <span class="lj-accent">Booked by morning.</span>', "Here is one automation at work. The machine handles every step in seconds, and your team just shows up to the call.")}
+    <p class="lj-timeline-head">Lead follow-up automation <span class="lj-live">Running</span></p>
+    <ol class="lj-timeline" aria-label="Example: an automation handling a new lead">${timeline}</ol>
+    <div class="lj-timeline-cta">
+      <a class="lj-btn lj-btn-accent" href="/appointment/">Get this for your business</a>
+      <a class="lj-link-arrow" href="/roi-calculator/">Calculate what it saves you ${arrow}</a>
     </div>
+  </div>
+</section>
+
+<section class="lj-section">
+  <div class="lj-container">
+    ${L.sectionHead("", 'Built for <span class="lj-accent">your industry</span>', "Role-specific automations for " + cat.industries.length + " industries, from dental practices to warehouses.")}
+    <div class="lj-grid lj-grid-4">${featuredInds.map((ind) => '<a class="lj-card lj-card--link" href="' + ind.url + '"><span class="lj-itile-icon" style="margin-bottom:16px">' + industrySvg(ind) + "</span><h3 style=\"font-size:17px\">" + escapeHtml(ind.name) + "</h3><p>" + escapeHtml(ind.card) + '</p><div class="lj-card-foot"><span class="lj-count">' + ind.items.length + ' automations</span><span class="lj-card-arrow">' + arrow + "</span></div></a>").join("")}</div>
+    <p class="lj-center lj-mt-lg"><a class="lj-link-arrow" href="/automations/#industries">All ${cat.industries.length} industries ${arrow}</a></p>
+  </div>
+</section>
+
+<section class="lj-section lj-section--flush-top">
+  <div class="lj-container">
+    ${L.sectionHead("", 'Or start with what you want to <span class="lj-accent">stop doing by hand</span>', "", "lj-section-head--sub")}
+    <div class="lj-grid lj-grid-3">${cat.categories.slice(0, 6).map(categoryCard).join("")}</div>
+    <p class="lj-center lj-mt-lg"><a class="lj-link-arrow" href="/automations/">See all ${cat.categories.length} categories and ${total} automations ${arrow}</a></p>
   </div>
 </section>
 
@@ -113,23 +130,22 @@ function home(cat, guides, extra) {
   <div class="lj-container">
     <div class="lj-split lj-split--media">
       <div>
-        <span class="lj-eyebrow">Our process</span>
-        <h2>Ready to automate the boring, repetitive work?</h2>
+        <h2><span class="lj-accent">Automate</span> the boring, repetitive work</h2>
         <p class="lj-lead">Tell us where the delay is. We scope it, quote it at a flat price, build it around your tools, and stay on to support it.</p>
-        <ol class="lj-steps" style="margin-top:28px">
+        <ol class="lj-steps lj-steps--focus" style="margin-top:28px">
           <li><div class="lj-steps-body"><span class="lj-steps-label">Identify the delays</span><p>You tell us about repetitive tasks, disconnected tools, and bottlenecks slowing your business down.</p></div></li>
           <li><div class="lj-steps-body"><span class="lj-steps-label">Build the automation</span><p>We create a customized system that connects your tools and automates the work, with a flat quote up front.</p></div></li>
           <li><div class="lj-steps-body"><span class="lj-steps-label">Keep business moving</span><p>Your team saves time, responds faster, and operates more efficiently, and we support it as things change.</p></div></li>
         </ol>
-        <a class="lj-link-arrow" href="/how-it-works/" style="margin-top:24px">See the full five-step process ${icon("arrowRight")}</a>
+        <a class="lj-link-arrow" href="/how-it-works/" style="margin-top:24px">See the full five-step process ${arrow}</a>
       </div>
-      <div class="lj-card" style="padding:0;overflow:hidden;border-radius:22px;box-shadow:var(--shadow-lg)">
-        <button type="button" class="lj-video-trigger" data-lj-video="/assets/homepage-video.mp4" data-lj-captions="/assets/homepage-video.vtt?v=${fileHash("assets/homepage-video.vtt")}" aria-label="Play the LJ Web Management walkthrough video (captions available)" style="position:relative;display:block;width:100%;padding:0;border:0;background:var(--navy);line-height:0">
+      <div class="lj-media">
+        <button type="button" class="lj-video-trigger" data-lj-video="/assets/homepage-video.mp4" data-lj-captions="/assets/homepage-video.vtt?v=${fileHash("assets/homepage-video.vtt")}" aria-label="Play the LJ Web Management walkthrough video (captions available)" style="position:relative;display:block;width:100%;padding:0;border:0;background:var(--night);line-height:0">
           <picture>
             <source srcset="/assets/homepage-video-poster-720.webp 720w, /assets/homepage-video-poster.webp 1200w" sizes="(max-width: 980px) calc(100vw - 48px), 600px" type="image/webp">
             <img src="/assets/homepage-video-poster.jpg" width="1920" height="1080" alt="LJ Web Management automation walkthrough video preview" loading="lazy" decoding="async" style="width:100%;height:auto;display:block">
           </picture>
-          <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><span style="width:76px;height:76px;border-radius:50%;background:#fff;color:var(--navy);display:inline-flex;align-items:center;justify-content:center;box-shadow:0 14px 34px rgba(8,20,38,.4)">${icon("play")}</span></span>
+          <span style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><span style="width:72px;height:72px;border-radius:50%;background:var(--night);color:#fff;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 14px 34px rgba(5,8,15,.4)">${icon("play")}</span></span>
         </button>
         <details class="lj-transcript"><summary>Read the video transcript</summary><div tabindex="0" aria-label="Video transcript">${videoTranscript()}</div></details>
       </div>
@@ -137,41 +153,41 @@ function home(cat, guides, extra) {
   </div>
 </section>
 
-<section class="lj-section lj-section--mist">
+<section class="lj-section lj-section--flush-top">
   <div class="lj-container">
-    ${L.sectionHead("Why LJ Web Management", "Automation built around how your business already works", "")}
+    ${L.sectionHead("", 'Built around how your business <span class="lj-accent">already works</span>', "")}
     <div class="lj-features">
-      <div><span class="lj-card-icon lj-card-icon--soft">${icon("receipt")}</span><h3>A clear quote, not a price list</h3><p>After a free consultation you get one flat, all-in price. Nothing starts until you approve the scope.</p></div>
-      <div><span class="lj-card-icon lj-card-icon--soft">${icon("plug")}</span><h3>Custom-fit systems</h3><p>Built around the tools you already use, not the other way around.</p></div>
-      <div><span class="lj-card-icon lj-card-icon--soft">${icon("zap")}</span><h3>Fast to launch</h3><p>Most systems go live within days, not months.</p></div>
-      <div><span class="lj-card-icon lj-card-icon--soft">${icon("message")}</span><h3>Real support</h3><p>A team that answers when something needs to change, long after launch day.</p></div>
+      <div><span class="lj-card-icon">${icon("receipt")}</span><h3>A clear quote, not a price list</h3><p>After a free consultation you get one flat, all-in price. Nothing starts until you approve the scope.</p></div>
+      <div><span class="lj-card-icon">${icon("plug")}</span><h3>Custom-fit systems</h3><p>Built around the tools you already use, not the other way around.</p></div>
+      <div><span class="lj-card-icon">${icon("zap")}</span><h3>Fast to launch</h3><p>Most systems go live within days, not months.</p></div>
+      <div><span class="lj-card-icon">${icon("message")}</span><h3>Real support</h3><p>A team that answers when something needs to change, long after launch day.</p></div>
     </div>
   </div>
 </section>
 
 <section class="lj-section">
   <div class="lj-container">
-    ${L.sectionHead("Where we help", "Built for your industry", "Role-specific automations for " + cat.industries.length + " industries, from dental practices to warehouses.")}
-    <div class="lj-grid lj-grid-4">${featuredInds.map((ind) => '<a class="lj-card lj-card--link" href="' + ind.url + '"><span class="lj-itile-icon" style="margin-bottom:14px">' + industrySvg(ind) + "</span><h3 style=\"font-size:17px\">" + escapeHtml(ind.name) + "</h3><p>" + escapeHtml(ind.card) + '</p><div class="lj-card-foot"><span class="lj-count">' + ind.items.length + ' automations</span><span class="lj-card-arrow">' + icon("arrowRight") + "</span></div></a>").join("")}</div>
-    <p class="lj-center lj-mt-lg"><a class="lj-link-arrow" href="/automations/#industries">All ${cat.industries.length} industries ${icon("arrowRight")}</a></p>
+    ${L.sectionHead("", 'Built for <span class="lj-accent">both sides</span> of the business', "Leaders get a system that saves hours across the team. The people doing the work get those hours back.")}
+    <div class="lj-sides">
+      <div><span class="lj-card-icon">${icon("building")}</span><h3>Business owners &amp; executives</h3><p>You don't need to hire an AI team to bring AI into your business. We scope the highest-cost repetitive process in your operation, build the automation around the tools you already use, and support it after launch, so leadership gets fewer manual hours, faster response times, and lower costs without the overhead of building it in-house.</p><a class="lj-link-arrow" href="/how-it-works/">See how implementation works ${arrow}</a></div>
+      <div><span class="lj-card-icon">${icon("user")}</span><h3>Employees getting their time back</h3><p>Automation takes the copy-and-paste, the follow-up reminders, and the data entry off your desk, so more of your day goes to the judgment and relationships that make you valuable.</p><a class="lj-link-arrow" href="/faq/#general">Read the automation FAQ ${arrow}</a></div>
+    </div>
   </div>
 </section>
 
-<section class="lj-section lj-section--dark">
-  <div class="lj-container">
-    ${L.sectionHead("Who it's for", "Built for the people deciding on AI, and the people working alongside it", "Implementing AI in a business and using AI to get more out of a job are two different problems. We work on both sides of that.")}
-    <div class="lj-features" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:32px 56px">
-      <div><span class="lj-card-icon">${icon("building")}</span><h3>Business owners &amp; executives</h3><p>You don't need to hire an AI team to bring AI into your business. We scope the highest-cost repetitive process in your operation, build the automation around the tools you already use, and support it after launch, so leadership gets fewer manual hours, faster response times, and lower costs without the overhead of building it in-house.</p><p><a class="lj-link-arrow" href="/how-it-works/">See how implementation works ${icon("arrowRight")}</a></p></div>
-      <div><span class="lj-card-icon">${icon("user")}</span><h3>Employees supplementing their own work</h3><p>The roles most at risk from AI are the ones where nobody bothers to use it. Automating the repetitive part of a job frees up time for the judgment and relationships AI can't replace, which is exactly what tends to keep a role valuable as more work becomes automatable.</p><p><a class="lj-link-arrow" href="/faq/#general">Read the automation FAQ ${icon("arrowRight")}</a></p></div>
-    </div>
+<section class="lj-section lj-section--flush-top">
+  <div class="lj-container lj-container--narrow">
+    ${L.sectionHead("", 'Questions we <span class="lj-accent">hear every day</span>', "")}
+    ${faq.html}
+    <p class="lj-center lj-mt-lg"><a class="lj-btn lj-btn-ghost" href="/faq/">See all FAQs</a></p>
   </div>
 </section>
 
 <section class="lj-section">
   <div class="lj-container">
     <div class="lj-section-head lj-section-head--split">
-      <div><span class="lj-eyebrow">Free resource center</span><h2>Learn how to automate, at your own pace</h2></div>
-      <a class="lj-link-arrow" href="/resources/">Open the resource center ${icon("arrowRight")}</a>
+      <div><h2>Not ready yet? <span class="lj-accent">Learn at your own pace</span></h2></div>
+      <a class="lj-link-arrow" href="/resources/">Open the resource center ${arrow}</a>
     </div>
     <div class="lj-grid lj-grid-3">
       ${L.rcard({ href: course.url, icon: course.icon, tag: "Free course", meta: course.lessons.length + " lessons", title: course.name, text: course.description, cta: "Start learning" })}
@@ -184,25 +200,7 @@ function home(cat, guides, extra) {
       ${tile("/quizzes/", "listCheck", "Quizzes &amp; assessments", "AI readiness, automation IQ")}
       ${tile("/glossary/", "bookOpen", "Automation glossary", extra.glossary.terms.length + " terms in plain English")}
     </div>
-    <p class="lj-center lj-mt-lg"><a class="lj-link-arrow" href="/developers/">Building an AI agent or integration? Use the free LJ Web Management API and docs ${icon("arrowRight")}</a></p>
-  </div>
-</section>
-
-<section class="lj-section lj-section--mist">
-  <div class="lj-container">
-    <div class="lj-section-head lj-section-head--split">
-      <div><span class="lj-eyebrow">From the blog</span><h2>Fresh automation ideas, published daily</h2></div>
-      <a class="lj-link-arrow" href="https://blog.ljwebmanagement.com/">Visit the blog ${icon("arrowRight")}</a>
-    </div>
-    ${latestPosts(3)}
-  </div>
-</section>
-
-<section class="lj-section">
-  <div class="lj-container lj-container--narrow">
-    ${L.sectionHead("FAQ", "Questions we hear every day", "")}
-    ${faq.html}
-    <p class="lj-center lj-mt-lg"><a class="lj-btn lj-btn-ghost" href="/faq/">See all FAQs</a></p>
+    <p class="lj-center lj-mt-lg"><a class="lj-link-arrow" href="/developers/">Building an AI agent or integration? Use the free LJ Web Management API and docs ${arrow}</a></p>
   </div>
 </section>`;
 
@@ -218,9 +216,8 @@ function home(cat, guides, extra) {
         faq.schema,
       ],
       extraHead:
-        '<link rel="preload" as="image" href="/assets/lj-logo-80.webp">' + '<link rel="preconnect" href="https://blog.ljwebmanagement.com">' +
+        '<link rel="preload" as="image" href="/assets/lj-logo-80.webp">' +
         '<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">' + '<link rel="service-doc" type="text/html" href="/developers/">' + '<link rel="api-catalog" href="/.well-known/api-catalog">',
-      endScripts: '<script src="https://blog.ljwebmanagement.com/assets/js/latest-posts.js" defer></script>',
       main,
     })
   );
